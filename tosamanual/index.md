@@ -2,87 +2,12 @@
 style="width:9.12361in;height:13.3in" /><img src="./media/image3.png"
 style="width:3.75139in;height:1.76667in" />
 
-Table of Contents
+<div id="toc">
 
-# FIRST STEPS ON THE TOSA PLATFORM
+* TOC
+{:toc}
 
-Logging into the Tosa Platform3
-
-Navigate the Tosa Platform4
-
-# 
-
-**MANAGING YOUR ACCOUNT**
-
-Details6
-
-Administrators7-8
-
-Credit Alert9
-
-Credit Consumption10
-
-Invoices11
-
-**MANAGING THE PARAMETERS**
-
-Email Templates13-16
-
-Email Senders16-17
-
-Scheduled Emails18
-
-Adding a Custom Banner18
-
-Creating Test Sessions19-21
-
-General Settings22-23
-
-Assessment Settings23
-
-Certification Settings24
-
-Expected Outcomes24-26
-
-Custom Level Description27-28
-
-**MANAGING CANDIDATES**
-
-Adding Groups30-32
-
-Editing Groups32-32
-
-Adding Multiple Candidates34-35
-
-Adding a Single Candidate36-37
-
-Registering Candidate(s) for a Test38-40
-
-Sending an Individual Test Invitation41
-
-Group Actions - Registering all Candidates in a Group to a Test44-45
-
-Group Actions - Sending an Invitation Email to a Group46
-
-Group Actions – Other Group Actions47
-
-**MANAGING RESULTS**
-
-Results – Individual Results49-54
-
-Results – Group Reports55-58
-
-Certificate of Attendance59-60
-
-Incidents61-62
-
-**SUPPORT**
-
-Help64
-
-Technical Configuration65
-
-Configuration Test66
+</div>
 
 # First steps on the Tosa Platform
 
@@ -128,11 +53,10 @@ Administrators
 <img src="./media/image13.png"
 style="width:1.81944in;height:3.14641in" />
 
-######## The administrators manage groups. Each group requires one administrator.
+*The administrators manage groups. Each group requires one administrator.*
 
-######## 
 
-Adding an administrator
+##Adding an administrator
 
 To access the **Administrators management** tools, click **Account** on
 the main menu. Then click on Click on **Administrators** in the submenu.
@@ -200,7 +124,7 @@ alt="A screenshot of a computer screen Description automatically generated" />
 style="width:1.81234in;height:3.05764in" />Usage Report (credit
 consumption)
 
-######## The **Usage report** page allows you to track total credit usage as well as usage by group.
+* The **Usage report** page allows you to track total credit usage as well as usage by group.*
 
 From the **Account** page, click on **Usage Report**.
 
@@ -216,7 +140,7 @@ style="width:7.06389in;height:3.01667in" />
 
 Invoices
 
-######## If you have made online purchases for Tosa assessment or certification credits online, this is where you will be able to view and/or download your invoice(s).
+ *If you have made online purchases for Tosa assessment or certification credits online, this is where you will be able to view and/or download your invoice(s).*
 
 From the **Account** page, click on **My invoices.**
 
@@ -348,7 +272,7 @@ alt="A screenshot of a computer Description automatically generated" />
 
 Creating test sessions
 
-######## A test session is a specific time period during which tests are required to be taken. Tests linked to a session will not be accessible outside of the scheduled testing session.
+*A test session is a specific time period during which tests are required to be taken. Tests linked to a session will not be accessible outside of the scheduled testing session.*
 
 Creating a session will allow you to set a start and end times. Then,
 when you register a student for a test, you will be able to link the
@@ -554,7 +478,7 @@ style="width:6.44028in;height:3.59028in" />
 
 Custom level description
 
-######## You can modify the level description on each assessment test, according to the test subject family.
+*You can modify the level description on each assessment test, according to the test subject family.*
 
 To access this feature, select the **Parameters** menu, click on
 **Custom level description**, and click on the red **Create level
@@ -720,7 +644,7 @@ style="width:1.59854in;height:2.40934in" />
 
 Adding multiple candidates at once
 
-######## Importing an Excel file that contains your students’ details allows you to quickly upload up to 500 students at one time for a defined group.
+*Importing an Excel file that contains your students’ details allows you to quickly upload up to 500 students at one time for a defined group.*
 
 <img src="./media/image73.png"
 style="width:6.93472in;height:2.31111in" />Click on **Import a candidate
