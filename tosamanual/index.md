@@ -11,7 +11,7 @@ style="width:3.75139in;height:1.76667in" />
 
 # First steps on the Tosa Platform
 
-Logging into the Tosa Platform
+## Logging into the Tosa Platform
 
 To access your account, go to [www.tosa.org](http://www.tosa.org), click
 on Your Account – then choose Administrator from the popup menu.
@@ -24,16 +24,15 @@ your password, then click on **Log In**.
 If you do not know what your password is, click on the **Lost password**
 link. A password change link will be automatically emailed to you.
 
-Navigate the Tosa Platform
+## Navigate the Tosa Platform
 
 <img src="./media/image8.png"
-style="width:6.04514in;height:5.28681in" />The main menu allows you to
-access to the five submenus on the Tosa platform, which allows you to
-manage your Tosa account.
+style="width:6.04514in;height:5.28681in" />
+The main menu allows you to access to the five submenus on the Tosa platform, which allows you to manage your Tosa account.
 
 # Managing your account
 
-Details
+## Details
 
 <img src="./media/image10.png"
 style="width:2.15826in;height:3.1778in" />
@@ -48,7 +47,7 @@ results reports.
 <img src="./media/image11.png"
 style="width:6.66055in;height:4.78611in" />
 
-Administrators
+## Administrators
 
 <img src="./media/image13.png"
 style="width:1.81944in;height:3.14641in" />
@@ -72,8 +71,8 @@ alt="A screenshot of a contact us Description automatically generated" />
 Types of administrators
 
 <img src="./media/image15.png"
-style="width:4.95278in;height:1.02083in" />There are 3 types of
-administrators on the platform:
+style="width:4.95278in;height:1.02083in" />
+There are 3 types of administrators on the platform:
 
 - **Account manager:** The account manager has complete administrative
   rights and can view and modify anything on your account.
@@ -99,7 +98,7 @@ You can also **delete** an administrator by clicking on the little bin
 icon, and reset an administrator’s password by clicking on the little
 lock icon.
 
-Credit alert
+## Credit alert
 
 <img src="./media/image17.png"
 style="width:1.84722in;height:3.13468in" />
@@ -121,8 +120,9 @@ style="width:2.25908in;height:2.59754in"
 alt="A screenshot of a computer screen Description automatically generated" />
 
 <img src="./media/image19.png"
-style="width:1.81234in;height:3.05764in" />Usage Report (credit
-consumption)
+style="width:1.81234in;height:3.05764in" />
+
+## Usage Report (credit consumption)
 
 * The **Usage report** page allows you to track total credit usage as well as usage by group.*
 
@@ -138,7 +138,7 @@ on the **Details** icon on the right hand side.
 <img src="./media/image21.png"
 style="width:7.06389in;height:3.01667in" />
 
-Invoices
+## Invoices
 
  *If you have made online purchases for Tosa assessment or certification credits online, this is where you will be able to view and/or download your invoice(s).*
 
@@ -159,7 +159,7 @@ You can download an invoice for any online purchase by clicking on
 
 # Managing the parameters
 
-Emails
+## Emails
 
 To notify students that they have been assigned a test, you are provided
 email options.
@@ -168,7 +168,8 @@ To setup your email options it is recommended that you start by setting
 up your email templates.
 
 <img src="./media/image25.png"
-style="width:7.19722in;height:2.89097in" />To access the email
+style="width:7.19722in;height:2.89097in" />
+To access the email
 templates, click **Parameters** on the main menu. Then click on
 **Emails.** The **E-mail model management** screen will appear by
 default.
@@ -218,10 +219,11 @@ save your changes. These settings apply to all email types
 <img src="./media/image31.png"
 style="width:6.24931in;height:4.86181in" />
 
-Email senders
+## Email senders
 
 <img src="./media/image33.png"
-style="width:5.92431in;height:2.71181in" />A sender is an email address
+style="width:5.92431in;height:2.71181in" />
+A sender is an email address
 that the system will use to send emails instead of the default email
 address **noreply@isograd.com**. This option allows email to be sent
 from an email address from your domain.
@@ -246,7 +248,7 @@ from Amazon Web Services. It will show **Pending** until verified and
 the process can take up to 45 minutes after the link has been clicked
 and the rights granted.
 
-Scheduled emails
+## Scheduled emails
 
 This is where you will see your scheduled emails. This option is set
 when you are about to send a test email invitation to your student(s)
@@ -256,7 +258,7 @@ when you are about to send a test email invitation to your student(s)
 style="width:4.02072in;height:1.89382in"
 alt="A screenshot of a computer Description automatically generated" />
 
-Adding a custom banner
+## Adding a custom banner
 
 You can personalize your emails by including your own banner or logo. To
 accomplish that, click on ***Email templates***, then **Add a custom
@@ -266,11 +268,12 @@ This will replace our Tosa default logo with your own.
 
 <img src="./media/image38.png"
 style="width:1.62308in;height:2.61276in"
-alt="A screenshot of a phone Description automatically generated" /><img src="./media/image39.png"
+alt="A screenshot of a phone Description automatically generated" />
+<img src="./media/image39.png"
 style="width:4.73322in;height:1.88682in"
 alt="A screenshot of a computer Description automatically generated" />
 
-Creating test sessions
+## Creating test sessions
 
 *A test session is a specific time period during which tests are required to be taken. Tests linked to a session will not be accessible outside of the scheduled testing session.*
 
@@ -342,7 +345,7 @@ through the **Parameters** menu.
 <img src="./media/image46.png"
 style="width:1.67361in;height:2.74215in" />
 
-**General settings**
+## **General settings**
 
 The **Manage default options** page will allow you to set the default
 settings for your account.
@@ -390,7 +393,7 @@ recommended to set the global value to 100%.
 
 Once you have customized your settings, click the **Save** button.
 
-Assessment settings
+## Assessment settings
 
 Set your assessment settings via the **Parameters** menu, then click on
 **Test options** and **Assessment settings**
@@ -414,7 +417,7 @@ level.
 
 Once you have customized your settings, click the **Save** button.
 
-Certification settings
+## Certification settings
 
 The **Certification settings** allow you to send the diploma to a
 student, as well as determine who receives a copy of the certification
@@ -426,7 +429,7 @@ style="width:2.86309in;height:2.34638in" />
 
 Once you have customized your settings, click the **Save** button.
 
-Expected Outcomes
+## Expected Outcomes
 
 Expected Outcomes allow you to set expected outcomes for
 training/education course outcomes.
@@ -445,9 +448,8 @@ Expected Outcomes can be set on each of the four or five main skill
 domains that students are assessed on.
 
 <img src="./media/image50.png"
-style="width:6.41181in;height:3.375in" />From the main menu select
-**Parameters** then page click on **Expected outcomes** and then click
-the blue **Add a profile** button.
+style="width:6.41181in;height:3.375in" />
+From the main menu select **Parameters** then page click on **Expected outcomes** and then click the blue **Add a profile** button.
 
 To add a profile, click on the blue **Add a profile** button.
 
@@ -476,7 +478,7 @@ Framework for your chosen application/exam.
 <img src="./media/image54.png"
 style="width:6.44028in;height:3.59028in" />
 
-Custom level description
+## Custom level description
 
 *You can modify the level description on each assessment test, according to the test subject family.*
 
@@ -506,8 +508,8 @@ These comments will appear on student reports, based on the student’s
 level of proficiency.
 
 <img src="./media/image59.png"
-style="width:4.90278in;height:1.53333in" />Here is an example of a
-Custom Level Description on a student’s assessment
+style="width:4.90278in;height:1.53333in" />
+Here is an example of a Custom Level Description on a student’s assessment
 
 # Managing candidates
 
@@ -530,7 +532,7 @@ subgroups and level 3 are subgroups to the level 2 subgroups.
 <img src="./media/image62.png"
 style="width:7.07847in;height:3.29653in" />
 
-Adding a new group
+## Adding a new group
 
 New main group (level 1):
 
@@ -580,13 +582,12 @@ alt="A screenshot of a computer Description automatically generated" />
 
 - Click on the **Add** button.
 
-Editing groups
+## Editing groups
 
 <img src="./media/image67.png"
 style="width:6.51179in;height:2.12205in"
-alt="A screenshot of a computer Description automatically generated" />From
-the **Group management** page, drag your cursor over the group of your
-choice to show the **Edit** and **Delete** icons.
+alt="A screenshot of a computer Description automatically generated" />
+From the **Group management** page, drag your cursor over the group of your choice to show the **Edit** and **Delete** icons.
 
 Clicking on the **Delete** icon permanently deletes a group. When a
 group is deleted, all of its students are sent to the default **Main
@@ -642,13 +643,13 @@ select **Candidates** from the main menu.
 <img src="./media/image72.png"
 style="width:1.59854in;height:2.40934in" />
 
-Adding multiple candidates at once
+## Adding multiple candidates at once
 
 *Importing an Excel file that contains your students’ details allows you to quickly upload up to 500 students at one time for a defined group.*
 
 <img src="./media/image73.png"
-style="width:6.93472in;height:2.31111in" />Click on **Import a candidate
-file**.
+style="width:6.93472in;height:2.31111in" />
+Click on **Import a candidate file**.
 
 In the **Add Multiple Candidates** window do the following:
 
@@ -675,18 +676,19 @@ In the **Add Multiple Candidates** window do the following:
     group(s)** box.
 
 6.  <img src="./media/image75.png"
-    style="width:5.86875in;height:3.36528in" /><img src="./media/image76.png"
-    style="width:5.86875in;height:3.36528in" />Now click **Upload**
+    style="width:5.86875in;height:3.36528in" />
+    <img src="./media/image76.png" style="width:5.86875in;height:3.36528in" />
+    Now click **Upload**
 
-Adding a single candidate
+## Adding a single candidate
 
 <img src="./media/image79.png"
-style="width:2.70833in;height:3.1625in" />To add a single student, click
-on **Add a candidate.** Fill in the required information
+style="width:2.70833in;height:3.1625in" />
+To add a single student, click on **Add a candidate.** Fill in the required information
 
 <img src="./media/image81.png"
-style="width:5.40139in;height:4.01458in" />Fill in the required
-information in the **Add a candidate** form.
+style="width:5.40139in;height:4.01458in" />
+Fill in the required information in the **Add a candidate** form.
 
 Each student must belong to at least one group (default is Main group)
 and they may belong to several groups as well.
@@ -707,7 +709,7 @@ certification exams. This is only available for certification exams
 taken in-house, and for students who require it (students with
 exceptionality).
 
-Registering candidate(s) to a test
+## Registering candidate(s) to a test
 
 To register students to a test, click on **Candidates** on the main
 menu.
@@ -717,8 +719,8 @@ style="width:1.83333in;height:3.43056in"
 alt="A screenshot of a phone Description automatically generated" />
 
 <img src="./media/image84.png"
-style="width:7.10764in;height:2.25347in" />To the right of the student’s
-email address, click on the **Edit** icon.
+style="width:7.10764in;height:2.25347in" />
+To the right of the student’s email address, click on the **Edit** icon.
 
 The student record page will display. If the student has taken a test or
 has pending tests they will appear here. You will also be redirected to
@@ -726,8 +728,8 @@ this page after creating a student.
 
 <img src="./media/image86.png"
 style="width:5.88125in;height:3.375in"
-alt="A screenshot of a computer Description automatically generated" />Click
-on **Register to a test** and choose the following:
+alt="A screenshot of a computer Description automatically generated" />
+Click on **Register to a test** and choose the following:
 
 1)  **Language** of the test
 
@@ -769,7 +771,7 @@ style="width:6.34425in;height:1.01042in" />
 If you delete a pending test, the test credit is automatically returned
 to your account.
 
-Sending an individual test invitation
+## Sending an individual test invitation
 
 Once a test or multiple tests have been assigned to an individual
 student, a test invitation email must be sent out.
@@ -802,7 +804,7 @@ sent at a later date.
 Once you click **Send**, the invitation email is sent, and the student
 can access the test(s).
 
-Group actions
+## Group actions
 
 <img src="./media/image92.png"
 style="width:3.47847in;height:3.57757in" />
@@ -832,7 +834,7 @@ specific group. The tasks that can be performed include:
 The two main tasks performed at the group level are registering the
 group for a test and sending registration emails.
 
-Registering all candidates in a group to a test
+### Registering all candidates in a group to a test
 
 Use the ***Register all candidates in the group to a test*** option to
 save time and ensure that all students in the selected group are
@@ -876,20 +878,15 @@ Click **Register** if you are registering a student for multiple tests,
 then continue to register for any additional tests. Click **Register and
 close** if you want to assign a single test to a student.
 
-Sending an invitation email to a group
+### Sending an invitation email to a group
 
 <img src="./media/image93.png"
-style="width:4.62014in;height:3.57361in" />Once you have assigned a test
-to a group, it’s time to send an invitation email. Assuming all members
-of the group will be taking the same test(s), you can use **Send
-registration emails to all candidates in the group**.
+style="width:4.62014in;height:3.57361in" />
+Once you have assigned a test to a group, it’s time to send an invitation email. Assuming all members of the group will be taking the same test(s), you can use **Send registration emails to all candidates in the group**.
 
 <img src="./media/image96.png"
-style="width:5.4875in;height:2.91944in" />The **Message Details** window
-opens. Edit your email subject, choose your email template, sender email
-address (if you have entered one). You can send a copy of the email to
-another administrator or to yourself. When you are ready, click
-**Send**.
+style="width:5.4875in;height:2.91944in" />
+The **Message Details** window opens. Edit your email subject, choose your email template, sender email address (if you have entered one). You can send a copy of the email to another administrator or to yourself. When you are ready, click **Send**.
 
 Once you click send, the invitation email will be sent to each student,
 providing them the link, their credentials and the test(s) that you have
@@ -899,7 +896,7 @@ If you do not want to send your invitation email to your group right
 away, you can have the system send it at a later date by selecting
 **Schedule sending**.
 
-Other group actions
+### Other group actions
 
 **Group actions** also allow you to:
 
@@ -916,9 +913,8 @@ Allows you to customize the assessment/certification options for a
 defined group.
 
 <img src="./media/image93.png"
-style="width:5.06181in;height:3.91458in" />**(4) Delete Selected
-candidates.** Choose this option if you want to delete the groups’
-selected students.
+style="width:5.06181in;height:3.91458in" />
+**(4) Delete Selected candidates.** Choose this option if you want to delete the groups’ selected students.
 
 # Managing results
 
@@ -929,9 +925,8 @@ The platform provides you with full insight into the tests’ results.
 Results are available for both individuals and groups.
 
 <img src="./media/image97.png"
-style="width:3.22847in;height:4.53333in" />To access the results data,
-Click on **Results** in the main menu.
-
+style="width:3.22847in;height:4.53333in" />
+To access the results data, Click on **Results** in the main menu.
 You can search within the data and filter by:
 
 ####### (1) Group/subgroup
@@ -950,18 +945,18 @@ Click **Filter** to validate your choices.
 
 All results can be exported into an Excel file.
 
-Individual Results
+## Individual Results
 
 <img src="./media/image99.png"
-style="width:6.92014in;height:2.16528in" />To review a specific
-student's results:
+style="width:6.92014in;height:2.16528in" />
+To review a specific student's results:
 
 Form the **Results** menu, input their name or email into the search
 field.
 
 <img src="./media/image101.png"
-style="width:6.83056in;height:1.13333in" />Once the student’s results
-have loaded, click on the **Analysis** icon.
+style="width:6.83056in;height:1.13333in" />
+Once the student’s results have loaded, click on the **Analysis** icon.
 
 The Test analysis screen will open, showing student’s skill level and
 summary
@@ -1046,9 +1041,8 @@ alt="A screenshot of a survey Description automatically generated" />
 style="width:6.3in;height:2.44306in"
 alt="A screenshot of a computer Description automatically generated" />
 
-####### 
 
-Group Reports
+## Group Reports
 
 **Group Reports** allow administrators to get more insights about their
 groups and students.
@@ -1138,7 +1132,7 @@ style="width:4.75in;height:1.92493in" />
 <img src="./media/image133.png"
 style="width:5.73077in;height:2.54482in" />
 
-Certificate of attendance
+## Certificate of attendance
 
 <img src="./media/image134.png"
 style="width:4.13403in;height:5.30139in" />You will be able to download
@@ -1160,7 +1154,7 @@ Choose the type of certificate you want to generate (individual or
 all-in-one) and select whether or not you want the score to be
 displayed. Click on **Generate**.
 
-Incidents
+## Incidents
 
 <img src="./media/image136.png"
 style="width:1.96458in;height:3.73958in" />
@@ -1190,9 +1184,9 @@ validated the error.
 
 # Support
 
-#  
+ 
 
-Help
+## Help
 
 <img src="./media/image140.png"
 style="width:2.26389in;height:3.54167in"
@@ -1213,13 +1207,13 @@ In this Help section, you will be able to find the following:
 
 - Tosa Platform manual
 
-Technical configuration
+## Technical configuration
 
 <img src="./media/image141.png"
 style="width:6.62778in;height:1.81667in" />The **Find my browser
 version’s button** will display your browser’s current version.
 
-Technical Configuration mini test
+## Technical Configuration mini test
 
 <img src="./media/image143.png"
 style="width:4.70486in;height:1.45486in" />Run a 3 questions test to
