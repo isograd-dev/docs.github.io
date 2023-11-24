@@ -954,17 +954,17 @@ style="width:3.22847in;height:4.53333in" />
 To access the results data, Click on **Results** in the main menu.
 You can search within the data and filter by:
 
-###### (1) Group/subgroup
+(1) Group/subgroup
 
-###### (2) Test status (All, completed, pending, grade pending, started)
+(2) Test status (All, completed, pending, grade pending, started)
 
-###### (3) Test type (assessments or certifications)
+(3) Test type (assessments or certifications)
 
-###### (4) Session
+(4) Session
 
-###### (5) Remote proctored or not
+(5) Remote proctored or not
 
-###### (6) Date range
+(6) Date range
 
 Click **Filter** to validate your choices.
 
