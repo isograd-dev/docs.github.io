@@ -74,6 +74,8 @@ Types of administrators
 
 <img src="./media/image15.png"
 style="width:4.95278in;height:1.02083in" />
+
+
 There are 3 types of administrators on the platform:
 
 - **Account manager:** The account manager has complete administrative
