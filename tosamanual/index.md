@@ -352,7 +352,7 @@ through the **Parameters** menu.
 <img src="./media/image46.png"
 style="width:1.67361in;height:2.74215in" />
 
-## **General settings**
+## General settings
 
 The **Manage default options** page will allow you to set the default
 settings for your account.
