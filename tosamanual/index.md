@@ -18,7 +18,8 @@ on Your Account – then choose Administrator from the popup menu.
 
 <img src="./media/image4.png"
 style="width:5.98333in;height:0.675in" /><img src="./media/image6.png"
-style="width:6.18958in;height:2.88958in" />Enter your email address and
+style="width:6.18958in;height:2.88958in" />
+Enter your email address and
 your password, then click on **Log In**.
 
 If you do not know what your password is, click on the **Lost password**
