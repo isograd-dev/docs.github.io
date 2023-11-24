@@ -1,11 +1,12 @@
-<h1 style="font-size:30px;">Tosa Manual</h1>
+<h1 style="font-size:60px;">Tosa Manual</h1>
 
-
-
-
-
-
+<div id="toc">
+ 
+* TOC
+{:toc}
+ 
 </div>
+
 
 # First steps on the Tosa Platform
 
