@@ -20,6 +20,7 @@ on Your Account – then choose Administrator from the popup menu.
 <img src="./media/image4.png"
 style="width:5.98333in;height:0.675in" /><img src="./media/image6.png"
 style="width:6.18958in;height:2.88958in" />
+
 Enter your email address and
 your password, then click on **Log In**.
 
@@ -58,7 +59,7 @@ style="width:1.81944in;height:3.14641in" />
 *The administrators manage groups. Each group requires one administrator.*
 
 
-##Adding an administrator
+## Adding an administrator
 
 To access the **Administrators management** tools, click **Account** on
 the main menu. Then click on Click on **Administrators** in the submenu.
@@ -174,8 +175,8 @@ up your email templates.
 
 <img src="./media/image25.png"
 style="width:7.19722in;height:2.89097in" />
-To access the email
-templates, click **Parameters** on the main menu. Then click on
+
+To access the email templates, click **Parameters** on the main menu. Then click on
 **Emails.** The **E-mail model management** screen will appear by
 default.
 
@@ -228,6 +229,7 @@ style="width:6.24931in;height:4.86181in" />
 
 <img src="./media/image33.png"
 style="width:5.92431in;height:2.71181in" />
+
 A sender is an email address
 that the system will use to send emails instead of the default email
 address **noreply@isograd.com**. This option allows email to be sent
@@ -247,7 +249,9 @@ Services** asking them to grant the right to send emails on their
 behalf.
 
 <img src="./media/image36.png"
-style="width:5.64306in;height:2.57361in" />The email address must be
+style="width:5.64306in;height:2.57361in" />
+
+The email address must be
 verified by the recipient by clicking the link provided in the email
 from Amazon Web Services. It will show **Pending** until verified and
 the process can take up to 45 minutes after the link has been clicked
@@ -454,6 +458,7 @@ domains that students are assessed on.
 
 <img src="./media/image50.png"
 style="width:6.41181in;height:3.375in" />
+
 From the main menu select **Parameters** then page click on **Expected outcomes** and then click the blue **Add a profile** button.
 
 To add a profile, click on the blue **Add a profile** button.
@@ -514,6 +519,7 @@ level of proficiency.
 
 <img src="./media/image59.png"
 style="width:4.90278in;height:1.53333in" />
+
 Here is an example of a Custom Level Description on a student’s assessment
 
 # Managing candidates
@@ -654,6 +660,7 @@ style="width:1.59854in;height:2.40934in" />
 
 <img src="./media/image73.png"
 style="width:6.93472in;height:2.31111in" />
+
 Click on **Import a candidate file**.
 
 In the **Add Multiple Candidates** window do the following:
@@ -683,16 +690,21 @@ In the **Add Multiple Candidates** window do the following:
 6.  <img src="./media/image75.png"
     style="width:5.86875in;height:3.36528in" />
     <img src="./media/image76.png" style="width:5.86875in;height:3.36528in" />
+    
     Now click **Upload**
 
 ## Adding a single candidate
 
 <img src="./media/image79.png"
 style="width:2.70833in;height:3.1625in" />
-To add a single student, click on **Add a candidate.** Fill in the required information
+
+To add a single student, click on **Add a candidate.** 
+
+Fill in the required information
 
 <img src="./media/image81.png"
 style="width:5.40139in;height:4.01458in" />
+
 Fill in the required information in the **Add a candidate** form.
 
 Each student must belong to at least one group (default is Main group)
@@ -725,6 +737,7 @@ alt="A screenshot of a phone Description automatically generated" />
 
 <img src="./media/image84.png"
 style="width:7.10764in;height:2.25347in" />
+
 To the right of the student’s email address, click on the **Edit** icon.
 
 The student record page will display. If the student has taken a test or
@@ -734,6 +747,8 @@ this page after creating a student.
 <img src="./media/image86.png"
 style="width:5.88125in;height:3.375in"
 alt="A screenshot of a computer Description automatically generated" />
+
+
 Click on **Register to a test** and choose the following:
 
 1)  **Language** of the test
@@ -785,7 +800,7 @@ Start by selecting **Candidates** from the main menu. Then choose your
 student in the list or by inputting their name or email address in the
 **Search field** of the **Filters**.
 
-click on the **Edit** icon.
+Click on the **Edit** icon.
 
 <img src="./media/image89.png"
 style="width:6.52315in;height:2.20226in" />
@@ -795,6 +810,7 @@ candidate**.
 
 <img src="./media/image90.png"
 style="width:6.9in;height:3.3125in" />
+
 
 The **Message Details** window opens. Edit your email subject, choose
 your email template, sender email address (if you have entered one). You
@@ -887,10 +903,13 @@ close** if you want to assign a single test to a student.
 
 <img src="./media/image93.png"
 style="width:4.62014in;height:3.57361in" />
+
 Once you have assigned a test to a group, it’s time to send an invitation email. Assuming all members of the group will be taking the same test(s), you can use **Send registration emails to all candidates in the group**.
 
 <img src="./media/image96.png"
 style="width:5.4875in;height:2.91944in" />
+
+
 The **Message Details** window opens. Edit your email subject, choose your email template, sender email address (if you have entered one). You can send a copy of the email to another administrator or to yourself. When you are ready, click **Send**.
 
 Once you click send, the invitation email will be sent to each student,
@@ -917,9 +936,11 @@ tests, all credits will be returned to your credit bank.
 Allows you to customize the assessment/certification options for a
 defined group.
 
+**(4) Delete Selected candidates.** Choose this option if you want to delete the groups’ selected students.
+
 <img src="./media/image93.png"
 style="width:5.06181in;height:3.91458in" />
-**(4) Delete Selected candidates.** Choose this option if you want to delete the groups’ selected students.
+
 
 # Managing results
 
@@ -931,20 +952,21 @@ Results are available for both individuals and groups.
 
 <img src="./media/image97.png"
 style="width:3.22847in;height:4.53333in" />
+
 To access the results data, Click on **Results** in the main menu.
 You can search within the data and filter by:
 
-####### (1) Group/subgroup
+###### (1) Group/subgroup
 
-####### (2) Test status (All, completed, pending, grade pending, started)
+###### (2) Test status (All, completed, pending, grade pending, started)
 
-####### (3) Test type (assessments or certifications)
+###### (3) Test type (assessments or certifications)
 
-####### (4) Session
+###### (4) Session
 
-####### (5) Remote proctored or not
+###### (5) Remote proctored or not
 
-####### (6) Date range
+###### (6) Date range
 
 Click **Filter** to validate your choices.
 
@@ -954,6 +976,7 @@ All results can be exported into an Excel file.
 
 <img src="./media/image99.png"
 style="width:6.92014in;height:2.16528in" />
+
 To review a specific student's results:
 
 Form the **Results** menu, input their name or email into the search
@@ -1053,7 +1076,9 @@ alt="A screenshot of a computer Description automatically generated" />
 groups and students.
 
 <img src="./media/image114.png"
-style="width:3.72431in;height:2.11389in" />Group reports are accessed
+style="width:3.72431in;height:2.11389in" />
+
+Group reports are accessed
 from the **Results** menu.
 
 The administrator must select a set group from the group dropdown menu.
@@ -1140,7 +1165,9 @@ style="width:5.73077in;height:2.54482in" />
 ## Certificate of attendance
 
 <img src="./media/image134.png"
-style="width:4.13403in;height:5.30139in" />You will be able to download
+style="width:4.13403in;height:5.30139in" />
+
+You will be able to download
 certificates of attendance from the **Certificate of attendance**
 submenu under **Results** in the main menu.
 
@@ -1172,7 +1199,9 @@ their diploma.
 To do so, click on **Results**, then click **Incidents**.
 
 <img src="./media/image138.png"
-style="width:6.53194in;height:2.86806in" />The **Fullscreen error**
+style="width:6.53194in;height:2.86806in" />
+
+The **Fullscreen error**
 window will open. The pending status test will be marked for you to
 describe the origin of the issue(s). To do so, click on the **Magnifying
 glass** icon, and input the reason(s) for the interruption.
@@ -1215,13 +1244,17 @@ In this Help section, you will be able to find the following:
 ## Technical configuration
 
 <img src="./media/image141.png"
-style="width:6.62778in;height:1.81667in" />The **Find my browser
+style="width:6.62778in;height:1.81667in" />
+
+The **Find my browser
 version’s button** will display your browser’s current version.
 
 ## Technical Configuration mini test
 
 <img src="./media/image143.png"
-style="width:4.70486in;height:1.45486in" />Run a 3 questions test to
+style="width:4.70486in;height:1.45486in" />
+
+Run a 3 questions test to
 check your computer, browser and network’s compatibility with the Tosa
 platform. Click the **Verify** button
 
@@ -1247,5 +1280,4 @@ system will be running the test(s) smoothly.
 If any technical issues arise, do not hesitate to contact **Isograd
 Support Team** at <support@isograd.com>.
 
-<img src="./media/image2.png"
-style="width:8.40903in;height:12.26042in" />
+
