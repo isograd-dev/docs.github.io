@@ -1,11 +1,9 @@
-<img src="./media/image2.png"
-style="width:9.12361in;height:13.3in" /><img src="./media/image3.png"
-style="width:3.75139in;height:1.76667in" />
+# **Tosa Manual**
 
-<div id="toc">
 
-* TOC
-{:toc}
+
+
+
 
 </div>
 
