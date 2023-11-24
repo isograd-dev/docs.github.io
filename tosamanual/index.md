@@ -1,6 +1,6 @@
 <h1 style="font-size:60px;">Tosa Manual</h1>
 
-# First steps on the Tosa Platform
+
 
 <div id="toc">
  
@@ -10,7 +10,7 @@
 </div>
 
 
-
+# First steps on the Tosa Platform
 
 ## Logging into the Tosa Platform
 
