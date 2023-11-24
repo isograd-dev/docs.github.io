@@ -29,8 +29,6 @@ link. A password change link will be automatically emailed to you.
 
 ## Navigate the Tosa Platform
 
-<img src="./media/image8.png"
-style="width:6.04514in;height:5.28681in" />
 
 The main menu allows you to access to the five submenus on the Tosa platform, which allows you to manage your Tosa account.
 
