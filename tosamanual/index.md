@@ -35,9 +35,9 @@ The main menu allows you to access to the five submenus on the Tosa platform, wh
 # Managing your account
 
 ## Details
-
 <img src="./media/image10.png"
 style="width:2.15826in;height:3.1778in" />
+
 
 *You will find below all the information regarding your account and your
 administrator profile.*
@@ -50,9 +50,10 @@ results reports.
 style="width:6.66055in;height:4.78611in" />
 
 ## Administrators
-
+<div style="text-align:center">
 <img src="./media/image13.png"
 style="width:1.81944in;height:3.14641in" />
+</div>
 
 *The administrators manage groups. Each group requires one administrator.*
 
