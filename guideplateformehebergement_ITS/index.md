@@ -3,11 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
-
-<style>
-  
-</style>
-
 <div id="toc">
 
 * TOC
@@ -16,7 +11,7 @@ layout: home
 </div>
 
 <div id="content">
-#Introduction au manuel
+# Introduction au manuel
 
 Ce livret a pour objet la présentation de la plateforme Preprod ainsi que la présentation de la rédaction des questions et de leur traduction dans les diverses langues des tests en vue d’harmoniser les contenus et d’assurer une homogénéité de la banque de questions Isograd. 
 
@@ -34,6 +29,6 @@ Dans un second temps, nous aborderons la charte éditoriale pour la création de
 
 - Les solutions
 
-![] (/Images/image006.jpg)
+![](/Images/image006.jpg)
 
 </div>
