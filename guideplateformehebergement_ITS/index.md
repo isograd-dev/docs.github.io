@@ -57,7 +57,8 @@ anglais, cette partie est absente pour les autres langues.*
 
 Voici une vue d'ensemble de la plateforme une fois connecté.e :
 
-![](/media/image10.png)
+![](./media/image10.png)
+
 La plateforme permet de :
 
 -   Gérer la base de questions (ajouter des questions, éditer des
@@ -78,7 +79,7 @@ La plateforme permet de :
 
 ## Menu «  Questions »
 
-![](/media/image11.png)
+![](./media/image11.png)
 
 Ce menu permet :
 
@@ -97,7 +98,7 @@ Ce menu permet :
 
 ![Une image contenant texte, Police, capture d'écran, conception Le
 contenu généré par l'IA peut être
-incorrect.](/media/image12.png)
+incorrect.](./media/image12.png)
 
 Ce menu permet :
 
@@ -115,15 +116,15 @@ domaines ».**
 
 ![Une image contenant texte, capture d'écran, Police, blanc Description
 générée
-automatiquement](/media/image13.png)
+automatiquement](./media/image13.png)
 
 Ce menu permet de créer un nouveau sujet ou encore d'éditer ou supprimer
 ceux déjà existants. On retrouve par ailleurs le sujet dans les filtres
 en haut de la page d'accueil.![Une image contenant texte, capture
 d'écran, ligne, Police Le contenu généré par l'IA peut être
-incorrect.](/media/image14.png)
+incorrect.](./media/image14.png)
 
-![](/media/image15.png)
+![](./media/image15.png)
 
 **Le process de gestion des sujets est détaillé dans le chapitre
 « Gestion des sujets ».**
@@ -137,7 +138,7 @@ documents que vous pourrez utiliser dans vos questions. Les aides
 visuelles sont associées à un sujet et ne sont disponibles que pour le
 sujet concerné.
 
-![](/media/image16.png)
+![](./media/image16.png)
 
 Voici deux exemples d'aides visuelles encadrés en bleu. Le premier est
 un menu accessible via une loupe, le second est un bouton du ruban
@@ -145,13 +146,13 @@ Excel.
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](/media/image17.jpeg)
+incorrect.](./media/image17.jpeg)
 
 ## Menu Gestion des Candidats
 
 ![Une image contenant texte, capture d'écran, Police, conception Le
 contenu généré par l'IA peut être
-incorrect.](/media/image18.png)
+incorrect.](./media/image18.png)
 
 Ce menu permet la gestion des candidats : inscriptions aux tests,
 gestion des groupes, gestion des sessions, profils par compétences,
@@ -162,7 +163,7 @@ dans le chapitre « Gestion des candidats ».**
 
 ## Bouton « Déconnexion » 
 
-![](/media/image19.png)
+![](./media/image19.png)
 
 Permet à l'administrateur de se déconnecter de la plateforme.
 
@@ -174,7 +175,7 @@ Permet à l'administrateur de se déconnecter de la plateforme.
 
 ![Une image contenant texte, capture d'écran, nombre, logiciel Le
 contenu généré par l'IA peut être
-incorrect.](/media/image20.png)
+incorrect.](./media/image20.png)
 
 Options de filtres disponibles pour permettre une gestion plus fluide
 des questions :
@@ -211,7 +212,7 @@ Pour ce faire vous devez :
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image21.png)
+incorrect.](./media/image21.png)
 
 Ces onglets permettent les actions suivantes :
 
@@ -228,7 +229,7 @@ Ces onglets permettent les actions suivantes :
 
 ![Une image contenant texte, capture d'écran, nombre, Police Le contenu
 généré par l'IA peut être
-incorrect.](/media/image22.png)
+incorrect.](./media/image22.png)
 
 Informations du tableau des questions :
 
@@ -262,9 +263,9 @@ Informations du tableau des questions :
 ***QCM Texte Réponse unique*** : Le candidat doit cocher la bonne
 réponse.
 
-##### ![Une image contenant texte, capture d'écran, logiciel, Logiciel multimédia Le contenu généré par l'IA peut être incorrect.](/media/image23.jpeg)Mode Aperçu :
+##### ![Une image contenant texte, capture d'écran, logiciel, Logiciel multimédia Le contenu généré par l'IA peut être incorrect.](./media/image23.jpeg)Mode Aperçu :
 
-##### Mode Edition : ![Une image contenant texte, capture d'écran, Police, diagramme Le contenu généré par l'IA peut être incorrect.](/media/image24.png)
+##### Mode Edition : ![Une image contenant texte, capture d'écran, Police, diagramme Le contenu généré par l'IA peut être incorrect.](./media/image24.png)
 
 **QCM Texte Réponses multiples** : Le candidat doit cocher la ou les
 bonnes réponses.
@@ -273,17 +274,17 @@ bonnes réponses.
 
 ![Une image contenant texte, Appareils électroniques, capture d'écran,
 Page web Le contenu généré par l'IA peut être
-incorrect.](/media/image25.png)
+incorrect.](./media/image25.png)
 
 ##### Mode Edition : 
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image26.png)
+incorrect.](./media/image26.png)
 
 ![Une image contenant texte, Police, ligne, nombre Le contenu généré par
 l'IA peut être
-incorrect.](/media/image27.png)
+incorrect.](./media/image27.png)
 
 **QCM Texte Réponse une parmi plusieurs** : Le candidat doit cocher une
 bonne réponse parmi celles proposées. Pour ce type de question, il peut
@@ -293,17 +294,17 @@ En mode aperçu :
 
 ![Une image contenant texte, Appareils électroniques, capture d'écran,
 ordinateur Le contenu généré par l'IA peut être
-incorrect.](/media/image28.png)
+incorrect.](./media/image28.png)
 
 ##### Mode Edition : 
 
 ![Une image contenant texte, Police, ligne, nombre Le contenu généré par
 l'IA peut être
-incorrect.](/media/image29.png)
+incorrect.](./media/image29.png)
 
 ![Une image contenant texte, Police, document, nombre Le contenu généré
 par l'IA peut être
-incorrect.](/media/image30.png)
+incorrect.](./media/image30.png)
 
 **QCM réponse en image** : Le candidat doit sélectionner la bonne
 réponse (une seule réponse possible) parmi les images proposées.
@@ -312,17 +313,17 @@ réponse (une seule réponse possible) parmi les images proposées.
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](/media/image31.png)
+incorrect.](./media/image31.png)
 
 ##### Mode Edition : 
 
 ![Une image contenant texte, capture d'écran, nombre, Police Le contenu
 généré par l'IA peut être
-incorrect.](/media/image32.png)
+incorrect.](./media/image32.png)
 
 ![Une image contenant texte, ligne, capture d'écran, Police Le contenu
 généré par l'IA peut être
-incorrect.](/media/image33.png)
+incorrect.](./media/image33.png)
 
 ### Les cliquer sur zone(s)
 
@@ -335,17 +336,17 @@ répondre à la question.
 
 ![Une image contenant texte, logiciel, Icône d'ordinateur, Page web Le
 contenu généré par l'IA peut être
-incorrect.](/media/image34.png)
+incorrect.](./media/image34.png)
 
 ##### 
 
 #####  Mode Edition (exemple de code yaml)  : 
 
-##### ![Une image contenant texte, capture d'écran, Police, logiciel Le contenu généré par l'IA peut être incorrect.](/media/image35.png)
+##### ![Une image contenant texte, capture d'écran, Police, logiciel Le contenu généré par l'IA peut être incorrect.](./media/image35.png)
 
 ![Une image contenant texte, capture d'écran, ligne, Police Le contenu
 généré par l'IA peut être
-incorrect.](/media/image36.png)
+incorrect.](./media/image36.png)
 
 #### **Multi click :** : Le candidat doit cliquer sur toutes les zones concernées.
 
@@ -353,17 +354,17 @@ incorrect.](/media/image36.png)
 
 ![Une image contenant texte, capture d'écran, Parallèle, nombre Le
 contenu généré par l'IA peut être
-incorrect.](/media/image37.png)
+incorrect.](./media/image37.png)
 
 Mode Edition (avec code yaml) :
 
 ![Une image contenant texte, Police, nombre, ligne Le contenu généré par
 l'IA peut être
-incorrect.](/media/image38.png)
+incorrect.](./media/image38.png)
 
 ![Une image contenant texte, capture d'écran, ligne Le contenu généré
 par l'IA peut être
-incorrect.](/media/image39.png)
+incorrect.](./media/image39.png)
 
 ### Glisser-déposer
 
@@ -374,17 +375,17 @@ dans la zone de droite.
 
 ![Une image contenant texte, capture d'écran, conception Le contenu
 généré par l'IA peut être
-incorrect.](/media/image40.png)
+incorrect.](./media/image40.png)
 
 Mode Edition :  (exemple de code yaml) :
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le contenu
 généré par l'IA peut être
-incorrect.](/media/image41.png)
+incorrect.](./media/image41.png)
 
 ![Une image contenant texte, capture d'écran, ligne Le contenu généré
 par l'IA peut être
-incorrect.](/media/image42.png)
+incorrect.](./media/image42.png)
 
 ### Relier les éléments
 
@@ -394,17 +395,17 @@ Le candidat doit relier les éléments de gauche avec ceux de droite.
 
 ![Une image contenant texte, capture d'écran, ordinateur, gadget Le
 contenu généré par l'IA peut être
-incorrect.](/media/image43.png)
+incorrect.](./media/image43.png)
 
 ##### Mode Edition ( avec code yaml) : 
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le contenu
 généré par l'IA peut être
-incorrect.](/media/image44.png)
+incorrect.](./media/image44.png)
 
 ![Une image contenant texte, capture d'écran, logiciel Le contenu généré
 par l'IA peut être
-incorrect.](/media/image45.png)
+incorrect.](./media/image45.png)
 
 ### Trier les éléments
 
@@ -416,17 +417,17 @@ En mode aperçu :
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image46.png)
+incorrect.](./media/image46.png)
 
 En mode Edition (avec code yaml) :
 
 ![Une image contenant texte, Police, ligne, nombre Le contenu généré par
 l'IA peut être
-incorrect.](/media/image47.png)
+incorrect.](./media/image47.png)
 
 ![Une image contenant texte, logiciel, capture d'écran Le contenu généré
 par l'IA peut être
-incorrect.](/media/image48.png)
+incorrect.](./media/image48.png)
 
 ### Les zones de texte à remplir
 
@@ -441,17 +442,17 @@ commentée par une personne physique après le passage du test.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image49.png)
+incorrect.](./media/image49.png)
 
 ##### En mode Edition (avec code yaml) : 
 
 ![Une image contenant texte, Police, nombre, ligne Le contenu généré par
 l'IA peut être
-incorrect.](/media/image50.png)
+incorrect.](./media/image50.png)
 
 ![Une image contenant texte, ligne, capture d'écran Le contenu généré
 par l'IA peut être
-incorrect.](/media/image51.png)
+incorrect.](./media/image51.png)
 
 **Zone de texte évaluée par l'IA :** Le candidat doit saisir sa ou ses
 réponses dans l'encadré ou les encadrés prévus à cet effet. Le texte
@@ -461,17 +462,17 @@ soumis sera vérifié et évalué par l'intelligence artificielle.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image52.png)
+incorrect.](./media/image52.png)
 
 ##### En mode Edition (avec code yaml) : 
 
 ![Une image contenant texte, Police, nombre, capture d'écran Le contenu
 généré par l'IA peut être
-incorrect.](/media/image53.png)
+incorrect.](./media/image53.png)
 
 ![Une image contenant texte, ligne, capture d'écran Le contenu généré
 par l'IA peut être
-incorrect.](/media/image54.png)
+incorrect.](./media/image54.png)
 
 #### 
 
@@ -488,17 +489,17 @@ points défini par le créateur de la question.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image55.png)
+incorrect.](./media/image55.png)
 
 ##### En mode Edition : 
 
 ![Une image contenant texte, capture d'écran, nombre, Police Le contenu
 généré par l'IA peut être
-incorrect.](/media/image56.png)
+incorrect.](./media/image56.png)
 
 ![Une image contenant texte, ligne, capture d'écran, Police Le contenu
 généré par l'IA peut être
-incorrect.](/media/image57.png)
+incorrect.](./media/image57.png)
 
 ##### 
 
@@ -506,17 +507,17 @@ incorrect.](/media/image57.png)
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le contenu
 généré par l'IA peut être
-incorrect.](/media/image58.png)
+incorrect.](./media/image58.png)
 
 ##### En mode Edition (avec code yaml) : 
 
 ![Une image contenant texte, capture d'écran, nombre, ligne Le contenu
 généré par l'IA peut être
-incorrect.](/media/image59.png)
+incorrect.](./media/image59.png)
 
 ![Une image contenant texte, ligne, capture d'écran, Police Le contenu
 généré par l'IA peut être
-incorrect.](/media/image60.png)
+incorrect.](./media/image60.png)
 
 []{#_Toc193360153 .anchor}Enregistrements audio
 
@@ -540,29 +541,29 @@ l'intelligence artificielle.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image61.png)
+incorrect.](./media/image61.png)
 
 ##### En mode Edition : 
 
 ![Une image contenant texte, capture d'écran, nombre, ligne Le contenu
 généré par l'IA peut être
-incorrect.](/media/image62.png)
+incorrect.](./media/image62.png)
 
 ##### En mode Aperçu : 
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image63.png)
+incorrect.](./media/image63.png)
 
 ##### En mode Edition (avec code yaml) : 
 
 ![Une image contenant texte, Police, nombre, ligne Le contenu généré par
 l'IA peut être
-incorrect.](/media/image64.png)
+incorrect.](./media/image64.png)
 
 ![Une image contenant texte, ligne, capture d'écran Le contenu généré
 par l'IA peut être
-incorrect.](/media/image65.png)
+incorrect.](./media/image65.png)
 
 ## Création des questions
 
@@ -579,7 +580,7 @@ suivants :
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le
 contenu généré par l'IA peut être
-incorrect.](/media/image66.png)
+incorrect.](./media/image66.png)
 
 ### Éditer une question
 
@@ -608,7 +609,7 @@ ou de modifier une question. Il est composé de plusieurs parties.
 
 ![Une image contenant texte, capture d'écran, Police, ligne Le contenu
 généré par l'IA peut être
-incorrect.](/media/image67.png)
+incorrect.](./media/image67.png)
 
 #### **Question et réponses**
 
@@ -640,7 +641,7 @@ ci-dessus.**  
 
 ![Une image contenant texte, capture d'écran, nombre, logiciel Le
 contenu généré par l'IA peut être
-incorrect.](/media/image68.png)
+incorrect.](./media/image68.png)
 
 #### 
 
@@ -654,14 +655,14 @@ l\'IA.
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](/media/image69.png)
+incorrect.](./media/image69.png)
 
 #### **Informations additionnelles pour les requêtes IA**
 
 Ce champs permet de prompter les informations nécessaire à l'IA pour les
 questions analysées par l'IA ;
 
-![](/media/image70.png)
+![](./media/image70.png)
 
 #### **Informations de revue**
 
@@ -672,7 +673,7 @@ d'échanger des commentaires sur la question.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image71.png)
+incorrect.](./media/image71.png)
 
 ### Actions possibles sur les questions
 
@@ -691,12 +692,12 @@ qu'il faut corriger avant d'enregistrer.
 
 ![Une image contenant capture d'écran, texte, logiciel, Logiciel
 multimédia Le contenu généré par l'IA peut être
-incorrect.](/media/image72.png)
+incorrect.](./media/image72.png)
 
 Il est aussi possible de dupliquer une question via le ruban en haut de
 l'écran en mode Edition :
 
-![](/media/image73.png)
+![](./media/image73.png)
 
 #### **Supprimer une question**
 
@@ -704,7 +705,7 @@ Pour supprimer une question, il suffit de se positionner sur cette
 dernière dans la liste des questions de la page
 
 d'accueil. Quatre boutons d'action apparaissent :
-![](/media/image74.png)
+![](./media/image74.png)
 
 Cliquer sur « Supprimer ». La page d'édition de la question s'ouvre et
 dans le menu latéral à droite, cliquer de nouveau sur le bouton «
@@ -733,7 +734,7 @@ une question :
 ##### Images
 
 ![A close-up of a computer screen Description automatically
-generated](/media/image75.jpeg)Tous les fichiers doivent être stockés sur
+generated](./media/image75.jpeg)Tous les fichiers doivent être stockés sur
 un serveur. Le chemin sur le serveur est par défaut indiqué sur Preprod
 comme ci-dessous :
 
@@ -766,13 +767,13 @@ Pour être intégrés à la question il faut :
     soient uploadés sur les serveurs.
 
 ![Une image contenant texte Description générée
-automatiquement](/media/image77.jpeg)
+automatiquement](./media/image77.jpeg)
 
 ## Gestion des jeux de questions et gestion des domaines
 
 ![Une image contenant texte, capture d'écran, Police, conception Le
 contenu généré par l'IA peut être
-incorrect.](/media/image78.png)
+incorrect.](./media/image78.png)
 
 ###  Gestion des jeux de questions
 
@@ -788,13 +789,13 @@ page qui permet d'ajouter un jeu de questions, et de l'exporter vers
 Excel. A partir de cette page vous pouvez aussi ajouter des jeux de
 questions.
 
-![](/media/image79.png)
+![](./media/image79.png)
 
 Ajouter un jeu de questions :
 
 ![Une image contenant texte, capture d'écran, Police, carte de visite Le
 contenu généré par l'IA peut être
-incorrect.](/media/image80.png)
+incorrect.](./media/image80.png)
 
 Pour ajouter un jeu de question, cliquer sur « Ajouter un jeu de
 question ». Cela vous redirige vers la page « Mettre à jour un jeu de
@@ -802,7 +803,7 @@ questions ».
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](/media/image81.png)
+incorrect.](./media/image81.png)
 
 Plusieurs encadrés sont à remplir pour ajouter un jeu de question :
 
@@ -843,13 +844,13 @@ avez la possibilité d'ajouter un domaine et d'exporter vers Excel.
 
 ![Une image contenant texte, capture d'écran, Police, conception Le
 contenu généré par l'IA peut être
-incorrect.](/media/image82.png)
+incorrect.](./media/image82.png)
 
 Dans la partie centrale de la page, vous avez la possibilité d'agir sur
 les différents domaines. Pour cela, cliquer sur l'icône « Editer » à
 droite, pour modifier le domaine.
 
-![](/media/image83.png)
+![](./media/image83.png)
 
 Vous pouvez modifier le domaine via la page qui s'affiche, et qui
 présente quatre parties :
@@ -872,11 +873,11 @@ présente quatre parties :
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](/media/image84.png)
+incorrect.](./media/image84.png)
 
 ![Une image contenant texte, logiciel, Page web, Site web Le contenu
 généré par l'IA peut être
-incorrect.](/media/image85.png)
+incorrect.](./media/image85.png)
 
 ## 
 
@@ -889,12 +890,12 @@ rattachées à un sujet.
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](/media/image86.png)
+incorrect.](./media/image86.png)
 
 Dans le mode Edition, les aides visuelles sont visibles grâce à des
 balises.
 
-![](/media/image87.png)
+![](./media/image87.png)
 
 Vous avez la possibilité d'ajouter une aide visuelle. Pour cela, cliquer
 sur Ajouter une aide visuelle.
@@ -904,11 +905,11 @@ la langue de votre choix.
 
 ![Une image contenant texte, capture d'écran, nombre, Police Le contenu
 généré par l'IA peut être
-incorrect.](/media/image88.png)
+incorrect.](./media/image88.png)
 
 ![Une image contenant capture d'écran, texte, logiciel Le contenu généré
 par l'IA peut être
-incorrect.](/media/image89.png)
+incorrect.](./media/image89.png)
 
 Dans cette partie vous avez la possibilité de choisir le sujet dans
 lequel apparaîtra l'aide visuelle, la langue et le type d'aide visuelle
@@ -922,7 +923,7 @@ Vous pouvez par exemple les modifier en cliquant sur l'icône « Editer »
 
 ![Une image contenant texte, capture d'écran, nombre, logiciel Le
 contenu généré par l'IA peut être
-incorrect.](/media/image90.png)
+incorrect.](./media/image90.png)
 
 # Création des tests
 
@@ -932,20 +933,20 @@ s'ouvrir. Cette page comprend toutes les caractéristiques du test.
 
 ![Une image contenant texte, capture d'écran, logiciel, Icône
 d'ordinateur Description générée
-automatiquement](/media/image91.png)
+automatiquement](./media/image91.png)
 
 En appuyant sur **Créer un test**, une fenêtre s'ouvre pour **choisir la
 langue du test** (français ou anglais).
 
 ![Une image contenant texte, logiciel, Police, capture d'écran
 Description générée
-automatiquement](/media/image92.jpeg)
+automatiquement](./media/image92.jpeg)
 
 ## Caractéristiques du test
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](/media/image93.png)
+incorrect.](./media/image93.png)
 
 La première section des paramètres inclut :
 
@@ -978,7 +979,7 @@ depuis la colonne de gauche en les faisant glisser.
 
 ![Une image contenant texte, logiciel, Icône d'ordinateur, Page web
 Description générée
-automatiquement](/media/image94.jpeg)
+automatiquement](./media/image94.jpeg)
 
 Pour voir les questions disponibles, il faut sélectionner un sujet. Une
 recherche par mot clé, par compétence, par identifiant de question ou
@@ -987,7 +988,7 @@ degrés de difficulté : Facile, Moyenne, Difficile.
 
 ![Une image contenant texte, capture d'écran, logiciel, Icône
 d'ordinateur Le contenu généré par l'IA peut être
-incorrect.](/media/image95.png)
+incorrect.](./media/image95.png)
 
 Il est possible de mélanger **plusieurs sujets** et de **visualiser la
 question** en cliquant sur l'œil qui se trouve à droite de la question.
@@ -999,15 +1000,15 @@ et appuyer sur **Enregistrer.**
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web
 Description générée
-automatiquement](/media/image96.jpeg)
+automatiquement](./media/image96.jpeg)
 
 ### Options de passage du test
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image97.png)
+incorrect.](./media/image97.png)
 
-![](/media/image6.png){width="0.10300853018372703in"
+![](./media/image6.png){width="0.10300853018372703in"
 height="8.5e-2in"} Navigation entre les questions : le candidat peut
 naviguer entre les questions, revenir en
 
@@ -1016,13 +1017,13 @@ uniquement si le test
 
 ne comporte pas de question de manipulation).
 
-![](/media/image6.png){width="0.10300853018372703in"
+![](./media/image6.png){width="0.10300853018372703in"
 height="8.5e-2in"} Afficher la liste des questions : après la page
 d'introduction du test, il est possible d'afficher
 
 la liste des questions qui vont être posées.
 
-![](/media/image6.png){width="0.10300853018372703in"
+![](./media/image6.png){width="0.10300853018372703in"
 height="8.5e-2in"} Afficher le bouton « Ecouter le texte » : en activant
 cette option, le candidat pourra écouter
 
@@ -1032,7 +1033,7 @@ l'énoncé de la question.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image98.png)
+incorrect.](./media/image98.png)
 
 Vous pouvez définir la durée du test en minutes. Un chronomètre
 s'affichera sur la page du candidat. Si vous ne souhaitez pas définir de
@@ -1042,7 +1043,7 @@ durée pour le test, laissez le champs vide.
 
 ![Une image contenant texte, Police, logiciel, capture d'écran
 Description générée
-automatiquement](/media/image99.png)
+automatiquement](./media/image99.png)
 
 Ajouter le nom du test et une description qui sera visible pour les
 administrateurs du compte, en français et/ou en anglais. Le nom du test
@@ -1064,13 +1065,13 @@ Le Message de fin s'affiche une fois le test passé.
 
 ![Une image contenant texte, capture d'écran, Police, ligne Description
 générée
-automatiquement](/media/image100.jpeg)
+automatiquement](./media/image100.jpeg)
 
 ### Caractéristiques générales
 
 ![Une image contenant texte, Police, ligne, capture d'écran Le contenu
 généré par l'IA peut être
-incorrect.](/media/image101.png)
+incorrect.](./media/image101.png)
 
 -   Activer le test pour le rendre visible sur votre compte.
 
@@ -1091,7 +1092,7 @@ Compte
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image102.png)
+incorrect.](./media/image102.png)
 
 ### Détails
 
@@ -1103,11 +1104,11 @@ sur les rapports de test.
 
 ![Une image contenant texte, capture d'écran, ligne Le contenu généré
 par l'IA peut être
-incorrect.](/media/image103.png)
+incorrect.](./media/image103.png)
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le contenu
 généré par l'IA peut être
-incorrect.](/media/image104.png)
+incorrect.](./media/image104.png)
 
 ### Administrateurs
 
@@ -1116,7 +1117,7 @@ administrateur.
 
 ![Une image contenant texte, capture d'écran, Police, conception Le
 contenu généré par l'IA peut être
-incorrect.](/media/image105.png)
+incorrect.](./media/image105.png)
 
 ##### Ajout d'un administrateur
 
@@ -1126,7 +1127,7 @@ gestion des administrateurs. Cliquez sur administrateurs.
 
 ![Une image contenant capture d'écran, texte, logiciel, Icône
 d'ordinateur Le contenu généré par l'IA peut être
-incorrect.](/media/image106.png)
+incorrect.](./media/image106.png)
 
 La page gestion des administrateurs de votre compte apparaîtra et vous
 pourrez afficher tout les administrateurs qui ont été créés.
@@ -1139,7 +1140,7 @@ accès à des fonctionnalités spécifiques.
 
 ![Une image contenant texte, logiciel, Icône d'ordinateur, Logiciel
 multimédia Le contenu généré par l'IA peut être
-incorrect.](/media/image107.png)
+incorrect.](./media/image107.png)
 
 ##### Modification des administrateurs
 
@@ -1149,14 +1150,14 @@ ligne de l'administrateur voulu:
 
 ![Une image contenant texte, capture d'écran, Police, ligne Le contenu
 généré par l'IA peut être
-incorrect.](/media/image108.png)
+incorrect.](./media/image108.png)
 
 Vous pouvez également **supprimer** un administrateur ou lui
 **réinitialiser** le mot de passe.
 
 ![Une image contenant texte, capture d'écran, Police, ligne Le contenu
 généré par l'IA peut être
-incorrect.](/media/image108.png)
+incorrect.](./media/image108.png)
 
 ### [Alerte crédit]{.mark}
 
@@ -1177,7 +1178,7 @@ seul candidat, cliquez sur \"Ajouter un candidat\".
 
 ![Une image contenant texte, capture d'écran, logiciel, Police Le
 contenu généré par l'IA peut être
-incorrect.](/media/image109.png)
+incorrect.](./media/image109.png)
 
 Renseignez les informations et l\'adresse e-mail du candidat.
 L\'identifiant du candidat sera son adresse e-mail. Deux candidats ne
@@ -1218,7 +1219,7 @@ Dans la fenêtre importer in fichier de candidats, procédez comme suit :
 
     ![Une image contenant texte, capture d'écran, Police, nombre Le
     contenu généré par l'IA peut être
-    incorrect.](/media/image110.png)
+    incorrect.](./media/image110.png)
 
 Lors du téléchargement du fichier Excel, chacun des candidats recevra un
 mot de passe aléatoire. **Remarque :** Vous pourrez créer un mot de
@@ -1235,7 +1236,7 @@ l'icône **Éditer**
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le contenu
 généré par l'IA peut être
-incorrect.](/media/image111.png)
+incorrect.](./media/image111.png)
 
 Le fichier du candidat est ouvert. Si le candidat a passé un test ou à
 des tests en attente, ils apparaîtront ici.
@@ -1247,7 +1248,7 @@ Cliquez sur **Inscrire à un test**
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](/media/image112.png)
+incorrect.](./media/image112.png)
 
 Choisissez la langue, le sujet, le type de test et la session (le cas
 échéant) pour le candidat. Vous pourrez rechercher un test particulier à
@@ -1255,9 +1256,9 @@ l'aide du champ **Recherche par saisie**.
 
 ![Une image contenant texte, capture d'écran, affichage, nombre Le
 contenu généré par l'IA peut être
-incorrect.](/media/image113.png)
+incorrect.](./media/image113.png)
 
-![](/media/image114.png)
+![](./media/image114.png)
 
 Cliquez sur **Inscrire** ou **Inscrire et fermer** si vous souhaitez
 attribuer un seul test à un candidat.
@@ -1271,7 +1272,7 @@ le test sera automatiquement supprimé.
 
 ![Une image contenant texte, Police, ligne, capture d'écran Le contenu
 généré par l'IA peut être
-incorrect.](/media/image115.png)
+incorrect.](./media/image115.png)
 
 Si vous supprimez un test en attente, le(s) crédit(s) de test est(sont)
 automatiquement retourné(s) sur votre compte.
@@ -1281,7 +1282,7 @@ automatiquement retourné(s) sur votre compte.
 Lorsque ce mode est activé, les candidats ne peuvent pas accéder à
 d'autres applications logicielles ou ressources Internet pendant la
 durée de leur ![Une image contenant texte, capture d'écran, logiciel,
-Page web](/media/image116.png)
+Page web](./media/image116.png)
 
 Si un candidat quitte le mode plein écran ou tente d'ouvrir un nouvel
 onglet, le système l'invitera à revenir à la page du test.
@@ -1302,14 +1303,14 @@ Une fois que vous avez ajouté un test, cliquez sur **Envoyer les tests
 au candidat**
 
 ![Une image contenant texte, capture d'écran, logiciel, Page
-web](/media/image117.png)
+web](./media/image117.png)
 
 Une nouvelle fenêtre s'ouvrira. Sélectionnez le modèle d'e-mail et
 l'adresse de l'émetteur (s'il est ajouté). Vous pouvez également choisir
 un administrateur qui recevra une copie de l'e-mail :
 
 ![Une image contenant texte, capture d'écran, Police, Page
-web](/media/image118.png)
+web](./media/image118.png)
 
 Une fois que vous avez cliqué sur **Envoyer**, l'e-mail d'invitation
 sera envoyé et le candidat pourra accéder au(x) test(s).
@@ -1344,7 +1345,7 @@ tous les candidats du groupe à un test.**
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](/media/image119.png)
+incorrect.](./media/image119.png)
 
 Vous sélectionnerez ensuite la langue, le sujet, le type de test et la
 session. Cliquez ensuite sur **Inscrire** ou **Inscrire et fermer.**
@@ -1363,7 +1364,7 @@ titre du message et modèle d'e-mail), puis cliquez sur **Envoyer**.
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](/media/image119.png)
+incorrect.](./media/image119.png)
 
 Une fois que vous avez cliqué sur **Envoyer**, l'e-mail d'invitation
 sera envoyé et les candidats pourront accéder au(x) test(s).
@@ -1376,14 +1377,14 @@ Les actions de groupe vous permettent de :
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](/media/image119.png)
+incorrect.](./media/image119.png)
 
 -   **Supprimer les tests non passés.** Si vous supprimez les tests à
     passer, vous serez alors recrédités automatiquement
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](/media/image119.png)
+incorrect.](./media/image119.png)
 
 -   **Définir des options d'évaluation pour l'ensemble des candidats du
     groupe.** Cela vous permet de personnaliser les options d'évaluation
@@ -1391,7 +1392,7 @@ incorrect.](/media/image119.png)
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](/media/image119.png)
+incorrect.](./media/image119.png)
 
 ## Résultats
 
@@ -1404,7 +1405,7 @@ Pour y accéder, cliquez sur **Résultats** dans le menu principal.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image102.png)
+incorrect.](./media/image102.png)
 
 Vous pouvez effectuer des recherches dans les données et filtrer par :
 
@@ -1425,7 +1426,7 @@ adresse e-mail dans la barre de recherche.
 
 ![Une image contenant texte, capture d'écran, Police, logiciel Le
 contenu généré par l'IA peut être
-incorrect.](/media/image120.png)
+incorrect.](./media/image120.png)
 
 Une fois les résultats du candidat chargés, cliquez sur l'icône
 **Analyse**.
@@ -1439,7 +1440,7 @@ pouvez télécharger un PDF avec le détail du test en cliquant sur
 **Obtenir le** **rapport en PDF**.
 
 ![Une image contenant texte, Police, ligne, capture
-d'écran](/media/image121.png)
+d'écran](./media/image121.png)
 
 Un administrateur peut voir les réponses des candidats. Déplacez votre
 curseur sur un résultat de test, cliquez sur **Analyse**, puis **Détails
@@ -1447,7 +1448,7 @@ du test** et **Voir les réponses**
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le
 contenu généré par l'IA peut être
-incorrect.](/media/image122.png)
+incorrect.](./media/image122.png)
 
 Vous pourrez voir les résultats et le temps passé sur chaque question.
 Ces données peuvent être exportées sous forme de fichier Excel.
@@ -1457,15 +1458,15 @@ réponse du candidat, et la bonne réponse attendue.
 
 ![Une image contenant texte, capture d'écran, Police, ligne Le contenu
 généré par l'IA peut être
-incorrect.](/media/image123.png)![Une image contenant texte, logiciel,
+incorrect.](./media/image123.png)![Une image contenant texte, logiciel,
 Page web, Icône d'ordinateur Le contenu généré par l'IA peut être
-incorrect.](/media/image124.png)
+incorrect.](./media/image124.png)
 
 ## Emails
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image102.png)
+incorrect.](./media/image102.png)
 
 ### Modèles d'e-mails
 
@@ -1481,7 +1482,7 @@ modèles.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image125.png)
+incorrect.](./media/image125.png)
 
 Un modèle d'e-mail d'invitation standard est disponible sur votre
 compte. Vous pouvez modifier ou dupliquer ce modèle standard.
@@ -1493,7 +1494,7 @@ vos candidats.
 
 ![Une image contenant texte, Police, logiciel, nombre Le contenu généré
 par l'IA peut être
-incorrect.](/media/image126.png)
+incorrect.](./media/image126.png)
 
 Vous pouvez également créer vos propres modèles d'e-mails, ainsi que des
 relances par e-mail qui seront automatiquement envoyés à vos candidats.
@@ -1503,7 +1504,7 @@ curseur sur le modèle et cliquez sur l'icône **Modifier**.
 
 ![Une image contenant texte, Police, logiciel, nombre Le contenu généré
 par l'IA peut être
-incorrect.](/media/image126.png)
+incorrect.](./media/image126.png)
 
 La fenêtre **Mettre à jour un modèle d'e-mail** s'ouvre. Dans cette
 zone, vous pourrez personnaliser le modèle existant.
@@ -1527,7 +1528,7 @@ l'exemple.**
 
 ![Une image contenant texte, capture d'écran, nombre, Police Le contenu
 généré par l'IA peut être
-incorrect.](/media/image127.png)![](/media/image128.png)
+incorrect.](./media/image127.png)![](./media/image128.png)
 
 \*\*\*
 
@@ -1540,7 +1541,7 @@ des e-mails au lieu de l'adresse e-mail par défaut
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image129.png)
+incorrect.](./media/image129.png)
 
 Pour créer un expéditeur, cliquez sur **E-mail** et **Émetteurs
 d'e-mails**.
@@ -1549,14 +1550,14 @@ Pour créer un nouvel émetteur, cliquez sur **Ajouter un émetteur.**
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image130.png)
+incorrect.](./media/image130.png)
 
 Entrez l'adresse e-mail de l'émetteur dans la zone Adresse e-mail et
 cliquez sur **Enregistrer**.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image131.png)
+incorrect.](./media/image131.png)
 
 Vous recevrez un e-mail d'**Amazon** **Web Services** vous demandant
 d'accorder le droit d'envoyer des e-mails en votre nom.
@@ -1567,7 +1568,7 @@ Services. Le processus de validation peut prendre jusqu'à 30 minutes.
 
 ![Une image contenant texte, Police, ligne, capture d'écran Le contenu
 généré par l'IA peut être
-incorrect.](/media/image132.png)
+incorrect.](./media/image132.png)
 
 ## Paramètres
 
@@ -1578,7 +1579,7 @@ et/ou de mettre à jour les paramètres par défaut sur la plateforme.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image133.png)
+incorrect.](./media/image133.png)
 
 ### Paramètres pour évaluation 
 
@@ -1593,7 +1594,7 @@ bouton **Enregistrer** .
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](/media/image134.png)
+incorrect.](./media/image134.png)
 
 Paramètres généraux
 
@@ -1608,7 +1609,7 @@ sur 100%.
 
 ![Une image contenant texte, Police, capture d'écran Le contenu généré
 par l'IA peut être
-incorrect.](/media/image135.png)
+incorrect.](./media/image135.png)
 
 Une fois que vous avez personnalisé vos paramètres, cliquez sur le
 bouton **Enregistrer** .
@@ -1629,7 +1630,7 @@ session**.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image136.png)
+incorrect.](./media/image136.png)
 
 Dans la fenêtre **Créer une session**, vous pouvez ajouter une
 description/un titre pour votre session ainsi qu'un code de session, les
@@ -1642,7 +1643,7 @@ candidat(s) en amont du test.
 
 ![Une image contenant texte, capture d'écran, nombre, Police Le contenu
 généré par l'IA peut être
-incorrect.](/media/image137.png)
+incorrect.](./media/image137.png)
 
 Profils
 
@@ -1665,10 +1666,10 @@ niveaux de compétence** .
 
 ![Une image contenant texte, capture d'écran, Police, conception Le
 contenu généré par l'IA peut être
-incorrect.](/media/image138.png)\
+incorrect.](./media/image138.png)\
 ![Une image contenant texte, Police, ligne, nombre Le contenu généré par
 l'IA peut être
-incorrect.](/media/image139.png)
+incorrect.](./media/image139.png)
 
 Descriptions de niveaux personnalisés
 
@@ -1682,14 +1683,14 @@ une description de niveau.\
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image140.png)
+incorrect.](./media/image140.png)
 
 Dans la fenêtre **Ajouter une description personnalisée**, sélectionnez
 la famille de sujets, puis cliquez sur **Enregistrer**.
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le contenu
 généré par l'IA peut être
-incorrect.](/media/image141.png)
+incorrect.](./media/image141.png)
 
 Dans la fenêtre **Gestion des** **descriptions de niveaux
 personnalisées**, vous pouvez saisir des messages pour chaque niveau de
@@ -1701,7 +1702,7 @@ candidats, en fonction du niveau de compétence du candidat.
 
 ![Une image contenant texte, capture d'écran, logiciel, nombre Le
 contenu généré par l'IA peut être
-incorrect.](/media/image142.png)
+incorrect.](./media/image142.png)
 
 ## Aide et support
 
@@ -1713,7 +1714,7 @@ principal.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](/media/image143.png)
+incorrect.](./media/image143.png)
 
 Vous y trouverez les éléments suivants :
 
@@ -1733,12 +1734,12 @@ cliquez **sur Identifier la version de mon navigateur.**
 
 ![Une image contenant texte, Police, capture d'écran Le contenu généré
 par l'IA peut être
-incorrect.](/media/image144.png)**\
+incorrect.](./media/image144.png)**\
 **
 
 Test de vérification
 
-![](/media/image145.png)
+![](./media/image145.png)
 
 Une fois que vous avez cliqué sur **Vérifier,** vous aurez la
 possibilité de faire un test. En fonction de votre sélection, un
@@ -1746,7 +1747,7 @@ mini-test d'évaluation sera lancé. Il est conseillé de compléter ce test
 dans le cadre de la vérification technique.\
 ![Une image contenant texte, capture d'écran, logiciel, Icône
 d'ordinateur Le contenu généré par l'IA peut être
-incorrect.](/media/image146.png)
+incorrect.](./media/image146.png)
 
 Le court test de trois questions simule un environnement d'évaluation.
 Chacune des questions correspond aux différents types de questions que
