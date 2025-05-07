@@ -43,13 +43,14 @@ forme, contenus) pour les quatre composantes suivantes :
 - 
 -
 - Les solutions et tutoriels
+
 Un tableau récapitulatif des diverses syntaxes d'énoncé par typologie
 de questions est disponible en annexe à la fin de ce livret ainsi
 qu'un tableau listant les noms de boutons de la barre d'outils
 Microsoft Office en français avec leur traduction en anglais pour
 éviter les erreurs de traduction et respecter la terminologie des
 logiciels (Microsoft, Google, Adobe, etc.).
-*\* L'intégration des réponses dans les boutons « Voir la solution et
+- L'intégration des réponses dans les boutons « Voir la solution et
 les tutos » n'étant pour le moment disponible qu'en français et en
 anglais, cette partie est absente pour les autres langues.*
 
@@ -77,7 +78,7 @@ La plateforme permet de :
 
 -   Gérer l'administration des résultats des candidats
 
-## Menu «  Questions »
+## Menu « Questions »
 
 ![](./media/image11.png)
 
@@ -105,12 +106,10 @@ Ce menu permet :
 -   La gestion des jeux de questions : ajouter, éditer ou supprimer un
     jeu de question.
 
--   La gestion des domaines : ajouter, éditer ou supprimer un domaine de
-    compétences.
+-   La gestion des domaines : ajouter, éditer ou supprimer un domaine de compétences.
 
 **Le process de gestion des jeux de questions et des domaines est
-détaillé dans le chapitre « Gestion des jeux de questions et gestion des
-domaines ».**
+détaillé dans le chapitre « Gestion des jeux de questions et gestion des domaines ».**
 
 ## Menu « Sujets »
 
@@ -118,25 +117,19 @@ domaines ».**
 générée
 automatiquement](./media/image13.png)
 
-Ce menu permet de créer un nouveau sujet ou encore d'éditer ou supprimer
-ceux déjà existants. On retrouve par ailleurs le sujet dans les filtres
-en haut de la page d'accueil.![Une image contenant texte, capture
+Ce menu permet de créer un nouveau sujet ou encore d'éditer ou supprimer ceux déjà existants. On retrouve par ailleurs le sujet dans les filtres en haut de la page d'accueil.
+
+![Une image contenant texte, capture
 d'écran, ligne, Police Le contenu généré par l'IA peut être
 incorrect.](./media/image14.png)
 
 ![](./media/image15.png)
 
-**Le process de gestion des sujets est détaillé dans le chapitre
-« Gestion des sujets ».**
+**Le process de gestion des sujets est détaillé dans le chapitre « Gestion des sujets ».**
 
 ## Menu « Aides visuelles »
 
-Une aide visuelle est une image insérée dans une question ou une réponse
-afin d'aider le candidat à visualiser un élément de référence (bouton,
-fonctionnalité, autre). Les aides visuelles sont des images ou des
-documents que vous pourrez utiliser dans vos questions. Les aides
-visuelles sont associées à un sujet et ne sont disponibles que pour le
-sujet concerné.
+Une aide visuelle est une image insérée dans une question ou une réponse afin d'aider le candidat à visualiser un élément de référence (bouton, fonctionnalité, autre). Les aides visuelles sont des images ou des documents que vous pourrez utiliser dans vos questions. Les aides visuelles sont associées à un sujet et ne sont disponibles que pour le sujet concerné.
 
 ![](./media/image16.png)
 
@@ -151,15 +144,13 @@ incorrect.](./media/image17.jpeg)
 ## Menu Gestion des Candidats
 
 ![Une image contenant texte, capture d'écran, Police, conception Le
-contenu généré par l'IA peut être
-incorrect.](./media/image18.png)
+contenu généré par l'IA peut être incorrect.](./media/image18.png)
 
 Ce menu permet la gestion des candidats : inscriptions aux tests,
 gestion des groupes, gestion des sessions, profils par compétences,
 envois d'emails, consultation des résultats, etc.
 
-**Le process de gestion et d'administration des candidats est détaillé
-dans le chapitre « Gestion des candidats ».**
+**Le process de gestion et d'administration des candidats est détaillé dans le chapitre « Gestion des candidats ».**
 
 ## Bouton « Déconnexion » 
 
@@ -190,23 +181,18 @@ des questions :
 
 -   Par domaine
 
--   Par personne responsable (personne devant intervenir sur la
-    question)
+-   Par personne responsable (personne devant intervenir sur la question)
 
--   Par statut de la question (en rédaction, à vérifier, en production,
-    etc.)
+-   Par statut de la question (en rédaction, à vérifier, en production, etc.)
 
-Ce bandeau présente également la possibilité d'enregistrer des favoris.
-Pour ce faire vous devez :
+Ce bandeau présente également la possibilité d'enregistrer des favoris. Pour ce faire vous devez :
 
 -   Faire vos filtres grâce aux huit options proposées
 
 -   Cliquer sur le bouton plus (+) pour ajouter le sujet à vos favoris
 
--   Pour retirer un sujet, il suffit de le sélectionner dans la liste
-    déroulante et de cliquer sur le bouton moins (-)
-
-### 
+-   Pour retirer un sujet, il suffit de le sélectionner dans la liste déroulante et de cliquer sur le bouton moins (-)
+ 
 
 ### Les actions
 
@@ -218,8 +204,7 @@ Ces onglets permettent les actions suivantes :
 
 -   Ajouter une nouvelle question
 
--   Importer un fichier de questions automatiquement sur la plateforme
-    depuis un fichier Excel
+-   Importer un fichier de questions automatiquement sur la plateforme depuis un fichier Excel
 
 -   Imprimer (visualiser) l'ensemble des questions sélectionnées
 
@@ -234,9 +219,7 @@ incorrect.](./media/image22.png)
 Informations du tableau des questions :
 
 -   Identifiant de la question (identification qui apparaîtra dans le
-    rapport de compétences si cette option
-
--   est sélectionnée par l'administrateur)
+    rapport de compétences si cette option est sélectionnée par l'administrateur)
 
 -   Sujet
 
@@ -249,8 +232,7 @@ Informations du tableau des questions :
 -   Passée (nombre de fois où la question a été passée par des
     candidats) Succès (taux de succès des candidats à cette question)
 
--   Niveau de difficulté de la question (Facile, Moyen, Difficile \>
-    niveau défini par le créateur de la question)
+-   Niveau de difficulté de la question (Facile, Moyen, Difficile \> niveau défini par le créateur de la question)
 
 -   Statut de la question
 
@@ -263,7 +245,7 @@ Informations du tableau des questions :
 ***QCM Texte Réponse unique*** : Le candidat doit cocher la bonne
 réponse.
 
-##### ![Une image contenant texte, capture d'écran, logiciel, Logiciel multimédia Le contenu généré par l'IA peut être incorrect.](./media/image23.jpeg)Mode Aperçu :
+##### Mode Aperçu : ![Une image contenant texte, capture d'écran, logiciel, Logiciel multimédia Le contenu généré par l'IA peut être incorrect.](./media/image23.jpeg)
 
 ##### Mode Edition : ![Une image contenant texte, capture d'écran, Police, diagramme Le contenu généré par l'IA peut être incorrect.](./media/image24.png)
 
@@ -286,11 +268,9 @@ incorrect.](./media/image26.png)
 l'IA peut être
 incorrect.](./media/image27.png)
 
-**QCM Texte Réponse une parmi plusieurs** : Le candidat doit cocher une
-bonne réponse parmi celles proposées. Pour ce type de question, il peut
-y avoir plusieurs réponses correctes possibles.
+**QCM Texte Réponse une parmi plusieurs** : Le candidat doit cocher une bonne réponse parmi celles proposées. Pour ce type de question, il peut y avoir plusieurs réponses correctes possibles.
 
-En mode aperçu :
+##### En mode aperçu :
 
 ![Une image contenant texte, Appareils électroniques, capture d'écran,
 ordinateur Le contenu généré par l'IA peut être
@@ -327,10 +307,7 @@ incorrect.](./media/image33.png)
 
 ### Les cliquer sur zone(s)
 
-**Single click :** À l'aide d'un curseur qui s'affiche à l'écran, le
-candidat doit cliquer sur l'image pour
-
-répondre à la question.
+**Single click :** l'aide d'un curseur qui s'affiche à l'écran, le candidat doit cliquer sur l'image pour répondre à la question.
 
 ##### Mode Aperçu :
 
@@ -348,7 +325,7 @@ incorrect.](./media/image34.png)
 généré par l'IA peut être
 incorrect.](./media/image36.png)
 
-#### **Multi click :** : Le candidat doit cliquer sur toutes les zones concernées.
+#### **Multi click :**  Le candidat doit cliquer sur toutes les zones concernées.
 
 ##### Mode Aperçu : 
 
