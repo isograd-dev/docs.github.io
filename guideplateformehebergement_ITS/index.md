@@ -309,13 +309,15 @@ incorrect.](./media/image33.png)
 
 **Single click :** l'aide d'un curseur qui s'affiche à l'écran, le candidat doit cliquer sur l'image pour répondre à la question.
 
+
+
 ##### Mode Aperçu :
 
 ![Une image contenant texte, logiciel, Icône d'ordinateur, Page web Le
 contenu généré par l'IA peut être
 incorrect.](./media/image34.png)
+ 
 
-##### 
 
 #####  Mode Edition (exemple de code yaml)  : 
 
@@ -354,7 +356,7 @@ dans la zone de droite.
 généré par l'IA peut être
 incorrect.](./media/image40.png)
 
-Mode Edition :  (exemple de code yaml) :
+##### Mode Edition :  (exemple de code yaml) :
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le contenu
 généré par l'IA peut être
@@ -390,50 +392,41 @@ Le candidat a une liste d'éléments qu'il doit classer dans un ordre
 défini (croissant, décroissant, alphabétique, numérique, etc.). Pour ce
 type de question, un chronomètre peut être défini.
 
-En mode aperçu :
+**En mode aperçu** :
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
 incorrect.](./media/image46.png)
 
-En mode Edition (avec code yaml) :
+**En mode Edition (avec code yaml)** :
 
 ![Une image contenant texte, Police, ligne, nombre Le contenu généré par
-l'IA peut être
-incorrect.](./media/image47.png)
+l'IA peut être incorrect.](./media/image47.png)
 
 ![Une image contenant texte, logiciel, capture d'écran Le contenu généré
-par l'IA peut être
-incorrect.](./media/image48.png)
+par l'IA peut être incorrect.](./media/image48.png)
 
 ### Les zones de texte à remplir
 
-**Zone de texte** : le candidat doit compléter une ou plusieurs zones de
-texte vides avec la réponse correcte.
+**Zone de texte** : le candidat doit compléter une ou plusieurs zones de texte vides avec la réponse correcte.
 
-***Zone de texte et notation manuelle *:** le candidat doit saisir sa
-réponse dans l'encadré prévu à cet effet. La question est notée et/ou
-commentée par une personne physique après le passage du test.
+**Zone de texte et notation manuelle** : le candidat doit saisir sa réponse dans l'encadré prévu à cet effet. La question est notée et/ou commentée par une personne physique après le passage du test.
 
 ##### Mode Aperçu : 
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image49.png)
+par l'IA peut être incorrect.](./media/image49.png)
 
 ##### En mode Edition (avec code yaml) : 
 
 ![Une image contenant texte, Police, nombre, ligne Le contenu généré par
-l'IA peut être
-incorrect.](./media/image50.png)
+l'IA peut être incorrect.](./media/image50.png)
 
 ![Une image contenant texte, ligne, capture d'écran Le contenu généré
 par l'IA peut être
 incorrect.](./media/image51.png)
 
-**Zone de texte évaluée par l'IA :** Le candidat doit saisir sa ou ses
-réponses dans l'encadré ou les encadrés prévus à cet effet. Le texte
-soumis sera vérifié et évalué par l'intelligence artificielle.
+**Zone de texte évaluée par l'IA :** Le candidat doit saisir sa ou ses réponses dans l'encadré ou les encadrés prévus à cet effet. Le texte soumis sera vérifié et évalué par l'intelligence artificielle.
 
 ##### En mode Aperçu : 
 
@@ -451,7 +444,6 @@ incorrect.](./media/image53.png)
 par l'IA peut être
 incorrect.](./media/image54.png)
 
-#### 
 
 ### Les Vrai/Faux
 
@@ -856,7 +848,6 @@ incorrect.](./media/image84.png)
 généré par l'IA peut être
 incorrect.](./media/image85.png)
 
-## 
 
 ## Gestion des aides visuelles 
 
@@ -985,32 +976,16 @@ automatiquement](./media/image96.jpeg)
 par l'IA peut être
 incorrect.](./media/image97.png)
 
-![](./media/image6.png){width="0.10300853018372703in"
-height="8.5e-2in"} Navigation entre les questions : le candidat peut
-naviguer entre les questions, revenir en
+![](./media/image6.png) Navigation entre les questions : le candidat peut naviguer entre les questions, revenir en arrière sur une question ou sauter une question (l'option est possible uniquement si le test ne comporte pas de question de manipulation).
 
-arrière sur une question ou sauter une question (l'option est possible
-uniquement si le test
+![](./media/image6.png) Afficher la liste des questions : après la page d'introduction du test, il est possible d'afficher la liste des questions qui vont être posées.
 
-ne comporte pas de question de manipulation).
-
-![](./media/image6.png){width="0.10300853018372703in"
-height="8.5e-2in"} Afficher la liste des questions : après la page
-d'introduction du test, il est possible d'afficher
-
-la liste des questions qui vont être posées.
-
-![](./media/image6.png){width="0.10300853018372703in"
-height="8.5e-2in"} Afficher le bouton « Ecouter le texte » : en activant
-cette option, le candidat pourra écouter
-
-l'énoncé de la question.
+![](./media/image6.png) Afficher le bouton « Ecouter le texte » : en activant cette option, le candidat pourra écouter l'énoncé de la question.
 
 ### Gestion du temps
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image98.png)
+par l'IA peut être incorrect.](./media/image98.png)
 
 Vous pouvez définir la durée du test en minutes. Un chronomètre
 s'affichera sur la page du candidat. Si vous ne souhaitez pas définir de
@@ -1058,18 +1033,16 @@ incorrect.](./media/image101.png)
 
 -   Vous pouvez visualiser le rapport de compétences.
 
-# 
 
-# [Naviguer sur la]{.mark} [plateforme]{.mark}
 
-Le menu principal de la plateforme donne accès aux cinq onglets qui vous
-permettent de gérer votre compte.
+# Naviguer sur la plateforme
+
+Le menu principal de la plateforme donne accès aux cinq onglets qui vous permettent de gérer votre compte.
 
 Compte
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image102.png)
+par l'IA peut être incorrect.](./media/image102.png)
 
 ### Détails
 
@@ -1121,57 +1094,42 @@ incorrect.](./media/image107.png)
 
 ##### Modification des administrateurs
 
-Les administrateurs de compte peuvent modifier les droits des
-administrateurs existants en cliquant sur l'icône **Éditer **sur la
-ligne de l'administrateur voulu:
+Les administrateurs de compte peuvent modifier les droits des administrateurs existants en cliquant sur l'icône **Éditer** sur la ligne de l'administrateur voulu :
 
-![Une image contenant texte, capture d'écran, Police, ligne Le contenu
-généré par l'IA peut être
-incorrect.](./media/image108.png)
+![Une image contenant texte, capture d'écran, Police, ligne Le contenu généré par l'IA peut être incorrect.](./media/image108.png)
 
 Vous pouvez également **supprimer** un administrateur ou lui
 **réinitialiser** le mot de passe.
 
-![Une image contenant texte, capture d'écran, Police, ligne Le contenu
-généré par l'IA peut être
-incorrect.](./media/image108.png)
+![Une image contenant texte, capture d'écran, Police, ligne Le contenu généré par l'IA peut être incorrect.](./media/image108.png)
 
-### [Alerte crédit]{.mark}
+### Alerte crédit
 
-### [Consommation de crédits]{.mark}
+### Consommation de crédits
 
-### [Factures]{.mark}
+### Factures
 
 ## Candidats
 
-Après avoir créé vos tests, vous pourrez procéder à l\'ajout de vos
-candidats. Il existe deux options pour ajouter des candidats à la
-plateforme.
+Après avoir créé vos tests, vous pourrez procéder à l\'ajout de vos candidats. Il existe deux options pour ajouter des candidats à la plateforme.
 
 ##### Ajout individuel 
 
-Sur le menu principal, vous avez l\'option \"Candidat\". Pour ajouter un
-seul candidat, cliquez sur \"Ajouter un candidat\".
+Sur le menu principal, vous avez l\'option \"Candidat\" Pour ajouter un seul candidat, cliquez sur \"Ajouter un candidat\".
 
-![Une image contenant texte, capture d'écran, logiciel, Police Le
-contenu généré par l'IA peut être
-incorrect.](./media/image109.png)
+![Une image contenant texte, capture d'écran, logiciel, Police Le contenu généré par l'IA peut être incorrect.](./media/image109.png)
 
 Renseignez les informations et l\'adresse e-mail du candidat.
-L\'identifiant du candidat sera son adresse e-mail. Deux candidats ne
-peuvent pas être enregistrés avec la même adresse e-mail.
 
-Chaque candidat appartient à au moins un groupe. Le groupe par défaut
-est le groupe principal. Un candidat peut appartenir à plusieurs groupes
-à la fois.
+L\'identifiant du candidat sera son adresse e-mail. Deux candidats ne peuvent pas être enregistrés avec la même adresse e-mail.
+
+Chaque candidat appartient à au moins un groupe. Le groupe par défaut est le groupe principal. Un candidat peut appartenir à plusieurs groupes à la fois.
 
 ##### Ajout d'un groupe de candidats
 
-*L'importation d'un fichier Excel contenant les détails de vos candidats
-vous permet de télécharger rapidement jusqu'à 500 à la fois pour un
-groupe défini.*
+*L'importation d'un fichier Excel contenant les détails de vos candidats vous permet de télécharger rapidement jusqu'à 500 à la fois pour un groupe défini.*
 
-Cliquez sur importer un fichier de candidats.
+Cliquez sur **importer un fichier de candidats**.
 
 Dans la fenêtre importer in fichier de candidats, procédez comme suit :
 
