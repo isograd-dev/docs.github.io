@@ -470,7 +470,6 @@ incorrect.](./media/image56.png)
 généré par l'IA peut être
 incorrect.](./media/image57.png)
 
-##### 
 
 ##### En mode Aperçu :  (vrai/faux avec script de vérification) : 
 
@@ -488,23 +487,13 @@ incorrect.](./media/image59.png)
 généré par l'IA peut être
 incorrect.](./media/image60.png)
 
-[]{#_Toc193360153 .anchor}Enregistrements audio
+### Enregistrements audio
 
-**Enregistrement évalué par une personne physique :** Le candidat doit
-répondre à une question en s'enregistrant. Le candidat peut ou non,
-selon le paramétrage du créateur de la question, enregistrer plusieurs
-audios qu'il peut réécouter avant de sélectionner celui qu'il souhaite
-soumettre.
+**Enregistrement évalué par une personne physique :** Le candidat doit répondre à une question en s'enregistrant. Le candidat peut ou non, selon le paramétrage du créateur de la question, enregistrer plusieurs audios qu'il peut réécouter avant de sélectionner celui qu'il souhaite soumettre.
 
-**Enregistrement évalué par l'IA* : ***Le candidat doit répondre à une
-question en enregistrant un audio. Cette question sert à tester les
-compétences du candidat à l'oral.
+**Enregistrement évalué par l'IA** : Le candidat doit répondre à une question en enregistrant un audio. Cette question sert à tester les compétences du candidat à l'oral.
 
-Le candidat peut enregistrer plusieurs audios qu'il peut réécouter avant
-de sélectionner celui qu'il
-
-souhaite soumettre. L'audio soumis est vérifié et évalué par
-l'intelligence artificielle.
+Le candidat peut enregistrer plusieurs audios qu'il peut réécouter avant de sélectionner celui qu'il souhaite soumettre. L'audio soumis est vérifié et évalué par l'intelligence artificielle.
 
 ##### En mode Aperçu : 
 
@@ -538,7 +527,7 @@ incorrect.](./media/image65.png)
 
 ### Ajouter une question
 
-Cliquez sur \"AJOUTER UNE QUESTION\" puis complétez les éléments
+Cliquez sur **"AJOUTER UNE QUESTION"** puis complétez les éléments
 suivants :
 
 -   Sélectionner le sujet
@@ -553,26 +542,18 @@ incorrect.](./media/image66.png)
 
 ### Éditer une question
 
-Le formulaire d'une question, appelé « mode édition », permet de créer
-ou de modifier une question. Il est composé de plusieurs parties.
+Le formulaire d'une question, appelé « mode édition », permet de créer ou de modifier une question. Il est composé de plusieurs parties.
 
 #### **Caractéristiques générales**
 
--   Le bouton \"Générer un titre\" créé un titré généré par l'IA. Si
-    vous ne souhaitez pas générer le titre de la question par l'IA ,
-    vous pouvez le saisir vous-même. **Attention à la formulation car le
-    titre apparaît sur les rapports des candidats.**
+-   Le bouton "Générer un titre" créé un titré généré par l'IA. Si vous ne souhaitez pas générer le titre de la question par l'IA ,vous pouvez le saisir vous-même.
+    **Attention à la formulation car le titre apparaît sur les rapports des candidats.**
 
--   Le champs «  Temps alloué est par défaut défini sur -1. Si vous
-    souhaitez allouer un temps maximal pour la question, veuillez
-    remplir le champs ( en secondes).
+-   Le champs «  Temps alloué est par défaut défini sur -1. Si vous souhaitez allouer un temps maximal pour la question, veuillez remplir le champs ( en secondes).
 
--   La difficulté de la question peut se renseigner : Facile, Moyenne ou
-    Difficile. Si vous ne souhaitez pas donner un niveau de difficulté à
-    la question, veuillez renseigner N/A.
+-   La difficulté de la question peut se renseigner : Facile, Moyenne ou Difficile. Si vous ne souhaitez pas donner un niveau de difficulté à la question, veuillez renseigner N/A.
 
--   Vous pouvez renseigner l'inventeur de la question ( utile pour les
-    mises à jour par exemple).
+-   Vous pouvez renseigner l'inventeur de la question ( utile pour les mises à jour par exemple).
 
 -   Attribuez un score maximal à la question.
 
@@ -584,9 +565,7 @@ incorrect.](./media/image67.png)
 
 Certains champs sont communs à toutes les typologies de questions :
 
--   **Type de question** : texte seul ou image + texte ( si vous
-    choisissez d'illustrer votre question et sélectionnez « 
-    image+texte », vous pourrez télécharger votre image).
+-   **Type de question** : texte seul ou image + texte ( si vous choisissez d'illustrer votre question et sélectionnez « image+texte », vous pourrez télécharger votre image).
 
 -   **Document de référence** : champ à utiliser uniquement s'il s'agit
     d'une question avec un document à consulter.
