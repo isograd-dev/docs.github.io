@@ -40,8 +40,6 @@ Dans un second temps, nous aborderons la charte éditoriale pour la
 création des questions (usages génériques, formulations, mises en
 forme, contenus) pour les quatre composantes suivantes :
 - L'énoncé
-- 
--
 - Les solutions et tutoriels
 
 Un tableau récapitulatif des diverses syntaxes d'énoncé par typologie
