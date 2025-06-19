@@ -243,9 +243,11 @@ Informations du tableau des questions :
 ***QCM Texte Réponse unique*** : Le candidat doit cocher la bonne
 réponse.
 
-##### Mode Aperçu : ![Une image contenant texte, capture d'écran, logiciel, Logiciel multimédia Le contenu généré par l'IA peut être incorrect.](./media/image23.jpeg)
+##### Mode Aperçu : 
+![Une image contenant texte, capture d'écran, logiciel, Logiciel multimédia Le contenu généré par l'IA peut être incorrect.](./media/image23.jpeg)
 
-##### Mode Edition : ![Une image contenant texte, capture d'écran, Police, diagramme Le contenu généré par l'IA peut être incorrect.](./media/image24.png)
+##### Mode Edition :
+![Une image contenant texte, capture d'écran, Police, diagramme Le contenu généré par l'IA peut être incorrect.](./media/image24.png)
 
 **QCM Texte Réponses multiples** : Le candidat doit cocher la ou les
 bonnes réponses.
