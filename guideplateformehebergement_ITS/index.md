@@ -33,9 +33,9 @@ création de questions. Ceci devrait permettre au moment de la création
 de questions de pouvoir efficacement cibler les typologies de
 questions possibles et les adapter en fonction de la compétence
 évaluée chez le candidat.
-*Il est à noter que les fonctionnalités disponibles à l'utilisateur de
+* Il est à noter que les fonctionnalités disponibles à l'utilisateur de
 la plateforme divergent selon les droits*
-*d'utilisation qui lui sont fournis par Isograd.*
+* d'utilisation qui lui sont fournis par Isograd.*
 Dans un second temps, nous aborderons la charte éditoriale pour la
 création des questions (usages génériques, formulations, mises en
 forme, contenus) pour les quatre composantes suivantes :
@@ -65,6 +65,8 @@ La plateforme permet de :
 -   Gérer la base de questions (ajouter des questions, éditer des
     questions, vérifier les questions, supprimer des questions,
     dupliquer des questions, gérer les commentaires)
+
+    ![](./media/Aphoto.png)
 
 -   Créer des sujets
 
