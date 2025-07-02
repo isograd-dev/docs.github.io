@@ -779,24 +779,22 @@ Plusieurs encadrés sont à remplir pour ajouter un jeu de question :
 
 Pour gérer des domaines de compétence, cliquer sur « Gestion des
 domaines ». Il permet de regrouper sous un même domaine de compétences,
-une ou plusieurs questions qui portent sur un même sujet. Les domaines
-sont utiles car ils apparaissent dans les rapports d'examen et
-permettent de montrer le pourcentage de réussite par domaine. Les
-domaines de compétence renvoient à un ensemble de connaissances, de
-capacités et de savoir-faire spécifiques qui sont nécessaires pour
-exercer une activité professionnelle ou accomplir une tâche.
+une ou plusieurs questions qui portent sur un même sujet. 
+
+Les domaines sont utiles car ils apparaissent dans les rapports d'examen et permettent de montrer le pourcentage de réussite par domaine. 
+
+Les domaines de compétence renvoient à un ensemble de connaissances, de capacités et de savoir-faire spécifiques qui sont nécessaires pour exercer une activité professionnelle ou accomplir une tâche.
 
 Cliquer sur «  Gestion des domaines » mène vers une page nommée
 « Gestion des domaines de compétences ». Dans la partie à gauche vous
 avez la possibilité d'ajouter un domaine et d'exporter vers Excel.
 
-![Une image contenant texte, capture d'écran, Police, conception Le
-contenu généré par l'IA peut être
-incorrect.](./media/image82.png)
+![Une image contenant texte, capture d'écran, Police, conception Le contenu généré par l'IA peut êtreincorrect.](./media/image82.png)
 
 Dans la partie centrale de la page, vous avez la possibilité d'agir sur
-les différents domaines. Pour cela, cliquer sur l'icône « Editer » à
-droite, pour modifier le domaine.
+les différents domaines. 
+
+Pour cela, cliquer sur l'icône « Editer » à droite, pour modifier le domaine.
 
 ![](./media/image83.png)
 
@@ -804,106 +802,90 @@ Vous pouvez modifier le domaine via la page qui s'affiche, et qui
 présente quatre parties :
 
 -   Description : possibilité de choisir la langue de description, le
-    nom et la description textuelle. Cela permet de définir à quoi
+    nom et la description textuelle. 
+    
+    Cela permet de définir à quoi
     renvoie le nom de ce domaine.
 
 -   Caractéristiques générales : cette partie donne la possibilité de
     choisir le nombre de niveaux qu'il y aura par domaines.
 
 -   Description des niveaux : Possibilité de définir dans la langue de
-    son choix, les niveaux de compétence. Cela permet de définir à quoi
+    son choix, les niveaux de compétence. 
+    
+    Cela permet de définir à quoi
     renvoie chaque niveau de compétence. Pour savoir où se situe le
     candidat.
 
--   Recommandations pour progresser dans la langue de son choix : Cela
+-   Recommandations pour progresser dans la langue de son choix : 
+
+Cela
     permet d'expliquer les recommandations qui permettent de passer au
-    niveau supérieur. C'est utile pour la progression du candidat.
+    niveau supérieur. 
+    
+C'est utile pour la progression du candidat.
 
-![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image84.png)
+![Une image contenant texte, capture d'écran, logiciel, Page web Le contenu généré par l'IA peut être incorrect.](./media/image84.png)
 
-![Une image contenant texte, logiciel, Page web, Site web Le contenu
-généré par l'IA peut être
-incorrect.](./media/image85.png)
+![Une image contenant texte, logiciel, Page web, Site web Le contenu généré par l'IA peut être incorrect.](./media/image85.png)
 
 
 ## Gestion des aides visuelles 
 
-Comme expliqué dans la première partie, les aides visuelles sont une
-image insérée dans une question ou une réponse afin d'aider le candidat
-à visualiser un élément de référence. Les aides visuelles sont
-rattachées à un sujet.
+Comme expliqué dans la première partie, les aides visuelles sont une image insérée dans une question ou une réponse afin d'aider le candidat à visualiser un élément de référence. 
 
-![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image86.png)
+Les aides visuelles sont rattachées à un sujet.
 
-Dans le mode Edition, les aides visuelles sont visibles grâce à des
-balises.
+![Une image contenant texte, capture d'écran, logiciel, Page web Le contenu généré par l'IA peut être incorrect.](./media/image86.png)
+
+Dans le mode Edition, les aides visuelles sont visibles grâce à des balises.
 
 ![](./media/image87.png)
 
-Vous avez la possibilité d'ajouter une aide visuelle. Pour cela, cliquer
-sur Ajouter une aide visuelle.
+Vous avez la possibilité d'ajouter une aide visuelle. Pour cela, cliquer sur Ajouter une aide visuelle.
 
-Une fenêtre s'ouvre dans laquelle vous pouvez choisir le sujet ainsi que
-la langue de votre choix.
+Une fenêtre s'ouvre dans laquelle vous pouvez choisir le sujet ainsi que la langue de votre choix.
 
-![Une image contenant texte, capture d'écran, nombre, Police Le contenu
-généré par l'IA peut être
-incorrect.](./media/image88.png)
+![Une image contenant texte, capture d'écran, nombre, Police Le contenu généré par l'IA peut être incorrect.](./media/image88.png)
 
-![Une image contenant capture d'écran, texte, logiciel Le contenu généré
-par l'IA peut être
-incorrect.](./media/image89.png)
+![Une image contenant capture d'écran, texte, logiciel Le contenu généré par l'IA peut être incorrect.](./media/image89.png)
 
-Dans cette partie vous avez la possibilité de choisir le sujet dans
-lequel apparaîtra l'aide visuelle, la langue et le type d'aide visuelle
-que vous souhaitez. Ainsi que de nommer votre aide visuelle. De plus,
-vous pouvez aussi enregistrer et modifier le fichier image en question.
+Dans cette partie vous avez la possibilité de choisir le sujet dans lequel apparaîtra l'aide visuelle, la langue et le type d'aide visuelle que vous souhaitez. Ainsi que de nommer votre aide visuelle. De plus, vous pouvez aussi enregistrer et modifier le fichier image en question.
 
 Voici une capture d'écran de la page qui répertorie les différentes
 aides visuelles. Cette page vous permet de gérer les aides visuelles.
-Vous pouvez par exemple les modifier en cliquant sur l'icône « Editer »
-à droite.
 
-![Une image contenant texte, capture d'écran, nombre, logiciel Le
-contenu généré par l'IA peut être
-incorrect.](./media/image90.png)
+Vous pouvez par exemple les modifier en cliquant sur l'icône « Editer » à droite.
+
+![Une image contenant texte, capture d'écran, nombre, logiciel Le contenu généré par l'IA peut être incorrect.](./media/image90.png)
 
 # Création des tests
 
-Dans le **menu principal**, cliquer sur **Tests and Examens** puis
-cliquer sur **Créer un test.** La page **Créer ou modifier un test** va
-s'ouvrir. Cette page comprend toutes les caractéristiques du test.
+Dans le **menu principal**, cliquer sur **Tests and Examens** puis cliquer sur **Créer un test.** 
 
-![Une image contenant texte, capture d'écran, logiciel, Icône
-d'ordinateur Description générée
-automatiquement](./media/image91.png)
+La page **Créer ou modifier un test** va s'ouvrir. 
 
-En appuyant sur **Créer un test**, une fenêtre s'ouvre pour **choisir la
-langue du test** (français ou anglais).
+Cette page comprend toutes les caractéristiques du test.
+
+![Une image contenant texte, capture d'écran, logiciel, Icône d'ordinateur Description générée automatiquement](./media/image91.png)
+
+En appuyant sur **Créer un test**, une fenêtre s'ouvre pour **choisir la langue du test** (français ou anglais).
 
 ![Une image contenant texte, logiciel, Police, capture d'écran
-Description générée
-automatiquement](./media/image92.jpeg)
+Description générée automatiquement](./media/image92.jpeg)
 
 ## Caractéristiques du test
 
-![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
+![Une image contenant texte, capture d'écran, logiciel, Page web Le contenu généré par l'IA peut être
 incorrect.](./media/image93.png)
 
 La première section des paramètres inclut :
 
 -   La langue des questions. : choisir parmi une liste déroulante.
 
--   L'Algorithme des questions :
+L'Algorithme des questions :
 
-```{=html}
-<!-- -->
-```
+
 -   Séquentiel Ordonné
 
 -   Séquentiel au hasard
@@ -951,9 +933,7 @@ automatiquement](./media/image96.jpeg)
 
 ### Options de passage du test
 
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image97.png)
+![Une image contenant texte, capture d'écran, Police Le contenu généré par l'IA peut être incorrect.](./media/image97.png)
 
 ![](./media/image6.png) Navigation entre les questions : le candidat peut naviguer entre les questions, revenir en arrière sur une question ou sauter une question (l'option est possible uniquement si le test ne comporte pas de question de manipulation).
 
@@ -963,46 +943,32 @@ incorrect.](./media/image97.png)
 
 ### Gestion du temps
 
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être incorrect.](./media/image98.png)
+![Une image contenant texte, capture d'écran, Police Le contenu généré par l'IA peut être incorrect.](./media/image98.png)
 
 Vous pouvez définir la durée du test en minutes. Un chronomètre
-s'affichera sur la page du candidat. Si vous ne souhaitez pas définir de
-durée pour le test, laissez le champs vide.
+s'affichera sur la page du candidat. Si vous ne souhaitez pas définir de durée pour le test, laissez le champs vide.
 
 ### Nom et description du test
 
 ![Une image contenant texte, Police, logiciel, capture d'écran
-Description générée
-automatiquement](./media/image99.png)
+Description générée automatiquement](./media/image99.png)
 
-Ajouter le nom du test et une description qui sera visible pour les
-administrateurs du compte, en français et/ou en anglais. Le nom du test
-apparaîtra dans la liste de vos tests pour l'inscription du candidat,
-dans les invitations envoyées au candidat par email pour leur connexion
-au test, ainsi que dans les rapports de compétences.
+Ajouter le nom du test et une description qui sera visible pour les administrateurs du compte, en français et/ou en anglais. Le nom du test apparaîtra dans la liste de vos tests pour l'inscription du candidat, dans les invitations envoyées au candidat par email pour leur connexion au test, ainsi que dans les rapports de compétences.
 
 ### Messages de début et de fin de test
 
 Ces messages seront visibles par le candidat. En appuyant sur
-**Editer**, un éditeur permettant la personnalisation du message du
-début s'ouvre.
+**Editer**, un éditeur permettant la personnalisation du message du début s'ouvre.
 
-Le message de début s'affiche avant que le candidat ne commence son
-test. Vous pouvez donc y renseigner toute information qui vous semble
-pertinente.
+Le message de début s'affiche avant que le candidat ne commence son test. Vous pouvez donc y renseigner toute information qui vous semble pertinente.
 
 Le Message de fin s'affiche une fois le test passé.
 
-![Une image contenant texte, capture d'écran, Police, ligne Description
-générée
-automatiquement](./media/image100.jpeg)
+![Une image contenant texte, capture d'écran, Police, ligne Description générée automatiquement](./media/image100.jpeg)
 
 ### Caractéristiques générales
 
-![Une image contenant texte, Police, ligne, capture d'écran Le contenu
-généré par l'IA peut être
-incorrect.](./media/image101.png)
+![Une image contenant texte, Police, ligne, capture d'écran Le contenu généré par l'IA peut être incorrect.](./media/image101.png)
 
 -   Activer le test pour le rendre visible sur votre compte.
 
@@ -1058,17 +1024,13 @@ gestion des administrateurs. Cliquez sur administrateurs.
 d'ordinateur Le contenu généré par l'IA peut être
 incorrect.](./media/image106.png)
 
-La page gestion des administrateurs de votre compte apparaîtra et vous
-pourrez afficher tout les administrateurs qui ont été créés.
+La page gestion des administrateurs de votre compte apparaîtra et vous pourrez afficher tout les administrateurs qui ont été créés.
 
 ##### Type d'administrateurs
 
-Il existe 13 types d'administrateurs sur la plateforme. En fonction du
-rôle de chacun vous pouvez lui attribuer des privilèges qui lui donnent
-accès à des fonctionnalités spécifiques.
+Il existe 13 types d'administrateurs sur la plateforme. En fonction du rôle de chacun vous pouvez lui attribuer des privilèges qui lui donnent accès à des fonctionnalités spécifiques.
 
-![Une image contenant texte, logiciel, Icône d'ordinateur, Logiciel
-multimédia Le contenu généré par l'IA peut être
+![Une image contenant texte, logiciel, Icône d'ordinateur, Logiciel multimédia Le contenu généré par l'IA peut être
 incorrect.](./media/image107.png)
 
 ##### Modification des administrateurs
@@ -1591,15 +1553,13 @@ d'évaluation, en fonction de la famille de sujets du test.
 
 Pour accéder à cette fonctionnalité, sélectionnez le menu Paramètres,
 cliquez sur **Descriptions de niveaux personnalisées**, puis sur **Créer
-une description de niveau.\
-**
+une description de niveau.**
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
 incorrect.](./media/image140.png)
 
-Dans la fenêtre **Ajouter une description personnalisée**, sélectionnez
-la famille de sujets, puis cliquez sur **Enregistrer**.
+Dans la fenêtre **Ajouter une description personnalisée**, sélectionnez la famille de sujets, puis cliquez sur **Enregistrer**.
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le contenu
 généré par l'IA peut être
