@@ -240,7 +240,7 @@ Informations du tableau des questions :
 
 ### Les QCM
 
-***QCM Texte Réponse unique*** : Le candidat doit cocher la bonne
+**QCM Texte Réponse unique** : Le candidat doit cocher la bonne
 réponse.
 
 ##### Mode Aperçu : 
@@ -1139,8 +1139,7 @@ Lors du téléchargement du fichier Excel, chacun des candidats recevra un
 mot de passe aléatoire. **Remarque :** Vous pourrez créer un mot de
 passe pour tout les candidats en cliquant sur actions sur le groupe,
 puis sur **attribuer un mot de passe** **temporaire à tous les candidats
-du groupe).\
-**
+du groupe).**
 
 ##### Inscrire un/des candidat(s) à un test
 
