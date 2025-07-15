@@ -319,31 +319,13 @@ incorrect.](./media/image34.png)
  
 
 
-#####  Mode Edition (exemple de code yaml)  : 
+#####  Mode Edition  : 
 
 ##### ![Une image contenant texte, capture d'écran, Police, logiciel Le contenu généré par l'IA peut être incorrect.](./media/image35.png)
 
 ![Une image contenant texte, capture d'écran, ligne, Police Le contenu
 généré par l'IA peut être
 incorrect.](./media/image36.png)
-
-#### **Multi click :**  Le candidat doit cliquer sur toutes les zones concernées.
-
-##### Mode Aperçu : 
-
-![Une image contenant texte, capture d'écran, Parallèle, nombre Le
-contenu généré par l'IA peut être
-incorrect.](./media/image37.png)
-
-Mode Edition (avec code yaml) :
-
-![Une image contenant texte, Police, nombre, ligne Le contenu généré par
-l'IA peut être
-incorrect.](./media/image38.png)
-
-![Une image contenant texte, capture d'écran, ligne Le contenu généré
-par l'IA peut être
-incorrect.](./media/image39.png)
 
 ### Glisser-déposer
 
