@@ -338,7 +338,7 @@ dans la zone de droite.
 généré par l'IA peut être
 incorrect.](./media/image40.png)
 
-##### Mode Edition :  (exemple de code yaml) :
+##### Mode Edition :  
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le contenu
 généré par l'IA peut être
@@ -432,9 +432,6 @@ incorrect.](./media/image54.png)
 **Vrai/Faux avec score unique** : Le candidat doit répondre à toutes les
 affirmations pour que sa réponse soit considérée juste ou fausse.
 
-**Vrai/Faux avec script de vérification :** Le candidat répond à chacune
-des affirmations. Chaque affirmation peut être pondérée par un nombre de
-points défini par le créateur de la question.
 
 ##### En mode Aperçu : 
 
@@ -452,22 +449,6 @@ incorrect.](./media/image56.png)
 généré par l'IA peut être
 incorrect.](./media/image57.png)
 
-
-##### En mode Aperçu :  (vrai/faux avec script de vérification) : 
-
-![Une image contenant texte, capture d'écran, Police, nombre Le contenu
-généré par l'IA peut être
-incorrect.](./media/image58.png)
-
-##### En mode Edition (avec code yaml) : 
-
-![Une image contenant texte, capture d'écran, nombre, ligne Le contenu
-généré par l'IA peut être
-incorrect.](./media/image59.png)
-
-![Une image contenant texte, ligne, capture d'écran, Police Le contenu
-généré par l'IA peut être
-incorrect.](./media/image60.png)
 
 ### Enregistrements audio
 
