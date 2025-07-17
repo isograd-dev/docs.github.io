@@ -916,7 +916,9 @@ automatiquement](./media/image94.jpeg)
 
 Pour voir les questions disponibles, il faut sélectionner un sujet. Une
 recherche par mot clé, par compétence, par identifiant de question ou
-par degré de difficulté est possible. Les questions présentent trois
+par degré de difficulté est possible.
+
+Les questions présentent trois
 degrés de difficulté : Facile, Moyenne, Difficile.
 
 ![Une image contenant texte, capture d'écran, logiciel, Icône
@@ -925,6 +927,7 @@ incorrect.](./media/image95.png)
 
 Il est possible de mélanger **plusieurs sujets** et de **visualiser la
 question** en cliquant sur l'œil qui se trouve à droite de la question.
+
 La prévisualisation de question est possible aussi sur la page
 principale de création de test, une fois les questions enregistrées.
 
