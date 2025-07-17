@@ -987,7 +987,9 @@ Le Message de fin s'affiche une fois le test passé.
 
 
 
-# Naviguer sur la plateforme
+# Guide d'utilisation de la plateforme
+
+## Naviguer sur la plateforme
 
 Le menu principal de la plateforme donne accès aux cinq onglets qui vous permettent de gérer votre compte.
 
