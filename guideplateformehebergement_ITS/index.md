@@ -3,13 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
-<div id="toc">
-
-* TOC
-{:toc}
-
-</div>
-
 <div id="content">
 
 ## Introduction au manuel
