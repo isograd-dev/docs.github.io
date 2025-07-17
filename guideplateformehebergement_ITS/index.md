@@ -353,8 +353,7 @@ dans la zone de droite.
 ##### Mode Aperçu : 
 
 ![Une image contenant texte, capture d'écran, conception Le contenu
-généré par l'IA peut être
-incorrect.](./media/image40.png)
+généré par l'IA peut être incorrect.](./media/image40.png)
 
 ##### Mode Edition :  (exemple de code yaml) :
 
@@ -362,8 +361,7 @@ incorrect.](./media/image40.png)
 généré par l'IA peut être
 incorrect.](./media/image41.png)
 
-![Une image contenant texte, capture d'écran, ligne Le contenu généré
-par l'IA peut être
+![Une image contenant texte, capture d'écran, ligne Le contenu généré par l'IA peut être
 incorrect.](./media/image42.png)
 
 ### Relier les éléments
@@ -650,19 +648,17 @@ l'écran en mode Edition :
 #### **Supprimer une question**
 
 Pour supprimer une question, il suffit de se positionner sur cette
-dernière dans la liste des questions de la page
+dernière dans la liste des questions de la page d'accueil. 
 
-d'accueil. Quatre boutons d'action apparaissent :
+Quatre boutons d'action apparaissent :
+
 ![](./media/image74.png)
 
-Cliquer sur « Supprimer ». La page d'édition de la question s'ouvre et
-dans le menu latéral à droite, cliquer de nouveau sur le bouton «
-supprimer » pour confirmer la suppression.
+Cliquer sur « Supprimer ». La page d'édition de la question s'ouvre et dans le menu latéral à droite, cliquer de nouveau sur le bouton « supprimer » pour confirmer la suppression.
 
 #### **Ajouter des illustrations et des fichiers à une question**
 
-Plusieurs types d'illustrations et de fichiers peuvent être ajoutés à
-une question :
+Plusieurs types d'illustrations et de fichiers peuvent être ajoutés à une question :
 
 -   Une image d'illustration
 
