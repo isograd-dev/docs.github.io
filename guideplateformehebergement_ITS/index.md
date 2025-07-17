@@ -597,10 +597,10 @@ incorrect.](./media/image68.png)
 
 #### **Explications concernant la solution**
 
-Ce champ n\'est pas obligatoire et doit être renseigné uniquement si une
-solution doit être présentée au candidat (pendant ou après le test). Le
-tutoriel eut être renseigné par une personne physique ou par l'IA. Le
-bouton situé à droite permet de générer la solution de la question avec
+Ce champ n\'est pas obligatoire et doit être renseigné uniquement si une solution doit être présentée au candidat (pendant ou après le test).
+
+Le tutoriel eut être renseigné par une personne physique ou par l'IA.    
+Le bouton situé à droite permet de générer la solution de la question avec
 l\'IA.
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
@@ -617,7 +617,9 @@ questions analysées par l'IA ;
 #### **Informations de revue**
 
 Ce blog permet le suivi de la question lorsque plusieurs personnes
-interviennent sur la question. On y retrouve le statut de la question,
+interviennent sur la question. 
+
+On y retrouve le statut de la question,
 les différents intervenants, et un champs permettant à ces derniers
 d'échanger des commentaires sur la question.
 
@@ -691,7 +693,9 @@ au chemin et à l'identifiant indiqués sur le serveur faute de quoi le
 fichier ne s'affichera pas.
 
 **NB** : Pour une résolution optimale, **les images doivent avoir une
-résolution 1080 x 500.** Attention, il s'agit de la résolution de
+résolution 1080 x 500.**   
+
+Attention, il s'agit de la résolution de
 l'image en plein écran, ce qui implique de modifier la résolution de
 l'écran à 1080 x 500 pour pouvoir faire des captures nettes, lisibles et
 dont tous les menus, onglets, etc. apparaissent tels qu'en environnement
@@ -728,7 +732,9 @@ incorrect.](./media/image78.png)
 « Gestion des jeux de question » et « Gestion des domaines » sont
 accessibles via « Catégories ». Les Jeux de question permettent de
 regrouper les questions sont un même nom, et de les retrouver plus
-facilement sur la plateforme. C'est un ensemble de questions qui peut
+facilement sur la plateforme. 
+
+C'est un ensemble de questions qui peut
 être utilisé pour filtrer les questions dans la page administration des
 questions.
 
@@ -896,9 +902,7 @@ L'Algorithme des questions :
 
 -   Adaptatif contraint sur les premières questions
 
-```{=html}
-<!-- -->
-```
+
 -   Sélection de questions : en appuyant sur **Choisir** une nouvelle
     fenêtre s'ouvre pour sélectionner les questions du test.
 
