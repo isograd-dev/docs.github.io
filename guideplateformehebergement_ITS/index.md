@@ -339,7 +339,7 @@ incorrect.](./media/image36.png)
 contenu généré par l'IA peut être
 incorrect.](./media/image37.png)
 
-Mode Edition (avec code yaml) :
+##### Mode Edition (avec code yaml) :
 
 ![Une image contenant texte, Police, nombre, ligne Le contenu généré par
 l'IA peut être
