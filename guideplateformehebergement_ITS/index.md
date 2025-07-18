@@ -1053,11 +1053,6 @@ Vous pouvez également **supprimer** un administrateur ou lui
 
 ![Une image contenant texte, capture d'écran, Police, ligne Le contenu généré par l'IA peut être incorrect.](./media/image108.png)
 
-### Alerte crédit
-
-### Consommation de crédits
-
-### Factures
 
 ## Candidats
 
