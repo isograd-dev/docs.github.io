@@ -1,6 +1,17 @@
 ---
 layout: home
 ---
+<style>
+  
+</style>
+
+<div id="toc">
+
+* TOC
+{:toc}
+
+</div>
+
 <div id="content">
 
 ## Introduction au manuel
