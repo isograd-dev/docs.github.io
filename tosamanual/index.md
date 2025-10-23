@@ -8,7 +8,7 @@
 {:toc}
  
 </div>
-<div class="content">
+<div id="content">
 <h1 style="font-size:60px;">Tosa Manual</h1>
 
 # First steps on the Tosa Platform
