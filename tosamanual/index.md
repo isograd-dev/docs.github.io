@@ -1,4 +1,4 @@
-<h1 style="font-size:60px;">Tosa Manual</h1>
+
 
 
 
@@ -8,7 +8,8 @@
 {:toc}
  
 </div>
-
+<div class="content">
+<h1 style="font-size:60px;">Tosa Manual</h1>
 
 # First steps on the Tosa Platform
 
@@ -1278,5 +1279,5 @@ system will be running the test(s) smoothly.
 
 If any technical issues arise, do not hesitate to contact **Isograd
 Support Team** at <support@isograd.com>.
-
+</div>
 
