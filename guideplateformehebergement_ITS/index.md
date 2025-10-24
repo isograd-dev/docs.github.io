@@ -14,43 +14,20 @@ layout: home
 
 ## Introduction au manuel
 
-Ce livret a pour objet la présentation de la plateforme Preprod ainsi
-que la présentation de la rédaction des questions et de leur
-traduction dans les diverses langues des tests en vue d'harmoniser les
-contenus et d'assurer une homogénéité de la banque de questions
-Isograd.
-C'est à la fois un document de support à l'équipe pédagogique
-d'Isograd et un document explicatif pour les clients et les organismes
-de traduction afin de les guider dans la création et la rédaction de
-leurs questions. L'objectif est d'anticiper certaines interrogations
-et de s'assurer que chacun puisse utiliser la plateforme Preprod de
-manière autonome et efficace.
-Nous présenterons donc dans un premier temps la plateforme de création
-et d'édition Preprod, ses différentes rubriques et onglets ainsi que
-leur utilité et la page d'accueil. Nous passerons ensuite en revue les
-différentes typologies de question existantes puis le process de
-création de questions. Ceci devrait permettre au moment de la création
-de questions de pouvoir efficacement cibler les typologies de
-questions possibles et les adapter en fonction de la compétence
-évaluée chez le candidat.
-*Il est à noter que les fonctionnalités disponibles à l'utilisateur de
-la plateforme divergent selon les droits*
-*d'utilisation qui lui sont fournis par Isograd.*
-Dans un second temps, nous aborderons la charte éditoriale pour la
-création des questions (usages génériques, formulations, mises en
-forme, contenus) pour les quatre composantes suivantes :
-- L'énoncé
-- Les solutions et tutoriels
+Ce manuel a pour objectif de présenter l’ensemble des fonctionnalités de la plateforme de tests, afin de permettre aux clients et aux utilisateurs de gérer leurs évaluations en toute autonomie.
 
-Un tableau récapitulatif des diverses syntaxes d'énoncé par typologie
-de questions est disponible en annexe à la fin de ce livret ainsi
-qu'un tableau listant les noms de boutons de la barre d'outils
-Microsoft Office en français avec leur traduction en anglais pour
-éviter les erreurs de traduction et respecter la terminologie des
-logiciels (Microsoft, Google, Adobe, etc.).
-- L'intégration des réponses dans les boutons « Voir la solution et
-les tutos » n'étant pour le moment disponible qu'en français et en
-anglais, cette partie est absente pour les autres langues.*
+Il décrit de manière détaillée les différentes sections de la plateforme, notamment :
+
+* la gestion des questions (création, édition, organisation et traduction) ;
+* la création et la configuration des tests ou examens ;
+* la consultation et l’analyse des résultats ;
+* la gestion des candidats et le suivi des sessions ; 
+* la gestion des administrateurs et la définition de leurs droits d’accès
+
+Le manuel vise à accompagner les utilisateurs dans la prise en main complète de la plateforme, depuis la conception d’un test jusqu’à la consultation des résultats.
+Il offre également des explications pratiques et illustrées pour faciliter l’utilisation quotidienne et garantir une utilisation efficace et indépendante de l’outil.
+
+Les fonctionnalités accessibles peuvent varier selon les droits d’utilisation attribués à chaque utilisateur.
 
 # Présentation générale de la plateforme
 
@@ -58,27 +35,29 @@ Voici une vue d'ensemble de la plateforme une fois connecté.e :
 
 ![](./media/image10.png)
 
-La plateforme permet de :
+Depuis cette page, il est possible d’accéder aux principales rubriques de la plateforme :
 
--   Gérer la base de questions (ajouter des questions, éditer des
-    questions, vérifier les questions, supprimer des questions,
-    dupliquer des questions, gérer les commentaires)
+* Compte : permet de consulter et de modifier les informations du profil, ainsi que de gérer les accès et les droits des administrateurs.
 
--   Créer des sujets
+* Candidats : donne accès à la liste des candidats, à la création de nouveaux profils et à la gestion des inscriptions aux tests.
 
--   Gérer les catégories (jeux de questions, domaines)
+* Résultats : permet de consulter, filtrer et exporter les résultats des tests passés.
 
--   Gérer les aides visuelles
+* Surveillance : offre la possibilité de suivre en temps réel le déroulement des sessions et de vérifier la conformité des passages.
 
--   Créer des tests
+* Emails : centralise la configuration et l’envoi des communications automatiques liées aux tests (invitations, relances, confirmations, etc.).
 
--   Gérer les inscriptions des candidats au tests
+* Paramètres : regroupe les réglages généraux de la plateforme, notamment les préférences d’affichage, de langue et les droits d’accès.
 
--   Gérer l'administration des résultats des candidats
+* Aide & Support : donne accès à la documentation, aux guides d’utilisation et au support technique.
 
-## Menu « Questions »
+* Gestion des questions : permet de créer, modifier, traduire et organiser les questions intégrées dans la base de données des tests.
+
+## Onglet « Gestion des questions »
 
 ![](./media/image11.png)
+
+### Menu « Questions » 
 
 Ce menu permet :
 
@@ -89,11 +68,12 @@ Ce menu permet :
 -   De visualiser les questions
 
 -   D'exporter vos questions vers un fichier Excel
+- De rechercher des questions en utilisant des filtres
 
 **Le process de gestion des questions est détaillé dans le chapitre
 « Administration des questions ».**
 
-## Menu « Catégories »
+### Menu « Catégories »
 
 ![Une image contenant texte, Police, capture d'écran, conception Le
 contenu généré par l'IA peut être
@@ -109,13 +89,17 @@ Ce menu permet :
 **Le process de gestion des jeux de questions et des domaines est
 détaillé dans le chapitre « Gestion des jeux de questions et gestion des domaines ».**
 
-## Menu « Sujets »
+### Menu «  Tests & Examens »
+
+Ce menu permet la création et la gestion des tests et des examens. 
+
+### Menu « Sujets »
 
 ![Une image contenant texte, capture d'écran, Police, blanc Description
 générée
 automatiquement](./media/image13.png)
 
-Ce menu permet de créer un nouveau sujet ou encore d'éditer ou supprimer ceux déjà existants. On retrouve par ailleurs le sujet dans les filtres en haut de la page d'accueil.
+Ce menu permet de créer un nouveau sujet ou encore d'éditer ou supprimer ceux déjà existants. 
 
 ![Une image contenant texte, capture
 d'écran, ligne, Police Le contenu généré par l'IA peut être
@@ -125,9 +109,9 @@ incorrect.](./media/image14.png)
 
 **Le process de gestion des sujets est détaillé dans le chapitre « Gestion des sujets ».**
 
-## Menu « Aides visuelles »
+### Menu « Aides visuelles »
 
-Une aide visuelle est une image insérée dans une question ou une réponse afin d'aider le candidat à visualiser un élément de référence (bouton, fonctionnalité, autre). Les aides visuelles sont des images ou des documents que vous pourrez utiliser dans vos questions. Les aides visuelles sont associées à un sujet et ne sont disponibles que pour le sujet concerné.
+Une aide visuelle est une image ou un document inséré dans une question ou une réponse afin d'aider le candidat à visualiser un élément de référence (bouton, fonctionnalité, texte ou autre). Les aides visuelles sont associées à un sujet et ne sont disponibles que pour le sujet concerné.
 
 ![](./media/image16.png)
 
@@ -139,18 +123,24 @@ Excel.
 contenu généré par l'IA peut être
 incorrect.](./media/image17.jpeg)
 
-## Menu Gestion des Candidats
+### Menu « Gestion des Candidats » 
 
 ![Une image contenant texte, capture d'écran, Police, conception Le
 contenu généré par l'IA peut être incorrect.](./media/image18.png)
 
-Ce menu permet la gestion des candidats : inscriptions aux tests,
+Ce menu permet :
+* la gestion des candidats : inscriptions aux tests,
 gestion des groupes, gestion des sessions, profils par compétences,
 envois d'emails, consultation des résultats, etc.
+* l'accès à la gestion des résultats : tableau de bord et résultats 
 
 **Le process de gestion et d'administration des candidats est détaillé dans le chapitre « Gestion des candidats ».**
 
-## Bouton « Déconnexion » 
+### Menu « Aide et Support » 
+
+Ce menu permet l'accès au manuel d'utilisation de la plateforme, les paramètres de l'API et le contact du support technique Isograd. 
+
+### Bouton « Déconnexion » 
 
 ![](./media/image19.png)
 
@@ -171,13 +161,13 @@ des questions :
 
 -   Par sujet
 
--   Par jeu de question (évaluation, certification, etc.)
+-   Par jeu de question
 
 -   Par langue
 
--   Par typologie de question
+-   Par type de réponse
 
--   Par domaine
+-   Par domaine de compétence (si des domaines ont été créés pour le sujet sur la plateforme)
 
 -   Par personne responsable (personne devant intervenir sur la question)
 
@@ -452,7 +442,6 @@ incorrect.](./media/image57.png)
 
 ### Enregistrements audio
 
-**Enregistrement évalué par une personne physique :** Le candidat doit répondre à une question en s'enregistrant. Le candidat peut ou non, selon le paramétrage du créateur de la question, enregistrer plusieurs audios qu'il peut réécouter avant de sélectionner celui qu'il souhaite soumettre.
 
 **Enregistrement évalué par l'IA** : Le candidat doit répondre à une question en enregistrant un audio. Cette question sert à tester les compétences du candidat à l'oral.
 
