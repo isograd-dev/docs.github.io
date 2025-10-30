@@ -173,7 +173,8 @@ des questions :
 
 -   Par statut de la question (en rédaction, à vérifier, en production, etc.)
 
-Ce bandeau présente également la possibilité d'enregistrer des favoris. Pour ce faire vous devez :
+Ce bandeau présente également la possibilité d'enregistrer des favoris. Pour ce faire vous devez :!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<§?§§§§§§§§§§§§§§§§§§
+>§§§§§§§§§§§§§§§§§§§§§§§§§
 
 -   Faire vos filtres grâce aux huit options proposées
 
