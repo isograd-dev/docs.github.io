@@ -14,7 +14,7 @@ layout: home
 
 ## Introduction au manuel
 
-Ce manuel a pour objectif de présenter l’ensemble des fonctionnalités de la plateforme de tests, afin de permettre aux clients et aux utilisateurs de gérer leurs évaluations en toute autonomie.
+test Ce manuel a pour objectif de présenter l’ensemble des fonctionnalités de la plateforme de tests, afin de permettre aux clients et aux utilisateurs de gérer leurs évaluations en toute autonomie.
 
 Il décrit de manière détaillée les différentes sections de la plateforme, notamment :
 
