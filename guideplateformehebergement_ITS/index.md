@@ -14,7 +14,7 @@ layout: home
 
 ## Introduction au manuel
 
-test Ce manuel a pour objectif de présenter l’ensemble des fonctionnalités de la plateforme de tests, afin de permettre aux clients et aux utilisateurs de gérer leurs évaluations en toute autonomie.
+Ce manuel a pour objectif de présenter l’ensemble des fonctionnalités de la plateforme de tests, afin de permettre aux clients et aux utilisateurs de gérer leurs évaluations en toute autonomie.
 
 Il décrit de manière détaillée les différentes sections de la plateforme, notamment :
 
@@ -101,9 +101,6 @@ automatiquement](./media/image13.png)
 
 Ce menu permet de créer un nouveau sujet ou encore d'éditer ou supprimer ceux déjà existants. 
 
-![Une image contenant texte, capture
-d'écran, ligne, Police Le contenu généré par l'IA peut être
-incorrect.](./media/image14.png)
 
 ![](./media/image15.png)
 
@@ -150,6 +147,22 @@ Permet à l'administrateur de se déconnecter de la plateforme.
 
 ## Présentation de la page d'accueil
 
+### Les actions
+
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être
+incorrect.](./media/image21.png)
+
+Ce menu permet les actions suivantes :
+
+-   Ajouter une nouvelle question
+
+-   Importer un fichier de questions (type QCM) automatiquement sur la plateforme depuis un fichier Excel
+
+-   Imprimer (visualiser en format PDF) l'ensemble des questions sélectionnées
+
+-   Exporter vos questions vers un fichier Excel
+
 ### Les filtres
 
 ![Une image contenant texte, capture d'écran, nombre, logiciel Le
@@ -173,31 +186,10 @@ des questions :
 
 -   Par statut de la question (en rédaction, à vérifier, en production, etc.)
 
-Ce bandeau présente également la possibilité d'enregistrer des favoris. Pour ce faire vous devez :!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<§?§§§§§§§§§§§§§§§§§§
->§§§§§§§§§§§§§§§§§§§§§§§§§
-
--   Faire vos filtres grâce aux huit options proposées
-
--   Cliquer sur le bouton plus (+) pour ajouter le sujet à vos favoris
-
--   Pour retirer un sujet, il suffit de le sélectionner dans la liste déroulante et de cliquer sur le bouton moins (-)
+Ce bandeau permet également d’enregistrer des favoris. Pour cela, filtrez les questions afin d’afficher la liste souhaitée, cliquez sur le bouton **+**, puis attribuez un nom à cette liste. Pour retirer un sujet, il suffit de le sélectionner dans la liste déroulante et de cliquer sur le bouton moins (-). 
+ 
  
 
-### Les actions
-
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image21.png)
-
-Ces onglets permettent les actions suivantes :
-
--   Ajouter une nouvelle question
-
--   Importer un fichier de questions automatiquement sur la plateforme depuis un fichier Excel
-
--   Imprimer (visualiser) l'ensemble des questions sélectionnées
-
--   Exporter vos questions vers un fichier Excel
 
 ### La liste des questions
 
@@ -229,90 +221,88 @@ Informations du tableau des questions :
 
 ## Typologies des questions disponibles
 
-### Les QCM
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% (texte pour la partie commune de tous les questions en mode édition?)
 
-***QCM Texte Réponse unique*** : Le candidat doit cocher la bonne
-réponse.
+### Mode Aperçu : 
 
-##### Mode Aperçu : 
-![Une image contenant texte, capture d'écran, logiciel, Logiciel multimédia Le contenu généré par l'IA peut être incorrect.](./media/image23.jpeg)
-
-##### Mode Edition :
-![Une image contenant texte, capture d'écran, Police, diagramme Le contenu généré par l'IA peut être incorrect.](./media/image24.png)
-
-**QCM Texte Réponses multiples** : Le candidat doit cocher la ou les
-bonnes réponses.
-
-##### Mode Aperçu : 
+#### Les QCM
 
 ![Une image contenant texte, Appareils électroniques, capture d'écran,
 Page web Le contenu généré par l'IA peut être
 incorrect.](./media/image25.png)
 
-##### Mode Edition : 
+#### Les QCM
+
+Il existe trois types de QCM possibles :
+
+* QCM texte à réponse unique, où le candidat sélectionne une seule réponse correcte ;
+
+* QCM à réponses multiples, où le candidat doit indiquer l’ensemble des réponses correctes ;
+
+* QCM « une parmi n », où le candidat doit choisir une seule bonne réponse parmi plusieurs réponses correctes pour valider la question.
+
+
+
+
+##### Mode Edition :
+![Une image contenant texte, capture d'écran, Police, diagramme Le contenu généré par l'IA peut être incorrect.](./media/image24.png)
+
+
+
+Dans la partie Question et réponses, quatre onglets sont disponibles :
+
+* Énoncé de la question : permet de rédiger le contenu de la question ;
+
+* Média : permet d’ajouter un document de référence, une vidéo, une image, ou de générer un contenu audio à l’aide de l’IA ;
+
+* Réponses proposées : permet de définir le type de QCM, le nombre de réponses, ainsi que leur format (texte ou image) ;
+
+* Prompt de calcul : permet de déterminer la méthode de calcul du score de la question et de la générer automatiquement à l’aide de l’IA.
+
+### Echelle de réponse
+
+**Vrai/Faux** : Le candidat doit répondre à toutes les
+affirmations pour que sa réponse soit considérée juste ou fausse.
+
+
+##### En mode Aperçu : 
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](./media/image26.png)
+incorrect.](./media/image55.png)
 
-![Une image contenant texte, Police, ligne, nombre Le contenu généré par
-l'IA peut être
-incorrect.](./media/image27.png)
-
-**QCM Texte Réponse une parmi plusieurs** : Le candidat doit cocher une bonne réponse parmi celles proposées. Pour ce type de question, il peut y avoir plusieurs réponses correctes possibles.
-
-##### En mode aperçu :
-
-![Une image contenant texte, Appareils électroniques, capture d'écran,
-ordinateur Le contenu généré par l'IA peut être
-incorrect.](./media/image28.png)
-
-##### Mode Edition : 
-
-![Une image contenant texte, Police, ligne, nombre Le contenu généré par
-l'IA peut être
-incorrect.](./media/image29.png)
-
-![Une image contenant texte, Police, document, nombre Le contenu généré
-par l'IA peut être
-incorrect.](./media/image30.png)
-
-**QCM réponse en image** : Le candidat doit sélectionner la bonne
-réponse (une seule réponse possible) parmi les images proposées.
-
-##### Mode Aperçu : 
-
-![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image31.png)
-
-##### Mode Edition : 
+##### En mode Edition : 
 
 ![Une image contenant texte, capture d'écran, nombre, Police Le contenu
 généré par l'IA peut être
-incorrect.](./media/image32.png)
+incorrect.](./media/image56.png)
 
 ![Une image contenant texte, ligne, capture d'écran, Police Le contenu
 généré par l'IA peut être
-incorrect.](./media/image33.png)
+incorrect.](./media/image57.png)
+
 
 ### Les cliquer sur zone(s)
 
-**Single click :** l'aide d'un curseur qui s'affiche à l'écran, le candidat doit cliquer sur l'image pour répondre à la question.
+Il est possible de créer des questions comportant :
+
+* une seule zone à cliquer,
+
+* plusieurs zones correctes, dont le candidat doit sélectionner une seule pour valider la question,
+
+* plusieurs zones attendues, que le candidat doit toutes cliquer pour valider la question.
 
 
-
-##### Mode Aperçu :
+#### Mode Aperçu :
 
 ![Une image contenant texte, logiciel, Icône d'ordinateur, Page web Le
 contenu généré par l'IA peut être
 incorrect.](./media/image34.png)
  
 
-
 #####  Mode Edition  : 
 
-##### ![Une image contenant texte, capture d'écran, Police, logiciel Le contenu généré par l'IA peut être incorrect.](./media/image35.png)
+Dans l’onglet Éditeur graphique, s’ajoute l’image de fond et se définissent la ou les zones attendues.
 
 ![Une image contenant texte, capture d'écran, ligne, Police Le contenu
 généré par l'IA peut être
@@ -320,8 +310,7 @@ incorrect.](./media/image36.png)
 
 ### Glisser-déposer
 
-Le candidat doit faire glisser les éléments vers l'emplacement correct
-dans la zone de droite.
+Le candidat doit faire glisser les éléments (texte ou images) vers leur emplacement correct dans la zone de droite.
 
 ##### Mode Aperçu : 
 
@@ -331,9 +320,12 @@ incorrect.](./media/image40.png)
 
 ##### Mode Edition :  
 
+Dans l'onglet Zones de dépose vous ajoutez l'image de fond et vous définissez les zones de dépôt.
 ![Une image contenant texte, capture d'écran, Police, nombre Le contenu
 généré par l'IA peut être
 incorrect.](./media/image41.png)
+
+L’onglet Éléments à faire glisser permet de choisir le type d’éléments à déplacer (texte ou images), de les définir et d’indiquer l’emplacement correct de chacun.
 
 ![Une image contenant texte, capture d'écran, ligne Le contenu généré
 par l'IA peut être
@@ -341,7 +333,7 @@ incorrect.](./media/image42.png)
 
 ### Relier les éléments
 
-Le candidat doit relier les éléments de gauche avec ceux de droite.
+Le candidat doit relier les éléments (texte ou images) de gauche avec ceux de droite.
 
 ##### Mode Aperçu : 
 
@@ -349,7 +341,9 @@ Le candidat doit relier les éléments de gauche avec ceux de droite.
 contenu généré par l'IA peut être
 incorrect.](./media/image43.png)
 
-##### Mode Edition ( avec code yaml) : 
+##### Mode Edition : 
+
+Dans les onglets Colonne de gauche et Colonne de droite vous définissez les éléments à relier (et leur type) et leur destination correcte. 
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le contenu
 généré par l'IA peut être
@@ -359,25 +353,6 @@ incorrect.](./media/image44.png)
 par l'IA peut être
 incorrect.](./media/image45.png)
 
-### Trier les éléments
-
-Le candidat a une liste d'éléments qu'il doit classer dans un ordre
-défini (croissant, décroissant, alphabétique, numérique, etc.). Pour ce
-type de question, un chronomètre peut être défini.
-
-**En mode aperçu** :
-
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image46.png)
-
-**En mode Edition (avec code yaml)** :
-
-![Une image contenant texte, Police, ligne, nombre Le contenu généré par
-l'IA peut être incorrect.](./media/image47.png)
-
-![Une image contenant texte, logiciel, capture d'écran Le contenu généré
-par l'IA peut être incorrect.](./media/image48.png)
 
 ### Les zones de texte à remplir
 
@@ -418,27 +393,6 @@ par l'IA peut être
 incorrect.](./media/image54.png)
 
 
-### Les Vrai/Faux
-
-**Vrai/Faux avec score unique** : Le candidat doit répondre à toutes les
-affirmations pour que sa réponse soit considérée juste ou fausse.
-
-
-##### En mode Aperçu : 
-
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image55.png)
-
-##### En mode Edition : 
-
-![Une image contenant texte, capture d'écran, nombre, Police Le contenu
-généré par l'IA peut être
-incorrect.](./media/image56.png)
-
-![Une image contenant texte, ligne, capture d'écran, Police Le contenu
-généré par l'IA peut être
-incorrect.](./media/image57.png)
 
 
 ### Enregistrements audio
