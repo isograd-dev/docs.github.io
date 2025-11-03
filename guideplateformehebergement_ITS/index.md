@@ -104,7 +104,160 @@ Ce menu permet de créer un nouveau sujet ou encore d'éditer ou supprimer ceux 
 
 ![](./media/image15.png)
 
-**Le process de gestion des sujets est détaillé dans le chapitre « Gestion des sujets ».**
+## Gestion des jeux de questions et gestion des domaines
+
+![Une image contenant texte, capture d'écran, Police, conception Le
+contenu généré par l'IA peut être
+incorrect.](./media/image78.png)
+
+###  Gestion des jeux de questions
+
+« Gestion des jeux de question » et « Gestion des domaines » sont
+accessibles via « Catégories ». Les Jeux de question permettent de
+regrouper les questions sont un même nom, et de les retrouver plus
+facilement sur la plateforme. C'est un ensemble de questions qui peut
+être utilisé pour filtrer les questions dans la page administration des
+questions.
+
+En cliquant sur « Gestion des Jeux de questions », on arrive sur une
+page qui permet d'ajouter un jeu de questions, et de l'exporter vers
+Excel. A partir de cette page vous pouvez aussi ajouter des jeux de
+questions.
+
+![](./media/image79.png)
+
+Ajouter un jeu de questions :
+
+![Une image contenant texte, capture d'écran, Police, carte de visite Le
+contenu généré par l'IA peut être
+incorrect.](./media/image80.png)
+
+Pour ajouter un jeu de question, cliquer sur « Ajouter un jeu de
+question ». Cela vous redirige vers la page « Mettre à jour un jeu de
+questions ».
+
+![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image81.png)
+
+Plusieurs encadrés sont à remplir pour ajouter un jeu de question :
+
+-   Le nom : comment sera définit le jeu de question.
+
+-   Les sujets, séparés par un tiret : les différents sujets concernés
+    par le jeu de question.
+
+-   Archivé : cela est utile si vous souhaitez archiver votre jeu de
+    question, si vous ne voulez plus voir le jeu de question.
+
+-   Possibilité de mettre un commentaire : il est possible d'ajouter un
+    commentaire, par rapport au jeu de question.
+
+-   Cliquer sur « Attribuer ce jeu à des questions » : mène à une page
+    qui permet d'enregistrer les modifications.
+
+-   Description pour les rapports : permet de choisir la langue des
+    rapports produits.
+
+-   Description utilisée dans les rapports : Possibilité de mettre une
+    description qui sera utilisée dans les rapports .
+
+### Gestion des domaines
+
+Pour gérer des domaines de compétence, cliquer sur « Gestion des
+domaines ». Il permet de regrouper sous un même domaine de compétences,
+une ou plusieurs questions qui portent sur un même sujet. Les domaines
+sont utiles car ils apparaissent dans les rapports d'examen et
+permettent de montrer le pourcentage de réussite par domaine. Les
+domaines de compétence renvoient à un ensemble de connaissances, de
+capacités et de savoir-faire spécifiques qui sont nécessaires pour
+exercer une activité professionnelle ou accomplir une tâche.
+
+Cliquer sur «  Gestion des domaines » mène vers une page nommée
+« Gestion des domaines de compétences ». Dans la partie à gauche vous
+avez la possibilité d'ajouter un domaine et d'exporter vers Excel.
+
+![Une image contenant texte, capture d'écran, Police, conception Le
+contenu généré par l'IA peut être
+incorrect.](./media/image82.png)
+
+Dans la partie centrale de la page, vous avez la possibilité d'agir sur
+les différents domaines. Pour cela, cliquer sur l'icône « Editer » à
+droite, pour modifier le domaine.
+
+![](./media/image83.png)
+
+Vous pouvez modifier le domaine via la page qui s'affiche, et qui
+présente quatre parties :
+
+-   Description : possibilité de choisir la langue de description, le
+    nom et la description textuelle. Cela permet de définir à quoi
+    renvoie le nom de ce domaine.
+
+-   Caractéristiques générales : cette partie donne la possibilité de
+    choisir le nombre de niveaux qu'il y aura par domaines.
+
+-   Description des niveaux : Possibilité de définir dans la langue de
+    son choix, les niveaux de compétence. Cela permet de définir à quoi
+    renvoie chaque niveau de compétence. Pour savoir où se situe le
+    candidat.
+
+-   Recommandations pour progresser dans la langue de son choix : Cela
+    permet d'expliquer les recommandations qui permettent de passer au
+    niveau supérieur. C'est utile pour la progression du candidat.
+
+![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image84.png)
+
+![Une image contenant texte, logiciel, Page web, Site web Le contenu
+généré par l'IA peut être
+incorrect.](./media/image85.png)
+
+
+## Gestion des aides visuelles 
+
+Comme expliqué dans la première partie, les aides visuelles sont une
+image insérée dans une question ou une réponse afin d'aider le candidat
+à visualiser un élément de référence. Les aides visuelles sont
+rattachées à un sujet.
+
+![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image86.png)
+
+Dans le mode Edition, les aides visuelles sont visibles grâce à des
+balises.
+
+![](./media/image87.png)
+
+Vous avez la possibilité d'ajouter une aide visuelle. Pour cela, cliquer
+sur Ajouter une aide visuelle.
+
+Une fenêtre s'ouvre dans laquelle vous pouvez choisir le sujet ainsi que
+la langue de votre choix.
+
+![Une image contenant texte, capture d'écran, nombre, Police Le contenu
+généré par l'IA peut être
+incorrect.](./media/image88.png)
+
+![Une image contenant capture d'écran, texte, logiciel Le contenu généré
+par l'IA peut être
+incorrect.](./media/image89.png)
+
+Dans cette partie vous avez la possibilité de choisir le sujet dans
+lequel apparaîtra l'aide visuelle, la langue et le type d'aide visuelle
+que vous souhaitez. Ainsi que de nommer votre aide visuelle. De plus,
+vous pouvez aussi enregistrer et modifier le fichier image en question.
+
+Voici une capture d'écran de la page qui répertorie les différentes
+aides visuelles. Cette page vous permet de gérer les aides visuelles.
+Vous pouvez par exemple les modifier en cliquant sur l'icône « Editer »
+à droite.
+
+![Une image contenant texte, capture d'écran, nombre, logiciel Le
+contenu généré par l'IA peut être
+incorrect.](./media/image90.png)
 
 ### Menu « Aides visuelles »
 
@@ -219,9 +372,204 @@ Informations du tableau des questions :
 
 -   Personne concernée (personne devant intervenir sur la question)
 
+### Actions possibles sur les questions
+
+#### **Dupliquer une question**
+
+Dupliquer une question permet de « cloner » une question ; cela fait
+gagner du temps si les questions sont de mêmes typologies par exemple.
+Pour dupliquer une question, il suffit de se positionner sur la question
+qu'on souhaite dupliquer dans la liste des questions de la page
+d'accueil
+
+Cliquer sur « Dupliquer ». La fenêtre de dialogue « Dupliquer une
+question » apparaît. Choisir le sujet et la langue puis cliquer sur «
+Dupliquer ». La question dupliquée s'ouvre alors sur une page d'édition
+qu'il faut corriger avant d'enregistrer.
+
+![Une image contenant capture d'écran, texte, logiciel, Logiciel
+multimédia Le contenu généré par l'IA peut être
+incorrect.](./media/image72.png)
+
+Il est aussi possible de dupliquer une question via le ruban en haut de
+l'écran en mode Edition :
+
+![](./media/image73.png)
+
+#### **Supprimer une question**
+
+Pour supprimer une question, il suffit de se positionner sur cette
+dernière dans la liste des questions de la page
+
+d'accueil. Quatre boutons d'action apparaissent :
+![](./media/image74.png)
+
+Cliquer sur « Supprimer ». La page d'édition de la question s'ouvre et
+dans le menu latéral à droite, cliquer de nouveau sur le bouton «
+supprimer » pour confirmer la suppression.
+
 ## Typologies des questions disponibles
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% (texte pour la partie commune de tous les questions en mode édition?)
+## Création des questions
+
+### Ajouter une question
+
+Cliquez sur **"AJOUTER UNE QUESTION"** puis complétez les éléments
+suivants :
+
+-   Sélectionner le sujet
+
+-   Sélectionner la langue
+
+-   Sélectionner le type de réponse (typologie de questions)
+
+![Une image contenant texte, capture d'écran, Police, nombre Le
+contenu généré par l'IA peut être
+incorrect.](./media/image66.png)
+
+### Éditer une question
+
+Le formulaire d'une question, appelé « mode édition », permet de créer ou de modifier une question. Il est composé de plusieurs parties.
+
+#### **Caractéristiques générales**
+
+-   Le bouton "Générer un titre" créé un titré généré par l'IA. Si vous ne souhaitez pas générer le titre de la question par l'IA ,vous pouvez le saisir vous-même.
+    **Attention à la formulation car le titre apparaît sur les rapports des candidats.**
+
+-   Le champs «  Temps alloué est par défaut défini sur -1. Si vous souhaitez allouer un temps maximal pour la question, veuillez remplir le champs ( en secondes).
+
+-   La difficulté de la question peut se renseigner : Facile, Moyenne ou Difficile. Si vous ne souhaitez pas donner un niveau de difficulté à la question, veuillez renseigner N/A.
+
+-   Vous pouvez renseigner l'inventeur de la question ( utile pour les mises à jour par exemple).
+
+-   Attribuez un score maximal à la question.
+
+![Une image contenant texte, capture d'écran, Police, ligne Le contenu
+généré par l'IA peut être
+incorrect.](./media/image67.png)
+
+#### **Question et réponses**
+
+Certains champs sont communs à toutes les typologies de questions :
+
+-   **Type de question** : texte seul ou image + texte ( si vous choisissez d'illustrer votre question et sélectionnez « image+texte », vous pourrez télécharger votre image).
+
+-   **Document de référence** : champ à utiliser uniquement s'il s'agit
+    d'une question avec un document à consulter.
+
+-   **Énoncé de la question :** renseignez l'énoncé de votre question,
+    les consignes, l'étude de cas, etc. Une traduction générée par l'IA
+    de l\'anglais vers le français ou du français vers l\'anglais est
+    disponible en appuyant sur le bouton \"Traduire\".
+
+-   **Les réponses** : Renseignez vos réponses. Une traduction générée
+    par l'IA de l\'anglais vers le français ou du français vers
+    l\'anglais est disponible en appuyant sur le bouton \"Traduire\".
+
+**N'oubliez pas d'enregistrer la saisie avec le bouton « Enregistrer »
+avant de passer en mode Aperçu par exemple, sinon la saisie sera
+perdue.**
+
+**L'exemple ci-dessous est un qcm à réponse unique. Des exemples de code
+yaml sont présentés dans le chapitre « Typologie de question », détaillé
+ci-dessus.**  
+
+![Une image contenant texte, capture d'écran, nombre, logiciel Le
+contenu généré par l'IA peut être
+incorrect.](./media/image68.png)
+
+#### 
+
+#### **Explications concernant la solution**
+
+Ce champ n\'est pas obligatoire et doit être renseigné uniquement si une
+solution doit être présentée au candidat (pendant ou après le test). Le
+tutoriel eut être renseigné par une personne physique ou par l'IA. Le
+bouton situé à droite permet de générer la solution de la question avec
+l\'IA.
+
+![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image69.png)
+
+#### **Informations additionnelles pour les requêtes IA**
+
+Ce champs permet de prompter les informations nécessaire à l'IA pour les
+questions analysées par l'IA ;
+
+![](./media/image70.png)
+
+#### **Informations de revue**
+
+Ce blog permet le suivi de la question lorsque plusieurs personnes
+interviennent sur la question. On y retrouve le statut de la question,
+les différents intervenants, et un champs permettant à ces derniers
+d'échanger des commentaires sur la question.
+
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être
+incorrect.](./media/image71.png)
+
+
+
+#### **Ajouter des illustrations et des fichiers à une question**
+
+Plusieurs types d'illustrations et de fichiers peuvent être ajoutés à
+une question :
+
+-   Une image d'illustration
+
+-   Une image de l'environnement du logiciel ou qui présente un exemple
+    pour la question
+
+-   Le visuel de la catégorie (par exemple pour les questions de langue,
+    on ajoutera un visuel indiquant la catégorie, exemple : orthographe,
+    grammaire, conjugaison, etc.)
+
+-   Un texte
+
+-   Une vidéo
+
+-   Un audio
+
+##### Images
+
+![A close-up of a computer screen Description automatically
+generated](./media/image75.jpeg)Tous les fichiers doivent être stockés sur
+un serveur. Le chemin sur le serveur est par défaut indiqué sur Preprod
+comme ci-dessous :
+
+Le chemin et l'identifiant indiqués sur Preprod doivent être identiques
+au chemin et à l'identifiant indiqués sur le serveur faute de quoi le
+fichier ne s'affichera pas.
+
+**NB** : Pour une résolution optimale, **les images doivent avoir une
+résolution 1080 x 500.** Attention, il s'agit de la résolution de
+l'image en plein écran, ce qui implique de modifier la résolution de
+l'écran à 1080 x 500 pour pouvoir faire des captures nettes, lisibles et
+dont tous les menus, onglets, etc. apparaissent tels qu'en environnement
+« normal ».
+
+##### Documents à télécharger
+
+L'environnement Custom offre la possibilité d'ajouter à des questions
+des documents téléchargeables afin que les candidats puissent
+lire/consulter des documents en vue de répondre à une question ou un
+exercice. Ces documents doivent être au format PDF.
+
+Pour être intégrés à la question il faut :
+
+-   Ajouter dans le corps de la question un lien sur lequel le candidat
+    pourra cliquer et qui répond à la nomenclature suivante :
+    [https://questionsacm.isograd.com/*sujet*/*langue*/*id_de_la_question*.pdf](https://questionsacm.isograd.com/sujet/langue/id_de_la_question.pdf)
+    (En italique, les éléments à compléter)
+
+-   Envoyer à l'équipe technique d'Isograd les fichiers afin qu'ils
+    soient uploadés sur les serveurs.
+
+![Une image contenant texte Description générée
+automatiquement](./media/image77.jpeg)
+
 
 ### Mode Aperçu : 
 
@@ -430,354 +778,8 @@ incorrect.](./media/image64.png)
 par l'IA peut être
 incorrect.](./media/image65.png)
 
-## Création des questions
 
-### Ajouter une question
 
-Cliquez sur **"AJOUTER UNE QUESTION"** puis complétez les éléments
-suivants :
-
--   Sélectionner le sujet
-
--   Sélectionner la langue du test
-
--   Sélectionner le type de réponse (typologie de questions)
-
-![Une image contenant texte, capture d'écran, Police, nombre Le
-contenu généré par l'IA peut être
-incorrect.](./media/image66.png)
-
-### Éditer une question
-
-Le formulaire d'une question, appelé « mode édition », permet de créer ou de modifier une question. Il est composé de plusieurs parties.
-
-#### **Caractéristiques générales**
-
--   Le bouton "Générer un titre" créé un titré généré par l'IA. Si vous ne souhaitez pas générer le titre de la question par l'IA ,vous pouvez le saisir vous-même.
-    **Attention à la formulation car le titre apparaît sur les rapports des candidats.**
-
--   Le champs «  Temps alloué est par défaut défini sur -1. Si vous souhaitez allouer un temps maximal pour la question, veuillez remplir le champs ( en secondes).
-
--   La difficulté de la question peut se renseigner : Facile, Moyenne ou Difficile. Si vous ne souhaitez pas donner un niveau de difficulté à la question, veuillez renseigner N/A.
-
--   Vous pouvez renseigner l'inventeur de la question ( utile pour les mises à jour par exemple).
-
--   Attribuez un score maximal à la question.
-
-![Une image contenant texte, capture d'écran, Police, ligne Le contenu
-généré par l'IA peut être
-incorrect.](./media/image67.png)
-
-#### **Question et réponses**
-
-Certains champs sont communs à toutes les typologies de questions :
-
--   **Type de question** : texte seul ou image + texte ( si vous choisissez d'illustrer votre question et sélectionnez « image+texte », vous pourrez télécharger votre image).
-
--   **Document de référence** : champ à utiliser uniquement s'il s'agit
-    d'une question avec un document à consulter.
-
--   **Énoncé de la question :** renseignez l'énoncé de votre question,
-    les consignes, l'étude de cas, etc. Une traduction générée par l'IA
-    de l\'anglais vers le français ou du français vers l\'anglais est
-    disponible en appuyant sur le bouton \"Traduire\".
-
--   **Les réponses** : Renseignez vos réponses. Une traduction générée
-    par l'IA de l\'anglais vers le français ou du français vers
-    l\'anglais est disponible en appuyant sur le bouton \"Traduire\".
-
-**N'oubliez pas d'enregistrer la saisie avec le bouton « Enregistrer »
-avant de passer en mode Aperçu par exemple, sinon la saisie sera
-perdue.**
-
-**L'exemple ci-dessous est un qcm à réponse unique. Des exemples de code
-yaml sont présentés dans le chapitre « Typologie de question », détaillé
-ci-dessus.**  
-
-![Une image contenant texte, capture d'écran, nombre, logiciel Le
-contenu généré par l'IA peut être
-incorrect.](./media/image68.png)
-
-#### 
-
-#### **Explications concernant la solution**
-
-Ce champ n\'est pas obligatoire et doit être renseigné uniquement si une
-solution doit être présentée au candidat (pendant ou après le test). Le
-tutoriel eut être renseigné par une personne physique ou par l'IA. Le
-bouton situé à droite permet de générer la solution de la question avec
-l\'IA.
-
-![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image69.png)
-
-#### **Informations additionnelles pour les requêtes IA**
-
-Ce champs permet de prompter les informations nécessaire à l'IA pour les
-questions analysées par l'IA ;
-
-![](./media/image70.png)
-
-#### **Informations de revue**
-
-Ce blog permet le suivi de la question lorsque plusieurs personnes
-interviennent sur la question. On y retrouve le statut de la question,
-les différents intervenants, et un champs permettant à ces derniers
-d'échanger des commentaires sur la question.
-
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image71.png)
-
-### Actions possibles sur les questions
-
-#### **Dupliquer une question**
-
-Dupliquer une question permet de « cloner » une question ; cela fait
-gagner du temps si les questions sont de mêmes typologies par exemple.
-Pour dupliquer une question, il suffit de se positionner sur la question
-qu'on souhaite dupliquer dans la liste des questions de la page
-d'accueil
-
-Cliquer sur « Dupliquer ». La fenêtre de dialogue « Dupliquer une
-question » apparaît. Choisir le sujet et la langue puis cliquer sur «
-Dupliquer ». La question dupliquée s'ouvre alors sur une page d'édition
-qu'il faut corriger avant d'enregistrer.
-
-![Une image contenant capture d'écran, texte, logiciel, Logiciel
-multimédia Le contenu généré par l'IA peut être
-incorrect.](./media/image72.png)
-
-Il est aussi possible de dupliquer une question via le ruban en haut de
-l'écran en mode Edition :
-
-![](./media/image73.png)
-
-#### **Supprimer une question**
-
-Pour supprimer une question, il suffit de se positionner sur cette
-dernière dans la liste des questions de la page
-
-d'accueil. Quatre boutons d'action apparaissent :
-![](./media/image74.png)
-
-Cliquer sur « Supprimer ». La page d'édition de la question s'ouvre et
-dans le menu latéral à droite, cliquer de nouveau sur le bouton «
-supprimer » pour confirmer la suppression.
-
-#### **Ajouter des illustrations et des fichiers à une question**
-
-Plusieurs types d'illustrations et de fichiers peuvent être ajoutés à
-une question :
-
--   Une image d'illustration
-
--   Une image de l'environnement du logiciel ou qui présente un exemple
-    pour la question
-
--   Le visuel de la catégorie (par exemple pour les questions de langue,
-    on ajoutera un visuel indiquant la catégorie, exemple : orthographe,
-    grammaire, conjugaison, etc.)
-
--   Un texte
-
--   Une vidéo
-
--   Un audio
-
-##### Images
-
-![A close-up of a computer screen Description automatically
-generated](./media/image75.jpeg)Tous les fichiers doivent être stockés sur
-un serveur. Le chemin sur le serveur est par défaut indiqué sur Preprod
-comme ci-dessous :
-
-Le chemin et l'identifiant indiqués sur Preprod doivent être identiques
-au chemin et à l'identifiant indiqués sur le serveur faute de quoi le
-fichier ne s'affichera pas.
-
-**NB** : Pour une résolution optimale, **les images doivent avoir une
-résolution 1080 x 500.** Attention, il s'agit de la résolution de
-l'image en plein écran, ce qui implique de modifier la résolution de
-l'écran à 1080 x 500 pour pouvoir faire des captures nettes, lisibles et
-dont tous les menus, onglets, etc. apparaissent tels qu'en environnement
-« normal ».
-
-##### Documents à télécharger
-
-L'environnement Custom offre la possibilité d'ajouter à des questions
-des documents téléchargeables afin que les candidats puissent
-lire/consulter des documents en vue de répondre à une question ou un
-exercice. Ces documents doivent être au format PDF.
-
-Pour être intégrés à la question il faut :
-
--   Ajouter dans le corps de la question un lien sur lequel le candidat
-    pourra cliquer et qui répond à la nomenclature suivante :
-    [https://questionsacm.isograd.com/*sujet*/*langue*/*id_de_la_question*.pdf](https://questionsacm.isograd.com/sujet/langue/id_de_la_question.pdf)
-    (En italique, les éléments à compléter)
-
--   Envoyer à l'équipe technique d'Isograd les fichiers afin qu'ils
-    soient uploadés sur les serveurs.
-
-![Une image contenant texte Description générée
-automatiquement](./media/image77.jpeg)
-
-## Gestion des jeux de questions et gestion des domaines
-
-![Une image contenant texte, capture d'écran, Police, conception Le
-contenu généré par l'IA peut être
-incorrect.](./media/image78.png)
-
-###  Gestion des jeux de questions
-
-« Gestion des jeux de question » et « Gestion des domaines » sont
-accessibles via « Catégories ». Les Jeux de question permettent de
-regrouper les questions sont un même nom, et de les retrouver plus
-facilement sur la plateforme. C'est un ensemble de questions qui peut
-être utilisé pour filtrer les questions dans la page administration des
-questions.
-
-En cliquant sur « Gestion des Jeux de questions », on arrive sur une
-page qui permet d'ajouter un jeu de questions, et de l'exporter vers
-Excel. A partir de cette page vous pouvez aussi ajouter des jeux de
-questions.
-
-![](./media/image79.png)
-
-Ajouter un jeu de questions :
-
-![Une image contenant texte, capture d'écran, Police, carte de visite Le
-contenu généré par l'IA peut être
-incorrect.](./media/image80.png)
-
-Pour ajouter un jeu de question, cliquer sur « Ajouter un jeu de
-question ». Cela vous redirige vers la page « Mettre à jour un jeu de
-questions ».
-
-![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image81.png)
-
-Plusieurs encadrés sont à remplir pour ajouter un jeu de question :
-
--   Le nom : comment sera définit le jeu de question.
-
--   Les sujets, séparés par un tiret : les différents sujets concernés
-    par le jeu de question.
-
--   Archivé : cela est utile si vous souhaitez archiver votre jeu de
-    question, si vous ne voulez plus voir le jeu de question.
-
--   Possibilité de mettre un commentaire : il est possible d'ajouter un
-    commentaire, par rapport au jeu de question.
-
--   Cliquer sur « Attribuer ce jeu à des questions » : mène à une page
-    qui permet d'enregistrer les modifications.
-
--   Description pour les rapports : permet de choisir la langue des
-    rapports produits.
-
--   Description utilisée dans les rapports : Possibilité de mettre une
-    description qui sera utilisée dans les rapports .
-
-### Gestion des domaines
-
-Pour gérer des domaines de compétence, cliquer sur « Gestion des
-domaines ». Il permet de regrouper sous un même domaine de compétences,
-une ou plusieurs questions qui portent sur un même sujet. Les domaines
-sont utiles car ils apparaissent dans les rapports d'examen et
-permettent de montrer le pourcentage de réussite par domaine. Les
-domaines de compétence renvoient à un ensemble de connaissances, de
-capacités et de savoir-faire spécifiques qui sont nécessaires pour
-exercer une activité professionnelle ou accomplir une tâche.
-
-Cliquer sur «  Gestion des domaines » mène vers une page nommée
-« Gestion des domaines de compétences ». Dans la partie à gauche vous
-avez la possibilité d'ajouter un domaine et d'exporter vers Excel.
-
-![Une image contenant texte, capture d'écran, Police, conception Le
-contenu généré par l'IA peut être
-incorrect.](./media/image82.png)
-
-Dans la partie centrale de la page, vous avez la possibilité d'agir sur
-les différents domaines. Pour cela, cliquer sur l'icône « Editer » à
-droite, pour modifier le domaine.
-
-![](./media/image83.png)
-
-Vous pouvez modifier le domaine via la page qui s'affiche, et qui
-présente quatre parties :
-
--   Description : possibilité de choisir la langue de description, le
-    nom et la description textuelle. Cela permet de définir à quoi
-    renvoie le nom de ce domaine.
-
--   Caractéristiques générales : cette partie donne la possibilité de
-    choisir le nombre de niveaux qu'il y aura par domaines.
-
--   Description des niveaux : Possibilité de définir dans la langue de
-    son choix, les niveaux de compétence. Cela permet de définir à quoi
-    renvoie chaque niveau de compétence. Pour savoir où se situe le
-    candidat.
-
--   Recommandations pour progresser dans la langue de son choix : Cela
-    permet d'expliquer les recommandations qui permettent de passer au
-    niveau supérieur. C'est utile pour la progression du candidat.
-
-![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image84.png)
-
-![Une image contenant texte, logiciel, Page web, Site web Le contenu
-généré par l'IA peut être
-incorrect.](./media/image85.png)
-
-
-## Gestion des aides visuelles 
-
-Comme expliqué dans la première partie, les aides visuelles sont une
-image insérée dans une question ou une réponse afin d'aider le candidat
-à visualiser un élément de référence. Les aides visuelles sont
-rattachées à un sujet.
-
-![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image86.png)
-
-Dans le mode Edition, les aides visuelles sont visibles grâce à des
-balises.
-
-![](./media/image87.png)
-
-Vous avez la possibilité d'ajouter une aide visuelle. Pour cela, cliquer
-sur Ajouter une aide visuelle.
-
-Une fenêtre s'ouvre dans laquelle vous pouvez choisir le sujet ainsi que
-la langue de votre choix.
-
-![Une image contenant texte, capture d'écran, nombre, Police Le contenu
-généré par l'IA peut être
-incorrect.](./media/image88.png)
-
-![Une image contenant capture d'écran, texte, logiciel Le contenu généré
-par l'IA peut être
-incorrect.](./media/image89.png)
-
-Dans cette partie vous avez la possibilité de choisir le sujet dans
-lequel apparaîtra l'aide visuelle, la langue et le type d'aide visuelle
-que vous souhaitez. Ainsi que de nommer votre aide visuelle. De plus,
-vous pouvez aussi enregistrer et modifier le fichier image en question.
-
-Voici une capture d'écran de la page qui répertorie les différentes
-aides visuelles. Cette page vous permet de gérer les aides visuelles.
-Vous pouvez par exemple les modifier en cliquant sur l'icône « Editer »
-à droite.
-
-![Une image contenant texte, capture d'écran, nombre, logiciel Le
-contenu généré par l'IA peut être
-incorrect.](./media/image90.png)
 
 # Création des tests
 
