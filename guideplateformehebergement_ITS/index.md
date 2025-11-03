@@ -283,7 +283,7 @@ incorrect.](./media/image21.png)
 
 Ce menu permet les actions suivantes :
 
--   Ajouter une nouvelle question: cliquez sur **"AJOUTER UNE QUESTION"** puis complétez les éléments
+-   Ajouter une nouvelle question: cliquez sur **"Ajouter une question"** puis complétez les éléments
 suivants :
 
 -   Sélectionner le sujet
