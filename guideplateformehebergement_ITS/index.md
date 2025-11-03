@@ -357,9 +357,9 @@ Informations du tableau des questions :
 
 -   Personne concernée (personne devant intervenir sur la question)
 
-#### Boutons des actions possibles sur les questions
+### Boutons des actions possibles sur les questions
 
-##### Dupliquer une question
+#### Dupliquer une question
 
 Dupliquer une question permet de « cloner » une question ; cela fait
 gagner du temps si les questions sont de mêmes typologies par exemple.
@@ -381,7 +381,7 @@ l'écran en mode Edition :
 
 ![](./media/image73.png)
 
-##### Supprimer une question
+#### Supprimer une question
 
 Pour supprimer une question, il suffit de se positionner sur cette
 dernière dans la liste des questions de la page
@@ -393,7 +393,7 @@ Cliquer sur « Supprimer ». La page d'édition de la question s'ouvre et
 dans le menu latéral à droite, cliquer de nouveau sur le bouton «
 supprimer » pour confirmer la suppression.
 
-##### Voir la question en Mode Aperçu 
+#### Voir la question en Mode Aperçu 
 
 **Les QCM**
 
@@ -477,11 +477,11 @@ par l'IA peut être
 incorrect.](./media/image61.png)
 
 
-##### Éditer une question
+#### Éditer une question
 
 Le formulaire d'une question, appelé « mode édition », permet de créer ou de modifier une question. Il est composé de plusieurs parties.
 
-###### **Caractéristiques générales**
+##### **Caractéristiques générales**
 
 -   Le bouton "Générer un titre" créé un titré généré par l'IA. Si vous ne souhaitez pas générer le titre de la question par l'IA ,vous pouvez le saisir vous-même.
     **Attention à la formulation car le titre apparaît sur les rapports des candidats.**
@@ -498,7 +498,7 @@ Le formulaire d'une question, appelé « mode édition », permet de créer ou d
 généré par l'IA peut être
 incorrect.](./media/image67.png)
 
-###### **Question et réponses**
+##### Question et réponses
 
 Certains champs sont communs à toutes les typologies de questions :
 
@@ -508,8 +508,22 @@ Certains champs sont communs à toutes les typologies de questions :
     de l\'anglais vers le français ou du français vers l\'anglais est
     disponible en appuyant sur le bouton \"Traduire\".
 
--   **Médias** : texte seul ou image + texte ( si vous choisissez d'illustrer votre question et sélectionnez « image+texte », vous pourrez télécharger votre image).
+-   **Médias** : plusieurs types d'illustrations et de fichiers peuvent être ajoutés à
+une question :
+-   Une image d'illustration
 
+-   Une image de l'environnement du logiciel ou qui présente un exemple
+    pour la question
+
+-   Le visuel de la catégorie (par exemple pour les questions de langue,
+    on ajoutera un visuel indiquant la catégorie, exemple : orthographe,
+    grammaire, conjugaison, etc.)
+
+-   Un texte
+
+-   Une vidéo
+
+-   Un fichier audio généré par l'IA
 
 **N'oubliez pas d'enregistrer la saisie avec le bouton « Enregistrer »
 avant de passer en mode Aperçu par exemple, sinon la saisie sera
@@ -524,28 +538,28 @@ contenu généré par l'IA peut être
 incorrect.](./media/image68.png)
 
 
-###### Explications concernant la solution
+**NB** : Pour une résolution optimale, **les images doivent avoir une
+résolution 1080 x 500.** Attention, il s'agit de la résolution de
+l'image en plein écran, ce qui implique de modifier la résolution de
+l'écran à 1080 x 500 pour pouvoir faire des captures nettes, lisibles et
+dont tous les menus, onglets, etc. apparaissent tels qu'en environnement
+« normal ».
 
-Ce champ n\'est pas obligatoire et doit être renseigné uniquement si une
+##### Explications concernant la solution
+
+Ce champ n'est pas obligatoire et doit être renseigné uniquement si une
 solution doit être présentée au candidat (pendant ou après le test). Le
-tutoriel eut être renseigné par une personne physique ou par l'IA. Le
-bouton situé à droite permet de générer la solution de la question avec
-l\'IA.
+tutoriel peut être renseigné par une personne physique ou généré par l'IA. Il est aussi possible de donner des précisions en utilisant l'onglet Indication. 
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
 incorrect.](./media/image69.png)
 
-#### Informations additionnelles pour les requêtes IA
 
-Ce champs permet de prompter les informations nécessaire à l'IA pour les
-questions analysées par l'IA ;
-
-![](./media/image70.png)
 
 #### Informations de revue
 
-Ce blog permet le suivi de la question lorsque plusieurs personnes
+Cette zone permet le suivi de la question lorsque plusieurs personnes
 interviennent sur la question. On y retrouve le statut de la question,
 les différents intervenants, et un champs permettant à ces derniers
 d'échanger des commentaires sur la question.
@@ -556,43 +570,6 @@ incorrect.](./media/image71.png)
 
 
 
-#### Ajouter des illustrations et des fichiers à une question
-
-Plusieurs types d'illustrations et de fichiers peuvent être ajoutés à
-une question :
-
--   Une image d'illustration
-
--   Une image de l'environnement du logiciel ou qui présente un exemple
-    pour la question
-
--   Le visuel de la catégorie (par exemple pour les questions de langue,
-    on ajoutera un visuel indiquant la catégorie, exemple : orthographe,
-    grammaire, conjugaison, etc.)
-
--   Un texte
-
--   Une vidéo
-
--   Un audio
-
-##### Images
-
-![A close-up of a computer screen Description automatically
-generated](./media/image75.jpeg)Tous les fichiers doivent être stockés sur
-un serveur. Le chemin sur le serveur est par défaut indiqué sur Preprod
-comme ci-dessous :
-
-Le chemin et l'identifiant indiqués sur Preprod doivent être identiques
-au chemin et à l'identifiant indiqués sur le serveur faute de quoi le
-fichier ne s'affichera pas.
-
-**NB** : Pour une résolution optimale, **les images doivent avoir une
-résolution 1080 x 500.** Attention, il s'agit de la résolution de
-l'image en plein écran, ce qui implique de modifier la résolution de
-l'écran à 1080 x 500 pour pouvoir faire des captures nettes, lisibles et
-dont tous les menus, onglets, etc. apparaissent tels qu'en environnement
-« normal ».
 
 ##### Documents à télécharger
 
