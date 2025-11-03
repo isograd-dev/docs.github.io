@@ -283,7 +283,18 @@ incorrect.](./media/image21.png)
 
 Ce menu permet les actions suivantes :
 
--   Ajouter une nouvelle question
+-   Ajouter une nouvelle question: cliquez sur **"AJOUTER UNE QUESTION"** puis complétez les éléments
+suivants :
+
+-   Sélectionner le sujet
+
+-   Sélectionner la langue
+
+-   Sélectionner le type de réponse (typologie de questions)
+
+![Une image contenant texte, capture d'écran, Police, nombre Le
+contenu généré par l'IA peut être
+incorrect.](./media/image66.png)
 
 -   Importer un fichier de questions (type QCM) automatiquement sur la plateforme depuis un fichier Excel
 
@@ -346,9 +357,9 @@ Informations du tableau des questions :
 
 -   Personne concernée (personne devant intervenir sur la question)
 
-### Actions possibles sur les questions
+#### Boutons des actions possibles sur les questions
 
-#### **Dupliquer une question**
+##### Dupliquer une question
 
 Dupliquer une question permet de « cloner » une question ; cela fait
 gagner du temps si les questions sont de mêmes typologies par exemple.
@@ -370,7 +381,7 @@ l'écran en mode Edition :
 
 ![](./media/image73.png)
 
-#### **Supprimer une question**
+##### Supprimer une question
 
 Pour supprimer une question, il suffit de se positionner sur cette
 dernière dans la liste des questions de la page
@@ -382,26 +393,95 @@ Cliquer sur « Supprimer ». La page d'édition de la question s'ouvre et
 dans le menu latéral à droite, cliquer de nouveau sur le bouton «
 supprimer » pour confirmer la suppression.
 
-#### Ajouter une question
+##### Voir la question en Mode Aperçu 
 
-Cliquez sur **"AJOUTER UNE QUESTION"** puis complétez les éléments
-suivants :
+**Les QCM**
 
--   Sélectionner le sujet
+![Une image contenant texte, Appareils électroniques, capture d'écran,
+Page web Le contenu généré par l'IA peut être
+incorrect.](./media/image25.png)
 
--   Sélectionner la langue
 
--   Sélectionner le type de réponse (typologie de questions)
+Il existe trois types de QCM possibles :
 
-![Une image contenant texte, capture d'écran, Police, nombre Le
+* QCM texte à réponse unique, où le candidat sélectionne une seule réponse correcte ;
+
+* QCM à réponses multiples, où le candidat doit indiquer l’ensemble des réponses correctes ;
+
+* QCM « une parmi n », où le candidat doit choisir une seule bonne réponse parmi plusieurs réponses correctes pour valider la question.
+
+**Echelle de réponse** : Le candidat doit répondre à toutes les
+affirmations pour que sa réponse soit considérée juste ou fausse.
+
+
+**Les cliquer sur zone(s)**
+
+Il est possible de créer des questions comportant :
+
+* une seule zone à cliquer,
+
+* plusieurs zones correctes, dont le candidat doit sélectionner une seule pour valider la question,
+
+* plusieurs zones attendues, que le candidat doit toutes cliquer pour valider la question.
+
+**Glisser-déposer**
+
+Le candidat doit faire glisser les éléments (texte ou images) vers leur emplacement correct dans la zone de droite.
+
+
+![Une image contenant texte, capture d'écran, conception Le contenu
+généré par l'IA peut être
+incorrect.](./media/image40.png)
+![Une image contenant texte, logiciel, Icône d'ordinateur, Page web Le
 contenu généré par l'IA peut être
-incorrect.](./media/image66.png)
+incorrect.](./media/image34.png)
 
-### Éditer une question
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être
+incorrect.](./media/image55.png)
+
+**Relier les éléments**
+
+Le candidat doit relier les éléments (texte ou images) de gauche avec ceux de droite.
+
+
+![Une image contenant texte, capture d'écran, ordinateur, gadget Le
+contenu généré par l'IA peut être
+incorrect.](./media/image43.png)
+
+**Zone de texte et notation manuelle**
+
+Le candidat doit saisir sa réponse dans l'encadré prévu à cet effet. La question est notée et/ou commentée par une personne physique après le passage du test.
+
+
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être incorrect.](./media/image49.png)
+
+**Zone(s) de texte avec correction automatique**
+Le candidat doit saisir sa ou ses réponses dans l'encadré ou les encadrés prévus à cet effet. Le texte soumis peut être vérifié et évalué de manière automatique ou par l'intelligence artificielle.
+
+
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être
+incorrect.](./media/image52.png)
+
+**Enregistrements évalué par l'IA**
+
+Le candidat doit répondre à une question en enregistrant un audio. Cette question sert à tester les compétences du candidat à l'oral.
+
+Le candidat peut enregistrer plusieurs audios qu'il peut réécouter avant de sélectionner celui qu'il souhaite soumettre. L'audio soumis est vérifié et évalué par l'intelligence artificielle.
+
+
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être
+incorrect.](./media/image61.png)
+
+
+##### Éditer une question
 
 Le formulaire d'une question, appelé « mode édition », permet de créer ou de modifier une question. Il est composé de plusieurs parties.
 
-#### **Caractéristiques générales**
+###### **Caractéristiques générales**
 
 -   Le bouton "Générer un titre" créé un titré généré par l'IA. Si vous ne souhaitez pas générer le titre de la question par l'IA ,vous pouvez le saisir vous-même.
     **Attention à la formulation car le titre apparaît sur les rapports des candidats.**
@@ -418,23 +498,18 @@ Le formulaire d'une question, appelé « mode édition », permet de créer ou d
 généré par l'IA peut être
 incorrect.](./media/image67.png)
 
-#### **Question et réponses**
+###### **Question et réponses**
 
 Certains champs sont communs à toutes les typologies de questions :
 
--   **Type de question** : texte seul ou image + texte ( si vous choisissez d'illustrer votre question et sélectionnez « image+texte », vous pourrez télécharger votre image).
-
--   **Document de référence** : champ à utiliser uniquement s'il s'agit
-    d'une question avec un document à consulter.
 
 -   **Énoncé de la question :** renseignez l'énoncé de votre question,
     les consignes, l'étude de cas, etc. Une traduction générée par l'IA
     de l\'anglais vers le français ou du français vers l\'anglais est
     disponible en appuyant sur le bouton \"Traduire\".
 
--   **Les réponses** : Renseignez vos réponses. Une traduction générée
-    par l'IA de l\'anglais vers le français ou du français vers
-    l\'anglais est disponible en appuyant sur le bouton \"Traduire\".
+-   **Médias** : texte seul ou image + texte ( si vous choisissez d'illustrer votre question et sélectionnez « image+texte », vous pourrez télécharger votre image).
+
 
 **N'oubliez pas d'enregistrer la saisie avec le bouton « Enregistrer »
 avant de passer en mode Aperçu par exemple, sinon la saisie sera
@@ -449,7 +524,7 @@ contenu généré par l'IA peut être
 incorrect.](./media/image68.png)
 
 
-#### **Explications concernant la solution**
+###### Explications concernant la solution
 
 Ce champ n\'est pas obligatoire et doit être renseigné uniquement si une
 solution doit être présentée au candidat (pendant ou après le test). Le
@@ -461,14 +536,14 @@ l\'IA.
 contenu généré par l'IA peut être
 incorrect.](./media/image69.png)
 
-#### **Informations additionnelles pour les requêtes IA**
+#### Informations additionnelles pour les requêtes IA
 
 Ce champs permet de prompter les informations nécessaire à l'IA pour les
 questions analysées par l'IA ;
 
 ![](./media/image70.png)
 
-#### **Informations de revue**
+#### Informations de revue
 
 Ce blog permet le suivi de la question lorsque plusieurs personnes
 interviennent sur la question. On y retrouve le statut de la question,
@@ -481,7 +556,7 @@ incorrect.](./media/image71.png)
 
 
 
-#### **Ajouter des illustrations et des fichiers à une question**
+#### Ajouter des illustrations et des fichiers à une question
 
 Plusieurs types d'illustrations et de fichiers peuvent être ajoutés à
 une question :
@@ -541,26 +616,8 @@ automatiquement](./media/image77.jpeg)
 
 ## Typologies des questions disponibles
 
-### Mode Aperçu : 
 
-#### Les QCM
-
-![Une image contenant texte, Appareils électroniques, capture d'écran,
-Page web Le contenu généré par l'IA peut être
-incorrect.](./media/image25.png)
-
-#### Les QCM
-
-Il existe trois types de QCM possibles :
-
-* QCM texte à réponse unique, où le candidat sélectionne une seule réponse correcte ;
-
-* QCM à réponses multiples, où le candidat doit indiquer l’ensemble des réponses correctes ;
-
-* QCM « une parmi n », où le candidat doit choisir une seule bonne réponse parmi plusieurs réponses correctes pour valider la question.
-
-
-
+QCM
 
 ##### Mode Edition :
 ![Une image contenant texte, capture d'écran, Police, diagramme Le contenu généré par l'IA peut être incorrect.](./media/image24.png)
@@ -579,15 +636,9 @@ Dans la partie Question et réponses, quatre onglets sont disponibles :
 
 ### Echelle de réponse
 
-**Vrai/Faux** : Le candidat doit répondre à toutes les
-affirmations pour que sa réponse soit considérée juste ou fausse.
+Vrai/ Faux
 
 
-##### En mode Aperçu : 
-
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image55.png)
 
 ##### En mode Edition : 
 
@@ -600,23 +651,9 @@ généré par l'IA peut être
 incorrect.](./media/image57.png)
 
 
-### Les cliquer sur zone(s)
 
-Il est possible de créer des questions comportant :
-
-* une seule zone à cliquer,
-
-* plusieurs zones correctes, dont le candidat doit sélectionner une seule pour valider la question,
-
-* plusieurs zones attendues, que le candidat doit toutes cliquer pour valider la question.
-
-
-#### Mode Aperçu :
-
-![Une image contenant texte, logiciel, Icône d'ordinateur, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image34.png)
  
+Cliquer sur zone 
 
 #####  Mode Edition  : 
 
@@ -626,15 +663,9 @@ Dans l’onglet Éditeur graphique, s’ajoute l’image de fond et se définiss
 généré par l'IA peut être
 incorrect.](./media/image36.png)
 
-### Glisser-déposer
 
-Le candidat doit faire glisser les éléments (texte ou images) vers leur emplacement correct dans la zone de droite.
 
-##### Mode Aperçu : 
-
-![Une image contenant texte, capture d'écran, conception Le contenu
-généré par l'IA peut être
-incorrect.](./media/image40.png)
+Glisser-déposer
 
 ##### Mode Edition :  
 
@@ -649,15 +680,9 @@ L’onglet Éléments à faire glisser permet de choisir le type d’éléments 
 par l'IA peut être
 incorrect.](./media/image42.png)
 
-### Relier les éléments
 
-Le candidat doit relier les éléments (texte ou images) de gauche avec ceux de droite.
 
-##### Mode Aperçu : 
-
-![Une image contenant texte, capture d'écran, ordinateur, gadget Le
-contenu généré par l'IA peut être
-incorrect.](./media/image43.png)
+Relier 
 
 ##### Mode Edition : 
 
@@ -672,16 +697,17 @@ par l'IA peut être
 incorrect.](./media/image45.png)
 
 
+Notation manuelle 
+
+$$$$$image critères$$$$$$
+
+
+
 ### Les zones de texte à remplir
 
 **Zone de texte** : le candidat doit compléter une ou plusieurs zones de texte vides avec la réponse correcte.
 
-**Zone de texte et notation manuelle** : le candidat doit saisir sa réponse dans l'encadré prévu à cet effet. La question est notée et/ou commentée par une personne physique après le passage du test.
 
-##### Mode Aperçu : 
-
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être incorrect.](./media/image49.png)
 
 ##### En mode Edition (avec code yaml) : 
 
@@ -692,13 +718,11 @@ l'IA peut être incorrect.](./media/image50.png)
 par l'IA peut être
 incorrect.](./media/image51.png)
 
-**Zone de texte évaluée par l'IA :** Le candidat doit saisir sa ou ses réponses dans l'encadré ou les encadrés prévus à cet effet. Le texte soumis sera vérifié et évalué par l'intelligence artificielle.
+Zone(s) de texte avec correction automatique
 
-##### En mode Aperçu : 
+$$$$$IA non IA$$$$$
 
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image52.png)
+
 
 ##### En mode Edition (avec code yaml) : 
 
@@ -713,18 +737,7 @@ incorrect.](./media/image54.png)
 
 
 
-### Enregistrements audio
-
-
-**Enregistrement évalué par l'IA** : Le candidat doit répondre à une question en enregistrant un audio. Cette question sert à tester les compétences du candidat à l'oral.
-
-Le candidat peut enregistrer plusieurs audios qu'il peut réécouter avant de sélectionner celui qu'il souhaite soumettre. L'audio soumis est vérifié et évalué par l'intelligence artificielle.
-
-##### En mode Aperçu : 
-
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image61.png)
+Enregistrement évalué par l'IA
 
 ##### En mode Edition : 
 
@@ -732,11 +745,7 @@ incorrect.](./media/image61.png)
 généré par l'IA peut être
 incorrect.](./media/image62.png)
 
-##### En mode Aperçu : 
 
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image63.png)
 
 ##### En mode Edition (avec code yaml) : 
 
