@@ -12,7 +12,7 @@ layout: home
 
 <div id="content">
 
-## Introduction au manuel
+# Introduction au manuel
 
 Ce manuel a pour objectif de présenter l’ensemble des fonctionnalités de la plateforme de tests, afin de permettre aux clients et aux utilisateurs de gérer leurs évaluations en toute autonomie.
 
@@ -53,11 +53,11 @@ Depuis cette page, il est possible d’accéder aux principales rubriques de la 
 
 * Gestion des questions : permet de créer, modifier, traduire et organiser les questions intégrées dans la base de données des tests.
 
-## Onglet « Gestion des questions »
+# Onglet « Gestion des questions »
 
 ![](./media/image11.png)
 
-### Menu « Questions » 
+## Menu « Questions » 
 
 Ce menu permet :
 
@@ -73,7 +73,7 @@ Ce menu permet :
 **Le process de gestion des questions est détaillé dans le chapitre
 « Administration des questions ».**
 
-### Menu « Catégories »
+## Menu « Catégories »
 
 ![Une image contenant texte, Police, capture d'écran, conception Le
 contenu généré par l'IA peut être
@@ -86,29 +86,6 @@ Ce menu permet :
 
 -   La gestion des domaines : ajouter, éditer ou supprimer un domaine de compétences.
 
-**Le process de gestion des jeux de questions et des domaines est
-détaillé dans le chapitre « Gestion des jeux de questions et gestion des domaines ».**
-
-### Menu «  Tests & Examens »
-
-Ce menu permet la création et la gestion des tests et des examens. 
-
-### Menu « Sujets »
-
-![Une image contenant texte, capture d'écran, Police, blanc Description
-générée
-automatiquement](./media/image13.png)
-
-Ce menu permet de créer un nouveau sujet ou encore d'éditer ou supprimer ceux déjà existants. 
-
-
-![](./media/image15.png)
-
-## Gestion des jeux de questions et gestion des domaines
-
-![Une image contenant texte, capture d'écran, Police, conception Le
-contenu généré par l'IA peut être
-incorrect.](./media/image78.png)
 
 ###  Gestion des jeux de questions
 
@@ -214,41 +191,34 @@ incorrect.](./media/image84.png)
 généré par l'IA peut être
 incorrect.](./media/image85.png)
 
+## Menu «  Tests & Examens »
+
+Ce menu permet la création et la gestion des tests et des examens. 
+
+La création et la gestion des tests et des examens sera détaillé dans le chapitre "Création de tests et d'examens".
+
+## Menu « Sujets »
+
+![Une image contenant texte, capture d'écran, Police, blanc Description
+générée
+automatiquement](./media/image13.png)
+
+Ce menu permet de créer un nouveau sujet ou encore d'éditer ou supprimer ceux déjà existants. 
+
+
+![](./media/image15.png)
+
 
 ## Gestion des aides visuelles 
 
-Comme expliqué dans la première partie, les aides visuelles sont une
-image insérée dans une question ou une réponse afin d'aider le candidat
-à visualiser un élément de référence. Les aides visuelles sont
-rattachées à un sujet.
+Une aide visuelle est une image ou un document inséré dans une question ou une réponse afin d'aider le candidat à visualiser un élément de référence (bouton, fonctionnalité, texte ou autre). Les aides visuelles sont associées à un sujet et ne sont disponibles que pour le sujet concerné.
 
-![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image86.png)
 
-Dans le mode Edition, les aides visuelles sont visibles grâce à des
-balises.
-
-![](./media/image87.png)
-
-Vous avez la possibilité d'ajouter une aide visuelle. Pour cela, cliquer
-sur Ajouter une aide visuelle.
-
-Une fenêtre s'ouvre dans laquelle vous pouvez choisir le sujet ainsi que
-la langue de votre choix.
-
-![Une image contenant texte, capture d'écran, nombre, Police Le contenu
-généré par l'IA peut être
-incorrect.](./media/image88.png)
-
-![Une image contenant capture d'écran, texte, logiciel Le contenu généré
-par l'IA peut être
-incorrect.](./media/image89.png)
-
-Dans cette partie vous avez la possibilité de choisir le sujet dans
+Pour créer une aide visuelle il faut cliquer
+sur Ajouter une aide visuelle. Une fenêtre s'ouvre dans laquelle vous avez la possibilité de choisir le sujet dans
 lequel apparaîtra l'aide visuelle, la langue et le type d'aide visuelle
 que vous souhaitez. Ainsi que de nommer votre aide visuelle. De plus,
-vous pouvez aussi enregistrer et modifier le fichier image en question.
+vous pouvez aussi enregistrer et modifier le fichier en question.
 
 Voici une capture d'écran de la page qui répertorie les différentes
 aides visuelles. Cette page vous permet de gérer les aides visuelles.
@@ -259,9 +229,14 @@ Vous pouvez par exemple les modifier en cliquant sur l'icône « Editer »
 contenu généré par l'IA peut être
 incorrect.](./media/image90.png)
 
-### Menu « Aides visuelles »
+![Une image contenant texte, capture d'écran, nombre, Police Le contenu
+généré par l'IA peut être
+incorrect.](./media/image88.png)
 
-Une aide visuelle est une image ou un document inséré dans une question ou une réponse afin d'aider le candidat à visualiser un élément de référence (bouton, fonctionnalité, texte ou autre). Les aides visuelles sont associées à un sujet et ne sont disponibles que pour le sujet concerné.
+![Une image contenant capture d'écran, texte, logiciel Le contenu généré
+par l'IA peut être
+incorrect.](./media/image89.png)
+
 
 ![](./media/image16.png)
 
@@ -273,7 +248,7 @@ Excel.
 contenu généré par l'IA peut être
 incorrect.](./media/image17.jpeg)
 
-### Menu « Gestion des Candidats » 
+## Menu « Gestion des Candidats » 
 
 ![Une image contenant texte, capture d'écran, Police, conception Le
 contenu généré par l'IA peut être incorrect.](./media/image18.png)
@@ -286,11 +261,11 @@ envois d'emails, consultation des résultats, etc.
 
 **Le process de gestion et d'administration des candidats est détaillé dans le chapitre « Gestion des candidats ».**
 
-### Menu « Aide et Support » 
+## Menu « Aide et Support » 
 
 Ce menu permet l'accès au manuel d'utilisation de la plateforme, les paramètres de l'API et le contact du support technique Isograd. 
 
-### Bouton « Déconnexion » 
+## Bouton « Déconnexion » 
 
 ![](./media/image19.png)
 
@@ -340,7 +315,6 @@ des questions :
 -   Par statut de la question (en rédaction, à vérifier, en production, etc.)
 
 Ce bandeau permet également d’enregistrer des favoris. Pour cela, filtrez les questions afin d’afficher la liste souhaitée, cliquez sur le bouton **+**, puis attribuez un nom à cette liste. Pour retirer un sujet, il suffit de le sélectionner dans la liste déroulante et de cliquer sur le bouton moins (-). 
- 
  
 
 
@@ -408,11 +382,7 @@ Cliquer sur « Supprimer ». La page d'édition de la question s'ouvre et
 dans le menu latéral à droite, cliquer de nouveau sur le bouton «
 supprimer » pour confirmer la suppression.
 
-## Typologies des questions disponibles
-
-## Création des questions
-
-### Ajouter une question
+#### Ajouter une question
 
 Cliquez sur **"AJOUTER UNE QUESTION"** puis complétez les éléments
 suivants :
@@ -478,7 +448,6 @@ ci-dessus.**  
 contenu généré par l'IA peut être
 incorrect.](./media/image68.png)
 
-#### 
 
 #### **Explications concernant la solution**
 
@@ -570,6 +539,7 @@ Pour être intégrés à la question il faut :
 ![Une image contenant texte Description générée
 automatiquement](./media/image77.jpeg)
 
+## Typologies des questions disponibles
 
 ### Mode Aperçu : 
 
