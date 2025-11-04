@@ -482,7 +482,7 @@ incorrect.](./media/image61.png)
 
 Le formulaire d'une question, appelé « mode édition », permet de créer ou de modifier une question. Il est composé de plusieurs parties.
 
-##### **Caractéristiques générales**
+##### Caractéristiques générales
 
 -   Le bouton "Générer un titre" créé un titré généré par l'IA. Si vous ne souhaitez pas générer le titre de la question par l'IA ,vous pouvez le saisir vous-même.
     **Attention à la formulation car le titre apparaît sur les rapports des candidats.**
@@ -569,10 +569,7 @@ d'échanger des commentaires sur la question.
 par l'IA peut être
 incorrect.](./media/image71.png)
 
-
-
-
-##### Documents à télécharger
+**Documents à télécharger**
 
 L'environnement Custom offre la possibilité d'ajouter à des questions
 des documents téléchargeables afin que les candidats puissent
@@ -1012,8 +1009,7 @@ incorrect.](./media/image115.png)
 Si vous supprimez un test en attente, le(s) crédit(s) de test est(sont)
 automatiquement retourné(s) sur votre compte.
 
-##### **Fonctionnalité Anti-Triche (mode plein écran)**
-
+##### Fonctionnalité Anti-Triche (mode plein écran)
 Lorsque ce mode est activé, les candidats ne peuvent pas accéder à
 d'autres applications logicielles ou ressources Internet pendant la
 durée de leur ![Une image contenant texte, capture d'écran, logiciel,
@@ -1203,107 +1199,6 @@ incorrect.](./media/image124.png)
 par l'IA peut être
 incorrect.](./media/image102.png)
 
-### Modèles d'e-mails
-
-*Pour informer les candidats qu'un test leur a été attribué, plusieurs
-options d'envoi d'e-mails vous sont fournies.*
-
-Pour configurer vos options de messagerie, il est recommandé de
-commencer par configurer vos modèles d'e-mail.
-
-Pour accéder aux modèles d'e-mail, cliquez sur **E-mail** dans le menu
-principal. Puis sur **Modèles d'e-mails** pour examiner et gérer vos
-modèles.
-
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image125.png)
-
-Un modèle d'e-mail d'invitation standard est disponible sur votre
-compte. Vous pouvez modifier ou dupliquer ce modèle standard.
-
-Vous pouvez également créer vos propres modèles d'e-mails pour
-différentes situations (invitation aux tests, envoie du diplôme etc.),
-ainsi que des relances par e-mail qui seront automatiquement envoyés à
-vos candidats.
-
-![Une image contenant texte, Police, logiciel, nombre Le contenu généré
-par l'IA peut être
-incorrect.](./media/image126.png)
-
-Vous pouvez également créer vos propres modèles d'e-mails, ainsi que des
-relances par e-mail qui seront automatiquement envoyés à vos candidats.
-
-Si vous devez modifier un modèle d'e-mail existant, faites glisser votre
-curseur sur le modèle et cliquez sur l'icône **Modifier**.
-
-![Une image contenant texte, Police, logiciel, nombre Le contenu généré
-par l'IA peut être
-incorrect.](./media/image126.png)
-
-La fenêtre **Mettre à jour un modèle d'e-mail** s'ouvre. Dans cette
-zone, vous pourrez personnaliser le modèle existant.
-
-Vous pouvez modifier le nom du modèle, la ligne d'objet par défaut et la
-première phrase/formule de salutation.
-
-Dans les zones « Première partie du message » et « Deuxième partie du
-message », vous pouvez rédiger un message de votre choix pour inviter
-les candidats aux tests.
-
-Vous pouvez également inclure le(s) test(s) programmé(s) et
-l'identifiant/mot de passe du candidat en cochant les cases situées
-entre la première et la deuxième partie du message.
-
-Une fois que vous avez modifié les détails du modèle, cliquez sur le
-bouton **Enregistrer** pour sauvegarder vos modifications.
-
-Pour consulter le modèle terminé, cliquez sur le bouton **Actualiser
-l'exemple.**
-
-![Une image contenant texte, capture d'écran, nombre, Police Le contenu
-généré par l'IA peut être
-incorrect.](./media/image127.png)![](./media/image128.png)
-
-\*\*\*
-
-### Émetteurs d'e-mails
-
-Un émetteur est une adresse e-mail que le système utilisera pour envoyer
-des e-mails au lieu de l'adresse e-mail par défaut
-**registration@isograd.com**. Cette option permet d'envoyer des e-mails
-à partir d'une adresse e-mail de votre domaine.
-
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image129.png)
-
-Pour créer un expéditeur, cliquez sur **E-mail** et **Émetteurs
-d'e-mails**.
-
-Pour créer un nouvel émetteur, cliquez sur **Ajouter un émetteur.**
-
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image130.png)
-
-Entrez l'adresse e-mail de l'émetteur dans la zone Adresse e-mail et
-cliquez sur **Enregistrer**.
-
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image131.png)
-
-Vous recevrez un e-mail d'**Amazon** **Web Services** vous demandant
-d'accorder le droit d'envoyer des e-mails en votre nom.
-
-L'adresse e-mail doit être **vérifiée**. Si elle est **En attente**, il
-vous suffira d'accepter les Conditions d'utilisation d'Amazon Web
-Services. Le processus de validation peut prendre jusqu'à 30 minutes.
-
-![Une image contenant texte, Police, ligne, capture d'écran Le contenu
-généré par l'IA peut être
-incorrect.](./media/image132.png)
 
 ## Paramètres
 
