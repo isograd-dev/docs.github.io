@@ -458,6 +458,7 @@ Le candidat doit saisir sa réponse dans l'encadré prévu à cet effet. La ques
 par l'IA peut être incorrect.](./media/image49.png)
 
 **Zone(s) de texte avec correction automatique**
+
 Le candidat doit saisir sa ou ses réponses dans l'encadré ou les encadrés prévus à cet effet. Le texte soumis peut être vérifié et évalué de manière automatique ou par l'intelligence artificielle.
 
 
@@ -591,33 +592,26 @@ Pour être intégrés à la question il faut :
 ![Une image contenant texte Description générée
 automatiquement](./media/image77.jpeg)
 
-## Typologies des questions disponibles
+## Éléments propres au mode Édition pour chaque type de question
 
 
-QCM
+**QCM**
 
-##### Mode Edition :
 ![Une image contenant texte, capture d'écran, Police, diagramme Le contenu généré par l'IA peut être incorrect.](./media/image24.png)
 
 
 
 Dans la partie Question et réponses, quatre onglets sont disponibles :
 
-* Énoncé de la question : permet de rédiger le contenu de la question ;
-
-* Média : permet d’ajouter un document de référence, une vidéo, une image, ou de générer un contenu audio à l’aide de l’IA ;
 
 * Réponses proposées : permet de définir le type de QCM, le nombre de réponses, ainsi que leur format (texte ou image) ;
 
 * Prompt de calcul : permet de déterminer la méthode de calcul du score de la question et de la générer automatiquement à l’aide de l’IA.
 
-### Echelle de réponse
+**Echelle de réponse**
 
 Vrai/ Faux
 
-
-
-##### En mode Edition : 
 
 ![Une image contenant texte, capture d'écran, nombre, Police Le contenu
 généré par l'IA peut être
@@ -628,11 +622,7 @@ généré par l'IA peut être
 incorrect.](./media/image57.png)
 
 
-
- 
-Cliquer sur zone 
-
-#####  Mode Edition  : 
+**Cliquer sur zone**
 
 Dans l’onglet Éditeur graphique, s’ajoute l’image de fond et se définissent la ou les zones attendues.
 
@@ -642,9 +632,8 @@ incorrect.](./media/image36.png)
 
 
 
-Glisser-déposer
+**Glisser-déposer**
 
-##### Mode Edition :  
 
 Dans l'onglet Zones de dépose vous ajoutez l'image de fond et vous définissez les zones de dépôt.
 ![Une image contenant texte, capture d'écran, Police, nombre Le contenu
@@ -658,10 +647,8 @@ par l'IA peut être
 incorrect.](./media/image42.png)
 
 
+**Relier**
 
-Relier 
-
-##### Mode Edition : 
 
 Dans les onglets Colonne de gauche et Colonne de droite vous définissez les éléments à relier (et leur type) et leur destination correcte. 
 
@@ -674,34 +661,16 @@ par l'IA peut être
 incorrect.](./media/image45.png)
 
 
-Notation manuelle 
+**Notation manuelle**
 
 $$$$$image critères$$$$$$
 
 
 
-### Les zones de texte à remplir
-
-**Zone de texte** : le candidat doit compléter une ou plusieurs zones de texte vides avec la réponse correcte.
-
-
-
-##### En mode Edition (avec code yaml) : 
-
-![Une image contenant texte, Police, nombre, ligne Le contenu généré par
-l'IA peut être incorrect.](./media/image50.png)
-
-![Une image contenant texte, ligne, capture d'écran Le contenu généré
-par l'IA peut être
-incorrect.](./media/image51.png)
-
-Zone(s) de texte avec correction automatique
+**Zone(s) de texte avec correction automatique**
 
 $$$$$IA non IA$$$$$
 
-
-
-##### En mode Edition (avec code yaml) : 
 
 ![Une image contenant texte, Police, nombre, capture d'écran Le contenu
 généré par l'IA peut être
@@ -712,19 +681,12 @@ par l'IA peut être
 incorrect.](./media/image54.png)
 
 
-
-
-Enregistrement évalué par l'IA
-
-##### En mode Edition : 
+**Enregistrement évalué par l'IA**
 
 ![Une image contenant texte, capture d'écran, nombre, ligne Le contenu
 généré par l'IA peut être
 incorrect.](./media/image62.png)
 
-
-
-##### En mode Edition (avec code yaml) : 
 
 ![Une image contenant texte, Police, nombre, ligne Le contenu généré par
 l'IA peut être
@@ -766,10 +728,7 @@ La première section des paramètres inclut :
 
 -   L'Algorithme des questions :
 
-```{=html}
-<!-- -->
-```
--   Séquentiel Ordonné
+-   Séquentiel ordonné
 
 -   Séquentiel au hasard
 
@@ -779,14 +738,11 @@ La première section des paramètres inclut :
 
 -   Adaptatif contraint sur les premières questions
 
-```{=html}
-<!-- -->
-```
 -   Sélection de questions : en appuyant sur **Choisir** une nouvelle
     fenêtre s'ouvre pour sélectionner les questions du test.
 
 Faire glisser les questions vers la colonne de droite pour les ajouter
-au test. Il est possible aussi de changer l\'ordre des questions
+au test. Il est possible aussi de changer l'ordre des questions
 depuis la colonne de gauche en les faisant glisser.
 
 ![Une image contenant texte, logiciel, Icône d'ordinateur, Page web
