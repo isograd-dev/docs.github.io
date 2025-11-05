@@ -800,29 +800,24 @@ incorrect.](./media/image104.png)
 
 ### Administrateurs
 
-Les administrateurs gèrent les groupes. Chaque groupe nécessite un
-administrateur.
+Dans cette page, vous pouvez créer de nouveaux administrateurs de compte ou gérer les comptes des administrateurs existants (éditer, modifier les droits, supprimer, désactiver ou envoyer les identifiants).
 
-![Une image contenant texte, capture d'écran, Police, conception Le
-contenu généré par l'IA peut être
-incorrect.](./media/image105.png)
+![Une image contenant texte, capture d'écran, ligne Le contenu généré
+par l'IA peut être
+incorrect.](./media/image160.png)
 
-##### Ajout d'un administrateur
+#### Créer un administrateur
 
-Pour accéder aux outils de gestion des administrateurs, cliquez sur
-compte dans le menu principal. Vous serez ensuite redirigé vers la page
-gestion des administrateurs. Cliquez sur administrateurs.
+Il existe 4 types d'administrateurs sur la plateforme.
 
 ![Une image contenant capture d'écran, texte, logiciel, Icône
 d'ordinateur Le contenu généré par l'IA peut être
 incorrect.](./media/image106.png)
 
-La page gestion des administrateurs de votre compte apparaîtra et vous
-pourrez afficher tout les administrateurs qui ont été créés.
 
 ##### Type d'administrateurs
 
-Il existe 13 types d'administrateurs sur la plateforme. En fonction du
+En fonction du
 rôle de chacun vous pouvez lui attribuer des privilèges qui lui donnent
 accès à des fonctionnalités spécifiques.
 
@@ -830,22 +825,12 @@ accès à des fonctionnalités spécifiques.
 multimédia Le contenu généré par l'IA peut être
 incorrect.](./media/image107.png)
 
-##### Modification des administrateurs
-
-Les administrateurs de compte peuvent modifier les droits des administrateurs existants en cliquant sur l'icône **Éditer** sur la ligne de l'administrateur voulu :
-
-![Une image contenant texte, capture d'écran, Police, ligne Le contenu généré par l'IA peut être incorrect.](./media/image108.png)
-
-Vous pouvez également **supprimer** un administrateur ou lui
-**réinitialiser** le mot de passe.
-
-![Une image contenant texte, capture d'écran, Police, ligne Le contenu généré par l'IA peut être incorrect.](./media/image108.png)
-
-### Alerte crédit
 
 ### Consommation de crédits
 
 ### Factures
+
+### Alerte crédit
 
 ## Candidats
 
@@ -853,17 +838,19 @@ Après avoir créé vos tests, vous pourrez procéder à l\'ajout de vos candida
 
 ##### Ajout individuel 
 
-Sur le menu principal, vous avez l\'option \"Candidat\" Pour ajouter un seul candidat, cliquez sur \"Ajouter un candidat\".
+Sur le menu principal, vous avez l'option "Candidats". Pour ajouter un seul candidat, cliquez sur "Ajouter un candidat".
 
 ![Une image contenant texte, capture d'écran, logiciel, Police Le contenu généré par l'IA peut être incorrect.](./media/image109.png)
 
-Renseignez les informations et l\'adresse e-mail du candidat.
+Renseignez les informations et l'adresse e-mail du candidat.
 
-L\'identifiant du candidat sera son adresse e-mail. Deux candidats ne peuvent pas être enregistrés avec la même adresse e-mail.
+L'identifiant du candidat sera son adresse e-mail. Deux candidats ne peuvent pas être enregistrés avec la même adresse e-mail.
 
 Chaque candidat appartient à au moins un groupe. Le groupe par défaut est le groupe principal. Un candidat peut appartenir à plusieurs groupes à la fois.
 
 ##### Ajout d'un groupe de candidats
+
+![Une image contenant texte, capture d'écran, logiciel, Police Le contenu généré par l'IA peut être incorrect.](./media/image161.png) 
 
 *L'importation d'un fichier Excel contenant les détails de vos candidats vous permet de télécharger rapidement jusqu'à 500 à la fois pour un groupe défini.*
 
@@ -890,16 +877,13 @@ Dans la fenêtre importer in fichier de candidats, procédez comme suit :
 
 -   Maintenant, cliquez sur **importer**.
 
-    ![Une image contenant texte, capture d'écran, Police, nombre Le
-    contenu généré par l'IA peut être
-    incorrect.](./media/image110.png)
 
 Lors du téléchargement du fichier Excel, chacun des candidats recevra un
 mot de passe aléatoire. **Remarque :** Vous pourrez créer un mot de
 passe pour tout les candidats en cliquant sur actions sur le groupe,
-puis sur **attribuer un mot de passe** **temporaire à tous les candidats
-du groupe).\
-**
+puis sur **attribuer un mot de passe** temporaire à tous les candidats
+du groupe.
+
 
 ##### Inscrire un/des candidat(s) à un test
 
@@ -907,9 +891,6 @@ Pour inscrire les candidats à un test, cliquez sur **Candidats** dans le
 menu principal. À droite de l'adresse e-mail du candidat, cliquez sur
 l'icône **Éditer**
 
-![Une image contenant texte, capture d'écran, Police, nombre Le contenu
-généré par l'IA peut être
-incorrect.](./media/image111.png)
 
 Le fichier du candidat est ouvert. Si le candidat a passé un test ou à
 des tests en attente, ils apparaîtront ici.
