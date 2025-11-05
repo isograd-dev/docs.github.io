@@ -59,16 +59,7 @@ Depuis cette page, il est possible d’accéder aux principales rubriques de la 
 
 ## Menu « Questions » 
 
-Ce menu permet :
-
--   De créer, éditer et gérer des nouvelles questions
-
--   D'importer un fichier de questions depuis un fichier Excel
-
--   De visualiser les questions
-
--   D'exporter vos questions vers un fichier Excel
-- De rechercher des questions en utilisant des filtres
+Ce menu permet de gérer l'intégralité de la base de questions. 
 
 **Le process de gestion des questions est détaillé dans le chapitre
 « Administration des questions ».**
@@ -89,8 +80,7 @@ Ce menu permet :
 
 ###  Gestion des jeux de questions
 
-« Gestion des jeux de question » et « Gestion des domaines » sont
-accessibles via « Catégories ». Les Jeux de question permettent de
+Les Jeux de question permettent de
 regrouper les questions sont un même nom, et de les retrouver plus
 facilement sur la plateforme. C'est un ensemble de questions qui peut
 être utilisé pour filtrer les questions dans la page administration des
@@ -132,9 +122,6 @@ Plusieurs encadrés sont à remplir pour ajouter un jeu de question :
 
 -   Cliquer sur « Attribuer ce jeu à des questions » : mène à une page
     qui permet d'enregistrer les modifications.
-
--   Description pour les rapports : permet de choisir la langue des
-    rapports produits.
 
 -   Description utilisée dans les rapports : Possibilité de mettre une
     description qui sera utilisée dans les rapports .
@@ -182,14 +169,12 @@ présente quatre parties :
 -   Recommandations pour progresser dans la langue de son choix : Cela
     permet d'expliquer les recommandations qui permettent de passer au
     niveau supérieur. C'est utile pour la progression du candidat.
+-   Associer les sujets
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
 incorrect.](./media/image84.png)
 
-![Une image contenant texte, logiciel, Page web, Site web Le contenu
-généré par l'IA peut être
-incorrect.](./media/image85.png)
 
 ## Menu «  Tests & Examens »
 
@@ -211,13 +196,15 @@ Ce menu permet de créer un nouveau sujet ou encore d'éditer ou supprimer ceux 
 
 ## Gestion des aides visuelles 
 
+![](./media/image16.png)
+
 Une aide visuelle est une image ou un document inséré dans une question ou une réponse afin d'aider le candidat à visualiser un élément de référence (bouton, fonctionnalité, texte ou autre). Les aides visuelles sont associées à un sujet et ne sont disponibles que pour le sujet concerné.
 
 
 Pour créer une aide visuelle il faut cliquer
 sur Ajouter une aide visuelle. Une fenêtre s'ouvre dans laquelle vous avez la possibilité de choisir le sujet dans
 lequel apparaîtra l'aide visuelle, la langue et le type d'aide visuelle
-que vous souhaitez. Ainsi que de nommer votre aide visuelle. De plus,
+que vous souhaitez (document de référence, image affichée dans le texte ou image affiche par un clic, sous une loupe). Ainsi que de nommer votre aide visuelle. De plus,
 vous pouvez aussi enregistrer et modifier le fichier en question.
 
 Voici une capture d'écran de la page qui répertorie les différentes
@@ -238,15 +225,13 @@ par l'IA peut être
 incorrect.](./media/image89.png)
 
 
-![](./media/image16.png)
-
 Voici deux exemples d'aides visuelles encadrés en bleu. Le premier est
 un menu accessible via une loupe, le second est un bouton du ruban
 Excel.
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](./media/image17.jpeg)
+incorrect.](./media/image17.png)
 
 ## Menu « Gestion des Candidats » 
 
