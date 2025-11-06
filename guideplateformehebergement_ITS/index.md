@@ -1194,6 +1194,10 @@ pouvez afficher les dates et heures au format américain ou européen, et
 sélectionner votre fuseau horaire. Vous pouvez également définir le
 temps supplémentaire alloué pour les personnes en situation d'handicap.\
 \
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être
+incorrect.](./media/image166.png)
+
 Sachant que vous devrez également définir le temps supplémentaire dans
 la fiche du candidat, il est recommandé de définir ici la valeur globale
 sur 100%.
