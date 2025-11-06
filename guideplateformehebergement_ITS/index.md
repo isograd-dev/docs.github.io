@@ -1307,7 +1307,7 @@ principal.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](./media/image143.png)
+incorrect.](./media/image151.png)
 
 Vous y trouverez les éléments suivants :
 
@@ -1327,12 +1327,12 @@ cliquez **sur Identifier la version de mon navigateur.**
 
 ![Une image contenant texte, Police, capture d'écran Le contenu généré
 par l'IA peut être
-incorrect.](./media/image144.png)**\
+incorrect.](./media/image152.png)**\
 **
 
 Test de vérification
 
-![](./media/image145.png)
+![](./media/image153.png)
 
 Une fois que vous avez cliqué sur **Vérifier,** vous aurez la
 possibilité de faire un test. En fonction de votre sélection, un
@@ -1340,7 +1340,7 @@ mini-test d'évaluation sera lancé. Il est conseillé de compléter ce test
 dans le cadre de la vérification technique.\
 ![Une image contenant texte, capture d'écran, logiciel, Icône
 d'ordinateur Le contenu généré par l'IA peut être
-incorrect.](./media/image146.png)
+incorrect.](./media/image154.png)
 
 Le court test de trois questions simule un environnement d'évaluation.
 Chacune des questions correspond aux différents types de questions que
