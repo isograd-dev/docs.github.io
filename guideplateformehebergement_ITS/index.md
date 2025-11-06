@@ -1202,9 +1202,6 @@ Sachant que vous devrez également définir le temps supplémentaire dans
 la fiche du candidat, il est recommandé de définir ici la valeur globale
 sur 100%.
 
-![Une image contenant texte, Police, capture d'écran Le contenu généré
-par l'IA peut être
-incorrect.](./media/image135.png)
 
 Une fois que vous avez personnalisé vos paramètres, cliquez sur le
 bouton **Enregistrer** .
