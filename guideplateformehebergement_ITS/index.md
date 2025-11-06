@@ -1221,7 +1221,7 @@ session**.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](./media/image136.png)
+incorrect.](./media/image167.png)
 
 Dans la fenêtre **Créer une session**, vous pouvez ajouter une
 description/un titre pour votre session ainsi qu'un code de session, les
