@@ -1194,13 +1194,14 @@ pouvez afficher les dates et heures au format américain ou européen, et
 sélectionner votre fuseau horaire. Vous pouvez également définir le
 temps supplémentaire alloué pour les personnes en situation d'handicap.\
 \
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être
+incorrect.](./media/image166.png)
+
 Sachant que vous devrez également définir le temps supplémentaire dans
 la fiche du candidat, il est recommandé de définir ici la valeur globale
 sur 100%.
 
-![Une image contenant texte, Police, capture d'écran Le contenu généré
-par l'IA peut être
-incorrect.](./media/image135.png)
 
 Une fois que vous avez personnalisé vos paramètres, cliquez sur le
 bouton **Enregistrer** .
@@ -1221,7 +1222,7 @@ session**.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](./media/image136.png)
+incorrect.](./media/image167.png)
 
 Dans la fenêtre **Créer une session**, vous pouvez ajouter une
 description/un titre pour votre session ainsi qu'un code de session, les
