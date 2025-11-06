@@ -1170,7 +1170,7 @@ et/ou de mettre à jour les paramètres par défaut sur la plateforme.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](./media/image133.png)
+incorrect.](./media/image164.png)
 
 ### Paramètres pour évaluation 
 
@@ -1185,7 +1185,7 @@ bouton **Enregistrer** .
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](./media/image134.png)
+incorrect.](./media/image165.png)
 
 Paramètres généraux
 
