@@ -1279,7 +1279,7 @@ une description de niveau.\
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](./media/image140.png)
+incorrect.](./media/image148.png)
 
 Dans la fenêtre **Ajouter une description personnalisée**, sélectionnez
 la famille de sujets, puis cliquez sur **Enregistrer**.
