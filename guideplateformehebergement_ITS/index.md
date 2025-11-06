@@ -1252,6 +1252,10 @@ connaissances et les compétences pour les promotions d'emploi internes.
 Dans le menu principal, sélectionnez **Paramètres**, puis cliquez sur
 **Profils** puis cliquez sur le bouton rouge **Ajouter un profil**.
 
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être
+incorrect.](./media/image168.png)
+
 Pour modifier le niveau attendu des sous-compétences d'un test, placez
 votre curseur sur le profil et cliquez sur l'icône **Modifier les
 niveaux de compétence** .
