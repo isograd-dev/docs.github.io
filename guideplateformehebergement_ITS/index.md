@@ -463,6 +463,11 @@ Le candidat peut enregistrer plusieurs audios qu'il peut réécouter avant de s�
 par l'IA peut être
 incorrect.](./media/image61.png)
 
+**Texte à trou avec listes**
+
+Le candidat doit cliquer sur la flèche de l'encadré pour ouvrir la liste qui comporte les propositions de réponse, et en choisir une.
+(./media/image157.png)
+
 
 #### Éditer une question
 
