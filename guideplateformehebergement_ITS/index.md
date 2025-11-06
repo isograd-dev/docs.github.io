@@ -961,7 +961,8 @@ automatiquement retourné(s) sur votre compte.
 ##### Fonctionnalité Anti-Triche (mode plein écran)
 Lorsque ce mode est activé, les candidats ne peuvent pas accéder à
 d'autres applications logicielles ou ressources Internet pendant la
-durée de leur ![Une image contenant texte, capture d'écran, logiciel,
+durée de leur test. 
+![Une image contenant texte, capture d'écran, logiciel,
 Page web](./media/image116.png)
 
 Si un candidat quitte le mode plein écran ou tente d'ouvrir un nouvel
@@ -969,6 +970,17 @@ onglet, le système l'invitera à revenir à la page du test.
 
 S'il ne se remet pas en mode plein écran sur son test dans les 10
 secondes qui suivent, il sera automatiquement déconnecté de son test.
+
+La partie Surveillance est l’espace où on peut avoir une vue d'ensemble sur tous les tests surveillés, surtout ceux surveillés à distance en filtrant parmi les types de surveillance. L’interface liste chaque session avec son candidat, son test, la date de passage et le statut de la surveillance, ce qui permet de repérer tout de suite ce qui est en attente, ou validé. On peut filtrer par période, type de surveillance ou incident pour naviguer facilement dans les tests.
+
+![Une image contenant texte, Police, ligne, capture d'écran Le contenu
+généré par l'IA peut être
+incorrect.](./media/image162.png)
+
+
+![Une image contenant texte, Police, ligne, capture d'écran Le contenu
+généré par l'IA peut être
+incorrect.](./media/image163.png)
 
 ##### Envoi d'invitation aux tests
 
