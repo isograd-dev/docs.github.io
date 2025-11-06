@@ -463,6 +463,20 @@ Le candidat peut enregistrer plusieurs audios qu'il peut réécouter avant de s�
 par l'IA peut être
 incorrect.](./media/image61.png)
 
+**Texte à trous avec listes**
+
+Le candidat doit cliquer sur la flèche de l'encadré pour ouvrir la liste qui comporte les propositions de réponse, et en choisir une.
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être
+incorrect.](./media/image157.png)
+
+**Trier**
+
+Le candidat doit faire glisser les différentes propositions de réponse, pour les disposer dans l'ordre demandé.
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être
+incorrect.](./media/image46.png)
+
 
 #### Éditer une question
 
@@ -640,6 +654,19 @@ incorrect.](./media/image53.png)
 généré par l'IA peut être
 incorrect.](./media/image62.png)
 
+**Texte à trous avec listes**
+
+L'onglet Editeur de sélecteur permet d'ajouter les différentes propositions de réponse qui seront visibles par le candidat. L'option correcte est indiquée par la case bleue.
+![Une image contenant texte, capture d'écran, logiciel Le contenu généré
+par l'IA peut être
+incorrect.](./media/image159.png)
+
+**Trier**
+
+L'onglet Description YML permet d'ajouter et modifier les informations des propositions de réponse, et de définir l'ordre correct des différentes propositions de réponse.
+![Une image contenant texte, Police, nombre, capture d'écran Le contenu
+généré par l'IA peut être
+incorrect.](./media/image48.png)
 
 # Création des tests
 
