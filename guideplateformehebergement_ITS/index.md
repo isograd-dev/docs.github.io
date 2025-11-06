@@ -971,10 +971,12 @@ onglet, le système l'invitera à revenir à la page du test.
 S'il ne se remet pas en mode plein écran sur son test dans les 10
 secondes qui suivent, il sera automatiquement déconnecté de son test.
 
-La partie Surveillance est l’espace où on peut avoir une vue d'ensemble sur tous les tests surveillés, surtout ceux surveillés à distance en filtrant parmi les types de surveillance. L’interface liste chaque session avec son candidat, son test, la date de passage et le statut de la surveillance, ce qui permet de repérer tout de suite ce qui est en attente, ou validé. On peut filtrer par période, type de surveillance ou incident pour naviguer facilement dans les examens. 
+La partie Surveillance est l’espace où on peut avoir une vue d'ensemble sur tous les tests surveillés, surtout ceux surveillés à distance en filtrant parmi les types de surveillance. L’interface liste chaque session avec son candidat, son test, la date de passage et le statut de la surveillance, ce qui permet de repérer tout de suite ce qui est en attente, ou validé. On peut filtrer par période, type de surveillance ou incident pour naviguer facilement dans les tests.
+
 ![Une image contenant texte, Police, ligne, capture d'écran Le contenu
 généré par l'IA peut être
 incorrect.](./media/image162.png)
+
 
 ![Une image contenant texte, Police, ligne, capture d'écran Le contenu
 généré par l'IA peut être
