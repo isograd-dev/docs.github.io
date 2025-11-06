@@ -398,6 +398,9 @@ Il existe trois types de QCM possibles :
 **Echelle de réponse** : Le candidat doit répondre à toutes les
 affirmations pour que sa réponse soit considérée juste ou fausse.
 
+![Une image contenant texte, Appareils électroniques, capture d'écran,
+Page web Le contenu généré par l'IA peut être
+incorrect.](./media/image55.png) 
 
 **Les cliquer sur zone(s)**
 
@@ -409,6 +412,10 @@ Il est possible de créer des questions comportant :
 
 * plusieurs zones attendues, que le candidat doit toutes cliquer pour valider la question.
 
+![Une image contenant texte, Appareils électroniques, capture d'écran,
+Page web Le contenu généré par l'IA peut être
+incorrect.](./media/image155.png)
+
 **Glisser-déposer**
 
 Le candidat doit faire glisser les éléments (texte ou images) vers leur emplacement correct dans la zone de droite.
@@ -417,13 +424,7 @@ Le candidat doit faire glisser les éléments (texte ou images) vers leur emplac
 ![Une image contenant texte, capture d'écran, conception Le contenu
 généré par l'IA peut être
 incorrect.](./media/image40.png)
-![Une image contenant texte, logiciel, Icône d'ordinateur, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image34.png)
 
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être
-incorrect.](./media/image55.png)
 
 **Relier les éléments**
 
@@ -469,7 +470,7 @@ Le formulaire d'une question, appelé « mode édition », permet de créer ou d
 
 ##### Caractéristiques générales
 
--   Le bouton "Générer un titre" créé un titré généré par l'IA. Si vous ne souhaitez pas générer le titre de la question par l'IA ,vous pouvez le saisir vous-même.
+-   Le bouton "Générer un titre" crée un titré généré par l'IA. Si vous ne souhaitez pas générer le titre de la question par l'IA ,vous pouvez le saisir vous-même.
     **Attention à la formulation car le titre apparaît sur les rapports des candidats.**
 
 -   Le champs «  Temps alloué est par défaut défini sur -1. Si vous souhaitez allouer un temps maximal pour la question, veuillez remplir le champs ( en secondes).
@@ -489,12 +490,12 @@ incorrect.](./media/image67.png)
 Certains champs sont communs à toutes les typologies de questions :
 
 
--   **Énoncé de la question :** renseignez l'énoncé de votre question,
+ **Énoncé de la question :** renseignez l'énoncé de votre question,
     les consignes, l'étude de cas, etc. Une traduction générée par l'IA
     de l\'anglais vers le français ou du français vers l\'anglais est
     disponible en appuyant sur le bouton \"Traduire\".
 
--   **Médias** : plusieurs types d'illustrations et de fichiers peuvent être ajoutés à
+**Médias** : plusieurs types d'illustrations et de fichiers peuvent être ajoutés à
 une question :
 -   Une image d'illustration
 
@@ -515,9 +516,7 @@ une question :
 avant de passer en mode Aperçu par exemple, sinon la saisie sera
 perdue.**
 
-**L'exemple ci-dessous est un qcm à réponse unique. Des exemples de code
-yaml sont présentés dans le chapitre « Typologie de question », détaillé
-ci-dessus.**  
+**L'exemple ci-dessous est un qcm à réponse unique.**  
 
 ![Une image contenant texte, capture d'écran, nombre, logiciel Le
 contenu généré par l'IA peut être
@@ -525,11 +524,7 @@ incorrect.](./media/image68.png)
 
 
 **NB** : Pour une résolution optimale, **les images doivent avoir une
-résolution 1080 x 500.** Attention, il s'agit de la résolution de
-l'image en plein écran, ce qui implique de modifier la résolution de
-l'écran à 1080 x 500 pour pouvoir faire des captures nettes, lisibles et
-dont tous les menus, onglets, etc. apparaissent tels qu'en environnement
-« normal ».
+résolution 1080 x 500.** 
 
 ##### Explications concernant la solution
 
@@ -554,25 +549,7 @@ d'échanger des commentaires sur la question.
 par l'IA peut être
 incorrect.](./media/image71.png)
 
-**Documents à télécharger**
-
-L'environnement Custom offre la possibilité d'ajouter à des questions
-des documents téléchargeables afin que les candidats puissent
-lire/consulter des documents en vue de répondre à une question ou un
-exercice. Ces documents doivent être au format PDF.
-
-Pour être intégrés à la question il faut :
-
--   Ajouter dans le corps de la question un lien sur lequel le candidat
-    pourra cliquer et qui répond à la nomenclature suivante :
-    [https://questionsacm.isograd.com/*sujet*/*langue*/*id_de_la_question*.pdf](https://questionsacm.isograd.com/sujet/langue/id_de_la_question.pdf)
-    (En italique, les éléments à compléter)
-
--   Envoyer à l'équipe technique d'Isograd les fichiers afin qu'ils
-    soient uploadés sur les serveurs.
-
-![Une image contenant texte Description générée
-automatiquement](./media/image77.jpeg)
+Il est aussi possible d’ajouter un fichier de commentaire.
 
 ## Éléments propres au mode Édition pour chaque type de question
 
@@ -581,9 +558,6 @@ automatiquement](./media/image77.jpeg)
 
 ![Une image contenant texte, capture d'écran, Police, diagramme Le contenu généré par l'IA peut être incorrect.](./media/image24.png)
 
-
-
-Dans la partie Question et réponses, quatre onglets sont disponibles :
 
 
 * Réponses proposées : permet de définir le type de QCM, le nombre de réponses, ainsi que leur format (texte ou image) ;
@@ -599,14 +573,11 @@ Vrai/ Faux
 généré par l'IA peut être
 incorrect.](./media/image56.png)
 
-![Une image contenant texte, ligne, capture d'écran, Police Le contenu
-généré par l'IA peut être
-incorrect.](./media/image57.png)
-
+* Prompt de calcul : permet de déterminer la méthode de calcul du score de la question et de la générer automatiquement à l’aide de l’IA.
 
 **Cliquer sur zone**
 
-Dans l’onglet Éditeur graphique, s’ajoute l’image de fond et se définissent la ou les zones attendues.
+Dans l’onglet Éditeur graphique, s’ajoute l’image de fond et se définissent la ou les zones correctes.
 
 ![Une image contenant texte, capture d'écran, ligne, Police Le contenu
 généré par l'IA peut être
@@ -645,22 +616,22 @@ incorrect.](./media/image45.png)
 
 **Notation manuelle**
 
-$$$$$image critères$$$$$$
+L'onglet Détails de soumissions permet de définir la type de réponse attendue par le candidat (saisie de texte, soumission de fichier ou enregistrement audio). 
 
+L’onglet Grille d’évaluation permet d’ajouter des critères et d’attribuer un nombre de points par critère. Ces éléments sont visibles par les correcteurs qui les utilisent pour évaluer la question et attribuer une note,  une fois le test passé.
 
+![Une image contenant texte, capture d'écran, logiciel Le contenu généré
+par l'IA peut être
+incorrect.](./media/image57.png)
 
 **Zone(s) de texte avec correction automatique**
 
-$$$$$IA non IA$$$$$
 
+Dans l’onglet Zones de saisie, vous définissez le type de correction pour chaque zone (automatique ou réalisée par l’IA), le type de champ, le format des réponses attendues (texte, nombre, e-mail), le prompt d’analyse IA le cas échéant, ainsi que d’autres critères tels que la taille de la zone de saisie ou le nombre minimal et maximal de mots etc.
 
 ![Une image contenant texte, Police, nombre, capture d'écran Le contenu
 généré par l'IA peut être
 incorrect.](./media/image53.png)
-
-![Une image contenant texte, ligne, capture d'écran Le contenu généré
-par l'IA peut être
-incorrect.](./media/image54.png)
 
 
 **Enregistrement évalué par l'IA**
@@ -670,22 +641,9 @@ généré par l'IA peut être
 incorrect.](./media/image62.png)
 
 
-![Une image contenant texte, Police, nombre, ligne Le contenu généré par
-l'IA peut être
-incorrect.](./media/image64.png)
-
-![Une image contenant texte, ligne, capture d'écran Le contenu généré
-par l'IA peut être
-incorrect.](./media/image65.png)
-
-
-
-
 # Création des tests
 
-Dans le **menu principal**, cliquer sur **Tests and Examens** puis
-cliquer sur **Créer un test.** La page **Créer ou modifier un test** va
-s'ouvrir. Cette page comprend toutes les caractéristiques du test.
+Dans le **menu principal**, cliquez sur **Tests and Examens** pour arriver à la page de gestion de tous vos tests. 
 
 ![Une image contenant texte, capture d'écran, logiciel, Icône
 d'ordinateur Description générée
@@ -696,9 +654,9 @@ langue du test** (français ou anglais).
 
 ![Une image contenant texte, logiciel, Police, capture d'écran
 Description générée
-automatiquement](./media/image92.jpeg)
+automatiquement](./media/image92.png)
 
-## Caractéristiques du test
+## Caractéristiques générales du test
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
@@ -706,19 +664,18 @@ incorrect.](./media/image93.png)
 
 La première section des paramètres inclut :
 
--   La langue des questions. : choisir parmi une liste déroulante.
+- Si vous voulez que votre test soit actif ou inactif
 
 -   L'Algorithme des questions :
 
--   Séquentiel ordonné
+        -   Séquentiel ordonné
 
--   Séquentiel au hasard
+        -   Séquentiel au hasard
 
--   Séquentiel au hasard avec jeu de questions
+        -   Séquentiel au hasard avec jeu de questions
 
--   Question par domaine
+        -   Questions par domaine
 
--   Adaptatif contraint sur les premières questions
 
 -   Sélection de questions : en appuyant sur **Choisir** une nouvelle
     fenêtre s'ouvre pour sélectionner les questions du test.
@@ -729,7 +686,7 @@ depuis la colonne de gauche en les faisant glisser.
 
 ![Une image contenant texte, logiciel, Icône d'ordinateur, Page web
 Description générée
-automatiquement](./media/image94.jpeg)
+automatiquement](./media/image94.png)
 
 Pour voir les questions disponibles, il faut sélectionner un sujet. Une
 recherche par mot clé, par compétence, par identifiant de question ou
@@ -745,12 +702,14 @@ question** en cliquant sur l'œil qui se trouve à droite de la question.
 La prévisualisation de question est possible aussi sur la page
 principale de création de test, une fois les questions enregistrées.
 
-Glisser les questions vers la colonne de droite pour les ajouter au test
-et appuyer sur **Enregistrer.**
+Glissez les questions vers la colonne de droite pour les ajouter au test
+et appuyez sur **Enregistrer.**
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web
 Description générée
-automatiquement](./media/image96.jpeg)
+automatiquement](./media/image96.png)
+
+- Type de résultat : depuis la liste déroulante vous choisissez le type de rapport de compétences 
 
 ### Options de passage du test
 
@@ -764,15 +723,6 @@ incorrect.](./media/image97.png)
 
 ![](./media/image6.png) Afficher le bouton « Ecouter le texte » : en activant cette option, le candidat pourra écouter l'énoncé de la question.
 
-### Gestion du temps
-
-![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être incorrect.](./media/image98.png)
-
-Vous pouvez définir la durée du test en minutes. Un chronomètre
-s'affichera sur la page du candidat. Si vous ne souhaitez pas définir de
-durée pour le test, laissez le champs vide.
-
 ### Nom et description du test
 
 ![Une image contenant texte, Police, logiciel, capture d'écran
@@ -784,6 +734,17 @@ administrateurs du compte, en français et/ou en anglais. Le nom du test
 apparaîtra dans la liste de vos tests pour l'inscription du candidat,
 dans les invitations envoyées au candidat par email pour leur connexion
 au test, ainsi que dans les rapports de compétences.
+
+### Gestion du temps
+
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être incorrect.](./media/image98.png)
+
+Vous pouvez définir la durée du test en minutes. Un chronomètre
+s'affichera sur la page du candidat. Si vous ne souhaitez pas définir de
+durée pour le test, laissez le champs vide.
+
+
 
 ### Messages de début et de fin de test
 
@@ -799,21 +760,16 @@ Le Message de fin s'affiche une fois le test passé.
 
 ![Une image contenant texte, capture d'écran, Police, ligne Description
 générée
-automatiquement](./media/image100.jpeg)
+automatiquement](./media/image100.png)
 
-### Caractéristiques générales
+-   N'oubliez pas d'enregistrer les paramètres de votre test.
+![Une image contenant texte, capture d'écran, Police, ligne Description
+générée
+automatiquement](./media/image156.png)
 
-![Une image contenant texte, Police, ligne, capture d'écran Le contenu
-généré par l'IA peut être
-incorrect.](./media/image101.png)
 
--   Activer le test pour le rendre visible sur votre compte.
-
--   N'oubliez pas d'enregistrer les paramètres que vous venez de saisir.
-
--   Vous pouvez essayer votre test pour voir s'il vous convient.
-
--   Vous pouvez visualiser le rapport de compétences.
+-   Vous pouvez essayer votre test pour voir s'il vous convient en appuyant sur le bouton Enregistrer et essayer votre test. 
+-  Il est possible d'exporter tous les commentaires laissés pour ce test par les candidats qui l'ont passé. 
 
 
 
@@ -821,7 +777,7 @@ incorrect.](./media/image101.png)
 
 Le menu principal de la plateforme donne accès aux cinq onglets qui vous permettent de gérer votre compte.
 
-Compte
+## Compte
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être incorrect.](./media/image102.png)
@@ -844,29 +800,24 @@ incorrect.](./media/image104.png)
 
 ### Administrateurs
 
-Les administrateurs gèrent les groupes. Chaque groupe nécessite un
-administrateur.
+Dans cette page, vous pouvez créer de nouveaux administrateurs de compte ou gérer les comptes des administrateurs existants (éditer, modifier les droits, supprimer, désactiver ou envoyer les identifiants).
 
-![Une image contenant texte, capture d'écran, Police, conception Le
-contenu généré par l'IA peut être
-incorrect.](./media/image105.png)
+![Une image contenant texte, capture d'écran, ligne Le contenu généré
+par l'IA peut être
+incorrect.](./media/image160.png)
 
-##### Ajout d'un administrateur
+#### Créer un administrateur
 
-Pour accéder aux outils de gestion des administrateurs, cliquez sur
-compte dans le menu principal. Vous serez ensuite redirigé vers la page
-gestion des administrateurs. Cliquez sur administrateurs.
+Il existe 4 types d'administrateurs sur la plateforme.
 
 ![Une image contenant capture d'écran, texte, logiciel, Icône
 d'ordinateur Le contenu généré par l'IA peut être
 incorrect.](./media/image106.png)
 
-La page gestion des administrateurs de votre compte apparaîtra et vous
-pourrez afficher tout les administrateurs qui ont été créés.
 
 ##### Type d'administrateurs
 
-Il existe 13 types d'administrateurs sur la plateforme. En fonction du
+En fonction du
 rôle de chacun vous pouvez lui attribuer des privilèges qui lui donnent
 accès à des fonctionnalités spécifiques.
 
@@ -874,22 +825,12 @@ accès à des fonctionnalités spécifiques.
 multimédia Le contenu généré par l'IA peut être
 incorrect.](./media/image107.png)
 
-##### Modification des administrateurs
-
-Les administrateurs de compte peuvent modifier les droits des administrateurs existants en cliquant sur l'icône **Éditer** sur la ligne de l'administrateur voulu :
-
-![Une image contenant texte, capture d'écran, Police, ligne Le contenu généré par l'IA peut être incorrect.](./media/image108.png)
-
-Vous pouvez également **supprimer** un administrateur ou lui
-**réinitialiser** le mot de passe.
-
-![Une image contenant texte, capture d'écran, Police, ligne Le contenu généré par l'IA peut être incorrect.](./media/image108.png)
-
-### Alerte crédit
 
 ### Consommation de crédits
 
 ### Factures
+
+### Alerte crédit
 
 ## Candidats
 
@@ -897,17 +838,19 @@ Après avoir créé vos tests, vous pourrez procéder à l\'ajout de vos candida
 
 ##### Ajout individuel 
 
-Sur le menu principal, vous avez l\'option \"Candidat\" Pour ajouter un seul candidat, cliquez sur \"Ajouter un candidat\".
+Sur le menu principal, vous avez l'option "Candidats". Pour ajouter un seul candidat, cliquez sur "Ajouter un candidat".
 
 ![Une image contenant texte, capture d'écran, logiciel, Police Le contenu généré par l'IA peut être incorrect.](./media/image109.png)
 
-Renseignez les informations et l\'adresse e-mail du candidat.
+Renseignez les informations et l'adresse e-mail du candidat.
 
-L\'identifiant du candidat sera son adresse e-mail. Deux candidats ne peuvent pas être enregistrés avec la même adresse e-mail.
+L'identifiant du candidat sera son adresse e-mail. Deux candidats ne peuvent pas être enregistrés avec la même adresse e-mail.
 
 Chaque candidat appartient à au moins un groupe. Le groupe par défaut est le groupe principal. Un candidat peut appartenir à plusieurs groupes à la fois.
 
 ##### Ajout d'un groupe de candidats
+
+![Une image contenant texte, capture d'écran, logiciel, Police Le contenu généré par l'IA peut être incorrect.](./media/image161.png) 
 
 *L'importation d'un fichier Excel contenant les détails de vos candidats vous permet de télécharger rapidement jusqu'à 500 à la fois pour un groupe défini.*
 
@@ -934,16 +877,13 @@ Dans la fenêtre importer in fichier de candidats, procédez comme suit :
 
 -   Maintenant, cliquez sur **importer**.
 
-    ![Une image contenant texte, capture d'écran, Police, nombre Le
-    contenu généré par l'IA peut être
-    incorrect.](./media/image110.png)
 
 Lors du téléchargement du fichier Excel, chacun des candidats recevra un
 mot de passe aléatoire. **Remarque :** Vous pourrez créer un mot de
 passe pour tout les candidats en cliquant sur actions sur le groupe,
-puis sur **attribuer un mot de passe** **temporaire à tous les candidats
-du groupe).\
-**
+puis sur **attribuer un mot de passe** temporaire à tous les candidats
+du groupe.
+
 
 ##### Inscrire un/des candidat(s) à un test
 
@@ -951,9 +891,6 @@ Pour inscrire les candidats à un test, cliquez sur **Candidats** dans le
 menu principal. À droite de l'adresse e-mail du candidat, cliquez sur
 l'icône **Éditer**
 
-![Une image contenant texte, capture d'écran, Police, nombre Le contenu
-généré par l'IA peut être
-incorrect.](./media/image111.png)
 
 Le fichier du candidat est ouvert. Si le candidat a passé un test ou à
 des tests en attente, ils apparaîtront ici.
