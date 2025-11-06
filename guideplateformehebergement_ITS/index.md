@@ -468,6 +468,13 @@ incorrect.](./media/image61.png)
 Le candidat doit cliquer sur la flèche de l'encadré pour ouvrir la liste qui comporte les propositions de réponse, et en choisir une.
 (./media/image157.png)
 
+**Trier**
+
+Le candidat doit faire glisser les différentes propositions de réponse, pour les disposer dans l'ordre demandé.
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être
+incorrect.](./media/image46.png)
+
 
 #### Éditer une question
 
