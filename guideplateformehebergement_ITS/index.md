@@ -1296,9 +1296,6 @@ Une fois que vous avez terminé les messages pour chaque niveau, cliquez
 sur **Enregistrer**. Ces commentaires apparaîtront sur les rapports des
 candidats, en fonction du niveau de compétence du candidat.
 
-![Une image contenant texte, capture d'écran, logiciel, nombre Le
-contenu généré par l'IA peut être
-incorrect.](./media/image142.png)
 
 ## Aide et support
 
