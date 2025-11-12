@@ -1112,6 +1112,13 @@ Vous pouvez effectuer des recherches dans les données et filtrer par :
 
 Tous les résultats peuvent être exportés dans un fichier Excel.
 
+### Tableau de bord
+Dans cette partie, en fonction du groupe et du test choisi vous avez accès au nombre total des test complétés, au temps moyen passé, au statut des tests, à la répartition des scores ainis qu'au classement des meilleurs scores des 10 premiers candidats. 
+
+![Une image contenant texte, capture d'écran, Police, logiciel Le
+contenu généré par l'IA peut être
+incorrect.](./media/image169.png)
+
 ### Resultats individuels
 
 Pour consulter les résultats d'un candidat, entrez son nom ou son
