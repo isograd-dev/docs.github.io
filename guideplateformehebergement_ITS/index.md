@@ -528,7 +528,6 @@ une question :
 avant de passer en mode Aperçu par exemple, sinon la saisie sera
 perdue.**
 
-**L'exemple ci-dessous est un qcm à réponse unique.**  
 
 ![Une image contenant texte, capture d'écran, nombre, logiciel Le
 contenu généré par l'IA peut être
