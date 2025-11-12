@@ -1185,7 +1185,7 @@ incorrect.](./media/image173.png)
 Vous pourrez voir les résultats et le temps passé sur chaque question.
 Ces données peuvent être exportées sous forme de fichier Excel.
 
-En cliquant sur l'icône **Affichage**, vous pourrez voir la question, la
+Vous pouvez aussi voir la question, la
 réponse du candidat, et la bonne réponse attendue.
 
 ![Une image contenant texte, capture d'écran, Police, ligne Le contenu
