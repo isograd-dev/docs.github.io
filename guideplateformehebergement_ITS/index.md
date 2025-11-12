@@ -1165,9 +1165,8 @@ réponse du candidat, et la bonne réponse attendue.
 
 ![Une image contenant texte, capture d'écran, Police, ligne Le contenu
 généré par l'IA peut être
-incorrect.](./media/image123.png)![Une image contenant texte, logiciel,
-Page web, Icône d'ordinateur Le contenu généré par l'IA peut être
-incorrect.](./media/image124.png)
+incorrect.](./media/image174.png)
+
 
 ## Emails
 
