@@ -465,7 +465,7 @@ incorrect.](./media/image61.png)
 
 **Texte à trous avec listes**
 
-Le candidat doit cliquer sur la flèche de l'encadré pour ouvrir la liste qui comporte les propositions de réponse, et en choisir une.
+Le candidat doit choisir parmi une liste, la proposition de réponse correcte.
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
 incorrect.](./media/image157.png)
@@ -504,10 +504,8 @@ incorrect.](./media/image67.png)
 Certains champs sont communs à toutes les typologies de questions :
 
 
- **Énoncé de la question :** renseignez l'énoncé de votre question,
-    les consignes, l'étude de cas, etc. Une traduction générée par l'IA
-    de l\'anglais vers le français ou du français vers l\'anglais est
-    disponible en appuyant sur le bouton \"Traduire\".
+ **Énoncé de la question :** renseignez l'énoncé de votre question. Vous pouvez insérer des tableaux, modifier la police, la couleur du texte, et traduire le texte de la question dans plusieurs langues à l'aide de l'IA.
+
 
 **Médias** : plusieurs types d'illustrations et de fichiers peuvent être ajoutés à
 une question :
@@ -530,7 +528,6 @@ une question :
 avant de passer en mode Aperçu par exemple, sinon la saisie sera
 perdue.**
 
-**L'exemple ci-dessous est un qcm à réponse unique.**  
 
 ![Une image contenant texte, capture d'écran, nombre, logiciel Le
 contenu généré par l'IA peut être
@@ -630,7 +627,7 @@ incorrect.](./media/image45.png)
 
 **Notation manuelle**
 
-L'onglet Détails de soumissions permet de définir la type de réponse attendue par le candidat (saisie de texte, soumission de fichier ou enregistrement audio). 
+L'onglet Détails de soumissions permet de définir le type de réponse attendue par le candidat (saisie de texte, soumission de fichier ou enregistrement audio). 
 
 L’onglet Grille d’évaluation permet d’ajouter des critères et d’attribuer un nombre de points par critère. Ces éléments sont visibles par les correcteurs qui les utilisent pour évaluer la question et attribuer une note,  une fois le test passé.
 
@@ -656,7 +653,7 @@ incorrect.](./media/image62.png)
 
 **Texte à trous avec listes**
 
-L'onglet Editeur de sélecteur permet d'ajouter les différentes propositions de réponse qui seront visibles par le candidat. L'option correcte est indiquée par la case bleue.
+L'onglet Editeur de sélecteurs permet d'ajouter les différentes propositions de réponse qui seront visibles par le candidat. L'option correcte est indiquée par la case bleue.
 ![Une image contenant texte, capture d'écran, logiciel Le contenu généré
 par l'IA peut être
 incorrect.](./media/image159.png)
@@ -1237,7 +1234,7 @@ candidat(s) en amont du test.
 généré par l'IA peut être
 incorrect.](./media/image137.png)
 
-Profils
+### Profils
 
 Les **Profils** vous permettent de définir les résultats attendus pour
 des métiers spécifiques.
@@ -1252,6 +1249,10 @@ connaissances et les compétences pour les promotions d'emploi internes.
 Dans le menu principal, sélectionnez **Paramètres**, puis cliquez sur
 **Profils** puis cliquez sur le bouton rouge **Ajouter un profil**.
 
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être
+incorrect.](./media/image168.png)
+
 Pour modifier le niveau attendu des sous-compétences d'un test, placez
 votre curseur sur le profil et cliquez sur l'icône **Modifier les
 niveaux de compétence** .
@@ -1263,7 +1264,7 @@ incorrect.](./media/image138.png)\
 l'IA peut être
 incorrect.](./media/image139.png)
 
-Descriptions de niveaux personnalisés
+### Descriptions de niveaux personnalisés
 
 Vous pouvez modifier la description du niveau sur chaque test
 d'évaluation, en fonction de la famille de sujets du test.
@@ -1275,14 +1276,14 @@ une description de niveau.\
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](./media/image140.png)
+incorrect.](./media/image148.png)
 
 Dans la fenêtre **Ajouter une description personnalisée**, sélectionnez
 la famille de sujets, puis cliquez sur **Enregistrer**.
 
-![Une image contenant texte, capture d'écran, Police, nombre Le contenu
-généré par l'IA peut être
-incorrect.](./media/image141.png)
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être
+incorrect.](./media/image149.png)
 
 Dans la fenêtre **Gestion des** **descriptions de niveaux
 personnalisées**, vous pouvez saisir des messages pour chaque niveau de
@@ -1292,9 +1293,6 @@ Une fois que vous avez terminé les messages pour chaque niveau, cliquez
 sur **Enregistrer**. Ces commentaires apparaîtront sur les rapports des
 candidats, en fonction du niveau de compétence du candidat.
 
-![Une image contenant texte, capture d'écran, logiciel, nombre Le
-contenu généré par l'IA peut être
-incorrect.](./media/image142.png)
 
 ## Aide et support
 
@@ -1306,7 +1304,7 @@ principal.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
-incorrect.](./media/image143.png)
+incorrect.](./media/image151.png)
 
 Vous y trouverez les éléments suivants :
 
@@ -1326,12 +1324,12 @@ cliquez **sur Identifier la version de mon navigateur.**
 
 ![Une image contenant texte, Police, capture d'écran Le contenu généré
 par l'IA peut être
-incorrect.](./media/image144.png)**\
+incorrect.](./media/image152.png)**\
 **
 
 Test de vérification
 
-![](./media/image145.png)
+![](./media/image153.png)
 
 Une fois que vous avez cliqué sur **Vérifier,** vous aurez la
 possibilité de faire un test. En fonction de votre sélection, un
@@ -1339,7 +1337,7 @@ mini-test d'évaluation sera lancé. Il est conseillé de compléter ce test
 dans le cadre de la vérification technique.\
 ![Une image contenant texte, capture d'écran, logiciel, Icône
 d'ordinateur Le contenu généré par l'IA peut être
-incorrect.](./media/image146.png)
+incorrect.](./media/image154.png)
 
 Le court test de trois questions simule un environnement d'évaluation.
 Chacune des questions correspond aux différents types de questions que
