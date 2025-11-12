@@ -271,11 +271,11 @@ Ce menu permet les actions suivantes :
 -   Ajouter une nouvelle question: cliquez sur **"Ajouter une question"** puis complétez les éléments
 suivants :
 
--   Sélectionner le sujet
+    -   Sélectionner le sujet
 
--   Sélectionner la langue
+    -   Sélectionner la langue
 
--   Sélectionner le type de réponse (typologie de questions)
+    -   Sélectionner le type de réponse (typologie de questions)
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le
 contenu généré par l'IA peut être
@@ -478,11 +478,11 @@ par l'IA peut être
 incorrect.](./media/image46.png)
 
 
-#### Éditer une question
+### Éditer une question
 
 Le formulaire d'une question, appelé « mode édition », permet de créer ou de modifier une question. Il est composé de plusieurs parties.
 
-##### Caractéristiques générales
+#### Caractéristiques générales
 
 -   Le bouton "Générer un titre" crée un titré généré par l'IA. Si vous ne souhaitez pas générer le titre de la question par l'IA ,vous pouvez le saisir vous-même.
     **Attention à la formulation car le titre apparaît sur les rapports des candidats.**
@@ -499,7 +499,7 @@ Le formulaire d'une question, appelé « mode édition », permet de créer ou d
 généré par l'IA peut être
 incorrect.](./media/image67.png)
 
-##### Question et réponses
+#### Question et réponses
 
 Certains champs sont communs à toutes les typologies de questions :
 
@@ -528,10 +528,6 @@ une question :
 avant de passer en mode Aperçu par exemple, sinon la saisie sera
 perdue.**
 
-
-![Une image contenant texte, capture d'écran, nombre, logiciel Le
-contenu généré par l'IA peut être
-incorrect.](./media/image68.png)
 
 
 **NB** : Pour une résolution optimale, **les images doivent avoir une
@@ -804,7 +800,7 @@ Le menu principal de la plateforme donne accès aux cinq onglets qui vous permet
 ## Compte
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être incorrect.](./media/image102.png)
+par l'IA peut être incorrect.](./media2/image102.png)
 
 ### Détails
 
@@ -957,7 +953,7 @@ automatiquement retourné(s) sur votre compte.
 
 ##### Fonctionnalité Anti-Triche (mode plein écran)
 Lorsque ce mode est activé, les candidats ne peuvent pas accéder à
-d'autres applications logicielles ou ressources Internet pendant la
+d'autres applications ou ressources en ligne pendant la
 durée de leur test. 
 ![Une image contenant texte, capture d'écran, logiciel,
 Page web](./media/image116.png)
@@ -1070,14 +1066,24 @@ Les actions de groupe vous permettent de :
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](./media/image119.png)
+incorrect.](./media/image122.png)
+
+-   **Inscire tous les candiats sélectionnés à un test**
+  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image120.png)
+
+-   **Envoyer les emails d'inscription à tous les candidats sélectionnés**
+  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image121.png)
 
 -   **Supprimer les tests non passés.** Si vous supprimez les tests à
     passer, vous serez alors recrédités automatiquement
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](./media/image119.png)
+incorrect.](./media/image123.png)
 
 -   **Définir des options d'évaluation pour l'ensemble des candidats du
     groupe.** Cela vous permet de personnaliser les options d'évaluation
@@ -1085,7 +1091,22 @@ incorrect.](./media/image119.png)
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](./media/image119.png)
+incorrect.](./media/image124.png)
+
+-    **Supprimer les candidats sélectionnés**
+![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image176.png)
+
+-  **Ajouter les candidats sélectionnés à un groupe**
+  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image177.png)
+
+-  **Générer des badges pour les candidats sélectionnés**
+  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image178.png)
 
 ## Résultats
 
@@ -1160,7 +1181,7 @@ incorrect.](./media/image173.png)
 Vous pourrez voir les résultats et le temps passé sur chaque question.
 Ces données peuvent être exportées sous forme de fichier Excel.
 
-En cliquant sur l'icône **Affichage**, vous pourrez voir la question, la
+Vous pouvez aussi voir la question, la
 réponse du candidat, et la bonne réponse attendue.
 
 ![Une image contenant texte, capture d'écran, Police, ligne Le contenu
