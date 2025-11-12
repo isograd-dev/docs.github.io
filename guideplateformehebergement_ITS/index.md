@@ -504,10 +504,8 @@ incorrect.](./media/image67.png)
 Certains champs sont communs à toutes les typologies de questions :
 
 
- **Énoncé de la question :** renseignez l'énoncé de votre question,
-    les consignes, l'étude de cas, etc. Une traduction générée par l'IA
-    de l\'anglais vers le français ou du français vers l\'anglais est
-    disponible en appuyant sur le bouton \"Traduire\".
+ **Énoncé de la question :** renseignez l'énoncé de votre question. Vous pouvez insérer des tableaux, modifier la police, la couleur du texte, et traduire le texte de la question dans plusieurs langues à l'aide de l'IA.
+
 
 **Médias** : plusieurs types d'illustrations et de fichiers peuvent être ajoutés à
 une question :
