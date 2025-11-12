@@ -800,7 +800,7 @@ Le menu principal de la plateforme donne accès aux cinq onglets qui vous permet
 ## Compte
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être incorrect.](./media/image102.png)
+par l'IA peut être incorrect.](./media2/image102.png)
 
 ### Détails
 
@@ -1066,14 +1066,24 @@ Les actions de groupe vous permettent de :
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](./media/image119.png)
+incorrect.](./media/image122.png)
+
+-   **Inscire tous les candiats sélectionnés à un test**
+  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image120.png)
+
+-   **Envoyer les emails d'inscription à tous les candidats sélectionnés**
+  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image121.png)
 
 -   **Supprimer les tests non passés.** Si vous supprimez les tests à
     passer, vous serez alors recrédités automatiquement
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](./media/image119.png)
+incorrect.](./media/image123.png)
 
 -   **Définir des options d'évaluation pour l'ensemble des candidats du
     groupe.** Cela vous permet de personnaliser les options d'évaluation
@@ -1081,7 +1091,22 @@ incorrect.](./media/image119.png)
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](./media/image119.png)
+incorrect.](./media/image124.png)
+
+-    **Supprimer les candidats sélectionnés**
+![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image176.png)
+
+-  **Ajouter les candidats sélectionnés à un groupe**
+  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image177.png)
+
+-  **Générer des badges pour les candidats sélectionnés**
+  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image178.png)
 
 ## Résultats
 
@@ -1156,7 +1181,7 @@ incorrect.](./media/image173.png)
 Vous pourrez voir les résultats et le temps passé sur chaque question.
 Ces données peuvent être exportées sous forme de fichier Excel.
 
-En cliquant sur l'icône **Affichage**, vous pourrez voir la question, la
+Vous pouvez aussi voir la question, la
 réponse du candidat, et la bonne réponse attendue.
 
 ![Une image contenant texte, capture d'écran, Police, ligne Le contenu
