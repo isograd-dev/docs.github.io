@@ -627,7 +627,7 @@ incorrect.](./media/image45.png)
 
 **Notation manuelle**
 
-L'onglet Détails de soumissions permet de définir la type de réponse attendue par le candidat (saisie de texte, soumission de fichier ou enregistrement audio). 
+L'onglet Détails de soumissions permet de définir le type de réponse attendue par le candidat (saisie de texte, soumission de fichier ou enregistrement audio). 
 
 L’onglet Grille d’évaluation permet d’ajouter des critères et d’attribuer un nombre de points par critère. Ces éléments sont visibles par les correcteurs qui les utilisent pour évaluer la question et attribuer une note,  une fois le test passé.
 
@@ -653,7 +653,7 @@ incorrect.](./media/image62.png)
 
 **Texte à trous avec listes**
 
-L'onglet Editeur de sélecteur permet d'ajouter les différentes propositions de réponse qui seront visibles par le candidat. L'option correcte est indiquée par la case bleue.
+L'onglet Editeur de sélecteurs permet d'ajouter les différentes propositions de réponse qui seront visibles par le candidat. L'option correcte est indiquée par la case bleue.
 ![Une image contenant texte, capture d'écran, logiciel Le contenu généré
 par l'IA peut être
 incorrect.](./media/image159.png)
