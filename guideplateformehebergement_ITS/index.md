@@ -1155,7 +1155,7 @@ du test** et **Voir les réponses**
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le
 contenu généré par l'IA peut être
-incorrect.](./media/image122.png)
+incorrect.](./media/image173.png)
 
 Vous pourrez voir les résultats et le temps passé sur chaque question.
 Ces données peuvent être exportées sous forme de fichier Excel.
