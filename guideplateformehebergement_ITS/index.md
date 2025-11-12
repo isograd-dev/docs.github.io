@@ -1070,14 +1070,24 @@ Les actions de groupe vous permettent de :
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](./media/image119.png)
+incorrect.](./media/image122.png)
+
+-   **Inscire tous les candiats sélectionnés à un test**
+  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image120.png)
+
+-   **Envoyer les emails d'inscription à tous les candidats sélectionnés**
+  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image121.png)
 
 -   **Supprimer les tests non passés.** Si vous supprimez les tests à
     passer, vous serez alors recrédités automatiquement
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](./media/image119.png)
+incorrect.](./media/image123.png)
 
 -   **Définir des options d'évaluation pour l'ensemble des candidats du
     groupe.** Cela vous permet de personnaliser les options d'évaluation
@@ -1085,7 +1095,22 @@ incorrect.](./media/image119.png)
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](./media/image119.png)
+incorrect.](./media/image124.png)
+
+-    **Supprimer les candidats sélectionnés**
+![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image176.png)
+
+-  **Ajouter les candidats sélectionnés à un groupe**
+  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image177.png)
+
+-  **Générer des badges pour les candidats sélectionnés**
+  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image178.png)
 
 ## Résultats
 
