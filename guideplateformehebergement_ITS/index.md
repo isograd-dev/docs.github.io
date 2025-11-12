@@ -465,7 +465,7 @@ incorrect.](./media/image61.png)
 
 **Texte à trous avec listes**
 
-Le candidat doit cliquer sur la flèche de l'encadré pour ouvrir la liste qui comporte les propositions de réponse, et en choisir une.
+Le candidat doit choisir parmi une liste, la proposition de réponse correcte.
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
 incorrect.](./media/image157.png)
