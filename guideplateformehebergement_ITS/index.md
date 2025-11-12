@@ -804,7 +804,7 @@ Le menu principal de la plateforme donne accès aux cinq onglets qui vous permet
 ## Compte
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être incorrect.](./media/image102.png)
+par l'IA peut être incorrect.](./media2/image102.png)
 
 ### Détails
 
