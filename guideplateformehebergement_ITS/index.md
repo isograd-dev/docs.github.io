@@ -271,11 +271,11 @@ Ce menu permet les actions suivantes :
 -   Ajouter une nouvelle question: cliquez sur **"Ajouter une question"** puis complétez les éléments
 suivants :
 
--   Sélectionner le sujet
+    -   Sélectionner le sujet
 
--   Sélectionner la langue
+    -   Sélectionner la langue
 
--   Sélectionner le type de réponse (typologie de questions)
+    -   Sélectionner le type de réponse (typologie de questions)
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le
 contenu généré par l'IA peut être
@@ -478,11 +478,11 @@ par l'IA peut être
 incorrect.](./media/image46.png)
 
 
-#### Éditer une question
+### Éditer une question
 
 Le formulaire d'une question, appelé « mode édition », permet de créer ou de modifier une question. Il est composé de plusieurs parties.
 
-##### Caractéristiques générales
+#### Caractéristiques générales
 
 -   Le bouton "Générer un titre" crée un titré généré par l'IA. Si vous ne souhaitez pas générer le titre de la question par l'IA ,vous pouvez le saisir vous-même.
     **Attention à la formulation car le titre apparaît sur les rapports des candidats.**
@@ -499,7 +499,7 @@ Le formulaire d'une question, appelé « mode édition », permet de créer ou d
 généré par l'IA peut être
 incorrect.](./media/image67.png)
 
-##### Question et réponses
+#### Question et réponses
 
 Certains champs sont communs à toutes les typologies de questions :
 
@@ -528,10 +528,6 @@ une question :
 avant de passer en mode Aperçu par exemple, sinon la saisie sera
 perdue.**
 
-
-![Une image contenant texte, capture d'écran, nombre, logiciel Le
-contenu généré par l'IA peut être
-incorrect.](./media/image68.png)
 
 
 **NB** : Pour une résolution optimale, **les images doivent avoir une
@@ -957,7 +953,7 @@ automatiquement retourné(s) sur votre compte.
 
 ##### Fonctionnalité Anti-Triche (mode plein écran)
 Lorsque ce mode est activé, les candidats ne peuvent pas accéder à
-d'autres applications logicielles ou ressources Internet pendant la
+d'autres applications ou ressources en ligne pendant la
 durée de leur test. 
 ![Une image contenant texte, capture d'écran, logiciel,
 Page web](./media/image116.png)
