@@ -856,9 +856,11 @@ incorrect.](./media/image107.png)
 
 Après avoir créé vos tests, vous pourrez procéder à l\'ajout de vos candidats. Il existe deux options pour ajouter des candidats à la plateforme.
 
-##### Ajout individuel 
+### Candidats
 
-Sur le menu principal, vous avez l'option "Candidats". Pour ajouter un seul candidat, cliquez sur "Ajouter un candidat".
+#### Ajouter un candidat
+
+Appuyez sur Ajouter un candidat.
 
 ![Une image contenant texte, capture d'écran, logiciel, Police Le contenu généré par l'IA peut être incorrect.](./media/image109.png)
 
@@ -868,13 +870,11 @@ L'identifiant du candidat sera son adresse e-mail. Deux candidats ne peuvent pas
 
 Chaque candidat appartient à au moins un groupe. Le groupe par défaut est le groupe principal. Un candidat peut appartenir à plusieurs groupes à la fois.
 
-##### Ajout d'un groupe de candidats
-
 ![Une image contenant texte, capture d'écran, logiciel, Police Le contenu généré par l'IA peut être incorrect.](./media/image161.png) 
 
-*L'importation d'un fichier Excel contenant les détails de vos candidats vous permet de télécharger rapidement jusqu'à 500 à la fois pour un groupe défini.*
 
-Cliquez sur **importer un fichier de candidats**.
+
+#### Importer un fichier de candidats.
 
 Dans la fenêtre importer in fichier de candidats, procédez comme suit :
 
@@ -904,8 +904,9 @@ passe pour tout les candidats en cliquant sur actions sur le groupe,
 puis sur **attribuer un mot de passe** temporaire à tous les candidats
 du groupe.
 
+*L'importation d'un fichier Excel contenant les détails de vos candidats vous permet de télécharger rapidement jusqu'à 500 à la fois pour un groupe défini.*
 
-##### Inscrire un/des candidat(s) à un test
+#### Inscrire un/des candidat(s) à un test
 
 Pour inscrire les candidats à un test, cliquez sur **Candidats** dans le
 menu principal. À droite de l'adresse e-mail du candidat, cliquez sur
@@ -920,9 +921,6 @@ candidat.
 
 Cliquez sur **Inscrire à un test**
 
-![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image112.png)
 
 Choisissez la langue, le sujet, le type de test et la session (le cas
 échéant) pour le candidat. Vous pourrez rechercher un test particulier à
@@ -951,31 +949,9 @@ incorrect.](./media/image115.png)
 Si vous supprimez un test en attente, le(s) crédit(s) de test est(sont)
 automatiquement retourné(s) sur votre compte.
 
-##### Fonctionnalité Anti-Triche (mode plein écran)
-Lorsque ce mode est activé, les candidats ne peuvent pas accéder à
-d'autres applications ou ressources en ligne pendant la
-durée de leur test. 
-![Une image contenant texte, capture d'écran, logiciel,
-Page web](./media/image116.png)
-
-Si un candidat quitte le mode plein écran ou tente d'ouvrir un nouvel
-onglet, le système l'invitera à revenir à la page du test.
-
-S'il ne se remet pas en mode plein écran sur son test dans les 10
-secondes qui suivent, il sera automatiquement déconnecté de son test.
-
-La partie Surveillance est l’espace où on peut avoir une vue d'ensemble sur tous les tests surveillés, surtout ceux surveillés à distance en filtrant parmi les types de surveillance. L’interface liste chaque session avec son candidat, son test, la date de passage et le statut de la surveillance, ce qui permet de repérer tout de suite ce qui est en attente, ou validé. On peut filtrer par période, type de surveillance ou incident pour naviguer facilement dans les tests.
-
-![Une image contenant texte, Police, ligne, capture d'écran Le contenu
-généré par l'IA peut être
-incorrect.](./media/image162.png)
 
 
-![Une image contenant texte, Police, ligne, capture d'écran Le contenu
-généré par l'IA peut être
-incorrect.](./media/image163.png)
-
-##### Envoi d'invitation aux tests
+#### Envoi d'invitation aux tests
 
 Vous avez la possibilité d'envoyer directement depuis la plateforme des
 e-mails pour informer vos candidats des tests disponibles sur leur
@@ -1000,7 +976,7 @@ web](./media/image118.png)
 Une fois que vous avez cliqué sur **Envoyer**, l'e-mail d'invitation
 sera envoyé et le candidat pourra accéder au(x) test(s).
 
-##### Actions sur le groupe
+#### Actions sur le groupe
 
 Les actions sur le groupe vous permettent d'effectuer des tâches pour
 tous les candidats d'un même groupe, comme par exemple :
@@ -1022,7 +998,13 @@ tous les candidats d'un même groupe, comme par exemple :
 Les deux tâches principales effectuées au niveau du groupe sont
 l'inscription du groupe à un test et l'envoi d'e-mails d'inscription.
 
-##### Inscrire un groupe à un test
+##### Définir un mot de passe temporaire pour tous les candidats du groupe
+
+![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image122.png)
+
+##### Inscire tous les candiats sélectionnés à un test
 
 Utilisez l'action **Inscrire tous les candidats du groupe à un test**
 pour gagner du temps et vous assurer que tous les candidats d'un groupe
@@ -1034,12 +1016,15 @@ tous les candidats du groupe à un test.**
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](./media/image119.png)
+incorrect.](./media/image179.png)
 
 Vous sélectionnerez ensuite la langue, le sujet, le type de test et la
 session. Cliquez ensuite sur **Inscrire** ou **Inscrire et fermer.**
+  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image120.png)
 
-##### Envoi d'e-mails d'invitation à un groupe
+##### Envoyer les emails d'inscription à tous les candidats sélectionnés
 
 Une fois que vous avez inscrit le groupe à un test, il est temps
 d'envoyer l'e-mail d'invitation. Pour cela, vous pouvez utiliser
@@ -1058,52 +1043,35 @@ incorrect.](./media/image119.png)
 Une fois que vous avez cliqué sur **Envoyer**, l'e-mail d'invitation
 sera envoyé et les candidats pourront accéder au(x) test(s).
 
-##### Autres actions
-
-Les actions de groupe vous permettent de :
-
--   **Définir un mot de passe pour tous les candidats du groupe**
-
-![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image122.png)
-
--   **Inscire tous les candiats sélectionnés à un test**
-  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image120.png)
-
--   **Envoyer les emails d'inscription à tous les candidats sélectionnés**
   ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
 incorrect.](./media/image121.png)
 
--   **Supprimer les tests non passés.** Si vous supprimez les tests à
+##### Supprimer les tests non passés. 
+Si vous supprimez les tests à
     passer, vous serez alors recrédités automatiquement
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
 incorrect.](./media/image123.png)
 
--   **Définir des options d'évaluation pour l'ensemble des candidats du
-    groupe.** Cela vous permet de personnaliser les options d'évaluation
+##### Définir des options d'évaluation pour l'ensemble des candidats du
+    groupe.
+    
+    Cela vous permet de personnaliser les options d'évaluation
     pour un groupe défini
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
 incorrect.](./media/image124.png)
 
--    **Supprimer les candidats sélectionnés**
+##### Supprimer les candidats sélectionnés
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
 incorrect.](./media/image176.png)
 
--  **Ajouter les candidats sélectionnés à un groupe**
-  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image177.png)
 
--  **Générer des badges pour les candidats sélectionnés**
+##### Générer des badges pour les candidats sélectionnés
   ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
 incorrect.](./media/image178.png)
@@ -1188,8 +1156,37 @@ réponse du candidat, et la bonne réponse attendue.
 généré par l'IA peut être
 incorrect.](./media/image174.png)
 
+## Surveillance
+
+L'onglet Surveillance vous permet d'acceder aux tests surveillés. Depuis cette page il est possible de valider ou d'invalider des examens ou de faire une recherche de tests selon les critères suivants : 
+- Type de surveillance du test (liste blanche, plein écran, surveillance à distance)
+
+![Une image contenant texte, Police, ligne, capture d'écran Le contenu
+généré par l'IA peut être
+incorrect.](./media/image163.png)
+- Statut de validation du test
+- Incident
+- Période
+
+
+
+![Une image contenant texte, Police, ligne, capture d'écran Le contenu
+généré par l'IA peut être
+incorrect.](./media/image162.png)
+
+
+NB: Lorsque le mode plein écran est activé, les candidats ne peuvent pas accéder à
+d'autres applications ou ressources en ligne pendant la
+durée de leur test. Si un candidat quitte le mode plein écran ou tente d'ouvrir un nouvel
+onglet, le système l'invitera à revenir à la page du test.
+
+S'il ne se remet pas en mode plein écran sur son test dans les 10
+secondes qui suivent, il sera automatiquement déconnecté de son test.
+
 
 ## Emails
+
+Dans l’onglet Emails, vous pouvez créer un modèle d’email (de type invitation ou relance) ou ajouter une bannière personnalisée à vos envois.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
