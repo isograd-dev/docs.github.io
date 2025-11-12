@@ -1019,6 +1019,10 @@ tous les candidats d'un même groupe, comme par exemple :
 
 -   Définir et mettre à jour des options d'évaluation
 
+-   Supprimer les candidats du groupe
+
+-   Générer des badges pour les candidatsdu groupe
+
 Les deux tâches principales effectuées au niveau du groupe sont
 l'inscription du groupe à un test et l'envoi d'e-mails d'inscription.
 
@@ -1108,7 +1112,7 @@ Vous pouvez effectuer des recherches dans les données et filtrer par :
 
 Tous les résultats peuvent être exportés dans un fichier Excel.
 
-### Resultats individuel
+### Resultats individuels
 
 Pour consulter les résultats d'un candidat, entrez son nom ou son
 adresse e-mail dans la barre de recherche.
