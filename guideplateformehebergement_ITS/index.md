@@ -1269,7 +1269,7 @@ candidat(s) en amont du test.
 généré par l'IA peut être
 incorrect.](./media/image137.png)
 
-### Profils
+### Profils de compétences
 
 Les **Profils** vous permettent de définir les résultats attendus pour
 des métiers spécifiques.
