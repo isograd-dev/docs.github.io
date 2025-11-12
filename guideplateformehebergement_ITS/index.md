@@ -1237,7 +1237,7 @@ candidat(s) en amont du test.
 généré par l'IA peut être
 incorrect.](./media/image137.png)
 
-Profils
+### Profils
 
 Les **Profils** vous permettent de définir les résultats attendus pour
 des métiers spécifiques.
@@ -1267,7 +1267,7 @@ incorrect.](./media/image138.png)\
 l'IA peut être
 incorrect.](./media/image139.png)
 
-Descriptions de niveaux personnalisés
+### Descriptions de niveaux personnalisés
 
 Vous pouvez modifier la description du niveau sur chaque test
 d'évaluation, en fonction de la famille de sujets du test.
