@@ -1126,7 +1126,7 @@ adresse e-mail dans la barre de recherche.
 
 ![Une image contenant texte, capture d'écran, Police, logiciel Le
 contenu généré par l'IA peut être
-incorrect.](./media/image120.png)
+incorrect.](./media/image170.png)
 
 Une fois les résultats du candidat chargés, cliquez sur l'icône
 **Analyse**.
@@ -1135,12 +1135,19 @@ La page **Déroulement du test** s'ouvrira et l'analyse générale du test
 du candidat sera présentée,
 
 Pour un aperçu et une analyse plus approfondis, cliquez sur **Détails du
-test** et sélectionnez **Compétences** dans le menu déroulant. Vous
+test** et sélectionnez **Classement** dans le menu déroulant. Vous
 pouvez télécharger un PDF avec le détail du test en cliquant sur
 **Obtenir le** **rapport en PDF**.
 
-![Une image contenant texte, Police, ligne, capture
-d'écran](./media/image121.png)
+![Une image contenant texte, capture d'écran, Police, logiciel Le
+contenu généré par l'IA peut être
+incorrect.](./media/image171.png)
+
+
+![Une image contenant texte, capture d'écran, Police, logiciel Le
+contenu généré par l'IA peut être
+incorrect.](./media/image172.png)
+
 
 Un administrateur peut voir les réponses des candidats. Déplacez votre
 curseur sur un résultat de test, cliquez sur **Analyse**, puis **Détails
