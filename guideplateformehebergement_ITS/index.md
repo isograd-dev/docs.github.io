@@ -1102,7 +1102,7 @@ Vous pouvez effectuer des recherches dans les données et filtrer par :
 Tous les résultats peuvent être exportés dans un fichier Excel.
 
 ### Tableau de bord
-Dans cette partie, en fonction du groupe et du test choisi vous avez accès au nombre total des test complétés, au temps moyen passé, au statut des tests, à la répartition des scores ainis qu'au classement des meilleurs scores des 10 premiers candidats. 
+Dans cette partie, en fonction du groupe et du test choisis, vous avez accès au nombre total de tests complétés, au temps moyen passé, au statut des tests, à la répartition des scores, ainsi qu’au classement des dix meilleurs candidats.
 
 ![Une image contenant texte, capture d'écran, Police, logiciel Le
 contenu généré par l'IA peut être
@@ -1121,7 +1121,7 @@ Une fois les résultats du candidat chargés, cliquez sur l'icône
 **Analyse**.
 
 La page **Déroulement du test** s'ouvrira et l'analyse générale du test
-du candidat sera présentée,
+du candidat sera présentée.
 
 Pour un aperçu et une analyse plus approfondis, cliquez sur **Détails du
 test** et sélectionnez **Classement** dans le menu déroulant. Vous
