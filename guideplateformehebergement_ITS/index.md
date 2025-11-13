@@ -1224,8 +1224,7 @@ Paramètres généraux
 Les autres paramètres qui peuvent être modifiés sont liés au temps. Vous
 pouvez afficher les dates et heures au format américain ou européen, et
 sélectionner votre fuseau horaire. Vous pouvez également définir le
-temps supplémentaire alloué pour les personnes en situation d'handicap.\
-\
+temps supplémentaire alloué pour les personnes en situation d'handicap.
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
 incorrect.](./media/image166.png)
@@ -1242,7 +1241,7 @@ bouton **Enregistrer** .
 
 Une session de passage est une période de temps pendant laquelle des
 tests doivent être passés. Les tests liés à une session ne seront pas
-accessibles en dehors de la session de test programmée.
+accessibles en dehors de la session de test(s) programmée.
 
 La création d'une session vous permettra de définir une heure de début
 et de fin. Ensuite, lorsque vous inscrivez un candidat à un test, vous
@@ -1306,8 +1305,7 @@ d'évaluation, en fonction de la famille de sujets du test.
 
 Pour accéder à cette fonctionnalité, sélectionnez le menu Paramètres,
 cliquez sur **Descriptions de niveaux personnalisées**, puis sur **Créer
-une description de niveau.\
-**
+une description de niveau.**
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
