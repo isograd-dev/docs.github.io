@@ -743,7 +743,7 @@ incorrect.](./media/image97.png)
 
 ![](./media/image6.png) Afficher le bouton « Ecouter le texte » : en activant cette option, le candidat pourra écouter l'énoncé de la question.
 
-### Nom et description du test
+## Nom et description du test
 
 ![Une image contenant texte, Police, logiciel, capture d'écran
 Description générée
@@ -755,7 +755,7 @@ apparaîtra dans la liste de vos tests pour l'inscription du candidat,
 dans les invitations envoyées au candidat par email pour leur connexion
 au test, ainsi que dans les rapports de compétences.
 
-### Gestion du temps
+## Gestion du temps
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être incorrect.](./media/image98.png)
@@ -766,7 +766,7 @@ durée pour le test, laissez le champs vide.
 
 
 
-### Messages de début et de fin de test
+## Messages de début et de fin de test
 
 Ces messages seront visibles par le candidat. En appuyant sur
 **Editer**, un éditeur permettant la personnalisation du message du
