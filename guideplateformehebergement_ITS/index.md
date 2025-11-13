@@ -533,7 +533,7 @@ perdue.**
 **NB** : Pour une résolution optimale, **les images doivent avoir une
 résolution 1080 x 500.** 
 
-##### Explications concernant la solution
+#### Explications concernant la solution
 
 Ce champ n'est pas obligatoire et doit être renseigné uniquement si une
 solution doit être présentée au candidat (pendant ou après le test). Le
