@@ -729,7 +729,44 @@ et appuyez sur **Enregistrer.**
 Description générée
 automatiquement](./media/image96.png)
 
-- Type de résultat : depuis la liste déroulante vous choisissez le type de rapport de compétences 
+### Rapports de compétences
+
+
+Depuis la liste déroulante vous choisissez le type de **rapport de compétences**. 
+
+L’en-tête du rapport est personnalisable avec le **logo** du client.  
+
+De plus, un logo spécifique peut être attribué à chaque sujet, permettant ainsi une identification visuelle distincte au sein du rapport. 
+
+Le **résultat global** du test peut être présenté sous forme graphique. 
+Il est possible de personnaliser le message affiché à côté du résultat obtenu (par exemple pour indiquer le niveau atteint ou un commentaire spécifique). 
+
+Le score global peut être défini sous plusieurs formes : 
+
+- Score ramené sur 1000, 100, ou toute autre échelle définie ; 
+
+- Nombre de bonnes réponses ; 
+
+- Nombre de bonnes réponses et taux de réussite ; 
+
+_ Somme des points obtenus ; 
+
+_ Somme des points ramenée sur une échelle de 0 à 100 ; 
+
+_ Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
+
+Les **niveaux de performance** peuvent être affichés par jeu de questions, par domaine ou par sujet. 
+
+Une description peut être ajoutée dans le rapport pour chaque domaine de compétences, ainsi qu'une recommandation de formation personnalisée en fonction du niveau atteint par le candidat. 
+
+La **liste des questions** peut présenter les compétences évaluées le temps consacré par le candidat à chaque question, ainsi que le score obtenu par question.  
+Pour les questions ouvertes, le rapport permet de visualiser l’ensemble des réponses fournies par le candidat, ainsi que l’analyse générée par l’IA.  
+
+En fonction des réponses correctes et incorrectes du candidat, il est possible d'afficher les compétences maîtrisées et celles à améliorer. 
+
+
+Il est possible de représenter graphiquement le positionnement du candidat sur une évaluation donnée. 
+
 
 ### Options de passage du test
 
