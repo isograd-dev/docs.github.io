@@ -749,11 +749,11 @@ Le score global peut être défini sous plusieurs formes :
 
 - Nombre de bonnes réponses et taux de réussite ; 
 
-_ Somme des points obtenus ; 
+- Somme des points obtenus ; 
 
-_ Somme des points ramenée sur une échelle de 0 à 100 ; 
+- Somme des points ramenée sur une échelle de 0 à 100 ; 
 
-_ Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
+- Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
 
 Les **niveaux de performance** peuvent être affichés par jeu de questions, par domaine ou par sujet. 
 
