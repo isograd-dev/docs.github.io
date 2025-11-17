@@ -80,13 +80,12 @@ Ce menu permet :
 
 ###  Gestion des jeux de questions
 
-Les Jeux de question permettent de
-regrouper les questions sont un même nom, et de les retrouver plus
-facilement sur la plateforme. C'est un ensemble de questions qui peut
-être utilisé pour filtrer les questions dans la page administration des
-questions.
+Voici la version corrigée et fluide de ton texte :
 
-En cliquant sur « Gestion des Jeux de questions », on arrive sur une
+Les **Jeux de questions** permettent de regrouper des questions sous un même nom et de les retrouver plus facilement sur la plateforme. Il s’agit d’un ensemble de questions qui peut être utilisé pour filtrer le contenu dans la page d’administration des questions.
+
+
+En cliquant sur « Gestion des jeux de questions », on arrive sur une
 page qui permet d'ajouter un jeu de questions, et de l'exporter vers
 Excel. A partir de cette page vous pouvez aussi ajouter des jeux de
 questions.
@@ -115,7 +114,7 @@ Plusieurs encadrés sont à remplir pour ajouter un jeu de question :
     par le jeu de question.
 
 -   Archivé : cela est utile si vous souhaitez archiver votre jeu de
-    question, si vous ne voulez plus voir le jeu de question.
+    question, si vous ne voulez plus le voir.
 
 -   Possibilité de mettre un commentaire : il est possible d'ajouter un
     commentaire, par rapport au jeu de question.
@@ -123,8 +122,8 @@ Plusieurs encadrés sont à remplir pour ajouter un jeu de question :
 -   Cliquer sur « Attribuer ce jeu à des questions » : mène à une page
     qui permet d'enregistrer les modifications.
 
--   Description utilisée dans les rapports : Possibilité de mettre une
-    description qui sera utilisée dans les rapports .
+-   Description utilisée dans les rapports : possibilité de mettre une
+    description qui sera utilisée dans les rapports.
 
 ### Gestion des domaines
 
@@ -152,7 +151,7 @@ droite, pour modifier le domaine.
 ![](./media/image83.png)
 
 Vous pouvez modifier le domaine via la page qui s'affiche, et qui
-présente quatre parties :
+présente cinq parties :
 
 -   Description : possibilité de choisir la langue de description, le
     nom et la description textuelle. Cela permet de définir à quoi
@@ -161,12 +160,12 @@ présente quatre parties :
 -   Caractéristiques générales : cette partie donne la possibilité de
     choisir le nombre de niveaux qu'il y aura par domaines.
 
--   Description des niveaux : Possibilité de définir dans la langue de
+-   Description des niveaux : possibilité de définir dans la langue de
     son choix, les niveaux de compétence. Cela permet de définir à quoi
     renvoie chaque niveau de compétence. Pour savoir où se situe le
     candidat.
 
--   Recommandations pour progresser dans la langue de son choix : Cela
+-   Recommandations pour progresser dans la langue de son choix : cela
     permet d'expliquer les recommandations qui permettent de passer au
     niveau supérieur. C'est utile pour la progression du candidat.
 -   Associer les sujets
@@ -204,7 +203,7 @@ Une aide visuelle est une image ou un document inséré dans une question ou une
 Pour créer une aide visuelle il faut cliquer
 sur Ajouter une aide visuelle. Une fenêtre s'ouvre dans laquelle vous avez la possibilité de choisir le sujet dans
 lequel apparaîtra l'aide visuelle, la langue et le type d'aide visuelle
-que vous souhaitez (document de référence, image affichée dans le texte ou image affiche par un clic, sous une loupe). Ainsi que de nommer votre aide visuelle. De plus,
+que vous souhaitez (document de référence, image affichée dans le texte ou image affichée par un clic, sous une loupe), ainsi que de nommer votre aide visuelle. De plus,
 vous pouvez aussi enregistrer et modifier le fichier en question.
 
 Voici une capture d'écran de la page qui répertorie les différentes
@@ -271,11 +270,11 @@ Ce menu permet les actions suivantes :
 -   Ajouter une nouvelle question: cliquez sur **"Ajouter une question"** puis complétez les éléments
 suivants :
 
-    -   Sélectionner le sujet
+        -  le sujet
 
-    -   Sélectionner la langue
+        -  la langue
 
-    -   Sélectionner le type de réponse (typologie de questions)
+        -  le type de réponse (typologie de questions)
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le
 contenu généré par l'IA peut être
@@ -285,7 +284,7 @@ incorrect.](./media/image66.png)
 
 -   Imprimer (visualiser en format PDF) l'ensemble des questions sélectionnées
 
--   Exporter vos questions vers un fichier Excel
+-   Exporter les questions vers un fichier Excel
 
 ### Les filtres
 
@@ -334,7 +333,9 @@ Informations du tableau des questions :
 -   Type (typologie de question)
 
 -   Passée (nombre de fois où la question a été passée par des
-    candidats) Succès (taux de succès des candidats à cette question)
+    candidats) 
+
+-   Succès (taux de succès des candidats à cette question)
 
 -   Niveau de difficulté de la question (Facile, Moyen, Difficile \> niveau défini par le créateur de la question)
 
@@ -369,9 +370,7 @@ l'écran en mode Edition :
 #### Supprimer une question
 
 Pour supprimer une question, il suffit de se positionner sur cette
-dernière dans la liste des questions de la page
-
-d'accueil. Quatre boutons d'action apparaissent :
+dernière dans la liste des questions de la page d'accueil. Quatre boutons d'action apparaissent :
 ![](./media/image74.png)
 
 Cliquer sur « Supprimer ». La page d'édition de la question s'ouvre et
@@ -406,9 +405,9 @@ incorrect.](./media/image55.png)
 
 Il est possible de créer des questions comportant :
 
-* une seule zone à cliquer,
+* une seule zone à cliquer;
 
-* plusieurs zones correctes, dont le candidat doit sélectionner une seule pour valider la question,
+* plusieurs zones correctes, dont le candidat doit sélectionner une seule pour valider la question;
 
 * plusieurs zones attendues, que le candidat doit toutes cliquer pour valider la question.
 
