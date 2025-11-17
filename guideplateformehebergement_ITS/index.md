@@ -648,7 +648,8 @@ incorrect.](./media/image62.png)
 
 **Texte à trous avec listes**
 
-L'onglet Editeur de sélecteurs permet d'ajouter les différentes propositions de réponse qui seront visibles par le candidat. L'option correcte est indiquée par la case bleue.
+L'onglet Editeur de sélecteurs permet d'ajouter les différentes propositions de réponse qui seront visibles par le candidat. Cochez la réponse correcte.
+
 ![Une image contenant texte, capture d'écran, logiciel Le contenu généré
 par l'IA peut être
 incorrect.](./media/image159.png)
@@ -687,13 +688,13 @@ La première section des paramètres inclut :
 
 ### L'Algorithme des questions :
 
-    -   Séquentiel ordonné: Les questions sont posées dans le même ordre pour tous les candidats. Aucune randomisation n’est appliquée : la session suit strictement l’ordre défini par l’auteur du test.
+-   Séquentiel ordonné: Les questions sont posées dans le même ordre pour tous les candidats. Aucune randomisation n’est appliquée : la session suit strictement l’ordre défini par l’auteur du test.
 
-    -   Séquentiel au hasard: Les mêmes questions sont posées, mais dans un ordre aléatoire. Tous les candidats reçoivent donc les mêmes questions, mais dans un ordre différent.
+-   Séquentiel au hasard: Les mêmes questions sont posées, mais dans un ordre aléatoire. Tous les candidats reçoivent donc les mêmes questions, mais dans un ordre différent.
 
-    -   Séquentiel au hasard avec jeu de questions: Un nombre défini de questions est posé aléatoirement parmi un jeu de questions. Chaque candidat peut donc recevoir un ensemble différent de questions, sélectionnées dans ce jeu selon le nombre prévu.
+-   Séquentiel au hasard avec jeu de questions: Un nombre défini de questions est posé aléatoirement parmi un jeu de questions. Chaque candidat peut donc recevoir un ensemble différent de questions, sélectionnées dans ce jeu selon le nombre prévu.
 
-    -   Questions par domaine: Un nombre défini de questions est tiré au hasard pour chaque domaine du test.
+ -   Questions par domaine: Un nombre défini de questions est tiré au hasard pour chaque domaine du test.
 
 
 -   Sélection de questions : en appuyant sur **Choisir** une nouvelle
