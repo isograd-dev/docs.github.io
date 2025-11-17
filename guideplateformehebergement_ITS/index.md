@@ -688,13 +688,13 @@ La première section des paramètres inclut :
 
 ### L'Algorithme des questions :
 
--   Séquentiel ordonné: Les questions sont posées dans le même ordre pour tous les candidats. Aucune randomisation n’est appliquée : la session suit strictement l’ordre défini par l’auteur du test.
+-   Séquentiel ordonné: les questions sont posées dans le même ordre pour tous les candidats. Aucune randomisation n’est appliquée : la session suit strictement l’ordre défini par l’auteur du test.
 
--   Séquentiel au hasard: Les mêmes questions sont posées, mais dans un ordre aléatoire. Tous les candidats reçoivent donc les mêmes questions, mais dans un ordre différent.
+-   Séquentiel au hasard: les mêmes questions sont posées, mais dans un ordre aléatoire. Tous les candidats reçoivent donc les mêmes questions, mais dans un ordre différent.
 
--   Séquentiel au hasard avec jeu de questions: Un nombre défini de questions est posé aléatoirement parmi un jeu de questions. Chaque candidat peut donc recevoir un ensemble différent de questions, sélectionnées dans ce jeu selon le nombre prévu.
+-   Séquentiel au hasard avec jeu de questions: un nombre défini de questions est posé aléatoirement parmi un jeu de questions. Chaque candidat peut donc recevoir un ensemble différent de questions, sélectionnées dans ce jeu selon le nombre prévu.
 
- -   Questions par domaine: Un nombre défini de questions est tiré au hasard pour chaque domaine du test.
+ -   Questions par domaine: un nombre défini de questions est tiré au hasard pour chaque domaine du test.
 
 
 -   Sélection de questions : en appuyant sur **Choisir** une nouvelle
@@ -777,24 +777,25 @@ automatiquement](./media/image182.png)
 
 En fonction des réponses correctes et incorrectes du candidat, il est possible d'afficher les compétences maîtrisées et celles à améliorer. 
 
-- Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
 ![Une image contenant texte, capture d'écran, logiciel, Page web
 Description générée
 automatiquement](./media/image183.png)
+
+
 
 Pour les questions ouvertes, le rapport permet de visualiser l’ensemble des réponses fournies par le candidat, ainsi que l’analyse générée par l’IA. 
 
 - Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
 ![Une image contenant texte, capture d'écran, logiciel, Page web
 Description générée
-automatiquement](./media/image186.png)
+automatiquement](./media/image185.png)
+
 
 Pour les questions à notation manuelle la grille d’évaluation est affichée, accompagnés des commentaires et de la note attribuée par le correcteur.
-
-- Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
 ![Une image contenant texte, capture d'écran, logiciel, Page web
 Description générée
-automatiquement](./media/image185.png)
+automatiquement](./media/image186.png)
+
 
 Il est possible de représenter graphiquement le positionnement du candidat sur une évaluation donnée. 
 
