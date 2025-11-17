@@ -767,7 +767,6 @@ Description générée
 automatiquement](./media/image181.png)
 
 La **liste des questions** peut présenter les compétences évaluées le temps consacré par le candidat à chaque question, ainsi que le score obtenu par question.  
-Pour les questions ouvertes, le rapport permet de visualiser l’ensemble des réponses fournies par le candidat, ainsi que l’analyse générée par l’IA.  
 
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web
@@ -784,7 +783,6 @@ automatiquement](./media/image183.png)
 
 Pour les questions ouvertes, le rapport permet de visualiser l’ensemble des réponses fournies par le candidat, ainsi que l’analyse générée par l’IA. 
 
-- Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
 ![Une image contenant texte, capture d'écran, logiciel, Page web
 Description générée
 automatiquement](./media/image185.png)
@@ -798,7 +796,6 @@ automatiquement](./media/image186.png)
 
 Il est possible de représenter graphiquement le positionnement du candidat sur une évaluation donnée. 
 
-- Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
 ![Une image contenant texte, capture d'écran, logiciel, Page web
 Description générée
 automatiquement](./media/image184.png)
@@ -1127,11 +1124,9 @@ Si vous supprimez les tests à
 contenu généré par l'IA peut être
 incorrect.](./media/image123.png)
 
-##### Définir des options d'évaluation pour l'ensemble des candidats du
-    groupe.
-    
-    Cela vous permet de personnaliser les options d'évaluation
-    pour un groupe défini
+##### Définir des options d'évaluation pour l'ensemble des candidats du groupe. 
+
+Cela vous permet de personnaliser les options d'évaluation pour un groupe défini
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
@@ -1336,9 +1331,7 @@ puissent pas accéder au test en dehors de l'heure prévue. Le code de
 session n'est jamais envoyé par e-mail, il convient de le fournir au(x)
 candidat(s) en amont du test.
 
-![Une image contenant texte, capture d'écran, nombre, Police Le contenu
-généré par l'IA peut être
-incorrect.](./media/image137.png)
+
 
 ### Profils de compétences
 
@@ -1359,16 +1352,13 @@ Dans le menu principal, sélectionnez **Paramètres**, puis cliquez sur
 par l'IA peut être
 incorrect.](./media/image168.png)
 
-Pour modifier le niveau attendu des sous-compétences d'un test, placez
-votre curseur sur le profil et cliquez sur l'icône **Modifier les
-niveaux de compétence** .
+Voici la version corrigée :
 
-![Une image contenant texte, capture d'écran, Police, conception Le
-contenu généré par l'IA peut être
-incorrect.](./media/image138.png)\
-![Une image contenant texte, Police, ligne, nombre Le contenu généré par
-l'IA peut être
-incorrect.](./media/image139.png)
+> Pour chaque profil, choisissez le sujet de maîtrise et indiquez, de 1 à 5, le niveau de compétences requis pour chaque domaine.
+
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être
+incorrect.](./media/image187.png)
 
 ### Descriptions de niveaux personnalisés
 
@@ -1376,8 +1366,8 @@ Vous pouvez modifier la description du niveau sur chaque test
 d'évaluation, en fonction de la famille de sujets du test.
 
 Pour accéder à cette fonctionnalité, sélectionnez le menu Paramètres,
-cliquez sur **Descriptions de niveaux personnalisées**, puis sur **Créer
-une description de niveau.**
+cliquez sur **Descriptions de niveaux personnalisées**, puis sur Créer
+une description de niveau. 
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
@@ -1390,9 +1380,7 @@ la famille de sujets, puis cliquez sur **Enregistrer**.
 par l'IA peut être
 incorrect.](./media/image149.png)
 
-Dans la fenêtre **Gestion des** **descriptions de niveaux
-personnalisées**, vous pouvez saisir des messages pour chaque niveau de
-compétence.
+Dans la fenêtre **Gestion des descriptions de niveaux personnalisées**, vous pouvez saisir des messages pour chaque niveau de compétence.
 
 Une fois que vous avez terminé les messages pour chaque niveau, cliquez
 sur **Enregistrer**. Ces commentaires apparaîtront sur les rapports des
@@ -1404,7 +1392,7 @@ candidats, en fonction du niveau de compétence du candidat.
 L'onglet **Aide & Support** contient toutes les informations techniques
 sur la plateforme et les tests.
 
-Pour y accéder, sélectionnez **Aide** **& Support** dans le menu
+Pour y accéder, sélectionnez **Aide & Support** dans le menu
 principal.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
@@ -1425,12 +1413,11 @@ Configuration technique
 
 Il est conseillé de vérifier le navigateur de l'ordinateur (s) avant
 d'exécuter des tests. Pour trouver la version de votre navigateur,
-cliquez **sur Identifier la version de mon navigateur.**
+cliquez sur **Identifier la version de mon navigateur.**
 
 ![Une image contenant texte, Police, capture d'écran Le contenu généré
 par l'IA peut être
-incorrect.](./media/image152.png)**\
-**
+incorrect.](./media/image152.png)
 
 Test de vérification
 
