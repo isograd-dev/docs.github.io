@@ -753,7 +753,7 @@ Le score global peut être défini sous plusieurs formes :
 
 - Somme des points ramenée sur une échelle de 0 à 100 ; 
 
-- Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
+ 
 ![Une image contenant texte, capture d'écran, logiciel, Page web
 Description générée
 automatiquement](./media/image180.png)
@@ -762,7 +762,6 @@ Les **niveaux de performance** peuvent être affichés par jeu de questions, par
 
 Une description peut être ajoutée dans le rapport pour chaque domaine de compétences.
 
-- Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
 ![Une image contenant texte, capture d'écran, logiciel, Page web
 Description générée
 automatiquement](./media/image181.png)
@@ -770,7 +769,7 @@ automatiquement](./media/image181.png)
 La **liste des questions** peut présenter les compétences évaluées le temps consacré par le candidat à chaque question, ainsi que le score obtenu par question.  
 Pour les questions ouvertes, le rapport permet de visualiser l’ensemble des réponses fournies par le candidat, ainsi que l’analyse générée par l’IA.  
 
-- Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
+
 ![Une image contenant texte, capture d'écran, logiciel, Page web
 Description générée
 automatiquement](./media/image182.png)
