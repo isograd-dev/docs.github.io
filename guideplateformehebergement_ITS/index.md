@@ -754,19 +754,54 @@ Le score global peut être défini sous plusieurs formes :
 - Somme des points ramenée sur une échelle de 0 à 100 ; 
 
 - Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
+![Une image contenant texte, capture d'écran, logiciel, Page web
+Description générée
+automatiquement](./media/image180.png)
 
 Les **niveaux de performance** peuvent être affichés par jeu de questions, par domaine ou par sujet. 
 
-Une description peut être ajoutée dans le rapport pour chaque domaine de compétences, ainsi qu'une recommandation de formation personnalisée en fonction du niveau atteint par le candidat. 
+Une description peut être ajoutée dans le rapport pour chaque domaine de compétences.
+
+- Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
+![Une image contenant texte, capture d'écran, logiciel, Page web
+Description générée
+automatiquement](./media/image181.png)
 
 La **liste des questions** peut présenter les compétences évaluées le temps consacré par le candidat à chaque question, ainsi que le score obtenu par question.  
 Pour les questions ouvertes, le rapport permet de visualiser l’ensemble des réponses fournies par le candidat, ainsi que l’analyse générée par l’IA.  
 
+- Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
+![Une image contenant texte, capture d'écran, logiciel, Page web
+Description générée
+automatiquement](./media/image182.png)
+
 En fonction des réponses correctes et incorrectes du candidat, il est possible d'afficher les compétences maîtrisées et celles à améliorer. 
 
+- Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
+![Une image contenant texte, capture d'écran, logiciel, Page web
+Description générée
+automatiquement](./media/image183.png)
+
+Pour les questions ouvertes, le rapport permet de visualiser l’ensemble des réponses fournies par le candidat, ainsi que l’analyse générée par l’IA. 
+
+- Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
+![Une image contenant texte, capture d'écran, logiciel, Page web
+Description générée
+automatiquement](./media/image186.png)
+
+Pour les questions à notation manuelle la grille d’évaluation est affichée, accompagnés des commentaires et de la note attribuée par le correcteur.
+
+- Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
+![Une image contenant texte, capture d'écran, logiciel, Page web
+Description générée
+automatiquement](./media/image185.png)
 
 Il est possible de représenter graphiquement le positionnement du candidat sur une évaluation donnée. 
 
+- Affichage du niveau obtenu, déterminé selon les seuils fixés par le client. 
+![Une image contenant texte, capture d'écran, logiciel, Page web
+Description générée
+automatiquement](./media/image184.png)
 
 ### Options de passage du test
 
