@@ -12,18 +12,13 @@ layout: home
 <div id="content">
 
 
-![](./media/image1.png)
 
 
-![](./media/image2.png)
 
 
-Table des matières
-
-Premiers pas sur la plateforme isograd
 
 
-Connexion à la plateforme Isograd
+# Connexion à la plateforme Isograd
 
 Pour accéder à votre compte, allez sur  , passez la souris sur le  bouton **Connexion** dans le coin supérieur droit de la page pour afficher les options déroulantes.  Sélectionnez **Administrateur ** et entrez votre adresse e-mail et votre mot de passe, puis cliquez sur **Connexion**.
 
