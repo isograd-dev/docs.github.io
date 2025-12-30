@@ -1138,10 +1138,6 @@ contenu généré par l'IA peut être
 incorrect.](./media/image176.png)
 
 
-##### Générer des badges pour les candidats sélectionnés
-  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image178.png)
 
 ## Résultats
 
@@ -1225,30 +1221,8 @@ incorrect.](./media/image174.png)
 
 ## Surveillance
 
-L'onglet Surveillance vous permet d'acceder aux tests surveillés. Depuis cette page il est possible de valider ou d'invalider des examens ou de faire une recherche de tests selon les critères suivants : 
-- Type de surveillance du test (liste blanche, plein écran, surveillance à distance)
+L'onglet Surveillance vous permet d'acceder aux tests surveillés via l'outil Isograd Proctoring. Depuis cette page il est possible de valider ou d'invalider les conditions de passage des tests au regard des éléments enregistrés.
 
-![Une image contenant texte, Police, ligne, capture d'écran Le contenu
-généré par l'IA peut être
-incorrect.](./media/image163.png)
-- Statut de validation du test
-- Incident
-- Période
-
-
-
-![Une image contenant texte, Police, ligne, capture d'écran Le contenu
-généré par l'IA peut être
-incorrect.](./media/image162.png)
-
-
-NB: Lorsque le mode plein écran est activé, les candidats ne peuvent pas accéder à
-d'autres applications ou ressources en ligne pendant la
-durée de leur test. Si un candidat quitte le mode plein écran ou tente d'ouvrir un nouvel
-onglet, le système l'invitera à revenir à la page du test.
-
-S'il ne se remet pas en mode plein écran sur son test dans les 10
-secondes qui suivent, il sera automatiquement déconnecté de son test.
 
 
 ## Emails
