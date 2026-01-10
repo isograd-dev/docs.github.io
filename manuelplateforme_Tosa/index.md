@@ -20,12 +20,12 @@ Pour accéder à votre compte, rendez-vous sur , cliquer sur **Votre compte**,  
 
 ![](./media/image3.png)
 
-Entrez votre adresse e-mail et votre mot de passe, puis cliquez sur **Connexion**** **:
+Entrez votre adresse e-mail et votre mot de passe, puis cliquez sur **Connexion**:
 
 
 ![](./media/image4.png)
 
-Si vous ne connaissez plus votre mot de passe, cliquez sur** Mot de passe** **oublié**.  Un lien de réinitialisation de mot de passe vous sera automatiquement envoyé par e-mail.
+Si vous ne connaissez plus votre mot de passe, cliquez sur** Mot de passe oublié**.  Un lien de réinitialisation de mot de passe vous sera automatiquement envoyé par e-mail.
 
 
 
@@ -39,12 +39,12 @@ Le menu principal de la plateforme donne accès aux cinq onglets qui vous permet
 
 
 
-Gestion de votre compte
+# Gestion de votre compte
 
 
 
 
-# Détails
+## Détails
 
 Vous trouverez ci-dessous toutes les informations concernant votre compte et votre profil administrateur.
 
@@ -59,13 +59,13 @@ Vous pouvez intégrer le logo de votre entreprise, celui-ci apparaîtra sur les 
 
 
 
-# Administrateurs
+## Administrateurs
 
 Les administrateurs gèrent les groupes. Chaque groupe nécessite un administrateur.
 
-Ajout d’un administrateur
+### Ajout d’un administrateur
 
-Pour accéder à la page **de gestion des administrateurs**, cliquez sur** Compte** dans le menu principal. Vous serez ensuite redirigé vers la  page **Gestion des administrateurs**. Cliquez sur **Administrateurs**.
+Pour accéder à la page de **gestion des administrateurs**, cliquez sur **Compte** dans le menu principal. Vous serez ensuite redirigé vers la  page **Gestion des administrateurs**. Cliquez sur **Administrateurs**.
 
 
 ![](./media/image7.png)
@@ -77,23 +77,23 @@ Types d’administrateurs
 
 Il existe 2 types d’administrateurs sur la plateforme :
 
-**Administrateur de compte:** Cet administrateur dispose des droits d’administration complets  et peut afficher et modifier tout ce qui se trouve sur votre compte.
+**Administrateur de compte** : Cet administrateur dispose des droits d’administration complets  et peut afficher et modifier tout ce qui se trouve sur votre compte.
 
-**Administrateur de groupe** : Cet administrateur ne peut accéder  et modifier que les candidats au sein du ou des groupes qu’il a été chargé de gérer, ainsi que les candidats des groupes publics.** **
+**Administrateur de groupe** : Cet administrateur ne peut accéder  et modifier que les candidats au sein du ou des groupes qu’il a été chargé de gérer, ainsi que les candidats des groupes publics.
 
-- .
 
-Modification des administrateurs
 
-Les administrateurs de compte peuvent modifier les droits des administateurs existants en cliquant sur l’icône **Éditer **sur la ligne de l’administratuer voulu **:**
+### Modification des administrateurs
+
+Les administrateurs de compte peuvent modifier les droits des administateurs existants en cliquant sur l’icône **Éditer** sur la ligne de l’administratuer voulu. 
 
 
 ![](./media/image8.png)
 
-Vous pouvez également **supprimer **un administrateur ou lui **réinitialiser** son mot de passe.
+Vous pouvez également supprimer un administrateur ou lui éinitialiser son mot de passe.
 
 
-Aussi, vous pouvez attribuer des privilèges à certains administrateurs sur votre compte. Vous pouvez modifier les priviliège de des administrateur en cliquant sur l’icon **privilèges **
+Aussi, vous pouvez attribuer des privilèges à certains administrateurs sur votre compte. Vous pouvez modifier les priviliège de des administrateur en cliquant sur l’icon **privilèges**
 
 
 ![](./media/image9.PNG)
@@ -109,11 +109,11 @@ Vous aurez donc la possibilité d’attribuer ou supprimer certains privilèges 
 
 
 
-# Consommation de crédits
+## Consommation de crédits
 
 La page **Consommation de crédits**  vous permet de suivre l’utilisation totale des crédits ainsi que l’utilisation des crédits par groupe.
 
-À partir de la page **Compte**, cliquez sur **Consommation de crédits**** :**
+À partir de la page **Compte**, cliquez sur **Consommation de crédits**
 
 
 ![](./media/image11.png)
@@ -129,7 +129,7 @@ Pour consulter les détails spécifiques sur la consommation de groupe, vous dev
 ![](./media/image13.png)
 
 
-# Factures
+## Factures
 
 Si vous avez effectué des achats en ligne pour des crédits d’évaluation ou de certification Tosa, vous pouvez consulter votre (vos) facture(s) en ligne.
 
@@ -143,12 +143,12 @@ Vous pouvez imprimer une facture pour tout achat en ligne en passant votre souri
 ![](./media/image14.png)
 
 
-# Alerte crédit
+## Alerte crédit
 
 
-La page **Alerte**** crédit** vous permet de créer jusqu’à deux alertes de crédit et de suivre facilement votre consommation de crédits.
+La page **Alerte crédit** vous permet de créer jusqu’à deux alertes de crédit et de suivre facilement votre consommation de crédits.
 
-Cliquez sur **Compte** dans le menu principal pour accéder à la page ** Votre ****compte**, puis cliquez sur **Alerte**** ****crédit**** **:
+Cliquez sur **Compte** dans le menu principal pour accéder à la page **Votre compte**, puis cliquez sur **Alerte crédit**
 
 
 ![](./media/image15.png)
