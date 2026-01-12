@@ -412,7 +412,7 @@ Cliquez sur  l’icône **Supprimer** pour supprimer définitivement un groupe. 
 Cliquez sur **ajouter/supprimer des candidats** pour  rapidement gérer les candidats rattachés à vos groupes
 
 
-Gestion des résultat
+# Gestion des résultat
 
 
 La plateforme vous fournit un aperçu complet des résultats aux tests.
@@ -436,7 +436,7 @@ Tous les résultats peuvent être exportés dans un fichier Excel.
 
 
 
-# Tableau de bord
+## Tableau de bord
 
 Vous pouvez filtrer les résultats par groupe et test, sur une période définis
 
@@ -447,17 +447,13 @@ Vous pouvez filtrer les résultats par groupe et test, sur une période définis
 
 
 
-Le tableau de bord vous permet de connaitre
+Le tableau de bord vous permet de connaitre;
 
-Total des tests complétés
-
-Statut des tests
-
-Temps moyen
-
-La répartition des scores
-
-Top des candidats
+- Total des tests complétés
+- Statut des tests
+- Temps moyen
+- La répartition des scores
+- Top des candidats
 
 
 ![](./media/image35.PNG)
@@ -467,7 +463,7 @@ Top des candidats
 ![](./media/image36.PNG)
 
 
-# Resultats
+## Resultats
 
 Pour consulter les résultats d’un candidat, entrez son nom ou son adresse e-mail dans le champ de recherche.
 
@@ -483,7 +479,7 @@ La page **Déroulement du test**  s’ouvrira et l’analyse générale du test 
 - Le niveau du candidat
 - Les réponses aux questions dans l’ordre numérique
 - Les réponses aux questions par ordre de niveau de difficulté
-Pour un aperçu et une analyse plus approfondis, cliquez sur **Détails du test** et sélectionnez **Compétences ** dans le menu déroulant.  Vous pouvez télécharger un PDF avec le détail du test en cliquant sur Obtenir le **rapport en PDF**.
+Pour un aperçu et une analyse plus approfondis, cliquez sur **Détails du test** et sélectionnez **Compétences** dans le menu déroulant.  Vous pouvez télécharger un PDF avec le détail du test en cliquant sur Obtenir le **rapport en PDF**.
 
 
 ![](./media/image38.png)
@@ -504,35 +500,33 @@ Vous pourrez voir les résultats et le temps passé sur chaque question. Ces don
 
 En cliquant sur  l’icône **Affichage**, vous pourrez voir la question, la réponse  du candidat, et la bonne réponse.
 
-Pour analyser un test de certification, recherchez le candidat   en inscrivant son nom ou son e-mail dans la barre de recherche.
-
-Passez votre souris sur le test que vous souhaitez examiner et cliquez sur l’icône** Détails.**
+Pour analyser un test de certification, recherchez le candidat en inscrivant son nom ou son e-mail dans la barre de recherche. Passez votre souris sur le test que vous souhaitez examiner et cliquez sur l’icône **Détails.**
 
 
 ![](./media/image41.png)
 
 La page **Déroulement du test** s’ouvrira et l’analyse générale du test du candidat sera présentée. Elle mentionnera notamment :
 
-Le score du candidat (sur une échelle de 1 000 points)
+- Le score du candidat (sur une échelle de 1 000 points)
 
-Les compétences acquises par le candidat
+- Les compétences acquises par le candidat
 
 
 ![](./media/image42.png)
 
 Une fois la certification Tosa validée par Isograd, un administrateur peut télécharger le diplôme ou l’attestation de passage du candidat.
 
-Cliquez sur l’icône **Détails**, puis sur **Détails du test**** ** et sélectionnez **Télécharger ****le diplôme.**
+Cliquez sur l’icône **Détails**, puis sur **Détails du test** et sélectionnez **Télécharger le diplôme.**
 
 
 ![](./media/image43.png)
 
-Si le diplôme n’est pas encore validé ou si le score minimum n’a pas été atteint, l’option **Télécharger le diplôme** ne sera pas disponible dans l’onglet **Détails du test. **
+Si le diplôme n’est pas encore validé ou si le score minimum n’a pas été atteint, l’option **Télécharger le diplôme** ne sera pas disponible dans l’onglet **Détails du test**.
 
 Rapports
 
 
-## Résultats individuels
+### Résultats individuels
 
 Pour consulter les résultats d’un candidat, entrez son nom ou son adresse e-mail dans la barre de recherche.
 
@@ -540,7 +534,7 @@ Pour consulter les résultats d’un candidat, entrez son nom ou son adresse e-m
 
 ![](./media/image44.png)
 
-Une fois les résultats du candidat chargés, cliquez sur l’icône** Details **:
+Une fois les résultats du candidat chargés, cliquez sur l’icône **Details**
 
 
 ![](./media/image38.png)
@@ -548,7 +542,7 @@ Une fois les résultats du candidat chargés, cliquez sur l’icône** Details *
 
 ![](./media/image45.png)
 
-Pour un aperçu et une analyse plus approfondis, cliquez sur **Détails du test** et sélectionnez **Compétences **dans le menu déroulant.
+Pour un aperçu et une analyse plus approfondis, cliquez sur **Détails du test** et sélectionnez **Compétences** dans le menu déroulant.
 
 
 ![](./media/image46.png)
@@ -560,20 +554,14 @@ Le classement permet de connaitre le positionnement du candidat par rapport à t
 
 ![](./media/image47.png)
 
-Vous pouvez télécharger un PDF avec le détail du test en cliquant sur **Obtenir le** **rapport en PDF**.
+Vous pouvez télécharger un PDF avec le détail du test en cliquant sur **Obtenir le rapport en PDF**.
 
 
-Rapports de groupe
+### Rapports de groupe
 
-**Les rapports ****de groupe** permettent d’avoir un aperçu du niveau global des candidats d’un groupe donné.
+**Les rapports de groupe** permettent d’avoir un aperçu du niveau global des candidats d’un groupe donné.
 
-Les rapports de groupe sont accessibles à partir de **Résultats** dans le menu principal.
-
-
-
-L’administrateur doit sélectionner le groupe souhaité dans le menu déroulant.
-
-Une fois qu’un groupe est sélectionné, cliquez sur** Rapports de groupe **pour voir les options proposées :
+Les rapports de groupe sont accessibles à partir de **Résultats** dans le menu principal. L’administrateur doit sélectionner le groupe souhaité dans le menu déroulant. Une fois qu’un groupe est sélectionné, cliquez sur** Rapports de groupe **pour voir les options proposées :
 
 
 ![](./media/image48.png)
@@ -582,27 +570,27 @@ Une fois qu’un groupe est sélectionné, cliquez sur** Rapports de groupe **po
 ![](./media/image49.png)
 
 
-Une fois le formulaire rempli, cliquez sur **Télécharger**. Le rapport sera ensuite traité et vous pourrez le télécharger sous forme de fichier PDF.
+Une fois le formulaire rempli, cliquez sur télécharger. Le rapport sera ensuite traité et vous pourrez le télécharger sous forme de fichier PDF.
 
-À partir de l’onglet **Rapports de groupe **, vous avez accès à plusieurs types de rapports :
+À partir de l’onglet **Rapports de groupe**, vous avez accès à plusieurs types de rapports :
 
 
 ![](./media/image50.png)
 
 
-**Télécharger tous les rapports individuels **: cette option permet aux administrateurs d’obtenir tous les rapports du groupe plutôt que de télécharger chaque rapport individuel. Ces rapports vous seront envoyés par mail dans les 24 heures.
+**Télécharger tous les rapports individuels**: cette option permet aux administrateurs d’obtenir tous les rapports du groupe plutôt que de télécharger chaque rapport individuel. Ces rapports vous seront envoyés par mail dans les 24 heures.
 
-**Envoyer des rapports à chaque candidat :** permet aux administrateurs d’envoyer des rapports d’évaluation à tous les candidats d’un groupe.
+**Envoyer des rapports à chaque candidat** : permet aux administrateurs d’envoyer des rapports d’évaluation à tous les candidats d’un groupe.
 
-**Télécharger ****le fichier de compétences** : fournit aux administrateurs un fichier Excel des niveaux des sous-domaines pour plusieurs candidats d’un groupe spécifique.
+**Télécharger le fichier de compétences** : fournit aux administrateurs un fichier Excel des niveaux des sous-domaines pour plusieurs candidats d’un groupe spécifique.
 
-Rapports de progression
+## Rapports de progression
 
 
 ![](./media/image51.png)
 
 
-## **Rapport de progression du groupe**
+### Rapport de progression du groupe
 
 Cliquez sur **Télécharger le rapport de progression de groupe**  dans  le menu **Rapports de groupe**, puis téléchargez le rapport de progression de groupe.
 
@@ -611,8 +599,8 @@ Cliquez sur **Télécharger le rapport de progression de groupe**  dans  le menu
 
 
 Sélectionnez les deux tests que vous souhaitez comparer, ainsi que la plage de dates pour chaque test.
-**
-****Remarque :** les deux périodes ne doivent pas se chevaucher.
+
+***Remarque*** les deux périodes ne doivent pas se chevaucher.
 
 
 ![](./media/image53.png)
@@ -620,16 +608,16 @@ Sélectionnez les deux tests que vous souhaitez comparer, ainsi que la plage de 
 Le rapport montrera les résultats aux deux tests et mettra en avant les progrès réalisés entre ces deux tests.
 
 
-## **Rapports de progression individuels**
+### Rapports de progression individuels
 
 Pour consulter les rapports de progression individuels, accédez aux détails du candidat en cliquant sur **Résultats** dans le menu principal.
 
 
 ![](./media/image54.png)
 
-Une fois les résultats du candidat chargés, cliquez sur l’icône** Analyse**.
+Une fois les résultats du candidat chargés, cliquez sur l’icône **Analyse**.
 
-Sélectionnez ensuite  l’onglet ** Rapport de progression** dans la fiche du candidat.
+Sélectionnez ensuite  l’onglet **Rapport de progression** dans la fiche du candidat.
 
 
 ![](./media/image55.png)
@@ -637,22 +625,21 @@ Sélectionnez ensuite  l’onglet ** Rapport de progression** dans la fiche du c
 
 
 
-# Attestation de passage
+## Attestation de passage
 
-Vous  pourrez télécharger les  attestations de passage à partir de l’onglet **Résultats**** :**
+Vous  pourrez télécharger les  attestations de passage à partir de l’onglet **Résultats**
 
 
 
 ![](./media/image56.png)
 
-Pour ce faire, cliquez sur le  signe ***+*** à droite du menu** Résultats*****.******
-***
+Pour ce faire, cliquez sur le  signe ***+*** à droite du menu **Résultats**
 
 
 ![](./media/image57.png)
 
 
-Une fois les paramètres définis, cliquez sur **Générer ****l’attestation.**
+Une fois les paramètres définis, cliquez sur **Générer l’attestation.**
 
 Les attestations individuels et de groupe générées peuvent être téléchargés directement depuis la plateforme.
 
@@ -678,7 +665,7 @@ Les attestations individuels et de groupe générées peuvent être télécharg�
 
 
 
-Surveillance
+# Surveillance
 
 
 
@@ -690,13 +677,13 @@ Surveillance
 ![](./media/image58.png)
 
 
-# Gestion des incidents
+## Gestion des incidents
 
 Lors d’un examen de  certification Tosa, si un candidat quitte le mode plein écran, un incident est créé avec un statut « **En attente de détail** » pour lequel vous devrez fournir une explication afin que le passage soit validé.
 
-Pour ce faire, cliquez sur **Surveillance,** puis sur **Gestion des** **Incidents**.
+Pour ce faire, cliquez sur **Surveillance,** puis sur **Gestion des Incidents**.
 
-La fenêtre **Sortie du mode plein écran** s’ouvre. Le test en attente sera marqué avec une croix rouge pour que vous puissiez décrire l’origine du ou des problèmes. Pour ce faire, cliquez sur l’icône de ** la loupe ** et entrez la ou les raisons de l’interruption.
+La fenêtre **Sortie du mode plein écran** s’ouvre. Le test en attente sera marqué avec une croix rouge pour que vous puissiez décrire l’origine du ou des problèmes. Pour ce faire, cliquez sur l’icône de **la loupe** et entrez la ou les raisons de l’interruption.
 
 
 ![](./media/image59.png)
@@ -719,7 +706,7 @@ La fenêtre **Sortie du mode plein écran** s’ouvre. Le test en attente sera m
 
 
 
-Gestion des mails
+# Gestion des mails
 
 
 
@@ -748,11 +735,9 @@ Gestion des mails
 
 
 
-Modèles d’e-mails
+## Modèles d’e-mails
 
-Pour informer les candidats qu’un test leur a été attribué, plusieurs options de courrier électronique vous sont fournies.
-
-Pour configurer vos options de messagerie, il est recommandé de commencer par configurer vos modèles d’e-mail.
+Pour informer les candidats qu’un test leur a été attribué, plusieurs options de courrier électronique vous sont fournies.Pour configurer vos options de messagerie, il est recommandé de commencer par configurer vos modèles d’e-mail.
 
 Pour accéder aux modèles d’e-mail, cliquez sur **Paramètres** dans le menu principal. La fenêtre **Gestion des modèles ****de message **s’affichera.  Cliquez sur **e-mail**, puis sur **Modèles d’e-mails **pour examiner et gérer vos modèles :
 
@@ -766,7 +751,7 @@ Vous pouvez également créer vos propres modèles d’e-mails pour différentes
 
 ![](./media/image61.png)
 
-Si vous devez modifier un modèle d’e-mail existant, faites glisser votre curseur sur le modèle et cliquez sur l’icône **Editer :**
+Si vous devez modifier un modèle d’e-mail existant, faites glisser votre curseur sur le modèle et cliquez sur l’icône **Editer**
 
 
 
@@ -785,9 +770,9 @@ Vous pouvez également inclure le(s) test(s) programmé(s) et l’identifiant/mo
 ![](./media/image62.png)
 
 
-Cliquez sur** ****Enregistre****r** pour sauvegarder vos modifications.
+Cliquez sur** **Enregistrer** pour sauvegarder vos modifications.
 
-Pour consulter le modèle terminé, cliquez sur le bouton** Actualiser ****l’exemple.**
+Pour consulter le modèle terminé, cliquez sur le bouton** Actualiser l’exemple.**
 
 Ces paramètres s’appliquent à tous les types d’e-mails (inscription, rapport de résultat, rappel, diplôme).
 
@@ -796,7 +781,7 @@ Ces paramètres s’appliquent à tous les types d’e-mails (inscription, rappo
 
 
 
-Vous pouvez également personnaliser l’en-tête de vos e-mails en incluant votre propre bannière. Pour ce faire, vous pouvez cliquer sur ***modèles d’emails***, puis *Ajouter une bannière personnalisée.*
+Vous pouvez également personnaliser l’en-tête de vos e-mails en incluant votre propre bannière. Pour ce faire, vous pouvez cliquer sur **modèles d’emails**, puis **Ajouter une bannière personnalisée.**
 
 
 
@@ -806,13 +791,11 @@ Vous pouvez également personnaliser l’en-tête de vos e-mails en incluant vot
 
 
 
-# Model de mails
+## Modèles d'emails
 
-Pour informer les candidats qu’un test leur a été attribué, plusieurs options de courrier électronique vous sont fournies.
+Pour informer les candidats qu’un test leur a été attribué, plusieurs options de courrier électronique vous sont fournies.Pour configurer vos options de messagerie, il est recommandé de commencer par configurer vos modèles d’e-mail.
 
-Pour configurer vos options de messagerie, il est recommandé de commencer par configurer vos modèles d’e-mail.
-
-Pour accéder aux modèles d’e-mail, cliquez sur **Paramètres** dans le menu principal. La fenêtre **Gestion des modèles ****de message **s’affichera.  Cliquez sur **e-****mail**, puis sur **Modèles d’e-mails **pour examiner et gérer vos modèles :
+Pour accéder aux modèles d’e-mail, cliquez sur **Paramètres** dans le menu principal. La fenêtre **Gestion des modèles de message** s’affichera.  Cliquez sur **e-mail**, puis sur **Modèles d’e-mails** pour examiner et gérer vos modèles
 
 
 ![](./media/image61.png)
@@ -824,28 +807,25 @@ Vous pouvez également créer vos propres modèles d’e-mails pour différentes
 
 ![](./media/image61.png)
 
-Si vous devez modifier un modèle d’e-mail existant, faites glisser votre curseur sur le modèle et cliquez sur l’icône **Editer :**
+Si vous devez modifier un modèle d’e-mail existant, faites glisser votre curseur sur le modèle et cliquez sur l’icône **Editer**
 
 
 
 
 ![](./media/image61.png)
 
-La fenêtre **Mettre à jour un modèle d’e-mail** s’ouvre. Dans cette zone, vous pourrez personnaliser le modèle.
-
-Vous pouvez modifier le nom du modèle, la ligne d’objet par défaut et la première phrase/formule de salutation.
+La fenêtre **Mettre à jour un modèle d’e-mail** s’ouvre. Dans cette zone, vous pourrez personnaliser le modèle.Vous pouvez modifier le nom du modèle, la ligne d’objet par défaut et la première phrase/formule de salutation.
 
 Dans les zones « Première partie du message » et « Deuxième partie du message », vous pouvez rédiger un message de votre choix pour inviter les candidats aux tests.
-
 Vous pouvez également inclure le(s) test(s) programmé(s) et l’identifiant/mot de passe du candidat en cochant les cases situées entre la première et la deuxième partie du message.
 
 
 ![](./media/image62.png)
 
 
-Cliquez sur** ****Enregistre****r** pour sauvegarder vos modifications.
+Cliquez sur **Enregistrer** pour sauvegarder vos modifications.
 
-Pour consulter le modèle terminé, cliquez sur le bouton** Actualiser ****l’exemple.**
+Pour consulter le modèle terminé, cliquez sur le bouton **Actualiser l’exemple**.
 
 Ces paramètres s’appliquent à tous les types d’e-mails (inscription, rapport de résultat, rappel, diplôme).
 
@@ -854,7 +834,7 @@ Ces paramètres s’appliquent à tous les types d’e-mails (inscription, rappo
 
 
 
-Vous pouvez également personnaliser l’en-tête de vos e-mails en incluant votre propre bannière. Pour ce faire, vous pouvez cliquer sur ***E******-******mail***, puis *Ajouter une bannière personnalisée.*
+Vous pouvez également personnaliser l’en-tête de vos e-mails en incluant votre propre bannière. Pour ce faire, vous pouvez cliquer sur **Email**, puis **Ajouter une bannière personnalisée**.
 
 
 
@@ -863,29 +843,29 @@ Vous pouvez également personnaliser l’en-tête de vos e-mails en incluant vot
 
 
 
-# Emetteur de mail
+## Emetteur de mail
 
-Un émetteur est une adresse e-mail que le système utilisera pour envoyer des e-mails au lieu de l’adresse e-mail par défaut **noreply****@isograd.com**. Cette option permet d’envoyer des e-mails à partir d’une adresse e-mail de votre domaine.
+Un émetteur est une adresse e-mail que le système utilisera pour envoyer des e-mails au lieu de l’adresse e-mail par défaut **noreply@isograd.com**. Cette option permet d’envoyer des e-mails à partir d’une adresse e-mail de votre domaine.
 
 
 ![](./media/image65.png)
 
 
-Pour créer un expéditeur, cliquez sur **Paramètres**, puis  sur **E-mail** et **Émetteurs ****d’e-mails**.
+Pour créer un expéditeur, cliquez sur **Paramètres**, puis  sur **E-mail** et **Émetteurs d’e-mails**.
 
-Pour créer un nouvel émetteur, cliquez sur **Ajouter un ****émetteur**** :**
+Pour créer un nouvel émetteur, cliquez sur **Ajouter un émetteur**
 
 
 ![](./media/image66.png)
 
 
-Entrez l’adresse e-mail de l’émetteur dans la zone Adresse e-mail et cliquez sur **Enregistrer**** **:
+Entrez l’adresse e-mail de l’émetteur dans la zone Adresse e-mail et cliquez sur **Enregistrer**.
 
 
 
 ![](./media/image67.png)
 
-Vous recevrez un  e-mail d’**Amazon** **Web Services** vous demandant d’accorder le droit d’envoyer des e-mails en votre nom.
+Vous recevrez un  e-mail **Amazon Web Services** vous demandant d’accorder le droit d’envoyer des e-mails en votre nom.
 
 
 
@@ -899,12 +879,12 @@ L’adresse e-mail doit être **vérifiée**. Si elle est **En attente**, il vou
 
 
 
-# Envoi
+## Envoi programmés
 
 Dans cet onglet, vous retrouverez tous vos envois d’invitation au test d’évaluation programmé ainsi que le statuts de celui-ci. Vous pourrez modifier vos mail programmé ou les supprimé.
 
 
-Pour accéder aux modèles d’e-mail, cliquez sur **Emails** dans le menu principal. La  fenêtre **Gestion des ****envois**** ****programmés**** **s’affiche. Vous verez tout vos mail programmés.
+Pour accéder aux modèles d’e-mail, cliquez sur **Emails** dans le menu principal. La  fenêtre **Gestion des envois programmés** s’affiche. Vous verez tout vos mail programmés.
 
 
 ![](./media/image69.png)
@@ -937,27 +917,27 @@ Vous pourrez modifier les dates programmé en cliquant sur l’icon editer
 
 
 
-Gestion des paramètres
+# Gestion des paramètres
 
 
 
 
 
 
-# Option de passage
+## Option de passage
 
-Paramètres généraux
+### Paramètres généraux
 
-Les **Options par défaut** permettent aux administrateurs de définir et/ou de mettre à jour les** **paramètres par défaut sur la plateforme. Vous pouvez accéder aux **Options**** par défaut** via **P****aramètres**.
+Les **Options par défaut** permettent aux administrateurs de définir et/ou de mettre à jour les paramètres par défaut sur la plateforme. Vous pouvez accéder aux **Options par défaut** via **Paramètres**.
 
 
 ![](./media/image70.png)
 
-**Les autres paramètres** qui peuvent être modifiés sont liés au temps. Vous pouvez choisir d’afficher les dates et heures au format américain ou européen, et sélectionner votre fuseau horaire. Vous pouvez également définir le temps supplémentaire aloué pour les personnes en situation d’handicap. Sachant que vous devrez également définir le temps supplémentaire dans la fiche du candidat, il est recommandé de définir ici la valeur globale sur 100%.
+Les autres paramètres qui peuvent être modifiés sont liés au temps. Vous pouvez choisir d’afficher les dates et heures au format américain ou européen, et sélectionner votre fuseau horaire. Vous pouvez également définir le temps supplémentaire aloué pour les personnes en situation d’handicap. Sachant que vous devrez également définir le temps supplémentaire dans la fiche du candidat, il est recommandé de définir ici la valeur globale sur 100%.
 
 
 
-Paramètres pour l’évaluation
+## Paramètres pour l’évaluation
 
 
 ![](./media/image71.png)
@@ -975,21 +955,17 @@ Une fois que vous avez personnalisé vos paramètres, cliquez sur le bouton **En
 
 
 
-# Session de passage
+## Session de passage
 
-Création de sessions de test
+Création de sessions de test : *Une session de test est une période de temps pendant laquelle des tests doivent être passés. Les tests liés à une session ne seront pas accessibles en dehors de la session de test programmée*. La création d’une session vous permettra de définir une heure de début et de fin. Ensuite, lorsque vous inscrivez un candidat à un test, vous pourrez lier le test à une session définie.
 
-*Une session de test est une période de temps pendant laquelle des tests doivent être passés. Les tests liés à une session ne seront pas accessibles en dehors de la session de test programmée*.
-
-La création d’une session vous permettra de définir une heure de début et de fin. Ensuite, lorsque vous inscrivez un candidat à un test, vous pourrez lier le test à une session définie.
-
-Pour créer une session de test, cliquez sur **Paramètres**, puis sur **Sessions** **de passage****,** puis sur le  bouton rouge** ****Créer**** une session**.
+Pour créer une session de test, cliquez sur **Paramètres**, puis sur **Sessions de passage**, puis sur **Créer une session**.
 
 
 
 ![](./media/image73.png)
 
-Dans la fenêtre **Créer** **une session**, vous pouvez ajouter une description/un titre pour votre session ainsi qu’un code de session, les dates de début et de fin, ainsi que l’heure de début et de fin. L’ajout d’un code de session est recommandé afin que les candidats ne puissent pas accéder au test en dehors de l’heure prévue. Le code de session n’est jamais envoyé par e-mail, il convient de le fournir au(x) candidat(s) en amont du test.
+Dans la fenêtre **Créer une session**, vous pouvez ajouter une description/un titre pour votre session ainsi qu’un code de session, les dates de début et de fin, ainsi que l’heure de début et de fin. L’ajout d’un code de session est recommandé afin que les candidats ne puissent pas accéder au test en dehors de l’heure prévue. Le code de session n’est jamais envoyé par e-mail, il convient de le fournir au(x) candidat(s) en amont du test.
 
 
 
@@ -999,15 +975,13 @@ Dans la fenêtre **Créer** **une session**, vous pouvez ajouter une description
 
 
 
-# Profil de compétences
+## Profil de compétences
 
 Les **Profils** vous permettent de définir les résultats attendus pour des métiers spécifiques.
 
-Vous pouvez définir les niveaux de compétence attendus pour des compétences numériques spécifiques, ce qui vous permet d’identifier rapidement des candidats qualifiés.
+Vous pouvez définir les niveaux de compétence attendus pour des compétences numériques spécifiques, ce qui vous permet d’identifier rapidement des candidats qualifiés.Les profils peuvent également être utilisés pour mettre en évidence les connaissances et les compétences pour les promotions d’emploi internes.
 
-Les profils peuvent également être utilisés pour mettre en évidence les connaissances et les compétences pour les promotions d’emploi internes.
-
-Dans le menu principal, sélectionnez** Paramètres**, puis cliquez sur **Résultats attendus**, puis cliquez sur  le bouton rouge** Ajouter un profil**.
+Dans le menu principal, sélectionnez **Paramètres**, puis cliquez sur **Résultats attendus**, puis cliquez sur **Ajouter un profil**.
 
 Pour modifier le niveau attendu des sous-compétences d’un test, placez votre curseur sur le profil et cliquez sur l’icône **Modifier les niveaux de compétence**.
 
@@ -1019,7 +993,7 @@ Pour modifier le niveau attendu des sous-compétences d’un test, placez votre 
 
 Sélectionnez le résultat ou le poste attendu, le logiciel/ la compétence et la langue.
 
-Utilisez les boutons **Plus (+**) ou **Moins (-)**  pour augmenter ou diminuer le niveau requis pour chacune des quatre à cinq compétences principales du sujet choisi. Cliquez ensuite sur **Enregistrer** pour confirmer vos modifications.
+Utilisez les boutons **(+)** ou **(-)**  pour augmenter ou diminuer le niveau requis pour chacune des quatre à cinq compétences principales du sujet choisi. Cliquez ensuite sur **Enregistrer** pour confirmer vos modifications.
 
 
 ![](./media/image77.png)
@@ -1028,7 +1002,7 @@ Utilisez les boutons **Plus (+**) ou **Moins (-)**  pour augmenter ou diminuer l
 
 
 
-# Descriptions de niveaux personnalisées
+## Descriptions de niveaux personnalisées
 
 Vous pouvez modifier la description du niveau sur chaque test, en fonction de la famille de sujets du test.
 
@@ -1043,61 +1017,60 @@ Dans la fenêtre **Ajouter une description personnalisée**, sélectionnez la fa
 ![](./media/image79.png)
 
 
-Dans la fenêtre **Gestion des** **description****s**** de niveau****x**** personnalisé****es**,  vous pouvez saisir des messages spécifiques pour chaque niveau de compétence.
+Dans la fenêtre gestion des descriptions de niveaux personnalisées,  vous pouvez saisir des messages spécifiques pour chaque niveau de compétence.
 
 Une fois que vous avez terminé les messages pour chaque niveau, cliquez sur **Enregistrer**. Ces commentaires apparaîtront sur les rapports des candidats, en fonction du niveau de compétence du candidat.
 
 
 ![](./media/image80.png)
 
-Voici un exemple de** description personnalisée du niveau** sur le rapport d’évaluation d’un candidat :
+Voici un exemple de **description personnalisée du niveau** sur le rapport d’évaluation d’un candidat :
 
 
 
 ![](./media/image81.png)
 
 
-Support
+# Support
 
 
 
 
 ![](./media/image82.png)
 
-L’onglet **Aide**** & Support** contient toutes les informations techniques sur la plateforme et les tests.
+L’onglet **Aide & Support** contient toutes les informations techniques sur la plateforme et les tests.
 
-Pour accéder à **Aide**** & Support**, sélectionnez cet onglet dans le menu principal.
+Pour accéder à aide & support, sélectionnez cet onglet dans le menu principal.
 
 Vous y trouverez les éléments suivants :
 
-Coordonnées du support technique
+- Coordonnées du support technique
 
-Vérification du navigateur Internet
+- Vérification du navigateur Internet
 
-Tests de configuration technique
+- Tests de configuration technique
 
-Manuel technique
-
-
+## Manuel technique
 
 
-Configuration technique
 
-Il est conseillé de vérifier le navigateur de l’ordinateur avant de réaliser des tests. Pour trouver la version de votre navigateur, cliquez **sur Identifier la version de mon navigateur.****
-**
+
+### Configuration technique
+
+Il est conseillé de vérifier le navigateur de l’ordinateur avant de réaliser des tests. Pour trouver la version de votre navigateur, cliquez **sur Identifier la version de mon navigateur**
 
 
 ![](./media/image83.png)
 
 
-# ** ****Test de c****onfiguration technique**** **
+### Test de configuration technique
 
 Ce test consiste à confirmer que la configuration technique d’Internet, du réseau et des ordinateurs est suffisante pour effectuer un test. Cliquez sur le bouton **Vérifier** .
 
 
 ![](./media/image84.png)
 
-Une fois que vous avez cliqué sur **Vérifier,** vous aurez la possibilité de faire un test. En fonction de votre sélection, un mini-test d’évaluation sera lancé. Il est conseillé de compléter ce test dans le cadre de la vérification technique.
+Une fois que vous avez cliqué sur **Vérifier**, vous aurez la possibilité de faire un test. En fonction de votre sélection, un mini-test d’évaluation sera lancé. Il est conseillé de compléter ce test dans le cadre de la vérification technique.
 
 
 ![](./media/image85.png)
@@ -1110,7 +1083,7 @@ Le court test de trois questions simule un environnement d’évaluation. Chacun
 Veuillez ensuite suivre les instructions et répondre aux questions. Si cela n’est pas fait, ou si la configuration ne correspond pas à nos exigences, notre plateforme ne permettra pas au candidat de passer leur(s) test(s).
 
 
-Paramètres de l’API
+### Paramètres de l’API
 
 Si vous utilisez des API, nous mettons à votre disposition des solutions pour faciliter l’intégration de vos API avec la plateforme. Vous pourrez générer les paramètres d’authentification pour l’API, afficher les identifiants de test et vous aurez également un document détaillant l’utilisation et l’intégration de l’API.
 
@@ -1118,7 +1091,7 @@ Si vous utilisez des API, nous mettons à votre disposition des solutions pour f
 ![](./media/image87.png)
 
 
-En cas de difficultés techniques, veuillez contacter le support d’Isograd à
+En cas de difficultés techniques, veuillez contacter le support d’Isograd à **support@isograd.com**
 
 Si vous avez des questions concernant le contenu de ce manuel ou d’autres questions techniques, veuillez nous contacter également à **support@isograd.com**
 
