@@ -159,13 +159,11 @@ Pour consulter les détails spécifiques sur la consommation de groupe, vous dev
 ![](./media/image14.png)
 
 
-Factures
+## Factures
 
 Si vous avez effectué des achats en ligne pour des crédits d’évaluation Isograd, vous pouvez consulter votre (vos) facture(s) en ligne.
 
-Sur la page **Compte**, cliquez sur **Mes factures.**
-
-Ici, vous verrez la (les) date(s) de transaction, la (les) description(s) du produit (s) et le montant de chaque facture.
+Sur la page **Compte**, cliquez sur **Mes factures.** Ici, vous verrez la (les) date(s) de transaction, la (les) description(s) du produit (s) et le montant de chaque facture.
 
 Vous pouvez imprimer une facture pour tout achat en ligne en passant votre souris sur la transaction et en cliquant sur **Télécharger**. La facture sera générée, puis vous pourrez la télécharger.
 
@@ -186,7 +184,7 @@ Cliquez sur **ajouter/supprimer des candidats** pour  rapidement gérer les cand
 
 
 
-Alerte crédit
+## Alerte crédit
 
 La page **Alerte crédit** vous permet de créer jusqu’à deux alertes de crédit et de suivre facilement votre consommation de crédits.
 
