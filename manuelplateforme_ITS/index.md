@@ -103,7 +103,7 @@ Pour accéder aux outils de gestion des administrateurs, cliquez sur **Compte** 
 ![](./media/image9.PNG)
 
 
-La page Gestion des administrateurs de votre compte apparaîtra et vous pourrez afficher tous les administrateurs qui ont été créés.
+La page gestion des administrateurs de votre compte apparaîtra et vous pourrez afficher tous les administrateurs qui ont été créés.
 
 ### Types d’administrateurs
 
