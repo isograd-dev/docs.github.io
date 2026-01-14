@@ -72,7 +72,6 @@ Si vous ne vous souvenez plus de votre mot de passe, cliquez sur **Mot de passe*
 
 # Gestion de votre compte
 
-****
 
 ## Détails
 
@@ -90,14 +89,14 @@ Vous trouverez ci-dessous toutes les informations concernant votre compte et vot
 ![](./media/image8.png)
 
 
-#Administrateurs
+# Administrateurs
 
 Les administrateurs gèrent les groupes. Chaque groupe nécessite un administrateur.
 
 
 ## Ajout d’un administrateur
 
-Pour accéder aux outils **de gestion des administrateurs**, cliquez sur **Compte** dans le menu principal. Vous serez ensuite redirigé vers la  page **Gestion des administrateurs**.  Cliquez sur **Administrateurs**.
+Pour accéder aux outils de gestion des administrateurs, cliquez sur **Compte** dans le menu principal. Vous serez ensuite redirigé vers la  page **Gestion des administrateurs**.  Cliquez sur **Administrateurs**.
 
 
 
