@@ -186,11 +186,11 @@ Cliquez sur **Compte** dans le menu principal pour accéder à la page **Votre c
 
 
 
-Gestions des candidats
+# Gestions des candidats
 
 
 
-# Candidats
+## Candidats
 
 Maintenant que vous avez défini tous vos paramètres de test, il est temps de commencer à ajouter des candidats. Il existe deux options pour ajouter des candidats à la plateforme : individuellement ou par groupe.
 
