@@ -11,7 +11,38 @@ layout: home
 
 <div id="content">
 
+# Table des matières
 
+## Premier pas sur la plateforme ISOGRAD
+### Connexion à la plateforme
+### Naviguer sur la plateforme
+
+## Gestion de votre compte
+### Détails
+### Administrateurs
+### Consommation de crédits
+### Facture
+### Alerte crédit
+
+## Gestion des candidats
+### Candidats
+### Groupes
+
+## Surveilance
+### Gestion des incidents
+
+## Emails
+### Modèles d'emails
+### Emetteurs d'emails
+### Envoi programmés
+
+## Gestion des parametres
+### Options de passage
+### session de passage
+### Profil de compétences
+### Descriptions de niveaux personnalisées
+
+## Aide et support
 
 # Connexion à la plateforme tosa
 
@@ -25,7 +56,7 @@ Entrez votre adresse e-mail et votre mot de passe, puis cliquez sur **Connexion*
 
 ![](./media/image4.png)
 
-Si vous ne connaissez plus votre mot de passe, cliquez sur** Mot de passe oublié**.  Un lien de réinitialisation de mot de passe vous sera automatiquement envoyé par e-mail.
+Si vous ne connaissez plus votre mot de passe, cliquez sur **Mot de passe oublié**.  Un lien de réinitialisation de mot de passe vous sera automatiquement envoyé par e-mail.
 
 
 
@@ -112,7 +143,6 @@ Vous aurez donc la possibilité d’attribuer ou supprimer certains privilèges 
 ## Consommation de crédits
 
 La page **Consommation de crédits**  vous permet de suivre l’utilisation totale des crédits ainsi que l’utilisation des crédits par groupe.
-
 À partir de la page **Compte**, cliquez sur **Consommation de crédits**
 
 
@@ -133,7 +163,7 @@ Pour consulter les détails spécifiques sur la consommation de groupe, vous dev
 
 Si vous avez effectué des achats en ligne pour des crédits d’évaluation ou de certification Tosa, vous pouvez consulter votre (vos) facture(s) en ligne.
 
-Sur la page **Compte **, cliquez sur **Mes factures.**
+Sur la page **Compte**, cliquez sur **Mes factures.**
 
 Ici, vous verrez la (les) date(s) de transaction, la (les) description(s) du produit (s) et le montant de chaque facture.
 
@@ -153,11 +183,11 @@ Cliquez sur **Compte** dans le menu principal pour accéder à la page **Votre c
 
 ![](./media/image15.png)
 
-**L’****Alerte d’expiration**** **vous permet de recevoir automatiquement un e-mail un mois avant la date d’expiration de vos crédits.
+**L’Alerte d’expiration** vous permet de recevoir automatiquement un e-mail un mois avant la date d’expiration de vos crédits.
 
-**L’****A****lerte** **de nombre de crédits** vous permet de définir un seuil (crédits minimums restants). Lorsque le seuil défini est atteint, un e-mail vous est envoyé.
+**L’Alerte de nombre de crédits** vous permet de définir un seuil (crédits minimums restants). Lorsque le seuil défini est atteint, un e-mail vous est envoyé.
 
-**L’alerte de consommation mensuelle** vous permet de recevoir votre niveau de consommation de crédits chaque mois.
+**L’Alerte de consommation mensuelle** vous permet de recevoir votre niveau de consommation de crédits chaque mois.
 
 
 ![](./media/image16.png)
@@ -200,7 +230,7 @@ Pour démarrer le processus, vous devez sélectionner **Candidats** dans le menu
 
 ![](./media/image18.png)
 
-Ajout d’un groupe de candidats
+### Ajout d’un groupe de candidats
 
 L’importation d’un fichier Excel contenant les détails de vos candidats vous permet de télécharger rapidement jusqu’à 500 candidats à la fois pour un groupe défini.
 
@@ -210,10 +240,9 @@ Cliquez sur **Importer un fichier de candidats:**
 ![](./media/image18.png)
 
 
-Dans la** ** fenêtre ** Importer un fichier de candidats**, procédez comme suit :
+Dans la fenêtre Importer un fichier de candidats, procédez comme suit :
 
 Cliquez sur **Télécharger le modèle de fichier** et téléchargez le fichier sur votre ordinateur.
-
 Completez le modèle Excel en suivant l’exemple de la première ligne et enregistrez le fichier.
 
 Sous **Fichier à importer**,  cliquez sur **Choisir** **un fichier**, accédez à l’emplacement de votre fichier et sélectionnez-le. Vous devriez maintenant voir le nom du fichier que vous avez importé.
@@ -227,23 +256,22 @@ Maintenant cliquer sur **importer**
 
 ![](./media/image19.png)
 
-Lors du téléchargement du fichier Excel, chacun des candidats recevra un mot de passe aléatoire.  (Remarque: Vous pourrez créer un mot de passe pour tous les candidats en cliquant sur **Actions sur le groupe**, puis  sur **Attribuer un mot de passe temporaire à tous les candidats du groupe).****
-**
+Lors du téléchargement du fichier Excel, chacun des candidats recevra un mot de passe aléatoire.  (***Remarque***: Vous pourrez créer un mot de passe pour tous les candidats en cliquant sur **Actions sur le groupe**, puis  sur **Attribuer un mot de passe temporaire à tous les candidats du groupe**).
 
-Ajout d’un seul candidat
+
+### Ajout d’un seul candidat
 
 Pour ajouter un seul candidat, cliquez sur **Ajouter un candidat****.**
 
 
 ![](./media/image20.png)
 
-Remplissez les informations requises dans l’onglet **Ajouter un candidat** .
+Remplissez les informations requises dans l’onglet ajouter un candidat .
 
 Chaque candidat appartient à au moins un groupe. Le groupe par défaut est le groupe principal. Un candidat peut appartenir à plusieurs groupes à la fois.
-
 L’identifiant du candidat sera son adresse e-mail. Deux candidats ne peuvent pas être enregistré avec la même adresse e-mail.
 
-Le mot de passe d’un candidat peut être généré par la plateforme ou vous pouvez choisir d’un créer un. Une fois que vous avez rempli les informations, cliquez sur **Enregistrer** pour soumettre les informations.
+Une fois que vous avez rempli les informations, cliquez sur **Enregistrer** pour soumettre les informations.
 
 
 ![](./media/image21.png)
@@ -267,13 +295,13 @@ Vous serez également redirigé vers cette page après avoir créé un candidat.
 
 Cliquez sur **Inscrire à un test** et  choisissez la langue, le sujet, le type de test et la session (le cas échéant) pour le candidat.  Vous pourrez rechercher un test à l’aide du champ **Recherche par saisie**.
 
-Cliquez sur **Inscrire** ou **Inscrire et fermer **si vous souhaitez attribuer un seul test à un candidat.
+Cliquez sur **Inscrire** ou **Inscrire et fermer** si vous souhaitez attribuer un seul test à un candidat.
 
 
 ![](./media/image23.png)
 
 
-Envoi d’invitations aux tests
+### Envoi d’invitations aux tests
 
 Vous avez la possibilité d’envoyer directement depuis la plateforme des e-mails pour informer vos candidats des tests disponibles sur leur espace.
 
@@ -299,66 +327,60 @@ Une fois que vous avez cliqué sur **Envoyer**, l’e-mail d’invitation sera e
 
 ![](./media/image26.png)
 
-Actions sur le groupe
+### Actions sur le groupe
 
 Les actions sur le groupe vous permettent d’effectuer des tâches pour tous les candidats d’un même groupe, comme par exemple :
 
-Définir un mot de passe
-
-Inscrire à un test
-
-Envoyer des e-mails d’invitation
-
-Supprimer des tests non-passés
-
-Définir et mettre à jour des options d’évaluation/de certification
-
-Inscrire un groupe à un test
+- Définir un mot de passe
+- Inscrire à un test
+- Envoyer des e-mails d’invitation
+- Supprimer des tests non-passés
+- Définir et mettre à jour des options d’évaluation/de certification
+- Inscrire un groupe à un test
 
 Utilisez l’action **Inscrire tous les candidats du groupe à un test** pour gagner du temps et vous assurer que tous les candidats d’un groupe sont inscrits au même test.
-
-Accédez à cette option en sélectionnant **Candidats** dans le menu principal, puis sélectionnez **Actions sur le groupe ** et **Inscrire tous les candidats du groupe à un test**** :**
+Accédez à cette option en sélectionnant **Candidats** dans le menu principal, puis sélectionnez **Actions sur le groupe** et **Inscrire tous les candidats du groupe à un test**
 
 
 ![](./media/image27.png)
 
-Vous sélectionnerez ensuite la langue, le sujet, le type de test et la session. Cliquez ensuite sur **I****nscrire** ou **Inscrire et fermer.****
-**
+Vous sélectionnerez ensuite la langue, le sujet, le type de test et la session. Cliquez ensuite sur **I****nscrire** ou **Inscrire et fermer.**
 
-Envoi d’e-mails d’invitation à un groupe
 
-Une fois que vous avez inscrit le groupe à un test, il est temps d’envoyer l’e-mail d’invitation. En supposant que tous les membres du groupe passeront le(s) même test(s), vous pouvez utiliser l’option **Envoyer les e****-****mails d’inscription à tous les candidats du groupe.**
+### Envoi d’e-mails d’invitation à un groupe
+
+Une fois que vous avez inscrit le groupe à un test, il est temps d’envoyer l’e-mail d’invitation. En supposant que tous les membres du groupe passeront le(s) même test(s), vous pouvez utiliser l’option **Envoyer les emails d’inscription à tous les candidats du groupe.**
 
 
 
 ![](./media/image28.png)
 
 
-Sélectionnez **Envoyer des** **e-mails** **d’inscription à ****tous les candidats du groupe**, renseignez les informations demandées (adresse e-mail de l’expéditeur, titre du message et modèle d’e-mail), puis cliquez sur **Envoyer**.
+Sélectionnez envoyer des e-mails d’inscription à tous les candidats du groupe, renseignez les informations demandées (adresse e-mail de l’expéditeur, titre du message et modèle d’e-mail), puis cliquez sur **Envoyer**.
 
 Une fois que vous avez cliqué sur **Envoyer**, l’e-mail d’invitation sera envoyé et les candidats pourront accéder au(x) test(s).
 
 
 ![](./media/image29.png)
 
-Autres actions
+### Autres actions
 
 Les actions de groupe vous permettent de :
 
 
-## **Définir ****un mot de passe pour tous les candidats du groupe**
+## **Définir un mot de passe pour tous les candidats du groupe**
 
 
 ![](./media/image27.png)
 
-**Supprimer ****les tests non passés.**  Si vous supprimez les tests à passer, vous serez alors recrédités (sauf pour les certifications de plus de 30 jours).
+**Supprimer les tests non passés.**  Si vous supprimez les tests à passer, vous serez alors recrédités (sauf pour les certifications de plus de 30 jours).
 
 
 
 
 ![](./media/image27.png)
 
-**Définir ****des**** options d’évaluation ****ou de certification ****pour l’ensemble des candidats du groupe.**  Cela vous permet de personnaliser les paramètres pour un groupe défini
+**Définir des options d’évaluation ou de certification** pour l’ensemble des candidats du groupe.  Cela vous permet de personnaliser les paramètres pour un groupe défini
 
 
 ![](./media/image27.png)
@@ -369,7 +391,7 @@ Les actions de groupe vous permettent de :
 
 Créez des groupes de candidats. Chaque candidat peut appartenir à un ou plusieurs groupes.
 
-**Remarque :** le **groupe principal** ne peut pas être supprimé.
+***Remarque*** le **groupe principal** ne peut pas être supprimé.
 
 Le menu **Groupes** vous aide à organiser vos candidats. Les groupes permettent également de facilement inscrire vos candidats à leurs tests et de générer des rapports de groupe.
 
@@ -379,7 +401,7 @@ Le menu **Groupes** vous aide à organiser vos candidats. Les groupes permettent
 
 Il y a trois niveaux de groupe : les groupes du niveau 1, les groupes de niveau 2 (sous-groupes) et les groupes niveau 3  (les sous-sous-groupes)
 
-Ajout d’un nouveau groupe
+### Ajout d’un nouveau groupe
 
 Cliquez sur le  bouton **Ajouter un ****g****roup****e** sur la page **Gestion des groupes** :
 
@@ -389,18 +411,18 @@ Cliquez sur le  bouton **Ajouter un ****g****roup****e** sur la page **Gestion d
 
 La zone **Ajouter un groupe** s’ouvre. Rentrez les informations requises, puis cliquez sur **Ajouter**.
 
-Si un groupe est défini comme** Public,** tous les administrateurs auront accès à ce groupe.
+Si un groupe est défini comme **Public,** tous les administrateurs auront accès à ce groupe.
 
-Si un groupe est défini comme** Privé,** seuls l’administrateur du groupe et l’administrateur du compte auront accès à ce groupe.
+Si un groupe est défini comme **Privé,** seuls l’administrateur du groupe et l’administrateur du compte auront accès à ce groupe.
 
 
 ![](./media/image32.png)
 
 
 
-Modification de groupes
+### Modification de groupes
 
-Dans la page de **G****estion des groupes**, faites glisser votre curseur sur le groupe de votre choix pour afficher les icônes **Éditer** et **Supprimer**.
+Dans la page de **Gestion des groupes**, faites glisser votre curseur sur le groupe de votre choix pour afficher les icônes **Éditer** et **Supprimer**.
 
 
 ![](./media/image30.png)
@@ -415,22 +437,17 @@ Cliquez sur **ajouter/supprimer des candidats** pour  rapidement gérer les cand
 # Gestion des résultat
 
 
-La plateforme vous fournit un aperçu complet des résultats aux tests.
-
-Pour y accéder, cliquez sur **Résultats **dans le menu principal.
+La plateforme vous fournit un aperçu complet des résultats aux tests. Pour y accéder, cliquez sur **Résultats **dans le menu principal.
 
 
 ![](./media/image33.png)
 
 Vous pouvez effectuer des recherches dans les données et filtrer par :
 
-Groupe
-
-Statut du test (terminé, commencé ou en attente)
-
-Sessions
-
-Période
+- Groupe
+- Statut du test (terminé, commencé ou en attente)
+- Sessions
+- Période
 
 Tous les résultats peuvent être exportés dans un fichier Excel.
 
@@ -470,7 +487,7 @@ Pour consulter les résultats d’un candidat, entrez son nom ou son adresse e-m
 
 ![](./media/image37.png)
 
-.
+
 
 Une fois les résultats du candidat chargés, cliquez sur l’icône **Analyse**  .
 
@@ -508,7 +525,6 @@ Pour analyser un test de certification, recherchez le candidat en inscrivant son
 La page **Déroulement du test** s’ouvrira et l’analyse générale du test du candidat sera présentée. Elle mentionnera notamment :
 
 - Le score du candidat (sur une échelle de 1 000 points)
-
 - Les compétences acquises par le candidat
 
 
@@ -647,24 +663,6 @@ Les attestations individuels et de groupe générées peuvent être télécharg�
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Surveillance
 
 
@@ -707,14 +705,6 @@ La fenêtre **Sortie du mode plein écran** s’ouvre. Le test en attente sera m
 
 
 # Gestion des mails
-
-
-
-
-
-
-
-
 
 
 
@@ -825,9 +815,7 @@ Vous pouvez également inclure le(s) test(s) programmé(s) et l’identifiant/mo
 
 Cliquez sur **Enregistrer** pour sauvegarder vos modifications.
 
-Pour consulter le modèle terminé, cliquez sur le bouton **Actualiser l’exemple**.
-
-Ces paramètres s’appliquent à tous les types d’e-mails (inscription, rapport de résultat, rappel, diplôme).
+Pour consulter le modèle terminé, cliquez sur le bouton **Actualiser l’exemple**. Ces paramètres s’appliquent à tous les types d’e-mails (inscription, rapport de résultat, rappel, diplôme).
 
 
 ![](./media/image63.png)
@@ -894,24 +882,6 @@ Vous pourrez modifier les dates programmé en cliquant sur l’icon editer
 
 
 ![](./media/image69.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1045,9 +1015,7 @@ Pour accéder à aide & support, sélectionnez cet onglet dans le menu principal
 Vous y trouverez les éléments suivants :
 
 - Coordonnées du support technique
-
 - Vérification du navigateur Internet
-
 - Tests de configuration technique
 
 ## Manuel technique
