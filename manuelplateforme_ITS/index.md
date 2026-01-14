@@ -57,7 +57,7 @@ Pour accéder à votre compte, allez sur  , passez la souris sur le  bouton **Co
 ![](./media/image4.png)
 
 
-Si vous ne vous souvenez plus de votre mot de passe, cliquez sur **Mot de passe** **oublié**. Un lien de réinitialisation de mot de passe vous sera automatiquement envoyé par e-mail.
+Si vous ne vous souvenez plus de votre mot de passe, cliquez sur **Mot de passe oublié**. Un lien de réinitialisation de mot de passe vous sera automatiquement envoyé par e-mail.
 
 
 ![](./media/image5.png)
@@ -124,7 +124,7 @@ Les administrateurs de compte peuvent modifier les droits des administrateurs ex
 
 ![](./media/image10.png)
 
-Vous pouvez également **supprimer **un administrateur ou lui **réinitialiser** le mot de passe.
+Vous pouvez également **supprimer** un administrateur ou lui **réinitialiser** le mot de passe.
 
 
 Vous avez aussi la possibilité de de modifier les privilèges sur certains actions du compte de vos administrateur, tel que la gestion des candidat, gestion des resultats etc
@@ -195,7 +195,7 @@ Cliquez sur **Compte** dans le menu principal pour accéder à la page  **compte
 
 **L’Alerte d’expiration** **vous permet de recevoir automatiquement un e-mail un mois avant la date d’expiration de vos crédits.
 
-**L’Alerte** **de nombre de crédits** vous permet de définir un seuil (crédits minimums restants). Lorsque le seuil défini est atteint, un e-mail vous est envoyé.
+**L’Alerte de nombre de crédits** vous permet de définir un seuil (crédits minimums restants). Lorsque le seuil défini est atteint, un e-mail vous est envoyé.
 
 **L’alerte de consommation mensuelle** vous permet de recevoir votre niveau de consommation de crédits chaque mois.
 
