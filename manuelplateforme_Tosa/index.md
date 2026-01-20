@@ -585,7 +585,7 @@ Vous pouvez télécharger un PDF avec le détail du test en cliquant sur **Obten
 
 **Les rapports de groupe** permettent d’avoir un aperçu du niveau global des candidats d’un groupe donné.
 
-Les rapports de groupe sont accessibles à partir de **Résultats** dans le menu principal. L’administrateur doit sélectionner le groupe souhaité dans le menu déroulant. Une fois qu’un groupe est sélectionné, cliquez sur** Rapports de groupe **pour voir les options proposées :
+Les rapports de groupe sont accessibles à partir de **Résultats** dans le menu principal. L’administrateur doit sélectionner le groupe souhaité dans le menu déroulant. Une fois qu’un groupe est sélectionné, cliquez sur **Rapports de groupe** pour voir les options proposées :
 
 
 ![](./media/image48.png)
@@ -624,7 +624,7 @@ Cliquez sur **Télécharger le rapport de progression de groupe**  dans  le menu
 
 Sélectionnez les deux tests que vous souhaitez comparer, ainsi que la plage de dates pour chaque test.
 
-***Remarque*** les deux périodes ne doivent pas se chevaucher.
+***Remarque***; les deux périodes ne doivent pas se chevaucher.
 
 
 ![](./media/image53.png)
@@ -737,7 +737,7 @@ La fenêtre **Sortie du mode plein écran** s’ouvre. Le test en attente sera m
 
 Pour informer les candidats qu’un test leur a été attribué, plusieurs options de courrier électronique vous sont fournies.Pour configurer vos options de messagerie, il est recommandé de commencer par configurer vos modèles d’e-mail.
 
-Pour accéder aux modèles d’e-mail, cliquez sur **Paramètres** dans le menu principal. La fenêtre **Gestion des modèles ****de message **s’affichera.  Cliquez sur **e-mail**, puis sur **Modèles d’e-mails **pour examiner et gérer vos modèles :
+Pour accéder aux modèles d’e-mail, cliquez sur **Paramètres** dans le menu principal. La fenêtre **Gestion des modèles** de message s’affichera.  Cliquez sur **e-mail**, puis sur **Modèles d’e-mails** pour examiner et gérer vos modèles.
 
 
 ![](./media/image61.png)
@@ -768,9 +768,9 @@ Vous pouvez également inclure le(s) test(s) programmé(s) et l’identifiant/mo
 ![](./media/image62.png)
 
 
-Cliquez sur** **Enregistrer** pour sauvegarder vos modifications.
+Cliquez sur **Enregistrer** pour sauvegarder vos modifications.
 
-Pour consulter le modèle terminé, cliquez sur le bouton** Actualiser l’exemple.**
+Pour consulter le modèle terminé, cliquez sur le bouton **Actualiser l’exemple.**
 
 Ces paramètres s’appliquent à tous les types d’e-mails (inscription, rapport de résultat, rappel, diplôme).
 
@@ -924,7 +924,7 @@ Une fois que vous avez personnalisé vos paramètres, cliquez sur le bouton **En
 
 Paramètres pour la certification
 
-Les **paramètres** pour la certification vous  permettent d’envoyer le diplôme à un candidat, ainsi que  de déterminer qui reçoit une copie du rapport de** certification**, y compris un autre administrateur si vous choisissez de le faire.  Ces options peuvent être définies  au  niveau du compte, du groupe ou de chaque candidat.
+Les **paramètres** pour la certification vous  permettent d’envoyer le diplôme à un candidat, ainsi que  de déterminer qui reçoit une copie du rapport de certification, y compris un autre administrateur si vous choisissez de le faire.  Ces options peuvent être définies  au  niveau du compte, du groupe ou de chaque candidat.
 
 
 ![](./media/image72.png)
@@ -1018,13 +1018,13 @@ Voici un exemple de **description personnalisée du niveau** sur le rapport d’
 
 L’onglet **Aide & Support** contient toutes les informations techniques sur la plateforme et les tests.
 
-Pour accéder à aide & support, sélectionnez cet onglet dans le menu principal.
+Pour y accéder, sélectionnez cet onglet dans le menu principal.
 
 Vous y trouverez les éléments suivants :
 
-- Coordonnées du support technique
-- Vérification du navigateur Internet
-- Tests de configuration technique
+- **Coordonnées du support technique**
+- **Vérification du navigateur Internet**
+- **Tests de configuration technique**
 
 ## Manuel technique
 
@@ -1033,7 +1033,7 @@ Vous y trouverez les éléments suivants :
 
 ### Configuration technique
 
-Il est conseillé de vérifier le navigateur de l’ordinateur avant de réaliser des tests. Pour trouver la version de votre navigateur, cliquez **sur Identifier la version de mon navigateur**
+Il est conseillé de vérifier le navigateur de l’ordinateur avant de réaliser des tests. Pour trouver la version de votre navigateur, cliquez sur **Identifier la version de mon navigateur**
 
 
 ![](./media/image83.png)
