@@ -846,7 +846,7 @@ Sachant que vous devrez également définir le temps supplémentaire dans la fic
 ![](./media/image76.png)
 
 
-### Paramètres pour évaluation : Les paramètres pour évaluation vous permettent de choisir si les candidats peuvent laisser  un commentaire après chaque question, s’ils peuvent répondre aux questions avec « Je ne sais pas » ou si vous souhaitez recevoir un e-mail avec le rapport à la fin de chaque test. Ces options peuvent être définies spécifiquement pour chaque candidat.
+**Paramètres pour évaluation** : Les paramètres pour évaluation vous permettent de choisir si les candidats peuvent laisser  un commentaire après chaque question, s’ils peuvent répondre aux questions avec « Je ne sais pas » ou si vous souhaitez recevoir un e-mail avec le rapport à la fin de chaque test. Ces options peuvent être définies spécifiquement pour chaque candidat.
 
 Une fois que vous avez personnalisé vos paramètres, cliquez sur le bouton **Enregistrer** .
 
