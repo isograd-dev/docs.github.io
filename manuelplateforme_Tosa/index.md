@@ -452,10 +452,10 @@ La plateforme vous fournit un aperçu complet des résultats aux tests. Pour y a
 
 Vous pouvez effectuer des recherches dans les données et filtrer par :
 
-- Groupe
-- Statut du test (terminé, commencé ou en attente)
-- Sessions
-- Période
+- **Groupe**
+- **Statut du test** (terminé, commencé ou en attente)
+- **Sessions**
+- **Période**
 
 Tous les résultats peuvent être exportés dans un fichier Excel.
 
@@ -474,11 +474,11 @@ Vous pouvez filtrer les résultats par groupe et test, sur une période définis
 
 Le tableau de bord vous permet de connaitre;
 
-- Total des tests complétés
-- Statut des tests
-- Temps moyen
-- La répartition des scores
-- Top des candidats
+- **Total des tests complétés**
+- **Statut des tests**
+- **Temps moyen**
+- **La répartition des scores**
+- **Top des candidats**
 
 
 ![](./media/image35.PNG)
