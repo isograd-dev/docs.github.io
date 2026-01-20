@@ -70,7 +70,7 @@ Si vous ne connaissez plus votre mot de passe, cliquez sur **Mot de passe oubli�
 
 # Naviguer sur la plateforme tosa
 
-Le menu principal de la plateforme donne accès aux cinq onglets qui vous permettent de gérer votre compte.
+Le menu principal de la plateforme donne accès aux sept onglets qui vous permettent de gérer votre compte.
 
 
 
@@ -376,7 +376,7 @@ Une fois que vous avez cliqué sur **Envoyer**, l’e-mail d’invitation sera e
 Les actions de groupe vous permettent de :
 
 
-## **Définir un mot de passe pour tous les candidats du groupe**
+**Définir un mot de passe pour tous les candidats du groupe**
 
 
 ![](./media/image27.png)
