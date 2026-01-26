@@ -74,11 +74,17 @@ Le menu principal de la plateforme donne accès aux sept onglets qui vous permet
 Dans ce menu, vous trouverez tout les onglets disponible sur votre compte :
 
 **Compte** : Cet onglet vous permet d'avoir et modifier les info de votre compte, gerer vos administrateur, acces à vos factures et gerer vos alertes crédits
+
 **Candidats** Cet onglet vous permet de gerer vos candidats et groupes
+
 **Resultats** : Ici vous pourrez verifier le statut des tests et telecharger les attestation de passage
+
 **Surveillance** : vous pourrez gerer les incidents lié au test des candidats
+
 **Emails** : Pour la creation, gestion et emeteurs de mails 
+
 **Parametres** : gestion des parametres par defaut, d'evaluation et de certification. Creation de session de passage. Creation de profils de compétences et gestion des descriptions de niveaux
+
 **Aide et support** : Manuel, referentiel pedagogique et documentation sur les API
 
 
