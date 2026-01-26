@@ -71,6 +71,15 @@ Si vous ne connaissez plus votre mot de passe, cliquez sur **Mot de passe oubli�
 # Naviguer sur la plateforme tosa
 
 Le menu principal de la plateforme donne accès aux sept onglets qui vous permettent de gérer votre compte.
+Dans ce menu, vous trouverez tout les onglets disponible sur votre compte :
+
+**Compte** : Cet onglet vous permet d'avoir et modifier les info de votre compte, gerer vos administrateur, acces à vos factures et gerer vos alertes crédits
+**Candidats** Cet onglet vous permet de gerer vos candidats et groupes
+**Resultats** : Ici vous pourrez verifier le statut des tests et telecharger les attestation de passage
+**Surveillance** : vous pourrez gerer les incidents lié au test des candidats
+**Emails** : Pour la creation, gestion et emeteurs de mails 
+**Parametres** : gestion des parametres par defaut, d'evaluation et de certification. Creation de session de passage. Creation de profils de compétences et gestion des descriptions de niveaux
+**Aide et support** : Manuel, referentiel pedagogique et documentation sur les API
 
 
 
@@ -242,7 +251,7 @@ Pour démarrer le processus, vous devez sélectionner **Candidats** dans le menu
 
 L’importation d’un fichier Excel contenant les détails de vos candidats vous permet de télécharger rapidement jusqu’à 500 candidats à la fois pour un groupe défini.
 
-Cliquez sur **Importer un fichier de candidats:**
+Cliquez sur **Importer un fichier de candidats**
 
 
 ![](./media/image18.png)
@@ -253,7 +262,7 @@ Dans la fenêtre Importer un fichier de candidats, procédez comme suit :
 Cliquez sur **Télécharger le modèle de fichier** et téléchargez le fichier sur votre ordinateur.
 Completez le modèle Excel en suivant l’exemple de la première ligne et enregistrez le fichier.
 
-Sous **Fichier à importer**,  cliquez sur **Choisir** **un fichier**, accédez à l’emplacement de votre fichier et sélectionnez-le. Vous devriez maintenant voir le nom du fichier que vous avez importé.
+Sous **Fichier à importer**,  cliquez sur **Choisir un fichier**, accédez à l’emplacement de votre fichier et sélectionnez-le. Vous devriez maintenant voir le nom du fichier que vous avez importé.
 
 Sous **Sélectionner un groupe**, choisissez le(s) groupe(s)  approprié(s) dans le menu déroulant.
 
@@ -269,7 +278,7 @@ Lors du téléchargement du fichier Excel, chacun des candidats recevra un mot d
 
 ### Ajout d’un seul candidat
 
-Pour ajouter un seul candidat, cliquez sur **Ajouter un candidat****.**
+Pour ajouter un seul candidat, cliquez sur **Ajouter un candidat**.
 
 
 ![](./media/image20.png)
@@ -399,7 +408,7 @@ Les actions de groupe vous permettent de :
 
 Créez des groupes de candidats. Chaque candidat peut appartenir à un ou plusieurs groupes.
 
-***Remarque*** le **groupe principal** ne peut pas être supprimé.
+***Remarque*** : le **groupe principal** ne peut pas être supprimé.
 
 Le menu **Groupes** vous aide à organiser vos candidats. Les groupes permettent également de facilement inscrire vos candidats à leurs tests et de générer des rapports de groupe.
 
@@ -411,7 +420,7 @@ Il y a trois niveaux de groupe : les groupes du niveau 1, les groupes de niveau 
 
 ### Ajout d’un nouveau groupe
 
-Cliquez sur le  bouton **Ajouter un ****g****roup****e** sur la page **Gestion des groupes** :
+Cliquez sur le  bouton **Ajouter un groupe** sur la page **Gestion des groupes** :
 
 
 ![](./media/image31.png)
@@ -445,7 +454,7 @@ Cliquez sur **ajouter/supprimer des candidats** pour  rapidement gérer les cand
 # Gestion des résultat
 
 
-La plateforme vous fournit un aperçu complet des résultats aux tests. Pour y accéder, cliquez sur **Résultats **dans le menu principal.
+La plateforme vous fournit un aperçu complet des résultats aux tests. Pour y accéder, cliquez sur **Résultats** dans le menu principal.
 
 
 ![](./media/image33.png)
@@ -935,7 +944,7 @@ Une fois que vous avez personnalisé vos paramètres, cliquez sur le bouton **En
 
 ## Session de passage
 
-Création de sessions de test : *Une session de test est une période de temps pendant laquelle des tests doivent être passés. Les tests liés à une session ne seront pas accessibles en dehors de la session de test programmée*. La création d’une session vous permettra de définir une heure de début et de fin. Ensuite, lorsque vous inscrivez un candidat à un test, vous pourrez lier le test à une session définie.
+Création de sessions de test : Une session de test est une période de temps pendant laquelle des tests doivent être passés. Les tests liés à une session ne seront pas accessibles en dehors de la session de test programmée. La création d’une session vous permettra de définir une heure de début et de fin. Ensuite, lorsque vous inscrivez un candidat à un test, vous pourrez lier le test à une session définie.
 
 Pour créer une session de test, cliquez sur **Paramètres**, puis sur **Sessions de passage**, puis sur **Créer une session**.
 
