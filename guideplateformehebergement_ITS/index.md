@@ -80,13 +80,12 @@ Ce menu permet :
 
 ###  Gestion des jeux de questions
 
-Les Jeux de question permettent de
-regrouper les questions sont un même nom, et de les retrouver plus
-facilement sur la plateforme. C'est un ensemble de questions qui peut
-être utilisé pour filtrer les questions dans la page administration des
-questions.
+Voici la version corrigée et fluide de ton texte :
 
-En cliquant sur « Gestion des Jeux de questions », on arrive sur une
+Les **Jeux de questions** permettent de regrouper des questions sous un même nom et de les retrouver plus facilement sur la plateforme. Il s’agit d’un ensemble de questions qui peut être utilisé pour filtrer le contenu dans la page d’administration des questions.
+
+
+En cliquant sur « Gestion des jeux de questions », on arrive sur une
 page qui permet d'ajouter un jeu de questions, et de l'exporter vers
 Excel. A partir de cette page vous pouvez aussi ajouter des jeux de
 questions.
@@ -115,7 +114,7 @@ Plusieurs encadrés sont à remplir pour ajouter un jeu de question :
     par le jeu de question.
 
 -   Archivé : cela est utile si vous souhaitez archiver votre jeu de
-    question, si vous ne voulez plus voir le jeu de question.
+    question, si vous ne voulez plus le voir.
 
 -   Possibilité de mettre un commentaire : il est possible d'ajouter un
     commentaire, par rapport au jeu de question.
@@ -123,8 +122,8 @@ Plusieurs encadrés sont à remplir pour ajouter un jeu de question :
 -   Cliquer sur « Attribuer ce jeu à des questions » : mène à une page
     qui permet d'enregistrer les modifications.
 
--   Description utilisée dans les rapports : Possibilité de mettre une
-    description qui sera utilisée dans les rapports .
+-   Description utilisée dans les rapports : possibilité de mettre une
+    description qui sera utilisée dans les rapports.
 
 ### Gestion des domaines
 
@@ -152,7 +151,7 @@ droite, pour modifier le domaine.
 ![](./media/image83.png)
 
 Vous pouvez modifier le domaine via la page qui s'affiche, et qui
-présente quatre parties :
+présente cinq parties :
 
 -   Description : possibilité de choisir la langue de description, le
     nom et la description textuelle. Cela permet de définir à quoi
@@ -161,12 +160,12 @@ présente quatre parties :
 -   Caractéristiques générales : cette partie donne la possibilité de
     choisir le nombre de niveaux qu'il y aura par domaines.
 
--   Description des niveaux : Possibilité de définir dans la langue de
+-   Description des niveaux : possibilité de définir dans la langue de
     son choix, les niveaux de compétence. Cela permet de définir à quoi
     renvoie chaque niveau de compétence. Pour savoir où se situe le
     candidat.
 
--   Recommandations pour progresser dans la langue de son choix : Cela
+-   Recommandations pour progresser dans la langue de son choix : cela
     permet d'expliquer les recommandations qui permettent de passer au
     niveau supérieur. C'est utile pour la progression du candidat.
 -   Associer les sujets
@@ -204,7 +203,7 @@ Une aide visuelle est une image ou un document inséré dans une question ou une
 Pour créer une aide visuelle il faut cliquer
 sur Ajouter une aide visuelle. Une fenêtre s'ouvre dans laquelle vous avez la possibilité de choisir le sujet dans
 lequel apparaîtra l'aide visuelle, la langue et le type d'aide visuelle
-que vous souhaitez (document de référence, image affichée dans le texte ou image affiche par un clic, sous une loupe). Ainsi que de nommer votre aide visuelle. De plus,
+que vous souhaitez (document de référence, image affichée dans le texte ou image affichée par un clic, sous une loupe), ainsi que de nommer votre aide visuelle. De plus,
 vous pouvez aussi enregistrer et modifier le fichier en question.
 
 Voici une capture d'écran de la page qui répertorie les différentes
@@ -271,11 +270,11 @@ Ce menu permet les actions suivantes :
 -   Ajouter une nouvelle question: cliquez sur **"Ajouter une question"** puis complétez les éléments
 suivants :
 
-    -   Sélectionner le sujet
+        -  le sujet
 
-    -   Sélectionner la langue
+        -  la langue
 
-    -   Sélectionner le type de réponse (typologie de questions)
+        -  le type de réponse (typologie de questions)
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le
 contenu généré par l'IA peut être
@@ -285,7 +284,7 @@ incorrect.](./media/image66.png)
 
 -   Imprimer (visualiser en format PDF) l'ensemble des questions sélectionnées
 
--   Exporter vos questions vers un fichier Excel
+-   Exporter les questions vers un fichier Excel
 
 ### Les filtres
 
@@ -334,7 +333,9 @@ Informations du tableau des questions :
 -   Type (typologie de question)
 
 -   Passée (nombre de fois où la question a été passée par des
-    candidats) Succès (taux de succès des candidats à cette question)
+    candidats) 
+
+-   Succès (taux de succès des candidats à cette question)
 
 -   Niveau de difficulté de la question (Facile, Moyen, Difficile \> niveau défini par le créateur de la question)
 
@@ -369,9 +370,7 @@ l'écran en mode Edition :
 #### Supprimer une question
 
 Pour supprimer une question, il suffit de se positionner sur cette
-dernière dans la liste des questions de la page
-
-d'accueil. Quatre boutons d'action apparaissent :
+dernière dans la liste des questions de la page d'accueil. Quatre boutons d'action apparaissent :
 ![](./media/image74.png)
 
 Cliquer sur « Supprimer ». La page d'édition de la question s'ouvre et
@@ -406,9 +405,9 @@ incorrect.](./media/image55.png)
 
 Il est possible de créer des questions comportant :
 
-* une seule zone à cliquer,
+* une seule zone à cliquer;
 
-* plusieurs zones correctes, dont le candidat doit sélectionner une seule pour valider la question,
+* plusieurs zones correctes, dont le candidat doit sélectionner une seule pour valider la question;
 
 * plusieurs zones attendues, que le candidat doit toutes cliquer pour valider la question.
 
@@ -533,7 +532,7 @@ perdue.**
 **NB** : Pour une résolution optimale, **les images doivent avoir une
 résolution 1080 x 500.** 
 
-##### Explications concernant la solution
+#### Explications concernant la solution
 
 Ce champ n'est pas obligatoire et doit être renseigné uniquement si une
 solution doit être présentée au candidat (pendant ou après le test). Le
@@ -649,7 +648,8 @@ incorrect.](./media/image62.png)
 
 **Texte à trous avec listes**
 
-L'onglet Editeur de sélecteurs permet d'ajouter les différentes propositions de réponse qui seront visibles par le candidat. L'option correcte est indiquée par la case bleue.
+L'onglet Editeur de sélecteurs permet d'ajouter les différentes propositions de réponse qui seront visibles par le candidat. Cochez la réponse correcte.
+
 ![Une image contenant texte, capture d'écran, logiciel Le contenu généré
 par l'IA peut être
 incorrect.](./media/image159.png)
@@ -686,15 +686,15 @@ La première section des paramètres inclut :
 
 - Si vous voulez que votre test soit actif ou inactif
 
--   L'Algorithme des questions :
+### L'Algorithme des questions :
 
-        -   Séquentiel ordonné
+-   Séquentiel ordonné: les questions sont posées dans le même ordre pour tous les candidats. Aucune randomisation n’est appliquée : la session suit strictement l’ordre défini par l’auteur du test.
 
-        -   Séquentiel au hasard
+-   Séquentiel au hasard: les mêmes questions sont posées, mais dans un ordre aléatoire. Tous les candidats reçoivent donc les mêmes questions, mais dans un ordre différent.
 
-        -   Séquentiel au hasard avec jeu de questions
+-   Séquentiel au hasard avec jeu de questions: un nombre défini de questions est posé aléatoirement parmi un jeu de questions. Chaque candidat peut donc recevoir un ensemble différent de questions, sélectionnées dans ce jeu selon le nombre prévu.
 
-        -   Questions par domaine
+ -   Questions par domaine: un nombre défini de questions est tiré au hasard pour chaque domaine du test.
 
 
 -   Sélection de questions : en appuyant sur **Choisir** une nouvelle
@@ -729,7 +729,76 @@ et appuyez sur **Enregistrer.**
 Description générée
 automatiquement](./media/image96.png)
 
-- Type de résultat : depuis la liste déroulante vous choisissez le type de rapport de compétences 
+### Rapports de compétences
+
+
+Depuis la liste déroulante vous choisissez le type de **rapport de compétences**. 
+
+L’en-tête du rapport est personnalisable avec le **logo** du client.  
+
+De plus, un logo spécifique peut être attribué à chaque sujet, permettant ainsi une identification visuelle distincte au sein du rapport. 
+
+Le **résultat global** du test peut être présenté sous forme graphique. 
+Il est possible de personnaliser le message affiché à côté du résultat obtenu (par exemple pour indiquer le niveau atteint ou un commentaire spécifique). 
+
+Le score global peut être défini sous plusieurs formes : 
+
+- Score ramené sur 1000, 100, ou toute autre échelle définie ; 
+
+- Nombre de bonnes réponses ; 
+
+- Nombre de bonnes réponses et taux de réussite ; 
+
+- Somme des points obtenus ; 
+
+- Somme des points ramenée sur une échelle de 0 à 100 ; 
+
+ 
+![Une image contenant texte, capture d'écran, logiciel, Page web
+Description générée
+automatiquement](./media/image180.png)
+
+Les **niveaux de performance** peuvent être affichés par jeu de questions, par domaine ou par sujet. 
+
+Une description peut être ajoutée dans le rapport pour chaque domaine de compétences.
+
+![Une image contenant texte, capture d'écran, logiciel, Page web
+Description générée
+automatiquement](./media/image181.png)
+
+La **liste des questions** peut présenter les compétences évaluées le temps consacré par le candidat à chaque question, ainsi que le score obtenu par question.  
+
+
+![Une image contenant texte, capture d'écran, logiciel, Page web
+Description générée
+automatiquement](./media/image182.png)
+
+En fonction des réponses correctes et incorrectes du candidat, il est possible d'afficher les compétences maîtrisées et celles à améliorer. 
+
+![Une image contenant texte, capture d'écran, logiciel, Page web
+Description générée
+automatiquement](./media/image183.png)
+
+
+
+Pour les questions ouvertes, le rapport permet de visualiser l’ensemble des réponses fournies par le candidat, ainsi que l’analyse générée par l’IA. 
+
+![Une image contenant texte, capture d'écran, logiciel, Page web
+Description générée
+automatiquement](./media/image185.png)
+
+
+Pour les questions à notation manuelle la grille d’évaluation est affichée, accompagnés des commentaires et de la note attribuée par le correcteur.
+![Une image contenant texte, capture d'écran, logiciel, Page web
+Description générée
+automatiquement](./media/image186.png)
+
+
+Il est possible de représenter graphiquement le positionnement du candidat sur une évaluation donnée. 
+
+![Une image contenant texte, capture d'écran, logiciel, Page web
+Description générée
+automatiquement](./media/image184.png)
 
 ### Options de passage du test
 
@@ -743,7 +812,7 @@ incorrect.](./media/image97.png)
 
 ![](./media/image6.png) Afficher le bouton « Ecouter le texte » : en activant cette option, le candidat pourra écouter l'énoncé de la question.
 
-### Nom et description du test
+## Nom et description du test
 
 ![Une image contenant texte, Police, logiciel, capture d'écran
 Description générée
@@ -755,7 +824,7 @@ apparaîtra dans la liste de vos tests pour l'inscription du candidat,
 dans les invitations envoyées au candidat par email pour leur connexion
 au test, ainsi que dans les rapports de compétences.
 
-### Gestion du temps
+## Gestion du temps
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être incorrect.](./media/image98.png)
@@ -766,7 +835,7 @@ durée pour le test, laissez le champs vide.
 
 
 
-### Messages de début et de fin de test
+## Messages de début et de fin de test
 
 Ces messages seront visibles par le candidat. En appuyant sur
 **Editer**, un éditeur permettant la personnalisation du message du
@@ -856,9 +925,11 @@ incorrect.](./media/image107.png)
 
 Après avoir créé vos tests, vous pourrez procéder à l\'ajout de vos candidats. Il existe deux options pour ajouter des candidats à la plateforme.
 
-##### Ajout individuel 
+### Candidats
 
-Sur le menu principal, vous avez l'option "Candidats". Pour ajouter un seul candidat, cliquez sur "Ajouter un candidat".
+#### Ajouter un candidat
+
+Appuyez sur Ajouter un candidat.
 
 ![Une image contenant texte, capture d'écran, logiciel, Police Le contenu généré par l'IA peut être incorrect.](./media/image109.png)
 
@@ -868,13 +939,11 @@ L'identifiant du candidat sera son adresse e-mail. Deux candidats ne peuvent pas
 
 Chaque candidat appartient à au moins un groupe. Le groupe par défaut est le groupe principal. Un candidat peut appartenir à plusieurs groupes à la fois.
 
-##### Ajout d'un groupe de candidats
-
 ![Une image contenant texte, capture d'écran, logiciel, Police Le contenu généré par l'IA peut être incorrect.](./media/image161.png) 
 
-*L'importation d'un fichier Excel contenant les détails de vos candidats vous permet de télécharger rapidement jusqu'à 500 à la fois pour un groupe défini.*
 
-Cliquez sur **importer un fichier de candidats**.
+
+#### Importer un fichier de candidats.
 
 Dans la fenêtre importer in fichier de candidats, procédez comme suit :
 
@@ -904,8 +973,9 @@ passe pour tout les candidats en cliquant sur actions sur le groupe,
 puis sur **attribuer un mot de passe** temporaire à tous les candidats
 du groupe.
 
+*L'importation d'un fichier Excel contenant les détails de vos candidats vous permet de télécharger rapidement jusqu'à 500 à la fois pour un groupe défini.*
 
-##### Inscrire un/des candidat(s) à un test
+#### Inscrire un/des candidat(s) à un test
 
 Pour inscrire les candidats à un test, cliquez sur **Candidats** dans le
 menu principal. À droite de l'adresse e-mail du candidat, cliquez sur
@@ -920,9 +990,6 @@ candidat.
 
 Cliquez sur **Inscrire à un test**
 
-![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image112.png)
 
 Choisissez la langue, le sujet, le type de test et la session (le cas
 échéant) pour le candidat. Vous pourrez rechercher un test particulier à
@@ -951,31 +1018,9 @@ incorrect.](./media/image115.png)
 Si vous supprimez un test en attente, le(s) crédit(s) de test est(sont)
 automatiquement retourné(s) sur votre compte.
 
-##### Fonctionnalité Anti-Triche (mode plein écran)
-Lorsque ce mode est activé, les candidats ne peuvent pas accéder à
-d'autres applications ou ressources en ligne pendant la
-durée de leur test. 
-![Une image contenant texte, capture d'écran, logiciel,
-Page web](./media/image116.png)
-
-Si un candidat quitte le mode plein écran ou tente d'ouvrir un nouvel
-onglet, le système l'invitera à revenir à la page du test.
-
-S'il ne se remet pas en mode plein écran sur son test dans les 10
-secondes qui suivent, il sera automatiquement déconnecté de son test.
-
-La partie Surveillance est l’espace où on peut avoir une vue d'ensemble sur tous les tests surveillés, surtout ceux surveillés à distance en filtrant parmi les types de surveillance. L’interface liste chaque session avec son candidat, son test, la date de passage et le statut de la surveillance, ce qui permet de repérer tout de suite ce qui est en attente, ou validé. On peut filtrer par période, type de surveillance ou incident pour naviguer facilement dans les tests.
-
-![Une image contenant texte, Police, ligne, capture d'écran Le contenu
-généré par l'IA peut être
-incorrect.](./media/image162.png)
 
 
-![Une image contenant texte, Police, ligne, capture d'écran Le contenu
-généré par l'IA peut être
-incorrect.](./media/image163.png)
-
-##### Envoi d'invitation aux tests
+#### Envoi d'invitation aux tests
 
 Vous avez la possibilité d'envoyer directement depuis la plateforme des
 e-mails pour informer vos candidats des tests disponibles sur leur
@@ -1000,7 +1045,7 @@ web](./media/image118.png)
 Une fois que vous avez cliqué sur **Envoyer**, l'e-mail d'invitation
 sera envoyé et le candidat pourra accéder au(x) test(s).
 
-##### Actions sur le groupe
+#### Actions sur le groupe
 
 Les actions sur le groupe vous permettent d'effectuer des tâches pour
 tous les candidats d'un même groupe, comme par exemple :
@@ -1022,7 +1067,13 @@ tous les candidats d'un même groupe, comme par exemple :
 Les deux tâches principales effectuées au niveau du groupe sont
 l'inscription du groupe à un test et l'envoi d'e-mails d'inscription.
 
-##### Inscrire un groupe à un test
+##### Définir un mot de passe temporaire pour tous les candidats du groupe
+
+![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image122.png)
+
+##### Inscire tous les candiats sélectionnés à un test
 
 Utilisez l'action **Inscrire tous les candidats du groupe à un test**
 pour gagner du temps et vous assurer que tous les candidats d'un groupe
@@ -1034,12 +1085,15 @@ tous les candidats du groupe à un test.**
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
-incorrect.](./media/image119.png)
+incorrect.](./media/image179.png)
 
 Vous sélectionnerez ensuite la langue, le sujet, le type de test et la
 session. Cliquez ensuite sur **Inscrire** ou **Inscrire et fermer.**
+  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
+contenu généré par l'IA peut être
+incorrect.](./media/image120.png)
 
-##### Envoi d'e-mails d'invitation à un groupe
+##### Envoyer les emails d'inscription à tous les candidats sélectionnés
 
 Une fois que vous avez inscrit le groupe à un test, il est temps
 d'envoyer l'e-mail d'invitation. Pour cela, vous pouvez utiliser
@@ -1058,55 +1112,32 @@ incorrect.](./media/image119.png)
 Une fois que vous avez cliqué sur **Envoyer**, l'e-mail d'invitation
 sera envoyé et les candidats pourront accéder au(x) test(s).
 
-##### Autres actions
-
-Les actions de groupe vous permettent de :
-
--   **Définir un mot de passe pour tous les candidats du groupe**
-
-![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image122.png)
-
--   **Inscire tous les candiats sélectionnés à un test**
-  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image120.png)
-
--   **Envoyer les emails d'inscription à tous les candidats sélectionnés**
   ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
 incorrect.](./media/image121.png)
 
--   **Supprimer les tests non passés.** Si vous supprimez les tests à
+##### Supprimer les tests non passés. 
+Si vous supprimez les tests à
     passer, vous serez alors recrédités automatiquement
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
 incorrect.](./media/image123.png)
 
--   **Définir des options d'évaluation pour l'ensemble des candidats du
-    groupe.** Cela vous permet de personnaliser les options d'évaluation
-    pour un groupe défini
+##### Définir des options d'évaluation pour l'ensemble des candidats du groupe. 
+
+Cela vous permet de personnaliser les options d'évaluation pour un groupe défini
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
 incorrect.](./media/image124.png)
 
--    **Supprimer les candidats sélectionnés**
+##### Supprimer les candidats sélectionnés
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
 incorrect.](./media/image176.png)
 
--  **Ajouter les candidats sélectionnés à un groupe**
-  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image177.png)
 
--  **Générer des badges pour les candidats sélectionnés**
-  ![Une image contenant texte, capture d'écran, logiciel, Page web Le
-contenu généré par l'IA peut être
-incorrect.](./media/image178.png)
 
 ## Résultats
 
@@ -1134,7 +1165,7 @@ Vous pouvez effectuer des recherches dans les données et filtrer par :
 Tous les résultats peuvent être exportés dans un fichier Excel.
 
 ### Tableau de bord
-Dans cette partie, en fonction du groupe et du test choisi vous avez accès au nombre total des test complétés, au temps moyen passé, au statut des tests, à la répartition des scores ainis qu'au classement des meilleurs scores des 10 premiers candidats. 
+Dans cette partie, en fonction du groupe et du test choisis, vous avez accès au nombre total de tests complétés, au temps moyen passé, au statut des tests, à la répartition des scores, ainsi qu’au classement des dix meilleurs candidats.
 
 ![Une image contenant texte, capture d'écran, Police, logiciel Le
 contenu généré par l'IA peut être
@@ -1153,7 +1184,7 @@ Une fois les résultats du candidat chargés, cliquez sur l'icône
 **Analyse**.
 
 La page **Déroulement du test** s'ouvrira et l'analyse générale du test
-du candidat sera présentée,
+du candidat sera présentée.
 
 Pour un aperçu et une analyse plus approfondis, cliquez sur **Détails du
 test** et sélectionnez **Classement** dans le menu déroulant. Vous
@@ -1188,8 +1219,15 @@ réponse du candidat, et la bonne réponse attendue.
 généré par l'IA peut être
 incorrect.](./media/image174.png)
 
+## Surveillance
+
+L'onglet Surveillance vous permet d'acceder aux tests surveillés via l'outil Isograd Proctoring. Depuis cette page il est possible de valider ou d'invalider les conditions de passage des tests au regard des éléments enregistrés.
+
+
 
 ## Emails
+
+Dans l’onglet Emails, vous pouvez créer un modèle d’email (de type invitation ou relance) ou ajouter une bannière personnalisée à vos envois.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
@@ -1227,8 +1265,7 @@ Paramètres généraux
 Les autres paramètres qui peuvent être modifiés sont liés au temps. Vous
 pouvez afficher les dates et heures au format américain ou européen, et
 sélectionner votre fuseau horaire. Vous pouvez également définir le
-temps supplémentaire alloué pour les personnes en situation d'handicap.\
-\
+temps supplémentaire alloué pour les personnes en situation d'handicap.
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
 incorrect.](./media/image166.png)
@@ -1245,7 +1282,7 @@ bouton **Enregistrer** .
 
 Une session de passage est une période de temps pendant laquelle des
 tests doivent être passés. Les tests liés à une session ne seront pas
-accessibles en dehors de la session de test programmée.
+accessibles en dehors de la session de test(s) programmée.
 
 La création d'une session vous permettra de définir une heure de début
 et de fin. Ensuite, lorsque vous inscrivez un candidat à un test, vous
@@ -1268,11 +1305,9 @@ puissent pas accéder au test en dehors de l'heure prévue. Le code de
 session n'est jamais envoyé par e-mail, il convient de le fournir au(x)
 candidat(s) en amont du test.
 
-![Une image contenant texte, capture d'écran, nombre, Police Le contenu
-généré par l'IA peut être
-incorrect.](./media/image137.png)
 
-### Profils
+
+### Profils de compétences
 
 Les **Profils** vous permettent de définir les résultats attendus pour
 des métiers spécifiques.
@@ -1291,16 +1326,13 @@ Dans le menu principal, sélectionnez **Paramètres**, puis cliquez sur
 par l'IA peut être
 incorrect.](./media/image168.png)
 
-Pour modifier le niveau attendu des sous-compétences d'un test, placez
-votre curseur sur le profil et cliquez sur l'icône **Modifier les
-niveaux de compétence** .
+Voici la version corrigée :
 
-![Une image contenant texte, capture d'écran, Police, conception Le
-contenu généré par l'IA peut être
-incorrect.](./media/image138.png)\
-![Une image contenant texte, Police, ligne, nombre Le contenu généré par
-l'IA peut être
-incorrect.](./media/image139.png)
+> Pour chaque profil, choisissez le sujet de maîtrise et indiquez, de 1 à 5, le niveau de compétences requis pour chaque domaine.
+
+![Une image contenant texte, capture d'écran, Police Le contenu généré
+par l'IA peut être
+incorrect.](./media/image187.png)
 
 ### Descriptions de niveaux personnalisés
 
@@ -1308,9 +1340,8 @@ Vous pouvez modifier la description du niveau sur chaque test
 d'évaluation, en fonction de la famille de sujets du test.
 
 Pour accéder à cette fonctionnalité, sélectionnez le menu Paramètres,
-cliquez sur **Descriptions de niveaux personnalisées**, puis sur **Créer
-une description de niveau.\
-**
+cliquez sur **Descriptions de niveaux personnalisées**, puis sur Créer
+une description de niveau. 
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
 par l'IA peut être
@@ -1323,9 +1354,7 @@ la famille de sujets, puis cliquez sur **Enregistrer**.
 par l'IA peut être
 incorrect.](./media/image149.png)
 
-Dans la fenêtre **Gestion des** **descriptions de niveaux
-personnalisées**, vous pouvez saisir des messages pour chaque niveau de
-compétence.
+Dans la fenêtre **Gestion des descriptions de niveaux personnalisées**, vous pouvez saisir des messages pour chaque niveau de compétence.
 
 Une fois que vous avez terminé les messages pour chaque niveau, cliquez
 sur **Enregistrer**. Ces commentaires apparaîtront sur les rapports des
@@ -1337,7 +1366,7 @@ candidats, en fonction du niveau de compétence du candidat.
 L'onglet **Aide & Support** contient toutes les informations techniques
 sur la plateforme et les tests.
 
-Pour y accéder, sélectionnez **Aide** **& Support** dans le menu
+Pour y accéder, sélectionnez **Aide & Support** dans le menu
 principal.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
@@ -1358,12 +1387,11 @@ Configuration technique
 
 Il est conseillé de vérifier le navigateur de l'ordinateur (s) avant
 d'exécuter des tests. Pour trouver la version de votre navigateur,
-cliquez **sur Identifier la version de mon navigateur.**
+cliquez sur **Identifier la version de mon navigateur.**
 
 ![Une image contenant texte, Police, capture d'écran Le contenu généré
 par l'IA peut être
-incorrect.](./media/image152.png)**\
-**
+incorrect.](./media/image152.png)
 
 Test de vérification
 
