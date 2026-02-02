@@ -63,7 +63,10 @@ Ce menu permet de gérer l'intégralité de la base de questions.
 
 **Le process de gestion des questions est détaillé dans le chapitre
 « Administration des questions ».**
+
 Ce menu permet aussi la gestion des Echelles de réponses.
+
+![](./media/image189.png)
 
 
 
