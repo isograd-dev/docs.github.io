@@ -63,6 +63,9 @@ Ce menu permet de gérer l'intégralité de la base de questions.
 
 **Le process de gestion des questions est détaillé dans le chapitre
 « Administration des questions ».**
+Ce menu permet aussi la gestion des Echelles de réponses.
+
+
 
 ## Menu « Catégories »
 
@@ -570,9 +573,9 @@ Il est aussi possible d’ajouter un fichier de commentaire.
 
 * Prompt de calcul : permet de déterminer la méthode de calcul du score de la question et de la générer automatiquement à l’aide de l’IA.
 
-**Echelle de réponse**
+**Echelles de réponse**
 
-Vrai/ Faux
+Vrai/ Faux (Oui / Non, Correct / Incorrect, Conforme / Non conforme, etc.)
 
 
 ![Une image contenant texte, capture d'écran, nombre, Police Le contenu
@@ -580,6 +583,13 @@ généré par l'IA peut être
 incorrect.](./media/image56.png)
 
 * Prompt de calcul : permet de déterminer la méthode de calcul du score de la question et de la générer automatiquement à l’aide de l’IA.
+
+Afin d’ajouter de nouvelles échelles de réponses (ex. : 1, 2, 3, oui / non, etc.), accédez à la page principale puis au menu Questions > Échelles de réponses et sélectionnez Ajouter une échelle de réponses.
+Après enregistrement, l’échelle créée sera disponible dans la liste lors de la modification d’une question.
+
+![Une image contenant texte, capture d'écran, nombre, Police Le contenu
+généré par l'IA peut être
+incorrect.](./media/image188.png)
 
 **Cliquer sur zone**
 
@@ -620,7 +630,7 @@ par l'IA peut être
 incorrect.](./media/image45.png)
 
 
-**Notation manuelle**
+**Notation manuelle de fichier(s), audio, ou zone(s) de texte**
 
 L'onglet Détails de soumissions permet de définir le type de réponse attendue par le candidat (saisie de texte, soumission de fichier ou enregistrement audio). 
 
