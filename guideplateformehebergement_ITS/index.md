@@ -654,6 +654,8 @@ Dans l’onglet Zones de saisie, vous définissez le type de correction pour cha
 généré par l'IA peut être
 incorrect.](./media/image53.png)
 
+![](./media/image191.png)
+
 
 **Enregistrement évalué par l'IA**
 
