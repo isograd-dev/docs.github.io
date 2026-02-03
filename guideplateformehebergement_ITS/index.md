@@ -637,7 +637,7 @@ incorrect.](./media/image45.png)
 
 L'onglet Détails de soumissions permet de définir le type de réponse attendue par le candidat (saisie de texte, soumission de fichier ou enregistrement audio). 
 
-(./media/image190.png)
+![](./media/image190.png)
 
 L’onglet Grille d’évaluation permet d’ajouter des critères et d’attribuer un nombre de points par critère. Ces éléments sont visibles par les correcteurs qui les utilisent pour évaluer la question et attribuer une note,  une fois le test passé.
 
