@@ -55,6 +55,8 @@ Depuis cette page, il est possible d’accéder aux principales rubriques de la 
 
 # Onglet « Gestion des questions »
 
+Cet onglet permet la création et l'intégration du contenu pédagogique: sujets, domaines de compétences, jeux de questions, questions et tests. 
+
 ![](./media/image11.png)
 
 ## Menu « Questions » 
@@ -64,7 +66,7 @@ Ce menu permet de gérer l'intégralité de la base de questions.
 **Le process de gestion des questions est détaillé dans le chapitre
 « Administration des questions ».**
 
-Ce menu permet aussi la gestion des Echelles de réponses.
+Ce menu permet aussi l'ajout, la modification ou la supression des **Echelles de réponses**.
 
 ![](./media/image189.png)
 
@@ -86,15 +88,12 @@ Ce menu permet :
 
 ###  Gestion des jeux de questions
 
-Voici la version corrigée et fluide de ton texte :
-
 Les **Jeux de questions** permettent de regrouper des questions sous un même nom et de les retrouver plus facilement sur la plateforme. Il s’agit d’un ensemble de questions qui peut être utilisé pour filtrer le contenu dans la page d’administration des questions.
 
 
 En cliquant sur « Gestion des jeux de questions », on arrive sur une
-page qui permet d'ajouter un jeu de questions, et de l'exporter vers
-Excel. A partir de cette page vous pouvez aussi ajouter des jeux de
-questions.
+page qui permet d'ajouter un jeu de questions et de l'exporter vers
+Excel. 
 
 ![](./media/image79.png)
 
@@ -104,32 +103,31 @@ Ajouter un jeu de questions :
 contenu généré par l'IA peut être
 incorrect.](./media/image80.png)
 
-Pour ajouter un jeu de question, cliquer sur « Ajouter un jeu de
-question ». Cela vous redirige vers la page « Mettre à jour un jeu de
+Le bouton « Ajouter un jeu de
+questions» vous redirige vers la page « Mettre à jour un jeu de
 questions ».
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
 incorrect.](./media/image81.png)
 
-Plusieurs encadrés sont à remplir pour ajouter un jeu de question :
+Plusieurs encadrés sont à remplir pour ajouter un jeu de questions :
 
--   Le nom : comment sera définit le jeu de question.
+-   Le nom : comment sera définit le jeu de questions.
 
--   Les sujets, séparés par un tiret : les différents sujets concernés
-    par le jeu de question.
+-   Les ID des sujets, séparés par un tiret : les différents sujets concernés
+    par le jeu de questions.
 
 -   Archivé : cela est utile si vous souhaitez archiver votre jeu de
     question, si vous ne voulez plus le voir.
 
--   Possibilité de mettre un commentaire : il est possible d'ajouter un
-    commentaire, par rapport au jeu de question.
+-   Possibilité de mettre un commentaire.
 
 -   Cliquer sur « Attribuer ce jeu à des questions » : mène à une page
     qui permet d'enregistrer les modifications.
 
 -   Description utilisée dans les rapports : possibilité de mettre une
-    description qui sera utilisée dans les rapports.
+    description qui sera utilisée dans les rapports de compétences.
 
 ### Gestion des domaines
 
@@ -174,7 +172,8 @@ présente cinq parties :
 -   Recommandations pour progresser dans la langue de son choix : cela
     permet d'expliquer les recommandations qui permettent de passer au
     niveau supérieur. C'est utile pour la progression du candidat.
--   Associer les sujets
+
+-   Associer les sujets.
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
@@ -207,19 +206,11 @@ Une aide visuelle est une image ou un document inséré dans une question ou une
 
 
 Pour créer une aide visuelle il faut cliquer
-sur Ajouter une aide visuelle. Une fenêtre s'ouvre dans laquelle vous avez la possibilité de choisir le sujet dans
+sur **Ajouter une aide visuelle**. Une fenêtre s'ouvre dans laquelle vous pouvez choisir le sujet dans
 lequel apparaîtra l'aide visuelle, la langue et le type d'aide visuelle
-que vous souhaitez (document de référence, image affichée dans le texte ou image affichée par un clic, sous une loupe), ainsi que de nommer votre aide visuelle. De plus,
+que vous souhaitez créer (document de référence, image affichée dans le texte ou image affichée par un clic, sous une loupe), ainsi que de nommer votre aide visuelle. De plus,
 vous pouvez aussi enregistrer et modifier le fichier en question.
 
-Voici une capture d'écran de la page qui répertorie les différentes
-aides visuelles. Cette page vous permet de gérer les aides visuelles.
-Vous pouvez par exemple les modifier en cliquant sur l'icône « Editer »
-à droite.
-
-![Une image contenant texte, capture d'écran, nombre, logiciel Le
-contenu généré par l'IA peut être
-incorrect.](./media/image90.png)
 
 ![Une image contenant texte, capture d'écran, nombre, Police Le contenu
 généré par l'IA peut être
@@ -276,11 +267,11 @@ Ce menu permet les actions suivantes :
 -   Ajouter une nouvelle question: cliquez sur **"Ajouter une question"** puis complétez les éléments
 suivants :
 
-        -  le sujet
+    -  le sujet
 
-        -  la langue
+    -  la langue
 
-        -  le type de réponse (typologie de questions)
+    -  le type de réponse (typologie de questions)
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le
 contenu généré par l'IA peut être
@@ -303,7 +294,7 @@ des questions :
 
 -   Par sujet
 
--   Par jeu de question
+-   Par jeu de questions
 
 -   Par langue
 
@@ -328,26 +319,26 @@ incorrect.](./media/image22.png)
 Informations du tableau des questions :
 
 -   Identifiant de la question (identification qui apparaîtra dans le
-    rapport de compétences si cette option est sélectionnée par l'administrateur)
+    rapport de compétences si cette option est sélectionnée par l'administrateur); 
 
--   Sujet
+-   Sujet; 
 
 -   Titre de la question (le titre de la question correspond
     généralement à la compétence testée car elle apparaît dans le
-    rapport de compétences)
+    rapport de compétences);
 
--   Type (typologie de question)
+-   Type (typologie de question);
 
 -   Passée (nombre de fois où la question a été passée par des
-    candidats) 
+    candidats);
 
--   Succès (taux de succès des candidats à cette question)
+-   Succès (taux de succès des candidats à cette question); 
 
--   Niveau de difficulté de la question (Facile, Moyen, Difficile \> niveau défini par le créateur de la question)
+-   Niveau de difficulté de la question (Facile, Moyen, Difficile \> niveau défini par le créateur de la question);
 
--   Statut de la question
+-   Statut de la question (en rédaction, à corriger, à traduire, à vérifier ou prête pour les tests, sous le statut « production »);
 
--   Personne concernée (personne devant intervenir sur la question)
+-   Personne concernée (personne devant intervenir sur la question).
 
 ### Boutons des actions possibles sur les questions
 
@@ -357,7 +348,7 @@ Dupliquer une question permet de « cloner » une question ; cela fait
 gagner du temps si les questions sont de mêmes typologies par exemple.
 Pour dupliquer une question, il suffit de se positionner sur la question
 qu'on souhaite dupliquer dans la liste des questions de la page
-d'accueil
+d'accueil. 
 
 Cliquer sur « Dupliquer ». La fenêtre de dialogue « Dupliquer une
 question » apparaît. Choisir le sujet et la langue puis cliquer sur «
@@ -368,8 +359,7 @@ qu'il faut corriger avant d'enregistrer.
 multimédia Le contenu généré par l'IA peut être
 incorrect.](./media/image72.png)
 
-Il est aussi possible de dupliquer une question via le ruban en haut de
-l'écran en mode Edition :
+La même fonctionnalité existe également depuis le mode aperçu de la question ou depuis le mode édition :
 
 ![](./media/image73.png)
 
@@ -385,7 +375,7 @@ supprimer » pour confirmer la suppression.
 
 #### Voir la question en Mode Aperçu 
 
-**Les QCM**
+**QCM**
 
 ![Une image contenant texte, Appareils électroniques, capture d'écran,
 Page web Le contenu généré par l'IA peut être
@@ -400,14 +390,13 @@ Il existe trois types de QCM possibles :
 
 * QCM « une parmi n », où le candidat doit choisir une seule bonne réponse parmi plusieurs réponses correctes pour valider la question.
 
-**Echelle de réponse** : Le candidat doit répondre à toutes les
-affirmations pour que sa réponse soit considérée juste ou fausse.
+**Echelle de réponse** 
 
 ![Une image contenant texte, Appareils électroniques, capture d'écran,
 Page web Le contenu généré par l'IA peut être
 incorrect.](./media/image55.png) 
 
-**Les cliquer sur zone(s)**
+**Cliquer sur zone(s)**
 
 Il est possible de créer des questions comportant :
 
@@ -440,9 +429,9 @@ Le candidat doit relier les éléments (texte ou images) de gauche avec ceux de 
 contenu généré par l'IA peut être
 incorrect.](./media/image43.png)
 
-**Zone de texte et notation manuelle**
+**Notation manuelle de fichier(s), audio, ou zone(s) de texte**
 
-Le candidat doit saisir sa réponse dans l'encadré prévu à cet effet. La question est notée et/ou commentée par une personne physique après le passage du test.
+Le candidat doit saisir une ou plusieurs réponses, soumettre un ou plusieurs fichiers et/ou enregistrer un audio. La question est notée et/ou commentée par une personne physique après le passage du test.
 
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
@@ -457,7 +446,7 @@ Le candidat doit saisir sa ou ses réponses dans l'encadré ou les encadrés pr�
 par l'IA peut être
 incorrect.](./media/image52.png)
 
-**Enregistrements évalué par l'IA**
+**Enregistrement audio évalué par l'IA**
 
 Le candidat doit répondre à une question en enregistrant un audio. Cette question sert à tester les compétences du candidat à l'oral.
 
