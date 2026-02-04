@@ -508,11 +508,11 @@ Pour créer une question, commencez par décrire le thème que vous souhaitez tr
 
 Vous pouvez également préciser des paramètres supplémentaires, tels que :
 
-le nombre de propositions,
+- le nombre de propositions,
 
-le nombre de bonnes réponses,
+- le nombre de bonnes réponses,
 
-le niveau de difficulté,
+- le niveau de difficulté
 
 ou toute autre caractéristique jugée pertinente.
 Une fois le prompt écrit, appuyez sur le bouton **Générer une question**. 
@@ -525,6 +525,8 @@ Si vous souhaitez créer une illustration, l’IA peut générer automatiquement
 ![Une image contenant texte, capture d'écran, Police, ligne Le contenu
 généré par l'IA peut être
 incorrect.](./media/image195.png)
+
+**Création de questions**
 
 Certains champs sont communs à toutes les typologies de questions :
 
@@ -560,21 +562,25 @@ résolution 1080 x 500.**
 
 #### Explications concernant la solution
 
+**Tutoriel**
+
 Ce champ n'est pas obligatoire et doit être renseigné uniquement si une
 solution doit être présentée au candidat (pendant ou après le test). Le
-tutoriel peut être renseigné par une personne physique ou généré par l'IA. Il est aussi possible de donner des précisions en utilisant l'onglet Indication. 
+tutoriel peut être renseigné par une personne physique ou généré par l'IA.
 
 ![Une image contenant texte, capture d'écran, logiciel, Page web Le
 contenu généré par l'IA peut être
 incorrect.](./media/image69.png)
 
+**Indication**
 
+Ce champ n'est pas obligatoire et doit être renseigné uniquement si une indication doit être rajoutée à l'énoncé de la question. 
 
 #### Informations de revue
 
 Cette zone permet le suivi de la question lorsque plusieurs personnes
 interviennent sur la question. On y retrouve le statut de la question,
-les différents intervenants, et un champs permettant à ces derniers
+les différents intervenants et un champs permettant à ces derniers
 d'échanger des commentaires sur la question.
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
@@ -607,7 +613,7 @@ incorrect.](./media/image56.png)
 
 * Prompt de calcul : permet de déterminer la méthode de calcul du score de la question et de la générer automatiquement à l’aide de l’IA.
 
-Afin d’ajouter de nouvelles échelles de réponses (ex. : 1, 2, 3, oui / non, etc.), accédez à la page principale puis au menu Questions > Échelles de réponses et sélectionnez Ajouter une échelle de réponses.
+Afin d’ajouter de nouvelles échelles de réponses (ex. : 1, 2, 3, oui / non, etc.), accédez à la page principale puis au menu Questions > Échelles de réponses et sélectionnez **Ajouter une échelle de réponses**.
 Après enregistrement, l’échelle créée sera disponible dans la liste lors de la modification d’une question.
 
 ![Une image contenant texte, capture d'écran, nombre, Police Le contenu
@@ -616,7 +622,7 @@ incorrect.](./media/image188.png)
 
 **Cliquer sur zone**
 
-Dans l’onglet Éditeur graphique, s’ajoute l’image de fond et se définissent la ou les zones correctes.
+Dans l’onglet **Éditeur graphique**, s’ajoute l’image de fond et se définissent la ou les zones correctes.
 
 ![Une image contenant texte, capture d'écran, ligne, Police Le contenu
 généré par l'IA peut être
@@ -627,12 +633,12 @@ incorrect.](./media/image36.png)
 **Glisser-déposer**
 
 
-Dans l'onglet Zones de dépose vous ajoutez l'image de fond et vous définissez les zones de dépôt.
+Dans l'onglet **Zones de dépose** vous ajoutez l'image de fond et vous définissez les zones de dépôt.
 ![Une image contenant texte, capture d'écran, Police, nombre Le contenu
 généré par l'IA peut être
 incorrect.](./media/image41.png)
 
-L’onglet Éléments à faire glisser permet de choisir le type d’éléments à déplacer (texte ou images), de les définir et d’indiquer l’emplacement correct de chacun.
+L’onglet **Éléments à faire glisser** permet de choisir le type d’éléments à déplacer (texte ou images), de les définir et d’indiquer l’emplacement correct de chacun.
 
 ![Une image contenant texte, capture d'écran, ligne Le contenu généré
 par l'IA peut être
@@ -642,7 +648,7 @@ incorrect.](./media/image42.png)
 **Relier**
 
 
-Dans les onglets Colonne de gauche et Colonne de droite vous définissez les éléments à relier (et leur type) et leur destination correcte. 
+Dans les onglets **Colonne de gauche** et **Colonne de droite** vous définissez les éléments à relier (et leur type) et leur destination correcte. 
 
 ![Une image contenant texte, capture d'écran, Police, nombre Le contenu
 généré par l'IA peut être
@@ -655,11 +661,11 @@ incorrect.](./media/image45.png)
 
 **Notation manuelle de fichier(s), audio, ou zone(s) de texte**
 
-L'onglet Détails de soumissions permet de définir le type de réponse attendue par le candidat (saisie de texte, soumission de fichier ou enregistrement audio). 
+L'onglet **Détails de soumissions** permet de définir le type de réponse attendue par le candidat (saisie de texte, soumission de fichier ou enregistrement audio). 
 
 ![](./media/image190.png)
 
-L’onglet Grille d’évaluation permet d’ajouter des critères et d’attribuer un nombre de points par critère. Ces éléments sont visibles par les correcteurs qui les utilisent pour évaluer la question et attribuer une note,  une fois le test passé.
+L’onglet **Grille d’évaluation** permet d’ajouter des critères et d’attribuer un nombre de points par critère. Ces éléments sont visibles par les correcteurs qui les utilisent pour évaluer la question et attribuer une note,  une fois le test passé.
 
 ![Une image contenant texte, capture d'écran, logiciel Le contenu généré
 par l'IA peut être
@@ -667,6 +673,10 @@ incorrect.](./media/image57.png)
 
 **Zone(s) de texte avec correction automatique**
 
+Les questions de ce type peuvent avoir un score global pour l’ensemble de la question ou un score attribué à chaque zone de saisie. Pour utiliser cette dernière option, il suffit d’activer l’option « Points par zone de saisie ».
+
+Si vous souhaitez activer l’éditeur de texte enrichi (pour que le candidat puisse mettre du texte en italique, en gras, en couleur, etc.), il faut activer l’option « Utiliser un éditeur de texte enrichi pour les zones de saisie ».
+Attention : la zone de texte enrichi n’apparaît que si le type de champ de saisie est « Zone de texte ».
 
 Dans l’onglet Zones de saisie, vous définissez le type de correction pour chaque zone (automatique ou réalisée par l’IA), le type de champ, le format des réponses attendues (texte, nombre, e-mail), le prompt d’analyse IA le cas échéant, ainsi que d’autres critères tels que la taille de la zone de saisie ou le nombre minimal et maximal de mots etc.
 
