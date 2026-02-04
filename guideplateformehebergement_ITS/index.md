@@ -684,9 +684,12 @@ incorrect.](./media/image196.png)
 
 Dans l’onglet Zones de saisie, vous définissez le type de correction pour chaque zone (automatique ou réalisée par l’IA), le type de champ, le format des réponses attendues (texte, nombre, e-mail), le prompt d’analyse IA le cas échéant, ainsi que d’autres critères tels que la taille de la zone de saisie ou le nombre minimal et maximal de mots etc.
 
+Attention : si l’option « Activer les points par zone de saisie » est activée, les zones de saisie évaluées par l’IA peuvent recevoir un score décimal, compris entre 0 et le nombre de points maximum.
+Si vous souhaitez que la notation de la zone soit binaire (0 ou le nombre de points maximum défini), vous devez cocher la case : « Le nombre de points pour cette zone ne peut être que 0 ou le nombre de points maximum défini pour la zone ».
+
 ![Une image contenant texte, Police, nombre, capture d'écran Le contenu
 généré par l'IA peut être
-incorrect.](./media/image191.png)
+incorrect.](./media/image198.png)
 
 
 **Enregistrement évalué par l'IA**
