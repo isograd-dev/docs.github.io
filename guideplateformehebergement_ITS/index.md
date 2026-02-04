@@ -497,7 +497,7 @@ incorrect.](./media/image67.png)
 
 **Création de questions avec l’intelligence artificielle**
 
-Il est possible de créer des questions à l’aide de l’intelligence artificielle en quelques clics. Les typologies de questions disponibles sont : QCM, échelles de réponses, cliquer sur zone, listes déroulantes, zones de texte avec correction automatique et relier. Pour générer automatiquement une question, il suffit d’appuyer sur le bouton « Générer une question ».
+Il est possible de créer des questions à l’aide de l’intelligence artificielle en quelques clics. Les typologies de questions disponibles sont : QCM, échelles de réponses, cliquer sur zone, listes déroulantes, zones de texte avec correction automatique, reliers, exercices de code. Pour générer automatiquement une question, il suffit d’appuyer sur le bouton « Générer une question ».
 
 ![Une image contenant texte, capture d'écran, Police, ligne Le contenu
 généré par l'IA peut être
@@ -515,16 +515,16 @@ le nombre de bonnes réponses,
 le niveau de difficulté,
 
 ou toute autre caractéristique jugée pertinente.
-
+Une fois le prompt écrit, appuyez sur le bouton **Générer une question**. 
 ![Une image contenant texte, capture d'écran, Police, ligne Le contenu
 généré par l'IA peut être
-incorrect.] (./media/image193.png)
+incorrect.](./media/image193.png).  
 
 Si vous souhaitez créer une illustration, l’IA peut générer automatiquement un prompt pour guider la création de l’image. Ce prompt apparaîtra dans le nouvel onglet « Sortie additionnelle de l’IA ». La génération du prompt peut allonger légèrement le temps de création de la question.
 
 ![Une image contenant texte, capture d'écran, Police, ligne Le contenu
 généré par l'IA peut être
-incorrect.] (./media/image194.png)
+incorrect.](./media/image195.png)
 
 Certains champs sont communs à toutes les typologies de questions :
 
