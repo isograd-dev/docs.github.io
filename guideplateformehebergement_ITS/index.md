@@ -669,7 +669,7 @@ L’onglet **Grille d’évaluation** permet d’ajouter des critères et d’at
 
 ![Une image contenant texte, capture d'écran, logiciel Le contenu généré
 par l'IA peut être
-incorrect.](./media/image57.png)
+incorrect.](./media/image197.png)
 
 **Zone(s) de texte avec correction automatique**
 
@@ -678,13 +678,15 @@ Les questions de ce type peuvent avoir un score global pour l’ensemble de la q
 Si vous souhaitez activer l’éditeur de texte enrichi (pour que le candidat puisse mettre du texte en italique, en gras, en couleur, etc.), il faut activer l’option « Utiliser un éditeur de texte enrichi pour les zones de saisie ».
 Attention : la zone de texte enrichi n’apparaît que si le type de champ de saisie est « Zone de texte ».
 
+![Une image contenant texte, Police, nombre, capture d'écran Le contenu
+généré par l'IA peut être
+incorrect.](./media/image196.png)
+
 Dans l’onglet Zones de saisie, vous définissez le type de correction pour chaque zone (automatique ou réalisée par l’IA), le type de champ, le format des réponses attendues (texte, nombre, e-mail), le prompt d’analyse IA le cas échéant, ainsi que d’autres critères tels que la taille de la zone de saisie ou le nombre minimal et maximal de mots etc.
 
 ![Une image contenant texte, Police, nombre, capture d'écran Le contenu
 généré par l'IA peut être
-incorrect.](./media/image53.png)
-
-![](./media/image191.png)
+incorrect.](./media/image191.png)
 
 
 **Enregistrement évalué par l'IA**
