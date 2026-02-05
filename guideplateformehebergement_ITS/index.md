@@ -921,7 +921,7 @@ Le menu principal de la plateforme donne accès aux cinq onglets qui vous permet
 ## Compte
 
 ![Une image contenant texte, capture d'écran, Police Le contenu généré
-par l'IA peut être incorrect.](./media2/image102.png)
+par l'IA peut être incorrect.](./media/image199.png)
 
 ### Détails
 
@@ -956,7 +956,7 @@ d'ordinateur Le contenu généré par l'IA peut être
 incorrect.](./media/image106.png)
 
 
-##### Type d'administrateurs
+**Type d'administrateurs**
 
 En fonction du
 rôle de chacun vous pouvez lui attribuer des privilèges qui lui donnent
@@ -1217,7 +1217,7 @@ Vous pouvez effectuer des recherches dans les données et filtrer par :
 Tous les résultats peuvent être exportés dans un fichier Excel.
 
 ### Tableau de bord
-Dans cette partie, en fonction du groupe et du test choisis, vous avez accès au nombre total de tests complétés, au temps moyen passé, au statut des tests, à la répartition des scores, ainsi qu’au classement des dix meilleurs candidats.
+Dans cette partie, en fonction du groupe et du test choisis, vous avez accès au nombre total de tests complétés, au temps moyen passé, au statut des tests, à la répartition des scores, les invitations et les relances envoyées, ainsi qu’au classement des dix meilleurs candidats.
 
 ![Une image contenant texte, capture d'écran, Police, logiciel Le
 contenu généré par l'IA peut être
