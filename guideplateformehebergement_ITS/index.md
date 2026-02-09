@@ -1416,7 +1416,7 @@ candidats, en fonction du niveau de compétence du candidat.
 ## Aide et support
 
 L'onglet **Aide & Support** contient toutes les informations techniques
-sur la plateforme et les tests.
+sur la plateforme et les tests, ainsi que la politique de cookies, la politique de confidentialité et les conditions d'utilisation de la plateforme. 
 
 Pour y accéder, sélectionnez **Aide & Support** dans le menu
 principal.
@@ -1425,7 +1425,7 @@ principal.
 par l'IA peut être
 incorrect.](./media/image151.png)
 
-Vous y trouverez les éléments suivants :
+Dans l'onglet *Support technique* Vous trouverez les éléments suivants :
 
 -   Coordonnées du support technique
 
