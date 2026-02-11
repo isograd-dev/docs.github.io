@@ -113,7 +113,7 @@ incorrect.](./media/image81.png)
 
 Plusieurs encadrés sont à remplir pour ajouter un jeu de questions :
 
--   Le nom : comment sera définit le jeu de questions.
+-   Le nom : comment sera défini le jeu de questions.
 
 -   Les ID des sujets, séparés par un tiret : les différents sujets concernés
     par le jeu de questions.
@@ -1125,7 +1125,7 @@ l'inscription du groupe à un test et l'envoi d'e-mails d'inscription.
 contenu généré par l'IA peut être
 incorrect.](./media/image122.png)
 
-##### Inscire tous les candiats sélectionnés à un test
+##### Inscrire tous les candidats sélectionnés à un test
 
 Utilisez l'action **Inscrire tous les candidats du groupe à un test**
 pour gagner du temps et vous assurer que tous les candidats d'un groupe
