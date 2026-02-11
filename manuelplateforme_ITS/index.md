@@ -365,7 +365,7 @@ Autres actions
 Les actions de groupe vous permettent de :
 
 
-## Définir un mot de passe pour tous les candidats du groupe
+### Définir un mot de passe pour tous les candidats du groupe
 
 
 ![](./media/image31.png)
@@ -654,7 +654,7 @@ Les **rapports de progression** montreront les progrès réalisés par un candid
 ![](./media/image56.png)
 
 
-## Rapport de progression du groupe
+### Rapport de progression du groupe
 
 Cliquez sur **Télécharger** le rapport de progression de groupe  dans  le menu **Rapports de groupe**, puis téléchargez le rapport de progression de groupe.
 
@@ -669,7 +669,7 @@ Sélectionnez les deux tests que vous souhaitez comparer, ainsi que la plage de 
 
 - Le rapport montrera les résultats aux deux tests et mettra en avant les progrès réalisés entre ces deux tests.
 
-## Rapports de progression individuels
+### Rapports de progression individuels
 
 Pour consulter les rapports de progression individuels, accédez aux détails du candidat en cliquant sur **Résultats** dans le menu principal.
 
