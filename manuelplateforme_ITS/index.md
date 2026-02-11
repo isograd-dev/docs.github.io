@@ -712,14 +712,14 @@ Pour consulter le détail d’un passage, cochez la case du candidat concerné p
 
 ![](./media/image62.png)
 
-Le statut de certification passera de « En attente de détail» à « Validé » une fois l’erreur examinée et validée
+Apres verification vous pouvez valider ou invalider le passage du candidat et ceci sera visible sur son espace candidat
 
 
 
+![](./media/image62.2.png)
 
 
-
-
+![](./media/image62.3.png)
 
 
 
