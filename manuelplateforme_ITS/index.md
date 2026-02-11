@@ -698,19 +698,19 @@ Sélectionnez ensuite  l’onglet **Rapport de progression** dans la fiche du ca
 
 ## Surveillance
 
+Dans l’onglet **Gestion des tests surveillés**, vous retrouvez l’ensemble des certifications passées sous surveillance (photo, e‑surveillance différée, etc.). Chaque ligne correspond à un candidat et affiche notamment l’ID du test, le nom du candidat, le nom du test, la date de passage, le type de surveillance et le statut de validation du protocole.
 
+Pour vérifier uniquement les candidats n’ayant pas respecté le protocole de passage, vous pouvez utiliser les filtres situés à gauche de l’écran. Après avoir sélectionné les filtres souhaités, la liste se met à jour automatiquement et affiche uniquement les tests correspondant à vos critères.
 
 
 ![](./media/image61.png)
 
-
-![](./media/image6.png)
-
+Pour consulter le détail d’un passage, cochez la case du candidat concerné puis cliquez sur l’icône d’accès au protocole. Une nouvelle fenêtre s’ouvre et présente les photos prises durant le test, la vidéo, les captures d’écran ainsi que les détails des incidents éventuels.
 
 
 
 
-![](./media/image63.png)
+![](./media/image62.png)
 
 Le statut de certification passera de « En attente de détail» à « Validé » une fois l’erreur examinée et validée
 
