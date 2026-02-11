@@ -718,6 +718,8 @@ Apres verification vous pouvez valider ou invalider le passage du candidat et ce
 
 ![](./media/image62.2.png)
 
+Les incidents détectés pendant le test sont signalés par des icônes colorées à gauche de la timeline dans les onglets Détails des incidents. Cliquez sur l’icône **Légende**
+
 
 ![](./media/image62.3.png)
 
