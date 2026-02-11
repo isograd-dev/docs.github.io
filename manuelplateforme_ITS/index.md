@@ -696,9 +696,9 @@ Sélectionnez ensuite  l’onglet **Rapport de progression** dans la fiche du ca
 # Surveillance
 
 
-## Surveillance
+## Isograd Proctoring
 
-Dans l’onglet **Gestion des tests surveillés**, vous retrouvez l’ensemble des certifications passées sous surveillance (photo, e‑surveillance différée, etc.). Chaque ligne correspond à un candidat et affiche notamment l’ID du test, le nom du candidat, le nom du test, la date de passage, le type de surveillance et le statut de validation du protocole.
+Dans l’onglet **Gestion des tests surveillés**, vous retrouvez l’ensemble des tests passées à distance via l'outil Isograd Proctoring (photo, e‑surveillance différée, etc.). Chaque ligne correspond à un candidat et affiche notamment l’ID du test, le nom du candidat, le nom du test, la date de passage, le type de surveillance et le statut de validation du protocole.
 
 Pour vérifier uniquement les candidats n’ayant pas respecté le protocole de passage, vous pouvez utiliser les filtres situés à gauche de l’écran. Après avoir sélectionné les filtres souhaités, la liste se met à jour automatiquement et affiche uniquement les tests correspondant à vos critères.
 
