@@ -698,9 +698,7 @@ Sélectionnez ensuite  l’onglet **Rapport de progression** dans la fiche du ca
 
 ## Surveillance
 
-Lors d’un examen de  certification Tosa, si un candidat quitte le mode plein écran, un incident est créé avec un statut « **En attente de détail** » pour lequel vous devrez fournir une explication afin que le passage soit validé.
 
-Pour ce faire, cliquez sur **Surveillance,** puis sur **Surveillance**.
 
 
 ![](./media/image61.png)
@@ -708,7 +706,7 @@ Pour ce faire, cliquez sur **Surveillance,** puis sur **Surveillance**.
 
 ![](./media/image6.png)
 
-La fenêtre **Sortie du mode plein écran** s’ouvre. Le test en attente sera marqué avec une croix rouge pour que vous puissiez décrire l’origine du ou des problèmes. Pour ce faire, cliquez sur l’icône de ** la loupe ** et entrez la ou les raisons de l’interruption.
+
 
 
 
