@@ -193,7 +193,7 @@ La page **Alerte crédit** vous permet de créer jusqu’à deux alertes de cré
 
 Cliquez sur **Compte** dans le menu principal pour accéder à la page  **compte**, puis cliquez sur **Alerte crédit**.
 
-**L’Alerte d’expiration** **vous permet de recevoir automatiquement un e-mail un mois avant la date d’expiration de vos crédits.
+**L’Alerte d’expiration** vous permet de recevoir automatiquement un e-mail un mois avant la date d’expiration de vos crédits.
 
 **L’Alerte de nombre de crédits** vous permet de définir un seuil (crédits minimums restants). Lorsque le seuil défini est atteint, un e-mail vous est envoyé.
 
@@ -232,7 +232,7 @@ Cliquez sur Importer un fichier de candidats.
 Dans la fenêtre **Importer un fichier de candidats**, procédez comme suit :
 
 Cliquez sur **Télécharger le modèle de fichier** et téléchargez le sur votre ordinateur. Completez le modèle Excel en suivant l’exemple de la première ligne et enregistrez le fichier.
-Sous **Fichier à importer**,  cliquez sur **Choisir** **un fichier**, accédez à l’emplacement de votre fichier et sélectionnez-le. Vous devriez maintenant voir le nom du fichier que vous avez importé.
+Sous **Fichier à importer**,  cliquez sur **Choisir un fichier**, accédez à l’emplacement de votre fichier et sélectionnez-le. Vous devriez maintenant voir le nom du fichier que vous avez importé.
 Sous **Sélectionner un groupe**, choisissez le(s) groupe(s)  approprié(s) dans le menu déroulant.
 
 Une fois que vous avez choisi le groupe, cliquez sur la flèche bleue pointant vers la droite. Cela déplacera le groupe sélectionné dans le(s) **Groupe(s) du candidat.**
@@ -365,7 +365,7 @@ Autres actions
 Les actions de groupe vous permettent de :
 
 
-## **Définir un mot de passe pour tous les candidats du groupe**
+### Définir un mot de passe pour tous les candidats du groupe
 
 
 ![](./media/image31.png)
@@ -654,7 +654,7 @@ Les **rapports de progression** montreront les progrès réalisés par un candid
 ![](./media/image56.png)
 
 
-## **Rapport de progression du groupe**
+### Rapport de progression du groupe
 
 Cliquez sur **Télécharger** le rapport de progression de groupe  dans  le menu **Rapports de groupe**, puis téléchargez le rapport de progression de groupe.
 
@@ -669,7 +669,7 @@ Sélectionnez les deux tests que vous souhaitez comparer, ainsi que la plage de 
 
 - Le rapport montrera les résultats aux deux tests et mettra en avant les progrès réalisés entre ces deux tests.
 
-## **Rapports de progression individuels**
+### Rapports de progression individuels
 
 Pour consulter les rapports de progression individuels, accédez aux détails du candidat en cliquant sur **Résultats** dans le menu principal.
 
@@ -696,32 +696,33 @@ Sélectionnez ensuite  l’onglet **Rapport de progression** dans la fiche du ca
 # Surveillance
 
 
-## Surveillance
+## Isograd Proctoring
 
-Lors d’un examen de  certification Tosa, si un candidat quitte le mode plein écran, un incident est créé avec un statut « **En attente de détail** » pour lequel vous devrez fournir une explication afin que le passage soit validé.
+Dans l’onglet **Gestion des tests surveillés**, vous retrouvez l’ensemble des tests passées à distance via l'outil Isograd Proctoring (photo, e‑surveillance différée, etc.). Chaque ligne correspond à un candidat et affiche notamment l’ID du test, le nom du candidat, le nom du test, la date de passage, le type de surveillance et le statut de validation du protocole.
 
-Pour ce faire, cliquez sur **Surveillance,** puis sur **Surveillance**.
+Pour vérifier uniquement les candidats n’ayant pas respecté le protocole de passage, vous pouvez utiliser les filtres situés à gauche de l’écran. Après avoir sélectionné les filtres souhaités, la liste se met à jour automatiquement et affiche uniquement les tests correspondant à vos critères.
 
 
 ![](./media/image61.png)
 
+Pour consulter le détail d’un passage, cochez la case du candidat concerné puis cliquez sur l’icône d’accès au protocole. Une nouvelle fenêtre s’ouvre et présente les photos prises durant le test, la vidéo, les captures d’écran ainsi que les détails des incidents éventuels.
+
+
+
 
 ![](./media/image62.png)
 
-La fenêtre **Sortie du mode plein écran** s’ouvre. Le test en attente sera marqué avec une croix rouge pour que vous puissiez décrire l’origine du ou des problèmes. Pour ce faire, cliquez sur l’icône de ** la loupe ** et entrez la ou les raisons de l’interruption.
+Après vérification, vous pouvez valider ou invalider le passage du candidat. Ceci sera visible sur son espace candidat.
 
 
 
-![](./media/image63.png)
-
-Le statut de certification passera de « En attente de détail» à « Validé » une fois l’erreur examinée et validée
+![](./media/image62.2.png)
 
 
+Les incidents détectés pendant le test sont signalés par des icônes colorées à gauche de la timeline dans les onglets **Détails des incidents**. Cliquez sur l’icône **Légende**
 
 
-
-
-
+![](./media/image62.3.png)
 
 
 

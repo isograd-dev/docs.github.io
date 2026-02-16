@@ -113,7 +113,7 @@ incorrect.](./media/image81.png)
 
 Plusieurs encadrés sont à remplir pour ajouter un jeu de questions :
 
--   Le nom : comment sera définit le jeu de questions.
+-   Le nom : comment sera défini le jeu de questions.
 
 -   Les ID des sujets, séparés par un tiret : les différents sujets concernés
     par le jeu de questions.
@@ -1125,7 +1125,7 @@ l'inscription du groupe à un test et l'envoi d'e-mails d'inscription.
 contenu généré par l'IA peut être
 incorrect.](./media/image122.png)
 
-##### Inscire tous les candiats sélectionnés à un test
+##### Inscrire tous les candidats sélectionnés à un test
 
 Utilisez l'action **Inscrire tous les candidats du groupe à un test**
 pour gagner du temps et vous assurer que tous les candidats d'un groupe
@@ -1416,7 +1416,7 @@ candidats, en fonction du niveau de compétence du candidat.
 ## Aide et support
 
 L'onglet **Aide & Support** contient toutes les informations techniques
-sur la plateforme et les tests.
+sur la plateforme et les tests, ainsi que la politique de cookies, la politique de confidentialité et les conditions d'utilisation de la plateforme. 
 
 Pour y accéder, sélectionnez **Aide & Support** dans le menu
 principal.
@@ -1425,7 +1425,7 @@ principal.
 par l'IA peut être
 incorrect.](./media/image151.png)
 
-Vous y trouverez les éléments suivants :
+Dans l'onglet *Support technique* Vous trouverez les éléments suivants :
 
 -   Coordonnées du support technique
 
