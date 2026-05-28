@@ -25,8 +25,9 @@ Les captures d'écran sont générées automatiquement à partir des dernières 
 ### Chapitres
 
 - [Gestion des candidats](candidates/) — ajouter, importer, inscrire à un test, envoyer des invitations, gérer les groupes.
+- [Gestion des emails](mail-templates/) — modèles de message, émetteurs vérifiés, envois programmés, bannière personnalisée.
 
-> 💡 **En cours de rédaction** — D'autres chapitres seront publiés au fur et à mesure : gestion des emails, administrateurs, sessions, rapports, paiements, etc.
+> 💡 **En cours de rédaction** — D'autres chapitres seront publiés au fur et à mesure : administrateurs, sessions, rapports, paiements, etc.
 
 ## Manuels produits
 
