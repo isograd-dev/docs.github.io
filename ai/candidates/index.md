@@ -1,31 +1,6 @@
 ---
-layout: home
+layout: admin-manual
 ---
-
-<div id="toc">
-
-* TOC
-{:toc}
-
-</div>
-
-<div id="content">
-
-
-# Manuel utilisateur Tosa
-
-Bienvenue dans le manuel d'utilisation de la plateforme Tosa.
-
-Ce manuel s'adresse aux **administrateurs de compte** : responsables formation, gestionnaires RH, coordinateurs de tests. Il décrit pas à pas les opérations courantes sur la plateforme.
-
-> 💡 **Proof of concept** — Cette version pilote couvre uniquement le chapitre **Gestion des candidats**. Les autres chapitres seront ajoutés au fil de la validation.
-
-## Conventions
-
-- Les captures d'écran représentent l'interface réelle de la plateforme telle qu'elle se présente à un administrateur de compte. Elles sont générées automatiquement à partir des dernières versions du code et restent donc fidèles à ce que vous voyez à l'écran.
-- Les instructions sont rédigées à l'impératif : *« Cliquez sur… »*, *« Remplissez le champ… »*.
-- Les noms d'éléments d'interface (boutons, libellés de champ) reprennent strictement l'intitulé affiché par la plateforme.
-
 
 # Gestion des candidats
 
@@ -36,7 +11,7 @@ Ce chapitre couvre l'ensemble du cycle de vie d'un candidat sur la plateforme To
 La page **Gestion des candidats** se présente sous la forme d'un tableau listant l'ensemble de vos candidats. Les filtres en haut de page permettent de restreindre l'affichage (recherche libre, appartenance à un groupe, candidats ayant un test à passer, inclusion des archivés). Les actions principales — ajouter un candidat, importer un fichier, accéder à la gestion des groupes — se trouvent dans la barre d'actions en haut du tableau.
 
 
-## Ajouter un candidat
+## Ajouter un candidat {#ajouter-un-candidat}
 
 Cette procédure permet de créer un candidat individuellement. Pour ajouter plusieurs candidats en une seule opération, reportez-vous à la section [Importer des candidats](#importer-des-candidats).
 
@@ -61,12 +36,12 @@ Cette procédure permet de créer un candidat individuellement. Pour ajouter plu
 
     ![Fiche candidat après création](img/04-candidat-cree.png)
 
-À partir de cette fiche, vous pouvez immédiatement [inscrire le candidat à un test](#inscrire-un-candidat-à-un-test) ou [lui envoyer une invitation](#envoyer-les-invitations).
+À partir de cette fiche, vous pouvez immédiatement [inscrire le candidat à un test](#inscrire-un-candidat-a-un-test) ou [lui envoyer une invitation](#envoyer-les-invitations).
 
 > 💡 **Modification ultérieure** — Pour modifier les coordonnées d'un candidat existant, retournez sur la liste des candidats, cliquez sur l'icône **Modifier** au bout de la ligne, puis sur l'onglet **Détails du candidat**.
 
 
-## Importer des candidats
+## Importer des candidats {#importer-des-candidats}
 
 L'import de candidats vous permet de créer plusieurs candidats — voire de les pré-inscrire à des tests — en une seule opération, à partir d'un fichier Excel.
 
@@ -98,7 +73,7 @@ L'import de candidats vous permet de créer plusieurs candidats — voire de les
 > 💡 **Import et invitations** — L'import ne déclenche **pas** automatiquement l'envoi d'invitations. Pour envoyer les emails de connexion après import, reportez-vous à la section [Envoyer les invitations](#envoyer-les-invitations).
 
 
-## Inscrire un candidat à un test
+## Inscrire un candidat à un test {#inscrire-un-candidat-a-un-test}
 
 Une fois le candidat créé, vous devez l'inscrire à un ou plusieurs tests pour qu'il puisse les passer.
 
@@ -132,7 +107,7 @@ Pour inscrire plusieurs candidats au même test, utilisez l'action de groupe :
 > 💡 **Crédits** — Chaque inscription consomme un crédit du pack correspondant. Le solde restant est visible en haut de page. Pour racheter des crédits, contactez votre interlocuteur Isograd.
 
 
-## Envoyer les invitations
+## Envoyer les invitations {#envoyer-les-invitations}
 
 L'envoi d'invitation par email transmet au candidat son lien de connexion personnalisé. C'est l'étape qui rend le test accessible côté candidat.
 
@@ -167,7 +142,7 @@ Tous les candidats sélectionnés reçoivent l'invitation avec leur lien personn
 > 💡 **Personnaliser les modèles d'email** — Les modèles d'email sont gérés dans le chapitre **Gestion des mails** (à venir). Vous pouvez y créer des variantes par langue, par marque, ou par type de test.
 
 
-## Gérer les groupes
+## Gérer les groupes {#gerer-les-groupes}
 
 Les groupes vous permettent d'organiser votre population de candidats (par promotion, service, client, formation…) pour faciliter les actions en masse : inscriptions, invitations, suivi des résultats.
 
@@ -210,4 +185,3 @@ Une fois vos candidats organisés en groupes, le filtre **Groupe** de la page **
 
 > 💡 **Archivage vs suppression** — L'**archivage** est non destructif : il masque le groupe et ses candidats des listes par défaut, mais préserve l'historique des tests passés. La **suppression** est définitive — utilisez-la uniquement pour les candidats créés par erreur.
 
-</div>

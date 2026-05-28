@@ -1,0 +1,35 @@
+- title: Gestion des candidats
+  url: /ai/candidates/
+  sections:
+    - title: Ajouter un candidat
+      anchor: ajouter-un-candidat
+    - title: Importer des candidats
+      anchor: importer-des-candidats
+    - title: Inscrire un candidat à un test
+      anchor: inscrire-un-candidat-a-un-test
+    - title: Envoyer les invitations
+      anchor: envoyer-les-invitations
+    - title: Gérer les groupes
+      anchor: gerer-les-groupes
+
+- title: Gestion des emails
+  url: /ai/mail-templates/
+  sections:
+    - title: Les quatre types de modèle
+      anchor: les-quatre-types-de-modele
+    - title: Créer un modèle d'email
+      anchor: creer-un-modele-d-email
+    - title: Modèles privés et publics
+      anchor: modeles-prives-et-publics
+    - title: Dupliquer un modèle
+      anchor: dupliquer-un-modele
+    - title: Supprimer un modèle
+      anchor: supprimer-un-modele
+    - title: Ajouter une bannière personnalisée
+      anchor: ajouter-une-banniere-personnalisee
+    - title: Émetteurs d'email
+      anchor: emetteurs-d-email
+    - title: Envois programmés
+      anchor: envois-programmes
+    - title: Envoyer un email à un candidat
+      anchor: envoyer-un-email-a-un-candidat

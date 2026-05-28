@@ -1,16 +1,6 @@
 ---
-layout: home
+layout: admin-manual
 ---
-
-<div id="toc">
-
-* TOC
-{:toc}
-
-</div>
-
-<div id="content">
-
 
 # Manuel de l'administrateur de compte
 
@@ -27,5 +17,3 @@ Ajouter des candidats individuellement ou par lot, les inscrire à des tests, le
 Personnaliser les modèles de message (Invitation, Relance, Envoi de rapport, Envoi de diplôme), gérer les émetteurs vérifiés et la bannière personnalisée, consulter et modifier les envois programmés.
 
 > 💡 **En cours de rédaction** — D'autres chapitres seront publiés au fur et à mesure : administrateurs, sessions, rapports, paiements, etc.
-
-</div>

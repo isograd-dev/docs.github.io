@@ -1,16 +1,6 @@
 ---
-layout: home
+layout: admin-manual
 ---
-
-<div id="toc">
-
-* TOC
-{:toc}
-
-</div>
-
-<div id="content">
-
 
 # Gestion des emails
 
@@ -21,7 +11,7 @@ Ce chapitre couvre tout ce qui concerne les emails envoyés depuis votre compte 
 La page **Gestion des modèles de message** liste vos modèles d'email. Chaque ligne indique le **nom** du modèle, son **type** (Invitation, Relance, Envoi de rapport, Envoi de diplôme) et sa **langue**. Les boutons d'action principaux — **Créer un modèle** et **Ajouter une bannière personnalisée** — se trouvent en haut du tableau.
 
 
-## Les quatre types de modèle
+## Les quatre types de modèle {#les-quatre-types-de-modele}
 
 La plateforme reconnaît quatre types de messages, chacun ayant un déclencheur différent :
 
@@ -33,7 +23,7 @@ La plateforme reconnaît quatre types de messages, chacun ayant un déclencheur 
 > 💡 **Modèles standard** — Si vous n'avez créé aucun modèle pour un type donné, la plateforme envoie un message standard intégré. Vous n'êtes donc jamais bloqué : créer des modèles permet de **personnaliser** le contenu, pas de l'**autoriser**.
 
 
-## Créer un modèle d'email
+## Créer un modèle d'email {#creer-un-modele-d-email}
 
 ### Procédure
 
@@ -65,7 +55,7 @@ Pour les modèles d'**Invitation** uniquement, des champs supplémentaires sont 
 - **Inclure la liste des tests à passer** — si activé, la plateforme insère automatiquement la liste des tests inscrits dans l'email.
 - **Inclure les détails de connexion** — si activé, l'email contient le login et le mot de passe du candidat.
 - **Inclure un lien de connexion valable 48h (à la place des identifiants)** — si activé, remplace login/mot de passe par un **lien à usage unique valable 48 heures**. Cette option prend le pas sur l'option précédente.
-- **Partager ce modèle avec les autres administrateurs** — voir [Modèles privés et publics](#modèles-privés-et-publics) ci-dessous.
+- **Partager ce modèle avec les autres administrateurs** — voir [Modèles privés et publics](#modeles-prives-et-publics) ci-dessous.
 
 > 💡 **Aperçu en temps réel** — Le panneau de droite affiche l'email tel qu'il sera reçu, avec des données factices (un candidat fictif). L'aperçu se rafraîchit automatiquement quand vous modifiez un champ ; le bouton **Actualiser l'exemple** force un rafraîchissement.
 
@@ -85,7 +75,7 @@ Pour le modèle **Envoi de diplôme**, des **balises** (« merge tags ») sont d
 Les modèles d'Invitation utilisent eux des balises spécifiques aux identifiants et au lien de connexion, automatiquement injectées par les cases à cocher correspondantes — vous n'avez rien à insérer manuellement.
 
 
-## Modèles privés et publics
+## Modèles privés et publics {#modeles-prives-et-publics}
 
 Cette distinction concerne uniquement les modèles d'**Invitation**. Le commutateur **Partager ce modèle avec les autres administrateurs** détermine qui peut voir et utiliser votre modèle :
 
@@ -97,7 +87,7 @@ Cette distinction concerne uniquement les modèles d'**Invitation**. Le commutat
 Les modèles de **Relance**, **Envoi de rapport** et **Envoi de diplôme** sont toujours partagés à l'échelle du compte — ils n'ont pas de commutateur public/privé.
 
 
-## Dupliquer un modèle
+## Dupliquer un modèle {#dupliquer-un-modele}
 
 La duplication est utile pour créer une variante d'un modèle existant (autre langue, autre ton, autre marque) sans repartir de zéro.
 
@@ -114,7 +104,7 @@ La duplication est utile pour créer une variante d'un modèle existant (autre l
 Le modèle dupliqué appartient à l'administrateur qui a cliqué — son statut public/privé est repris de l'original, mais vous restez libre de le changer.
 
 
-## Supprimer un modèle
+## Supprimer un modèle {#supprimer-un-modele}
 
 1. Dans la liste, cliquez sur l'icône **Supprimer** au bout de la ligne. Le modèle d'**Invitation par défaut** intégré à la plateforme n'a pas de bouton de suppression : il est protégé.
 
@@ -125,7 +115,7 @@ Le modèle dupliqué appartient à l'administrateur qui a cliqué — son statut
 3. Validez. Le modèle est supprimé. Les emails déjà envoyés ne sont **pas** affectés ; seuls les futurs envois ne pourront plus utiliser ce modèle.
 
 
-## Ajouter une bannière personnalisée
+## Ajouter une bannière personnalisée {#ajouter-une-banniere-personnalisee}
 
 La bannière est une image (logo, en-tête de marque) affichée **en haut de tous les emails** envoyés depuis votre compte, quel que soit le modèle.
 
@@ -146,7 +136,7 @@ La bannière est une image (logo, en-tête de marque) affichée **en haut de tou
 La bannière s'applique à **tous les types** de messages (Invitation, Relance, Envoi de rapport, Envoi de diplôme) : elle ne se règle pas par modèle.
 
 
-## Émetteurs d'email
+## Émetteurs d'email {#emetteurs-d-email}
 
 Un **émetteur** est l'adresse email à partir de laquelle la plateforme envoie vos messages d'invitation. Vos candidats verront cette adresse comme expéditeur ; s'ils répondent au mail, leur réponse arrivera directement à cette adresse.
 
@@ -189,7 +179,7 @@ Vous pouvez disposer de plusieurs émetteurs vérifiés (par exemple, un par mar
 > ⚠️ **Adresse partagée** — Si une adresse est utilisée comme émetteur sur un autre compte de la plateforme, vous le verrez signalé. Sa suppression de votre compte ne désinscrit pas l'autre compte.
 
 
-## Envois programmés
+## Envois programmés {#envois-programmes}
 
 Lorsque vous envoyez un email d'invitation à un candidat ou à un groupe, la fenêtre d'envoi vous offre l'option **Programmer l'envoi** à une date future. Tous ces envois différés s'accumulent dans la **file d'envois programmés**, où vous pouvez les consulter, en modifier la date ou les annuler avant qu'ils ne partent.
 
@@ -216,7 +206,7 @@ Cliquez sur l'icône **Supprimer** en bout de ligne. L'envoi est retiré de la f
 > 💡 **Durée d'envoi** — Comptez environ **2 secondes par message**. Un envoi à un groupe de 500 candidats prend donc environ 17 minutes à se diffuser. C'est pourquoi la programmation est utile : vous pouvez par exemple programmer un envoi de masse en dehors des heures ouvrées.
 
 
-## Envoyer un email à un candidat
+## Envoyer un email à un candidat {#envoyer-un-email-a-un-candidat}
 
 Une fois vos modèles configurés, l'envoi à un candidat se fait depuis sa fiche :
 
@@ -229,10 +219,9 @@ Une fois vos modèles configurés, l'envoi à un candidat se fait depuis sa fich
     - Choisissez le **modèle d'email** parmi ceux disponibles pour la langue du candidat.
     - L'**objet** se pré-remplit depuis le modèle ; vous pouvez le modifier ponctuellement pour cet envoi.
     - Optionnellement, saisissez une **adresse en copie** dans le champ **Envoyer une copie à**.
-    - Pour différer l'envoi, cochez **Programmer l'envoi** et saisissez la **date d'envoi** souhaitée. L'envoi rejoindra la [file des envois programmés](#envois-programmés).
+    - Pour différer l'envoi, cochez **Programmer l'envoi** et saisissez la **date d'envoi** souhaitée. L'envoi rejoindra la [file des envois programmés](#envois-programmes).
 
 4. Validez. Si l'envoi est immédiat, le candidat reçoit son email dans les secondes qui suivent.
 
 Pour envoyer en masse à un groupe, sélectionnez les candidats dans la liste **Gestion des candidats**, puis utilisez l'action de groupe **Envoyer les emails d'inscription** — la même fenêtre s'ouvre, mais l'envoi s'applique à tous les candidats sélectionnés.
 
-</div>

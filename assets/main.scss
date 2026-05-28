@@ -113,6 +113,87 @@ main .wrapper .home {
   }
 }
 
+// Cross-chapter navigation sidebar (layout: admin-manual)
+.manual-nav {
+  &__chapter {
+    border-bottom: 1px solid $border-color;
+
+    &:last-child { border-bottom: none; }
+
+    &[open] > .manual-nav__chapter-title::after {
+      transform: rotate(90deg);
+    }
+  }
+
+  // <summary>: chapter title row with caret + link
+  &__chapter-title {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    padding: 8px 4px;
+    position: relative;
+
+    &::-webkit-details-marker { display: none; }
+
+    // Caret indicator (▸ / ▾)
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 4px 0 4px 6px;
+      border-color: transparent transparent transparent $text-secondary;
+      margin-left: auto;
+      margin-right: 6px;
+      transition: transform 0.15s ease;
+      flex-shrink: 0;
+    }
+
+    a {
+      flex: 1;
+      padding: 4px 8px;
+      color: $text-primary;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.2s;
+
+      &:hover {
+        background: #ffffff;
+        color: $primary-color;
+      }
+    }
+  }
+
+  .is-current > .manual-nav__chapter-title a {
+    color: $primary-color;
+  }
+
+  &__sections {
+    list-style: none;
+    padding-left: 18px;
+    margin: 4px 0 12px;
+
+    li a {
+      display: block;
+      padding: 4px 10px;
+      color: $text-secondary;
+      font-size: 13px;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.2s;
+
+      &:hover {
+        background: #ffffff;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
 // Contenu principal
 #content {
   margin-left: $sidebar-width;
