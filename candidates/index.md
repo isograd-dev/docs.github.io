@@ -31,7 +31,7 @@ Ce manuel s'adresse aux **administrateurs de compte** : responsables formation, 
 
 Ce chapitre couvre l'ensemble du cycle de vie d'un candidat sur la plateforme Tosa : ajouter des candidats individuellement ou par lot, les inscrire à des tests, leur envoyer des invitations et organiser votre population en groupes.
 
-![Page principale "Gestion des candidats"](gestion-des-candidats/img/01-liste-candidats.png)
+![Page principale "Gestion des candidats"](img/01-liste-candidats.png)
 
 La page **Gestion des candidats** se présente sous la forme d'un tableau listant l'ensemble de vos candidats. Les filtres en haut de page permettent de restreindre l'affichage (recherche libre, appartenance à un groupe, candidats ayant un test à passer, inclusion des archivés). Les actions principales — ajouter un candidat, importer un fichier, accéder à la gestion des groupes — se trouvent dans la barre d'actions en haut du tableau.
 
@@ -44,11 +44,11 @@ Cette procédure permet de créer un candidat individuellement. Pour ajouter plu
 
 1. Depuis la page **Gestion des candidats**, repérez le bouton **Ajouter un candidat** dans la barre d'actions en haut du tableau.
 
-    ![Bouton "Ajouter un candidat"](gestion-des-candidats/img/02-bouton-ajouter.png)
+    ![Bouton "Ajouter un candidat"](img/02-bouton-ajouter.png)
 
 2. Cliquez sur **Ajouter un candidat**. Le formulaire de saisie s'ouvre.
 
-    ![Formulaire de création d'un candidat](gestion-des-candidats/img/03-formulaire-ajout-vide.png)
+    ![Formulaire de création d'un candidat](img/03-formulaire-ajout-vide.png)
 
 3. Remplissez les champs obligatoires :
 
@@ -59,7 +59,7 @@ Cette procédure permet de créer un candidat individuellement. Pour ajouter plu
 
 4. Cliquez sur **Enregistrer**. Le candidat est créé et vous êtes automatiquement redirigé vers sa fiche d'inscription aux tests.
 
-    ![Fiche candidat après création](gestion-des-candidats/img/04-candidat-cree.png)
+    ![Fiche candidat après création](img/04-candidat-cree.png)
 
 À partir de cette fiche, vous pouvez immédiatement [inscrire le candidat à un test](#inscrire-un-candidat-à-un-test) ou [lui envoyer une invitation](#envoyer-les-invitations).
 
@@ -74,7 +74,7 @@ L'import de candidats vous permet de créer plusieurs candidats — voire de les
 
 1. Depuis la page **Gestion des candidats**, repérez le bouton **Importer un fichier de candidats** dans la barre d'actions.
 
-    ![Boutons d'import](gestion-des-candidats/img/07-page-import.png)
+    ![Boutons d'import](img/07-page-import.png)
 
 2. Avant de préparer votre fichier, téléchargez le **modèle de fichier** depuis le lien proposé. Le modèle contient les en-têtes attendus et un exemple de ligne.
 
@@ -106,11 +106,11 @@ Une fois le candidat créé, vous devez l'inscrire à un ou plusieurs tests pour
 
 1. Depuis la liste des candidats, cliquez sur l'icône **Modifier** de la ligne correspondante. Vous arrivez sur la page d'inscription aux tests du candidat.
 
-    ![Page d'inscription aux tests](gestion-des-candidats/img/05-page-inscription-tests.png)
+    ![Page d'inscription aux tests](img/05-page-inscription-tests.png)
 
 2. Cliquez sur **Ajouter un test**.
 
-    ![Bouton "Ajouter un test"](gestion-des-candidats/img/06-bouton-ajouter-test.png)
+    ![Bouton "Ajouter un test"](img/06-bouton-ajouter-test.png)
 
 3. Dans la fenêtre qui s'ouvre, choisissez le **sujet** (matière) à évaluer, puis paramétrez l'inscription :
 
@@ -140,7 +140,7 @@ L'envoi d'invitation par email transmet au candidat son lien de connexion person
 
 1. Ouvrez la fiche du candidat (depuis la liste, cliquez sur l'icône **Modifier**).
 
-    ![Fiche candidat — bouton d'invitation](gestion-des-candidats/img/10-bouton-invitation.png)
+    ![Fiche candidat — bouton d'invitation](img/10-bouton-invitation.png)
 
 2. Cliquez sur **Envoyer l'email d'inscription** (ou le bouton équivalent visible dans la fiche).
 
@@ -175,7 +175,7 @@ Les groupes vous permettent d'organiser votre population de candidats (par promo
 
 Depuis le menu de navigation, cliquez sur **Groupes** (ou accédez à l'URL `/clientadmin/candidates/AdminGroupsWithTable`).
 
-![Page principale des groupes](gestion-des-candidats/img/09-page-groupes.png)
+![Page principale des groupes](img/09-page-groupes.png)
 
 La page **Gestion des groupes** affiche l'ensemble de vos groupes sous forme hiérarchique. Un groupe peut contenir des sous-groupes — utile par exemple pour structurer "Promotion 2026 → Section A → Cours du soir".
 
