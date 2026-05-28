@@ -18,21 +18,14 @@ Ce manuel s'adresse aux **administrateurs de compte** — responsables formation
 
 Les captures d'écran sont générées automatiquement à partir des dernières versions du code et restent donc fidèles à ce que vous voyez à l'écran.
 
-## Chapitres
+## [Gestion des candidats](candidates/)
 
-- [Gestion des candidats](candidates/) — ajouter, importer, inscrire à un test, envoyer des invitations, gérer les groupes.
-- [Gestion des emails](mail-templates/) — modèles de message, émetteurs vérifiés, envois programmés, bannière personnalisée.
+Ajouter des candidats individuellement ou par lot, les inscrire à des tests, leur envoyer des invitations et organiser votre population en groupes.
+
+## [Gestion des emails](mail-templates/)
+
+Personnaliser les modèles de message (Invitation, Relance, Envoi de rapport, Envoi de diplôme), gérer les émetteurs vérifiés et la bannière personnalisée, consulter et modifier les envois programmés.
 
 > 💡 **En cours de rédaction** — D'autres chapitres seront publiés au fur et à mesure : administrateurs, sessions, rapports, paiements, etc.
-
-## Autres manuels
-
-- [Manuel plateforme Tosa](../manuelplateforme_Tosa/)
-- [Manuel plateforme ITS](../manuelplateforme_ITS/)
-- [Manuel candidat Tosa](../tosamanual/)
-- [Manuel candidat ITS](../itsmanual/)
-- [Manuel administrateur Tosa](../manueladmin_Tosa/)
-- [Manuel administrateur ITS](../manueladmin_ITS/)
-- [Guide hébergement plateforme ITS](../guideplateformehebergement_ITS/)
 
 </div>
