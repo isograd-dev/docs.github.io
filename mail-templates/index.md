@@ -49,7 +49,7 @@ La plateforme reconnaît quatre types de messages, chacun ayant un déclencheur 
 
 ### Champs du modèle
 
-La page d'édition est divisée en deux cartes : **Détails du message** à gauche et **Visualisation du message** à droite (aperçu en direct).
+La page d'édition est organisée en deux cartes empilées : **Détails du message** (le formulaire, capture ci-dessus) puis **Visualisation du message** (aperçu en direct du mail tel qu'il sera reçu) en dessous.
 
 Les champs principaux, communs à tous les types :
 

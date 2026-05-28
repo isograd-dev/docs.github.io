@@ -1,0 +1,73 @@
+{
+  "chapter": "mail-templates",
+  "generated_at": "2026-05-28T13:22:03.933Z",
+  "base_url": "https://appdev.isograd.com",
+  "captures": [
+    {
+      "name": "01-liste-modeles.png",
+      "caption": "Page principale \"Gestion des modèles de message\" — tableau Nom / Type / Langue, boutons \"Créer un modèle\" et \"Ajouter une bannière personnalisée\".",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/clientemail/AdminMailTemplatesWithTable"
+    },
+    {
+      "name": "02-modal-creation.png",
+      "caption": "Fenêtre de création — choix du type de modèle (Invitation, Relance, Envoi de rapport, Envoi de diplôme).",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/clientadmin/clientemail/AdminMailTemplatesWithTable"
+    },
+    {
+      "name": "03-page-edition.png",
+      "caption": "Page d'édition — cartes \"Détails du message\" (formulaire) et \"Visualisation du message\" (aperçu iframe).",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/clientemail/MailTemplateUpdate?mai_tem_id=55825"
+    },
+    {
+      "name": "04-bouton-duplication.png",
+      "caption": "Ligne d'un modèle d'Invitation — boutons Modifier, Dupliquer, Supprimer en bout de ligne.",
+      "kind": "element",
+      "selector": "tbody tr[data-mai_tem_id=\"55825\"]",
+      "url": "https://test.isograd.com/clientadmin/clientemail/AdminMailTemplatesWithTable"
+    },
+    {
+      "name": "05-confirmation-suppression.png",
+      "caption": "Fenêtre de confirmation avant suppression d'un modèle.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/clientadmin/clientemail/AdminMailTemplatesWithTable#"
+    },
+    {
+      "name": "06-modal-banniere.png",
+      "caption": "Fenêtre d'upload de bannière personnalisée — sélection de fichier (JPG/PNG, 1 Mo max).",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/clientadmin/clientemail/AdminMailTemplatesWithTable"
+    },
+    {
+      "name": "07-page-emetteurs.png",
+      "caption": "Page \"Gestion des émetteurs d'email\" — tableau Adresse / Statut / Émetteur par défaut, bouton \"Ajouter un émetteur\".",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/clientemail/AdminEmailSendersWithTable"
+    },
+    {
+      "name": "08-modal-ajout-emetteur.png",
+      "caption": "Fenêtre d'ajout d'un émetteur — champ adresse email à vérifier auprès d'AWS SES.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/clientadmin/clientemail/AdminEmailSendersWithTable"
+    },
+    {
+      "name": "09-page-envois-programmes.png",
+      "caption": "Page \"Gestion des envois programmés\" — date d'envoi, destinataires, statut En attente.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/clientemail/AdminEmailQueueWithTable"
+    },
+    {
+      "name": "10-modal-envoi.png",
+      "caption": "Fenêtre d'envoi d'email — choix du modèle, objet, copie, programmation différée.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=873f661c-fd81-4e4b-9228-a40f8f8dc578"
+    }
+  ]
+}
