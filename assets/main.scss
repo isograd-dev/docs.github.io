@@ -207,6 +207,10 @@ main .wrapper .home {
   flex: 1;
   max-width: 1000px;
   min-width: 0;
+  // Stay above the fixed TOC (z-index 50) so the page title never slips behind
+  // the sidebar — defends against any margin-left override or wide H1 overflow.
+  position: relative;
+  z-index: 51;
 
   // Titres
   h1 {

@@ -8,12 +8,32 @@ Ce manuel s'adresse aux **administrateurs de compte** — responsables formation
 
 Les captures d'écran sont générées automatiquement à partir des dernières versions du code et restent donc fidèles à ce que vous voyez à l'écran.
 
-## [Gestion des candidats](candidates/)
+## Compte et administration
 
-Ajouter des candidats individuellement ou par lot, les inscrire à des tests, leur envoyer des invitations et organiser votre population en groupes.
+- [Gestion de votre compte](account/) — détails du compte, packs et crédits, alertes crédit.
+- [Gestion des administrateurs](admins/) — ajouter, modifier, donner des privilèges, désactiver les administrateurs de votre compte.
 
-## [Gestion des emails](mail-templates/)
+## Candidats et passages
 
-Personnaliser les modèles de message (Invitation, Relance, Envoi de rapport, Envoi de diplôme), gérer les émetteurs vérifiés et la bannière personnalisée, consulter et modifier les envois programmés.
+- [Gestion des candidats](candidates/) — ajouter, importer, inscrire à des tests, inviter par email, organiser en groupes.
+- [Gestion des sessions de passage](sessions/) — créer et planifier des sessions, importer en masse, gérer le calendrier d'examens.
 
-> 💡 **En cours de rédaction** — D'autres chapitres seront publiés au fur et à mesure : administrateurs, sessions, rapports, paiements, etc.
+## Suivi des résultats
+
+- [Gestion des résultats](results/) — consulter les passages, télécharger rapports et certificats, noter les tests à correction manuelle.
+- [Surveillance des tests](proctoring/) — configurer les profils de surveillance, valider ou invalider les passages surveillés.
+
+## Communication
+
+- [Gestion des emails](mail-templates/) — modèles de message, émetteurs vérifiés, bannière personnalisée, envois programmés.
+
+## Configuration
+
+- [Options par défaut](default-options/) — paramètres de passage communs aux évaluations et aux certifications.
+- [Profils de compétences](jobs/) — référentiels de compétences attendues par métier.
+
+---
+
+## Module Questions (auteurs de contenu)
+
+Si vous travaillez sur la **création** ou la **calibration** de questions, de sujets, de jeux de questions ou de formulaires de test, consultez le **[Manuel du module Questions](question-module/)** — un manuel distinct qui couvre le cycle de vie complet du contenu d'évaluation.

@@ -1,0 +1,26 @@
+{
+  "chapter": "question-module/visual-aids",
+  "generated_at": "2026-05-29T10:19:31.621Z",
+  "base_url": "https://app.isograd.com",
+  "captures": [
+    {
+      "name": "01-liste-aides.png",
+      "caption": "Page \"Gestion des aides visuelles\" — tableau Sujet / Langue / Type / Nom / Image, bouton \"Ajouter une aide visuelle\".",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/visualaid/AdminVisualAidsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_sbj_ids%5B%5D=-1&filter_lan_id=-1&filter_typ_id=-1&changepage=1&orderby=a.uid+ASC&export_to_excel=0"
+    },
+    {
+      "name": "02-modal-creation.png",
+      "caption": "Modal de création — sélection de la langue et du sujet.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/visualaid/AdminVisualAidsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_sbj_ids%5B%5D=-1&filter_lan_id=-1&filter_typ_id=-1&changepage=1&orderby=a.uid+ASC&export_to_excel=0"
+    },
+    {
+      "name": "03-fiche-aide.png",
+      "caption": "Fiche d'édition — champs Nom et Type éditables, Sujet/Langue verrouillés, zone de dépôt de fichier.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/visualaid/VisualAidUpdate?vis_aid_uid=76260870-2b34-429d-85e7-a867cdfa6203"
+    }
+  ]
+}

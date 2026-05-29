@@ -1,0 +1,27 @@
+{
+  "chapter": "question-module/answer-scales",
+  "generated_at": "2026-05-29T10:21:48.802Z",
+  "base_url": "https://app.isograd.com",
+  "captures": [
+    {
+      "name": "01-liste-echelles.png",
+      "caption": "Page \"Gestion des échelles de réponse\" — tableau ID / Valeurs, bouton \"Ajouter une échelle\".",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/AdminAnswerScalesWithTable?filter_search=&changepage=1&orderby=a.id+DESC&export_to_excel=0"
+    },
+    {
+      "name": "02-modal-creation.png",
+      "caption": "Modal de création — sélecteur de langue en haut, zone des options et bouton \"Ajouter une option\".",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/questions/AdminAnswerScalesWithTable?filter_search=&changepage=1&orderby=a.id+DESC&export_to_excel=0"
+    },
+    {
+      "name": "03-modal-edition.png",
+      "caption": "Modal d'édition — options pré-remplies, réordonnables, multilingues.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/questions/AdminAnswerScalesWithTable?filter_search=&changepage=1&orderby=a.id+DESC&export_to_excel=0#"
+    }
+  ]
+}
