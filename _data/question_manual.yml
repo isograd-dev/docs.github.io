@@ -1,0 +1,53 @@
+- title: Domaines de compétence
+  url: /ai/question-module/domains/
+  sections:
+    - title: Hiérarchie des domaines
+      anchor: hierarchie-des-domaines
+    - title: Créer un domaine
+      anchor: creer-un-domaine
+    - title: Onglets de la fiche
+      anchor: onglets-de-la-fiche-domaine
+    - title: Associer un domaine à un sujet
+      anchor: associer-un-domaine-a-un-sujet
+    - title: Questions associées
+      anchor: questions-associees
+    - title: Filtres
+      anchor: filtres
+    - title: Supprimer un domaine
+      anchor: supprimer-un-domaine
+
+- title: Familles de sujets
+  url: /ai/question-module/subject-families/
+  sections:
+    - title: Principales vs secondaires
+      anchor: familles-principales-et-secondaires
+    - title: Créer une famille
+      anchor: creer-une-famille
+    - title: Onglets de la fiche
+      anchor: onglets-de-la-fiche-famille
+    - title: Code CPF et certification
+      anchor: code-cpf-et-certification
+    - title: Supprimer une famille
+      anchor: supprimer-une-famille
+    - title: Transférer en production
+      anchor: transferer-en-production
+
+- title: Sujets
+  url: /ai/question-module/subjects/
+  sections:
+    - title: Créer un sujet
+      anchor: creer-un-sujet
+    - title: Onglets de la fiche sujet
+      anchor: onglets-de-la-fiche-sujet
+    - title: Multilingue
+      anchor: multilingue
+    - title: Niveaux et métiers par niveau
+      anchor: niveaux-et-metiers
+    - title: Auteurs des questions
+      anchor: auteurs-des-questions
+    - title: Administrateurs autorisés
+      anchor: administrateurs-autorises
+    - title: Dupliquer un sujet
+      anchor: dupliquer-un-sujet
+    - title: Supprimer un sujet
+      anchor: supprimer-un-sujet

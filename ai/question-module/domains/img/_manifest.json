@@ -1,0 +1,39 @@
+{
+  "chapter": "question-module/domains",
+  "generated_at": "2026-05-29T09:58:36.668Z",
+  "base_url": "https://app.isograd.com",
+  "captures": [
+    {
+      "name": "01-liste-domaines.png",
+      "caption": "Page \"Gestion des domaines\" — tableau ID / Nom / Parent / Niveau, filtres et boutons d'action.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/domains/AdminDomainsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_sbj_fam_id=-1&changepage=1&orderby=e.id+ASC&export_to_excel=0"
+    },
+    {
+      "name": "02-modal-creation-l1.png",
+      "caption": "Modal de création — commutateur \"Domaine principal\" coché par défaut (création d'un L1).",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/domains/AdminDomainsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_sbj_fam_id=-1&changepage=1&orderby=e.id+ASC&export_to_excel=0"
+    },
+    {
+      "name": "03-modal-creation-l2.png",
+      "caption": "Modal de création — commutateur décoché, sélecteur \"Domaine L1 parent\" apparu pour créer un L2.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/domains/AdminDomainsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_sbj_fam_id=-1&changepage=1&orderby=e.id+ASC&export_to_excel=0"
+    },
+    {
+      "name": "04-onglets-domaine.png",
+      "caption": "Fiche d'édition d'un domaine — bandeau et onglets Description / Niveaux de compétence / Recommandations / Associer les sujets.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/domains/DomainUpdate?dom_id=928"
+    },
+    {
+      "name": "05-onglet-associer-sujets.png",
+      "caption": "Onglet \"Associer les sujets\" — deux listes côte à côte (Sujets disponibles vs Sujets associés) avec drag-and-drop.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/domains/DomainUpdate?dom_id=928"
+    }
+  ]
+}

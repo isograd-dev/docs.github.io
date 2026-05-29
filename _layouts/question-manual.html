@@ -1,0 +1,28 @@
+---
+layout: home
+---
+
+<div id="toc">
+  <nav class="manual-nav" aria-label="Navigation du manuel">
+    {% for chapter in site.data.question_manual %}
+      {% assign is_current = false %}
+      {% if page.url == chapter.url %}{% assign is_current = true %}{% endif %}
+      <details class="manual-nav__chapter{% if is_current %} is-current{% endif %}"{% if is_current %} open{% endif %}>
+        <summary class="manual-nav__chapter-title">
+          <a href="{{ chapter.url | relative_url }}">{{ chapter.title }}</a>
+        </summary>
+        {% if chapter.sections %}
+          <ul class="manual-nav__sections">
+            {% for section in chapter.sections %}
+              <li><a href="{{ chapter.url | relative_url }}#{{ section.anchor }}">{{ section.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </details>
+    {% endfor %}
+  </nav>
+</div>
+
+<div id="content">
+  {{ content }}
+</div>
