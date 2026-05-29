@@ -1,0 +1,37 @@
+{
+  "chapter": "account",
+  "generated_at": "2026-05-29T09:02:55.163Z",
+  "base_url": "https://app.isograd.com",
+  "captures": [
+    {
+      "name": "01-page-compte.png",
+      "caption": "Page \"Votre compte\" — bandeau d'identité du compte, onglets Adresse / Détails / Packs / Administrateur.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/account/CompanyUpdate"
+    },
+    {
+      "name": "02-onglet-adresse.png",
+      "caption": "Onglet \"Adresse\" — raison sociale, adresse, code postal, ville, pays.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/account/CompanyUpdate"
+    },
+    {
+      "name": "03-onglet-details.png",
+      "caption": "Onglet \"Détails\" — logo, SIRET, TVA, adresses RGPD et feedback.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/account/CompanyUpdate"
+    },
+    {
+      "name": "04-onglet-packs.png",
+      "caption": "Onglet \"Packs\" — liste des packs de crédits, quantité initiale, restante, date d'expiration.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/account/CompanyUpdate"
+    },
+    {
+      "name": "05-page-alertes.png",
+      "caption": "Page \"Alertes crédit\" — trois commutateurs : expiration, seuil de crédits, consommation mensuelle. Chacun avec destinataire (et seuil pour celui du milieu).",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/account/UpdateCreditAlerts"
+    }
+  ]
+}

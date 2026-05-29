@@ -1,0 +1,31 @@
+{
+  "chapter": "default-options",
+  "generated_at": "2026-05-29T09:20:50.090Z",
+  "base_url": "https://app.isograd.com",
+  "captures": [
+    {
+      "name": "01-page-options.png",
+      "caption": "Page \"Options par défaut\" — onglets visibles, bouton \"Enregistrer\" en haut à droite.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/parameters/UpdateDefaultOptions"
+    },
+    {
+      "name": "02-onglet-generaux.png",
+      "caption": "Onglet \"Paramètres généraux\" — format des dates, options de passage, test de configuration, IA générative.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/parameters/UpdateDefaultOptions"
+    },
+    {
+      "name": "03-onglet-evaluation.png",
+      "caption": "Onglet \"Paramètres pour l'évaluation\" — profil de compétences, rapport, relances automatiques.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/parameters/UpdateDefaultOptions"
+    },
+    {
+      "name": "04-onglet-certification.png",
+      "caption": "Onglet \"Paramètres pour la certification\" — envoi du certificat, rapport de certification, corrigé.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/parameters/UpdateDefaultOptions"
+    }
+  ]
+}

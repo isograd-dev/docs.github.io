@@ -1,0 +1,26 @@
+{
+  "chapter": "proctoring",
+  "generated_at": "2026-05-29T09:31:41.815Z",
+  "base_url": "https://app.isograd.com",
+  "captures": [
+    {
+      "name": "01-page-profils.png",
+      "caption": "Page \"Gestion des profils de surveillance\" — liste des profils existants, bouton \"Ajouter un profil de surveillance\".",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminProctoringParametersWithTable"
+    },
+    {
+      "name": "02-modal-profil-ajout.png",
+      "caption": "Fenêtre \"Ajouter un profil de surveillance\" — nom et options (document d'identité, plein écran, vidéo, audio, captures, scan de pièce).",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminProctoringParametersWithTable"
+    },
+    {
+      "name": "03-page-tests-surveilles.png",
+      "caption": "Page \"Gestion des tests surveillés\" — tableau ID / Nom / Test / Date / Type / Statut / Incident, filtres dédiés.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/clientresult/AdminProctoringReviewWithTable"
+    }
+  ]
+}

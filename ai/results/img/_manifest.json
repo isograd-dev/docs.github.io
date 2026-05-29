@@ -1,0 +1,32 @@
+{
+  "chapter": "results",
+  "generated_at": "2026-05-29T09:26:20.336Z",
+  "base_url": "https://app.isograd.com",
+  "captures": [
+    {
+      "name": "01-liste-resultats.png",
+      "caption": "Page \"Résultats aux tests\" — tableau Groupe / Nom / Prénom / Test / Score, panneau de filtres à gauche, barre d'actions en haut.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/AdminResultsWithTable?filter_rows_per_page=50&filter_search=&filter_dep_id=-1&filter_sta_id=-1&filter_typ_id=-1&filter_ses_id=-1&filter_from=&filter_to=&changepage=1&orderby=c.com_dat+DESC&export_to_excel=0"
+    },
+    {
+      "name": "02-filtres.png",
+      "caption": "Panneau de filtres (capture pleine page).",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/AdminResultsWithTable?filter_rows_per_page=50&filter_search=&filter_dep_id=-1&filter_sta_id=-1&filter_typ_id=-1&filter_ses_id=-1&filter_from=&filter_to=&changepage=1&orderby=c.com_dat+DESC&export_to_excel=0"
+    },
+    {
+      "name": "03-detail-resultat.png",
+      "caption": "Page Analyse d'un résultat — score global, distribution par compétence, détail par question.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/clientresult/AnswersClientResult?pla_tst_id=8473869&marking_mode=1&returnpage=null"
+    },
+    {
+      "name": "04-modal-rapport-groupe.png",
+      "caption": "Fenêtre \"Rapport de groupe\" — choix du test, langue, période.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/clientadmin/AdminResultsWithTable?filter_rows_per_page=50&filter_search=&filter_dep_id=48171&filter_sta_id=-1&filter_typ_id=-1&filter_ses_id=-1&filter_from=&filter_to=&changepage=1&orderby=c.com_dat+DESC&export_to_excel=0#"
+    }
+  ]
+}
