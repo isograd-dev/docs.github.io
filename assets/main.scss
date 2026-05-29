@@ -45,6 +45,53 @@ header.site-header {
   .site-nav {
     display: none;
   }
+
+  // Layout: site title on the left, manual nav on the right.
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0 24px;
+    height: $header-height;
+  }
+
+  .site-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: $text-primary;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  // Custom cross-manual nav (Administration de compte / Module Questions).
+  .manual-header-nav {
+    display: flex;
+    gap: 8px;
+
+    &__link {
+      padding: 8px 14px;
+      color: $text-secondary;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 6px;
+      transition: all 0.15s ease;
+
+      &:hover {
+        background: $bg-light;
+        color: $primary-color;
+      }
+
+      &.is-active {
+        background: $primary-color;
+        color: #ffffff;
+      }
+    }
+  }
 }
 
 // Layout principal

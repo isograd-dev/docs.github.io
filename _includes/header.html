@@ -1,0 +1,12 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+    <nav class="manual-header-nav" aria-label="Manuels">
+      <a class="manual-header-nav__link{% if page.url contains '/ai/' and page.url contains 'question-module' == false %} is-active{% endif %}"
+         href="{{ "/ai/" | relative_url }}">Administration de compte</a>
+      <a class="manual-header-nav__link{% if page.url contains '/ai/question-module' %} is-active{% endif %}"
+         href="{{ "/ai/question-module/" | relative_url }}">Module Questions</a>
+    </nav>
+  </div>
+</header>
