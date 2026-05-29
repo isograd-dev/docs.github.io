@@ -39,6 +39,12 @@ header.site-header {
   border-bottom: 1px solid $border-color;
   z-index: 100;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+  // Hide Minima's auto-populated top nav (page links) — chapter navigation
+  // lives in the left sidebar (#toc), driven by _data/admin_manual.yml.
+  .site-nav {
+    display: none;
+  }
 }
 
 // Layout principal
