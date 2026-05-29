@@ -2,9 +2,17 @@
 layout: default
 ---
 
-<div id="toc">
+{% if page.url contains "/ai/en/" %}
+  {% assign chapters = site.data.en.question_manual %}
+  {% assign manual_lang = "en" %}
+{% else %}
+  {% assign chapters = site.data.fr.question_manual %}
+  {% assign manual_lang = "fr" %}
+{% endif %}
+
+<div id="toc" data-lang="{{ manual_lang }}">
   <nav class="manual-nav" aria-label="Navigation du manuel">
-    {% for chapter in site.data.question_manual %}
+    {% for chapter in chapters %}
       {% assign is_current = false %}
       {% if page.url == chapter.url %}{% assign is_current = true %}{% endif %}
       <details class="manual-nav__chapter{% if is_current %} is-current{% endif %}"{% if is_current %} open{% endif %}>

@@ -1,0 +1,19 @@
+{
+  "chapter": "question-module/question-sets",
+  "generated_at": "2026-05-29T14:20:14.284Z",
+  "base_url": "https://app.isograd.com",
+  "captures": [
+    {
+      "name": "01-liste-jeux.png",
+      "caption": "Page \"Gestion des jeux de questions\" — tableau ID / Nom, bouton \"Créer un jeu de questions\".",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questionsets/AdminQuestionSetsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_sbj_ids%5B%5D=-1&changepage=1&orderby=a.des+DESC&export_to_excel=0"
+    },
+    {
+      "name": "02-fiche-jeu.png",
+      "caption": "Fiche d'édition d'un jeu — onglets Général / Administrateurs, champs Nom / Sujets / Archivé / Commentaire et descriptions par langue.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questionsets/QuestionSetUpdate?que_set_id=578"
+    }
+  ]
+}

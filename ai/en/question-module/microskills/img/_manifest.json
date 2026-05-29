@@ -1,0 +1,25 @@
+{
+  "chapter": "question-module/microskills",
+  "generated_at": "2026-05-29T14:20:07.605Z",
+  "base_url": "https://app.isograd.com",
+  "captures": [
+    {
+      "name": "01-liste-microskills.png",
+      "caption": "Page \"Gestion des micro-compétences\" — tableau ID / Description / Famille de sujets / Domaines.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/domains/AdminMicroSkillsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_sbj_fam_id=-1&changepage=1&orderby=a.id+ASC&export_to_excel=0"
+    },
+    {
+      "name": "02-fiche-microskill.png",
+      "caption": "Fiche d'édition — onglet Description avec sélecteur de langue, Description courte et Description longue, lien vers les questions associées.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/domains/MicroSkillUpdate?mic_ski_id=275"
+    },
+    {
+      "name": "03-onglet-domaines-associes.png",
+      "caption": "Onglet \"Domaines associés\" — deux listes côte à côte (Domaines disponibles vs Domaines associés) avec drag-and-drop et filtre de recherche.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/domains/MicroSkillUpdate?mic_ski_id=275"
+    }
+  ]
+}

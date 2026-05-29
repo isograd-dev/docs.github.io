@@ -1,0 +1,197 @@
+- title: Question editor
+  url: /ai/en/question-module/question-editor/
+  sections:
+    - title: Overview
+      anchor: overview
+    - title: Editing tabs
+      anchor: editing-tabs
+    - title: Common fields (title, text, illustration, tutorial)
+      anchor: common-fields
+    - title: AI generation
+      anchor: ai-generation
+    - title: Answer types — overview
+      anchor: answer-types
+    - title: Multiple-choice (MCQ)
+      anchor: mcq
+    - title: Scale (Likert, T/F)
+      anchor: scale-question
+    - title: Fill in the blanks
+      anchor: fill-in-the-blanks
+    - title: Code
+      anchor: code
+    - title: Drag-and-drop
+      anchor: drag-and-drop
+    - title: Sortable
+      anchor: sortable
+    - title: Link (pairing)
+      anchor: link
+    - title: Click in area
+      anchor: click-in-area
+    - title: Manual marking
+      anchor: manual-marking
+    - title: Typing test
+      anchor: typing
+    - title: Upload with AI grading
+      anchor: upload-auto-grading
+    - title: Save, preview, delete
+      anchor: final-actions
+    - title: Best practices
+      anchor: best-practices
+
+- title: Questions
+  url: /ai/en/question-module/questions/
+  sections:
+    - title: Filters
+      anchor: filters
+    - title: Search favorites
+      anchor: search-favorites
+    - title: Star a question
+      anchor: star-a-question
+    - title: Row actions
+      anchor: row-actions
+    - title: Bulk actions
+      anchor: bulk-actions
+    - title: Import questions
+      anchor: import-questions
+    - title: Preview a question
+      anchor: preview-a-question
+    - title: Question verification
+      anchor: question-verification
+
+- title: Answer scales
+  url: /ai/en/question-module/answer-scales/
+  sections:
+    - title: Create a scale
+      anchor: create-a-scale
+    - title: Reorder options
+      anchor: reorder-options
+    - title: Multilingual entry
+      anchor: multilingual-entry
+    - title: Edit a scale
+      anchor: edit-a-scale
+    - title: Delete a scale
+      anchor: delete-a-scale
+    - title: Best practices
+      anchor: best-practices
+
+- title: Visual aids
+  url: /ai/en/question-module/visual-aids/
+  sections:
+    - title: Accepted file formats
+      anchor: accepted-formats
+    - title: Create a visual aid
+      anchor: create-a-visual-aid
+    - title: Use in a question
+      anchor: use-in-a-question
+    - title: Filters
+      anchor: filters
+    - title: Delete a visual aid
+      anchor: delete-a-visual-aid
+    - title: Best practices
+      anchor: best-practices
+
+- title: Question sets
+  url: /ai/en/question-module/question-sets/
+  sections:
+    - title: Why use a set
+      anchor: why-use-a-set
+    - title: Create a set
+      anchor: create-a-set
+    - title: Tabs of the edit form
+      anchor: tabs-of-the-edit-form
+    - title: Add questions to a set
+      anchor: add-questions-to-a-set
+    - title: Filters
+      anchor: filters
+    - title: Archive vs delete
+      anchor: archive-vs-delete
+
+- title: Micro-skills
+  url: /ai/en/question-module/microskills/
+  sections:
+    - title: Domain vs micro-skill
+      anchor: domain-vs-microskill
+    - title: Create a micro-skill
+      anchor: create-a-microskill
+    - title: Tabs of the edit form
+      anchor: tabs-of-the-edit-form
+    - title: Multilingual entry
+      anchor: multilingual-entry
+    - title: Filters
+      anchor: filters
+    - title: Delete a micro-skill
+      anchor: delete-a-microskill
+
+- title: Skill domains
+  url: /ai/en/question-module/domains/
+  sections:
+    - title: Domain hierarchy
+      anchor: domain-hierarchy
+    - title: Create a domain
+      anchor: create-a-domain
+    - title: Tabs of the edit form
+      anchor: tabs-of-the-edit-form
+    - title: Link a domain to a subject
+      anchor: link-a-domain-to-a-subject
+    - title: Associated questions
+      anchor: associated-questions
+    - title: Filters
+      anchor: filters
+    - title: Delete a domain
+      anchor: delete-a-domain
+
+- title: Tests (test forms)
+  url: /ai/en/question-module/test-forms/
+  sections:
+    - title: Concepts (types, algorithm, modes)
+      anchor: concepts
+    - title: Create a test
+      anchor: create-a-test
+    - title: Tabs — advanced mode
+      anchor: tabs-advanced-mode
+    - title: Tabs — client mode
+      anchor: tabs-client-mode
+    - title: Edit a test
+      anchor: edit-a-test
+    - title: Duplicate a test
+      anchor: duplicate-a-test
+    - title: Delete a test
+      anchor: delete-a-test
+    - title: Authorize a test for an account
+      anchor: authorize-test
+
+- title: Subjects
+  url: /ai/en/question-module/subjects/
+  sections:
+    - title: Create a subject
+      anchor: create-a-subject
+    - title: Tabs of the subject form
+      anchor: tabs-of-the-subject-form
+    - title: Multilingual
+      anchor: multilingual
+    - title: Levels and jobs per level
+      anchor: levels-and-jobs
+    - title: Question authors
+      anchor: question-authors
+    - title: Authorized administrators
+      anchor: authorized-administrators
+    - title: Duplicate a subject
+      anchor: duplicate-a-subject
+    - title: Delete a subject
+      anchor: delete-a-subject
+
+- title: Subject families
+  url: /ai/en/question-module/subject-families/
+  sections:
+    - title: Main vs secondary
+      anchor: main-vs-secondary
+    - title: Create a family
+      anchor: create-a-family
+    - title: Tabs of the family form
+      anchor: tabs-of-the-family-form
+    - title: CPF code and certification
+      anchor: cpf-and-certification
+    - title: Delete a family
+      anchor: delete-a-family
+    - title: Transfer to production
+      anchor: transfer-to-production

@@ -1,39 +1,21 @@
 ---
-layout: admin-manual
+layout: default
 ---
 
-# Manuel de l'administrateur de compte
+<div class="lang-picker">
+  <h1 class="lang-picker__title">Documentation Isograd</h1>
+  <p class="lang-picker__subtitle">Choisissez votre langue / Choose your language</p>
 
-Ce manuel s'adresse aux **administrateurs de compte** — responsables formation, gestionnaires RH, coordinateurs de tests — et décrit pas à pas les opérations courantes sur la console d'administration de la plateforme Isograd.
-
-Les captures d'écran sont générées automatiquement à partir des dernières versions du code et restent donc fidèles à ce que vous voyez à l'écran.
-
-## Compte et administration
-
-- [Gestion de votre compte](account/) — détails du compte, packs et crédits, alertes crédit.
-- [Gestion des administrateurs](admins/) — ajouter, modifier, donner des privilèges, désactiver les administrateurs de votre compte.
-
-## Candidats et passages
-
-- [Gestion des candidats](candidates/) — ajouter, importer, inscrire à des tests, inviter par email, organiser en groupes.
-- [Gestion des sessions de passage](sessions/) — créer et planifier des sessions, importer en masse, gérer le calendrier d'examens.
-
-## Suivi des résultats
-
-- [Gestion des résultats](results/) — consulter les passages, télécharger rapports et certificats, noter les tests à correction manuelle.
-- [Surveillance des tests](proctoring/) — configurer les profils de surveillance, valider ou invalider les passages surveillés.
-
-## Communication
-
-- [Gestion des emails](mail-templates/) — modèles de message, émetteurs vérifiés, bannière personnalisée, envois programmés.
-
-## Configuration
-
-- [Options par défaut](default-options/) — paramètres de passage communs aux évaluations et aux certifications.
-- [Profils de compétences](jobs/) — référentiels de compétences attendues par métier.
-
----
-
-## Module Questions (auteurs de contenu)
-
-Si vous travaillez sur la **création** ou la **calibration** de questions, de sujets, de jeux de questions ou de formulaires de test, consultez le **[Manuel du module Questions](question-module/)** — un manuel distinct qui couvre le cycle de vie complet du contenu d'évaluation.
+  <div class="lang-picker__choices">
+    <a class="lang-picker__choice" href="{{ '/ai/fr/' | relative_url }}" hreflang="fr" lang="fr">
+      <span class="lang-picker__flag" aria-hidden="true">🇫🇷</span>
+      <span class="lang-picker__name">Français</span>
+      <span class="lang-picker__desc">Manuel administrateur de compte et manuel auteur des questions</span>
+    </a>
+    <a class="lang-picker__choice" href="{{ '/ai/en/' | relative_url }}" hreflang="en" lang="en">
+      <span class="lang-picker__flag" aria-hidden="true">🇬🇧</span>
+      <span class="lang-picker__name">English</span>
+      <span class="lang-picker__desc">Account administrator manual and question author manual</span>
+    </a>
+  </div>
+</div>

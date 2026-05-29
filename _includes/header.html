@@ -2,11 +2,46 @@
   <div class="wrapper">
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
+    {%- comment -%}
+      Detect language from URL so the switcher highlights the current side
+      and the manual nav links route to the matching localized landing page.
+    {%- endcomment -%}
+    {%- if page.url contains "/ai/en/" -%}
+      {%- assign current_lang = "en" -%}
+      {%- assign admin_home = "/ai/en/" -%}
+      {%- assign question_home = "/ai/en/question-module/" -%}
+    {%- else -%}
+      {%- assign current_lang = "fr" -%}
+      {%- assign admin_home = "/ai/fr/" -%}
+      {%- assign question_home = "/ai/fr/question-module/" -%}
+    {%- endif -%}
+
     <nav class="manual-header-nav" aria-label="Manuels">
       <a class="manual-header-nav__link{% if page.url contains '/ai/' and page.url contains 'question-module' == false %} is-active{% endif %}"
-         href="{{ "/ai/" | relative_url }}">Module Candidats & Résultats</a>
-      <a class="manual-header-nav__link{% if page.url contains '/ai/question-module' %} is-active{% endif %}"
-         href="{{ "/ai/question-module/" | relative_url }}">Module Questions</a>
+         href="{{ admin_home | relative_url }}">{% if current_lang == "en" %}Account &amp; Results{% else %}Module Candidats &amp; Résultats{% endif %}</a>
+      <a class="manual-header-nav__link{% if page.url contains 'question-module' %} is-active{% endif %}"
+         href="{{ question_home | relative_url }}">{% if current_lang == "en" %}Questions Module{% else %}Module Questions{% endif %}</a>
+
+      {%- comment -%}
+        Language switcher: link to the equivalent URL in the other language.
+        For URLs under /ai/fr/ or /ai/en/, just swap the prefix. For other
+        URLs (the language picker at /ai/), fall back to /ai/en/ or /ai/fr/.
+      {%- endcomment -%}
+      <span class="manual-header-nav__lang">
+        {%- if current_lang == "en" -%}
+          {%- assign fr_url = page.url | replace: "/ai/en/", "/ai/fr/" -%}
+          <a class="manual-header-nav__lang-link" href="{{ fr_url | relative_url }}" hreflang="fr" lang="fr">FR</a>
+          <span class="manual-header-nav__lang-link is-active" aria-current="true">EN</span>
+        {%- else -%}
+          <span class="manual-header-nav__lang-link is-active" aria-current="true">FR</span>
+          {%- assign en_url = page.url | replace: "/ai/fr/", "/ai/en/" -%}
+          {%- if page.url contains "/ai/fr/" -%}
+            <a class="manual-header-nav__lang-link" href="{{ en_url | relative_url }}" hreflang="en" lang="en">EN</a>
+          {%- else -%}
+            <a class="manual-header-nav__lang-link" href="{{ '/ai/en/' | relative_url }}" hreflang="en" lang="en">EN</a>
+          {%- endif -%}
+        {%- endif -%}
+      </span>
     </nav>
   </div>
 </header>

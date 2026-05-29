@@ -1,0 +1,26 @@
+{
+  "chapter": "question-module/subject-families",
+  "generated_at": "2026-05-29T14:16:02.167Z",
+  "base_url": "https://app.isograd.com",
+  "captures": [
+    {
+      "name": "01-liste-familles.png",
+      "caption": "Page \"Gestion des familles de sujets\" — tableau ID / Nom / CPF / Score FR / Score US, bouton \"Ajouter une famille\".",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/subjects/AdminSubjectFamiliesWithTable?filter_search=&changepage=1&orderby=a.des-%3E%3E%27%24.%221%22%27+ASC&export_to_excel=0"
+    },
+    {
+      "name": "02-modal-creation.png",
+      "caption": "Fenêtre \"Ajouter une famille\" — saisie du nom et choix Principale / Secondaire (radio is_pri).",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/subjects/AdminSubjectFamiliesWithTable?filter_search=&changepage=1&orderby=a.des-%3E%3E%27%24.%221%22%27+ASC&export_to_excel=0"
+    },
+    {
+      "name": "03-onglets-famille-principale.png",
+      "caption": "Fiche d'édition d'une famille principale — bandeau et 5 onglets (Description, Métiers, Tests, Experts, Spécifiques).",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/subjects/SubjectFamilyUpdate?sbj_fam_id=48"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+- title: Account management
+  url: /ai/en/account/
+  sections:
+    - title: Account details
+      anchor: account-details
+    - title: Packs and credits
+      anchor: packs-and-credits
+    - title: Credit alerts
+      anchor: credit-alerts
+
+- title: Administrator management
+  url: /ai/en/admins/
+  sections:
+    - title: Administrator types
+      anchor: administrator-types
+    - title: Add an administrator
+      anchor: add-an-administrator
+    - title: Edit an administrator
+      anchor: edit-an-administrator
+    - title: Edit privileges
+      anchor: edit-privileges
+    - title: Disable and unlock
+      anchor: disable-administrator
+    - title: Reset 2FA
+      anchor: reset-2fa
+    - title: Send credentials
+      anchor: send-credentials
+    - title: Delete an administrator
+      anchor: delete-an-administrator
+    - title: Export the list
+      anchor: export-the-list
+
+- title: Results management
+  url: /ai/en/results/
+  sections:
+    - title: Filters and search
+      anchor: filters-and-search
+    - title: Test statuses
+      anchor: test-statuses
+    - title: Row actions
+      anchor: row-actions
+    - title: Group reports
+      anchor: group-reports
+    - title: View result detail
+      anchor: view-result-detail
+    - title: Grade a test
+      anchor: grade-a-test
+    - title: Export to Excel
+      anchor: export-to-excel
+
+- title: Test proctoring
+  url: /ai/en/proctoring/
+  sections:
+    - title: Proctoring profiles
+      anchor: proctoring-profiles
+    - title: Proctored tests management
+      anchor: proctored-tests-management
+    - title: Enable proctoring on a test
+      anchor: enable-proctoring
+
+- title: Default options
+  url: /ai/en/default-options/
+  sections:
+    - title: General settings
+      anchor: general-settings
+    - title: Evaluation settings
+      anchor: evaluation-settings
+    - title: Certification settings
+      anchor: certification-settings
+    - title: Retake policy
+      anchor: retake-policy
+
+- title: Skill profiles
+  url: /ai/en/jobs/
+  sections:
+    - title: Create a profile
+      anchor: create-a-profile
+    - title: Define required levels
+      anchor: define-required-levels
+    - title: Edit a profile
+      anchor: edit-a-profile
+    - title: Delete a profile
+      anchor: delete-a-profile
+
+- title: Test session management
+  url: /ai/en/sessions/
+  sections:
+    - title: What is a session for
+      anchor: what-is-a-session-for
+    - title: Create a session
+      anchor: create-a-session
+    - title: Edit a session
+      anchor: edit-a-session
+    - title: Delete a session
+      anchor: delete-a-session
+    - title: Import multiple sessions
+      anchor: import-sessions
+    - title: Delete tests from past sessions
+      anchor: delete-tests-past-sessions
+    - title: Filters and display
+      anchor: filters-and-display
+
+- title: Candidate management
+  url: /ai/en/candidates/
+  sections:
+    - title: Add a candidate
+      anchor: add-a-candidate
+    - title: Import candidates
+      anchor: import-candidates
+    - title: Register a candidate to a test
+      anchor: register-a-candidate-to-a-test
+    - title: Send invitations
+      anchor: send-invitations
+    - title: Manage groups
+      anchor: manage-groups
+
+- title: Email management
+  url: /ai/en/mail-templates/
+  sections:
+    - title: The four template types
+      anchor: the-four-template-types
+    - title: Create an email template
+      anchor: create-an-email-template
+    - title: Private and public templates
+      anchor: private-and-public-templates
+    - title: Duplicate a template
+      anchor: duplicate-a-template
+    - title: Delete a template
+      anchor: delete-a-template
+    - title: Add a custom banner
+      anchor: add-a-custom-banner
+    - title: Email senders
+      anchor: email-senders
+    - title: Scheduled sendings
+      anchor: scheduled-sendings
+    - title: Send an email to a candidate
+      anchor: send-an-email-to-a-candidate

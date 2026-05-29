@@ -1,0 +1,38 @@
+{
+  "chapter": "question-module/subjects",
+  "generated_at": "2026-05-29T14:20:45.957Z",
+  "base_url": "https://app.isograd.com",
+  "captures": [
+    {
+      "name": "01-liste-sujets.png",
+      "caption": "Page \"Gestion des sujets\" — tableau ID / Nom / Famille / Langue / Version, filtres et boutons d'action.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/subjects/AdminSubjectsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_lan_id=-1&filter_sbj_fam_id=-1&changepage=1&orderby=lon_des-%3E%3E%27%24.%222%22%27+ASC&export_to_excel=0"
+    },
+    {
+      "name": "02-modal-creation.png",
+      "caption": "Fenêtre \"Ajouter un sujet\" — sélection de la famille de sujets.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/subjects/AdminSubjectsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_lan_id=-1&filter_sbj_fam_id=-1&changepage=1&orderby=lon_des-%3E%3E%27%24.%222%22%27+ASC&export_to_excel=0"
+    },
+    {
+      "name": "03-onglets-sujet.png",
+      "caption": "Fiche d'édition d'un sujet — bandeau supérieur et 8 onglets (Description, Détails du sujet, Description des niveaux, Métiers par niveau, Description commerciale des tests, Auteurs des questions, Détails spécifiques, Administrateurs).",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/subjects/SubjectUpdate?sbj_id=433"
+    },
+    {
+      "name": "04-onglet-description.png",
+      "caption": "Onglet \"Description\" — commutateur multilingue activé, bloc Nom + Description par langue.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/subjects/SubjectUpdate?sbj_id=433"
+    },
+    {
+      "name": "05-onglet-administrateurs.png",
+      "caption": "Onglet \"Administrateurs\" — liste des administrateurs habilités sur ce sujet, champ de filtrage.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/subjects/SubjectUpdate?sbj_id=433"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "chapter": "question-module/questions",
+  "generated_at": "2026-05-29T14:20:30.276Z",
+  "base_url": "https://app.isograd.com",
+  "captures": [
+    {
+      "name": "01-liste-questions.png",
+      "caption": "Page \"Gestion des questions\" — tableau ID / Sujet / Titre / Type / Passages / Succès / Difficulté / Statut / Responsable, panneau de filtres à gauche, barre d'actions en haut.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/AdminQuestionsWithTable?page_sel=1&filter_rows_per_page=50&filter_fav_nam=-1&filter_search=&filter_sbj_ids%5B%5D=-1&filter_que_set_ids%5B%5D=-1&filter_que_set_ids_mod=&filter_lan_id=-1&filter_ans_typ_ids%5B%5D=-1&filter_sta_id=-1&filter_tra_pro=-1&filter_rsp_adm_uids%5B%5D=-1&changepage=1&orderby=a.str_id+ASC&export_to_excel=0&scrollto="
+    },
+    {
+      "name": "02-filtres.png",
+      "caption": "Panneau de filtres — Recherche, Sujet, Langue, Type de réponse, Statut, plus les filtres avancés (Domaine, Jeu de questions, Responsable).",
+      "kind": "element",
+      "selector": "[class*=\"filter\"]:has(input[name=\"filter_search\"]), form[id*=\"filter\"], .filters-panel",
+      "url": "https://test.isograd.com/questions/AdminQuestionsWithTable?page_sel=1&filter_rows_per_page=50&filter_fav_nam=-1&filter_search=&filter_sbj_ids%5B%5D=-1&filter_que_set_ids%5B%5D=-1&filter_que_set_ids_mod=&filter_lan_id=-1&filter_ans_typ_ids%5B%5D=-1&filter_sta_id=-1&filter_tra_pro=-1&filter_rsp_adm_uids%5B%5D=-1&changepage=1&orderby=a.str_id+ASC&export_to_excel=0&scrollto="
+    },
+    {
+      "name": "03-modal-import.png",
+      "caption": "Fenêtre d'import — sélecteurs Sujet, Langue, Jeu de questions, et zone de dépôt du fichier Excel.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/questions/AdminQuestionsWithTable?page_sel=1&filter_rows_per_page=50&filter_fav_nam=-1&filter_search=&filter_sbj_ids%5B%5D=-1&filter_que_set_ids%5B%5D=-1&filter_que_set_ids_mod=&filter_lan_id=-1&filter_ans_typ_ids%5B%5D=-1&filter_sta_id=-1&filter_tra_pro=-1&filter_rsp_adm_uids%5B%5D=-1&changepage=1&orderby=a.str_id+ASC&export_to_excel=0&scrollto="
+    },
+    {
+      "name": "04-page-verification.png",
+      "caption": "Page \"Vérification des questions\" — diagnostic des anomalies éditoriales pour un sujet donné.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/CheckAllQuestionsWithTable"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+- title: Gestion de votre compte
+  url: /ai/fr/account/
+  sections:
+    - title: Détails du compte
+      anchor: details-du-compte
+    - title: Packs et crédits
+      anchor: packs-et-credits
+    - title: Alertes crédit
+      anchor: alertes-credit
+
+- title: Gestion des administrateurs
+  url: /ai/fr/admins/
+  sections:
+    - title: Types d'administrateurs
+      anchor: types-d-administrateurs
+    - title: Ajouter un administrateur
+      anchor: ajouter-un-administrateur
+    - title: Modifier un administrateur
+      anchor: modifier-un-administrateur
+    - title: Modifier les privilèges
+      anchor: modifier-les-privileges
+    - title: Désactiver et débloquer
+      anchor: desactiver-administrateur
+    - title: Réinitialiser le 2FA
+      anchor: reinitialiser-2fa
+    - title: Envoyer les identifiants
+      anchor: envoyer-les-identifiants
+    - title: Supprimer un administrateur
+      anchor: supprimer-un-administrateur
+    - title: Exporter la liste
+      anchor: exporter-la-liste
+
+- title: Gestion des résultats
+  url: /ai/fr/results/
+  sections:
+    - title: Filtres et recherche
+      anchor: filtres-et-recherche
+    - title: Statuts de test
+      anchor: statuts-de-test
+    - title: Actions sur une ligne
+      anchor: actions-sur-une-ligne
+    - title: Rapports de groupe
+      anchor: rapports-de-groupe
+    - title: Voir le détail d'un résultat
+      anchor: voir-le-detail-d-un-resultat
+    - title: Noter un test
+      anchor: noter-un-test
+    - title: Exporter vers Excel
+      anchor: exporter-vers-excel
+
+- title: Surveillance des tests
+  url: /ai/fr/proctoring/
+  sections:
+    - title: Profils de surveillance
+      anchor: profils-de-surveillance
+    - title: Gestion des tests surveillés
+      anchor: gestion-des-tests-surveilles
+    - title: Activer la surveillance sur un test
+      anchor: activer-surveillance
+
+- title: Options par défaut
+  url: /ai/fr/default-options/
+  sections:
+    - title: Paramètres généraux
+      anchor: parametres-generaux
+    - title: Paramètres pour l'évaluation
+      anchor: parametres-evaluation
+    - title: Paramètres pour la certification
+      anchor: parametres-certification
+    - title: Politique de repassage
+      anchor: politique-de-repassage
+
+- title: Profils de compétences
+  url: /ai/fr/jobs/
+  sections:
+    - title: Créer un profil
+      anchor: creer-un-profil
+    - title: Définir les niveaux requis
+      anchor: definir-les-niveaux-requis
+    - title: Modifier un profil
+      anchor: modifier-un-profil
+    - title: Supprimer un profil
+      anchor: supprimer-un-profil
+
+- title: Gestion des sessions de passage
+  url: /ai/fr/sessions/
+  sections:
+    - title: À quoi sert une session
+      anchor: a-quoi-sert-une-session
+    - title: Créer une session
+      anchor: creer-une-session
+    - title: Modifier une session
+      anchor: modifier-une-session
+    - title: Supprimer une session
+      anchor: supprimer-une-session
+    - title: Importer plusieurs sessions
+      anchor: importer-sessions
+    - title: Supprimer les tests des sessions terminées
+      anchor: supprimer-tests-passes
+    - title: Filtres et affichage
+      anchor: filtres-et-affichage
+
+- title: Gestion des candidats
+  url: /ai/fr/candidates/
+  sections:
+    - title: Ajouter un candidat
+      anchor: ajouter-un-candidat
+    - title: Importer des candidats
+      anchor: importer-des-candidats
+    - title: Inscrire un candidat à un test
+      anchor: inscrire-un-candidat-a-un-test
+    - title: Envoyer les invitations
+      anchor: envoyer-les-invitations
+    - title: Gérer les groupes
+      anchor: gerer-les-groupes
+
+- title: Gestion des emails
+  url: /ai/fr/mail-templates/
+  sections:
+    - title: Les quatre types de modèle
+      anchor: les-quatre-types-de-modele
+    - title: Créer un modèle d'email
+      anchor: creer-un-modele-d-email
+    - title: Modèles privés et publics
+      anchor: modeles-prives-et-publics
+    - title: Dupliquer un modèle
+      anchor: dupliquer-un-modele
+    - title: Supprimer un modèle
+      anchor: supprimer-un-modele
+    - title: Ajouter une bannière personnalisée
+      anchor: ajouter-une-banniere-personnalisee
+    - title: Émetteurs d'email
+      anchor: emetteurs-d-email
+    - title: Envois programmés
+      anchor: envois-programmes
+    - title: Envoyer un email à un candidat
+      anchor: envoyer-un-email-a-un-candidat

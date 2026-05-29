@@ -1,0 +1,64 @@
+{
+  "chapter": "candidates",
+  "generated_at": "2026-05-29T14:19:11.461Z",
+  "base_url": "https://app.isograd.com",
+  "captures": [
+    {
+      "name": "01-liste-candidats.png",
+      "caption": "Page principale \"Gestion des candidats\" — tableau, filtres, boutons Ajouter et Importer.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/candidates/AdminCandidatesWithTable?filter_rows_per_page=50&filter_search=&filter_dep_id=-1&filter_sta_id=-1&lan_id=2&can_uids=%5B%5D&selected_dep_id=0&dep_id_by_lvl=%5B%5D&changepage=1&orderby=a.id+DESC&export_to_excel=0"
+    },
+    {
+      "name": "02-bouton-ajouter.png",
+      "caption": "Bouton \"Ajouter un candidat\" en haut du tableau.",
+      "kind": "element",
+      "selector": "#wt_add",
+      "url": "https://test.isograd.com/clientadmin/candidates/AdminCandidatesWithTable?filter_rows_per_page=50&filter_search=&filter_dep_id=-1&filter_sta_id=-1&lan_id=2&can_uids=%5B%5D&selected_dep_id=0&dep_id_by_lvl=%5B%5D&changepage=1&orderby=a.id+DESC&export_to_excel=0"
+    },
+    {
+      "name": "03-formulaire-ajout-vide.png",
+      "caption": "Formulaire \"Ajouter un candidat\" — champs prénom, nom, email, pays.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/candidates/CandidateUpdate?is_create=1&can_uid=ffe09ad2-3b84-4ca7-9f89-68dffce79a2c"
+    },
+    {
+      "name": "04-candidat-cree.png",
+      "caption": "Fiche candidat après création — onglet d'inscription aux tests visible.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=2235dc22-2491-41db-befa-384141020060"
+    },
+    {
+      "name": "05-page-inscription-tests.png",
+      "caption": "Page d'inscription aux tests — bouton \"Ajouter un test\" et tableau d'inscriptions existantes.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=2235dc22-2491-41db-befa-384141020060"
+    },
+    {
+      "name": "06-bouton-ajouter-test.png",
+      "caption": "Bouton \"Ajouter un test\".",
+      "kind": "element",
+      "selector": "#AddTestBtn",
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=2235dc22-2491-41db-befa-384141020060"
+    },
+    {
+      "name": "07-page-import.png",
+      "caption": "Boutons d'import en haut de la page des candidats.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/candidates/AdminCandidatesWithTable?filter_rows_per_page=50&filter_search=&filter_dep_id=-1&filter_sta_id=-1&lan_id=2&can_uids=%5B%5D&selected_dep_id=0&dep_id_by_lvl=%5B%5D&changepage=1&orderby=a.id+DESC&export_to_excel=0"
+    },
+    {
+      "name": "09-page-groupes.png",
+      "caption": "Page \"Gestion des groupes\" — liste hiérarchique des groupes.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/candidates/AdminGroupsWithTable"
+    },
+    {
+      "name": "10-bouton-invitation.png",
+      "caption": "Bouton d'envoi d'invitation par email.",
+      "kind": "element",
+      "selector": "[id*=\"SendEmail\"], [id*=\"RegisterEmail\"], button:has-text(\"invitation\")",
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=2235dc22-2491-41db-befa-384141020060"
+    }
+  ]
+}
