@@ -1,3 +1,23 @@
+- title: Questions
+  url: /ai/question-module/questions/
+  sections:
+    - title: Filtres
+      anchor: filtres
+    - title: Favoris de recherche
+      anchor: favoris-de-recherche
+    - title: Étoiler une question
+      anchor: etoiler-une-question
+    - title: Actions sur une ligne
+      anchor: actions-sur-une-ligne
+    - title: Actions de masse
+      anchor: actions-de-masse
+    - title: Importer des questions
+      anchor: importer-des-questions
+    - title: Prévisualiser une question
+      anchor: previsualiser-une-question
+    - title: Vérification des questions
+      anchor: verification-des-questions
+
 - title: Formulaires de test
   url: /ai/question-module/test-forms/
   sections:
