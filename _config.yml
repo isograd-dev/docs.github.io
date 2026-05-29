@@ -1,12 +1,21 @@
-title: Documentation
+title: Documentation Isograd
+description: >-
+  Documentation officielle des plateformes Isograd Tosa et ITS — manuel
+  administrateur de compte (gestion des candidats, sessions, résultats,
+  emails, surveillance) et manuel auteur (création de sujets, questions,
+  formulaires de test, calibration).
 email: support@isograd.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://docs.isograd.com" # the base hostname & protocol for your site, e.g. http://example.com
+author: Isograd
+lang: fr
 
 theme: minima
 header_pages: []
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 kramdown:
   parse_block_html: true

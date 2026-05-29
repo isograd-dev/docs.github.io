@@ -1,0 +1,91 @@
+{
+  "chapter": "question-module/question-editor",
+  "generated_at": "2026-05-29T13:41:43.977Z",
+  "base_url": "https://app.isograd.com",
+  "captures": [
+    {
+      "name": "01-editeur-mcq.png",
+      "caption": "Éditeur de question — vue d'ensemble (type QCM). Métadonnées, titre, classification, AI assist.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/QuestionUpdate?que_str_id=XL365FR00142"
+    },
+    {
+      "name": "02-bloc-illustration.png",
+      "caption": "Bloc d'illustration (capture pleine page).",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/QuestionUpdate?que_str_id=XL365FR00142"
+    },
+    {
+      "name": "03-editeur-code.png",
+      "caption": "Type Code (Python) — éditeurs Ace pour le code de vérification et la solution, sélecteur de langage.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/QuestionUpdate?que_str_id=PYFR00003"
+    },
+    {
+      "name": "04-editeur-drag-and-drop.png",
+      "caption": "Type Drag-and-drop — édition des items à glisser et des zones cibles dans l'illustration.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/QuestionUpdate?que_str_id=XL365FR00144"
+    },
+    {
+      "name": "05-editeur-sortable.png",
+      "caption": "Type Sortable — édition des items à ordonner. Le candidat doit les remettre dans l'ordre.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/QuestionUpdate?que_str_id=XL365FR00178"
+    },
+    {
+      "name": "06-editeur-link.png",
+      "caption": "Type Link — deux colonnes d'items à apparier par paires correctes.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/QuestionUpdate?que_str_id=XL365FR00185"
+    },
+    {
+      "name": "07-editeur-click-in-area.png",
+      "caption": "Type Click in area — édition des zones cliquables sur une image cible.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/QuestionUpdate?que_str_id=XL365FR00189"
+    },
+    {
+      "name": "08-editeur-manual-marking.png",
+      "caption": "Type Notation manuelle — édition de la consigne, formats de soumission acceptés, barème de correction.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/QuestionUpdate?que_str_id=XL365FR00198"
+    },
+    {
+      "name": "09-editeur-multi-input.png",
+      "caption": "Type Texte avec champs — édition des marqueurs de saisie et des réponses attendues par marqueur.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/QuestionUpdate?que_str_id=XL365FR00199"
+    },
+    {
+      "name": "10-editeur-text-with-select.png",
+      "caption": "Type Texte avec sélection — édition des listes déroulantes intégrées au texte de la question.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/QuestionUpdate?que_str_id=XL365FR00201"
+    },
+    {
+      "name": "11-editeur-typing-test.png",
+      "caption": "Type Test de saisie — édition du texte de référence à recopier et de la durée du test.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/QuestionUpdate?que_str_id=XL365FR00204"
+    },
+    {
+      "name": "12-editeur-upload-ia.png",
+      "caption": "Type Upload avec notation IA — formats acceptés, prompt d'analyse pour l'IA, mode de notation.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/QuestionUpdate?que_str_id=XL365FR00209"
+    },
+    {
+      "name": "13-editeur-stdin-code.png",
+      "caption": "Type Code avec stdin — éditeurs Ace plus champ \"entrée standard\" passée au programme du candidat.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/QuestionUpdate?que_str_id=PYFR00004"
+    },
+    {
+      "name": "14-editeur-optimization-code.png",
+      "caption": "Type Code d'optimisation — éditeurs de code plus critères de performance (temps d'exécution, complexité).",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/questions/QuestionUpdate?que_str_id=PYFR00005"
+    }
+  ]
+}

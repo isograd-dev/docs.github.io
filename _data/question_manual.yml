@@ -1,3 +1,43 @@
+- title: Éditeur de questions
+  url: /ai/question-module/question-editor/
+  sections:
+    - title: Vue d'ensemble
+      anchor: vue-d-ensemble
+    - title: Onglets de l'édition
+      anchor: onglets-edition
+    - title: Champs communs (titre, texte, illustration, tutoriel)
+      anchor: champs-communs
+    - title: Génération par IA
+      anchor: generation-ia
+    - title: Types de réponse — vue d'ensemble
+      anchor: types-de-reponse
+    - title: QCM
+      anchor: qcm
+    - title: Question d'échelle (Likert, V/F)
+      anchor: question-echelle
+    - title: Texte à trous
+      anchor: texte-a-trous
+    - title: Code
+      anchor: code
+    - title: Drag-and-drop
+      anchor: drag-and-drop
+    - title: Sortable
+      anchor: sortable
+    - title: Link (appariement)
+      anchor: link
+    - title: Click in area
+      anchor: click-in-area
+    - title: Notation manuelle
+      anchor: manual-marking
+    - title: Test de saisie
+      anchor: typing
+    - title: Upload avec notation IA
+      anchor: upload-auto-grading
+    - title: Enregistrer, prévisualiser, supprimer
+      anchor: actions-finales
+    - title: Bonnes pratiques
+      anchor: bonnes-pratiques
+
 - title: Questions
   url: /ai/question-module/questions/
   sections:
