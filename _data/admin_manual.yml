@@ -1,3 +1,25 @@
+- title: Gestion des administrateurs
+  url: /ai/admins/
+  sections:
+    - title: Types d'administrateurs
+      anchor: types-d-administrateurs
+    - title: Ajouter un administrateur
+      anchor: ajouter-un-administrateur
+    - title: Modifier un administrateur
+      anchor: modifier-un-administrateur
+    - title: Modifier les privilèges
+      anchor: modifier-les-privileges
+    - title: Désactiver et débloquer
+      anchor: desactiver-administrateur
+    - title: Réinitialiser le 2FA
+      anchor: reinitialiser-2fa
+    - title: Envoyer les identifiants
+      anchor: envoyer-les-identifiants
+    - title: Supprimer un administrateur
+      anchor: supprimer-un-administrateur
+    - title: Exporter la liste
+      anchor: exporter-la-liste
+
 - title: Gestion des candidats
   url: /ai/candidates/
   sections:
