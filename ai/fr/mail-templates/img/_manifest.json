@@ -1,7 +1,7 @@
 {
   "chapter": "mail-templates",
-  "generated_at": "2026-05-28T13:22:03.933Z",
-  "base_url": "https://appdev.isograd.com",
+  "generated_at": "2026-06-08T16:18:57.603Z",
+  "base_url": "https://test.isograd.com",
   "captures": [
     {
       "name": "01-liste-modeles.png",
@@ -20,13 +20,13 @@
       "name": "03-page-edition.png",
       "caption": "Page d'édition — cartes \"Détails du message\" (formulaire) et \"Visualisation du message\" (aperçu iframe).",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/clientadmin/clientemail/MailTemplateUpdate?mai_tem_id=55825"
+      "url": "https://test.isograd.com/clientadmin/clientemail/MailTemplateUpdate?mai_tem_id=55960"
     },
     {
       "name": "04-bouton-duplication.png",
       "caption": "Ligne d'un modèle d'Invitation — boutons Modifier, Dupliquer, Supprimer en bout de ligne.",
       "kind": "element",
-      "selector": "tbody tr[data-mai_tem_id=\"55825\"]",
+      "selector": "tbody tr[data-mai_tem_id=\"55960\"]",
       "url": "https://test.isograd.com/clientadmin/clientemail/AdminMailTemplatesWithTable"
     },
     {
@@ -67,7 +67,7 @@
       "caption": "Fenêtre d'envoi d'email — choix du modèle, objet, copie, programmation différée.",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=873f661c-fd81-4e4b-9228-a40f8f8dc578"
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=a462eeb8-5ff9-467b-a142-7146078dbea1"
     }
   ]
 }

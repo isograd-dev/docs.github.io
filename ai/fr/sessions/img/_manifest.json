@@ -1,41 +1,41 @@
 {
   "chapter": "sessions",
-  "generated_at": "2026-05-29T08:49:25.347Z",
-  "base_url": "https://app.isograd.com",
+  "generated_at": "2026-06-08T16:20:12.556Z",
+  "base_url": "https://test.isograd.com",
   "captures": [
     {
       "name": "01-liste-sessions.png",
       "caption": "Page principale \"Gestion des sessions de passage\" — tableau Nom / Date début / Date fin / Code, filtres, boutons d'action.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&94955=1&92673=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0"
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&95809=1&95807=1&95801=1&95799=1&95795=1&95794=1&94955=1&92673=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0"
     },
     {
       "name": "02-formulaire-creation.png",
       "caption": "Formulaire de création — Nom de session, Code de session, Date de début, Date de fin.",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&94955=1&92673=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0"
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&95809=1&95807=1&95801=1&95799=1&95795=1&95794=1&94955=1&92673=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0"
     },
     {
       "name": "03-modal-notification.png",
       "caption": "Fenêtre \"Notifier les candidats\" — proposée automatiquement après modification des dates d'une session ayant des candidats inscrits.",
       "kind": "element",
-      "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&95792=1&94955=1&92673=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0#"
+      "selector": ".modal.show:has(#NotifyCandidatesNoBtn) .modal-content",
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&95828=1&95809=1&95807=1&95801=1&95799=1&95795=1&95794=1&94955=1&92673=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0#"
     },
     {
       "name": "04-confirmation-suppression.png",
       "caption": "Fenêtre de confirmation avant suppression d'une session.",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&95792=1&94955=1&92673=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0#"
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&95828=1&95809=1&95807=1&95801=1&95799=1&95795=1&95794=1&94955=1&92673=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0#"
     },
     {
       "name": "05-modal-import.png",
       "caption": "Fenêtre d'import — lien de téléchargement du modèle Excel et bouton de sélection de fichier.",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&95792=1&94955=1&92673=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0"
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&95828=1&95809=1&95807=1&95801=1&95799=1&95795=1&95794=1&94955=1&92673=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0"
     }
   ]
 }

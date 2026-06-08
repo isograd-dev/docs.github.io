@@ -1,7 +1,7 @@
 {
   "chapter": "question-module/microskills",
-  "generated_at": "2026-05-29T10:12:29.509Z",
-  "base_url": "https://app.isograd.com",
+  "generated_at": "2026-06-08T16:20:44.977Z",
+  "base_url": "https://test.isograd.com",
   "captures": [
     {
       "name": "01-liste-microskills.png",
@@ -13,13 +13,13 @@
       "name": "02-fiche-microskill.png",
       "caption": "Fiche d'édition — onglet Description avec sélecteur de langue, Description courte et Description longue, lien vers les questions associées.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/domains/MicroSkillUpdate?mic_ski_id=274"
+      "url": "https://test.isograd.com/domains/MicroSkillUpdate?mic_ski_id=337"
     },
     {
       "name": "03-onglet-domaines-associes.png",
       "caption": "Onglet \"Domaines associés\" — deux listes côte à côte (Domaines disponibles vs Domaines associés) avec drag-and-drop et filtre de recherche.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/domains/MicroSkillUpdate?mic_ski_id=274"
+      "url": "https://test.isograd.com/domains/MicroSkillUpdate?mic_ski_id=337"
     }
   ]
 }

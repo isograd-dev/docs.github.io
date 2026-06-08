@@ -1,7 +1,7 @@
 {
   "chapter": "question-module/subject-families",
-  "generated_at": "2026-05-29T14:16:02.167Z",
-  "base_url": "https://app.isograd.com",
+  "generated_at": "2026-06-08T16:22:49.249Z",
+  "base_url": "https://test.isograd.com",
   "captures": [
     {
       "name": "01-liste-familles.png",
@@ -20,7 +20,7 @@
       "name": "03-onglets-famille-principale.png",
       "caption": "Fiche d'édition d'une famille principale — bandeau et 5 onglets (Description, Métiers, Tests, Experts, Spécifiques).",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/subjects/SubjectFamilyUpdate?sbj_fam_id=48"
+      "url": "https://test.isograd.com/subjects/SubjectFamilyUpdate?sbj_fam_id=103"
     }
   ]
 }

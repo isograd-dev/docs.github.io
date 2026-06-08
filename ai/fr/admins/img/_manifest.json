@@ -1,7 +1,7 @@
 {
   "chapter": "admins",
-  "generated_at": "2026-05-29T08:21:47.071Z",
-  "base_url": "https://app.isograd.com",
+  "generated_at": "2026-06-08T16:17:25.169Z",
+  "base_url": "https://test.isograd.com",
   "captures": [
     {
       "name": "01-liste-administrateurs.png",
@@ -27,29 +27,29 @@
       "name": "06-row-actions.png",
       "caption": "Boutons d'action en bout de ligne : Modifier, Privilèges, Désactiver, Réinitialiser 2FA, Envoyer identifiants, Supprimer.",
       "kind": "element",
-      "selector": "table tbody tr:has(td:has-text(\"test_admin_qnkw1w@test.isograd.com\"))",
-      "url": "https://test.isograd.com/clientadmin/account/AdminAdminsWithTable?filter_search=test_admin_qnkw1w%40test.isograd.com&page_sel=1&filter_rows_per_page=50&changepage=1"
+      "selector": "table tbody tr:has(td:has-text(\"test_admin_5ez40a@test.isograd.com\"))",
+      "url": "https://test.isograd.com/clientadmin/account/AdminAdminsWithTable?filter_search=test_admin_5ez40a%40test.isograd.com&page_sel=1&filter_rows_per_page=50&changepage=1"
     },
     {
       "name": "04-modal-modification.png",
       "caption": "Fenêtre de modification — édition des coordonnées, civilité, langue d'interface.",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/clientadmin/account/AdminAdminsWithTable?filter_search=test_admin_qnkw1w%40test.isograd.com&page_sel=1&filter_rows_per_page=50&changepage=1#"
+      "url": "https://test.isograd.com/clientadmin/account/AdminAdminsWithTable?filter_search=test_admin_5ez40a%40test.isograd.com&page_sel=1&filter_rows_per_page=50&changepage=1#"
     },
     {
       "name": "05-modal-privileges.png",
       "caption": "Fenêtre de privilèges — cases à cocher regroupées par catégorie (Candidats, Sessions, Emails, etc.).",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/clientadmin/account/AdminAdminsWithTable?filter_search=test_admin_qnkw1w%40test.isograd.com&page_sel=1&filter_rows_per_page=50&changepage=1#"
+      "url": "https://test.isograd.com/clientadmin/account/AdminAdminsWithTable?filter_search=test_admin_5ez40a%40test.isograd.com&page_sel=1&filter_rows_per_page=50&changepage=1#"
     },
     {
       "name": "07-confirmation-suppression.png",
       "caption": "Fenêtre de confirmation avant suppression d'un administrateur.",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/clientadmin/account/AdminAdminsWithTable?filter_search=test_admin_qnkw1w%40test.isograd.com&page_sel=1&filter_rows_per_page=50&changepage=1#"
+      "url": "https://test.isograd.com/clientadmin/account/AdminAdminsWithTable?filter_search=test_admin_5ez40a%40test.isograd.com&page_sel=1&filter_rows_per_page=50&changepage=1#"
     }
   ]
 }
