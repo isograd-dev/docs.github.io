@@ -1,13 +1,13 @@
 {
   "chapter": "question-module/test-forms",
-  "generated_at": "2026-05-29T10:24:25.434Z",
-  "base_url": "https://app.isograd.com",
+  "generated_at": "2026-06-08T16:23:10.508Z",
+  "base_url": "https://test.isograd.com",
   "captures": [
     {
       "name": "01-liste-formulaires.png",
       "caption": "Page \"Gestion des formulaires de test\" — tableau ID / Nom / Sujet / Langue, boutons Créer / Autoriser / Exporter.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/testforms/AdminTestFormsWithTable"
+      "url": "https://test.isograd.com/testforms/AdminTestFormsWithTable?filter_rows_per_page=50&filter_search=&filter_brd_id=-1&filter_lan_id=-1&filter_sbj_id=-1&filter_typ_id=-1&filter_alg_id=-1&filter_res_typ_id=-1&filter_geo_vis_id=-1&filter_from=&filter_to=&changepage=1&orderby=tst_des-%3E%3E%27%24.%221%22%27+DESC&export_to_excel=0"
     },
     {
       "name": "02-modal-creation.png",
@@ -20,7 +20,7 @@
       "name": "03-onglets-avance.png",
       "caption": "Fiche d'édition d'un formulaire — onglets Général / Description / Algorithme / Résultats / Autres paramètres / Intro & Feedback.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/testforms/TestFormUpdate?tst_frm_uid=d545cc32-1f71-42fa-9832-d9601c916970"
+      "url": "https://test.isograd.com/testforms/TestFormUpdate?tst_frm_uid=34d3e4d6-230c-4695-8311-d19cbab5c184"
     }
   ]
 }
