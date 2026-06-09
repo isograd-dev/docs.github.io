@@ -1,6 +1,6 @@
 {
   "chapter": "candidates",
-  "generated_at": "2026-06-09T07:46:19.791Z",
+  "generated_at": "2026-06-09T08:31:12.040Z",
   "base_url": "https://app.isograd.com",
   "captures": [
     {
@@ -20,26 +20,26 @@
       "name": "03-formulaire-ajout-vide.png",
       "caption": "Formulaire \"Ajouter un candidat\" — champs prénom, nom, email, pays.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/candidates/CandidateUpdate?is_create=1&can_uid=97cc8faf-8ee2-433b-802e-85287bf037e8"
+      "url": "https://test.isograd.com/candidates/CandidateUpdate?is_create=1&can_uid=d7441e88-9c81-41a6-a430-21edbe8facb0"
     },
     {
       "name": "04-candidat-cree.png",
       "caption": "Fiche candidat après création — onglet d'inscription aux tests visible.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=d1b934fe-83bb-4575-ad12-415d3ecf857b"
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=bc945669-2d17-4440-8199-906a8ea62aa3"
     },
     {
       "name": "05-page-inscription-tests.png",
       "caption": "Page d'inscription aux tests — bouton \"Ajouter un test\" et tableau d'inscriptions existantes.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=d1b934fe-83bb-4575-ad12-415d3ecf857b"
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=bc945669-2d17-4440-8199-906a8ea62aa3"
     },
     {
       "name": "06-bouton-ajouter-test.png",
       "caption": "Bouton \"Ajouter un test\".",
       "kind": "element",
       "selector": "#AddTestBtn",
-      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=d1b934fe-83bb-4575-ad12-415d3ecf857b"
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=bc945669-2d17-4440-8199-906a8ea62aa3"
     },
     {
       "name": "07-page-import.png",
@@ -65,7 +65,7 @@
       "caption": "Bouton d'envoi d'invitation par email.",
       "kind": "element",
       "selector": "[id*=\"SendEmail\"], [id*=\"RegisterEmail\"], button:has-text(\"invitation\")",
-      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=d1b934fe-83bb-4575-ad12-415d3ecf857b"
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=bc945669-2d17-4440-8199-906a8ea62aa3"
     }
   ]
 }
