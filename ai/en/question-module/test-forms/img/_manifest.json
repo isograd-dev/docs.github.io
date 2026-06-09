@@ -1,6 +1,6 @@
 {
   "chapter": "question-module/test-forms",
-  "generated_at": "2026-05-29T14:20:56.344Z",
+  "generated_at": "2026-06-09T14:25:57.025Z",
   "base_url": "https://app.isograd.com",
   "captures": [
     {
@@ -20,7 +20,7 @@
       "name": "03-onglets-avance.png",
       "caption": "Fiche d'édition d'un formulaire — onglets Général / Description / Algorithme / Résultats / Autres paramètres / Intro & Feedback.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/testforms/TestFormUpdate?tst_frm_uid=5c94b28e-a5ae-4d5f-8ef3-c626f8478aa9"
+      "url": "https://test.isograd.com/testforms/TestFormUpdate?tst_frm_uid=65030780-79bb-4575-879d-4ce17a481f91"
     }
   ]
 }

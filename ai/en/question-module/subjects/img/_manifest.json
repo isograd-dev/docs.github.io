@@ -1,6 +1,6 @@
 {
   "chapter": "question-module/subjects",
-  "generated_at": "2026-05-29T14:20:45.957Z",
+  "generated_at": "2026-06-09T14:25:43.048Z",
   "base_url": "https://app.isograd.com",
   "captures": [
     {
@@ -20,19 +20,19 @@
       "name": "03-onglets-sujet.png",
       "caption": "Fiche d'édition d'un sujet — bandeau supérieur et 8 onglets (Description, Détails du sujet, Description des niveaux, Métiers par niveau, Description commerciale des tests, Auteurs des questions, Détails spécifiques, Administrateurs).",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/subjects/SubjectUpdate?sbj_id=433"
+      "url": "https://test.isograd.com/subjects/SubjectUpdate?sbj_id=540"
     },
     {
       "name": "04-onglet-description.png",
       "caption": "Onglet \"Description\" — commutateur multilingue activé, bloc Nom + Description par langue.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/subjects/SubjectUpdate?sbj_id=433"
+      "url": "https://test.isograd.com/subjects/SubjectUpdate?sbj_id=540"
     },
     {
       "name": "05-onglet-administrateurs.png",
       "caption": "Onglet \"Administrateurs\" — liste des administrateurs habilités sur ce sujet, champ de filtrage.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/subjects/SubjectUpdate?sbj_id=433"
+      "url": "https://test.isograd.com/subjects/SubjectUpdate?sbj_id=540"
     }
   ]
 }

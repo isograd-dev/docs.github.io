@@ -1,6 +1,6 @@
 {
   "chapter": "question-module/question-sets",
-  "generated_at": "2026-05-29T14:20:14.284Z",
+  "generated_at": "2026-06-09T14:25:03.719Z",
   "base_url": "https://app.isograd.com",
   "captures": [
     {
@@ -13,7 +13,7 @@
       "name": "02-fiche-jeu.png",
       "caption": "Fiche d'édition d'un jeu — onglets Général / Administrateurs, champs Nom / Sujets / Archivé / Commentaire et descriptions par langue.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/questionsets/QuestionSetUpdate?que_set_id=578"
+      "url": "https://test.isograd.com/questionsets/QuestionSetUpdate?que_set_id=664"
     }
   ]
 }

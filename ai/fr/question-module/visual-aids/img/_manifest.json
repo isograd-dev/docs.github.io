@@ -1,7 +1,7 @@
 {
   "chapter": "question-module/visual-aids",
-  "generated_at": "2026-06-08T16:23:24.295Z",
-  "base_url": "https://test.isograd.com",
+  "generated_at": "2026-06-09T14:21:48.435Z",
+  "base_url": "https://app.isograd.com",
   "captures": [
     {
       "name": "01-liste-aides.png",
@@ -20,7 +20,7 @@
       "name": "03-fiche-aide.png",
       "caption": "Fiche d'édition — champs Nom et Type éditables, Sujet/Langue verrouillés, zone de dépôt de fichier.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/visualaid/VisualAidUpdate?vis_aid_uid=1123cf04-1e57-4994-8c59-387ae4991263"
+      "url": "https://test.isograd.com/visualaid/VisualAidUpdate?vis_aid_uid=d7788774-ceb3-472e-aace-f501dca4ecff"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "chapter": "question-module/domains",
-  "generated_at": "2026-05-29T14:20:05.757Z",
+  "generated_at": "2026-06-09T14:24:43.910Z",
   "base_url": "https://app.isograd.com",
   "captures": [
     {
@@ -27,13 +27,13 @@
       "name": "04-onglets-domaine.png",
       "caption": "Fiche d'édition d'un domaine — bandeau et onglets Description / Niveaux de compétence / Recommandations / Associer les sujets.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/domains/DomainUpdate?dom_id=929"
+      "url": "https://test.isograd.com/domains/DomainUpdate?dom_id=1358"
     },
     {
       "name": "05-onglet-associer-sujets.png",
       "caption": "Onglet \"Associer les sujets\" — deux listes côte à côte (Sujets disponibles vs Sujets associés) avec drag-and-drop.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/domains/DomainUpdate?dom_id=929"
+      "url": "https://test.isograd.com/domains/DomainUpdate?dom_id=1358"
     }
   ]
 }
