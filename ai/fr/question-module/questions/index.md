@@ -4,11 +4,11 @@ layout: question-manual
 
 # Questions
 
-La page **Gestion des questions** est le **centre névralgique** du module Questions : c'est ici que vous retrouvez toutes les questions rédigées sur la plateforme, que vous filtrez selon plusieurs dimensions (sujet, domaine, statut, responsable…), et d'où vous lancez l'**éditeur** pour créer ou modifier une question.
+La page **Gestion des questions** est la page principale du module Questions : c'est ici que vous retrouvez toutes les questions rédigées sur la plateforme, que vous filtrez selon plusieurs critères (sujet, domaine, statut, personne responsable…), et d'où vous lancez l'**éditeur** pour créer ou modifier une question.
 
 Le fonctionnement détaillé de l'éditeur lui-même est couvert dans le chapitre [Éditeur de questions](/ai/question-module/question-editor/).
 
-Accédez à la page via le menu **Module Questions → Questions**, ou directement à `/questions/AdminQuestionsWithTable`.
+Accédez à la page via le menu **Module Questions → Questions**
 
 ![Page "Gestion des questions"](img/01-liste-questions.png)
 
@@ -16,15 +16,15 @@ Le tableau présente les colonnes suivantes :
 
 | Colonne | Contenu |
 |---|---|
-| **ID** | Identifiant texte de la question (`que_str_id`, par exemple `AC19FR0001`). Le ☆ devant l'ID est le bouton d'étoile/favori. |
+| **ID** | Identifiant texte de la question ( par exemple `AC19FR0001`). Le ☆ devant l'ID est le bouton d'étoile/favori. |
 | **Sujet** | Sujet auquel la question est rattachée. |
-| **Titre** | Libellé court de la question. |
+| **Titre** | Titre de la question. |
 | **Type** | Type de réponse : QCM, Texte à trous, Code, Manipulation, etc. |
 | **Passée** | Nombre de fois où la question a déjà été posée à des candidats. |
 | **Succès** | Taux de succès (%) — pourcentage de candidats ayant correctement répondu. |
 | **B** | **Indice de difficulté** issu du modèle IRT (Item Response Theory) — plus la valeur est haute, plus la question est difficile. Une valeur **négative** indique une question facile, **positive** une question difficile. |
-| **Statut** | État éditorial : *Brouillon*, *En revue*, *Production*, etc. |
-| **Personne concernée** | Administrateur en charge de la maintenance de la question. |
+| **Statut** | État éditorial : *À vérifier*, *À corriger*, *Production*, etc. |
+| **Personne concernée** | Administrateur en charge de la question. |
 
 > 💡 **Sous-pages du menu Questions** — Le menu **Questions** dans la barre latérale donne aussi accès à : **Échelles de réponses**, **Commentaires sur les questions**, **Questions liées**, **Vérification des questions** et **Calibration**. Ces sous-pages sont documentées dans leurs chapitres dédiés.
 
