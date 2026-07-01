@@ -4,32 +4,31 @@ layout: question-manual
 
 # Éditeur de questions
 
-L'**éditeur de questions** (`QuestionUpdate`) est l'outil le plus utilisé du module Questions — c'est ici qu'on écrit les énoncés, qu'on définit les options de réponse, qu'on ajoute illustrations et aides visuelles, et qu'on tague chaque question dans la cartographie de compétences. Tout administrateur qui produit du contenu pour la plateforme passe la majorité de son temps sur cette page.
+L'**éditeur de questions** est l'outil le plus utilisé du module Questions — c'est ici qu'on écrit les énoncés, qu'on définit les options de réponse, qu'on ajoute les illustrations et aides visuelles, et qu'on tague chaque question dans la cartographie de compétences. Tout administrateur qui produit du contenu pour la plateforme passe la majorité de son temps sur cette page.
 
 Accédez à l'éditeur via l'icône **Modifier** (crayon) sur la ligne d'une question dans la page **[Questions](/ai/question-module/questions/)**, ou directement à l'URL `/questions/QuestionUpdate?que_str_id=<id>`.
 
 ![Éditeur de questions — vue d'ensemble (type QCM)](img/01-editeur-mcq.png)
 
-> 💡 **Type de réponse et interface** — L'éditeur **adapte son interface** au **type de réponse** de la question (`ans_typ_id`). Une question QCM affichera une zone de saisie de propositions ; une question Code aura un éditeur de code à coloration syntaxique ; une question Drag-and-drop aura un éditeur d'items à glisser. Ce chapitre couvre l'organisation commune **et** les spécificités par type.
+> 💡 **Type de réponse et interface** — L'éditeur **adapte son interface** au **type de réponse** de la question. Une question QCM affichera une zone de saisie de propositions ; une question Code aura un éditeur de code à coloration syntaxique ; une question glisser-déposer aura un éditeur d'items à glisser. Ce chapitre couvre l'organisation commune **et** les spécificités par type.
 
 
 ## Vue d'ensemble {#vue-d-ensemble}
 
-La page d'édition (titre **EDITER UNE QUESTION**) est organisée en plusieurs zones, avec un badge en haut à droite indiquant le **type de réponse** de la question courante (QCM, Code, Drag-and-drop, etc.) :
+La page d'édition (titre **EDITER UNE QUESTION**) est organisée en plusieurs zones, avec un badge en haut à droite indiquant le **type de réponse** de la question courante (QCM, Code, Cliquer sur zone, etc.) :
 
 1. **Barre d'actions globales** (au-dessus de l'en-tête) :
     - **Revenir à la liste** — retour à la page Questions.
-    - **Enregistrer** — sauvegarde toutes les modifications via AJAX.
+    - **Enregistrer** — sauvegarde toutes les modifications.
     - **Dupliquer** — crée une copie de la question.
     - **Vérifier** — lance le diagnostic éditorial sur cette seule question (titre vide, énoncé manquant, options non marquées correctes, etc.).
-    - **Comments** — ouvre la liste des commentaires laissés par les candidats sur cette question pendant les tests.
     - **Transférer** — passe la question de préproduction à production.
-    - **Editer questions liés** — accède aux questions liées éventuelles (groupes de questions partageant un contexte).
+    - **Editer questions liés** — accède aux questions liées éventuelles.
 
 2. **Bandeau d'identité** :
-    - Icône du sujet + **ID** (`que_str_id`, par exemple `XL365FR00142`) avec un bouton **Copier** et un bouton **Renommer l'identifiant**.
+    - Icône du sujet + **ID** (par exemple `XL365FR00142`) avec un bouton **Copier** et un bouton **Renommer l'identifiant**.
     - **Sujet**, **Langue**, **Créateur** (administrateur initial de la question).
-    - **Nombre de commentaires**, **Passée** (nombre de passages), **Réussite** (taux de succès).
+    -  **Passée** (nombre de passages), **Réussite** (taux de succès).
 
 3. **Section « Caractéristiques générales »** :
     - **Titre**, **b** (paramètre IRT de difficulté, **modifiable** pour ajustement manuel après calibration).
@@ -39,9 +38,9 @@ La page d'édition (titre **EDITER UNE QUESTION**) est organisée en plusieurs z
 
 4. **Section « Question et réponses »** — c'est le cœur de l'édition, organisé en onglets (voir [Onglets de l'édition](#onglets-edition)).
 
-5. **Sidebar « AI assist »** sur la droite — boutons de génération par IA (voir [Génération par IA](#generation-ia)).
+5. **Volet « AI assist »** sur la droite — boutons de génération par IA (voir [Génération par IA](#generation-ia)).
 
-6. **Sidebar « Classification »** sur la droite — jeux de questions et domaines de rattachement de la question (avec des tags Choices.js).
+6. **Volet « Classification »** sur la droite — jeux de questions et domaines de rattachement de la question (avec des tags Choices.js).
 
 > 💡 **Tout sur une seule page** — Contrairement à d'autres entités de la plateforme, l'éditeur ne navigue pas entre plusieurs pages. Toutes les modifications se font ici et sont enregistrées en un clic via le bouton **Enregistrer** en haut.
 
