@@ -70,19 +70,19 @@ Deux boutons d'aide en haut à droite de cette section :
 
 - **Sujet** — sujet auquel la question est rattachée. Détermine le pool de candidats qui verront la question.
 - **Domaine** — domaine de compétence évalué (compétence principale de la question). Pour la cartographie du rapport candidat.
-- **Micro-compétences** — tags transversaux supplémentaires (voir [Micro-compétences](/ai/question-module/microskills/)).
+- **Sous-domaines** — tags transversaux supplémentaires (voir [Micro-compétences](/ai/question-module/microskills/)).
 - **Jeu de questions** — si la question fait partie d'un bloc cohérent (voir [Jeux de questions](/ai/question-module/question-sets/)).
-- **Statut** — *Brouillon*, *En revue*, *Production*. Conditionne la visibilité de la question pour les comptes clients.
-- **Personne concernée** — responsable éditorial de la question.
+- **Statut** — *En rédaction*, *À vérifier*, *Production* etc.
+- **Personne concernée** — personne qui intervient/doit intervenir sur la question.
 - **Langue** — fixée à la création, non modifiable. Une question = une langue.
 
 ### Titre
 
-Le **Titre** (`tit`) est un libellé court qui apparaît dans la colonne *Titre* de la liste et dans les rapports de calibration. **Pas affiché au candidat.** Choisissez un titre **descriptif et unique** : *« SOMME.SI sur tableau filtré »* est meilleur que *« Excel - question 17 »*.
+Le **Titre** (`tit`) est un libellé court qui apparaît dans la colonne *Titre* de la liste et dans les rapports de compétences et il représente la compétence testée dans la question. **Pas affiché au candidat.** Choisissez un titre **descriptif et unique** : *« Faire une somme»* est meilleur que *« Excel - question 17 »*.
 
 ### Texte de la question
 
-Le **Texte** (`txt`) est l'énoncé affiché au candidat. Vous le saisissez dans un éditeur riche qui supporte :
+Le **Texte** est l'énoncé affiché au candidat. Vous le saisissez dans un éditeur riche qui supporte :
 
 - **Markdown** — gras, italique, listes, liens, blocs de code. Le rendu est immédiat dans la prévisualisation.
 - **Formatage HTML** pour les cas avancés (tableaux, classes CSS spécifiques).
@@ -99,17 +99,17 @@ Une **illustration** est une image attachée **directement à la question** (par
 
 - Pour **ajouter** une illustration, cliquez sur le bouton d'upload et choisissez votre fichier (PNG/JPG/SVG).
 - Pour **modifier** le texte alternatif (alt text), saisissez-le dans le champ dédié — important pour l'accessibilité et pour les lecteurs d'écran.
-- Pour **supprimer** l'illustration, cliquez sur le bouton **Retirer l'illustration**.
+- Pour **supprimer** l'illustration, cliquez sur le bouton **Supprimer le média**.
 
 > 💡 **Quand illustration, quand aide visuelle ?** — Une **illustration** est propre à la question, idéale pour une image jamais réutilisée. Une **[aide visuelle](/ai/question-module/visual-aids/)** est mutualisée entre plusieurs questions, idéale pour un tableau Excel ou un code source partagé sur 10 questions du même module.
 
 ### Tutoriel
 
-Le **Tutoriel** (`tut`) est une explication détaillée affichée au candidat **après** sa réponse, en mode de révision. C'est le moment pédagogique : expliquer pourquoi la bonne réponse est la bonne, comment l'identifier, quelle erreur courante éviter. Format identique au texte (Markdown / HTML).
+Le **Tutoriel** est une explication détaillée affichée au candidat **après** sa réponse, en mode de révision. C'est le moment pédagogique : expliquer pourquoi la bonne réponse est la bonne, comment l'identifier, quelle erreur courante éviter. Format identique au texte (Markdown / HTML).
 
 ### Aides visuelles {#aides-visuelles}
 
-Vous pouvez insérer une ou plusieurs **aides visuelles** dans le texte ou dans le tutoriel. Voir le chapitre [Aides visuelles](/ai/question-module/visual-aids/) pour la création et la gestion. Dans l'éditeur de question :
+Vous pouvez insérer une ou plusieurs **aides visuelles** dans l'énoncé ou dans les réponses. Voir le chapitre [Aides visuelles](/ai/question-module/visual-aids/) pour la création et la gestion. Dans l'éditeur de question :
 
 - Cliquez sur le bouton **Insérer une aide visuelle** dans l'éditeur de texte.
 - Choisissez l'aide visuelle dans la liste filtrée par sujet et langue.
@@ -117,13 +117,13 @@ Vous pouvez insérer une ou plusieurs **aides visuelles** dans le texte ou dans 
 
 Deux variantes existent :
 
-- **Aide visuelle standard** — image ou document directement intégré dans le flux.
+- **Aide visuelle standard** — image (sous une loupe) ou document directement intégré dans le flux.
 - **Aide visuelle clavier** — image présentée comme un encart pour les questions de touches clavier ou d'interface, généralement plus petite.
 
 
 ## Génération par IA {#generation-ia}
 
-Selon la configuration de votre compte, l'éditeur propose une sidebar **AI assist** à droite de la page, avec deux boutons principaux :
+Selon la configuration de votre compte, l'éditeur propose un volet latéral **AI assist** à droite de la page, avec deux boutons principaux :
 
 - **Générer une question** — propose un énoncé complet (texte, propositions de réponse, bonne réponse) à partir des métadonnées de la question (sujet, domaine, niveau de difficulté).
 - **Traduire** — traduit le contenu de la question vers une autre langue, utile pour décliner rapidement un sujet en plusieurs versions linguistiques.
@@ -132,8 +132,6 @@ Selon votre version d'interface, d'autres boutons de génération IA peuvent app
 
 > ⚠️ **L'IA propose, vous décidez** — Le contenu généré est un **point de départ**, pas un livrable final. Relisez systématiquement et corrigez avant d'enregistrer. La qualité dépend du modèle IA configuré au niveau du compte (voir [Options par défaut](/ai/default-options/#parametres-generaux)).
 
-> 💡 **Compteur de génération** — Chaque appel IA est compté et limité par votre quota. Évitez les générations « test » : pré-mâchez votre prompt avant de cliquer.
-
 
 ## Types de réponse — vue d'ensemble {#types-de-reponse}
 
@@ -141,21 +139,20 @@ La plateforme propose une vingtaine de types de réponse, regroupables en famill
 
 | Famille | Types | Cas d'usage |
 |---|---|---|
-| **Choix multiple** | QCM texte (`TEXT_MCQ`), QCM avec échelle (`SCALE`) | Évaluation classique des connaissances. |
-| **Saisie libre** | Texte à trous (`MULTI_INPUT`), Texte à compléter avec sélection (`TEXT_WITH_SELECT`), Notation manuelle (`MANUAL_MARKING`) | Quand les choix proposés sont trop révélateurs. |
-| **Manipulation** | Drag-and-drop (`DRAG_AND_DROP`), Sortable (`SORTABLE`), Link/Pairing (`LINK`), Click in area (`CLICK_IN_AREA`) | Tests interactifs et engageants. |
-| **Code** | Code (`CODE`), Code avec stdin (`STDINCODE`), Optimisation de code (`OPTIMIZATION_CODE`) | Évaluation de compétences programmation. |
-| **Office et applications** | Office remote (`MSGRAPH_OFFICE_REMOTE`), Desktop remote (`DESKTOP_REMOTE`), Local app (`LOCAL_APP`), Manipulation locale ou distante (`LOCAL_OR_REMOTE_APP`) | Tests sur des logiciels réels (Excel, Word, etc.). |
-| **Saisie au clavier** | Test de saisie (`TYPING_TST`), Test de saisie avec correction (`TYPING_TST_WITH_COR`), Dictée (`DICTATION`, `DICTATION_AI`) | Vitesse et précision de frappe, dictée. |
-| **Upload** | Upload avec notation automatique (`UPLOAD_WITH_AUTOMATIC_GRADING`) | Soumission de fichiers évalués par IA. |
-| **Spécifiques** | Psychométrique (`PSYCHOMETRIC`), Auto-évaluation (`SELF_ASSESSMENT`), Page de transition (`NOANSWER`) | Cas particuliers (tests de personnalité, transitions). |
+| **Choix multiple** | QCM texte, échelle de réponse | Évaluation classique des connaissances. |
+| **Choix de réponse** | Texte à compléter avec listes déroulantes| Quand les choix proposés sont trop révélateurs. |
+| **Questions interactives** | Glisser-déposer (`DRAG_AND_DROP`), Trier (`SORTABLE`), Relier (`LINK`), Cliquer sur zone (`CLICK_IN_AREA`) | Tests interactifs et engageants. |
+| **Code** | Code, Optimisation de code | Évaluation de compétences en programmation. |
+| **Questions de saisie** | Questions de saisie à correction automatique ou réalisée par l'IA, Dictée, Questions de saisie à correction manuelle | Évaluation de connaissances ou des mises en situation. |
+| **Soumission de média ou de texte** | Soumission avec notation automatique | Soumission de fichiers évalués par IA. |
+| **Spécifiques** | Page de transition (`NOANSWER`) | Cas particuliers (pages de transition entre deux parties d'un test). |
 
 Les sections suivantes détaillent les types **les plus courants**.
 
 
 ## QCM — choix multiple texte {#qcm}
 
-Le type **QCM texte** (`TEXT_MCQ_ANS_TYP_ID=0`) est le type le plus utilisé sur la plateforme. Le candidat voit une question et plusieurs propositions de réponse, parmi lesquelles **une ou plusieurs** sont correctes.
+Le type **QCM texte** est le type le plus utilisé sur la plateforme. Le candidat voit une question et plusieurs propositions de réponse, parmi lesquelles **une ou plusieurs** sont correctes.
 
 ![Éditeur d'un QCM](img/01-editeur-mcq.png)
 
@@ -167,25 +164,25 @@ L'éditeur QCM expose une liste de propositions, chacune avec :
 - Une case à cocher **Correcte** indiquant si la proposition est une bonne réponse.
 - Un bouton **Supprimer cette proposition**.
 
-Un bouton **Ajouter une proposition** en bas de la liste permet d'étendre le nombre d'options. Vous pouvez avoir entre 2 et 8 propositions par question (4 est le standard recommandé).
+Un bouton **Ajouter une proposition** en bas de la liste permet d'étendre le nombre d'options. Vous pouvez avoir entre 2 et 8 propositions par question (5 est le standard recommandé).
 
-> 💡 **Une ou plusieurs bonnes réponses ?** — Cochez **une seule** case **Correcte** pour un QCM à choix unique (le candidat ne peut sélectionner qu'une réponse). Cochez **plusieurs** cases pour un QCM à choix multiples (le candidat peut en sélectionner plusieurs, et doit toutes les trouver pour avoir la question juste).
-
+> 💡 **Une ou plusieurs bonnes réponses ?** — Cochez **une seule** case **Correcte** pour un QCM à choix unique (le candidat ne peut sélectionner qu'une réponse). Cochez **plusieurs** cases pour un QCM à choix multiples (le candidat peut en sélectionner plusieurs, et doit toutes les trouver pour avoir la question juste). Ou **une parmi n** (il y a plusieurs réponses correctes, mais il suffit que le candidat en choisisse une pour que la réponse soit considérée correcte)
+> 
 ### Ordre des propositions
 
-Par défaut, les propositions sont présentées au candidat dans un **ordre aléatoire** à chaque passage. Si vous voulez forcer un ordre fixe (par exemple pour une question logique où l'ordre des choix porte du sens), cochez l'option **Ordre fixe** dans les options avancées de la question.
+Par défaut, les propositions sont présentées au candidat dans un **ordre aléatoire** à chaque passage. Si vous voulez forcer un ordre fixe (par exemple pour une question logique où l'ordre des choix porte du sens), cochez l'option **Ne pas mélanger les réponses** dans les options avancées de la question.
 
 
 ## Question d'échelle (Vrai/Faux, Likert) {#question-echelle}
 
-Le type **Échelle** (`SCALE_ANS_TYP_ID=21`) présente au candidat une question accompagnée d'une **échelle de réponse** réutilisable — par exemple une échelle Likert *« Pas du tout d'accord / Plutôt pas d'accord / Plutôt d'accord / Tout à fait d'accord »*, ou une simple échelle Vrai/Faux.
+Le type **Échelle** (`SCALE_ANS_TYP_ID=21`) présente au candidat une question accompagnée d'une **échelle de réponse** réutilisable — par exemple une échelle Likert *« Pas du tout d'accord / Plutôt pas d'accord / Plutôt d'accord / Tout à fait d'accord »*, ou une simple échelle Vrai/Faux. 
 
 ### Édition
 
 - **Sélectionnez l'échelle** dans la liste déroulante (voir [Échelles de réponse](/ai/question-module/answer-scales/) pour gérer les échelles disponibles).
-- L'éditeur affiche les options de l'échelle sélectionnée et vous laisse cocher la **bonne réponse** (une seule case cochée).
-
-> 💡 **Une bonne réponse même pour Likert** — Même sur une échelle Likert (où il n'y a pas vraiment de bonne réponse au sens strict), vous devez cocher l'option attendue pour le calcul du score. Pour les enquêtes purement déclaratives, utilisez plutôt le type **Auto-évaluation**.
+- L'éditeur affiche les options de l'échelle sélectionnée et vous laisse cocher la **bonne réponse** (une seule case cochée). Si vous souhaitez ajouter une nouvelle échelle, vous devez aller dans le menu de la page principale, à gauche **Échelles de réponses** >> ensuite **Ajouter une échelle de réponses**
+  
+> 💡 Pour les questions où la notion de bonne ou de mauvaise réponse n'existe pas, cochez l'option **Pas de notion de bonne réponse (formulaire, test de personnalité...)**
 
 
 ## Texte à trous (Multi-input) {#texte-a-trous}
