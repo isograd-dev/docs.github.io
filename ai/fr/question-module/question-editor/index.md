@@ -144,7 +144,7 @@ La plateforme propose une vingtaine de types de réponse, regroupables en famill
 | **Questions interactives** | Glisser-déposer (`DRAG_AND_DROP`), Trier (`SORTABLE`), Relier (`LINK`), Cliquer sur zone (`CLICK_IN_AREA`) | Tests interactifs et engageants. |
 | **Code** | Code, Optimisation de code | Évaluation de compétences en programmation. |
 | **Questions de saisie** | Questions de saisie à correction automatique ou réalisée par l'IA, Dictée, Questions de saisie à correction manuelle | Évaluation de connaissances ou des mises en situation. |
-| **Soumission de média ou de texte** | Soumission avec notation automatique | Soumission de fichiers évalués par IA. |
+| **Correction automatique de document ou d'audio** | Soumission avec notation automatique | Soumission de fichiers évalués par IA. |
 | **Spécifiques** | Page de transition (`NOANSWER`) | Cas particuliers (pages de transition entre deux parties d'un test). |
 
 Les sections suivantes détaillent les types **les plus courants**.
@@ -175,7 +175,7 @@ Par défaut, les propositions sont présentées au candidat dans un **ordre alé
 
 ## Question d'échelle (Vrai/Faux, Likert) {#question-echelle}
 
-Le type **Échelle** (`SCALE_ANS_TYP_ID=21`) présente au candidat une question accompagnée d'une **échelle de réponse** réutilisable — par exemple une échelle Likert *« Pas du tout d'accord / Plutôt pas d'accord / Plutôt d'accord / Tout à fait d'accord »*, ou une simple échelle Vrai/Faux. 
+Le type **Échelle** présente au candidat une question accompagnée d'une **échelle de réponse** réutilisable — par exemple une échelle Likert *« Pas du tout d'accord / Plutôt pas d'accord / Plutôt d'accord / Tout à fait d'accord »*, ou une simple échelle Vrai/Faux. 
 
 ### Édition
 
@@ -187,7 +187,7 @@ Le type **Échelle** (`SCALE_ANS_TYP_ID=21`) présente au candidat une question 
 
 ## Texte à trous (Multi-input) {#texte-a-trous}
 
-Le type **Texte à trous** (`MULTI_INPUT_ANS_TYP_ID=18`) présente un texte avec un ou plusieurs **champs de saisie** que le candidat doit remplir.
+Le type **Texte à trous** présente un texte avec un ou plusieurs **champs de saisie** que le candidat doit remplir.
 
 ### Édition
 
@@ -199,12 +199,12 @@ Dans le texte de la question, vous insérez des **marqueurs de champ** (typiquem
 
 ### Texte à compléter avec sélection (Text-with-select)
 
-Une variante (`TEXT_WITH_SELECT_ANS_TYP_ID=10`) propose au candidat une **liste déroulante** plutôt qu'un champ de saisie libre. Pour chaque trou, vous définissez la liste des options et l'option correcte.
+Une variante propose au candidat une **liste déroulante** plutôt qu'un champ de saisie libre. Pour chaque trou, vous définissez la liste des options et l'option correcte.
 
 
 ## Code — questions de programmation {#code}
 
-Le type **Code** (`CODE_ANS_TYP_ID=3`) présente au candidat un éditeur de code (Ace) où il doit écrire un programme dans un langage donné (Python, JavaScript, etc.).
+Le type **Code** présente au candidat un éditeur de code (Ace) où il doit écrire un programme dans un langage donné (Python, JavaScript, etc.).
 
 ![Éditeur d'une question Code (Python)](img/03-editeur-code.png)
 
@@ -228,9 +228,9 @@ Le type **Code avec stdin** (`STDINCODE_ANS_TYP_ID=6`) ajoute la possibilité de
 Le type **Optimisation de code** (`OPTIMIZATION_CODE`) demande au candidat non seulement de fournir une solution correcte, mais aussi **performante** (par exemple en complexité algorithmique). L'évaluation inclut des métriques de temps d'exécution.
 
 
-## Drag-and-drop {#drag-and-drop}
+## Glisser-déposer {#drag-and-drop}
 
-Le type **Drag-and-drop** (`DRAG_AND_DROP_ANS_TYP_ID=8`) présente au candidat des **items** à glisser-déposer dans des **zones cibles**.
+Le type **Glisser-déposer** présente au candidat des **items** à glisser-déposer dans des **zones cibles**.
 
 ### Édition
 
@@ -239,9 +239,9 @@ Le type **Drag-and-drop** (`DRAG_AND_DROP_ANS_TYP_ID=8`) présente au candidat d
 - Pour chaque item, précisez la **zone cible correcte**.
 
 
-## Sortable — ordonnancement {#sortable}
+## Trier — ordonnancement {#sortable}
 
-Le type **Sortable** (`SORTABLE_ANS_TYP_ID=32`) présente au candidat une liste d'items à **réordonner** pour les mettre dans l'ordre correct.
+Le type **Trier** présente au candidat une liste d'items à **réordonner** pour les mettre dans l'ordre correct.
 
 ### Édition
 
@@ -252,7 +252,7 @@ Le type **Sortable** (`SORTABLE_ANS_TYP_ID=32`) présente au candidat une liste 
 
 ## Link — appariement {#link}
 
-Le type **Link** (`LINK_ANS_TYP_ID=11`) propose au candidat deux colonnes d'items qu'il doit **apparier** par paires.
+Le type **Relier** propose au candidat deux colonnes d'items qu'il doit **apparier** par paires.
 
 ### Édition
 
@@ -261,9 +261,9 @@ Le type **Link** (`LINK_ANS_TYP_ID=11`) propose au candidat deux colonnes d'item
 - Vous pouvez avoir des correspondances 1-vers-1 ou des correspondances 1-vers-plusieurs selon votre configuration.
 
 
-## Click in area — clic sur image {#click-in-area}
+## Cliquer sur zone {#click-in-area}
 
-Le type **Click in area** (`CLICK_IN_AREA_ANS_TYP_ID=12`) présente au candidat une **image** sur laquelle il doit cliquer à un endroit précis (un bouton dans une capture d'écran, une zone d'un schéma…).
+Le type **Cliquer sur zone** présente au candidat une **image** sur laquelle il doit cliquer à un endroit précis (un bouton dans une capture d'écran, une zone d'un schéma…).
 
 ### Édition
 
@@ -274,38 +274,24 @@ Le type **Click in area** (`CLICK_IN_AREA_ANS_TYP_ID=12`) présente au candidat 
 
 ## Notation manuelle (Manual marking) {#manual-marking}
 
-Le type **Notation manuelle** (`MANUALMARKING_ANS_TYP_ID=4`) présente au candidat une question à réponse **libre** (rédaction, code, schéma) qui sera **notée à la main** par un correcteur après la soumission.
+Le type **Notation manuelle** présente au candidat une question à réponse **libre** (rédaction, code, schéma) qui sera **notée à la main** par un correcteur après la soumission.
 
 ### Variantes
 
 - **Sans soumission de document** — le candidat saisit sa réponse dans un champ de texte simple.
-- **Avec soumission de document** — le candidat upload un ou plusieurs documents (Word, PDF, image, code). Le type de document autorisé est configurable.
+- **Avec soumission de document** — le candidat upload un ou plusieurs documents (audio, vidéo, fichier). Le type de document autorisé est configurable.
 
 ### Édition
 
 - Définissez le **prompt** (la consigne) dans le texte de la question.
 - Si soumission de document : précisez les **formats acceptés** et le **nombre maximum** de fichiers.
-- Définissez le **barème** ou les **critères d'évaluation** dans le tutoriel — pour guider les correcteurs humains.
+- Définissez le barème ou les critères d'évaluation — pour guider les correcteurs humains (**la grille d'évaluation** sera visible aux correcteurs qui pourront noter chaque critère préalablement établi).
 
 Voir aussi la section [Noter un test](/ai/results/#noter-un-test) du manuel administrateur pour le workflow de correction côté évaluateur.
 
+## Correction automatique de document ou d'audio {#upload-auto-grading}
 
-## Test de saisie — typing {#typing}
-
-Les types **Test de saisie** (`TYPING_TST_ANS_TYP_ID=26`) et **Test de saisie avec correction** (`TYPING_TST_WITH_COR_ANS_TYP_ID=31`) évaluent la **vitesse et la précision** de frappe du candidat.
-
-### Édition
-
-- Saisissez le **texte de référence** que le candidat devra recopier.
-- Configurez la **durée du test** (en secondes).
-- Le score est calculé à partir du nombre de caractères corrects par minute, avec pénalité pour les erreurs.
-
-La variante **avec correction** permet au candidat de **revenir corriger** ses erreurs ; sans correction, chaque touche tapée est définitive.
-
-
-## Upload avec notation automatique {#upload-auto-grading}
-
-Le type **Upload avec notation automatique** (`UPLOAD_WITH_AUTOMATIC_GRADING_ANS_TYP_ID=41`) permet au candidat d'**uploader un fichier** (typiquement un document Word/Excel ou une capture d'écran) qui est ensuite **analysé par IA** pour produire automatiquement une note.
+Le type **Correction automatique de document ou d'audio** permet au candidat d'**soumettre un fichier** (typiquement un document Word/Excel ou une capture d'écran) qui est ensuite **analysé par IA** pour produire automatiquement une note.
 
 ### Édition
 
@@ -342,7 +328,7 @@ Le bouton **Supprimer** (poubelle) supprime la question. Refusée si la question
 ## Bonnes pratiques de rédaction {#bonnes-pratiques}
 
 - **Un énoncé court et net** — visez ≤ 3 phrases pour la question. Si l'énoncé devient long, vérifiez si une **aide visuelle** ne serait pas plus claire.
-- **Quatre propositions pour les QCM** — c'est le nombre qui maximise la difficulté discriminante sans surcharger cognitivement le candidat.
+- **Cinq propositions pour les QCM** — c'est le nombre qui maximise la difficulté discriminante sans surcharger cognitivement le candidat.
 - **Éviter les pièges artificiels** — pas de doubles négations, pas de différences subtiles d'orthographe entre les options. Un candidat doit échouer parce qu'il ne connaît pas la réponse, pas parce qu'il a mal lu.
 - **Documenter le tutoriel** — le tutoriel est la **valeur pédagogique** de la question. C'est ce qui distingue une simple évaluation d'un outil d'apprentissage.
 - **Tester avant de publier** — passez la question à un collègue (ou à vous-même via la prévisualisation) avant de la passer en statut *Production*. Les questions cassées en prod dégradent la qualité perçue.
