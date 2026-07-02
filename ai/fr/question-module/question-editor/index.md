@@ -115,10 +115,11 @@ Vous pouvez insérer une ou plusieurs **aides visuelles** dans l'énoncé ou dan
 - Choisissez l'aide visuelle dans la liste filtrée par sujet et langue.
 - Validez : la référence est insérée dans le texte. Le rendu à l'affichage candidat sera l'image/PDF complet.
 
-Deux variantes existent :
+Trois variantes existent :
 
-- **Aide visuelle standard** — image (sous une loupe) ou document directement intégré dans le flux.
-- **Aide visuelle clavier** — image présentée comme un encart pour les questions de touches clavier ou d'interface, généralement plus petite.
+- **Document de référence** - document directement intégré dans la question ou sous forme d'un lien (option à activer en cochant l'option **Afficher le document de référence de type PDF sous forme de lien**).
+- **Aide visuelle afichée par un clic** - image qui apparaît sous une loupe (dans l'énoncé ou dans les réponses)
+- **Aide visuelle afichée dans le texte** - image présentée comme un encart pour les questions de touches clavier ou d'interface, généralement plus petite.
 
 
 ## Génération par IA {#generation-ia}
