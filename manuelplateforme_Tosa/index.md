@@ -990,16 +990,15 @@ Voici un exemple de **description personnalisée du niveau** sur le rapport d’
 ## Credit
 
 Cet onglet vous permet d’avoir une visibilité sur les crédits disponibles sur votre compte.
-![](./media/image
+![](./media/image90.png)
 
 
 Vous avez également la possibilité de commander et d’acheter des crédits directement depuis la plateforme en cliquant sur le bouton **Acheter**. Vous avez juste à selectionner vos quantités et soit passer directement au paiement ou generer un devis.
 
-![](./media/image
 
 # Notification 
 Ici, vous retrouverez toutes les nouveautés et les mises à jour de la plateforme.
-
+![](./media/image91.png)
 
 # Support
 
