@@ -37,13 +37,17 @@ Dans ce menu, vous trouverez tout les onglets disponible sur votre compte :
 
 **Candidats** Cet onglet vous permet de gerer vos candidats et groupes
 
-**Resultats** : Ici vous pourrez verifier le statut des tests et telecharger les attestation de passage
+**Resultats** : Ici, vous pourrez vérifier le statut des tests, consulter le classement d'un groupe de candidats, visualiser leurs résultats globaux et télécharger les attestations de passage.
 
 **Surveillance** : vous pourrez gerer les incidents lié au test des candidats
 
 **Emails** : Pour la creation, gestion et emeteurs de mails 
 
 **Parametres** : gestion des parametres par defaut, d'evaluation et de certification. Creation de session de passage. Creation de profils de compétences et gestion des descriptions de niveaux
+
+**Credits** : Ici vous aurez le nombre de cridits disponible sur votre compte. 
+
+**Notification** : Vous pourrez retrouver toutes les informations concernant les nouvelles mises à jour de la plateforme.
 
 **Aide et support** : Manuel, referentiel pedagogique et documentation sur les API
 
@@ -119,8 +123,7 @@ Aussi, vous pouvez attribuer des privilèges à certains administrateurs sur vot
 
 
 
-Vous aurez donc la possibilité d’attribuer ou supprimer certains privilèges à vos administrateurs.
-
+Vous aurez donc la possibilité d’attribuer ou supprimer certains privilèges à vos administrateurs. Vous pourrez également vérifier les privilèges attribués à vos administrateurs, soit en cliquant sur « Filtres » et en renseignant une fonctionnalité, soit en cliquant sur « Privilèges » puis en sélectionnant celui que vous recherchez.
 
 
 ## Consommation de crédits
