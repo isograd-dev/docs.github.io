@@ -890,6 +890,7 @@ Les **Options par défaut** permettent aux administrateurs de définir et/ou de 
 ![](./media/image70.png)
 
 Les autres paramètres qui peuvent être modifiés sont liés au temps. Vous pouvez choisir d’afficher les dates et heures au format américain ou européen, et sélectionner votre fuseau horaire. Vous pouvez également définir le temps supplémentaire aloué pour les personnes en situation d’handicap. Sachant que vous devrez également définir le temps supplémentaire dans la fiche du candidat, il est recommandé de définir ici la valeur globale sur 100%.
+Vous avez également la possibilité de sélectionner un modèle d’IA parmi ceux disponibles pour vos synthèses et la notation des questions.
 
 
 
@@ -985,6 +986,19 @@ Voici un exemple de **description personnalisée du niveau** sur le rapport d’
 
 
 ![](./media/image81.png)
+
+## Credit
+
+Cet onglet vous permet d’avoir une visibilité sur les crédits disponibles sur votre compte.
+![](./media/image
+
+
+Vous avez également la possibilité de commander et d’acheter des crédits directement depuis la plateforme en cliquant sur le bouton **Acheter**. Vous avez juste à selectionner vos quantités et soit passer directement au paiement ou generer un devis.
+
+![](./media/image
+
+# Notification 
+Ici, vous retrouverez toutes les nouveautés et les mises à jour de la plateforme.
 
 
 # Support
