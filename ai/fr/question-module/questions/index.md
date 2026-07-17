@@ -105,11 +105,6 @@ Chaque ligne du tableau présente plusieurs boutons d'action en bout de ligne :
 Le panneau **ACTIONS** à gauche de la page propose plusieurs opérations applicables à **plusieurs questions** à la fois (sélectionnées via les cases en début de ligne) :
 
 - **Ajouter une question** — ouvre l'éditeur pour créer une nouvelle question.
-- **Transférer les questions sélectionnées en production** — promeut les questions sélectionnées de l'environnement de préproduction vers la production. Réservé aux opérations stratégiques (refonte d'un sujet, nouvelle vague de questions calibrées).
-- **Déverrouiller les questions sélectionnées** — libère le verrou éditorial posé par un autre administrateur sur les questions sélectionnées (utile quand quelqu'un est parti en congé en laissant des questions verrouillées).
-- **Attribuer les questions à un autre admin** — change le responsable (« Personne concernée ») d'un coup pour plusieurs questions. Pratique lors d'un transfert de portefeuille éditorial.
-- **Vérifier l'obsolescence des questions sélectionnées** — lance un diagnostic automatique pour détecter les questions trop anciennes, jamais passées, ou avec un taux d'échec aberrant.
-- **Améliorer les titres** — outil semi-automatique pour reformuler ou normaliser les titres de plusieurs questions à la fois (par IA générative selon votre configuration).
 - **Importer un fichier de questions** — voir [Importer des questions](#importer-des-questions) ci-dessous.
 
 > ⚠️ **Le transfert en production est irréversible** — Vérifiez minutieusement les questions sélectionnées avant de déclencher le transfert : une fois en production, elles sont immédiatement disponibles aux comptes clients réels.

@@ -13,7 +13,7 @@ Accédez à l'éditeur via l'icône **Modifier** (crayon) sur la ligne d'une que
 > 💡 **Type de réponse et interface** — L'éditeur **adapte son interface** au **type de réponse** de la question. Une question QCM affichera une zone de saisie de propositions ; une question Code aura un éditeur de code à coloration syntaxique ; une question glisser-déposer aura un éditeur d'items à glisser. Ce chapitre couvre l'organisation commune **et** les spécificités par type.
 
 
-## Vue d'ensemble {#vue-d-ensemble}
+## Vue d'ensemble
 
 La page d'édition (titre **EDITER UNE QUESTION**) est organisée en plusieurs zones, avec un badge en haut à droite indiquant le **type de réponse** de la question courante (QCM, Code, Cliquer sur zone, etc.) :
 
@@ -45,7 +45,7 @@ La page d'édition (titre **EDITER UNE QUESTION**) est organisée en plusieurs z
 > 💡 **Tout sur une seule page** — Contrairement à d'autres entités de la plateforme, l'éditeur ne navigue pas entre plusieurs pages. Toutes les modifications se font ici et sont enregistrées en un clic via le bouton **Enregistrer** en haut.
 
 
-## Onglets de l'édition de la question {#onglets-edition}
+## Onglets de l'édition de la question 
 
 La section **Question et réponses** est organisée en onglets propres au contenu de la question :
 
@@ -64,7 +64,7 @@ Deux boutons d'aide en haut à droite de cette section :
 - **Aide sur les balises** — référence des balises Markdown et templating disponibles dans l'éditeur.
 
 
-## Champs communs à tous les types {#champs-communs}
+## Champs communs à tous les types 
 
 ### Métadonnées
 
@@ -107,7 +107,7 @@ Une **illustration** est une image attachée **directement à la question** (par
 
 Le **Tutoriel** est une explication détaillée affichée au candidat **après** sa réponse, en mode de révision. C'est le moment pédagogique : expliquer pourquoi la bonne réponse est la bonne, comment l'identifier, quelle erreur courante éviter. Format identique au texte (Markdown / HTML).
 
-### Aides visuelles {#aides-visuelles}
+### Aides visuelles 
 
 Vous pouvez insérer une ou plusieurs **aides visuelles** dans l'énoncé ou dans les réponses. Voir le chapitre [Aides visuelles](/ai/question-module/visual-aids/) pour la création et la gestion. Dans l'éditeur de question :
 
@@ -122,7 +122,7 @@ Trois variantes existent :
 - **Aide visuelle afichée dans le texte** - image présentée comme un encart pour les questions de touches clavier ou d'interface, généralement plus petite.
 
 
-## Génération par IA {#generation-ia}
+## Génération par IA 
 
 Selon la configuration de votre compte, l'éditeur propose un volet latéral **AI assist** à droite de la page, avec deux boutons principaux :
 
@@ -134,7 +134,7 @@ Selon votre version d'interface, d'autres boutons de génération IA peuvent app
 > ⚠️ **L'IA propose, vous décidez** — Le contenu généré est un **point de départ**, pas un livrable final. Relisez systématiquement et corrigez avant d'enregistrer. La qualité dépend du modèle IA configuré au niveau du compte (voir [Options par défaut](/ai/default-options/#parametres-generaux)).
 
 
-## Types de réponse — vue d'ensemble {#types-de-reponse}
+## Types de réponse — vue d'ensemble 
 
 La plateforme propose une vingtaine de types de réponse, regroupables en familles :
 
@@ -151,7 +151,7 @@ La plateforme propose une vingtaine de types de réponse, regroupables en famill
 Les sections suivantes détaillent les types **les plus courants**.
 
 
-## QCM — choix multiple texte {#qcm}
+## QCM — choix multiple texte 
 
 Le type **QCM texte** est le type le plus utilisé sur la plateforme. Le candidat voit une question et plusieurs propositions de réponse, parmi lesquelles **une ou plusieurs** sont correctes.
 
@@ -169,12 +169,13 @@ Un bouton **Ajouter une proposition** en bas de la liste permet d'étendre le no
 
 > 💡 **Une ou plusieurs bonnes réponses ?** — Cochez **une seule** case **Correcte** pour un QCM à choix unique (le candidat ne peut sélectionner qu'une réponse). Cochez **plusieurs** cases pour un QCM à choix multiples (le candidat peut en sélectionner plusieurs, et doit toutes les trouver pour avoir la question juste). Ou **une parmi n** (il y a plusieurs réponses correctes, mais il suffit que le candidat en choisisse une pour que la réponse soit considérée correcte)
 > 
+
 ### Ordre des propositions
 
 Par défaut, les propositions sont présentées au candidat dans un **ordre aléatoire** à chaque passage. Si vous voulez forcer un ordre fixe (par exemple pour une question logique où l'ordre des choix porte du sens), cochez l'option **Ne pas mélanger les réponses** dans les options avancées de la question.
 
 
-## Question d'échelle (Vrai/Faux, Likert) {#question-echelle}
+## Question d'échelle (Vrai/Faux, Likert) 
 
 Le type **Échelle** présente au candidat une question accompagnée d'une **échelle de réponse** réutilisable — par exemple une échelle Likert *« Pas du tout d'accord / Plutôt pas d'accord / Plutôt d'accord / Tout à fait d'accord »*, ou une simple échelle Vrai/Faux. 
 
@@ -186,7 +187,7 @@ Le type **Échelle** présente au candidat une question accompagnée d'une **éc
 > 💡 Pour les questions où la notion de bonne ou de mauvaise réponse n'existe pas, cochez l'option **Pas de notion de bonne réponse (formulaire, test de personnalité...)**
 
 
-## Texte à trous (Multi-input) {#texte-a-trous}
+## Texte à trous (Multi-input) 
 
 Le type **Texte à trous** présente un texte avec un ou plusieurs **champs de saisie** que le candidat doit remplir.
 
@@ -203,7 +204,7 @@ Dans le texte de la question, vous insérez des **marqueurs de champ** (typiquem
 Une variante propose au candidat une **liste déroulante** plutôt qu'un champ de saisie libre. Pour chaque trou, vous définissez la liste des options et l'option correcte.
 
 
-## Code — questions de programmation {#code}
+## Code — questions de programmation 
 
 Le type **Code** présente au candidat un éditeur de code (Ace) où il doit écrire un programme dans un langage donné (Python, JavaScript, etc.).
 
@@ -229,7 +230,7 @@ Le type **Code avec stdin** (`STDINCODE_ANS_TYP_ID=6`) ajoute la possibilité de
 Le type **Optimisation de code** (`OPTIMIZATION_CODE`) demande au candidat non seulement de fournir une solution correcte, mais aussi **performante** (par exemple en complexité algorithmique). L'évaluation inclut des métriques de temps d'exécution.
 
 
-## Glisser-déposer {#drag-and-drop}
+## Glisser-déposer
 
 Le type **Glisser-déposer** présente au candidat des **items** à glisser-déposer dans des **zones cibles**.
 
@@ -240,7 +241,7 @@ Le type **Glisser-déposer** présente au candidat des **items** à glisser-dép
 - Pour chaque item, précisez la **zone cible correcte**.
 
 
-## Trier — ordonnancement {#sortable}
+## Trier — ordonnancement 
 
 Le type **Trier** présente au candidat une liste d'items à **réordonner** pour les mettre dans l'ordre correct.
 
@@ -251,7 +252,7 @@ Le type **Trier** présente au candidat une liste d'items à **réordonner** pou
 - Le candidat doit les remettre dans le bon ordre.
 
 
-## Link — appariement {#link}
+## Relier — appariement 
 
 Le type **Relier** propose au candidat deux colonnes d'items qu'il doit **apparier** par paires.
 
@@ -262,7 +263,7 @@ Le type **Relier** propose au candidat deux colonnes d'items qu'il doit **appari
 - Vous pouvez avoir des correspondances 1-vers-1 ou des correspondances 1-vers-plusieurs selon votre configuration.
 
 
-## Cliquer sur zone {#click-in-area}
+## Cliquer sur zone 
 
 Le type **Cliquer sur zone** présente au candidat une **image** sur laquelle il doit cliquer à un endroit précis (un bouton dans une capture d'écran, une zone d'un schéma…).
 
@@ -273,7 +274,7 @@ Le type **Cliquer sur zone** présente au candidat une **image** sur laquelle il
 - Le candidat clique : le clic est considéré juste s'il tombe dans une zone correcte.
 
 
-## Notation manuelle (Manual marking) {#manual-marking}
+## Notation manuelle (Manual marking) 
 
 Le type **Notation manuelle** présente au candidat une question à réponse **libre** (rédaction, code, schéma) qui sera **notée à la main** par un correcteur après la soumission.
 
@@ -290,7 +291,7 @@ Le type **Notation manuelle** présente au candidat une question à réponse **l
 
 Voir aussi la section [Noter un test](/ai/results/#noter-un-test) du manuel administrateur pour le workflow de correction côté évaluateur.
 
-## Correction automatique de document ou d'audio {#upload-auto-grading}
+## Correction automatique de document ou d'audio 
 
 Le type **Correction automatique de document ou d'audio** permet au candidat d'**soumettre un fichier** (typiquement un document Word/Excel ou une capture d'écran) qui est ensuite **analysé par IA** pour produire automatiquement une note.
 
@@ -303,7 +304,7 @@ Le type **Correction automatique de document ou d'audio** permet au candidat d'*
 > ⚠️ **Notation IA non-déterministe** — Les notes IA peuvent légèrement varier d'un passage à l'autre. Réservez ce type aux **évaluations formatives**, pas aux certifications à fort enjeu. Pour une notation rigoureuse, utilisez **[Notation manuelle](#manual-marking)** avec un correcteur humain.
 
 
-## Sauvegarder, prévisualiser, supprimer {#actions-finales}
+## Sauvegarder, prévisualiser, supprimer 
 
 ### Enregistrer
 
@@ -326,7 +327,7 @@ Le bouton **Supprimer** (poubelle) supprime la question. Refusée si la question
 > 💡 **Préférer le statut « Désactivée » à la suppression** — Pour retirer une question de la circulation sans perdre l'historique, **changez son statut** à *Désactivée* plutôt que de la supprimer. La question reste en base, ses passages historiques restent analysables, mais elle ne sera plus tirée pour de nouveaux candidats.
 
 
-## Bonnes pratiques de rédaction {#bonnes-pratiques}
+## Bonnes pratiques de rédaction 
 
 - **Un énoncé court et net** — visez ≤ 3 phrases pour la question. Si l'énoncé devient long, vérifiez si une **aide visuelle** ne serait pas plus claire.
 - **Cinq propositions pour les QCM** — c'est le nombre qui maximise la difficulté discriminante sans surcharger cognitivement le candidat.
