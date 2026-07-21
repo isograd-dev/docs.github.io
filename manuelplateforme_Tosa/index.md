@@ -14,7 +14,7 @@ layout: home
 
 # Connexion à la plateforme tosa
 
-Pour accéder à votre compte, rendez-vous sur , cliquer sur **Votre compte**,  puis choisissez **Administrateur** dans le menu :
+Pour accéder à votre compte, rendez-vous sur https://www.tosa.org/FR/AdminLogin , cliquer sur **Votre compte**,  puis choisissez **Administrateur** dans le menu :
 
 
 ![](./media/image3.png)
@@ -41,11 +41,11 @@ Dans ce menu, vous trouverez tout les onglets disponible sur votre compte :
 
 **Surveillance** : vous pourrez gerer les incidents lié au test des candidats
 
-**Emails** : Pour la creation, gestion et emeteurs de mails 
+**Emails** : Pour la creation, gestion et d'émetteur de mails 
 
 **Parametres** : gestion des parametres par defaut, d'evaluation et de certification. Creation de session de passage. Creation de profils de compétences et gestion des descriptions de niveaux
 
-**Credits** : Ici vous aurez le nombre de cridits disponible sur votre compte. 
+**Credits** : Ici vous aurez le nombre de credits disponible sur votre compte. 
 
 **Notification** : Vous pourrez retrouver toutes les informations concernant les nouvelles mises à jour de la plateforme.
 
