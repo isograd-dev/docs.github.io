@@ -182,7 +182,7 @@ Le type **Échelle** présente au candidat une question accompagnée d'une **éc
 ### Édition
 
 - **Sélectionnez l'échelle** dans la liste déroulante (voir [Échelles de réponse](/ai/question-module/answer-scales/) pour gérer les échelles disponibles).
-- L'éditeur affiche les options de l'échelle sélectionnée et vous laisse cocher la **bonne réponse** (une seule case cochée). Si vous souhaitez ajouter une nouvelle échelle, vous devez aller dans le menu de la page principale, à gauche **Échelles de réponses** >> ensuite **Ajouter une échelle de réponses**
+- L'éditeur affiche les options de l'échelle sélectionnée et vous laisse cocher la **bonne réponse** (une seule case cochée). Si vous souhaitez ajouter une nouvelle échelle, vous devez aller dans le menu de la page principale, à gauche **Échelles de réponses** >> ensuite **Ajouter une échelle de réponses**.
   
 > 💡 Pour les questions où la notion de bonne ou de mauvaise réponse n'existe pas, cochez l'option **Pas de notion de bonne réponse (formulaire, test de personnalité...)**
 
@@ -199,7 +199,7 @@ Dans le texte de la question, vous insérez des **marqueurs de champ** (typiquem
 - **Variantes acceptées** — autres orthographes ou formulations également comptées correctes.
 - **Sensibilité à la casse** — si la comparaison doit être sensible aux majuscules/minuscules.
 
-### Texte à compléter avec sélection (Text-with-select)
+### Texte à compléter avec listes déroulantes
 
 Une variante propose au candidat une **liste déroulante** plutôt qu'un champ de saisie libre. Pour chaque trou, vous définissez la liste des options et l'option correcte.
 
@@ -214,8 +214,8 @@ Le type **Code** présente au candidat un éditeur de code (Ace) où il doit éc
 
 L'éditeur de question Code expose deux blocs de code distincts :
 
-- **Code de vérification** (`question_programming_code`) — code exécuté côté serveur **avant** ou **après** la soumission du candidat pour valider sa réponse. Permet de définir des cas de test (par exemple : *« si la fonction du candidat retourne 42 pour l'entrée [1,2,3,4,5,6,7,8,9,10], la question est juste »*).
-- **Solution** (`solution_code`) — code de référence qui résout correctement la question. Sert de modèle pour la correction et pour la prévisualisation candidat.
+- **Code de vérification** — code exécuté côté serveur **avant** ou **après** la soumission du candidat pour valider sa réponse. Permet de définir des cas de test (par exemple : *« si la fonction du candidat retourne 42 pour l'entrée [1,2,3,4,5,6,7,8,9,10], la question est juste »*).
+- **Solution** — code de référence qui résout correctement la question. Sert de modèle pour la correction et pour la prévisualisation candidat.
 
 ### Langage
 
@@ -334,4 +334,3 @@ Le bouton **Supprimer** (poubelle) supprime la question. Refusée si la question
 - **Éviter les pièges artificiels** — pas de doubles négations, pas de différences subtiles d'orthographe entre les options. Un candidat doit échouer parce qu'il ne connaît pas la réponse, pas parce qu'il a mal lu.
 - **Documenter le tutoriel** — le tutoriel est la **valeur pédagogique** de la question. C'est ce qui distingue une simple évaluation d'un outil d'apprentissage.
 - **Tester avant de publier** — passez la question à un collègue (ou à vous-même via la prévisualisation) avant de la passer en statut *Production*. Les questions cassées en prod dégradent la qualité perçue.
-- **Calibrer puis stabiliser** — laissez les nouvelles questions en statut *En revue* pendant quelques centaines de passages pour calibrer leur difficulté. Une fois la calibration stable, passez-les en *Production*.

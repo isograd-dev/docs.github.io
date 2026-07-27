@@ -23,11 +23,9 @@ Chaque formulaire a un **type** (`typ_id`) qui détermine son usage :
 
 | Type | Usage |
 |---|---|
-| **Évaluation** | Test d'évaluation continue, sans valeur certifiante. C'est le format le plus courant. |
-| **Certification** | Test sanctionnant officiellement un niveau. Soumis aux règles de France Compétences si éligible CPF. |
-| **Certification propriétaire** | Variante de la certification avec des règles spécifiques au compte. |
-| **Certification sans sujet** | Certification transversale qui ne se rattache pas à un sujet particulier. |
-| **Positionnement** | Test diagnostique passé en début de formation pour évaluer le niveau initial. |
+| **Évaluation propriétaire** | Test d'évaluation continue, sans valeur certifiante. C'est le format le plus courant. |
+| **Formulaire** | Le questionnaire est un format destiné à recueillir des informations auprès des candidats : profil, expérience, motivations, préférences, contexte professionnel, etc. |
+| **Série de tests** | Un enchaînement de plusieurs tests regroupés et proposés au candidat dans un ordre défini, au sein d'une seule et même session. |
 
 Le type conditionne le comportement de la plateforme côté candidat (présentation, génération du diplôme) et côté administrateur (limitations sur le passage, options disponibles).
 
@@ -35,23 +33,13 @@ Le type conditionne le comportement de la plateforme côté candidat (présentat
 
 Un formulaire ne contient pas directement la liste des questions à poser — il définit **un algorithme** qui sélectionne les questions au démarrage de chaque session. Les algorithmes courants :
 
-- **Adaptatif** — l'algorithme ajuste la difficulté des questions en fonction des réponses du candidat. C'est l'algorithme phare de Tosa.
-- **CEFR / niveau** — sélection ciblée d'un niveau de référence (A1-C2 pour les langues).
-- **Tirage simple** — N questions tirées au hasard parmi un pool.
+- **Adaptatif** — l'algorithme ajuste la difficulté des questions en fonction des réponses du candidat (att: les questions doivent être calibrées avant).
+- **Séquentiel** — N questions tirées dans l'ordre ou au hasard parmi un pool (une liste, un jeu de questions, un domaine...).
 
 Chaque algorithme a ses propres paramètres (longueur, pool de domaines, distribution des niveaux) configurés sur l'onglet **Algorithme**.
 
-### Mode avancé vs mode client
 
-L'interface du formulaire bascule entre deux modes selon les privilèges et le contexte :
-
-- **Mode avancé** (utilisé par les contenus Isograd) — 6 onglets, toutes les options éditoriales et techniques.
-- **Mode client** — interface simplifiée à 4 onglets pour les administrateurs d'un compte qui personnalisent un formulaire existant.
-
-Le mode est déterminé par le drapeau `is_advanced_test_form` du formulaire et par votre profil utilisateur.
-
-
-## Créer un formulaire {#creer-un-formulaire}
+## Créer un formulaire
 
 La création se fait via un modal de pré-sélection (sujet, langue, type), suivi de la fiche d'édition.
 
@@ -63,40 +51,28 @@ La création se fait via un modal de pré-sélection (sujet, langue, type), suiv
 
     - **Sujet** — la matière que le formulaire évalue.
     - **Langue** — langue de présentation au candidat.
-    - **Type** — Évaluation, Certification, etc. (voir [Types de formulaires](#concepts)).
+    - **Type** — Évaluation, formulaire, etc. (voir [Types de formulaires](#concepts)).
 
 3. Validez. La plateforme crée le formulaire et vous amène sur sa fiche d'édition.
 
 
-## Onglets de la fiche en mode avancé {#onglets-mode-avance}
+## Onglets création de tests
 
-La fiche d'édition (titre **CRÉER OU MODIFIER UN TEST**) propose cinq onglets en mode avancé :
+La fiche d'édition (titre **CRÉER OU MODIFIER UN TEST**) propose cinq onglets:
 
-![Onglets de la fiche en mode avancé](img/03-onglets-avance.png)
+(img/03-onglets-avance.png)
 
 | Onglet | Contenu |
 |---|---|
-| **Caractéristiques générales** | Test public (Oui/Non), Visibilité géographique, statut Actif, Marque, Test principal pour la famille de sujets, Type de test, plus les messages de début et de fin visibles par le candidat. La fiche embarque aussi un panneau de statistiques (nombre de passages, avis sur la pertinence et l'ergonomie). |
-| **Description** | Descriptions commerciales par langue : carte courte, description longue, description courte. Reprises dans les catalogues publics. |
-| **Détails de l'algorithme** | Choix de l'algorithme et paramètres : pool de domaines évalués, distribution des niveaux, contraintes de tirage, équilibrage des questions par domaine. |
-| **Résultats** | Configuration de l'analyse : seuils de niveau, formule de notation, structure du rapport. |
-| **Autres paramètres** | Surveillance à distance, plein écran, sauvegarde automatique, comportement en cas d'interruption, options techniques diverses. |
+| **Caractéristiques générales** | Test actif (Oui/Non), nom, description, type de test, langue, niveau de difficulté, statistiques des tests (durant les 12 derniers mois de passage)  |
+| **Choix des questions** | Algorithme, sujet |
+| **Résultats** | Structure du rapport. |
+| **Autres paramètres** | Durée du test, comportement en cas d'interruption, options techniques diverses. |
+| **Messages de début et de fin de test visibles par le candidat** | Personnalisation des messages d'intro et de fin. |
 
 > 💡 **Boutons d'action** — En plus du bouton **Enregistrer**, l'en-tête propose **Enregistrer & essayer votre test** (lance le test pour vous-même comme prévisualisation) et **Exporter les commentaires** (récupère les commentaires laissés par les candidats sur les questions de ce test).
 
 > 💡 **Mode allégé** — Dans certains environnements (`is_cus_env`), l'onglet **Description** n'apparaît pas séparément : ses champs sont inlinés dans l'onglet **Caractéristiques générales**.
-
-
-## Onglets de la fiche en mode client {#onglets-mode-client}
-
-Pour un administrateur de compte client qui personnalise un formulaire fourni par Isograd, l'interface est plus simple :
-
-| Onglet | Contenu |
-|---|---|
-| **Général** | Paramètres modifiables : nom local, statut, sujet (lecture seule). |
-| **Time** | Durée du test (peut être ajustée localement). |
-| **Intro & Feedback** | Personnalisation des messages d'intro et de fin. |
-| **Statistiques** | Tableau récapitulatif des passages du formulaire sur ce compte. |
 
 > 💡 **Pourquoi cette restriction ?** — En mode client, vous ne pouvez **pas** modifier l'algorithme ou le pool de questions, car ces paramètres sont contrôlés par Isograd pour garantir la cohérence des résultats entre tous les comptes utilisant le même formulaire. Vous pouvez en revanche personnaliser l'**enrobage** (intro, feedback, durée).
 
@@ -129,7 +105,7 @@ La duplication est l'outil le plus rapide pour créer une variante d'un formulai
 > ⚠️ **Formulaire utilisé par des candidats** — Un formulaire référencé par des **inscriptions de tests** (terminées ou en cours) ne peut pas être supprimé. Préférez l'**archivage** via le statut sur l'onglet Général : le formulaire devient invisible pour les nouvelles inscriptions mais reste fonctionnel pour les tests historiques.
 
 
-## Filtres {#filtres}
+## Filtres
 
 Le panneau **Filtres** propose :
 
@@ -138,16 +114,6 @@ Le panneau **Filtres** propose :
 - **Sujet** — par sujet associé.
 
 Le tri par colonne est disponible en cliquant sur les en-têtes.
-
-
-## Autoriser un formulaire pour un compte {#autoriser-formulaire}
-
-Sur la liste, en plus du bouton **Créer**, vous trouverez un bouton **Autoriser** qui ouvre une interface permettant d'attribuer un formulaire existant à un ou plusieurs **comptes clients**. Cette opération règle les conditions d'accès :
-
-- Le formulaire devient visible et utilisable par les comptes ciblés.
-- Les autres comptes ne le voient pas dans leurs sélections.
-
-Utile pour les formulaires propriétaires commandés par un client précis, ou pour les certifications pilotes destinées à un groupe restreint d'utilisateurs.
 
 
 ## Exporter la liste {#exporter-la-liste}

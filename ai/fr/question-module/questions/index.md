@@ -97,7 +97,7 @@ Chaque ligne du tableau présente plusieurs boutons d'action en bout de ligne :
 - **Éditer** (crayon) — ouvre la page d'édition de la question. Voir [Éditeur de questions](/ai/question-module/question-editor/).
 - **Prévisualiser** (icône Play) — ouvre la **prévisualisation** de la question telle qu'elle apparaîtra à un candidat (énoncé, options, aide visuelle). Permet de valider visuellement sans démarrer un vrai test.
 - **Dupliquer** — crée une copie de la question, ouvre sa fiche d'édition. La copie hérite de tout (énoncé, réponses, paramètres) mais a un nouvel `id`.
-- **Supprimer** — supprime la question. Refusée si la question a déjà été passée par des candidats.
+- **Supprimer** — supprime la question. Refusée si la question apparaît dans un test.
 
 
 ## Actions de masse (panneau ACTIONS) 
