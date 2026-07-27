@@ -2,9 +2,9 @@
 layout: question-manual
 ---
 
-# Micro-compétences
+# Sous-domaine
 
-Une **micro-compétence** est une compétence fine, transverse à plusieurs domaines de niveau 1. Là où un *domaine* est un grand chapitre (« Formules de calcul »), une micro-compétence est un item beaucoup plus précis (« Maîtrise des fonctions de date », « Utilisation des références absolues »).
+Le sous-domaine est une compétence fine, transverse à plusieurs domaines de niveau 1. Là où un *domaine* est un grand chapitre (« Formules de calcul »), une micro-compétence est un item beaucoup plus précis (« Maîtrise des fonctions de date », « Utilisation des références absolues »).
 
 Les micro-compétences servent à :
 
@@ -23,7 +23,7 @@ Le tableau liste toutes les micro-compétences, avec leur **identifiant**, leur 
 
 Cette distinction est subtile et mérite d'être clarifiée :
 
-| | **Domaine** | **Micro-compétence** |
+| | **Domaine** | **Sous-domaine** |
 |---|---|---|
 | Granularité | Grande (chapitre) | Fine (item précis) |
 | Rattachement | Un sujet par domaine | Plusieurs domaines (transverse) |
@@ -38,62 +38,31 @@ Cette distinction est subtile et mérite d'être clarifiée :
 
 La création est **directe** — pas de modal de pré-création, contrairement aux sujets ou aux domaines.
 
-1. Depuis la page **Gestion des micro-compétences**, cliquez sur **Ajouter une micro-compétence** dans la barre d'actions.
-
-2. La plateforme crée immédiatement un enregistrement vide et vous amène sur sa fiche d'édition (`MicroSkillUpdate?is_create=1&mic_ski_id=<new_id>`).
-
+1. Depuis la page **Catégories**, cliquez sur **Domaines** dans la barre d'actions, puis sur **Ajouter un domaine**.
+2. Décochez **Ce domaine n'est pas un sous-domaine**
+2. Choisissez le domaine parent depuis la liste.
 3. Remplissez les onglets — voir [Onglets de la fiche](#onglets-de-la-fiche) ci-dessous.
-
-
-## Onglets de la fiche {#onglets-de-la-fiche}
-
-La fiche d'édition d'une micro-compétence présente **deux onglets** :
 
 ![Onglets de la fiche d'une micro-compétence](img/02-fiche-microskill.png)
 
-### Onglet « Description »
+
+### Caractéristiques générales {#onglets-de-la-fiche}
 
 Pour chaque langue (sélecteur **« Description en »** en haut de l'onglet), deux champs :
 
 - **Nom** — libellé concis qui apparaît dans la liste et dans les filtres de questions. Choisissez un titre parlant en une dizaine de mots maximum.
-- **Nom long** — texte explicatif détaillant le périmètre de la micro-compétence. Sert de documentation pour les rédacteurs de questions et pour les contrôleurs qualité.
+- **Description textuelle** — texte explicatif détaillant le périmètre de la micro-compétence. Sert de documentation pour les rédacteurs de questions et pour les contrôleurs qualité.
+- **Domaine parent**
 
 Un bouton **Afficher les questions associées à ce domaine** ouvre la liste des questions actuellement taguées avec cette micro-compétence — utile pour vérifier la couverture en un clic.
 
-### Onglet « Domaines associés »
+### Onglet **Niveaux de compétence**
 
-C'est l'onglet structurellement le plus important : il détermine **dans quel(s) domaine(s)** la micro-compétence peut être utilisée pour tagger des questions.
+C'est l'onglet où vous ajoutez les descriptions des niveaux. 
 
-![Onglet "Domaines associés" — drag & drop](img/03-onglet-domaines-associes.png)
+### Onglet **Recommandations pour progresser**
 
-L'onglet propose deux listes côte à côte :
-
-- **Domaines disponibles** (`#unused`) — tous les domaines de niveau 1 non encore associés à cette micro-compétence.
-- **Domaines associés** (`#used`) — les domaines actuellement rattachés.
-
-**Pour associer** : glissez-déposez un domaine de **disponibles** vers **associés**. L'inverse pour désassocier. Cliquez **Enregistrer** en haut à droite pour persister.
-
-> 💡 **Filtrer la liste** — Un champ de filtre au-dessus de chaque liste permet de retrouver rapidement un domaine quand le référentiel devient volumineux. Indispensable sur les comptes avec plusieurs centaines de domaines.
-
-> ⚠️ **Domaines de niveau 1 uniquement** — Seuls les **domaines L1** apparaissent dans les listes. Les L2 et L3 héritent automatiquement de la micro-compétence par leur parent. Cela évite la combinatoire ingérable d'associer une micro-compétence à des dizaines de sous-niveaux.
-
-
-## Saisie multilingue {#saisie-multilingue}
-
-Comme pour les domaines, la description d'une micro-compétence est multilingue : le sélecteur **« Description en »** en haut de l'onglet Description permet de basculer entre les langues actives. Renseignez au moins la langue par défaut de votre compte ; les autres langues peuvent rester vides si vous n'avez pas le temps de traduire — la micro-compétence reste utilisable, mais affichera son libellé dans la langue par défaut.
-
-
-## Filtres {#filtres}
-
-Le panneau **Filtres** propose deux contrôles :
-
-- **Rechercher** — texte libre sur l'ID ou la description courte.
-- **Famille de sujets** — restreint la liste aux micro-compétences associées à au moins un domaine d'un sujet de la famille choisie.
-
-Le tri est disponible sur chaque colonne en cliquant sur l'en-tête.
-
-
-## Supprimer une micro-compétence {#supprimer-une-microskill}
+## Supprimer sous-domaine {#supprimer-une-microskill}
 
 1. Sur la ligne de la micro-compétence, cliquez sur l'icône **Supprimer**.
 2. Confirmez sur la page de confirmation via **Supprimer**.
