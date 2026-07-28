@@ -48,10 +48,32 @@ Sur la page d'édition du profil, cochez les **options de surveillance** souhait
 | **Forcer le plein écran** | Le test ne peut être passé qu'en mode plein écran. Une sortie du plein écran génère un incident. |
 | **Enregistrer la vidéo** | La webcam du candidat est enregistrée pendant tout le test. La vidéo est consultable à la revue. |
 | **Enregistrer l'audio** | Le micro du candidat est enregistré (utile pour détecter une présence parlante). |
-| **Prendre des captures régulières** | Captures d'écran périodiques de l'écran et de la webcam pendant le test. |
+| **Prendre des captures régulières de l'écran** | Captures d'écran périodiques de l'écran et de la webcam pendant le test. |
 | **Effectuer un scan de la pièce** | Avant le test, le candidat fait un tour à 360° de sa pièce avec sa webcam pour montrer qu'il est seul et que son poste de travail est conforme. |
+| **Nécessite le navigateur sécurisé** | Le test ne peut être passé que dans **Safe Exam Browser**, un navigateur d'examen qui verrouille le poste du candidat. Voir [la section dédiée](#navigateur-securise) ci-dessous. |
 
 Cliquez sur **Enregistrer** pour persister la configuration. Le profil est immédiatement utilisable dans les [sessions de passage](/ai/sessions/).
+
+### Le navigateur sécurisé (Safe Exam Browser) {#navigateur-securise}
+
+L'option **Nécessite le navigateur sécurisé** impose le passage du test dans **Safe Exam Browser (SEB)**, un navigateur d'examen gratuit (Windows et macOS) qui verrouille le poste pendant toute la durée du test : le candidat ne peut ni changer d'application, ni ouvrir d'autres sites, ni utiliser le copier-coller vers l'extérieur.
+
+Côté candidat, le parcours est le suivant :
+
+1. Il installe **Safe Exam Browser** une seule fois sur sa machine (le lien de téléchargement lui est proposé au lancement du test).
+2. Quand il démarre un test qui exige le navigateur sécurisé, la plateforme lui fait télécharger un **fichier d'examen personnel** (`.seb`). En l'ouvrant, SEB se lance directement sur son test, déjà connecté à son compte.
+3. La plateforme vérifie **à chaque page** que le test se déroule bien dans SEB — il est impossible de démarrer dans SEB puis de continuer dans un navigateur classique.
+4. À la fin du test, SEB se ferme automatiquement.
+
+Selon le contenu du test, SEB autorise automatiquement ce qui est nécessaire — et uniquement cela : les applications requises par les questions à dépôt de fichier (par exemple **Excel** pour une question de classeur à compléter), ou la navigation vers le site d'exercice pour les tests **WordPress**. Aucune autre application ni aucun autre site ne sont accessibles.
+
+Règles d'interaction avec les autres options du profil :
+
+- Activer le navigateur sécurisé **coche et verrouille « Forcer le plein écran »** (le verrouillage est garanti par SEB lui-même) et **désactive la liste blanche de sites** (le filtrage des sites est intégré au navigateur sécurisé).
+- **Captures d'écran** — sur **macOS**, le mode examen du système bloque toute capture d'écran : si les deux options sont cochées, un avertissement s'affiche dans le profil et les candidats sur Mac passeront le test **sans captures**. Les captures fonctionnent normalement sous **Windows**. L'enregistrement **audio et vidéo** fonctionne sur les deux systèmes.
+- Décocher **Utiliser la surveillance à distance** remet à zéro toutes ses options, y compris le navigateur sécurisé.
+
+> ⚠️ **Contenus vidéo sous Windows** — Safe Exam Browser pour Windows ne lit pas les vidéos au format MP4/H.264. Si votre test contient des vidéos dans ce format, contactez votre interlocuteur Isograd avant d'activer le navigateur sécurisé.
 
 ### Définir un profil par défaut
 

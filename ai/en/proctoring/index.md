@@ -48,10 +48,32 @@ On the profile's edit page, tick the desired **proctoring options**:
 | **Force full screen** | The test can only be taken in full-screen mode. Exiting full screen triggers an incident. |
 | **Record video** | The candidate's webcam is recorded for the duration of the test. The video is available at review time. |
 | **Record audio** | The candidate's microphone is recorded (useful to detect a speaking presence). |
-| **Take periodic captures** | Periodic screen and webcam captures during the test. |
+| **Take regular screenshots** | Periodic screen and webcam captures during the test. |
 | **Perform a room scan** | Before the test, the candidate makes a 360° sweep of their room with their webcam to show they are alone and that their workstation is compliant. |
+| **Requires secure browser** | The test can only be taken in **Safe Exam Browser**, an exam browser that locks down the candidate's computer. See [the dedicated section](#secure-browser) below. |
 
 Click on **Save** to persist the configuration. The profile is immediately usable in [test sessions](/ai/en/sessions/).
+
+### The secure browser (Safe Exam Browser) {#secure-browser}
+
+The **Requires secure browser** option forces the test to be taken in **Safe Exam Browser (SEB)**, a free exam browser (Windows and macOS) that locks down the computer for the whole duration of the test: the candidate cannot switch applications, open other websites, or copy-paste to the outside.
+
+On the candidate's side, the journey is:
+
+1. They install **Safe Exam Browser** once on their machine (the download link is offered when launching the test).
+2. When starting a test that requires the secure browser, the platform has them download a **personal exam file** (`.seb`). Opening it launches SEB directly on their test, already logged into their account.
+3. The platform verifies **on every page** that the test is really running inside SEB — it is impossible to start in SEB and then continue in a regular browser.
+4. At the end of the test, SEB closes automatically.
+
+Depending on the test's content, SEB automatically allows what is needed — and only that: the applications required by file-submission questions (for example **Excel** for a workbook question), or navigation to the exercise site for **WordPress** tests. No other application or website is reachable.
+
+Interaction rules with the other profile options:
+
+- Enabling the secure browser **ticks and locks "Force full screen"** (the lockdown is guaranteed by SEB itself) and **disables the website whitelist** (site filtering is built into the secure browser).
+- **Screenshots** — on **macOS**, the system's assessment mode blocks all screen captures: if both options are ticked, a warning is shown in the profile and candidates on Mac will take the test **without captures**. Captures work normally on **Windows**. **Audio and video** recording works on both systems.
+- Unticking **Use remote proctoring** resets all of its options, including the secure browser.
+
+> ⚠️ **Video content on Windows** — Safe Exam Browser for Windows cannot play MP4/H.264 videos. If your test contains videos in that format, contact your Isograd representative before enabling the secure browser.
 
 ### Set a default profile
 
