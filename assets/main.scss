@@ -466,16 +466,8 @@ main .wrapper .home {
           vertical-align: top;
 
           &:first-child {
-            font-family: 'Courier New', monospace;
             color: $text-primary;
             font-weight: 500;
-            font-size: 13px;
-          }
-
-          // Support pour les emojis dans les tableaux
-          &:nth-child(2) {
-            text-align: center;
-            width: 80px;
           }
         }
       }

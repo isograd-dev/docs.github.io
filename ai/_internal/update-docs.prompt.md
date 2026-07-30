@@ -61,6 +61,8 @@ PROCÉDURE :
    dans index.md et listée dans _manifest.json ; aucune référence morte.
 
 CONTRAINTES :
+- Ne documente PAS les modules « Familles de sujets » ni « Micro-compétences » :
+  aucun chapitre, aucune section, aucune capture pour ces deux modules.
 - N'écris RIEN dans le site publié hors `ai/<lang>/...` (le dossier
   `_internal/` reste interne).
 - Ne touche pas à l'envoi d'emails / SES ; emails de test en @mailinator.com.
