@@ -148,7 +148,7 @@ Groups let you organize your candidate population (by class, department, client,
 
 ### Access the groups
 
-From the navigation menu, click **Groups** (or access the URL `/clientadmin/candidates/AdminGroupsWithTable`).
+From the navigation menu, click **Groups**.
 
 ![Main groups page](img/09-page-groupes.png)
 

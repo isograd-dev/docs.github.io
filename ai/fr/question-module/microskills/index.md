@@ -12,7 +12,7 @@ Les micro-compétences servent à :
 - Produire des analyses transversales : *« Sur quelles micro-compétences précises ce candidat a-t-il échoué ? »*
 - Identifier des **trous de couverture** dans le référentiel — par exemple repérer les micro-compétences qui n'ont pas (ou peu) de questions rédigées.
 
-Accédez à la page via le menu **Module Questions → Catégories → Micro-compétences**, ou directement à `/domains/AdminMicroSkillsWithTable`.
+Accédez à la page via le menu **Module Questions → Catégories → Micro-compétences**.
 
 ![Page "Gestion des micro-compétences"](img/01-liste-microskills.png)
 

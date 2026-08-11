@@ -6,7 +6,7 @@ layout: question-manual
 
 Un **sujet** est la matière évaluable centrale de la plateforme : *Excel 2016*, *Python*, *Anglais B2*. Toutes les questions, tous les domaines, tous les formulaires de test sont attachés à un sujet. Ce chapitre couvre la liste des sujets, leur création, et la fiche d'édition multi-onglets qui permet de tout paramétrer — du nom commercial du test aux administrateurs autorisés à voir le sujet.
 
-Accédez à la page via le menu **Module Questions → Sujets**, ou directement à `/subjects/AdminSubjectsWithTable`.
+Accédez à la page via le menu **Module Questions → Sujets**.
 
 ![Page principale "Gestion des sujets"](img/01-liste-sujets.png)
 

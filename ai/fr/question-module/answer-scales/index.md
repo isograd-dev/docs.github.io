@@ -8,7 +8,7 @@ Une **échelle de réponse** est un jeu d'options de réponse réutilisable que 
 
 Les échelles permettent de **normaliser** les options de réponse d'une famille de questions sans recopier les libellés à chaque rédaction. Elles sont particulièrement utiles pour les questionnaires de comportement (échelles de Likert), les autoévaluations, et tout questionnaire où la même liste de choix se répète.
 
-Accédez à la page via le menu **Module Questions → Questions → Échelles de réponse**, ou directement à `/questions/AdminAnswerScalesWithTable`.
+Accédez à la page via le menu **Module Questions → Questions → Échelles de réponse**.
 
 ![Page "Gestion des échelles de réponse"](img/01-liste-echelles.png)
 

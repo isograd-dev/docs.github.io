@@ -6,7 +6,7 @@ layout: admin-manual
 
 La page **Options par défaut** centralise les **paramètres de passage** appliqués à tous les tests inscrits sur votre compte. Les valeurs définies ici sont **pré-remplies** dans la fenêtre d'inscription d'un candidat à un test — vous pouvez toujours les modifier ponctuellement au cas par cas, mais les régler ici fait gagner du temps et garantit la cohérence sur l'ensemble de votre activité.
 
-Accédez à cette page via le menu **Paramètres → Options de passage**, ou directement à l'URL `/clientadmin/parameters/UpdateDefaultOptions`.
+Accédez à cette page via le menu **Paramètres → Options de passage**.
 
 ![Page principale "Options par défaut"](img/01-page-options.png)
 

@@ -12,7 +12,7 @@ Les aides visuelles sont gérées de manière **centralisée** sur la plateforme
 - De **mettre à jour** un fichier en un seul endroit, avec propagation immédiate à toutes les questions qui l'utilisent.
 - De **garantir la cohérence** linguistique : une aide visuelle est rattachée à une langue, ce qui assure que la version française d'une question affiche le tableau en français et la version anglaise le tableau en anglais.
 
-Accédez à la page via le menu **Module Questions → Aides visuelles**, ou directement à `/visualaid/AdminVisualAidsWithTable`.
+Accédez à la page via le menu **Module Questions → Aides visuelles**.
 
 ![Page "Gestion des aides visuelles"](img/01-liste-aides.png)
 

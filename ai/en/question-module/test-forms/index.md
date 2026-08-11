@@ -8,7 +8,7 @@ A **test** — technically called a *"test form"* (`test_form`) in the code and 
 
 Every test booked for a candidate on the platform — whether an assessment, a certification or a positioning test — is defined by one of these forms.
 
-Open the page through the menu **Questions module → Tests & Exams**, or directly at `/testforms/AdminTestFormsWithTable`.
+Open the page through the menu **Questions module → Tests & Exams**.
 
 ![Tests management page](img/01-liste-formulaires.png)
 

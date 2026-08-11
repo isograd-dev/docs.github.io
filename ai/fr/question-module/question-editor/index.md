@@ -6,7 +6,7 @@ layout: question-manual
 
 L'**éditeur de questions** est l'outil le plus utilisé du module Questions — c'est ici qu'on écrit les énoncés, qu'on définit les options de réponse, qu'on ajoute les illustrations et aides visuelles, et qu'on tague chaque question dans la cartographie de compétences. Tout administrateur qui produit du contenu pour la plateforme passe la majorité de son temps sur cette page.
 
-Accédez à l'éditeur via l'icône **Modifier** (crayon) sur la ligne d'une question dans la page **[Questions](/ai/question-module/questions/)**, ou directement à l'URL `/questions/QuestionUpdate?que_str_id=<id>`.
+Accédez à l'éditeur via l'icône **Modifier** (crayon) sur la ligne d'une question dans la page **[Questions](/ai/question-module/questions/)**.
 
 ![Éditeur de questions — vue d'ensemble (type QCM)](img/01-editeur-mcq.png)
 

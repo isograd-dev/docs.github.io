@@ -6,7 +6,7 @@ layout: question-manual
 
 A **subject family** groups several subjects under one banner. For example, the *Microsoft Excel* family groups *Excel 2016*, *Excel 2019*, *Excel 365*; the *Adobe Illustrator* family groups the various versions of the software. It is the parent organisational unit of the subject.
 
-Open the page from the menu **Question Module → Subjects → Subject families**, or directly at `/subjects/AdminSubjectFamiliesWithTable`.
+Open the page from the menu **Question Module → Subjects → Subject families**.
 
 ![Page "Subject family management"](img/01-liste-familles.png)
 

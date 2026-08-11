@@ -8,7 +8,7 @@ The **Questions management** page is the **nerve centre** of the Questions modul
 
 The detailed behaviour of the editor itself is covered in the [Question editor](/ai/en/question-module/question-editor/) chapter.
 
-Open the page through the menu **Questions module → Questions**, or directly at `/questions/AdminQuestionsWithTable`.
+Open the page through the menu **Questions module → Questions**.
 
 ![Questions management page](img/01-liste-questions.png)
 
@@ -75,7 +75,7 @@ In the **Favorites** selector, pick the desired favorite. The page reloads with 
 
 Select the favorite, then click **Delete favorite**. The favorite is removed from the selector.
 
-> 💡 **Personal favorites** — Favorites are **specific to your administrator account**: they are not shared with other authors. If you want to share a view, just share its URL — applied filters are reflected in the query string.
+> 💡 **Personal favorites** — Favorites are **specific to your administrator account**: they are not shared with other authors.
 
 
 ## Star a question {#star-a-question}
@@ -155,13 +155,13 @@ You can interact with the question (click options, enter code, manipulate) to ve
 
 ## Question verification {#question-verification}
 
-The **Question verification** page (URL: `/questions/CheckAllQuestionsWithTable`) is a **diagnostic tool** that identifies questions showing editorial anomalies on a given subject — for example: no correct answer marked, missing options, incomplete translation, visual aid file referenced but missing, etc.
+The **Question verification** page (menu **Questions module → Questions → Question check**) is a **diagnostic tool** that identifies questions showing editorial anomalies on a given subject — for example: no correct answer marked, missing options, incomplete translation, visual aid file referenced but missing, etc.
 
 ![Question verification page](img/04-page-verification.png)
 
 ### Usage
 
-1. Open the page through a dedicated link or directly at the URL above.
+1. Open the page from the menu **Questions module → Questions → Question check**.
 2. Select the **subject** in the filter.
 3. Click the verification button: the server scans every question of the subject and lists those exhibiting a problem.
 4. The table shows, for each problematic question: **ID**, **Title**, **Author**, **Diagnosis** (the nature of the problem).

@@ -1,0 +1,55 @@
+{
+  "chapter": "dashboard",
+  "generated_at": "2026-08-11T10:25:43.493Z",
+  "base_url": "https://appdev.isograd.com",
+  "captures": [
+    {
+      "name": "01-dashboard.png",
+      "caption": "Page \"Tableau de bord\" — panneau de filtres en haut (groupe, période, évaluation), puis packs, métriques et graphiques.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/clientresult/DashBoard"
+    },
+    {
+      "name": "02-filtres.png",
+      "caption": "Panneau de filtres — commutateur \"par session\", sélecteur de groupe / sous-groupe, période, bouton de mise à jour et sélecteur d'évaluation.",
+      "kind": "element",
+      "selector": ".filter-container",
+      "url": "https://test.isograd.com/clientadmin/clientresult/DashBoard"
+    },
+    {
+      "name": "03-metriques.png",
+      "caption": "Cartes de métriques — nombre de tests terminés et temps moyen par test.",
+      "kind": "element",
+      "selector": ".metrics-row:has(#total-tests-metric)",
+      "url": "https://test.isograd.com/clientadmin/clientresult/DashBoard"
+    },
+    {
+      "name": "04-graphiques.png",
+      "caption": "Graphiques — répartition des tests par statut et répartition des scores.",
+      "kind": "element",
+      "selector": ".metrics-row:has(#chart-sta)",
+      "url": "https://test.isograd.com/clientadmin/clientresult/DashBoard"
+    },
+    {
+      "name": "05-top10.png",
+      "caption": "Tableau \"Top 10\" — les dix meilleurs candidats sur l'évaluation sélectionnée (rang, nom, date, score).",
+      "kind": "element",
+      "selector": ".top10-container:has(#top10-table)",
+      "url": "https://test.isograd.com/clientadmin/clientresult/DashBoard"
+    },
+    {
+      "name": "06-packs.png",
+      "caption": "Tableau des packs du compte — date d'expiration, type de test, quantité initiale et restante.",
+      "kind": "element",
+      "selector": ".top10-container:has(#company-packs-table)",
+      "url": "https://test.isograd.com/clientadmin/clientresult/DashBoard"
+    },
+    {
+      "name": "07-mode-session.png",
+      "caption": "Mode \"par session\" — le sélecteur de groupe laisse place au sélecteur de session ; la liste des évaluations se recharge à chaque changement de session.",
+      "kind": "element",
+      "selector": ".filter-container",
+      "url": "https://test.isograd.com/clientadmin/clientresult/DashBoard"
+    }
+  ]
+}

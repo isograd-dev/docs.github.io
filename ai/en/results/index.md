@@ -6,7 +6,7 @@ layout: admin-manual
 
 The **Test Results** page is the dashboard for your account's activity: every test **completed**, **in progress** or **to be taken** by your candidates is listed here, along with their scores and access to the detailed reports. It is also the page from which you **download reports** and **certificates**, individually or in bulk, and from which you trigger automatic sending to candidates.
 
-Open this page through the **Results** menu, or directly at the URL `/clientadmin/AdminResultsWithTable`.
+Open this page through the **Results** menu.
 
 ![Main "Test Results" page](img/01-liste-resultats.png)
 
@@ -24,7 +24,7 @@ Each row in the table represents **one test registration for a candidate**. The 
 The **action buttons at the end of each row** depend on the test status (see [Row actions](#row-actions) below).
 
 > 💡 **Related sub-pages** — The **Results** menu in the sidebar offers several specialized views:
-> - **Dashboard** — aggregated metrics (number of completed tests, average duration, score distribution) for a group or a session.
+> - **[Dashboard](/ai/en/dashboard/)** — aggregated metrics (number of completed tests, average duration, score distribution) for a group or a session.
 > - **Today's results** — a filtered version of the table showing only today's sittings.
 > - **Tests in progress** — tests started but not yet completed.
 > - **Certificates** — a dedicated view of validated certifications, with diploma downloads.

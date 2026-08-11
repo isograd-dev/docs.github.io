@@ -20,6 +20,7 @@ Les captures d'écran sont générées automatiquement à partir des dernières 
 
 ## Suivi des résultats
 
+- [Tableau de bord](dashboard/) — métriques agrégées d'un groupe ou d'une session : tests terminés, temps moyen, répartition des scores, top 10.
 - [Gestion des résultats](results/) — consulter les passages, télécharger rapports et certificats, noter les tests à correction manuelle.
 - [Surveillance des tests](proctoring/) — configurer les profils de surveillance, valider ou invalider les passages surveillés.
 

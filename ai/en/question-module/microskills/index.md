@@ -12,7 +12,7 @@ Micro-skills are used to:
 - Produce cross-cutting analyses: *"On which precise micro-skills did this candidate fail?"*
 - Identify **coverage gaps** in the reference framework — for example, spotting micro-skills that have no (or few) authored questions.
 
-Open the page from the menu **Question Module → Categories → Micro-skills**, or directly at `/domains/AdminMicroSkillsWithTable`.
+Open the page from the menu **Question Module → Categories → Micro-skills**.
 
 ![Page "Micro-skill management"](img/01-liste-microskills.png)
 
@@ -40,7 +40,7 @@ Creation is **direct** — no pre-creation modal, unlike subjects or domains.
 
 1. From the **Micro-skill management** page, click **Add a micro-skill** in the action bar.
 
-2. The platform immediately creates an empty record and takes you to its edit form (`MicroSkillUpdate?is_create=1&mic_ski_id=<new_id>`).
+2. The platform immediately creates an empty record and takes you to its edit form.
 
 3. Fill in the tabs — see [Tabs of the edit form](#tabs-of-the-edit-form) below.
 

@@ -6,7 +6,7 @@ layout: question-manual
 
 The **question editor** (`QuestionUpdate`) is the most heavily used tool in the Questions module — this is where you write statements, define answer options, add illustrations and visual aids, and tag each question on the skills map. Any administrator producing content for the platform spends the majority of their time on this page.
 
-Open the editor through the **Edit** icon (pencil) on a question's row in the **[Questions](/ai/en/question-module/questions/)** page, or directly at the URL `/questions/QuestionUpdate?que_str_id=<id>`.
+Open the editor through the **Edit** icon (pencil) on a question's row in the **[Questions](/ai/en/question-module/questions/)** page.
 
 ![Question editor — overview (MCQ type)](img/01-editeur-mcq.png)
 

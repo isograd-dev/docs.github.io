@@ -6,7 +6,7 @@ layout: question-manual
 
 A **skill domain** (often just called a *domain*) is a thematic breakdown within a subject: for *Microsoft Excel*, you will find *Formatting*, *Calculation formulas*, *Pivot tables*, *Charts*. Every question authored on the platform is attached to a domain, so candidate reports can show a score **per skill area** rather than just an overall score.
 
-Open the page from the menu **Question Module → Categories → Domains**, or directly at `/domains/AdminDomainsWithTable`.
+Open the page from the menu **Question Module → Categories → Domains**.
 
 ![Page "Skill domain management"](img/01-liste-domaines.png)
 

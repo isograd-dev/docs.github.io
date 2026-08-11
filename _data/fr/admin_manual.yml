@@ -30,6 +30,20 @@
     - title: Exporter la liste
       anchor: exporter-la-liste
 
+- title: Tableau de bord
+  url: /ai/fr/dashboard/
+  sections:
+    - title: Filtres du tableau de bord
+      anchor: filtres-du-tableau-de-bord
+    - title: Sélection par session
+      anchor: selection-par-session
+    - title: Métriques et graphiques
+      anchor: metriques-et-graphiques
+    - title: Top 10 des candidats
+      anchor: top-10-des-candidats
+    - title: Packs actifs
+      anchor: packs-actifs
+
 - title: Gestion des résultats
   url: /ai/fr/results/
   sections:

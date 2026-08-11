@@ -6,7 +6,7 @@ layout: question-manual
 
 A **question set** groups a coherent set of questions that you want to **keep together** when composing test forms: a multi-question exercise on the same context, a series of questions inherited from a third-party supplier, a thematic module reusable from one test form to another.
 
-Open the page from the menu **Question Module → Categories → Question sets**, or directly at `/questionsets/AdminQuestionSetsWithTable`.
+Open the page from the menu **Question Module → Categories → Question sets**.
 
 ![Page "Question set management"](img/01-liste-jeux.png)
 
@@ -31,7 +31,7 @@ Creation is **direct** — no pre-creation modal.
 
 1. From the **Question set management** page, click **Create a question set** in the action bar.
 
-2. The platform creates an empty record and takes you to the edit form (`QuestionSetUpdate?que_set_id=<new_id>`).
+2. The platform creates an empty record and takes you to the edit form.
 
 3. Fill in the tabs and save — see [Tabs of the edit form](#tabs-of-the-edit-form) below.
 

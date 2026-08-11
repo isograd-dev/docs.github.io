@@ -18,7 +18,7 @@ Ce chapitre couvre deux pages complémentaires :
 
 Un **profil de surveillance** est un jeu de réglages qui détermine ce que la plateforme vérifie et enregistre pendant le test. Vous pouvez créer plusieurs profils (par exemple, *« Examen léger »* vs *« Certification stricte »*) et les **associer à des [sessions de passage](/ai/sessions/)** pour appliquer le bon niveau de contrôle au bon contexte.
 
-Accédez à cette page via le menu **Surveillance → Profils de surveillance**, ou directement à `/clientadmin/parameters/AdminProctoringParametersWithTable`.
+Accédez à cette page via le menu **Surveillance → Profils de surveillance**.
 
 ![Page "Gestion des profils de surveillance"](img/01-page-profils.png)
 
@@ -102,7 +102,7 @@ Le profil **par défaut** est appliqué automatiquement à tous les tests survei
 
 Une fois vos tests passés sous surveillance, cette page vous permet de **revoir les incidents détectés** et de **valider ou invalider** chaque passage en fonction de la conformité observée.
 
-Accédez à cette page via le menu **Surveillance**, ou directement à `/clientadmin/clientresult/AdminProctoringReviewWithTable`.
+Accédez à cette page via le menu **Surveillance**.
 
 ![Page "Gestion des tests surveillés"](img/03-page-tests-surveilles.png)
 

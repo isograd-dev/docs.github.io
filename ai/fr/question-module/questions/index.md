@@ -75,7 +75,7 @@ Dans le sélecteur **Favoris**, choisissez le favori souhaité. La page se recha
 
 Sélectionnez le favori, puis cliquez sur **Supprimer le favori**. Le favori est retiré du sélecteur.
 
-> 💡 **Favoris personnels** — Les favoris sont **propres à votre compte administrateur** : ils ne sont pas partagés avec les autres rédacteurs. Si vous voulez partager une vue, communiquez-en simplement l'URL — les filtres appliqués sont reflétés dans la query string.
+> 💡 **Favoris personnels** — Les favoris sont **propres à votre compte administrateur** : ils ne sont pas partagés avec les autres rédacteurs.
 
 
 ## Étoiler une question 
@@ -150,13 +150,13 @@ Vous pouvez interagir avec la question (cliquer des options, saisir du code, man
 
 ## Vérification des questions 
 
-La page **Vérification des questions** (URL : `/questions/CheckAllQuestionsWithTable`) est un **outil de diagnostic** qui identifie les questions présentant des anomalies éditoriales sur un sujet donné — par exemple : aucune bonne réponse marquée, options manquantes, traduction incomplète, fichier d'aide visuelle référencé mais introuvable, etc.
+La page **Vérification des questions** (menu **Module Questions → Questions → Vérification des questions**) est un **outil de diagnostic** qui identifie les questions présentant des anomalies éditoriales sur un sujet donné — par exemple : aucune bonne réponse marquée, options manquantes, traduction incomplète, fichier d'aide visuelle référencé mais introuvable, etc.
 
 ![Page "Vérification des questions"](img/04-page-verification.png)
 
 ### Utilisation
 
-1. Accédez à la page via un lien dédié ou directement à l'URL ci-dessus.
+1. Accédez à la page depuis le menu **Module Questions → Questions → Vérification des questions**.
 2. Sélectionnez le **sujet** dans le filtre.
 3. Cliquez sur le bouton de vérification : le serveur scanne toutes les questions du sujet et liste celles qui présentent un problème.
 4. Le tableau affiche pour chaque question problématique : **ID**, **Titre**, **Auteur**, **Diagnostic** (la nature du problème).

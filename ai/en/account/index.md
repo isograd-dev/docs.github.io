@@ -11,7 +11,7 @@ This chapter covers the **Account details** and **Credit alerts** pages. Adminis
 
 ## Account details {#account-details}
 
-Access this page via **Account → Details** from the navigation menu, or directly at the URL `/clientadmin/account/CompanyUpdate`.
+Access this page via **Account → Details** from the navigation menu.
 
 ![The "Your account" page](img/01-page-compte.png)
 
@@ -84,7 +84,7 @@ Beyond the list of packs, the **Account → Credit consumption** page shows deta
 
 ## Credit alerts {#credit-alerts}
 
-The **Credit alerts** page (menu **Account → Credit alert**, or URL `/clientadmin/account/UpdateCreditAlerts`) lets you configure **three independent email alerts** to track your credit consumption without having to come back and check the account manually.
+The **Credit alerts** page (menu **Account → Credit alert**) lets you configure **three independent email alerts** to track your credit consumption without having to come back and check the account manually.
 
 ![The "Credit alerts" page](img/05-page-alertes.png)
 

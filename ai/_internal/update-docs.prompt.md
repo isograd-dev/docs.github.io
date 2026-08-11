@@ -61,6 +61,11 @@ PROCÉDURE :
    dans index.md et listée dans _manifest.json ; aucune référence morte.
 
 CONTRAINTES :
+- JAMAIS d'URL dans la prose destinée à l'utilisateur : ne suggère pas
+  d'accéder à une page en saisissant une adresse, ne cite pas de chemin
+  (`/clientadmin/...`, `/questions/...`), ni de query string. La navigation
+  se décrit TOUJOURS par le chemin de menu et les boutons/icônes de l'écran
+  (ex. « Accédez à cette page via le menu **Résultats → Tableau de bord** »).
 - Ne documente PAS les modules « Familles de sujets » ni « Micro-compétences » :
   aucun chapitre, aucune section, aucune capture pour ces deux modules.
 - N'écris RIEN dans le site publié hors `ai/<lang>/...` (le dossier

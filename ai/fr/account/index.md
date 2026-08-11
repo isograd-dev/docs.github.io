@@ -11,7 +11,7 @@ Ce chapitre couvre les pages **Détails du compte** et **Alertes crédit**. La g
 
 ## Détails du compte 
 
-Accédez à cette page via **Compte → Détails** depuis le menu de navigation, ou directement à l'URL `/clientadmin/account/CompanyUpdate`.
+Accédez à cette page via **Compte → Détails** depuis le menu de navigation.
 
 ![Page "Votre compte"](img/01-page-compte.png)
 
@@ -84,7 +84,7 @@ Au-delà de la liste des packs, la page **Compte → Consommation de crédits** 
 
 ## Alertes crédit {#alertes-credit}
 
-La page **Alertes crédit** (menu **Compte → Alerte crédit**, ou URL `/clientadmin/account/UpdateCreditAlerts`) permet de configurer **trois alertes par email** indépendantes pour suivre votre consommation de crédits sans avoir à venir vérifier le compte manuellement.
+La page **Alertes crédit** (menu **Compte → Alerte crédit**) permet de configurer **trois alertes par email** indépendantes pour suivre votre consommation de crédits sans avoir à venir vérifier le compte manuellement.
 
 ![Page "Alertes crédit"](img/05-page-alertes.png)
 

@@ -18,7 +18,7 @@ This chapter covers two complementary pages:
 
 A **proctoring profile** is a set of settings that determines what the platform checks and records during the test. You can create several profiles (for example, *"Light exam"* vs *"Strict certification"*) and **attach them to [test sessions](/ai/en/sessions/)** to apply the right level of control in the right context.
 
-Open this page through the **Proctoring → Proctoring profiles** menu, or directly at `/clientadmin/parameters/AdminProctoringParametersWithTable`.
+Open this page through the **Proctoring → Proctoring profiles** menu.
 
 ![Page "Proctoring profiles management"](img/01-page-profils.png)
 
@@ -102,7 +102,7 @@ The **default** profile is applied automatically to every proctored test for whi
 
 Once your tests have been taken under proctoring, this page lets you **review the detected incidents** and **validate or invalidate** each sitting based on the observed compliance.
 
-Open this page through the **Proctoring** menu, or directly at `/clientadmin/clientresult/AdminProctoringReviewWithTable`.
+Open this page through the **Proctoring** menu.
 
 ![Page "Proctored tests management"](img/03-page-tests-surveilles.png)
 

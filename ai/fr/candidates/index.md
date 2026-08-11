@@ -148,7 +148,7 @@ Les groupes vous permettent d'organiser votre population de candidats (par promo
 
 ### Accéder aux groupes
 
-Depuis le menu de navigation, cliquez sur **Groupes** (ou accédez à l'URL `/clientadmin/candidates/AdminGroupsWithTable`).
+Depuis le menu de navigation, cliquez sur **Groupes**.
 
 ![Page principale des groupes](img/09-page-groupes.png)
 

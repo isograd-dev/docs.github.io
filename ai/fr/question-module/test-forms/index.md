@@ -8,7 +8,7 @@ Un **test** — appelé techniquement *« formulaire de test »* (`test_form`) d
 
 Tout test inscrit à un candidat sur la plateforme — qu'il s'agisse d'une évaluation, d'une certification ou d'un positionnement — est défini par un de ces formulaires.
 
-Accédez à la page via le menu **Module Questions → Tests & Examens**, ou directement à `/testforms/AdminTestFormsWithTable`.
+Accédez à la page via le menu **Module Questions → Tests & Examens**.
 
 ![Page "Gestion des tests"](img/01-liste-formulaires.png)
 

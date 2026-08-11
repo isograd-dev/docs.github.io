@@ -30,6 +30,20 @@
     - title: Export the list
       anchor: export-the-list
 
+- title: Dashboard
+  url: /ai/en/dashboard/
+  sections:
+    - title: Dashboard filters
+      anchor: dashboard-filters
+    - title: Select by session
+      anchor: select-by-session
+    - title: Metrics and charts
+      anchor: metrics-and-charts
+    - title: Top 10 candidates
+      anchor: top-10-candidates
+    - title: Active packs
+      anchor: active-packs
+
 - title: Results management
   url: /ai/en/results/
   sections:

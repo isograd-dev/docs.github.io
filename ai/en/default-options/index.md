@@ -6,7 +6,7 @@ layout: admin-manual
 
 The **Default options** page centralises the **sitting parameters** applied to every test registered on your account. The values defined here are **pre-filled** in the registration window when registering a candidate to a test — you can still change them on a case-by-case basis, but setting them here saves time and ensures consistency across your entire activity.
 
-Open this page through the **Settings → Sitting options** menu, or directly at the URL `/clientadmin/parameters/UpdateDefaultOptions`.
+Open this page through the **Settings → Sitting options** menu.
 
 ![Main "Default options" page](img/01-page-options.png)
 

@@ -6,7 +6,7 @@ layout: question-manual
 
 A **subject** is the central assessable content area of the platform: *Excel 2016*, *Python*, *English B2*. Every question, every domain, every test form is attached to a subject. This chapter covers the subject list, subject creation, and the multi-tab edit form that lets you configure everything — from the test's commercial name to the administrators allowed to see the subject.
 
-Open the page from the menu **Question Module → Subjects**, or directly at `/subjects/AdminSubjectsWithTable`.
+Open the page from the menu **Question Module → Subjects**.
 
 ![Main page "Subject management"](img/01-liste-sujets.png)
 

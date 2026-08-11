@@ -6,7 +6,7 @@ layout: admin-manual
 
 La page **Résultats aux tests** est le tableau de bord de l'activité de votre compte : tous les tests **passés**, **en cours** ou **à passer** par vos candidats y sont listés, avec leurs scores et l'accès aux rapports détaillés. C'est aussi depuis cette page que vous **téléchargez les rapports** et **certificats**, individuellement ou par lot, et que vous lancez l'envoi automatique aux candidats.
 
-Accédez à cette page via le menu **Résultats**, ou directement à l'URL `/clientadmin/AdminResultsWithTable`.
+Accédez à cette page via le menu **Résultats**.
 
 ![Page principale "Résultats aux tests"](img/01-liste-resultats.png)
 
@@ -24,7 +24,7 @@ Chaque ligne du tableau représente **un test inscrit à un candidat**. Les colo
 Les **boutons d'action en bout de ligne** dépendent de l'état du test (voir [Actions sur une ligne](#actions-sur-une-ligne) ci-dessous).
 
 > 💡 **Sous-pages liées** — Le menu **Résultats** dans la barre latérale propose plusieurs vues spécialisées :
-> - **Tableau de bord** — métriques agrégées (nombre de tests terminés, temps moyen, répartition des scores) pour un groupe ou une session.
+> - **[Tableau de bord](/ai/fr/dashboard/)** — métriques agrégées (nombre de tests terminés, temps moyen, répartition des scores) pour un groupe ou une session.
 > - **Résultats du jour** — version filtrée du tableau ne montrant que les passages du jour.
 > - **Tests en cours** — tests démarrés mais pas encore terminés.
 > - **Certificats** — vue dédiée aux certifications validées, avec téléchargement des diplômes.

@@ -6,7 +6,7 @@ layout: question-manual
 
 Un **jeu de questions** (« question set ») regroupe un ensemble de questions cohérentes que vous voulez **garder ensemble** lors de la composition des formulaires de test : un exercice multi-questions sur un même contexte, une série de questions héritées d'un fournisseur tiers, un module thématique réutilisable d'un formulaire à l'autre.
 
-Accédez à la page via le menu **Module Questions → Catégories → Jeux de questions**, ou directement à `/questionsets/AdminQuestionSetsWithTable`.
+Accédez à la page via le menu **Module Questions → Catégories → Jeux de questions**.
 
 ![Page "Gestion des jeux de questions"](img/01-liste-jeux.png)
 
@@ -31,7 +31,7 @@ La création est **directe** — pas de modal de pré-création.
 
 1. Depuis la page **Gestion des jeux de questions**, cliquez sur **Créer un jeu de questions** dans la barre d'actions.
 
-2. La plateforme crée un enregistrement vide et vous amène sur la fiche d'édition (`QuestionSetUpdate?que_set_id=<new_id>`).
+2. La plateforme crée un enregistrement vide et vous amène sur la fiche d'édition.
 
 3. Remplissez les onglets et enregistrez — voir [Onglets de la fiche](#onglets-de-la-fiche) ci-dessous.
 

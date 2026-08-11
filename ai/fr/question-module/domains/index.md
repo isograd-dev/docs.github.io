@@ -6,7 +6,7 @@ layout: question-manual
 
 Un **domaine de compétence** (souvent appelé simplement *domaine*) est un découpage thématique au sein d'un sujet : pour *Microsoft Excel*, on trouvera *Mise en forme*, *Formules de calcul*, *Tableaux croisés dynamiques*, *Graphiques*. Chaque question rédigée sur la plateforme est rattachée à un domaine, ce qui permet aux rapports candidats de présenter un score **par compétence** et non seulement un score global.
 
-Accédez à la page via le menu **Module Questions → Catégories → Domaines**, ou directement à `/domains/AdminDomainsWithTable`.
+Accédez à la page via le menu **Module Questions → Catégories → Domaines**.
 
 ![Page "Gestion des domaines de compétence"](img/01-liste-domaines.png)
 

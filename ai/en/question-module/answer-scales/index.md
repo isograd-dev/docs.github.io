@@ -8,7 +8,7 @@ An **answer scale** is a reusable set of answer options that you can attach to a
 
 Scales let you **standardise** the answer options of a family of questions without retyping the labels each time. They are especially useful for behavioural questionnaires (Likert scales), self-assessments, and any survey where the same list of choices recurs.
 
-Open the page through the menu **Questions module → Questions → Answer scales**, or directly at `/questions/AdminAnswerScalesWithTable`.
+Open the page through the menu **Questions module → Questions → Answer scales**.
 
 ![Answer scales management page](img/01-liste-echelles.png)
 

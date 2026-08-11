@@ -12,7 +12,7 @@ Visual aids are managed **centrally** on the platform: you declare them once, up
 - **Update** a file in a single place, with immediate propagation to every question that uses it.
 - **Guarantee linguistic consistency**: a visual aid is attached to a language, so the French version of a question displays the French table and the English version the English one.
 
-Open the page through the menu **Questions module → Visual aids**, or directly at `/visualaid/AdminVisualAidsWithTable`.
+Open the page through the menu **Questions module → Visual aids**.
 
 ![Visual aid management page](img/01-liste-aides.png)
 
