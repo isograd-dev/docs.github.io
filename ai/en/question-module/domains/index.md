@@ -23,7 +23,7 @@ A domain can be placed on up to **three levels** of nesting:
 | **L2 — Sub-domain** | Splits the L1 into more precise sub-themes. | *Mathematical functions* (child of *Calculation formulas*) |
 | **L3 — Sub-sub-domain** | Finest level. Optional. | *SUMIF / COUNTIF* (child of *Mathematical functions*) |
 
-> 💡 **When should I go down to L2 or L3?** — If you expect **at least 5–10 questions** in a sub-theme AND that sub-theme deserves a dedicated score in the report, create an L2. For fine-grained granularity (< 5 questions), stay at the L1 and use **micro-skills** instead (see next chapter).
+> 💡 **When should I go down to L2 or L3?** — If you expect **at least 5–10 questions** in a sub-theme AND that sub-theme deserves a dedicated score in the report, create an L2. For fine-grained granularity (< 5 questions), stay at the L1 and use **micro-skills** (the subject's sub-domains) instead.
 
 
 ## Create a domain {#create-a-domain}

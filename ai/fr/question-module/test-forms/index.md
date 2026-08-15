@@ -39,7 +39,7 @@ Un formulaire ne contient pas directement la liste des questions à poser — il
 Chaque algorithme a ses propres paramètres (longueur, pool de domaines, distribution des niveaux) configurés sur l'onglet **Algorithme**.
 
 
-## Créer un formulaire
+## Créer un formulaire {#creer-un-formulaire}
 
 La création se fait via un modal de pré-sélection (sujet, langue, type), suivi de la fiche d'édition.
 
@@ -56,11 +56,11 @@ La création se fait via un modal de pré-sélection (sujet, langue, type), suiv
 3. Validez. La plateforme crée le formulaire et vous amène sur sa fiche d'édition.
 
 
-## Onglets création de tests
+## Onglets création de tests {#onglets-mode-avance}
 
 La fiche d'édition (titre **CRÉER OU MODIFIER UN TEST**) propose cinq onglets:
 
-(img/03-onglets-avance.png)
+![Onglets de la fiche d'édition d'un test](img/03-onglets-avance.png)
 
 | Onglet | Contenu |
 |---|---|
@@ -73,8 +73,6 @@ La fiche d'édition (titre **CRÉER OU MODIFIER UN TEST**) propose cinq onglets:
 > 💡 **Boutons d'action** — En plus du bouton **Enregistrer**, l'en-tête propose **Enregistrer & essayer votre test** (lance le test pour vous-même comme prévisualisation) et **Exporter les commentaires** (récupère les commentaires laissés par les candidats sur les questions de ce test).
 
 > 💡 **Mode allégé** — Dans certains environnements (`is_cus_env`), l'onglet **Description** n'apparaît pas séparément : ses champs sont inlinés dans l'onglet **Caractéristiques générales**.
-
-> 💡 **Pourquoi cette restriction ?** — En mode client, vous ne pouvez **pas** modifier l'algorithme ou le pool de questions, car ces paramètres sont contrôlés par Isograd pour garantir la cohérence des résultats entre tous les comptes utilisant le même formulaire. Vous pouvez en revanche personnaliser l'**enrobage** (intro, feedback, durée).
 
 
 ## Modifier un formulaire {#modifier-un-formulaire}
@@ -105,7 +103,7 @@ La duplication est l'outil le plus rapide pour créer une variante d'un formulai
 > ⚠️ **Formulaire utilisé par des candidats** — Un formulaire référencé par des **inscriptions de tests** (terminées ou en cours) ne peut pas être supprimé. Préférez l'**archivage** via le statut sur l'onglet Général : le formulaire devient invisible pour les nouvelles inscriptions mais reste fonctionnel pour les tests historiques.
 
 
-## Filtres
+## Filtres {#filtres}
 
 Le panneau **Filtres** propose :
 

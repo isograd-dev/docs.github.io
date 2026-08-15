@@ -132,7 +132,8 @@ The action buttons at the end of each row depend on the proctoring type and stat
 
 - **Show the photos taken during the test** (camera icon) — opens a gallery of the screen and webcam captures taken periodically. The **Show only suspicious images** toggle filters the captures where AI has detected an anomaly (presence of another person, off-screen gaze, etc.).
 
-    ![Photos taken during the test](img/04-modal-photos.png)
+    <!-- Capture to regenerate (requires a proctored test with photos on the environment):
+    ![Photos taken during the test](img/04-modal-photos.png) -->
 
 - **Show the ID document** (silhouette icon) — displays the photo of the ID document provided by the candidate at start.
 - **Protocol review comment** (magnifier icon) — for tests with an **incident**, this window details each incident, its nature, and offers a field to record the proctor's explanation or to ask the candidate for further information.

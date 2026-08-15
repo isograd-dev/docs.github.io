@@ -6,7 +6,7 @@ layout: question-manual
 
 La page **Gestion des questions** est la page principale du module Questions : c'est ici que vous retrouvez toutes les questions rédigées sur la plateforme, que vous filtrez selon plusieurs critères (sujet, domaine, statut, personne responsable…), et d'où vous lancez l'**éditeur** pour créer ou modifier une question.
 
-Le fonctionnement détaillé de l'éditeur lui-même est couvert dans le chapitre [Éditeur de questions](/ai/question-module/question-editor/).
+Le fonctionnement détaillé de l'éditeur lui-même est couvert dans le chapitre [Éditeur de questions](/ai/fr/question-module/question-editor/).
 
 Accédez à la page via le menu **Module Questions → Questions**
 
@@ -29,7 +29,7 @@ Le tableau présente les colonnes suivantes :
 > 💡 **Sous-pages du menu Questions** — Le menu **Questions** dans la barre latérale donne aussi accès à : **Échelles de réponses**, **Commentaires sur les questions**, **Questions liées**, **Vérification des questions** et **Calibration**. Ces sous-pages sont documentées dans leurs chapitres dédiés.
 
 
-## Filtres 
+## Filtres {#filtres}
 
 Le panneau **Filtres** est très complet — c'est l'outil principal pour explorer un référentiel volumineux (plusieurs milliers de questions par sujet).
 
@@ -56,7 +56,7 @@ Ces filtres ne deviennent utilisables qu'**après avoir sélectionné un sujet**
 Le bouton **Réinitialiser** en haut du panneau remet tous les filtres à leurs valeurs par défaut et recharge le tableau complet.
 
 
-## Favoris de recherche
+## Favoris de recherche {#favoris-de-recherche}
 
 Les **favoris** vous permettent de mémoriser une **combinaison de filtres** souvent utilisée pour la rappeler en un clic — par exemple *« Toutes les questions Excel 365 en statut Brouillon assignées à moi »*.
 
@@ -78,7 +78,7 @@ Sélectionnez le favori, puis cliquez sur **Supprimer le favori**. Le favori est
 > 💡 **Favoris personnels** — Les favoris sont **propres à votre compte administrateur** : ils ne sont pas partagés avec les autres rédacteurs.
 
 
-## Étoiler une question 
+## Étoiler une question {#etoiler-une-question}
 
 Sur la colonne **Titre** de chaque ligne, une **icône étoile** vous permet de marquer une question pour la retrouver rapidement plus tard :
 
@@ -90,17 +90,17 @@ Les questions étoilées peuvent ensuite être filtrées via un filtre dédié (
 > 💡 **Différence avec les favoris de recherche** — Étoiler **une question** sauvegarde une **question individuelle**. Un **favori de recherche** sauvegarde une **combinaison de filtres**. Les deux mécanismes sont complémentaires.
 
 
-## Actions sur une ligne 
+## Actions sur une ligne {#actions-sur-une-ligne}
 
 Chaque ligne du tableau présente plusieurs boutons d'action en bout de ligne :
 
-- **Éditer** (crayon) — ouvre la page d'édition de la question. Voir [Éditeur de questions](/ai/question-module/question-editor/).
+- **Éditer** (crayon) — ouvre la page d'édition de la question. Voir [Éditeur de questions](/ai/fr/question-module/question-editor/).
 - **Prévisualiser** (icône Play) — ouvre la **prévisualisation** de la question telle qu'elle apparaîtra à un candidat (énoncé, options, aide visuelle). Permet de valider visuellement sans démarrer un vrai test.
 - **Dupliquer** — crée une copie de la question, ouvre sa fiche d'édition. La copie hérite de tout (énoncé, réponses, paramètres) mais a un nouvel `id`.
 - **Supprimer** — supprime la question. Refusée si la question apparaît dans un test.
 
 
-## Actions de masse (panneau ACTIONS) 
+## Actions de masse (panneau ACTIONS) {#actions-de-masse}
 
 Le panneau **ACTIONS** à gauche de la page propose plusieurs opérations applicables à **plusieurs questions** à la fois (sélectionnées via les cases en début de ligne) :
 
@@ -110,7 +110,7 @@ Le panneau **ACTIONS** à gauche de la page propose plusieurs opérations applic
 > ⚠️ **Le transfert en production est irréversible** — Vérifiez minutieusement les questions sélectionnées avant de déclencher le transfert : une fois en production, elles sont immédiatement disponibles aux comptes clients réels.
 
 
-## Importer des questions 
+## Importer des questions {#importer-des-questions}
 
 L'import vous permet de créer plusieurs questions en une seule opération via un fichier Excel.
 
@@ -130,12 +130,12 @@ L'import vous permet de créer plusieurs questions en une seule opération via u
 > 💡 **Modèle de fichier** — Téléchargez le **modèle Excel** via le lien dans la fenêtre d'import. Il indique les colonnes attendues : énoncé, options de réponse, bonne réponse, domaine, niveau, etc. Le format dépend du type de questions à importer.
 
 
-## Exporter vers Excel 
+## Exporter vers Excel {#exporter-vers-excel}
 
 Le bouton **Exporter vers Excel** dans la barre d'actions génère un fichier `.xlsx` listant toutes les questions actuellement filtrées. Pratique pour les audits du référentiel, les revues éditoriales ou la communication à des contributeurs externes.
 
 
-## Prévisualiser une question 
+## Prévisualiser une question {#previsualiser-une-question}
 
 Le bouton **Prévisualiser** (icône Play) sur chaque ligne ouvre la question telle qu'elle sera présentée au candidat :
 
@@ -148,7 +148,7 @@ Vous pouvez interagir avec la question (cliquer des options, saisir du code, man
 > 💡 **Quand l'utiliser ?** — Toujours prévisualiser après modification d'une question pour vérifier le rendu côté candidat. C'est aussi indispensable lors de la revue éditoriale pour valider la qualité avant de passer le statut à *Active*.
 
 
-## Vérification des questions 
+## Vérification des questions {#verification-des-questions}
 
 La page **Vérification des questions** (menu **Module Questions → Questions → Vérification des questions**) est un **outil de diagnostic** qui identifie les questions présentant des anomalies éditoriales sur un sujet donné — par exemple : aucune bonne réponse marquée, options manquantes, traduction incomplète, fichier d'aide visuelle référencé mais introuvable, etc.
 
@@ -170,9 +170,9 @@ La page **Vérification des questions** (menu **Module Questions → Questions �
 Le bouton **Exporter vers Excel** permet de récupérer la liste complète des problèmes détectés pour distribution à votre équipe de rédacteurs.
 
 
-## Bonnes pratiques
+## Bonnes pratiques {#bonnes-pratiques}
 
 - **Filtrez avant d'agir** — sur un référentiel volumineux, manipuler la liste complète est inutile. Réduisez d'abord la portée avec les filtres (sujet + statut + responsable au minimum).
-- **Utilisez les favoris pour les vues récurrentes** — sauf les « brouillons à terminer » qu'on consulte chaque semaine vaut un favori dédié.
+- **Utilisez les favoris pour les vues récurrentes** — une vue « brouillons à terminer » consultée chaque semaine vaut un favori dédié.
 - **Préférez la prévisualisation à l'ouverture de l'éditeur** quand vous voulez juste *vérifier* une question : l'éditeur prend plus de temps à charger.
 - **Lancez la vérification avant publication** — un sujet transféré en production avec des questions cassées dégrade la qualité perçue de la plateforme.

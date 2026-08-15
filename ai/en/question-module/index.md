@@ -12,8 +12,7 @@ If you are a client account administrator (managing candidates, sessions, result
 
 The platform organises assessment content into several nested layers:
 
-- **Subject families** — group subjects under a broad category (Office productivity, Programming, Languages, etc.).
-- **Subjects** — a subject is an assessable content area (Excel 2016, Python, English B2…). It is the reference unit for creating a test.
+- **Subjects** — a subject is an assessable content area (Excel 2016, Python, English B2…), attached to a broad categorisation family (Office productivity, Programming, Languages, etc.). It is the reference unit for creating a test.
 - **Domains** — break a subject down into broad skill areas ("Tables and charts", "Calculation functions").
 - **Micro-skills** — refine domains into more granular items for pedagogical mapping.
 - **Question sets** — thematic bundles of questions, reusable across multiple subjects.

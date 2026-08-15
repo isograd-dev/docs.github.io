@@ -4,7 +4,7 @@ layout: question-manual
 
 # Question editor
 
-The **question editor** (`QuestionUpdate`) is the most heavily used tool in the Questions module — this is where you write statements, define answer options, add illustrations and visual aids, and tag each question on the skills map. Any administrator producing content for the platform spends the majority of their time on this page.
+The **question editor** is the most heavily used tool in the Questions module — this is where you write statements, define answer options, add illustrations and visual aids, and tag each question on the skills map. Any administrator producing content for the platform spends the majority of their time on this page.
 
 Open the editor through the **Edit** icon (pencil) on a question's row in the **[Questions](/ai/en/question-module/questions/)** page.
 
@@ -71,7 +71,7 @@ Two help buttons at the top right of this section:
 
 - **Subject** — subject the question is attached to. Determines the candidate pool that will see the question.
 - **Domain** — assessed skill domain (the question's main skill). Used for the candidate report's mapping.
-- **Micro-skills** — additional cross-cutting tags (see [Micro-skills](/ai/en/question-module/microskills/)).
+- **Micro-skills** — additional cross-cutting tags that refine domains for pedagogical mapping.
 - **Question set** — if the question is part of a coherent block (see [Question sets](/ai/en/question-module/question-sets/)).
 - **Status** — *Draft*, *Under review*, *Production*. Controls the question's visibility to client accounts.
 - **Owner** — editorial owner of the question.
@@ -92,7 +92,7 @@ The **Text** (`txt`) is the statement shown to the candidate. You enter it in a 
 
 > 💡 **Markdown vs HTML** — Prefer Markdown for everyday writing. Reserve HTML for cases where Markdown is not enough (complex tables, specific formatting).
 
-### Illustration
+### Illustration {#illustration}
 
 An **illustration** is an image attached **directly to the question** (as opposed to a visual aid, which can be shared across multiple questions). It is the main image accompanying the statement.
 
@@ -193,6 +193,8 @@ The **Scale** type (`SCALE_ANS_TYP_ID=21`) presents the candidate with a questio
 
 The **Fill in the blanks** type (`MULTI_INPUT_ANS_TYP_ID=18`) presents a text with one or more **input fields** that the candidate must fill in.
 
+![Fill-in-the-blanks (multi-input) question editor](img/09-editeur-multi-input.png)
+
 ### Editing
 
 In the question text, you insert **field markers** (typically `[input_1]`, `[input_2]`, etc.). The editor then exposes, for each marker, a configuration block:
@@ -204,6 +206,8 @@ In the question text, you insert **field markers** (typically `[input_1]`, `[inp
 ### Fill in the blanks with select (Text-with-select)
 
 A variant (`TEXT_WITH_SELECT_ANS_TYP_ID=10`) offers the candidate a **dropdown list** instead of a free-text field. For each blank, you define the list of options and the correct one.
+
+![Text-with-select question editor](img/10-editeur-text-with-select.png)
 
 
 ## Code {#code}
@@ -227,14 +231,20 @@ The **programming language** is chosen via a selector. It determines the Ace edi
 
 The **Code with stdin** type (`STDINCODE_ANS_TYP_ID=6`) adds the ability to provide a **standard input** to the candidate's program (useful for algorithmic questions where input is read from `stdin`).
 
+![Code-with-stdin question editor](img/13-editeur-stdin-code.png)
+
 ### Optimisation variant
 
 The **Code optimisation** type (`OPTIMIZATION_CODE`) requires the candidate not only to provide a correct solution, but also a **performant** one (for example in algorithmic complexity). The evaluation includes execution-time metrics.
+
+![Code-optimisation question editor](img/14-editeur-optimization-code.png)
 
 
 ## Drag-and-drop {#drag-and-drop}
 
 The **Drag-and-drop** type (`DRAG_AND_DROP_ANS_TYP_ID=8`) presents the candidate with **items** to drag and drop into **target zones**.
+
+![Drag-and-drop question editor](img/04-editeur-drag-and-drop.png)
 
 ### Editing
 
@@ -247,6 +257,8 @@ The **Drag-and-drop** type (`DRAG_AND_DROP_ANS_TYP_ID=8`) presents the candidate
 
 The **Sortable** type (`SORTABLE_ANS_TYP_ID=32`) presents the candidate with a list of items to **reorder** into the correct sequence.
 
+![Sortable question editor](img/05-editeur-sortable.png)
+
 ### Editing
 
 - Define the list of items in the **correct** order.
@@ -257,6 +269,8 @@ The **Sortable** type (`SORTABLE_ANS_TYP_ID=32`) presents the candidate with a l
 ## Link (pairing) {#link}
 
 The **Link** type (`LINK_ANS_TYP_ID=11`) offers the candidate two columns of items they must **pair**.
+
+![Link (pairing) question editor](img/06-editeur-link.png)
 
 ### Editing
 
@@ -269,6 +283,8 @@ The **Link** type (`LINK_ANS_TYP_ID=11`) offers the candidate two columns of ite
 
 The **Click in area** type (`CLICK_IN_AREA_ANS_TYP_ID=12`) presents the candidate with an **image** on which they must click at a precise spot (a button in a screenshot, an area of a diagram, etc.).
 
+![Click-in-area question editor](img/07-editeur-click-in-area.png)
+
 ### Editing
 
 - Upload the target image.
@@ -279,6 +295,8 @@ The **Click in area** type (`CLICK_IN_AREA_ANS_TYP_ID=12`) presents the candidat
 ## Manual marking {#manual-marking}
 
 The **Manual marking** type (`MANUALMARKING_ANS_TYP_ID=4`) presents the candidate with a **free-form** question (essay, code, diagram) that will be **manually graded** by a marker after submission.
+
+![Manual-marking question editor](img/08-editeur-manual-marking.png)
 
 ### Variants
 
@@ -298,6 +316,8 @@ See also the [Mark a test](/ai/en/results/#grade-a-test) section of the administ
 
 The **Typing test** types (`TYPING_TST_ANS_TYP_ID=26`) and **Typing test with correction** (`TYPING_TST_WITH_COR_ANS_TYP_ID=31`) evaluate the candidate's typing **speed and accuracy**.
 
+![Typing-test question editor](img/11-editeur-typing-test.png)
+
 ### Editing
 
 - Enter the **reference text** the candidate must retype.
@@ -310,6 +330,8 @@ The **with correction** variant lets the candidate **go back and correct** their
 ## Upload with AI grading {#upload-auto-grading}
 
 The **Upload with AI grading** type (`UPLOAD_WITH_AUTOMATIC_GRADING_ANS_TYP_ID=41`) lets the candidate **upload a file** (typically a Word/Excel document or a screenshot) which is then **analysed by AI** to automatically produce a score.
+
+![Upload-with-AI-grading question editor](img/12-editeur-upload-ia.png)
 
 ### Editing
 

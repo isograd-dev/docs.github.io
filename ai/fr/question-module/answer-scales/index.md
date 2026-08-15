@@ -59,6 +59,8 @@ Le sélecteur de langue en haut du modal vous permet de saisir les libellés dan
 
 1. Sur la ligne de l'échelle, cliquez sur l'icône **Modifier** (crayon).
 2. Le **même modal** que pour la création s'ouvre, pré-rempli avec les valeurs actuelles.
+
+    ![Modal d'édition d'une échelle — options pré-remplies](img/03-modal-edition.png)
 3. Ajustez les libellés, ajoutez ou supprimez des options, réordonnez-les.
 4. Enregistrez.
 

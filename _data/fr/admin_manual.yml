@@ -61,6 +61,8 @@
       anchor: noter-un-test
     - title: Exporter vers Excel
       anchor: exporter-vers-excel
+    - title: Surveillance à distance
+      anchor: surveillance-a-distance
 
 - title: Surveillance des tests
   url: /ai/fr/proctoring/

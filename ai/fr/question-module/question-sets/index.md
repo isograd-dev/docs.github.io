@@ -63,7 +63,7 @@ Et plus bas encore (selon la résolution d'écran, vous devrez peut-être faire 
 
 ### Onglet « Administrateurs »
 
-Liste des administrateurs habilités à voir et modifier ce jeu — même logique que l'onglet du même nom dans la fiche d'un [sujet](/ai/question-module/subjects/#administrateurs-autorises) :
+Liste des administrateurs habilités à voir et modifier ce jeu — même logique que l'onglet du même nom dans la fiche d'un [sujet](/ai/fr/question-module/subjects/#administrateurs-autorises) :
 
 - Cochez les administrateurs autorisés.
 - Décochez pour révoquer.

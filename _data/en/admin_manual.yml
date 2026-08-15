@@ -61,6 +61,8 @@
       anchor: grade-a-test
     - title: Export to Excel
       anchor: export-to-excel
+    - title: Remote proctoring
+      anchor: remote-proctoring
 
 - title: Test proctoring
   url: /ai/en/proctoring/

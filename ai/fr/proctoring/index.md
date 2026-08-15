@@ -132,7 +132,8 @@ Les boutons d'action en bout de ligne dépendent du type de surveillance et du s
 
 - **Afficher les photos prises pendant le test** (icône caméra) — ouvre une galerie des captures d'écran et de webcam prises périodiquement. Le commutateur **Afficher uniquement les images suspectes** filtre les captures où une IA a détecté une anomalie (présence d'une autre personne, regard hors écran, etc.).
 
-    ![Photos prises pendant le test](img/04-modal-photos.png)
+    <!-- Capture à régénérer (nécessite un test surveillé avec photos sur l'environnement) :
+    ![Photos prises pendant le test](img/04-modal-photos.png) -->
 
 - **Afficher la pièce d'identité** (icône silhouette) — affiche la photo de la pièce d'identité fournie par le candidat au démarrage.
 - **Commentaire de revue du protocole** (icône loupe) — pour les tests avec **incident**, cette fenêtre détaille chaque incident, sa nature, et offre un champ pour saisir l'explication du surveillant ou pour demander des informations au candidat.

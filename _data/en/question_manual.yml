@@ -53,10 +53,34 @@
       anchor: bulk-actions
     - title: Import questions
       anchor: import-questions
+    - title: Export to Excel
+      anchor: export-to-excel
     - title: Preview a question
       anchor: preview-a-question
     - title: Question verification
       anchor: question-verification
+    - title: Best practices
+      anchor: best-practices
+
+- title: Tests (test forms)
+  url: /ai/en/question-module/test-forms/
+  sections:
+    - title: Concepts
+      anchor: concepts
+    - title: Create a form
+      anchor: create-a-test
+    - title: Test creation tabs
+      anchor: tabs-advanced-mode
+    - title: Edit a form
+      anchor: edit-a-test
+    - title: Duplicate a form
+      anchor: duplicate-a-test
+    - title: Delete a form
+      anchor: delete-a-test
+    - title: Filters
+      anchor: filters
+    - title: Export the list
+      anchor: export-the-list
 
 - title: Answer scales
   url: /ai/en/question-module/answer-scales/
@@ -69,6 +93,8 @@
       anchor: multilingual-entry
     - title: Edit a scale
       anchor: edit-a-scale
+    - title: Filters
+      anchor: filters
     - title: Delete a scale
       anchor: delete-a-scale
     - title: Best practices
@@ -106,22 +132,6 @@
     - title: Archive vs delete
       anchor: archive-vs-delete
 
-- title: Micro-skills
-  url: /ai/en/question-module/microskills/
-  sections:
-    - title: Domain vs micro-skill
-      anchor: domain-vs-microskill
-    - title: Create a micro-skill
-      anchor: create-a-microskill
-    - title: Tabs of the edit form
-      anchor: tabs-of-the-edit-form
-    - title: Multilingual entry
-      anchor: multilingual-entry
-    - title: Filters
-      anchor: filters
-    - title: Delete a micro-skill
-      anchor: delete-a-microskill
-
 - title: Skill domains
   url: /ai/en/question-module/domains/
   sections:
@@ -139,26 +149,8 @@
       anchor: filters
     - title: Delete a domain
       anchor: delete-a-domain
-
-- title: Tests (test forms)
-  url: /ai/en/question-module/test-forms/
-  sections:
-    - title: Concepts (types, algorithm, modes)
-      anchor: concepts
-    - title: Create a test
-      anchor: create-a-test
-    - title: Tabs — advanced mode
-      anchor: tabs-advanced-mode
-    - title: Tabs — client mode
-      anchor: tabs-client-mode
-    - title: Edit a test
-      anchor: edit-a-test
-    - title: Duplicate a test
-      anchor: duplicate-a-test
-    - title: Delete a test
-      anchor: delete-a-test
-    - title: Authorize a test for an account
-      anchor: authorize-test
+    - title: Export the list
+      anchor: export-the-list
 
 - title: Subjects
   url: /ai/en/question-module/subjects/
@@ -171,27 +163,20 @@
       anchor: multilingual
     - title: Levels and jobs per level
       anchor: levels-and-jobs
+    - title: Test commercial description
+      anchor: test-commercial-description
     - title: Question authors
       anchor: question-authors
+    - title: Type-specific details
+      anchor: type-specific-details
     - title: Authorized administrators
       anchor: authorized-administrators
     - title: Duplicate a subject
       anchor: duplicate-a-subject
     - title: Delete a subject
       anchor: delete-a-subject
-
-- title: Subject families
-  url: /ai/en/question-module/subject-families/
-  sections:
-    - title: Main vs secondary
-      anchor: main-vs-secondary
-    - title: Create a family
-      anchor: create-a-family
-    - title: Tabs of the family form
-      anchor: tabs-of-the-family-form
-    - title: CPF code and certification
-      anchor: cpf-and-certification
-    - title: Delete a family
-      anchor: delete-a-family
+    - title: Export the list
+      anchor: export-the-list
     - title: Transfer to production
       anchor: transfer-to-production
+

@@ -53,30 +53,34 @@
       anchor: actions-de-masse
     - title: Importer des questions
       anchor: importer-des-questions
+    - title: Exporter vers Excel
+      anchor: exporter-vers-excel
     - title: Prévisualiser une question
       anchor: previsualiser-une-question
     - title: Vérification des questions
       anchor: verification-des-questions
+    - title: Bonnes pratiques
+      anchor: bonnes-pratiques
 
 - title: Formulaires de test
   url: /ai/fr/question-module/test-forms/
   sections:
-    - title: Concepts (types, algorithme, modes)
+    - title: Concepts (types, algorithme)
       anchor: concepts
     - title: Créer un formulaire
       anchor: creer-un-formulaire
-    - title: Onglets — mode avancé
+    - title: Onglets création de tests
       anchor: onglets-mode-avance
-    - title: Onglets — mode client
-      anchor: onglets-mode-client
     - title: Modifier un formulaire
       anchor: modifier-un-formulaire
     - title: Dupliquer un formulaire
       anchor: dupliquer-un-formulaire
     - title: Supprimer un formulaire
       anchor: supprimer-un-formulaire
-    - title: Autoriser un formulaire pour un compte
-      anchor: autoriser-formulaire
+    - title: Filtres
+      anchor: filtres
+    - title: Exporter la liste
+      anchor: exporter-la-liste
 
 - title: Échelles de réponse
   url: /ai/fr/question-module/answer-scales/
@@ -89,6 +93,8 @@
       anchor: saisie-multilingue
     - title: Modifier une échelle
       anchor: modifier-une-echelle
+    - title: Filtres
+      anchor: filtres
     - title: Supprimer une échelle
       anchor: supprimer-une-echelle
     - title: Bonnes pratiques
@@ -126,22 +132,6 @@
     - title: Archiver vs supprimer
       anchor: archiver-vs-supprimer
 
-- title: Micro-compétences
-  url: /ai/fr/question-module/microskills/
-  sections:
-    - title: Différence avec un domaine
-      anchor: difference-domaine-microskill
-    - title: Créer une micro-compétence
-      anchor: creer-une-microskill
-    - title: Onglets de la fiche
-      anchor: onglets-de-la-fiche
-    - title: Saisie multilingue
-      anchor: saisie-multilingue
-    - title: Filtres
-      anchor: filtres
-    - title: Supprimer une micro-compétence
-      anchor: supprimer-une-microskill
-
 - title: Domaines de compétence
   url: /ai/fr/question-module/domains/
   sections:
@@ -159,22 +149,8 @@
       anchor: filtres
     - title: Supprimer un domaine
       anchor: supprimer-un-domaine
-
-- title: Familles de sujets
-  url: /ai/fr/question-module/subject-families/
-  sections:
-    - title: Principales vs secondaires
-      anchor: familles-principales-et-secondaires
-    - title: Créer une famille
-      anchor: creer-une-famille
-    - title: Onglets de la fiche
-      anchor: onglets-de-la-fiche-famille
-    - title: Code CPF et certification
-      anchor: code-cpf-et-certification
-    - title: Supprimer une famille
-      anchor: supprimer-une-famille
-    - title: Transférer en production
-      anchor: transferer-en-production
+    - title: Exporter la liste
+      anchor: exporter-la-liste
 
 - title: Sujets
   url: /ai/fr/question-module/subjects/
@@ -187,11 +163,19 @@
       anchor: multilingue
     - title: Niveaux et métiers par niveau
       anchor: niveaux-et-metiers
+    - title: Description commerciale des tests
+      anchor: description-commerciale
     - title: Auteurs des questions
       anchor: auteurs-des-questions
+    - title: Détails spécifiques selon le type
+      anchor: details-specifiques
     - title: Administrateurs autorisés
       anchor: administrateurs-autorises
     - title: Dupliquer un sujet
       anchor: dupliquer-un-sujet
     - title: Supprimer un sujet
       anchor: supprimer-un-sujet
+    - title: Exporter la liste
+      anchor: exporter-la-liste
+    - title: Transférer en production
+      anchor: transferer-en-production

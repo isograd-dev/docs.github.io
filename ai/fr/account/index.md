@@ -9,7 +9,7 @@ Le menu **Compte** regroupe les pages relatives à votre **organisation** (raiso
 Ce chapitre couvre les pages **Détails du compte** et **Alertes crédit**. La gestion des administrateurs est traitée dans son propre chapitre — voir [Gestion des administrateurs](/ai/admins/).
 
 
-## Détails du compte 
+## Détails du compte {#details-du-compte}
 
 Accédez à cette page via **Compte → Détails** depuis le menu de navigation.
 

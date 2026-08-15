@@ -66,6 +66,8 @@ The candidate import allows you to create several candidates — or even pre-reg
 
 4. Click **Import/Download Candidate File**, select your file, and confirm.
 
+    ![Import candidate file button](img/08-bouton-import.png)
+
 5. The platform displays an import report: number of candidates created, updated, or rejected (with the rejection reason row by row).
 
 > ⚠️ **Duplicate emails** — If a candidate already exists with the same email address, their information is **updated** rather than recreated. A new record is never created for an existing address.

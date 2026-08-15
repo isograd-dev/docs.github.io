@@ -66,6 +66,8 @@ L'import de candidats vous permet de créer plusieurs candidats — voire de les
 
 4. Cliquez sur **Importer un fichier de candidats**, sélectionnez votre fichier, et validez.
 
+    ![Bouton "Importer un fichier de candidats"](img/08-bouton-import.png)
+
 5. La plateforme affiche un rapport d'import : nombre de candidats créés, mis à jour, ou rejetés (avec le motif de rejet ligne par ligne).
 
 > ⚠️ **Doublons d'email** — Si un candidat existe déjà avec la même adresse email, ses informations sont **mises à jour** plutôt que recréées. Un nouvel enregistrement n'est jamais créé pour une adresse existante.

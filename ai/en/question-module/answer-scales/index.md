@@ -59,6 +59,8 @@ The language selector at the top of the modal lets you enter labels in each lang
 
 1. On the scale's row, click the **Edit** icon (pencil).
 2. The **same modal** as for creation opens, pre-filled with the current values.
+
+    ![Scale edit modal — options pre-filled](img/03-modal-edition.png)
 3. Adjust labels, add or remove options, reorder them.
 4. Save.
 

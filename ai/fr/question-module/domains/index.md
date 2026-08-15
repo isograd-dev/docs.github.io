@@ -23,7 +23,7 @@ Un domaine peut être placé sur **trois niveaux** d'imbrication maximum :
 | **L2 — Sous-domaine** | Découpe le L1 en sous-thèmes plus précis. | *Fonctions mathématiques* (enfant de *Formules de calcul*) |
 | **L3 — Sous-sous-domaine** | Niveau le plus fin. Optionnel. | *SOMME.SI / NB.SI* (enfant de *Fonctions mathématiques*) |
 
-> 💡 **Quand descendre en L2 ou L3 ?** — Si vous prévoyez **au moins 5-10 questions** dans un sous-thème ET que ce sous-thème mérite un score dédié dans le rapport, créez un L2. Pour les granularités fines (< 5 questions), restez au L1 et utilisez plutôt les **micro-compétences** (voir chapitre suivant).
+> 💡 **Quand descendre en L2 ou L3 ?** — Si vous prévoyez **au moins 5-10 questions** dans un sous-thème ET que ce sous-thème mérite un score dédié dans le rapport, créez un L2. Pour les granularités fines (< 5 questions), restez au L1 et utilisez plutôt les **micro-compétences** (sous-domaines du sujet).
 
 
 ## Créer un domaine {#creer-un-domaine}
