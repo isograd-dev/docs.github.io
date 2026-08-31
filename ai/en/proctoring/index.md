@@ -26,7 +26,7 @@ The page lists your existing profiles. If your account is new and has no profile
 
 ### Create a proctoring profile
 
-Creation happens in **two steps**: name the profile, then configure its options on a dedicated page.
+Creation happens in **two steps**: name the profile, then configure its options in the edit window that opens automatically.
 
 #### Step 1 — Name the profile
 
@@ -36,11 +36,11 @@ Creation happens in **two steps**: name the profile, then configure its options 
 
 2. Fill in the profile's **Description** — this is the label that will appear in the list and in the test sessions. Choose a meaningful name such as "Strict certification" or "Light internal exam".
 
-3. Click on **Save**. The platform creates the profile and redirects you to its configuration page.
+3. Click on **Save**. The platform creates the profile and immediately opens the edit window with its options.
 
 #### Step 2 — Configure the proctoring options
 
-On the profile's edit page, tick the desired **proctoring options**:
+In the profile's edit window, tick the desired **proctoring options**:
 
 | Option | Effect |
 |---|---|

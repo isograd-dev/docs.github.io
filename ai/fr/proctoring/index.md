@@ -26,7 +26,7 @@ La page liste vos profils existants. Si votre compte est neuf et n'a encore aucu
 
 ### Créer un profil de surveillance
 
-La création se fait en **deux étapes** : nommer le profil, puis configurer ses options sur une page dédiée.
+La création se fait en **deux étapes** : nommer le profil, puis configurer ses options dans la fenêtre d'édition qui s'ouvre automatiquement.
 
 #### Étape 1 — Nommer le profil
 
@@ -36,11 +36,11 @@ La création se fait en **deux étapes** : nommer le profil, puis configurer ses
 
 2. Renseignez la **Description** du profil — c'est le libellé qui apparaîtra dans la liste et dans les sessions de passage. Choisissez un nom parlant comme « Certification stricte » ou « Examen interne léger ».
 
-3. Cliquez sur **Enregistrer**. La plateforme crée le profil et vous redirige vers sa page de configuration.
+3. Cliquez sur **Enregistrer**. La plateforme crée le profil et ouvre aussitôt la fenêtre d'édition de ses options.
 
 #### Étape 2 — Configurer les options de surveillance
 
-Sur la page d'édition du profil, cochez les **options de surveillance** souhaitées :
+Dans la fenêtre d'édition du profil, cochez les **options de surveillance** souhaitées :
 
 | Option | Effet |
 |---|---|
