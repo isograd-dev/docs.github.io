@@ -8,7 +8,7 @@ This chapter covers the entire life cycle of a candidate on the Tosa platform: a
 
 ![Main "Candidate management" page](img/01-liste-candidats.png)
 
-The **Candidate management** page is presented as a table listing all your candidates. The filters at the top of the page let you narrow the display (free-text search, membership in a group, candidates having a test to take, inclusion of archived candidates). The main actions — add a candidate, import a file, access group management — are located in the action bar at the top of the table.
+The **Candidate management** page is presented as a table listing all your candidates. The filters at the top of the page let you narrow the display (free-text search, membership in a group or sub-group, candidates having a test to take, display of the connection status, inclusion of archived candidates). The main actions — add a candidate, import a file, apply a group action, export to Excel — are located in the action bar at the top of the table.
 
 
 ## Add a candidate {#add-a-candidate}
@@ -100,11 +100,14 @@ Once the candidate is created, you must register them to one or more tests so th
 
 ### Register several candidates at the same time
 
-To register several candidates to the same test, use the group action:
+To register several candidates to the same test, use a group action from the **Candidate management** page:
 
-1. On the **Candidate management** page, select the candidates to register by ticking the check box at the start of the row.
-2. In the group actions menu, choose **Register candidates to a test**.
-3. Fill in the test parameters; they apply to the entire selection.
+1. Filter the table on a **group** (and, if relevant, a sub-group) and leave the search field empty. The **Group actions** button then becomes a menu; without a selected group, it simply reminds you that a group must be chosen first.
+2. If all the candidates of the group fit on a single page, a check box appears at the start of each row, ticked by default: untick the candidates to exclude (the header check box ticks or unticks everything). If the group spans several pages, the action applies to the whole group.
+3. In the **Group actions** menu, choose **Register test(s) to all candidates in group**.
+4. Fill in the test parameters (subject, language, session, proctoring profile); they apply to the entire selection. Click **Register** to chain another registration, or **Register and close**.
+
+> 💡 **Candidates already registered** — If some candidates of the selection are already registered to this test, the platform tells you so and offers either to register all of them again, or to register only those who are not registered yet.
 
 > 💡 **Credits** — Each registration consumes one credit from the corresponding pack. The remaining balance is visible at the top of the page. To buy back credits, contact your Isograd representative.
 
@@ -133,11 +136,11 @@ Sending the email invitation transmits the candidate's personalized login link. 
 
 From the **Candidate management** page:
 
-1. Select the candidates to invite (check box at the start of the row).
-2. In the group actions menu, choose **Send registration emails**.
-3. Choose the email template and confirm.
+1. Filter the table on the desired group and, if the check boxes are displayed, leave only the candidates to invite ticked (see [Register several candidates at the same time](#register-a-candidate-to-a-test)).
+2. In the **Group actions** menu, choose **Send registration email to all candidates in group**.
+3. Choose the email template, check the subject and the message preview, then click **Send**. A confirmation recalls the number of emails about to be sent and the group concerned.
 
-All the selected candidates receive the invitation with their personal link.
+Each candidate receives the invitation with their personal link. When the action targets the whole group, only the candidates who still have a test to take are recipients.
 
 > ⚠️ **Invalid addresses** — If a candidate's email address is invalid or refused by the destination server, you will see it in the send report. Correct the address on the candidate's record then resend.
 
@@ -172,17 +175,20 @@ The **Group management** page displays all your groups in a hierarchical form. A
 Two methods:
 
 - **From the candidate's record**: open the record, **Groups** tab, add the candidate to the desired groups.
-- **Group action** on the candidate list: select the candidates, then **Add to a group**.
+- **Group action** on the candidate list: filter on the original group, select the candidates, then **Add selected candidates to a group**. The candidates join the chosen group(s) without leaving their current group.
 
 ### Group actions
 
-Once your candidates are organized into groups, the **Group** filter on the **Candidate management** page lets you isolate a population and apply a bulk action to it:
+Once your candidates are organized into groups, the **Group** filter on the **Candidate management** page lets you isolate a population and apply a bulk action to it through the **Group actions** menu (how the selection works is described in [Register several candidates at the same time](#register-a-candidate-to-a-test)):
 
-- Register the whole group to a test.
-- Send an invitation to the whole group.
-- Set a common password.
-- Assign the group to a proctored session.
-- Archive the group (the candidates remain in the database but are hidden by default).
-- Delete the registered tests, or delete the candidates from the group.
+- **Set a temporary password** — the same password for the whole selection; each candidate will have to change it at their next login.
+- **Register to a test**.
+- **Send registration emails**.
+- **Delete pending tests** — choose the test concerned among those still pending in the selection.
+- **Delete candidates**.
+- **Add the candidates to a group** — without removing them from their current group.
+- **Assign a session or a proctoring profile to a test** — for a pending test, choose the session and, if needed, the proctoring profile.
+- **Set assessment options** and **Set certification options** — display of results to the candidate, report delivery, diploma sending and recipients, applied to the whole selection. Each entry only appears if your account has the corresponding pack type.
+- **Generate badges** — issuing of Credly digital badges for the eligible certifications of the selection.
 
-> 💡 **Archiving vs deletion** — **Archiving** is non-destructive: it hides the group and its candidates from the lists by default, but preserves the history of past tests. **Deletion** is final — use it only for candidates created in error.
+> 💡 **Archiving vs deletion** — **Archiving** a group is done from the **Group management** page and is non-destructive: it hides the group and its candidates from the lists by default, but preserves the history of past tests. **Deleting** candidates is final — use it only for candidates created in error.

@@ -8,7 +8,7 @@ Ce chapitre couvre l'ensemble du cycle de vie d'un candidat sur la plateforme To
 
 ![Page principale "Gestion des candidats"](img/01-liste-candidats.png)
 
-La page **Gestion des candidats** se présente sous la forme d'un tableau listant l'ensemble de vos candidats. Les filtres en haut de page permettent de restreindre l'affichage (recherche libre, appartenance à un groupe, candidats ayant un test à passer, inclusion des archivés). Les actions principales — ajouter un candidat, importer un fichier, accéder à la gestion des groupes — se trouvent dans la barre d'actions en haut du tableau.
+La page **Gestion des candidats** se présente sous la forme d'un tableau listant l'ensemble de vos candidats. Les filtres en haut de page permettent de restreindre l'affichage (recherche libre, appartenance à un groupe ou sous-groupe, candidats ayant un test à passer, affichage du statut de connexion, inclusion des archivés). Les actions principales — ajouter un candidat, importer un fichier, appliquer une action de groupe, exporter vers Excel — se trouvent dans la barre d'actions en haut du tableau.
 
 
 ## Ajouter un candidat {#ajouter-un-candidat}
@@ -100,11 +100,14 @@ Une fois le candidat créé, vous devez l'inscrire à un ou plusieurs tests pour
 
 ### Inscrire plusieurs candidats à la fois
 
-Pour inscrire plusieurs candidats au même test, utilisez l'action de groupe :
+Pour inscrire plusieurs candidats au même test, utilisez une action de groupe depuis la page **Gestion des candidats** :
 
-1. Sur la page **Gestion des candidats**, sélectionnez les candidats à inscrire en cochant la case en début de ligne.
-2. Dans le menu d'actions de groupe, choisissez **Inscrire les candidats à un test**.
-3. Renseignez les paramètres du test ; ils s'appliquent à l'ensemble de la sélection.
+1. Filtrez le tableau sur un **groupe** (et, le cas échéant, un sous-groupe) et laissez le champ de recherche vide. Le bouton **Actions de groupe** devient alors un menu ; sans groupe sélectionné, il rappelle simplement qu'un groupe doit d'abord être choisi.
+2. Si tous les candidats du groupe tiennent sur une seule page, une case à cocher apparaît en début de ligne, cochée par défaut : décochez les candidats à exclure (la case d'en-tête coche ou décoche tout). Si le groupe s'étend sur plusieurs pages, l'action s'applique à l'ensemble du groupe.
+3. Dans le menu **Actions de groupe**, choisissez **Inscrire tous les candidats du groupe à un test**.
+4. Renseignez les paramètres du test (sujet, langue, session, profil de surveillance) ; ils s'appliquent à l'ensemble de la sélection. Cliquez sur **Inscrire** pour enchaîner une autre inscription, ou sur **Inscrire et fermer**.
+
+> 💡 **Candidats déjà inscrits** — Si certains candidats de la sélection sont déjà inscrits à ce test, la plateforme vous le signale et vous propose soit de les réinscrire tous, soit de n'inscrire que ceux qui ne le sont pas encore.
 
 > 💡 **Crédits** — Chaque inscription consomme un crédit du pack correspondant. Le solde restant est visible en haut de page. Pour racheter des crédits, contactez votre interlocuteur Isograd.
 
@@ -133,11 +136,11 @@ L'envoi d'invitation par email transmet au candidat son lien de connexion person
 
 Depuis la page **Gestion des candidats** :
 
-1. Sélectionnez les candidats à inviter (case à cocher en début de ligne).
-2. Dans le menu d'actions de groupe, choisissez **Envoyer les emails d'inscription**.
-3. Choisissez le modèle d'email et validez.
+1. Filtrez le tableau sur le groupe voulu et, si les cases à cocher sont affichées, ne laissez cochés que les candidats à inviter (voir [Inscrire plusieurs candidats à la fois](#inscrire-un-candidat-a-un-test)).
+2. Dans le menu **Actions de groupe**, choisissez **Envoyer les emails d'inscription à tous les candidats du groupe**.
+3. Choisissez le modèle d'email, vérifiez l'objet et l'aperçu du message, puis cliquez sur **Envoyer**. Une confirmation rappelle le nombre d'emails qui vont partir et le groupe concerné.
 
-Tous les candidats sélectionnés reçoivent l'invitation avec leur lien personnel.
+Chaque candidat reçoit l'invitation avec son lien personnel. Lorsque l'action porte sur le groupe entier, seuls les candidats ayant encore un test à passer sont destinataires.
 
 > ⚠️ **Adresses invalides** — Si l'adresse email d'un candidat est invalide ou refusée par le serveur de destination, vous le verrez dans le rapport d'envoi. Corrigez l'adresse sur la fiche du candidat puis relancez l'envoi.
 
@@ -172,18 +175,21 @@ La page **Gestion des groupes** affiche l'ensemble de vos groupes sous forme hi�
 Deux méthodes :
 
 - **Depuis la fiche du candidat** : ouvrez la fiche, onglet **Groupes**, ajoutez le candidat aux groupes voulus.
-- **Action de groupe** sur la liste des candidats : sélectionnez les candidats, puis **Ajouter à un groupe**.
+- **Action de groupe** sur la liste des candidats : filtrez sur le groupe d'origine, sélectionnez les candidats, puis **Ajouter un groupe aux candidats du groupe**. Les candidats rejoignent le ou les groupes choisis sans quitter leur groupe actuel.
 
 ### Actions de groupe
 
-Une fois vos candidats organisés en groupes, le filtre **Groupe** de la page **Gestion des candidats** vous permet d'isoler une population et de lui appliquer une action en masse :
+Une fois vos candidats organisés en groupes, le filtre **Groupe** de la page **Gestion des candidats** vous permet d'isoler une population et de lui appliquer une action en masse via le menu **Actions de groupe** (le fonctionnement de la sélection est décrit dans [Inscrire plusieurs candidats à la fois](#inscrire-un-candidat-a-un-test)) :
 
-- Inscrire tout le groupe à un test.
-- Envoyer une invitation à tout le groupe.
-- Définir un mot de passe commun.
-- Affecter le groupe à une session surveillée.
-- Archiver le groupe (les candidats restent en base mais sont masqués par défaut).
-- Supprimer les tests inscrits, ou supprimer les candidats du groupe.
+- **Attribuer un mot de passe temporaire** — le même mot de passe pour toute la sélection ; chaque candidat devra le changer à sa prochaine connexion.
+- **Inscrire à un test**.
+- **Envoyer les emails d'inscription**.
+- **Supprimer les tests non commencés** — choisissez le test concerné parmi ceux encore en attente dans la sélection.
+- **Supprimer les candidats**.
+- **Ajouter un groupe aux candidats** — sans les retirer de leur groupe actuel.
+- **Assigner une session ou un profil de surveillance à un test** — pour un test en attente, choisissez la session et, si besoin, le profil de surveillance.
+- **Définir les options d'évaluation** et **Définir les options de certification** — affichage des résultats au candidat, livraison des rapports, envoi des diplômes et destinataires, appliqués à toute la sélection. Chaque entrée n'apparaît que si votre compte dispose du type de pack correspondant.
+- **Générer des badges** — émission des badges numériques Credly pour les certifications éligibles de la sélection.
 
-> 💡 **Archivage vs suppression** — L'**archivage** est non destructif : il masque le groupe et ses candidats des listes par défaut, mais préserve l'historique des tests passés. La **suppression** est définitive — utilisez-la uniquement pour les candidats créés par erreur.
+> 💡 **Archivage vs suppression** — L'**archivage** d'un groupe se fait depuis la page **Gestion des groupes** et est non destructif : il masque le groupe et ses candidats des listes par défaut, mais préserve l'historique des tests passés. La **suppression** des candidats est définitive — utilisez-la uniquement pour les candidats créés par erreur.
 
