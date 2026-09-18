@@ -4,166 +4,116 @@ layout: question-manual
 
 # Subjects
 
-A **subject** is the central assessable content area of the platform: *Excel 2016*, *Python*, *English B2*. Every question, every domain, every test form is attached to a subject. This chapter covers the subject list, subject creation, and the multi-tab edit form that lets you configure everything — from the test's commercial name to the administrators allowed to see the subject.
+A **subject** is the central assessable content area of your platform: *Excel*, *Python*, *Internal safety procedures*. Every question, every domain and every test is attached to a subject. This chapter covers the subject list, subject creation, and the three-tab edit form that lets you name the subject, describe its skill levels and choose which administrators may work on it.
 
-Open the page from the menu **Question Module → Subjects**.
+Open the page from the menu **Subjects**.
 
 ![Main page "Subject management"](img/01-liste-sujets.png)
 
-The table lists every available subject, with its **ID**, **name**, **subject family**, **language** and **version**. The filters at the top of the page let you narrow down by free text, language or family.
+The table lists every subject you are allowed to see, with its **ID** and its **name**, preceded by its icon (or coloured initials when no icon has been uploaded). The **Search** filter on the left narrows the list by name; the **Language** filter can stay on *All languages*, since subjects are not tied to a language on your platform.
+
+> 💡 **Who sees which subjects?** — A main administrator sees every subject of the account. Other administrators see only the subjects they have been authorised on (see [Authorized administrators](#authorized-administrators)), plus the subjects they created themselves.
 
 
 ## Create a subject {#create-a-subject}
 
-Creating a subject is a two-step process: a minimal dialog to choose the **subject family**, then the edit form to configure everything else.
-
-### Step 1 — Choose the family
-
 1. From the **Subject management** page, click **Add a subject** in the action bar.
 
-    ![Family selection dialog](img/02-modal-creation.png)
+2. The platform immediately creates an empty subject and opens its edit form (page **Edit a subject**).
 
-2. In the dialog that opens, select the **subject family** the new subject belongs to (Office, Programming, etc.).
+3. Fill in at least the **name** in the **Description** tab, then click **Save** at the top right.
 
-3. Confirm. The platform creates an empty subject and takes you directly to its edit form.
+The subject appears in the list as soon as it has been created. You can come back later to complete the other tabs.
 
-### Step 2 — Fill in the essential fields
+> ⚠️ **Empty subjects** — The subject is created the moment you click **Add a subject**, before you have typed anything. If you leave the form without saving, an unnamed subject remains in the list: open it to name it, or delete it from the list.
 
-On the edit form (page **SubjectUpdate**), start by filling in:
-
-- The **name** of the subject (tab **Description**).
-- The **subject details** (tab **Subject details**): subject type, reference language, public/archived status, version.
-
-The subject appears in the list as soon as you save. You can then come back later to fill in the remaining tabs.
-
-> 💡 **Empty vs published subject** — A subject created without questions or complete settings remains **unpublished** by default (the **Public** checkbox is off). Candidates and client account administrators will not see it until you explicitly publish it.
+> 💡 **Visibility** — A subject is usable straight away: as soon as it exists, it can receive questions and be chosen when creating a test. There is no separate publication step.
 
 
 ## Tabs of the subject form {#tabs-of-the-subject-form}
 
-The edit form (page **EDIT A SUBJECT**) is organised into **eight tabs**:
+The edit form is organised into **three tabs**:
 
 ![Tabs of the subject form](img/03-onglets-sujet.png)
 
 | Tab | Contents |
 |---|---|
-| **Description** | Subject name and Long name (single- or multilingual depending on the switch). |
-| **Subject details** | Type (Standard, Programming, Remote, …), TOS and ITS group, reference language, Public/Archived status, presence of micro-skills, version, icon. |
-| **Level descriptions** | For each level from 1 to 5 and each language, a description of what a candidate at that level can do. |
-| **Jobs per level** | For each level × language, a list of jobs corresponding to that skill level. Used to surface career pathways in candidate reports. |
-| **Test commercial description** | For each language, three texts (card snippet, long description, short description) used on public pages and in catalogues. |
-| **Question authors** | Credit line for the subject's authors and experts, displayed in reports — one text per language. |
-| **Specific details** | Fields visible only for certain types: for example, the associated programming language for Programming subjects, or the remote application command for Remote subjects. |
+| **Description** | Subject name and long name (single- or multilingual depending on the switch), initials and icon. |
+| **Level descriptions** | For each level from 1 to 5 and each report language, a description of what a candidate at that level can do. |
 | **Authorized administrators** | List of administrators allowed to see and edit this subject. |
 
-> ⚠️ **Save between tabs** — The **Save** button at the top right saves the **entire** form. You can therefore fill in several tabs and save just once. However, **switching tabs without saving discards unsaved changes** — remember to save before moving on to another subject.
+> ⚠️ **Save between tabs** — The **Save** button at the top right saves the **entire** form. You can therefore fill in several tabs and save just once. However, leaving the page without saving discards unsaved changes — remember to save before moving on to another subject.
 
 
-## Multilingual {#multilingual}
-
-For each subject, you choose whether the **name** and the **description** should be identical across all the account's languages, or customised per language.
+## Description, multilingual mode and icon {#multilingual}
 
 ![Tab "Description" — multilingual mode enabled](img/04-onglet-description.png)
 
-The switch **Different descriptions in each language** (`has_mul_nam`) toggles between the two modes:
+The **Description** tab holds the identity of the subject.
 
-- **Off (default)** — a single **Name** field and a single **Long name** field, shared across all languages.
-- **On** — one block per language (FR / EN / DE / NL / ES / IT / EL / AR depending on your offering) with a Name and Long name specific to each language.
+### Name and long name
 
-> 💡 **When to enable?** — Multilingual mode is useful for subjects whose commercial name differs by country (for example, a certification test with a different local acronym). For the vast majority of technical subjects (Excel, Python), a single name is enough.
+The switch **Descriptions differ with languages** toggles between two modes:
 
-The **other tabs** (Level descriptions, Jobs per level, Commercial description, Authors) are **always multilingual**: you fill in one description per language, regardless of the `has_mul_nam` setting.
+- **Off (default)** — a single **Name** field and a single **Long name** field, shared across all the languages of your account.
+- **On** — one block per language of your account (heading **Names in**, with a language picker), with a Name and a Long name specific to each language.
+
+The languages offered are those enabled for your account (see the *Account management* chapter of the administrator manual).
+
+> 💡 **When to enable?** — Multilingual mode is useful when candidates take tests in several languages and the subject must be named in each of them. For a subject used in a single language, a single name is enough.
+
+### Initials
+
+The **Initials** field (two characters at most) defines the letters shown on the subject's coloured badge in lists and reports when no icon has been uploaded. Left empty, the platform uses the first two letters of the name.
+
+### Subject icon
+
+The **Subject icon** block lets you upload an image (PNG, JPG, GIF or SVG) that replaces the initials badge everywhere the subject is displayed. Click **Upload** and pick the file; a preview appears once the upload is complete. Use the delete button next to the preview to remove the icon and go back to initials.
 
 
-## Levels and jobs per level {#levels-and-jobs}
+## Level descriptions {#level-descriptions}
 
-The Tosa platform scores candidates on a **5-level scale** (Initial / Basic / Operational / Advanced / Expert, depending on the subject). Two tabs let you document these levels:
+The platform can score candidates on a **5-level scale**. The **Level descriptions** tab provides, for each report language, one text per level (1 to 5) describing what a candidate at that level **can do**.
 
-### Level descriptions
-
-The **Level descriptions** tab provides, for each language, one text per level (1 to 5) describing what a candidate at that level **can do**. These descriptions appear in every candidate's report: *"Level 3 — The candidate can build simple pivot tables…"*.
+These descriptions are optional. When they are filled in, they appear in the candidate's report as a summary of the level reached: *"Level 3 — The candidate can build simple pivot tables…"*.
 
 Take care over these descriptions: they are the main information the candidate receives about what their score means.
 
-### Jobs per level
-
-The **Jobs per level** tab provides, for each language and each level, a list of **jobs** that correspond: *"Level 4 — Management controller, Junior financial analyst"*. This information is shown in reports to give the candidate a professional projection.
-
-Recommended format: a comma-separated list of jobs, aligned with the job reference frameworks of your market.
-
-
-## Test commercial description {#test-commercial-description}
-
-The **Test commercial description** tab provides three texts per language, used on public catalogue pages (`isograd.com`, `tosa.org`) and in invitation emails:
-
-- **Card description** (`its_tst_des[car]`) — a few words for the catalogue thumbnail.
-- **Long description** (`its_tst_des[lon]`) — detailed descriptive paragraph.
-- **Short description** (`its_tst_des[sho]`) — tagline.
-
-Fill these texts in only if the subject is intended to be sold through the public catalogues. For an internal or proprietary subject, they can be left blank.
-
-
-## Question authors {#question-authors}
-
-The **Question authors** tab contains a single free-text field per language: the **credit line for the authors and experts** who designed the subject. This text appears at the foot of every candidate report: *"Subject designed by Prof. Jean Dupont, University of Paris"*.
-
-Useful for editorial traceability and for crediting external contributors.
-
-
-## Type-specific details {#type-specific-details}
-
-The **Specific details** tab shows fields that **depend on the subject type** (`typ_id`) configured in the *Subject details* tab:
-
-- **Programming** (`typ_id=1`) — shows the **Associated programming language** field (Python, JavaScript, …). Determines the execution environment for code questions.
-- **Remote** (`typ_id=2`) — shows the **Remote application command** field (the invocation path for the remotely controlled application, for example Excel or Word installed on a VDI).
-- **Standard** (`typ_id=3` or `4`) — the tab is empty; no specific parameter is required.
-
-Changing the type **dynamically hides or reveals** the fields: no need to reload the page.
+> 💡 **Levels per domain** — You can refine these descriptions domain by domain in the **Skill levels** tab of each [domain](/ai/en/question-module/domains/#tabs-of-the-edit-form).
 
 
 ## Authorized administrators {#authorized-administrators}
 
-The **Administrators** tab lists every administrator allowed to see and edit this subject. By default, a new subject is visible to administrators with the **Read/write all subjects** privilege.
+The **Authorized administrators** tab lists the administrators of your account who work in the Question Module without having the privilege to see **all** subjects. Tick the ones allowed to see and edit this subject.
 
-![Tab "Administrators"](img/05-onglet-administrateurs.png)
+![Tab "Authorized administrators"](img/05-onglet-administrateurs.png)
 
 - Tick the box next to a name to **authorize** that administrator on the subject.
 - Untick to **revoke** their access.
 - Use the **Filter** field above the list to quickly find an administrator in a long list.
+- Administrators whose login has been disabled are shown greyed out.
 
-> 💡 **Editorial segmentation** — This feature is useful when you have several production teams: each team sees only its own subjects. Unchecking it for all external admins ensures that a subject still being drafted is not visible before validation.
+> 💡 **Editorial segmentation** — This feature is useful when you have several authoring teams: each team sees only its own subjects. Main administrators and administrators holding the "all subjects" privilege are not listed here because they always see every subject.
+
+> 💡 **Your own access** — You do not appear in this list: saving never removes your own access to the subject.
 
 
 ## Duplicate a subject {#duplicate-a-subject}
 
-Duplication creates a **new subject** from an existing one, copying all its configuration (name, descriptions, levels, jobs, etc.). It is the fastest way to start a closely related subject (for example, a new version of Excel from the previous one).
+Duplication creates a **new subject** from an existing one, copying its configuration (names, long names, initials, icon and level descriptions). It is the fastest way to start a closely related subject.
 
 1. On the source subject's row in the list, click the **Duplicate** icon.
-2. Confirm. The platform creates a copy with the suffix "(copy)" and takes you to its edit form.
-3. **Rename** the copy immediately to avoid confusion, then adjust the fields as needed.
+2. The platform creates the copy and takes you to its edit form.
+3. **Rename** the copy immediately: it carries the same name as the original, which is confusing in lists.
 
-> ⚠️ **Questions are not duplicated** — Duplicating a subject **copies its configuration** but **not the questions** attached to it. The duplicated subject therefore starts with zero questions — it is up to you to write them or transfer them afterwards.
+> ⚠️ **Questions and administrators are not duplicated** — Duplicating a subject **copies its configuration** but **not the questions** attached to it, nor the list of authorized administrators. The duplicated subject therefore starts with zero questions.
 
 
 ## Delete a subject {#delete-a-subject}
 
 1. On the subject's row, click the **Delete** icon (trash can).
-2. Confirm the deletion in the dialog that appears.
+2. On the page that opens, click the **Delete** button to confirm.
 
-> ⚠️ **Subjects with questions** — A subject that contains at least one **question** cannot be deleted. The platform shows an error message ("Cannot delete this subject because it contains questions") and the deletion is cancelled. Before deleting, remove or archive the questions attached to the subject.
+> ⚠️ **Subjects with questions** — A subject that contains at least one **question** cannot be deleted. The platform shows an error message ("This subject cannot be deleted because it is used by questions") and the deletion is cancelled. Before deleting, remove the questions attached to the subject.
 
-> 💡 **Prefer archiving** — For an obsolete subject whose history you want to preserve, do not delete it: **archive** it via the *Subject details* tab (**Archived** checkbox). The subject disappears from default lists but remains viewable, and old reports continue to work.
-
-
-## Export the list {#export-the-list}
-
-The **Export to Excel** button in the action bar generates an `.xlsx` file listing every subject currently filtered on screen. Useful for periodic reviews or for sharing the list with external contributors.
-
-
-## Transfer subjects to production {#transfer-to-production}
-
-The **Transfer subjects to production** button in the action bar opens a wizard that lets you **promote** a subject from the pre-production environment to public production. This is the step that makes the subject (and its questions and test forms) available to real client accounts.
-
-Follow the wizard to select the subject(s) to transfer, confirm the preflight checks (presence of a minimum number of calibrated questions, complete description in each active language, etc.), then validate the transfer.
-
-> ⚠️ **Sensitive action** — A subject transferred to production becomes immediately visible to client accounts. Check meticulously before confirming: an incomplete or unreviewed subject can reach candidates.
+> 💡 **Who can delete?** — A subject can be deleted by a main administrator or by an administrator authorized on that subject.

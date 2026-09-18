@@ -6,41 +6,48 @@ layout: question-manual
 
 L'**éditeur de questions** est l'outil le plus utilisé du module Questions — c'est ici qu'on écrit les énoncés, qu'on définit les options de réponse, qu'on ajoute les illustrations et aides visuelles, et qu'on tague chaque question dans la cartographie de compétences. Tout administrateur qui produit du contenu pour la plateforme passe la majorité de son temps sur cette page.
 
-Accédez à l'éditeur via l'icône **Modifier** (crayon) sur la ligne d'une question dans la page **[Questions](/ai/fr/question-module/questions/)**.
+Accédez à l'éditeur via l'icône **Modifier** (crayon) sur la ligne d'une question dans la page **[Questions](/ai/fr/question-module/questions/)**, ou en cliquant sur **Ajouter une question** sur cette même page.
 
 ![Éditeur de questions — vue d'ensemble (type QCM)](img/01-editeur-mcq.png)
 
-> 💡 **Type de réponse et interface** — L'éditeur **adapte son interface** au **type de réponse** de la question. Une question QCM affichera une zone de saisie de propositions ; une question Code aura un éditeur de code à coloration syntaxique ; une question glisser-déposer aura un éditeur d'items à glisser. Ce chapitre couvre l'organisation commune **et** les spécificités par type.
+> 💡 **Type de réponse et interface** — L'éditeur **adapte son interface** au **type de réponse** de la question. Une question QCM affichera une zone de saisie de propositions ; une question glisser-déposer aura un éditeur d'items à glisser ; une question à notation manuelle aura une grille d'évaluation. Ce chapitre couvre l'organisation commune **et** les spécificités par type.
 
 
 ## Vue d'ensemble {#vue-d-ensemble}
 
-La page d'édition (titre **EDITER UNE QUESTION**) est organisée en plusieurs zones, avec un badge en haut à droite indiquant le **type de réponse** de la question courante (QCM, Code, Cliquer sur zone, etc.) :
+La page d'édition (titre **Éditer une question**) est organisée en plusieurs zones, avec un badge en haut indiquant le **type de réponse** de la question courante (QCM, Cliquer sur zone, etc.) :
 
-1. **Barre d'actions globales** (au-dessus de l'en-tête) :
+1. **Barre d'outils** (au-dessus de l'en-tête) :
+    - **Précédente** / **Suivante** — passe à la question précédente ou suivante de la liste courante sans repasser par celle-ci.
     - **Revenir à la liste** — retour à la page Questions.
     - **Enregistrer** — sauvegarde toutes les modifications.
     - **Dupliquer** — crée une copie de la question.
-    - **Vérifier** — lance le diagnostic éditorial sur cette seule question (titre vide, énoncé manquant, options non marquées correctes, etc.).
-    - **Transférer** — passe la question de préproduction à production.
-    - **Editer questions liés** — accède aux questions liées éventuelles.
+    - **Vérifier** — lance le diagnostic éditorial sur cette question (titre vide, énoncé manquant, options non marquées correctes, etc.).
+    - **Comments** — ouvre la liste des commentaires laissés par les candidats sur cette question pendant les tests.
+    - **Aperçu** — ouvre la question telle qu'un candidat la verra.
+    - **Déverrouiller** — affiché sur une question au statut *Production* aux administrateurs disposant du privilège adéquat ; repasse la question *En rédaction* en un clic (voir [Enregistrer, prévisualiser, supprimer](#actions-finales)).
 
 2. **Bandeau d'identité** :
-    - Icône du sujet + **ID** (par exemple `XL365FR00142`) avec un bouton **Copier** et un bouton **Renommer l'identifiant**.
-    - **Sujet**, **Langue**, **Créateur** (administrateur initial de la question).
-    -  **Passée** (nombre de passages), **Réussite** (taux de succès).
+    - Icône du sujet + **ID** (par exemple `S12Q0042`) avec un bouton **Copier**.
+    - **Sujet**, **Langue**, **Créateur** (administrateur qui a créé la question).
+    - **Nombre de commentaires**, **Passée** (nombre de passages), **Réussite** (taux de succès).
 
 3. **Section « Caractéristiques générales »** :
-    - **Titre**, **b** (paramètre IRT de difficulté, **modifiable** pour ajustement manuel après calibration).
-    - **Inventeur** (nom de l'auteur originel de la question, distinct du créateur du compte).
+    - **Titre**.
+    - **Difficulté** — *Facile*, *Moyenne* ou *Difficile*, fixée par l'auteur. Affichée dans la liste des questions et utilisée à la composition des tests.
+    - **Créateur de la question** (personne créditée pour la question, distincte du créateur affiché dans le bandeau).
     - **Score maximal** (par défaut 1).
     - **Temps alloué** (en secondes ; `-1` signifie « pas de limite »).
 
 4. **Section « Question et réponses »** — c'est le cœur de l'édition, organisé en onglets (voir [Onglets de l'édition](#onglets-edition)).
 
-5. **Volet « AI assist »** sur la droite — boutons de génération par IA (voir [Génération par IA](#generation-ia)).
+5. **Section « Tutoriel »** — l'explication affichée au candidat après sa réponse (voir [Tutoriel](#tutoriel)).
 
-6. **Volet « Classification »** sur la droite — jeux de questions et domaines de rattachement de la question (avec des tags Choices.js).
+6. **Bloc de revue** — le **Statut** de la question et la **Personne concernée**, plus un fichier et des commentaires pour les échanges de relecture entre auteurs.
+
+7. **Volet « AI assist »** sur la droite — boutons de génération par IA (voir [Génération par IA](#generation-ia)).
+
+8. **Volet « Classification »** sur la droite — jeux de questions et domaines de rattachement de la question.
 
 > 💡 **Tout sur une seule page** — Contrairement à d'autres entités de la plateforme, l'éditeur ne navigue pas entre plusieurs pages. Toutes les modifications se font ici et sont enregistrées en un clic via le bouton **Enregistrer** en haut.
 
@@ -51,34 +58,34 @@ La section **Question et réponses** est organisée en onglets propres au conten
 
 | Onglet | Contenu |
 |---|---|
-| **Énoncé de la question** | Le texte affiché au candidat (Markdown / HTML enrichi). |
-| **Médias** | Insertion et gestion des aides visuelles attachées à l'énoncé. |
-| **Réponses proposées** | Propositions de réponse (varie selon le type de réponse — voir sections par type). |
-| **Prompt de calcul du score** | Pour les questions à correction IA ou semi-automatique : instructions données à l'IA pour calculer la note. |
-| **Description YML** | Vue brute YAML de la configuration de la question — pour les administrateurs avancés qui veulent éditer la structure de données directement. |
-| **Avancé** | Options avancées : ordre des propositions, comportement spécifique, métadonnées techniques. |
+| **Énoncé de la question** | Le texte affiché au candidat (éditeur de texte enrichi). |
+| **Médias** | Documents de référence, fichiers média et génération audio attachés à l'énoncé. |
+| **Réponses proposées** (libellé variable selon le type) | Propositions de réponse ou paramètres propres au type — voir les sections par type. |
+| **Prompt de calcul du score** | Pour les questions à correction IA : instructions données à l'IA pour calculer la note. |
+| **Avancé** | Options avancées : **Réponse obligatoire dans les tests avec navigation**, et pour les questions à saisie libre **Verrouiller le copier/coller et la sélection**. |
 
 Deux boutons d'aide en haut à droite de cette section :
 
 - **Historique** (icône horloge) — historique des modifications de la question.
-- **Aide sur les balises** — référence des balises Markdown et templating disponibles dans l'éditeur.
+- **Aide sur les balises** — référence des balises de mise en forme disponibles dans l'éditeur.
+
+> 💡 **Onglet Description YML** — Une vue YAML brute de la question existe pour quelques types de réponse (par exemple Trier). Pour les autres types elle n'est pas affichée : utilisez **Exporter en YML** sur la page Questions pour obtenir le YAML de vos questions.
 
 
 ## Champs communs à tous les types {#champs-communs}
 
 ### Métadonnées
 
-- **Sujet** — sujet auquel la question est rattachée. Détermine le pool de candidats qui verront la question.
-- **Domaine** — domaine de compétence évalué (compétence principale de la question). Pour la cartographie du rapport candidat.
-- **Sous-domaines** — tags transversaux supplémentaires qui affinent les domaines pour la cartographie pédagogique.
-- **Jeu de questions** — si la question fait partie d'un bloc cohérent (voir [Jeux de questions](/ai/fr/question-module/question-sets/)).
-- **Statut** — *En rédaction*, *À vérifier*, *Production* etc.
-- **Personne concernée** — personne qui intervient/doit intervenir sur la question.
+- **Sujet** — sujet auquel la question est rattachée. Fixé à la création.
+- **Domaines** — domaine(s) de compétence évalué(s), dans le volet **Classification**. Pour la cartographie du rapport candidat.
+- **Jeux de questions** — les jeux auxquels la question appartient (voir [Jeux de questions](/ai/fr/question-module/question-sets/)), dans le volet **Classification**.
+- **Statut** — *En rédaction*, *Production*, etc., dans le bloc de revue. Détermine si la question peut être posée aux candidats.
+- **Personne concernée** — administrateur en charge de la question, dans le bloc de revue.
 - **Langue** — fixée à la création, non modifiable. Une question = une langue.
 
 ### Titre
 
-Le **Titre** (`tit`) est un libellé court qui apparaît dans la colonne *Titre* de la liste et dans les rapports de compétences et il représente la compétence testée dans la question. **Pas affiché au candidat.** Choisissez un titre **descriptif et unique** : *« Faire une somme»* est meilleur que *« Excel - question 17 »*.
+Le **Titre** est un libellé court qui apparaît dans la colonne *Titre* de la liste et dans les rapports de compétences : il représente la compétence testée dans la question. **Pas affiché au candidat.** Choisissez un titre **descriptif et unique** : *« Faire une somme »* est meilleur que *« Excel - question 17 »*.
 
 ### Texte de la question
 
@@ -86,7 +93,7 @@ Le **Texte** est l'énoncé affiché au candidat. Vous le saisissez dans un édi
 
 - **Markdown** — gras, italique, listes, liens, blocs de code. Le rendu est immédiat dans la prévisualisation.
 - **Formatage HTML** pour les cas avancés (tableaux, classes CSS spécifiques).
-- **Insertion d'aides visuelles** via le bouton dédié (voir [Aides visuelles](#aides-visuelles)).
+- **Insertion d'aides visuelles** via la zone de recherche dédiée (voir [Aides visuelles](#aides-visuelles)).
 - **Insertion d'illustrations directes** (image à la question — voir [Illustration](#illustration)).
 
 > 💡 **Format Markdown vs HTML** — Privilégiez Markdown pour l'écriture courante. Réservez le HTML aux cas où Markdown ne suffit pas (tableaux complexes, mise en forme spécifique).
@@ -103,50 +110,56 @@ Une **illustration** est une image attachée **directement à la question** (par
 
 > 💡 **Quand illustration, quand aide visuelle ?** — Une **illustration** est propre à la question, idéale pour une image jamais réutilisée. Une **[aide visuelle](/ai/fr/question-module/visual-aids/)** est mutualisée entre plusieurs questions, idéale pour un tableau Excel ou un code source partagé sur 10 questions du même module.
 
-### Tutoriel
+### Tutoriel {#tutoriel}
 
-Le **Tutoriel** est une explication détaillée affichée au candidat **après** sa réponse, en mode de révision. C'est le moment pédagogique : expliquer pourquoi la bonne réponse est la bonne, comment l'identifier, quelle erreur courante éviter. Format identique au texte (Markdown / HTML).
+La section **Tutoriel** contient l'explication affichée au candidat **après** sa réponse, en mode de révision : une **indication** et des **explications concernant la solution**. C'est le moment pédagogique : expliquer pourquoi la bonne réponse est la bonne, comment l'identifier, quelle erreur courante éviter. Format identique au texte.
 
 ### Aides visuelles {#aides-visuelles}
 
 Vous pouvez insérer une ou plusieurs **aides visuelles** dans l'énoncé ou dans les réponses. Voir le chapitre [Aides visuelles](/ai/fr/question-module/visual-aids/) pour la création et la gestion. Dans l'éditeur de question :
 
-- Cliquez sur le bouton **Insérer une aide visuelle** dans l'éditeur de texte.
-- Choisissez l'aide visuelle dans la liste filtrée par sujet et langue.
-- Validez : la référence est insérée dans le texte. Le rendu à l'affichage candidat sera l'image/PDF complet.
+- Saisissez au moins trois caractères du nom de l'aide visuelle dans la zone de **recherche d'aides visuelles** à droite.
+- Choisissez l'aide visuelle dans les résultats, filtrés par le sujet et la langue de la question.
+- La balise de référence est insérée dans le texte. Le rendu à l'affichage candidat sera l'image ou le document complet.
 
 Trois variantes existent :
 
-- **Document de référence** - document directement intégré dans la question ou sous forme d'un lien (option à activer en cochant l'option **Afficher le document de référence de type PDF sous forme de lien**).
-- **Aide visuelle afichée par un clic** - image qui apparaît sous une loupe (dans l'énoncé ou dans les réponses)
-- **Aide visuelle afichée dans le texte** - image présentée comme un encart pour les questions de touches clavier ou d'interface, généralement plus petite.
+- **Document de référence** — document directement intégré dans la question ou sous forme d'un lien (option à activer en cochant **Afficher le document de référence de type PDF sous forme de lien**).
+- **Aide visuelle affichée par un clic** — image qui apparaît sous une loupe (dans l'énoncé ou dans les réponses).
+- **Aide visuelle affichée dans le texte** — image présentée comme un encart, généralement plus petite, typiquement pour les questions de touches clavier ou d'interface.
 
 
 ## Génération par IA {#generation-ia}
 
-Selon la configuration de votre compte, l'éditeur propose un volet latéral **AI assist** à droite de la page, avec deux boutons principaux :
+L'éditeur propose un volet latéral **AI assist** à droite de la page. Sur une question qui vient d'être créée, il comporte deux boutons :
 
-- **Générer une question** — propose un énoncé complet (texte, propositions de réponse, bonne réponse) à partir des métadonnées de la question (sujet, domaine, niveau de difficulté).
+- **Générer une question** — propose un énoncé complet (texte, propositions de réponse, bonne réponse) à partir des métadonnées de la question (sujet, domaine, titre). Proposé pour les types de réponse qui supportent la génération.
 - **Traduire** — traduit le contenu de la question vers une autre langue, utile pour décliner rapidement un sujet en plusieurs versions linguistiques.
 
-Selon votre version d'interface, d'autres boutons de génération IA peuvent apparaître, ciblant le **titre** ou le **tutoriel** spécifiquement.
+Une fois la question enregistrée une première fois, d'autres boutons apparaissent :
 
-> ⚠️ **L'IA propose, vous décidez** — Le contenu généré est un **point de départ**, pas un livrable final. Relisez systématiquement et corrigez avant d'enregistrer. La qualité dépend du modèle IA configuré au niveau du compte (voir [Options par défaut](/ai/fr/default-options/#parametres-generaux)).
+- **Améliorer la question** — reformule et resserre l'énoncé et les propositions existants.
+- **Générer un titre** — propose un titre à partir de l'énoncé.
+- **Obsolescence** — évalue si le contenu de la question risque d'être dépassé.
+- **Générer un tutoriel** — rédige l'explication affichée au candidat après sa réponse.
+
+Pour les soumissions notées par IA, un bouton **Générer le code de vérification** rédige le code de vérification à partir de l'énoncé.
+
+> ⚠️ **L'IA propose, vous décidez** — Le contenu généré est un **point de départ**, pas un livrable final. Relisez systématiquement et corrigez avant d'enregistrer : la sortie de l'IA remplace les champs à l'écran mais n'est enregistrée qu'au clic sur **Enregistrer**. La qualité dépend du modèle d'IA choisi dans le menu **Système → Sélectionner une IA**.
 
 
 ## Types de réponse — vue d'ensemble {#types-de-reponse}
 
-La plateforme propose une vingtaine de types de réponse, regroupables en familles :
+La plateforme propose une gamme de types de réponse, regroupables en familles. La liste exacte proposée à la création d'une question dépend de la configuration de votre plateforme.
 
 | Famille | Types | Cas d'usage |
 |---|---|---|
 | **Choix multiple** | QCM texte, échelle de réponse | Évaluation classique des connaissances. |
-| **Choix de réponse** | Texte à compléter avec listes déroulantes| Quand les choix proposés sont trop révélateurs. |
-| **Questions interactives** | Glisser-déposer (`DRAG_AND_DROP`), Trier (`SORTABLE`), Relier (`LINK`), Cliquer sur zone (`CLICK_IN_AREA`) | Tests interactifs et engageants. |
-| **Code** | Code, Optimisation de code | Évaluation de compétences en programmation. |
-| **Questions de saisie** | Questions de saisie à correction automatique ou réalisée par l'IA, Dictée, Questions de saisie à correction manuelle | Évaluation de connaissances ou des mises en situation. |
+| **Choix de réponse** | Texte à compléter avec listes déroulantes | Quand la saisie libre serait ambiguë à corriger. |
+| **Questions interactives** | Glisser-déposer, Trier, Relier, Cliquer sur zone | Tests interactifs et engageants. |
+| **Questions de saisie** | Texte à trous à correction automatique ou par l'IA, Dictée, Questions de saisie à correction manuelle | Évaluation de connaissances ou mises en situation. |
 | **Correction automatique de document ou d'audio** | Soumission avec notation automatique | Soumission de fichiers évalués par IA. |
-| **Spécifiques** | Page de transition (`NOANSWER`) | Cas particuliers (pages de transition entre deux parties d'un test). |
+| **Spécifiques** | Page de transition | Cas particuliers (page entre deux parties d'un test). |
 
 Les sections suivantes détaillent les types **les plus courants**.
 
@@ -167,8 +180,7 @@ L'éditeur QCM expose une liste de propositions, chacune avec :
 
 Un bouton **Ajouter une proposition** en bas de la liste permet d'étendre le nombre d'options. Vous pouvez avoir entre 2 et 8 propositions par question (5 est le standard recommandé).
 
-> 💡 **Une ou plusieurs bonnes réponses ?** — Cochez **une seule** case **Correcte** pour un QCM à choix unique (le candidat ne peut sélectionner qu'une réponse). Cochez **plusieurs** cases pour un QCM à choix multiples (le candidat peut en sélectionner plusieurs, et doit toutes les trouver pour avoir la question juste). Ou **une parmi n** (il y a plusieurs réponses correctes, mais il suffit que le candidat en choisisse une pour que la réponse soit considérée correcte)
-> 
+> 💡 **Une ou plusieurs bonnes réponses ?** — Cochez **une seule** case **Correcte** pour un QCM à choix unique (le candidat ne peut sélectionner qu'une réponse). Cochez **plusieurs** cases pour un QCM à choix multiples (le candidat peut en sélectionner plusieurs, et doit toutes les trouver pour avoir la question juste). Ou utilisez **une parmi n** (plusieurs réponses sont correctes, mais il suffit que le candidat en choisisse une pour que la réponse soit considérée correcte).
 
 ### Ordre des propositions
 
@@ -177,17 +189,17 @@ Par défaut, les propositions sont présentées au candidat dans un **ordre alé
 
 ## Question d'échelle (Vrai/Faux, Likert) {#question-echelle}
 
-Le type **Échelle** présente au candidat une question accompagnée d'une **échelle de réponse** réutilisable — par exemple une échelle Likert *« Pas du tout d'accord / Plutôt pas d'accord / Plutôt d'accord / Tout à fait d'accord »*, ou une simple échelle Vrai/Faux. 
+Le type **Échelle** présente au candidat une question accompagnée d'une **échelle de réponse** réutilisable — par exemple une échelle Likert *« Pas du tout d'accord / Plutôt pas d'accord / Plutôt d'accord / Tout à fait d'accord »*, ou une simple échelle Vrai/Faux.
 
 ### Édition
 
 - **Sélectionnez l'échelle** dans la liste déroulante (voir [Échelles de réponse](/ai/fr/question-module/answer-scales/) pour gérer les échelles disponibles).
-- L'éditeur affiche les options de l'échelle sélectionnée et vous laisse cocher la **bonne réponse** (une seule case cochée). Si vous souhaitez ajouter une nouvelle échelle, vous devez aller dans le menu de la page principale, à gauche **Échelles de réponses** >> ensuite **Ajouter une échelle de réponses**.
-  
-> 💡 Pour les questions où la notion de bonne ou de mauvaise réponse n'existe pas, cochez l'option **Pas de notion de bonne réponse (formulaire, test de personnalité...)**
+- L'éditeur affiche les options de l'échelle sélectionnée et vous laisse cocher la **bonne réponse** (une seule case cochée). Pour ajouter une nouvelle échelle, allez dans le menu **Questions → Echelles de réponses**, puis **Ajouter une échelle de réponses**.
+
+> 💡 Pour les questions où la notion de bonne ou de mauvaise réponse n'existe pas, cochez l'option **Pas de notion de bonne réponse (formulaire, test de personnalité...)**.
 
 
-## Texte à trous (Multi-input) {#texte-a-trous}
+## Texte à trous {#texte-a-trous}
 
 Le type **Texte à trous** présente un texte avec un ou plusieurs **champs de saisie** que le candidat doit remplir.
 
@@ -195,7 +207,7 @@ Le type **Texte à trous** présente un texte avec un ou plusieurs **champs de s
 
 ### Édition
 
-Dans le texte de la question, vous insérez des **marqueurs de champ** (typiquement `[input_1]`, `[input_2]`, etc.). L'éditeur expose ensuite, pour chaque marqueur, un bloc de configuration :
+Dans le texte de la question, vous insérez des **zones de saisie** avec le bouton **Insérer une zone de saisie**. L'éditeur expose ensuite, pour chaque zone, un bloc de configuration :
 
 - **Réponse correcte** — texte exact attendu.
 - **Variantes acceptées** — autres orthographes ou formulations également comptées correctes.
@@ -206,36 +218,6 @@ Dans le texte de la question, vous insérez des **marqueurs de champ** (typiquem
 Une variante propose au candidat une **liste déroulante** plutôt qu'un champ de saisie libre. Pour chaque trou, vous définissez la liste des options et l'option correcte.
 
 ![Éditeur d'une question Texte avec sélection](img/10-editeur-text-with-select.png)
-
-
-## Code — questions de programmation {#code}
-
-Le type **Code** présente au candidat un éditeur de code (Ace) où il doit écrire un programme dans un langage donné (Python, JavaScript, etc.).
-
-![Éditeur d'une question Code (Python)](img/03-editeur-code.png)
-
-### Édition
-
-L'éditeur de question Code expose deux blocs de code distincts :
-
-- **Code de vérification** — code exécuté côté serveur **avant** ou **après** la soumission du candidat pour valider sa réponse. Permet de définir des cas de test (par exemple : *« si la fonction du candidat retourne 42 pour l'entrée [1,2,3,4,5,6,7,8,9,10], la question est juste »*).
-- **Solution** — code de référence qui résout correctement la question. Sert de modèle pour la correction et pour la prévisualisation candidat.
-
-### Langage
-
-Le **langage de programmation** est choisi via un sélecteur. Il détermine la syntaxe colorée de l'éditeur Ace et l'environnement d'exécution serveur (Docker container avec l'interpréteur correspondant).
-
-### Variante avec stdin
-
-Le type **Code avec stdin** ajoute la possibilité de fournir une **entrée standard** au programme du candidat (utile pour les questions d'algorithmique où l'entrée est lue depuis `stdin`).
-
-![Éditeur d'une question Code avec stdin](img/13-editeur-stdin-code.png)
-
-### Variante optimisation
-
-Le type **Optimisation de code** demande au candidat non seulement de fournir une solution correcte, mais aussi **performante** (par exemple en complexité algorithmique). L'évaluation inclut des métriques de temps d'exécution.
-
-![Éditeur d'une question Code d'optimisation](img/14-editeur-optimization-code.png)
 
 
 ## Glisser-déposer {#drag-and-drop}
@@ -292,7 +274,7 @@ Le type **Cliquer sur zone** présente au candidat une **image** sur laquelle il
 
 ## Notation manuelle (Manual marking) {#manual-marking}
 
-Le type **Notation manuelle** présente au candidat une question à réponse **libre** (rédaction, code, schéma) qui sera **notée à la main** par un correcteur après la soumission.
+Le type **Notation manuelle** présente au candidat une question à réponse **libre** (rédaction, schéma, enregistrement) qui sera **notée à la main** par un correcteur après la soumission.
 
 ![Éditeur d'une question Notation manuelle](img/08-editeur-manual-marking.png)
 
@@ -305,9 +287,10 @@ Le type **Notation manuelle** présente au candidat une question à réponse **l
 
 - Définissez le **prompt** (la consigne) dans le texte de la question.
 - Si soumission de document : précisez les **formats acceptés** et le **nombre maximum** de fichiers.
-- Définissez le barème ou les critères d'évaluation — pour guider les correcteurs humains (**la grille d'évaluation** sera visible aux correcteurs qui pourront noter chaque critère préalablement établi).
+- Définissez la **grille d'évaluation** ou les critères d'évaluation — pour guider les correcteurs humains (la **grille d'évaluation** est visible des correcteurs, qui notent chaque critère préalablement établi).
 
 Voir aussi la section [Noter un test](/ai/fr/results/#noter-un-test) du manuel administrateur pour le workflow de correction côté évaluateur.
+
 
 ## Test de saisie {#typing}
 
@@ -326,7 +309,7 @@ La variante **avec correction** permet au candidat de **revenir en arrière et c
 
 ## Correction automatique de document ou d'audio {#upload-auto-grading}
 
-Le type **Correction automatique de document ou d'audio** permet au candidat de **soumettre un fichier** (typiquement un document Word/Excel ou une capture d'écran) qui est ensuite **analysé par IA** pour produire automatiquement une note.
+Le type **Correction automatique de document ou d'audio** permet au candidat de **soumettre un fichier** (typiquement un document Word/Excel, une capture d'écran ou un enregistrement audio) qui est ensuite **analysé par IA** pour produire automatiquement une note.
 
 ![Éditeur d'une question Correction automatique par IA](img/12-editeur-upload-ia.png)
 
@@ -343,29 +326,33 @@ Le type **Correction automatique de document ou d'audio** permet au candidat de 
 
 ### Enregistrer
 
-Le bouton **Enregistrer** en haut à droite de l'éditeur sauvegarde l'ensemble des modifications. La sauvegarde est **AJAX** — pas de rechargement de page, mais une notification de succès en haut à droite.
+Le bouton **Enregistrer** en haut de l'éditeur sauvegarde l'ensemble des modifications. La sauvegarde se fait sans rechargement de page : une notification de succès apparaît en haut à droite.
 
-> ⚠️ **Verrouillage éditorial** — Pendant que vous éditez, la question est **verrouillée** : aucun autre administrateur ne peut la modifier en parallèle. Le verrou se libère automatiquement quand vous quittez la page ou enregistrez. Si vous fermez le navigateur sans enregistrer, le verrou peut persister quelques minutes — utilisez l'action de masse **Déverrouiller** depuis la liste des questions pour le forcer.
+> ⚠️ **Les questions en Production sont en lecture seule** — Dès que le **Statut** d'une question est passé à *Production* et enregistré, le contenu de l'éditeur devient en lecture seule : la question est posée aux candidats et doit rester stable. Seul le **bloc de revue** reste modifiable. Pour modifier la question, repassez-y son **Statut** à *En rédaction* et cliquez sur **Enregistrer** : la page se recharge déverrouillée, et la question cesse d'être posée jusqu'à son retour en *Production*. Les administrateurs disposant du privilège adéquat peuvent aussi cliquer sur **Déverrouiller** dans la barre d'outils, qui fait la même chose et leur attribue la question.
+
+### Vérifier
+
+Le bouton **Vérifier** lance le diagnostic éditorial de la question : titre ou énoncé vide, aucune proposition marquée correcte, média manquant, etc. Lancez-le avant de passer le statut à *Production*.
 
 ### Prévisualiser
 
-Le bouton **Prévisualiser** ouvre la question telle qu'elle apparaîtra à un candidat (énoncé rendu, options affichées, illustrations chargées). C'est l'étape obligatoire avant toute mise en production : un titre qui semble clair en édition peut être ambigu une fois rendu côté candidat.
+Le bouton **Aperçu** ouvre la question telle qu'elle apparaîtra à un candidat (énoncé rendu, options affichées, illustrations chargées). C'est l'étape obligatoire avant toute mise en production : un énoncé qui semble clair en édition peut être ambigu une fois rendu côté candidat.
 
 ### Naviguer entre questions
 
-Les boutons **Précédente** et **Suivante** en haut de la page permettent de passer à la question suivante du sujet courant **sans repasser par la liste**. Pratique pour les revues éditoriales en masse.
+Les boutons **Précédente** et **Suivante** en haut de la page permettent de passer aux questions voisines de la liste courante **sans repasser par la liste**. Pratique pour les revues éditoriales en masse.
 
 ### Supprimer
 
-Le bouton **Supprimer** (poubelle) supprime la question. Refusée si la question a déjà été **passée par des candidats** — la trace historique des passages doit être préservée.
+L'icône **Supprimer** sur la ligne de la question dans la liste supprime la question après confirmation. La suppression est refusée si la question fait partie de la liste fixe de questions d'un **test**.
 
-> 💡 **Préférer le statut « Désactivée » à la suppression** — Pour retirer une question de la circulation sans perdre l'historique, **changez son statut** à *Désactivée* plutôt que de la supprimer. La question reste en base, ses passages historiques restent analysables, mais elle ne sera plus tirée pour de nouveaux candidats.
+> 💡 **Préférer le statut « À supprimer » à la suppression** — Pour retirer une question de la circulation sans perdre l'historique, **changez son statut** à *À supprimer* plutôt que de la supprimer. La question quitte la liste par défaut (un filtre permet de la réafficher), ses passages historiques restent analysables, et elle n'est plus posée aux nouveaux candidats.
 
 
 ## Bonnes pratiques de rédaction {#bonnes-pratiques}
 
-- **Un énoncé court et net** — visez ≤ 3 phrases pour la question. Si l'énoncé devient long, vérifiez si une **aide visuelle** ne serait pas plus claire.
+- **Un énoncé court et net** — visez 3 phrases au plus pour la question. Si l'énoncé devient long, vérifiez si une **aide visuelle** ne serait pas plus claire.
 - **Cinq propositions pour les QCM** — c'est le nombre qui maximise la difficulté discriminante sans surcharger cognitivement le candidat.
 - **Éviter les pièges artificiels** — pas de doubles négations, pas de différences subtiles d'orthographe entre les options. Un candidat doit échouer parce qu'il ne connaît pas la réponse, pas parce qu'il a mal lu.
 - **Documenter le tutoriel** — le tutoriel est la **valeur pédagogique** de la question. C'est ce qui distingue une simple évaluation d'un outil d'apprentissage.
-- **Tester avant de publier** — passez la question à un collègue (ou à vous-même via la prévisualisation) avant de la passer en statut *Production*. Les questions cassées en prod dégradent la qualité perçue.
+- **Tester avant de publier** — passez la question à un collègue (ou à vous-même via l'aperçu) avant de la passer en statut *Production*. Les questions cassées en production dégradent la qualité perçue.

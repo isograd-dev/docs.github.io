@@ -68,6 +68,15 @@ CONTRAINTES :
   (ex. « Accédez à cette page via le menu **Résultats → Tableau de bord** »).
 - Ne documente PAS les modules « Familles de sujets » ni « Micro-compétences » :
   aucun chapitre, aucune section, aucune capture pour ces deux modules.
+- Le manuel du module Questions décrit l'interface des ENVIRONNEMENTS CUSTOM
+  (plateformes client : `SystemVariables::isCustomEnvironment()`,
+  `getPageData('is_cus_env') === '1'`), PAS celle de la préproduction Isograd.
+  Avant d'écrire, vérifie dans le code PHP/JS les branches `is_cus_env` /
+  `isCustomEnvironment()` de la page : champs et onglets masqués, boutons
+  absents (transfert en production, vérification/calibration, actions sur la
+  sélection…), sous-menus retirés. Ne documente jamais une fonctionnalité
+  réservée à la préproduction. Les captures de ce module se régénèrent sur un
+  environnement custom (voir regenerate-screenshots.md).
 - N'écris RIEN dans le site publié hors `ai/<lang>/...` (le dossier
   `_internal/` reste interne).
 - Ne touche pas à l'envoi d'emails / SES ; emails de test en @mailinator.com.

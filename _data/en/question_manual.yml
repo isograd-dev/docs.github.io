@@ -17,8 +17,6 @@
       anchor: scale-question
     - title: Fill in the blanks
       anchor: fill-in-the-blanks
-    - title: Code
-      anchor: code
     - title: Drag-and-drop
       anchor: drag-and-drop
     - title: Sortable
@@ -41,15 +39,17 @@
 - title: Questions
   url: /ai/en/question-module/questions/
   sections:
+    - title: Question statuses
+      anchor: question-statuses
     - title: Filters
       anchor: filters
-    - title: Search favorites
+    - title: Bookmarks
       anchor: search-favorites
     - title: Star a question
       anchor: star-a-question
     - title: Row actions
       anchor: row-actions
-    - title: Bulk actions
+    - title: Action bar
       anchor: bulk-actions
     - title: Import questions
       anchor: import-questions
@@ -57,25 +57,23 @@
       anchor: export-to-excel
     - title: Preview a question
       anchor: preview-a-question
-    - title: Question verification
-      anchor: question-verification
     - title: Best practices
       anchor: best-practices
 
-- title: Tests (test forms)
+- title: Tests
   url: /ai/en/question-module/test-forms/
   sections:
     - title: Concepts
       anchor: concepts
-    - title: Create a form
+    - title: Create a test
       anchor: create-a-test
-    - title: Test creation tabs
+    - title: Tabs of the edit page
       anchor: tabs-advanced-mode
-    - title: Edit a form
+    - title: Edit a test
       anchor: edit-a-test
-    - title: Duplicate a form
+    - title: Duplicate a test
       anchor: duplicate-a-test
-    - title: Delete a form
+    - title: Delete a test
       anchor: delete-a-test
     - title: Filters
       anchor: filters
@@ -159,24 +157,13 @@
       anchor: create-a-subject
     - title: Tabs of the subject form
       anchor: tabs-of-the-subject-form
-    - title: Multilingual
+    - title: Description, multilingual mode and icon
       anchor: multilingual
-    - title: Levels and jobs per level
-      anchor: levels-and-jobs
-    - title: Test commercial description
-      anchor: test-commercial-description
-    - title: Question authors
-      anchor: question-authors
-    - title: Type-specific details
-      anchor: type-specific-details
+    - title: Level descriptions
+      anchor: level-descriptions
     - title: Authorized administrators
       anchor: authorized-administrators
     - title: Duplicate a subject
       anchor: duplicate-a-subject
     - title: Delete a subject
       anchor: delete-a-subject
-    - title: Export the list
-      anchor: export-the-list
-    - title: Transfer to production
-      anchor: transfer-to-production
-

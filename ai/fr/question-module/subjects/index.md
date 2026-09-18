@@ -4,166 +4,116 @@ layout: question-manual
 
 # Sujets
 
-Un **sujet** est la matière évaluable centrale de la plateforme : *Excel 2016*, *Python*, *Anglais B2*. Toutes les questions, tous les domaines, tous les formulaires de test sont attachés à un sujet. Ce chapitre couvre la liste des sujets, leur création, et la fiche d'édition multi-onglets qui permet de tout paramétrer — du nom commercial du test aux administrateurs autorisés à voir le sujet.
+Un **sujet** est la matière évaluable centrale de votre plateforme : *Excel*, *Python*, *Procédures internes de sécurité*. Toutes les questions, tous les domaines et tous les tests sont attachés à un sujet. Ce chapitre couvre la liste des sujets, leur création, et la fiche d'édition à trois onglets qui permet de nommer le sujet, de décrire ses niveaux de compétence et de choisir les administrateurs autorisés à y travailler.
 
-Accédez à la page via le menu **Module Questions → Sujets**.
+Accédez à la page via le menu **Sujets**.
 
 ![Page principale "Gestion des sujets"](img/01-liste-sujets.png)
 
-Le tableau liste tous les sujets disponibles, avec leur **identifiant**, leur **nom**, leur **famille de sujets**, leur **langue** et leur **version**. Les filtres en haut de page permettent de cibler par texte libre, langue ou famille.
+Le tableau liste tous les sujets que vous êtes autorisé à voir, avec leur **identifiant** et leur **nom**, précédé de leur icône (ou d'initiales colorées si aucune icône n'a été téléversée). Le filtre **Rechercher** à gauche permet de cibler un sujet par son nom ; le filtre **Langue** peut rester sur *Toutes les langues*, les sujets n'étant pas rattachés à une langue sur votre plateforme.
+
+> 💡 **Qui voit quels sujets ?** — Un administrateur principal voit tous les sujets du compte. Les autres administrateurs ne voient que les sujets sur lesquels ils ont été habilités (voir [Administrateurs autorisés](#administrateurs-autorises)), ainsi que les sujets qu'ils ont créés eux-mêmes.
 
 
 ## Créer un sujet {#creer-un-sujet}
 
-La création d'un sujet se fait en deux étapes : une fenêtre minimale pour choisir la **famille de sujets**, puis la fiche d'édition pour configurer le reste.
-
-### Étape 1 — Choisir la famille
-
 1. Depuis la page **Gestion des sujets**, cliquez sur **Ajouter un sujet** dans la barre d'actions.
 
-    ![Fenêtre de choix de la famille](img/02-modal-creation.png)
+2. La plateforme crée immédiatement un sujet vide et ouvre sa fiche d'édition (page **Modifier un sujet**).
 
-2. Dans la fenêtre qui s'ouvre, sélectionnez la **famille de sujets** à laquelle le nouveau sujet appartient (Bureautique, Programmation, etc.).
+3. Renseignez au minimum le **nom** dans l'onglet **Description**, puis cliquez sur **Enregistrer** en haut à droite.
 
-3. Validez. La plateforme crée un sujet vide et vous amène directement sur sa fiche d'édition.
+Le sujet apparaît dans la liste dès sa création. Vous pouvez revenir compléter les autres onglets plus tard.
 
-### Étape 2 — Renseigner les champs essentiels
+> ⚠️ **Sujets vides** — Le sujet est créé dès le clic sur **Ajouter un sujet**, avant toute saisie. Si vous quittez la fiche sans enregistrer, un sujet sans nom reste dans la liste : ouvrez-le pour le nommer, ou supprimez-le depuis la liste.
 
-Sur la fiche d'édition (page **SubjectUpdate**), commencez par renseigner :
-
-- Le **nom** du sujet (onglet **Description**).
-- Les **détails du sujet** (onglet **Détails du sujet**) : type de sujet, langue de référence, statut public/archivé, version.
-
-Le sujet apparaît dans la liste dès que vous enregistrez. Vous pouvez ensuite revenir compléter les autres onglets au fil de l'eau.
-
-> 💡 **Sujet vide vs publié** — Un sujet créé sans questions ni paramètres complets reste **non publié** par défaut (case **Public** décochée). Les candidats et les administrateurs de compte client ne le verront pas tant que vous ne l'aurez pas explicitement publié.
+> 💡 **Visibilité** — Un sujet est utilisable immédiatement : dès qu'il existe, il peut recevoir des questions et être choisi à la création d'un test. Il n'y a pas d'étape de publication distincte.
 
 
 ## Onglets de la fiche sujet {#onglets-de-la-fiche-sujet}
 
-La fiche d'édition (page **MODIFIER UN SUJET**) est organisée en **huit onglets** :
+La fiche d'édition est organisée en **trois onglets** :
 
 ![Onglets de la fiche d'un sujet](img/03-onglets-sujet.png)
 
 | Onglet | Contenu |
 |---|---|
-| **Description** | Nom du sujet et Nom long (mono- ou multilingue selon le commutateur). |
-| **Détails du sujet** | Type (Standard, Programming, Remote, …), groupe TOS et ITS, langue de référence, statut Public/Archivé, présence de micro-compétences, version, icône. |
-| **Description des niveaux** | Pour chaque niveau de 1 à 5 et chaque langue, descriptif de ce que sait faire un candidat de ce niveau. |
-| **Métiers par niveau** | Pour chaque niveau × langue, liste des métiers correspondant à ce niveau de compétence. Sert à proposer des passerelles dans les rapports candidats. |
-| **Description commerciale des tests** | Pour chaque langue, trois textes (carte courte, description longue, description courte) utilisés sur les pages publiques et dans les catalogues. |
-| **Auteurs des questions** | Crédit des auteurs et experts du sujet, affiché dans les rapports — un texte par langue. |
-| **Détails spécifiques** | Champs visibles uniquement pour certains types : par exemple, langage de programmation associé pour les sujets Programming, ou commande d'application distante pour les sujets Remote. |
-| **Administrateurs autorisés** | Liste des administrateurs autorisés à voir et modifier ce sujet. |
+| **Description** | Nom et nom long du sujet (mono- ou multilingue selon le commutateur), initiales et icône. |
+| **Description des niveaux** | Pour chaque niveau de 1 à 5 et chaque langue de rapport, descriptif de ce que sait faire un candidat de ce niveau. |
+| **Administrateurs autorisés** | Liste des administrateurs habilités à voir et modifier ce sujet. |
 
-> ⚠️ **Enregistrer entre les onglets** — Le bouton **Enregistrer** en haut à droite sauvegarde **l'ensemble** de la fiche. Vous pouvez donc remplir plusieurs onglets puis enregistrer une seule fois. En revanche, **changer d'onglet sans enregistrer perd les modifications non sauvegardées** — pensez à valider avant de passer à un autre sujet.
+> ⚠️ **Enregistrer entre les onglets** — Le bouton **Enregistrer** en haut à droite sauvegarde **l'ensemble** de la fiche. Vous pouvez donc remplir plusieurs onglets et n'enregistrer qu'une fois. En revanche, quitter la page sans enregistrer perd les modifications en cours — pensez à enregistrer avant de passer à un autre sujet.
 
 
-## Multilingue {#multilingue}
+## Description, mode multilingue et icône {#multilingue}
 
-Pour chaque sujet, vous choisissez si le **nom** et la **description** doivent être identiques dans toutes les langues du compte, ou personnalisés par langue.
+![Onglet "Description" — commutateur multilingue activé](img/04-onglet-description.png)
 
-![Onglet "Description" — mode multilingue activé](img/04-onglet-description.png)
+L'onglet **Description** porte l'identité du sujet.
 
-Le commutateur **Descriptions différentes dans chaque langue** (`has_mul_nam`) bascule entre les deux modes :
+### Nom et nom long
 
-- **Désactivé (par défaut)** — un seul champ **Nom** et un seul champ **Nom long**, partagés par toutes les langues.
-- **Activé** — un bloc par langue (FR / EN / DE / NL / ES / IT / EL / AR selon votre offre) avec un champ Nom et un champ Nom long spécifiques à chaque langue.
+Le commutateur **Descriptions différentes dans chaque langue** bascule entre deux modes :
 
-> 💡 **Quand activer ?** — Le mode multilingue est utile pour les sujets dont le nom commercial diffère selon le pays (par exemple un test certifiant qui a un acronyme local différent). Pour la grande majorité des sujets techniques (Excel, Python), un seul nom suffit.
+- **Désactivé (par défaut)** — un seul champ **Nom** et un seul champ **Nom long**, communs à toutes les langues de votre compte.
+- **Activé** — un bloc par langue de votre compte (titre **Noms en**, avec un sélecteur de langue), avec un Nom et un Nom long propres à chaque langue.
 
-Les **autres onglets** (Description des niveaux, Métiers par niveau, Description commerciale, Auteurs) sont **toujours multilingues** : vous remplissez une description par langue, indépendamment du réglage `has_mul_nam`.
+Les langues proposées sont celles activées sur votre compte (voir le chapitre *Gestion du compte* du manuel administrateur).
 
+> 💡 **Quand l'activer ?** — Le mode multilingue est utile lorsque les candidats passent des tests dans plusieurs langues et que le sujet doit être nommé dans chacune d'elles. Pour un sujet utilisé dans une seule langue, un nom unique suffit.
 
-## Niveaux et métiers par niveau {#niveaux-et-metiers}
+### Initiales
 
-La plateforme Tosa note les candidats sur une **échelle de 5 niveaux** (Initial / Basique / Opérationnel / Avancé / Expert, selon le sujet). Deux onglets vous permettent de documenter ces niveaux :
+Le champ **Initiales** (deux caractères au maximum) définit les lettres affichées sur la pastille colorée du sujet dans les listes et les rapports lorsqu'aucune icône n'a été téléversée. Laissé vide, la plateforme utilise les deux premières lettres du nom.
 
-### Description des niveaux
+### Icône du sujet
 
-L'onglet **Description des niveaux** propose, pour chaque langue, un texte par niveau (de 1 à 5) qui décrit ce qu'un candidat de ce niveau **sait faire**. Ces descriptions apparaissent dans le rapport de chaque candidat : *« Niveau 3 — Le candidat sait construire des tableaux croisés dynamiques simples… »*.
-
-Soignez ces descriptions : elles sont la principale information que reçoit le candidat sur ce que signifie son score.
-
-### Métiers par niveau
-
-L'onglet **Métiers par niveau** propose, pour chaque langue et chaque niveau, une liste de **métiers** correspondants : *« Niveau 4 — Contrôleur de gestion, Analyste financier junior »*. Cette information est affichée dans les rapports pour donner au candidat une projection professionnelle.
-
-Format conseillé : une liste de métiers séparés par des virgules, en cohérence avec les référentiels métier de votre marché.
+Le bloc **Icône du sujet** permet de téléverser une image (PNG, JPG, GIF ou SVG) qui remplace la pastille d'initiales partout où le sujet est affiché. Cliquez sur **Téléverser** et choisissez le fichier ; un aperçu apparaît une fois le téléversement terminé. Le bouton de suppression à côté de l'aperçu retire l'icône et rétablit les initiales.
 
 
-## Description commerciale des tests {#description-commerciale}
+## Description des niveaux {#description-des-niveaux}
 
-L'onglet **Description commerciale des tests** fournit trois textes par langue, utilisés sur les pages publiques du catalogue (`isograd.com`, `tosa.org`) et dans les emails d'invitation :
+La plateforme peut positionner les candidats sur une **échelle à 5 niveaux**. L'onglet **Description des niveaux** propose, pour chaque langue de rapport, un texte par niveau (1 à 5) décrivant ce qu'un candidat de ce niveau **sait faire**.
 
-- **Description carte** (`its_tst_des[car]`) — quelques mots pour la vignette de catalogue.
-- **Description longue** (`its_tst_des[lon]`) — paragraphe descriptif détaillé.
-- **Description courte** (`its_tst_des[sho]`) — phrase d'accroche.
+Ces descriptions sont facultatives. Lorsqu'elles sont renseignées, elles apparaissent dans le rapport du candidat comme synthèse du niveau atteint : *« Niveau 3 — Le candidat sait construire des tableaux croisés dynamiques simples… »*.
 
-Renseignez ces textes uniquement si le sujet est destiné à être vendu via les catalogues publics. Pour un sujet interne ou propriétaire, ils peuvent rester vides.
+Soignez ces descriptions : c'est la principale information que reçoit le candidat sur la signification de son score.
 
-
-## Auteurs des questions {#auteurs-des-questions}
-
-L'onglet **Auteurs des questions** contient un seul champ libre par langue : le **crédit des auteurs et experts** qui ont conçu le sujet. Ce texte apparaît au pied du rapport de chaque candidat : *« Sujet conçu par Pr. Jean Dupont, Université de Paris »*.
-
-Utile pour la traçabilité éditoriale et la valorisation des contributeurs externes.
-
-
-## Détails spécifiques selon le type {#details-specifiques}
-
-L'onglet **Détails spécifiques** affiche des champs **dépendants du type de sujet** (`typ_id`) configuré dans l'onglet *Détails du sujet* :
-
-- **Programming** (`typ_id=1`) — affiche le champ **Langage de programmation associé** (Python, JavaScript, …). Détermine l'environnement d'exécution des questions de code.
-- **Remote** (`typ_id=2`) — affiche le champ **Commande d'application distante** (chemin d'invocation de l'application contrôlée à distance, par exemple Excel ou Word installés sur un VDI).
-- **Standard** (`typ_id=3` ou `4`) — l'onglet est vide ; aucun paramètre spécifique requis.
-
-Le changement de type **masque ou révèle dynamiquement** les champs : pas besoin de recharger la page.
+> 💡 **Niveaux par domaine** — Vous pouvez affiner ces descriptions domaine par domaine dans l'onglet **Niveaux de compétence** de chaque [domaine](/ai/fr/question-module/domains/#onglets-de-la-fiche-domaine).
 
 
 ## Administrateurs autorisés {#administrateurs-autorises}
 
-L'onglet **Administrateurs** liste tous les administrateurs habilités à voir et modifier ce sujet. Par défaut, un nouveau sujet est visible par les administrateurs disposant du privilège **Lecture/écriture de tous les sujets**.
+L'onglet **Administrateurs autorisés** liste les administrateurs de votre compte qui travaillent dans le module Questions sans disposer du privilège de voir **tous** les sujets. Cochez ceux qui sont autorisés à voir et modifier ce sujet.
 
-![Onglet "Administrateurs"](img/05-onglet-administrateurs.png)
+![Onglet "Administrateurs autorisés"](img/05-onglet-administrateurs.png)
 
 - Cochez la case devant un nom pour **autoriser** cet administrateur sur le sujet.
 - Décochez pour **révoquer** son accès.
 - Utilisez le champ **Filtrer** en haut de la liste pour retrouver rapidement un administrateur dans une longue liste.
+- Les administrateurs dont la connexion a été désactivée apparaissent grisés.
 
-> 💡 **Cloisonnement éditorial** — Cette fonctionnalité est utile quand vous avez plusieurs équipes de production : chacune ne voit que ses sujets. La décocher pour tous les admins externes garantit qu'un sujet en cours de rédaction n'est pas visible avant validation.
+> 💡 **Cloisonnement éditorial** — Cette fonctionnalité est utile quand vous avez plusieurs équipes de rédaction : chacune ne voit que ses sujets. Les administrateurs principaux et ceux qui disposent du privilège « tous les sujets » ne figurent pas dans cette liste, car ils voient toujours l'ensemble des sujets.
+
+> 💡 **Votre propre accès** — Vous n'apparaissez pas dans cette liste : l'enregistrement ne retire jamais votre propre accès au sujet.
 
 
 ## Dupliquer un sujet {#dupliquer-un-sujet}
 
-La duplication crée un **nouveau sujet** à partir d'un existant, en copiant toutes ses configurations (nom, descriptions, niveaux, métiers, etc.). C'est l'outil le plus rapide pour démarrer un sujet voisin (par exemple une nouvelle version d'Excel à partir de la précédente).
+La duplication crée un **nouveau sujet** à partir d'un existant, en copiant sa configuration (noms, noms longs, initiales, icône et descriptions des niveaux). C'est l'outil le plus rapide pour démarrer un sujet voisin.
 
 1. Sur la ligne du sujet source dans la liste, cliquez sur l'icône **Dupliquer**.
-2. Confirmez. La plateforme crée une copie portant le suffixe « (copie) » et vous amène sur sa fiche d'édition.
-3. **Renommez** immédiatement la copie pour éviter la confusion, puis adaptez les champs nécessaires.
+2. La plateforme crée la copie et vous amène sur sa fiche d'édition.
+3. **Renommez** immédiatement la copie : elle porte le même nom que l'original, ce qui prête à confusion dans les listes.
 
-> ⚠️ **Les questions ne sont pas dupliquées** — La duplication d'un sujet **copie sa configuration** mais **pas les questions** qui lui sont attachées. Le sujet dupliqué démarre donc avec zéro question — c'est à vous de les rédiger ou de les transférer ensuite.
+> ⚠️ **Les questions et les administrateurs ne sont pas dupliqués** — La duplication d'un sujet **copie sa configuration** mais **pas les questions** qui lui sont attachées, ni la liste des administrateurs autorisés. Le sujet dupliqué démarre donc avec zéro question.
 
 
 ## Supprimer un sujet {#supprimer-un-sujet}
 
 1. Sur la ligne du sujet, cliquez sur l'icône **Supprimer** (poubelle).
-2. Confirmez la suppression dans la fenêtre qui s'affiche.
+2. Sur la page qui s'ouvre, cliquez sur le bouton **Supprimer** pour confirmer.
 
-> ⚠️ **Sujets avec questions** — Un sujet qui contient au moins une **question** ne peut pas être supprimé. La plateforme affiche un message d'erreur (« Impossible de supprimer ce sujet car il contient des questions ») et la suppression est annulée. Avant de supprimer, retirez ou archivez les questions attachées au sujet.
+> ⚠️ **Sujets avec questions** — Un sujet qui contient au moins une **question** ne peut pas être supprimé. La plateforme affiche un message d'erreur (« Ce sujet ne peut pas être supprimé car il est utilisé par des questions ») et la suppression est annulée. Avant de supprimer, retirez les questions attachées au sujet.
 
-> 💡 **Préférer l'archivage** — Pour un sujet obsolète mais dont on veut préserver l'historique, ne le supprimez pas : **archivez-le** via l'onglet *Détails du sujet* (case **Archivé**). Le sujet disparaît des listes par défaut mais reste consultable, et les anciens rapports continuent de fonctionner.
-
-
-## Exporter la liste {#exporter-la-liste}
-
-Le bouton **Exporter vers Excel** dans la barre d'actions génère un fichier `.xlsx` listant tous les sujets actuellement filtrés à l'écran. Utile pour les bilans périodiques ou pour communiquer la liste à des contributeurs externes.
-
-
-## Transférer les sujets en production {#transferer-en-production}
-
-Le bouton **Transférer les sujets en production** dans la barre d'actions ouvre un assistant qui permet de **promouvoir** un sujet de l'environnement de préproduction vers la production publique. C'est l'étape qui rend le sujet (et ses questions, ses formulaires de test) accessible aux comptes clients réels.
-
-Suivez l'assistant pour sélectionner le ou les sujets à transférer, confirmer les vérifications préalables (présence d'un nombre minimum de questions calibrées, description complète dans chaque langue active, etc.), puis valider le transfert.
-
-> ⚠️ **Action sensible** — Un sujet transféré en production est immédiatement visible par les comptes clients. Vérifiez méticuleusement avant de valider : un sujet incomplet ou non relu peut atteindre des candidats.
+> 💡 **Qui peut supprimer ?** — Un sujet peut être supprimé par un administrateur principal ou par un administrateur habilité sur ce sujet.

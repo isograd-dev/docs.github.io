@@ -77,26 +77,73 @@ L'import de candidats vous permet de créer plusieurs candidats — voire de les
 
 ## Inscrire un candidat à un test {#inscrire-un-candidat-a-un-test}
 
-Une fois le candidat créé, vous devez l'inscrire à un ou plusieurs tests pour qu'il puisse les passer.
+Une fois le candidat créé, vous devez l'inscrire à un ou plusieurs tests pour qu'il puisse les passer. Tout se fait depuis la **fiche du candidat**, qui rassemble ses inscriptions et les actions qui le concernent.
+
+### La fiche du candidat
+
+Depuis la liste des candidats, cliquez sur l'icône **Modifier** de la ligne correspondante. Vous y êtes aussi redirigé automatiquement après l'enregistrement d'un nouveau candidat.
+
+![Page d'inscription aux tests](img/05-page-inscription-tests.png)
+
+La barre de boutons en haut de la fiche regroupe les actions disponibles pour ce candidat. Certains boutons n'apparaissent que selon vos privilèges et les options de votre compte :
+
+- **Inscrire à un test** — ouvre la fenêtre d'inscription décrite ci-dessous.
+- **Modifier les détails du candidat** — renvoie au formulaire de coordonnées (identité, email, langue, groupes).
+- **Paramètres des tests** — options propres à ce candidat : **Paramètres pour l'évaluation**, **Paramètres pour la certification** (affichage des résultats, envoi des rapports et des certificats, destinataires) et, le cas échéant, **Paramètres pour le test configuration**. Ces valeurs remplacent, pour ce candidat seulement, les [options par défaut](../default-options/) du compte.
+- **Envoyer les tests au candidat** — envoie l'email d'invitation (voir [Envoyer les invitations](#envoyer-les-invitations)).
+- **Attribuer un mot de passe temporaire** — le candidat devra le changer à sa prochaine connexion.
+- **Anonymiser** — remplace définitivement les données personnelles du candidat.
+- **Transférer** — déplace le candidat vers un autre compte de votre organisation, lorsque cette option est activée.
+
+> 💡 **Tests par métier** — Sur les comptes Isograd Testing Services, le bouton **Tests par métier** propose, à partir d'un intitulé ou d'une description de poste, une sélection de tests recommandés avec le lien vers la description de chacun.
+
+Sous la barre de boutons, le **tableau des tests planifiés** liste toutes les inscriptions du candidat (voir [plus bas](#le-tableau-des-tests-planifies)).
 
 ### Inscrire un candidat depuis sa fiche
 
-1. Depuis la liste des candidats, cliquez sur l'icône **Modifier** de la ligne correspondante. Vous arrivez sur la page d'inscription aux tests du candidat.
+1. Cliquez sur **Inscrire à un test**.
 
-    ![Page d'inscription aux tests](img/05-page-inscription-tests.png)
+    ![Bouton "Inscrire à un test"](img/06-bouton-ajouter-test.png)
 
-2. Cliquez sur **Ajouter un test**.
+2. La fenêtre **Inscrire le candidat à un test** s'ouvre.
 
-    ![Bouton "Ajouter un test"](img/06-bouton-ajouter-test.png)
+    ![Fenêtre "Inscrire le candidat à un test"](img/11-modal-inscription-test.png)
 
-3. Dans la fenêtre qui s'ouvre, choisissez le **sujet** (matière) à évaluer, puis paramétrez l'inscription :
+    Choisissez d'abord la **Langue** du test : elle est présélectionnée sur la langue du candidat, et la liste des sujets se met à jour à chaque changement. Sélectionnez ensuite le test de l'une des deux manières suivantes :
 
-    - **Type de test** — évaluation, certification, etc., selon les packs disponibles sur votre compte.
-    - **Langue** — langue dans laquelle le test sera présenté au candidat.
-    - **Date limite** (facultatif) — au-delà de cette date, le candidat ne pourra plus démarrer le test.
-    - **Surveillance** (facultatif) — active la session surveillée si votre compte dispose de l'option.
+    - **Recherche par filtre** (colonne de gauche) — si votre compte dispose de tests personnalisés, le **Type de test** permet de basculer entre **Catalogue** et **Personnalisé** ; choisissez ensuite le **Sujet**, puis le **Test**.
+    - **Recherche par saisie** (colonne de droite) — saisissez au moins trois caractères du nom du test et cliquez sur le résultat voulu ; les sélecteurs de gauche se positionnent automatiquement.
 
-4. Validez. Le test apparaît immédiatement dans le tableau d'inscriptions du candidat.
+    Une fois le test choisi, sa **Description** s'affiche, accompagnée le cas échéant du nombre de crédits consommés, et le bouton **Voir un exemple de rapport** propose un rapport type au format PDF lorsqu'il en existe un pour ce test.
+
+3. Complétez, selon les options de votre compte :
+
+    - **Session** — rattache l'inscription à une session de passage existante (**Pas de session associée** par défaut). L'entrée **Créer une session...** vous emmène directement sur la création d'une session ; sur certains comptes, la session est obligatoire.
+    - **Profil de surveillance** — **Pas de surveillance** ou l'un de vos [profils de surveillance](../proctoring/) (plein écran, surveillance à distance…). Pour une **certification**, le profil par défaut de votre compte est présélectionné ; si la surveillance à distance est obligatoire sur votre compte, elle est appliquée automatiquement et un message l'indique.
+
+4. Cliquez sur **Inscrire** pour enchaîner une autre inscription dans la même fenêtre, ou sur **Inscrire et fermer**. Le test apparaît immédiatement dans le tableau des tests planifiés.
+
+> 💡 **Type de crédit** — Si votre compte possède plusieurs packs valables pour ce test (par exemple un pack « un test par crédit » et un pack « plusieurs tests par crédit »), une fenêtre **Type de crédit** vous demande lequel utiliser avant l'inscription.
+
+> 💡 **Test déjà passé** — Selon la configuration de votre compte, si le candidat a déjà passé ce type de test, une confirmation vous est demandée avant de le réinscrire.
+
+### Le tableau des tests planifiés {#le-tableau-des-tests-planifies}
+
+![Tableau des tests planifiés](img/12-tableau-tests-planifies.png)
+
+Chaque ligne correspond à une inscription : test, statut (en attente, démarré, terminé, en attente de notation), session et date de passage le cas échéant. Une icône **plein écran** ou **caméra** à côté du nom du test signale le profil de surveillance associé.
+
+Les boutons d'action apparaissent au survol de la ligne :
+
+- **Supprimer** — retire l'inscription d'un test non commencé ; le crédit est restitué. Selon votre compte, la plateforme propose de notifier le candidat de l'annulation par email.
+- **Paramètres** (test en attente) — modifie la **Session**, le **Profil de surveillance** et l'option **Désactiver la manipulation** sans supprimer l'inscription.
+
+    ![Fenêtre "Paramètres du test"](img/13-modal-parametres-test.png)
+
+- **Commentaire de l'administrateur** — note interne attachée à cette inscription, invisible du candidat.
+- **Modifier le test** (test démarré ou terminé) — selon vos privilèges : réajuster le temps, réinitialiser le test avec ou sans email au candidat, relancer ou désactiver la manipulation.
+- **Détails** (test terminé) — ouvre l'analyse détaillée du passage (voir [Gestion des résultats](../results/)) ; **Noter** apparaît à la place pour un test en attente de notation.
+- **Envoyer le certificat** (certification terminée) — envoie le certificat aux destinataires définis dans les paramètres pour la certification ; **Ajouter un test de confirmation** est proposé pour une évaluation terminée lorsque votre compte dispose de cette option.
 
 ### Inscrire plusieurs candidats à la fois
 
@@ -109,7 +156,7 @@ Pour inscrire plusieurs candidats au même test, utilisez une action de groupe d
 
 > 💡 **Candidats déjà inscrits** — Si certains candidats de la sélection sont déjà inscrits à ce test, la plateforme vous le signale et vous propose soit de les réinscrire tous, soit de n'inscrire que ceux qui ne le sont pas encore.
 
-> 💡 **Crédits** — Chaque inscription consomme un crédit du pack correspondant. Le solde restant est visible en haut de page. Pour racheter des crédits, contactez votre interlocuteur Isograd.
+> 💡 **Crédits** — Chaque inscription consomme un crédit du pack correspondant (ou une fraction de crédit avec un pack « plusieurs tests par crédit »). Le solde de vos packs est consultable dans [Gestion de votre compte](../account/). Pour racheter des crédits, contactez votre interlocuteur Isograd.
 
 
 ## Envoyer les invitations {#envoyer-les-invitations}
@@ -122,15 +169,23 @@ L'envoi d'invitation par email transmet au candidat son lien de connexion person
 
     ![Fiche candidat — bouton d'invitation](img/10-bouton-invitation.png)
 
-2. Cliquez sur **Envoyer l'email d'inscription** (ou le bouton équivalent visible dans la fiche).
+2. Cliquez sur **Envoyer les tests au candidat**. La fenêtre **Détails du message** s'ouvre.
 
-3. Une fenêtre vous permet de :
+    ![Fenêtre "Détails du message"](img/14-modal-email-invitation.png)
 
-    - Choisir le **modèle d'email** (langue, ton, signature) parmi ceux configurés pour votre compte.
-    - **Prévisualiser** le contenu qui sera envoyé.
-    - **Personnaliser** l'objet ou le corps si besoin, avant envoi.
+3. Renseignez la colonne de gauche :
 
-4. Cliquez sur **Envoyer**. Le candidat reçoit immédiatement son email contenant le lien de connexion.
+    - **Modèle de message** — choisissez parmi les modèles d'inscription configurés pour votre compte dans la langue du candidat ; le titre et l'aperçu se mettent à jour à chaque changement.
+    - **Titre du message** — l'objet de l'email, pré-rempli à partir du modèle et modifiable.
+    - **Adresse mail de l'émetteur** — visible si des émetteurs vérifiés sont configurés (voir [Gestion des emails](../mail-templates/)) ; sinon l'adresse par défaut de la plateforme est utilisée.
+    - **Envoyer une copie à** — un administrateur de votre compte reçoit une copie du message.
+    - **Programmer l'envoi** — activez l'interrupteur et indiquez la **Date d'envoi** pour différer l'envoi.
+
+    La colonne de droite affiche l'aperçu exact de l'email tel qu'il sera reçu. Le corps du message provient du modèle : pour le modifier, éditez le modèle dans **Gestion des emails**.
+
+4. Cliquez sur **Envoyer**. Le candidat reçoit son email avec son lien de connexion personnel, et la fiche se recharge.
+
+> ⚠️ **Tests déjà envoyés** — Si un test a déjà fait l'objet d'un email d'invitation, la fenêtre l'indique avec la date d'envoi. Vous pouvez tout de même renvoyer une invitation, par exemple après une correction d'adresse.
 
 ### Envoyer des invitations en masse
 
@@ -144,7 +199,7 @@ Chaque candidat reçoit l'invitation avec son lien personnel. Lorsque l'action p
 
 > ⚠️ **Adresses invalides** — Si l'adresse email d'un candidat est invalide ou refusée par le serveur de destination, vous le verrez dans le rapport d'envoi. Corrigez l'adresse sur la fiche du candidat puis relancez l'envoi.
 
-> 💡 **Personnaliser les modèles d'email** — Les modèles d'email sont gérés dans le chapitre **Gestion des mails** (à venir). Vous pouvez y créer des variantes par langue, par marque, ou par type de test.
+> 💡 **Personnaliser les modèles d'email** — Les modèles d'email sont gérés dans le chapitre [Gestion des emails](../mail-templates/). Vous pouvez y créer des variantes par langue, par marque, ou par type de test.
 
 
 ## Gérer les groupes {#gerer-les-groupes}

@@ -17,21 +17,19 @@
       anchor: question-echelle
     - title: Texte à trous
       anchor: texte-a-trous
-    - title: Code
-      anchor: code
-    - title: Drag-and-drop
+    - title: Glisser-déposer
       anchor: drag-and-drop
-    - title: Sortable
+    - title: Trier
       anchor: sortable
-    - title: Link (appariement)
+    - title: Relier (appariement)
       anchor: link
-    - title: Click in area
+    - title: Cliquer sur zone
       anchor: click-in-area
     - title: Notation manuelle
       anchor: manual-marking
     - title: Test de saisie
       anchor: typing
-    - title: Upload avec notation IA
+    - title: Correction automatique de document ou d'audio
       anchor: upload-auto-grading
     - title: Enregistrer, prévisualiser, supprimer
       anchor: actions-finales
@@ -41,6 +39,8 @@
 - title: Questions
   url: /ai/fr/question-module/questions/
   sections:
+    - title: Statuts d'une question
+      anchor: statuts
     - title: Filtres
       anchor: filtres
     - title: Favoris de recherche
@@ -49,7 +49,7 @@
       anchor: etoiler-une-question
     - title: Actions sur une ligne
       anchor: actions-sur-une-ligne
-    - title: Actions de masse
+    - title: Barre d'actions
       anchor: actions-de-masse
     - title: Importer des questions
       anchor: importer-des-questions
@@ -57,25 +57,23 @@
       anchor: exporter-vers-excel
     - title: Prévisualiser une question
       anchor: previsualiser-une-question
-    - title: Vérification des questions
-      anchor: verification-des-questions
     - title: Bonnes pratiques
       anchor: bonnes-pratiques
 
-- title: Formulaires de test
+- title: Tests
   url: /ai/fr/question-module/test-forms/
   sections:
-    - title: Concepts (types, algorithme)
+    - title: Concepts (ordre des questions)
       anchor: concepts
-    - title: Créer un formulaire
+    - title: Créer un test
       anchor: creer-un-formulaire
-    - title: Onglets création de tests
+    - title: Onglets de la page d'édition
       anchor: onglets-mode-avance
-    - title: Modifier un formulaire
+    - title: Modifier un test
       anchor: modifier-un-formulaire
-    - title: Dupliquer un formulaire
+    - title: Dupliquer un test
       anchor: dupliquer-un-formulaire
-    - title: Supprimer un formulaire
+    - title: Supprimer un test
       anchor: supprimer-un-formulaire
     - title: Filtres
       anchor: filtres
@@ -159,23 +157,13 @@
       anchor: creer-un-sujet
     - title: Onglets de la fiche sujet
       anchor: onglets-de-la-fiche-sujet
-    - title: Multilingue
+    - title: Description, mode multilingue et icône
       anchor: multilingue
-    - title: Niveaux et métiers par niveau
-      anchor: niveaux-et-metiers
-    - title: Description commerciale des tests
-      anchor: description-commerciale
-    - title: Auteurs des questions
-      anchor: auteurs-des-questions
-    - title: Détails spécifiques selon le type
-      anchor: details-specifiques
+    - title: Description des niveaux
+      anchor: description-des-niveaux
     - title: Administrateurs autorisés
       anchor: administrateurs-autorises
     - title: Dupliquer un sujet
       anchor: dupliquer-un-sujet
     - title: Supprimer un sujet
       anchor: supprimer-un-sujet
-    - title: Exporter la liste
-      anchor: exporter-la-liste
-    - title: Transférer en production
-      anchor: transferer-en-production

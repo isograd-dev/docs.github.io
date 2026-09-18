@@ -77,26 +77,73 @@ The candidate import allows you to create several candidates — or even pre-reg
 
 ## Register a candidate to a test {#register-a-candidate-to-a-test}
 
-Once the candidate is created, you must register them to one or more tests so they can take them.
+Once the candidate is created, you must register them to one or more tests so they can take them. Everything happens from the **candidate's record**, which gathers their registrations and the actions that concern them.
+
+### The candidate's record
+
+From the candidate list, click the **Edit** icon of the corresponding row. You are also redirected there automatically after saving a new candidate.
+
+![Test registration page](img/05-page-inscription-tests.png)
+
+The button bar at the top of the record gathers the actions available for this candidate. Some buttons only appear depending on your privileges and your account options:
+
+- **Register to a test** — opens the registration window described below.
+- **Edit candidate details** — goes back to the contact details form (identity, email, language, groups).
+- **Test parameters** — options specific to this candidate: **Assessment Settings**, **Certification Settings** (display of results, sending of reports and certificates, recipients) and, where applicable, **Configuration test parameters**. These values override, for this candidate only, the account's [default options](../default-options/).
+- **Send a test invitation e-mail to candidate** — sends the invitation email (see [Send invitations](#send-invitations)).
+- **Assign a temporary password** — the candidate will have to change it at their next login.
+- **Anonymize** — permanently replaces the candidate's personal data.
+- **Transfer** — moves the candidate to another account of your organization, when this option is enabled.
+
+> 💡 **Tests per job** — On Isograd Testing Services accounts, the **Tests per job** button suggests, from a job title or description, a selection of recommended tests with a link to each test's description.
+
+Below the button bar, the **planned tests table** lists all the candidate's registrations (see [below](#the-planned-tests-table)).
 
 ### Register a candidate from their record
 
-1. From the candidate list, click the **Edit** icon of the corresponding row. You arrive on the candidate's test registration page.
+1. Click **Register to a test**.
 
-    ![Test registration page](img/05-page-inscription-tests.png)
+    ![The "Register to a test" button](img/06-bouton-ajouter-test.png)
 
-2. Click **Add a test**.
+2. The **Register candidate for a test** window opens.
 
-    ![The "Add a test" button](img/06-bouton-ajouter-test.png)
+    !["Register candidate for a test" window](img/11-modal-inscription-test.png)
 
-3. In the window that opens, choose the **subject** (topic) to evaluate, then configure the registration:
+    First choose the **Language** of the test: it is preselected on the candidate's language, and the list of subjects is refreshed on every change. Then select the test in one of two ways:
 
-    - **Test type** — evaluation, certification, etc., depending on the packs available on your account.
-    - **Language** — language in which the test will be presented to the candidate.
-    - **Deadline** (optional) — beyond this date, the candidate will no longer be able to start the test.
-    - **Proctoring** (optional) — enables the proctored session if your account has this option.
+    - **Search by filter** (left column) — if your account has custom tests, the **Test type** lets you switch between **Catalog** and **Custom**; then choose the **Subject**, then the **Test**.
+    - **Search by input** (right column) — type at least three characters of the test name and click the desired result; the selectors on the left are set automatically.
 
-4. Confirm. The test appears immediately in the candidate's registration table.
+    Once the test is chosen, its **Description** is displayed, together with the number of credits consumed where relevant, and the **Display sample report** button offers a sample report in PDF format when one exists for this test.
+
+3. Complete, depending on your account options:
+
+    - **Session** — attaches the registration to an existing test session (**No associated session** by default). The **Create a new session...** entry takes you directly to the session creation page; on some accounts, the session is mandatory.
+    - **Proctoring profile** — **No proctoring** or one of your [proctoring profiles](../proctoring/) (full screen, remote proctoring…). For a **certification**, your account's default profile is preselected; if remote proctoring is mandatory on your account, it is applied automatically and a message says so.
+
+4. Click **Register** to chain another registration in the same window, or **Register and Close**. The test appears immediately in the planned tests table.
+
+> 💡 **Credit type** — If your account holds several packs valid for this test (for example a "one test per credit" pack and a "several tests per credit" pack), a **Select a credit type** window asks which one to use before registering.
+
+> 💡 **Test already taken** — Depending on your account configuration, if the candidate has already taken this type of test, you are asked to confirm before registering them again.
+
+### The planned tests table {#the-planned-tests-table}
+
+![Planned tests table](img/12-tableau-tests-planifies.png)
+
+Each row is a registration: test, status (pending, started, complete, waiting for marking), session and test date where applicable. A **full screen** or **camera** icon next to the test name indicates the associated proctoring profile.
+
+The action buttons appear when hovering over the row:
+
+- **Delete** — removes the registration of a test that has not started; the credit is refunded. Depending on your account, the platform offers to notify the candidate of the cancellation by email.
+- **Parameters** (pending test) — changes the **Session**, the **Proctoring profile** and the **Disable in-application** option without deleting the registration.
+
+    !["Test parameters" window](img/13-modal-parametres-test.png)
+
+- **Administrator's comment** — an internal note attached to this registration, invisible to the candidate.
+- **Change test details** (started or completed test) — depending on your privileges: adjust the end time, reset the test with or without an email to the candidate, restart or disable the in-application part.
+- **Details** (completed test) — opens the detailed analysis of the test (see [Results management](../results/)); **Assign grade** appears instead for a test waiting for marking.
+- **Send diploma** (completed certification) — sends the certificate to the recipients defined in the certification settings; **Add a confirmation test** is offered for a completed assessment when your account has this option.
 
 ### Register several candidates at the same time
 
@@ -109,7 +156,7 @@ To register several candidates to the same test, use a group action from the **C
 
 > 💡 **Candidates already registered** — If some candidates of the selection are already registered to this test, the platform tells you so and offers either to register all of them again, or to register only those who are not registered yet.
 
-> 💡 **Credits** — Each registration consumes one credit from the corresponding pack. The remaining balance is visible at the top of the page. To buy back credits, contact your Isograd representative.
+> 💡 **Credits** — Each registration consumes one credit from the corresponding pack (or a fraction of a credit with a "several tests per credit" pack). The balance of your packs can be checked in [Account management](../account/). To buy back credits, contact your Isograd representative.
 
 
 ## Send invitations {#send-invitations}
@@ -122,15 +169,23 @@ Sending the email invitation transmits the candidate's personalized login link. 
 
     ![Candidate record — invitation button](img/10-bouton-invitation.png)
 
-2. Click **Send registration email** (or the equivalent button visible in the record).
+2. Click **Send a test invitation e-mail to candidate**. The **Message details** window opens.
 
-3. A window allows you to:
+    !["Message details" window](img/14-modal-email-invitation.png)
 
-    - Choose the **email template** (language, tone, signature) among those configured for your account.
-    - **Preview** the content that will be sent.
-    - **Customize** the subject or body if necessary, before sending.
+3. Fill in the left column:
 
-4. Click **Send**. The candidate immediately receives their email containing the login link.
+    - **E-mail template** — choose among the registration templates configured for your account in the candidate's language; the title and the preview are refreshed on every change.
+    - **Message title** — the subject of the email, pre-filled from the template and editable.
+    - **Sender e-mail address** — visible if verified senders are configured (see [Email management](../mail-templates/)); otherwise the platform's default address is used.
+    - **Send a copy to** — an administrator of your account receives a copy of the message.
+    - **Schedule sending** — turn on the switch and set the **Send date** to defer the sending.
+
+    The right column shows the exact preview of the email as it will be received. The body of the message comes from the template: to change it, edit the template in **Email management**.
+
+4. Click **Send**. The candidate receives their email with their personal login link, and the record reloads.
+
+> ⚠️ **Tests already sent** — If a test has already been the subject of an invitation email, the window says so with the sending date. You can still send an invitation again, for example after correcting an address.
 
 ### Send invitations in bulk
 
@@ -144,7 +199,7 @@ Each candidate receives the invitation with their personal link. When the action
 
 > ⚠️ **Invalid addresses** — If a candidate's email address is invalid or refused by the destination server, you will see it in the send report. Correct the address on the candidate's record then resend.
 
-> 💡 **Customize email templates** — Email templates are managed in the **Email management** chapter (forthcoming). You can create variants there by language, by brand, or by test type.
+> 💡 **Customize email templates** — Email templates are managed in the [Email management](../mail-templates/) chapter. You can create variants there by language, by brand, or by test type.
 
 
 ## Manage groups {#manage-groups}

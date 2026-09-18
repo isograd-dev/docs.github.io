@@ -1,26 +1,26 @@
 {
   "chapter": "question-module/test-forms",
-  "generated_at": "2026-06-09T14:21:30.076Z",
-  "base_url": "https://app.isograd.com",
+  "generated_at": "2026-09-18T13:55:08.874Z",
+  "base_url": "https://appdev.isograd.com",
   "captures": [
     {
       "name": "01-liste-formulaires.png",
-      "caption": "Page \"Gestion des formulaires de test\" — tableau ID / Nom / Sujet / Langue, boutons Créer / Autoriser / Exporter.",
+      "caption": "Page \"Gestion des tests\" — tableau ID / Nom / Sujet / Langue / Type / Algorithme, boutons Créer un test / Exporter.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/testforms/AdminTestFormsWithTable?filter_rows_per_page=50&filter_search=&filter_brd_id=-1&filter_lan_id=-1&filter_sbj_id=-1&filter_typ_id=-1&filter_alg_id=-1&filter_res_typ_id=-1&filter_geo_vis_id=-1&filter_from=&filter_to=&changepage=1&orderby=tst_des-%3E%3E%27%24.%221%22%27+DESC&export_to_excel=0"
+      "url": "https://test.isograd.com/testforms/AdminTestFormsWithTable?filter_rows_per_page=50&filter_search=&filter_brd_id=-1&filter_lan_id=-1&filter_sbj_id=-1&filter_typ_id=-1&filter_from=&filter_to=&changepage=1&orderby=srt_tst_des+DESC&export_to_excel=0"
     },
     {
       "name": "02-modal-creation.png",
-      "caption": "Modal de création — sélection du sujet, langue, et type de formulaire.",
+      "caption": "Fenêtre de création — sélection de la langue du test.",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/testforms/AdminTestFormsWithTable?filter_rows_per_page=50&filter_search=&filter_brd_id=-1&filter_lan_id=-1&filter_sbj_id=-1&filter_typ_id=-1&filter_alg_id=-1&filter_res_typ_id=-1&filter_geo_vis_id=-1&filter_from=&filter_to=&changepage=1&orderby=tst_des-%3E%3E%27%24.%221%22%27+DESC&export_to_excel=0"
+      "url": "https://test.isograd.com/testforms/AdminTestFormsWithTable?filter_rows_per_page=50&filter_search=&filter_brd_id=-1&filter_lan_id=-1&filter_sbj_id=-1&filter_typ_id=-1&filter_from=&filter_to=&changepage=1&orderby=srt_tst_des+DESC&export_to_excel=0"
     },
     {
       "name": "03-onglets-avance.png",
-      "caption": "Fiche d'édition d'un formulaire — onglets Général / Description / Algorithme / Résultats / Autres paramètres / Intro & Feedback.",
+      "caption": "Page d'édition d'un test — onglets Caractéristiques générales / Gestion du temps / Messages de début et de fin / Statistiques.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/testforms/TestFormUpdate?tst_frm_uid=47cc07b3-3035-4273-a70f-c2e10777ad7b"
+      "url": "https://test.isograd.com/testforms/TestFormUpdate?tst_frm_uid=70726383-a2af-4b44-b84e-cdd793330348"
     }
   ]
 }

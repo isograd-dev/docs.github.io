@@ -1,6 +1,6 @@
 {
   "chapter": "candidates",
-  "generated_at": "2026-08-15T12:03:06.263Z",
+  "generated_at": "2026-09-11T13:58:34.916Z",
   "base_url": "https://appdev.isograd.com",
   "captures": [
     {
@@ -20,26 +20,46 @@
       "name": "03-formulaire-ajout-vide.png",
       "caption": "Formulaire \"Ajouter un candidat\" — champs groupe, civilité, prénom, nom, email, langue.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/candidates/CandidateUpdate?is_create=1&can_uid=f3b0468b-6eda-4840-b247-44604083abde"
+      "url": "https://test.isograd.com/candidates/CandidateUpdate?is_create=1&can_uid=5f67e43d-168a-47c0-a19c-5e13c1773ce8"
     },
     {
       "name": "04-candidat-cree.png",
       "caption": "Fiche candidat après création — onglet d'inscription aux tests visible.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=9fa75f64-0221-484d-9233-7b76449366ec"
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=57941f77-dac1-4764-a625-cb000e731021"
     },
     {
       "name": "05-page-inscription-tests.png",
-      "caption": "Page d'inscription aux tests — bouton \"Ajouter un test\" et tableau d'inscriptions existantes.",
+      "caption": "Page d'inscription aux tests — barre de boutons (Inscrire à un test, Modifier, Paramètres, Envoyer les tests…) et tableau des tests planifiés.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=9fa75f64-0221-484d-9233-7b76449366ec"
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=57941f77-dac1-4764-a625-cb000e731021"
     },
     {
       "name": "06-bouton-ajouter-test.png",
-      "caption": "Bouton \"Ajouter un test\".",
+      "caption": "Bouton \"Inscrire à un test\".",
       "kind": "element",
       "selector": "#AddTestBtn",
-      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=9fa75f64-0221-484d-9233-7b76449366ec"
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=57941f77-dac1-4764-a625-cb000e731021"
+    },
+    {
+      "name": "11-modal-inscription-test.png",
+      "caption": "Fenêtre \"Inscrire le candidat à un test\" — langue, recherche par filtre (catalogue/personnalisé, sujet, test), description et coût, recherche par saisie, session et profil de surveillance.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=57941f77-dac1-4764-a625-cb000e731021"
+    },
+    {
+      "name": "12-tableau-tests-planifies.png",
+      "caption": "Fiche candidat après inscription — tableau des tests planifiés, boutons de ligne (Supprimer, Paramètres, Commentaire de l'administrateur) au survol.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=57941f77-dac1-4764-a625-cb000e731021"
+    },
+    {
+      "name": "13-modal-parametres-test.png",
+      "caption": "Fenêtre \"Paramètres du test\" — session, profil de surveillance, désactivation de la manipulation.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=57941f77-dac1-4764-a625-cb000e731021#"
     },
     {
       "name": "07-page-import.png",
@@ -62,10 +82,17 @@
     },
     {
       "name": "10-bouton-invitation.png",
-      "caption": "Bouton d'envoi d'invitation par email.",
+      "caption": "Bouton \"Envoyer les tests au candidat\".",
       "kind": "element",
-      "selector": "[id*=\"SendEmail\"], [id*=\"RegisterEmail\"], button:has-text(\"invitation\")",
-      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=9fa75f64-0221-484d-9233-7b76449366ec"
+      "selector": "#SendEmailBtn",
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=57941f77-dac1-4764-a625-cb000e731021"
+    },
+    {
+      "name": "14-modal-email-invitation.png",
+      "caption": "Fenêtre \"Détails du message\" — titre, modèle de message, émetteur, copie à un administrateur, envoi programmé et aperçu de l'email.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/clientadmin/candidates/CandidateTestUpdate?can_uid=57941f77-dac1-4764-a625-cb000e731021"
     }
   ]
 }

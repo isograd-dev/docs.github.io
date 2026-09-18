@@ -4,90 +4,102 @@ layout: question-manual
 
 # Questions
 
-The **Questions management** page is the **nerve centre** of the Questions module: this is where you find every question authored on the platform, where you filter them along several dimensions (subject, domain, status, owner, etc.), and from where you launch the **editor** to create or modify a question.
+The **Item management** page is the **nerve centre** of the Question Module: this is where you find every question authored on your platform, where you filter them along several dimensions (subject, domain, status, responsible person, etc.), and from where you launch the **editor** to create or modify a question.
 
 The detailed behaviour of the editor itself is covered in the [Question editor](/ai/en/question-module/question-editor/) chapter.
 
-Open the page through the menu **Questions module → Questions**.
+Open the page through the menu **Items**.
 
-![Questions management page](img/01-liste-questions.png)
+![Item management page](img/01-liste-questions.png)
 
 The table shows the following columns:
 
 | Column | Content |
 |---|---|
-| **ID** | Text identifier of the question (`que_str_id`, for example `AC19FR0001`). The ☆ before the ID is the star/favorite button. |
+| **ID** | Text identifier of the question (for example `S12Q0001`). The ☆ before the ID is the star button. Questions in *Production* status are highlighted. |
 | **Subject** | Subject the question is attached to. |
 | **Title** | Short label of the question. |
-| **Type** | Answer type: MCQ, Fill in the blanks, Code, Manipulation, etc. |
+| **Type** | Answer type: MCQ, Fill in the blanks, Drag-and-drop, etc. |
 | **Taken** | Number of times the question has already been served to candidates. |
-| **Success** | Success rate (%) — percentage of candidates who answered correctly. |
-| **B** | **Difficulty index** from the IRT (Item Response Theory) model — the higher the value, the harder the question. A **negative** value indicates an easy question, **positive** a hard one. |
-| **Status** | Editorial state: *Draft*, *Under review*, *Production*, etc. |
-| **Owner** | Administrator in charge of maintaining the question. |
+| **Success rate** | Success rate (%) — percentage of candidates who answered correctly. |
+| **B** | The difficulty level set by the author: *Easy*, *Medium* or *Hard*. |
+| **Status** | Editorial state of the question — see [Question statuses](#question-statuses). |
+| **Responsible person** | Administrator in charge of the question. |
 
-> 💡 **Sub-pages of the Questions menu** — The **Questions** menu in the sidebar also gives access to: **Answer scales**, **Comments on questions**, **Linked questions**, **Question verification** and **Calibration**. These sub-pages are documented in their dedicated chapters.
+> ⚠️ **No subject yet?** — If no subject is available to you, the page opens a dialog *"No subject available"*: you must create at least one subject before creating questions. The dialog's button takes you to the **Subjects** page.
+
+
+## Question statuses {#question-statuses}
+
+Every question carries a **status** that drives its life cycle:
+
+- **Draft** — the status of every new question (created, duplicated or imported). The question can be edited freely and is **not** served to candidates.
+- Intermediate review statuses (for example *To be verified*) let you organise proofreading between authors.
+- **Production** — the question is **available to candidates** in the tests that select it. A question in Production is **read-only** in the editor.
+
+The status is changed from the **review block** at the bottom of the editor (field **Status**), then saved. To edit a Production question again, set its status back to *Draft* in that block and save; the review block stays editable on a locked question. Administrators holding the appropriate privilege can also **unlock** it from the editor toolbar.
 
 
 ## Filters {#filters}
 
-The **Filters** panel is very comprehensive — it is the main tool for exploring a large reference base (several thousand questions per subject).
+The **Filters** panel is very comprehensive — it is the main tool for exploring a large question bank.
 
 ![Full filters panel](img/02-filtres.png)
 
 ### Basic filters
 
+- **Bookmarks** — selector of saved filter combinations, see [Bookmarks](#search-favorites).
 - **Search** — free text (on the question ID, the title, or content fragments).
-- **Subject** — Choices.js multi-select. Restrict to one or more subjects.
+- **Subject** — multi-select. Restrict to one or more subjects.
 - **Language** — the question's language.
-- **Answer type** — MCQ (single / multiple choice), Code, Manipulation, True/False, Essay, etc.
-- **Question status** — *Draft*, *Under review*, *Active*, *Disabled*. Lets you filter the editorial pipeline.
+- **Question set** — multi-select. The badge next to the field toggles between **(OR)** (questions in any selected set) and **(AND)** (questions in all of them).
+- **Answer type** — MCQ, Fill in the blanks, Drag-and-drop, Manual marking, etc.
+- **Status** — *Draft*, *Production*, etc. Lets you filter the editorial pipeline.
+- **Responsible person** — restrict to questions under a given administrator's responsibility.
+- **Include items "To be deleted"** — switch; off by default.
+- **Flagged** — switch; shows only the questions you have starred.
 
-### Advanced filters
+### Domain filter
 
-These filters only become usable **after a subject has been selected** (they need the context of a subject to populate their options):
-
-- **Domain** — restrict to questions attached to a given domain of the selected subject.
-- **Question set** — restrict to questions belonging to a given set.
-- **Owner** — restrict to questions under a given administrator's responsibility.
+The **Domain** filter only appears **after a single subject has been selected**: it needs the subject to list its domains.
 
 ### Reset
 
 The **Reset** button at the top of the panel restores all filters to their default values and reloads the full table.
 
 
-## Search favorites {#search-favorites}
+## Bookmarks {#search-favorites}
 
-**Favorites** let you memorise a **combination of filters** you use often and recall it in one click — for example *"All Excel 365 questions in Draft status assigned to me"*.
+**Bookmarks** let you memorise a **combination of filters** you use often and recall it in one click — for example *"All Excel questions in Draft status assigned to me"*.
 
-### Create a favorite
+### Create a bookmark
 
-1. Apply the desired filters (subject, status, owner, etc.).
-2. Click **Save as favorite** in the favorites bar.
-3. Enter a name for the favorite (for example `Excel-Drafts-Marie`).
-4. Confirm. The favorite appears in the favorites dropdown.
+1. Apply the desired filters (subject, status, responsible person, etc.).
+2. Click the **+** button next to the **Bookmarks** selector.
+3. Enter a name for the bookmark (for example `Excel-Drafts-Marie`).
+4. Confirm. The bookmark appears in the selector.
 
-### Use a favorite
+### Use a bookmark
 
-In the **Favorites** selector, pick the desired favorite. The page reloads with the memorised filters applied automatically.
+In the **Bookmarks** selector, pick the desired bookmark. The page reloads with the memorised filters applied automatically.
 
-### Delete a favorite
+### Delete a bookmark
 
-Select the favorite, then click **Delete favorite**. The favorite is removed from the selector.
+Select the bookmark, then click the **−** button. The bookmark is removed from the selector.
 
-> 💡 **Personal favorites** — Favorites are **specific to your administrator account**: they are not shared with other authors.
+> 💡 **Personal bookmarks** — Bookmarks are **specific to your administrator account**: they are not shared with other authors.
 
 
 ## Star a question {#star-a-question}
 
-On the **Title** column of each row, a **star icon** lets you flag a question to find it again quickly later:
+In the **ID** column of each row, a **star icon** lets you flag a question to find it again quickly later:
 
-- **Click the star** to add the question to your personal favorites (the star switches to an active/filled state).
-- **Click again** to remove it.
+- **Click the star** to mark the question (the star switches to a filled state).
+- **Click again** to remove the marker.
 
-Starred questions can then be filtered through a dedicated filter (or spotted at a glance via their filled star in any list).
+Starred questions can then be listed with the **Flagged** filter.
 
-> 💡 **Difference with search favorites** — Starring **a question** saves an **individual question**. A **search favorite** saves a **combination of filters**. The two mechanisms are complementary.
+> 💡 **Difference with bookmarks** — Starring **a question** flags an **individual question**. A **bookmark** saves a **combination of filters**. The two mechanisms are complementary.
 
 
 ## Row actions {#row-actions}
@@ -95,31 +107,27 @@ Starred questions can then be filtered through a dedicated filter (or spotted at
 Each row of the table presents several action buttons at the end of the row:
 
 - **Edit** (pencil) — opens the question's edit page. See [Question editor](/ai/en/question-module/question-editor/).
-- **Preview** (Play icon) — opens the **preview** of the question as it will appear to a candidate (statement, options, visual aid). Lets you validate visually without starting a real test.
-- **Duplicate** — creates a copy of the question and opens its edit page. The copy inherits everything (statement, answers, parameters) but gets a new `id`.
-- **Delete** — deletes the question. Refused if the question has already been taken by candidates.
+- **Preview** (Play icon) — opens the question as it will appear to a candidate (statement, options, media). Lets you validate visually without starting a real test.
+- **Duplicate** — opens a dialog where you choose the **subject**, the **answer type** and the **language** of the copy, then creates it and opens its edit page. The copy starts in *Draft* status.
+- **Delete** — deletes the question. Shown to administrators allowed to modify the question. Refused if the question is used in the fixed question list of a **test**.
 
 
-## Bulk actions (ACTIONS panel) {#bulk-actions}
+## Action bar {#bulk-actions}
 
-The **ACTIONS** panel on the left of the page offers several operations applicable to **several questions** at once (selected via the checkboxes at the start of each row):
+The action bar at the top of the page offers:
 
-- **Add a question** — opens the editor to create a new question.
-- **Transfer selected questions to production** — promotes the selected questions from the pre-production environment to production. Reserved for strategic operations (subject overhaul, new wave of calibrated questions).
-- **Unlock selected questions** — releases the editorial lock placed by another administrator on the selected questions (useful when someone has gone on leave with questions still locked).
-- **Reassign questions to another admin** — changes the owner ("Owner") for several questions at once. Handy when transferring an editorial portfolio.
-- **Check obsolescence of selected questions** — runs an automatic diagnostic to detect questions that are too old, never taken, or with an aberrant failure rate.
-- **Improve titles** — semi-automatic tool to rephrase or standardise the titles of several questions at once (via generative AI depending on your configuration).
-- **Import a questions file** — see [Import questions](#import-questions) below.
-
-> ⚠️ **Transfer to production is irreversible** — Check the selected questions carefully before triggering the transfer: once in production, they are immediately available to real client accounts.
+- **Add an item** — opens a dialog asking for the **subject**, the **answer type** and the **language**, then creates the question and opens the editor.
+- **Import an item file** — see [Import questions](#import-questions) below.
+- **Export to YML** — downloads the questions currently filtered as a YAML file (up to 500 questions; beyond 100 questions the download is a zip archive split into parts). Useful for backups or for working on questions with an AI assistant.
+- **Print item list** — generates a printable version of the questions ticked in the table (100 at most).
+- **Export to Excel** — see [Export to Excel](#export-to-excel).
 
 
 ## Import questions {#import-questions}
 
-Import lets you create several questions in a single operation through an Excel file.
+Import lets you create several questions in a single operation.
 
-1. Click **Import a questions file** in the action bar.
+1. Click **Import an item file** in the action bar.
 
     ![Question import window](img/03-modal-import.png)
 
@@ -127,57 +135,37 @@ Import lets you create several questions in a single operation through an Excel 
 
     - **Subject** the imported questions will be attached to.
     - **Language** of the questions.
-    - **Question set** (optional) — the set to which every imported question will be attached as a batch.
-    - **Excel file** — pick your file in the expected format.
+    - **Question set(s)** to which every imported question will be attached.
+    - **File to import** — an Excel file in the expected format. Download the **file template** via the link in the window: one row per multiple-choice question with its title, statement, up to ten options, the correct option numbers, its domains and its maximum score.
 
-3. Click **Import**. The server processes the file and redirects to the questions list, reporting the number of questions created and any line-by-line errors.
+3. Click **Import**. The server processes the file, then the list is filtered on the imported subject, language and sets and reports the number of questions created.
 
-> 💡 **File template** — Download the **Excel template** via the link in the import window. It lists the expected columns: statement, answer options, correct answer, domain, level, etc. The format depends on the type of questions to import.
+> 💡 **YAML files** — Switch on **YML file** in the window to import a YAML document instead of an Excel file, for example one produced with an AI assistant following the platform's question format. The YAML importer handles every answer type. A question already in *Production* cannot be overwritten by an import.
+
+All imported questions start in **Draft** status.
 
 
 ## Export to Excel {#export-to-excel}
 
-The **Export to Excel** button in the action bar generates an `.xlsx` file listing every question currently filtered. Handy for reference-base audits, editorial reviews, or sharing with external contributors.
+The **Export to Excel** button in the action bar generates an `.xlsx` file listing every question currently filtered, including their domains. Handy for reference-base audits, editorial reviews, or sharing with external contributors.
 
 
 ## Preview a question {#preview-a-question}
 
 The **Preview** button (Play icon) on each row opens the question as it will be presented to the candidate:
 
-- The rendered **statement** (HTML, math, code, image, etc.).
+- The rendered **statement** (formatting, images, media).
 - The **answer options** or the input area, depending on the question type.
-- Any **visual aid** (image, PDF) attached.
+- Any **visual aid** or **reference document** attached.
 
-You can interact with the question (click options, enter code, manipulate) to verify behaviour. **No result is saved** — it is a dry run.
+You can interact with the question (click options, enter text, manipulate) to verify behaviour. **No result is saved** — it is a dry run.
 
-> 💡 **When to use it?** — Always preview after editing a question to check the candidate-side rendering. It is also indispensable during editorial review to validate quality before switching the status to *Active*.
-
-
-## Question verification {#question-verification}
-
-The **Question verification** page (menu **Questions module → Questions → Question check**) is a **diagnostic tool** that identifies questions showing editorial anomalies on a given subject — for example: no correct answer marked, missing options, incomplete translation, visual aid file referenced but missing, etc.
-
-![Question verification page](img/04-page-verification.png)
-
-### Usage
-
-1. Open the page from the menu **Questions module → Questions → Question check**.
-2. Select the **subject** in the filter.
-3. Click the verification button: the server scans every question of the subject and lists those exhibiting a problem.
-4. The table shows, for each problematic question: **ID**, **Title**, **Author**, **Diagnosis** (the nature of the problem).
-
-5. Click the **ID** or the **Title** to open the question's editor and fix it.
-
-> 💡 **Quality routine** — Run this verification **at every major editorial review** or before a transfer to production. It is the most efficient tool for catching oversights (option not marked correct, missing translation).
-
-### Export the report
-
-The **Export to Excel** button retrieves the full list of detected issues for distribution to your authoring team.
+> 💡 **When to use it?** — Always preview after editing a question to check the candidate-side rendering. It is also indispensable during editorial review to validate quality before switching the status to *Production*.
 
 
 ## Best practices {#best-practices}
 
-- **Filter before acting** — on a large reference base, manipulating the full list is pointless. First narrow the scope with filters (subject + status + owner at minimum).
-- **Use favorites for recurring views** — the "drafts to finish" view consulted every week is worth its own favorite.
+- **Filter before acting** — on a large question bank, manipulating the full list is pointless. First narrow the scope with filters (subject + status + responsible person at minimum).
+- **Use bookmarks for recurring views** — the "drafts to finish" view consulted every week is worth its own bookmark.
 - **Prefer preview to opening the editor** when you just want to *check* a question: the editor takes longer to load.
-- **Run verification before publishing** — a subject transferred to production with broken questions degrades the perceived quality of the platform.
+- **Check before publishing** — use the **Check** button of the editor on each question before switching it to *Production*: it catches the usual oversights (option not marked correct, empty statement).

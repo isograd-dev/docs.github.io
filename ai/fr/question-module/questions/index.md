@@ -4,11 +4,11 @@ layout: question-manual
 
 # Questions
 
-La page **Gestion des questions** est la page principale du module Questions : c'est ici que vous retrouvez toutes les questions rédigées sur la plateforme, que vous filtrez selon plusieurs critères (sujet, domaine, statut, personne responsable…), et d'où vous lancez l'**éditeur** pour créer ou modifier une question.
+La page **Gestion des questions** est le **centre nerveux** du module Questions : c'est ici que vous retrouvez toutes les questions rédigées sur votre plateforme, que vous les filtrez selon plusieurs dimensions (sujet, domaine, statut, personne concernée, etc.), et depuis laquelle vous lancez l'**éditeur** pour créer ou modifier une question.
 
-Le fonctionnement détaillé de l'éditeur lui-même est couvert dans le chapitre [Éditeur de questions](/ai/fr/question-module/question-editor/).
+Le comportement détaillé de l'éditeur lui-même est couvert dans le chapitre [Éditeur de questions](/ai/fr/question-module/question-editor/).
 
-Accédez à la page via le menu **Module Questions → Questions**
+Accédez à la page via le menu **Questions**.
 
 ![Page "Gestion des questions"](img/01-liste-questions.png)
 
@@ -16,103 +16,116 @@ Le tableau présente les colonnes suivantes :
 
 | Colonne | Contenu |
 |---|---|
-| **ID** | Identifiant texte de la question ( par exemple `AC19FR0001`). Le ☆ devant l'ID est le bouton d'étoile/favori. |
+| **ID** | Identifiant textuel de la question (par exemple `S12Q0001`). L'étoile ☆ devant l'identifiant est le bouton indicateur. Les questions au statut *Production* sont mises en évidence. |
 | **Sujet** | Sujet auquel la question est rattachée. |
-| **Titre** | Titre de la question. |
-| **Type** | Type de réponse : QCM, Texte à trous, Code, Manipulation, etc. |
+| **Titre** | Libellé court de la question. |
+| **Type** | Type de réponse : QCM, Texte à trous, Glisser-déposer, etc. |
 | **Passée** | Nombre de fois où la question a déjà été posée à des candidats. |
-| **Succès** | Taux de succès (%) — pourcentage de candidats ayant correctement répondu. |
-| **B** | **Indice de difficulté** issu du modèle IRT (Item Response Theory) — plus la valeur est haute, plus la question est difficile. Une valeur **négative** indique une question facile, **positive** une question difficile. |
-| **Statut** | État éditorial : *À vérifier*, *À corriger*, *Production*, etc. |
+| **Succès** | Taux de réussite (%) — pourcentage de candidats ayant répondu correctement. |
+| **B** | Le niveau de difficulté fixé par l'auteur : *Facile*, *Moyenne* ou *Difficile*. |
+| **Statut** | État éditorial de la question — voir [Statuts d'une question](#statuts). |
 | **Personne concernée** | Administrateur en charge de la question. |
 
-> 💡 **Sous-pages du menu Questions** — Le menu **Questions** dans la barre latérale donne aussi accès à : **Échelles de réponses**, **Commentaires sur les questions**, **Questions liées**, **Vérification des questions** et **Calibration**. Ces sous-pages sont documentées dans leurs chapitres dédiés.
+> ⚠️ **Aucun sujet ?** — Si aucun sujet ne vous est accessible, la page ouvre une fenêtre *« Pas de sujet disponible »* : vous devez créer au moins un sujet avant de créer des questions. Le bouton de la fenêtre vous conduit à la page **Sujets**.
+
+
+## Statuts d'une question {#statuts}
+
+Chaque question porte un **statut** qui régit son cycle de vie :
+
+- **En rédaction** — statut de toute nouvelle question (créée, dupliquée ou importée). La question est librement modifiable et **n'est pas** posée aux candidats.
+- Des statuts intermédiaires de relecture (par exemple *À vérifier*) permettent d'organiser la relecture entre auteurs.
+- **Production** — la question est **disponible pour les candidats** dans les tests qui la sélectionnent. Une question en Production est en **lecture seule** dans l'éditeur.
+
+Le statut se change depuis le **bloc de revue** en bas de l'éditeur (champ **Statut**), puis s'enregistre. Pour modifier à nouveau une question en Production, repassez son statut à *En rédaction* dans ce bloc et enregistrez ; le bloc de revue reste modifiable sur une question verrouillée. Les administrateurs disposant du privilège adéquat peuvent aussi la **déverrouiller** depuis la barre d'outils de l'éditeur.
 
 
 ## Filtres {#filtres}
 
-Le panneau **Filtres** est très complet — c'est l'outil principal pour explorer un référentiel volumineux (plusieurs milliers de questions par sujet).
+Le panneau **Filtres** est très complet — c'est l'outil principal pour explorer une base de questions volumineuse.
 
 ![Panneau de filtres complet](img/02-filtres.png)
 
 ### Filtres de base
 
-- **Recherche** — texte libre (sur l'ID de la question, le titre, ou des fragments de contenu).
-- **Sujet** — Choices.js multi-sélection. Restreindre à un ou plusieurs sujets.
-- **Langue** — la langue de la question.
-- **Type de réponse** — QCM (choix unique / multiple), Code, Manipulation, Vrai/Faux, Rédaction, etc.
-- **Statut question** — *Brouillon*, *En revue*, *Active*, *Désactivée*. Permet de filtrer le pipeline éditorial.
+- **Favoris** — sélecteur des combinaisons de filtres enregistrées, voir [Favoris de recherche](#favoris-de-recherche).
+- **Rechercher** — texte libre (sur l'identifiant, le titre ou des fragments de contenu).
+- **Sujet** — sélection multiple. Restreint à un ou plusieurs sujets.
+- **Langue** — langue de la question.
+- **Jeu de questions** — sélection multiple. Le badge à côté du champ bascule entre **(OU)** (questions dans l'un des jeux sélectionnés) et **(ET)** (questions dans tous).
+- **Type de réponse** — QCM, Texte à trous, Glisser-déposer, Notation manuelle, etc.
+- **Statut** — *En rédaction*, *Production*, etc. Permet de filtrer le pipeline éditorial.
+- **Personne concernée** — restreint aux questions sous la responsabilité d'un administrateur donné.
+- **Inclure les questions « À supprimer »** — commutateur, désactivé par défaut.
+- **Avec indicateur** — commutateur ; n'affiche que les questions que vous avez étoilées.
 
-### Filtres avancés
+### Filtre Domaine
 
-Ces filtres ne deviennent utilisables qu'**après avoir sélectionné un sujet** (ils nécessitent le contexte d'un sujet pour proposer leurs options) :
-
-- **Domaine** — restreindre aux questions rattachées à un domaine donné du sujet sélectionné.
-- **Jeu de questions** — restreindre aux questions appartenant à un jeu donné.
-- **Responsable** — restreindre aux questions sous la responsabilité d'un administrateur donné.
+Le filtre **Domaine** n'apparaît qu'**après la sélection d'un seul sujet** : il a besoin du sujet pour lister ses domaines.
 
 ### Réinitialiser
 
-Le bouton **Réinitialiser** en haut du panneau remet tous les filtres à leurs valeurs par défaut et recharge le tableau complet.
+Le bouton **Réinitialiser** en haut du panneau remet tous les filtres à leur valeur par défaut et recharge le tableau complet.
 
 
 ## Favoris de recherche {#favoris-de-recherche}
 
-Les **favoris** vous permettent de mémoriser une **combinaison de filtres** souvent utilisée pour la rappeler en un clic — par exemple *« Toutes les questions Excel 365 en statut Brouillon assignées à moi »*.
+Les **favoris** permettent de mémoriser une **combinaison de filtres** utilisée souvent et de la rappeler en un clic — par exemple *« Toutes les questions Excel en rédaction qui me sont attribuées »*.
 
 ### Créer un favori
 
-1. Appliquez les filtres souhaités (sujet, statut, responsable…).
-2. Cliquez sur **Sauvegarder comme favori** dans la barre des favoris.
+1. Appliquez les filtres voulus (sujet, statut, personne concernée, etc.).
+2. Cliquez sur le bouton **+** à côté du sélecteur **Favoris**.
 3. Saisissez un nom pour le favori (par exemple `Excel-Brouillons-Marie`).
-4. Validez. Le favori apparaît dans le sélecteur déroulant des favoris.
+4. Validez. Le favori apparaît dans le sélecteur.
 
 ### Utiliser un favori
 
-Dans le sélecteur **Favoris**, choisissez le favori souhaité. La page se recharge avec les filtres mémorisés appliqués automatiquement.
+Dans le sélecteur **Favoris**, choisissez le favori voulu. La page se recharge avec les filtres mémorisés appliqués automatiquement.
 
 ### Supprimer un favori
 
-Sélectionnez le favori, puis cliquez sur **Supprimer le favori**. Le favori est retiré du sélecteur.
+Sélectionnez le favori, puis cliquez sur le bouton **−**. Le favori est retiré du sélecteur.
 
-> 💡 **Favoris personnels** — Les favoris sont **propres à votre compte administrateur** : ils ne sont pas partagés avec les autres rédacteurs.
+> 💡 **Favoris personnels** — Les favoris sont **propres à votre compte administrateur** : ils ne sont pas partagés avec les autres auteurs.
 
 
 ## Étoiler une question {#etoiler-une-question}
 
-Sur la colonne **Titre** de chaque ligne, une **icône étoile** vous permet de marquer une question pour la retrouver rapidement plus tard :
+Dans la colonne **ID** de chaque ligne, une **icône étoile** permet de marquer une question pour la retrouver rapidement :
 
-- **Cliquez sur l'étoile** pour ajouter la question à vos favoris personnels (l'étoile passe à un état actif/plein).
-- **Cliquez à nouveau** pour la retirer.
+- **Cliquez sur l'étoile** pour marquer la question (l'étoile passe à l'état plein).
+- **Cliquez à nouveau** pour retirer l'indicateur.
 
-Les questions étoilées peuvent ensuite être filtrées via un filtre dédié (ou retrouvées d'un coup d'œil à leur étoile pleine dans n'importe quelle liste).
+Les questions étoilées se listent ensuite avec le filtre **Avec indicateur**.
 
-> 💡 **Différence avec les favoris de recherche** — Étoiler **une question** sauvegarde une **question individuelle**. Un **favori de recherche** sauvegarde une **combinaison de filtres**. Les deux mécanismes sont complémentaires.
+> 💡 **Différence avec les favoris de recherche** — Étoiler **une question** marque une **question individuelle**. Un **favori de recherche** enregistre une **combinaison de filtres**. Les deux mécanismes sont complémentaires.
 
 
 ## Actions sur une ligne {#actions-sur-une-ligne}
 
-Chaque ligne du tableau présente plusieurs boutons d'action en bout de ligne :
+Chaque ligne du tableau présente plusieurs boutons d'action en fin de ligne :
 
-- **Éditer** (crayon) — ouvre la page d'édition de la question. Voir [Éditeur de questions](/ai/fr/question-module/question-editor/).
-- **Prévisualiser** (icône Play) — ouvre la **prévisualisation** de la question telle qu'elle apparaîtra à un candidat (énoncé, options, aide visuelle). Permet de valider visuellement sans démarrer un vrai test.
-- **Dupliquer** — crée une copie de la question, ouvre sa fiche d'édition. La copie hérite de tout (énoncé, réponses, paramètres) mais a un nouvel `id`.
-- **Supprimer** — supprime la question. Refusée si la question apparaît dans un test.
+- **Modifier** (crayon) — ouvre la page d'édition de la question. Voir [Éditeur de questions](/ai/fr/question-module/question-editor/).
+- **Aperçu** (icône Play) — ouvre la question telle qu'elle apparaîtra au candidat (énoncé, options, médias). Permet de valider visuellement sans lancer un vrai test.
+- **Dupliquer** — ouvre une fenêtre où vous choisissez le **sujet**, le **type de réponse** et la **langue** de la copie, puis la crée et ouvre sa page d'édition. La copie démarre au statut *En rédaction*.
+- **Supprimer** — supprime la question. Affiché aux administrateurs autorisés à modifier la question. Refusé si la question figure dans la liste fixe de questions d'un **test**.
 
 
-## Actions de masse (panneau ACTIONS) {#actions-de-masse}
+## Barre d'actions {#actions-de-masse}
 
-Le panneau **ACTIONS** à gauche de la page propose plusieurs opérations applicables à **plusieurs questions** à la fois (sélectionnées via les cases en début de ligne) :
+La barre d'actions en haut de la page propose :
 
-- **Ajouter une question** — ouvre l'éditeur pour créer une nouvelle question.
+- **Ajouter une question** — ouvre une fenêtre demandant le **sujet**, le **type de réponse** et la **langue**, puis crée la question et ouvre l'éditeur.
 - **Importer un fichier de questions** — voir [Importer des questions](#importer-des-questions) ci-dessous.
-
-> ⚠️ **Le transfert en production est irréversible** — Vérifiez minutieusement les questions sélectionnées avant de déclencher le transfert : une fois en production, elles sont immédiatement disponibles aux comptes clients réels.
+- **Exporter en YML** — télécharge les questions actuellement filtrées sous forme de fichier YAML (500 questions au plus ; au-delà de 100 questions, le téléchargement est une archive zip découpée en parties). Utile pour les sauvegardes ou pour travailler les questions avec un assistant IA.
+- **Imprimer les questions sélectionnées** — génère une version imprimable des questions cochées dans le tableau (100 au maximum).
+- **Exporter vers Excel** — voir [Exporter vers Excel](#exporter-vers-excel).
 
 
 ## Importer des questions {#importer-des-questions}
 
-L'import vous permet de créer plusieurs questions en une seule opération via un fichier Excel.
+L'import permet de créer plusieurs questions en une seule opération.
 
 1. Cliquez sur **Importer un fichier de questions** dans la barre d'actions.
 
@@ -120,59 +133,39 @@ L'import vous permet de créer plusieurs questions en une seule opération via u
 
 2. Renseignez :
 
-    - **Sujet** auquel les questions importées seront rattachées.
-    - **Langue** des questions.
-    - **Jeu de questions** (facultatif) — le jeu auquel rattacher toutes les questions importées en bloc.
-    - **Fichier Excel** — sélectionnez votre fichier au format attendu.
+    - Le **sujet** auquel rattacher les questions importées.
+    - La **langue** des questions.
+    - Le ou les **jeux de questions** auxquels chaque question importée sera rattachée.
+    - Le **fichier à importer** — un fichier Excel au format attendu. Téléchargez le **modèle de fichier** via le lien de la fenêtre : une ligne par question à choix multiple avec son titre, son énoncé, jusqu'à dix propositions, les numéros des propositions correctes, ses domaines et son score maximal.
 
-3. Cliquez sur **Importer**. Le serveur traite le fichier et redirige vers la liste des questions, en signalant le nombre de questions créées et les éventuelles erreurs ligne par ligne.
+3. Cliquez sur **Importer**. Le serveur traite le fichier, puis la liste est filtrée sur le sujet, la langue et les jeux importés et indique le nombre de questions créées.
 
-> 💡 **Modèle de fichier** — Téléchargez le **modèle Excel** via le lien dans la fenêtre d'import. Il indique les colonnes attendues : énoncé, options de réponse, bonne réponse, domaine, niveau, etc. Le format dépend du type de questions à importer.
+> 💡 **Fichiers YAML** — Activez **Fichier YML** dans la fenêtre pour importer un document YAML au lieu d'un fichier Excel, par exemple produit avec un assistant IA suivant le format de question de la plateforme. L'importateur YAML gère tous les types de réponse. Une question déjà en *Production* ne peut pas être écrasée par un import.
+
+Toutes les questions importées démarrent au statut **En rédaction**.
 
 
 ## Exporter vers Excel {#exporter-vers-excel}
 
-Le bouton **Exporter vers Excel** dans la barre d'actions génère un fichier `.xlsx` listant toutes les questions actuellement filtrées. Pratique pour les audits du référentiel, les revues éditoriales ou la communication à des contributeurs externes.
+Le bouton **Exporter vers Excel** de la barre d'actions génère un fichier `.xlsx` listant toutes les questions actuellement filtrées, avec leurs domaines. Pratique pour les audits de base, les revues éditoriales ou le partage avec des contributeurs externes.
 
 
 ## Prévisualiser une question {#previsualiser-une-question}
 
-Le bouton **Prévisualiser** (icône Play) sur chaque ligne ouvre la question telle qu'elle sera présentée au candidat :
+Le bouton **Aperçu** (icône Play) de chaque ligne ouvre la question telle qu'elle sera présentée au candidat :
 
-- L'**énoncé** rendu (HTML, math, code, image…).
-- Les **options de réponse** ou la zone de saisie selon le type de question.
-- Toute **aide visuelle** (image, PDF) attachée.
+- L'**énoncé** rendu (mise en forme, images, médias).
+- Les **propositions de réponse** ou la zone de saisie, selon le type de question.
+- Les éventuelles **aides visuelles** ou **documents de référence** attachés.
 
-Vous pouvez interagir avec la question (cliquer des options, saisir du code, manipuler) pour vérifier le comportement. **Aucun résultat n'est enregistré** — c'est un test à blanc.
+Vous pouvez interagir avec la question (cliquer sur des options, saisir du texte, manipuler) pour vérifier le comportement. **Aucun résultat n'est enregistré** — c'est un essai à blanc.
 
-> 💡 **Quand l'utiliser ?** — Toujours prévisualiser après modification d'une question pour vérifier le rendu côté candidat. C'est aussi indispensable lors de la revue éditoriale pour valider la qualité avant de passer le statut à *Active*.
-
-
-## Vérification des questions {#verification-des-questions}
-
-La page **Vérification des questions** (menu **Module Questions → Questions → Vérification des questions**) est un **outil de diagnostic** qui identifie les questions présentant des anomalies éditoriales sur un sujet donné — par exemple : aucune bonne réponse marquée, options manquantes, traduction incomplète, fichier d'aide visuelle référencé mais introuvable, etc.
-
-![Page "Vérification des questions"](img/04-page-verification.png)
-
-### Utilisation
-
-1. Accédez à la page depuis le menu **Module Questions → Questions → Vérification des questions**.
-2. Sélectionnez le **sujet** dans le filtre.
-3. Cliquez sur le bouton de vérification : le serveur scanne toutes les questions du sujet et liste celles qui présentent un problème.
-4. Le tableau affiche pour chaque question problématique : **ID**, **Titre**, **Auteur**, **Diagnostic** (la nature du problème).
-
-5. Cliquez sur l'**ID** ou le **Titre** pour ouvrir l'éditeur de la question et corriger.
-
-> 💡 **Routine de qualité** — Lancez cette vérification **à chaque revue éditoriale majeure** ou avant un transfert en production. C'est l'outil le plus efficace pour rattraper les oublis (option non marquée comme correcte, traduction manquante).
-
-### Exporter le rapport
-
-Le bouton **Exporter vers Excel** permet de récupérer la liste complète des problèmes détectés pour distribution à votre équipe de rédacteurs.
+> 💡 **Quand l'utiliser ?** — Prévisualisez systématiquement après avoir modifié une question pour vérifier le rendu côté candidat. C'est aussi indispensable lors des revues éditoriales pour valider la qualité avant de passer le statut à *Production*.
 
 
 ## Bonnes pratiques {#bonnes-pratiques}
 
-- **Filtrez avant d'agir** — sur un référentiel volumineux, manipuler la liste complète est inutile. Réduisez d'abord la portée avec les filtres (sujet + statut + responsable au minimum).
-- **Utilisez les favoris pour les vues récurrentes** — une vue « brouillons à terminer » consultée chaque semaine vaut un favori dédié.
-- **Préférez la prévisualisation à l'ouverture de l'éditeur** quand vous voulez juste *vérifier* une question : l'éditeur prend plus de temps à charger.
-- **Lancez la vérification avant publication** — un sujet transféré en production avec des questions cassées dégrade la qualité perçue de la plateforme.
+- **Filtrer avant d'agir** — sur une base volumineuse, manipuler la liste complète n'a pas de sens. Restreignez d'abord le périmètre avec les filtres (sujet + statut + personne concernée au minimum).
+- **Utiliser les favoris pour les vues récurrentes** — la vue « brouillons à terminer » consultée chaque semaine mérite son favori.
+- **Préférer l'aperçu à l'ouverture de l'éditeur** quand vous voulez simplement *vérifier* une question : l'éditeur est plus long à charger.
+- **Vérifier avant de publier** — utilisez le bouton **Vérifier** de l'éditeur sur chaque question avant de la passer en *Production* : il détecte les oublis courants (proposition non marquée correcte, énoncé vide).

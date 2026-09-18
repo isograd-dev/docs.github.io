@@ -4,81 +4,82 @@ layout: question-manual
 
 # Jeux de questions
 
-Un **jeu de questions** (« question set ») regroupe un ensemble de questions cohérentes que vous voulez **garder ensemble** lors de la composition des formulaires de test : un exercice multi-questions sur un même contexte, une série de questions héritées d'un fournisseur tiers, un module thématique réutilisable d'un formulaire à l'autre.
+Un **jeu de questions** regroupe un ensemble cohérent de questions que l'on souhaite **garder ensemble** lors de la composition des tests : un exercice à plusieurs questions sur le même contexte, une série de questions issue d'un fournisseur tiers, un module thématique réutilisable d'un test à l'autre.
 
-Accédez à la page via le menu **Module Questions → Catégories → Jeux de questions**.
+Accédez à la page via le menu **Catégories → Jeux de questions**.
 
 ![Page "Gestion des jeux de questions"](img/01-liste-jeux.png)
 
-Le tableau liste tous les jeux définis, avec leur **identifiant** et leur **nom**. Les filtres permettent de cibler par texte ou d'inclure les jeux archivés.
+Le tableau liste tous les jeux définis, avec leur **identifiant** et leur **nom**. Les jeux archivés apparaissent grisés lorsqu'ils sont affichés.
 
 
 ## Pourquoi utiliser un jeu de questions ? {#pourquoi-utiliser}
 
 Les jeux de questions répondent à plusieurs besoins :
 
-- **Cohérence de présentation** — un jeu de questions sur un même tableau Excel doit être montré comme un bloc cohérent au candidat, pas dispersé entre des questions sans lien.
-- **Réutilisabilité** — un module thématique préparé une fois peut être ré-injecté dans plusieurs formulaires de test (évaluation, certification, positionnement) sans dupliquer les questions.
-- **Origine éditoriale** — un jeu peut représenter une **commande externe** (questions achetées à un partenaire), avec son propre cycle de vie indépendant.
-- **Maintenance groupée** — modifier le commentaire ou la description d'un jeu se propage à toutes ses questions.
+- **Composition des tests** — lorsqu'un test tire ses questions au hasard, les jeux de questions font partie des critères disponibles pour définir le vivier.
+- **Réutilisabilité** — un module thématique préparé une fois peut être réinjecté dans plusieurs tests sans dupliquer les questions.
+- **Origine éditoriale** — un jeu peut représenter une **commande externe** (questions achetées à un partenaire), avec son cycle de vie propre.
+- **Rapports** — le nom et la description « rapport » du jeu peuvent être affichés dans le rapport du candidat à côté des questions qu'il contient.
 
-> 💡 **Jeu vs domaine** — Un *domaine* est un découpage **pédagogique** (compétences évaluées). Un *jeu* est un découpage **organisationnel** (regroupement éditorial). Une question appartient à un seul domaine mais peut faire partie d'aucun ou d'un seul jeu.
+> 💡 **Jeu vs domaine** — Un *domaine* est un découpage **pédagogique** (compétences évaluées). Un *jeu* est un découpage **organisationnel** (regroupement éditorial). Une question appartient à un domaine mais peut faire partie de plusieurs jeux.
 
 
 ## Créer un jeu de questions {#creer-un-jeu}
 
-La création est **directe** — pas de modal de pré-création.
+La création est **directe** — pas de fenêtre préalable.
 
-1. Depuis la page **Gestion des jeux de questions**, cliquez sur **Créer un jeu de questions** dans la barre d'actions.
+1. Depuis la page **Gestion des jeux de questions**, cliquez sur **Ajouter un jeu de questions** dans la barre d'actions.
 
-2. La plateforme crée un enregistrement vide et vous amène sur la fiche d'édition.
+2. La plateforme crée un enregistrement vide et vous amène sur la fiche d'édition (page **Mettre à jour un jeu de questions**).
 
-3. Remplissez les onglets et enregistrez — voir [Onglets de la fiche](#onglets-de-la-fiche) ci-dessous.
+3. Renseignez les onglets et enregistrez — voir [Onglets de la fiche](#onglets-de-la-fiche) ci-dessous.
+
+> ⚠️ **Jeux vides** — Le jeu existe dès le clic sur le bouton. Si vous quittez la fiche sans enregistrer, un jeu sans nom reste dans la liste.
 
 
 ## Onglets de la fiche {#onglets-de-la-fiche}
-
-La fiche d'édition (titre **METTRE À JOUR UN JEU DE QUESTIONS**) propose **deux onglets** :
 
 ![Onglets de la fiche d'un jeu de questions](img/02-fiche-jeu.png)
 
 ### Onglet « Caractéristiques générales »
 
-- **Nom** — libellé interne du jeu, affiché dans la liste et utilisé pour le retrouver lors de la composition d'un formulaire.
+- **Nom** — libellé interne du jeu, affiché dans la liste et utilisé pour le retrouver lors de la composition d'un test.
 
-Sous ce champ, un bloc multilingue (sélecteur **« Descriptions en »** en haut, avec la langue courante) avec deux champs par langue :
+Sous ce champ, un bloc multilingue (sélecteur **« Descriptions en »** en haut, avec la langue courante) avec deux champs par langue de rapport :
 
-- **Nom du jeu de questions dans les rapports** — libellé court qui apparaît dans le rapport du candidat pour signaler les questions appartenant à ce jeu. Par exemple *« Exercice : Synthèse de données ventes »*.
-- **Longue description utilisée dans les rapports** — texte plus développé, affiché dans le rapport en regard du nom.
+- **Nom du jeu de questions dans les rapports** — libellé court qui apparaît dans le rapport du candidat pour signaler les questions appartenant à ce jeu. Par exemple *« Exercice : synthèse des données de vente »*.
+- **Longue description utilisée dans les rapports** — texte plus détaillé, affiché dans le rapport à côté du nom.
 
-Plus bas, deux champs de **rattachement** :
+Plus bas :
 
-- **Identifiants des sujets associés** — texte libre de la forme `12-45-89` (identifiants séparés par des tirets). **Laissez vide** pour rendre le jeu utilisable sur **tous** les sujets ; renseignez une liste pour le restreindre à certains sujets.
-- **Identifiants des clients autorisés** — texte libre de la forme `1-2-3` (identifiants de comptes clients). Permet de **réserver** ce jeu à un ou plusieurs comptes clients spécifiques — utile pour les modules confidentiels ou commandés par un client précis. Mettez `1` pour le compte courant uniquement.
-
-Et plus bas encore (selon la résolution d'écran, vous devrez peut-être faire défiler) :
-
-- **Archivé** — commutateur. Un jeu archivé reste utilisable dans les formulaires existants mais n'apparaît plus dans la liste par défaut ni dans les sélecteurs de composition.
-- **Commentaire** — texte libre d'usage interne. Documentation pour les rédacteurs : *« Jeu commandé à XYZ Consulting, livraison juin 2025 »*.
+- **Sujets associés (laissez vide pour tous les sujets)** — sélection multiple. **Laissez vide** pour que le jeu soit utilisable sur **tous** les sujets ; choisissez des sujets pour le restreindre. Une question ne peut être ajoutée qu'à un jeu dont les sujets incluent celui de la question.
+- **Archivé** (Oui / Non) — un jeu archivé reste utilisable dans les tests existants mais n'apparaît plus dans la liste par défaut.
+- **Commentaire** — texte libre à usage interne, par exemple l'origine du jeu ou sa date de livraison.
+- **Attribuer ce jeu à des questions** — bouton affiché aux administrateurs principaux, voir [Ajouter des questions au jeu](#ajouter-des-questions).
+- **Afficher les questions utilisant ce jeu de questions** — lien ouvrant la page **Questions** pré-filtrée sur ce jeu, dans un nouvel onglet.
 
 ### Onglet « Administrateurs »
 
-Liste des administrateurs habilités à voir et modifier ce jeu — même logique que l'onglet du même nom dans la fiche d'un [sujet](/ai/fr/question-module/subjects/#administrateurs-autorises) :
+Il liste les administrateurs du compte qui travaillent dans le module Questions sans disposer du privilège de voir **tous** les jeux ; cochez ceux autorisés à voir et modifier ce jeu :
 
 - Cochez les administrateurs autorisés.
 - Décochez pour révoquer.
 - Utilisez le champ **Filtrer** pour retrouver rapidement un administrateur dans une longue liste.
 
-> 💡 **Cloisonnement éditorial** — Utile quand vous voulez réserver l'édition d'un jeu sensible (par exemple un module sous NDA d'un partenaire) à une équipe restreinte.
+Vous n'apparaissez pas dans cette liste : le jeu reste visible pour vous tant que vous l'avez créé.
+
+> 💡 **Cloisonnement éditorial** — Utile quand vous voulez restreindre l'édition d'un jeu sensible (par exemple un module sous NDA d'un partenaire) à une petite équipe.
 
 
-## Ajouter des questions à un jeu {#ajouter-des-questions}
+## Ajouter des questions au jeu {#ajouter-des-questions}
 
-Contrairement aux domaines, les questions **ne se rattachent pas** à un jeu depuis la fiche du jeu. Le rattachement se fait depuis la **fiche d'une question** : ouvrez l'éditeur d'une question, et dans son onglet de classification, sélectionnez le jeu auquel elle doit appartenir.
+Il existe deux façons de rattacher des questions à un jeu :
 
-Une question peut appartenir à **un seul jeu** (ou à aucun). Pour transférer une question d'un jeu à un autre, modifiez son rattachement depuis sa fiche.
+- **Depuis l'éditeur de questions** — dans le volet **Classification** d'une question, choisissez le ou les jeux auxquels elle appartient dans le champ **Jeux de questions**. C'est la méthode courante.
+- **Depuis la fiche du jeu** (administrateurs principaux) — cliquez sur **Attribuer ce jeu à des questions**, collez les **identifiants des questions séparés par des espaces** dans la fenêtre, puis enregistrez. Chaque question doit appartenir à l'un des sujets du jeu, sinon la plateforme la refuse.
 
-> 💡 **Vérifier le contenu d'un jeu** — Depuis la liste des jeux, un lien **Voir les questions associées** ouvre la page **AdminQuestionsWithTable** pré-filtrée sur le jeu courant. C'est la façon la plus rapide de vérifier d'un coup d'œil quelles questions composent un jeu.
+> 💡 **Vérifier le contenu d'un jeu** — Depuis la fiche du jeu, le lien **Afficher les questions utilisant ce jeu de questions** ouvre la page **Questions** pré-filtrée sur le jeu courant. C'est le moyen le plus rapide de voir d'un coup d'œil les questions qui le composent.
 
 
 ## Filtres {#filtres}
@@ -86,21 +87,22 @@ Une question peut appartenir à **un seul jeu** (ou à aucun). Pour transférer 
 Le panneau **Filtres** propose :
 
 - **Rechercher** — texte libre sur le nom du jeu.
-- **Inclure les archivés** — commutateur (`filter_is_arc`). Désactivé par défaut, à activer pour faire apparaître les jeux marqués comme archivés.
+- **Sujet** — restreint la liste aux jeux associés au(x) sujet(s) sélectionné(s).
+- **Afficher les jeux de questions archivés** — commutateur, désactivé par défaut ; activez-le pour afficher les jeux marqués comme archivés.
 
 Le tri est disponible sur chaque colonne en cliquant sur l'en-tête.
 
 
 ## Archiver vs supprimer {#archiver-vs-supprimer}
 
-Pour retirer un jeu de la circulation sans perdre son contenu, vous avez deux options :
+Pour retirer un jeu de la circulation sans perdre son contenu, deux options :
 
-- **Archiver** (`is_arc=1`) — recommandé pour les jeux obsolètes mais référencés dans des formulaires en production. Le jeu disparaît de la liste par défaut et des sélecteurs de composition, mais reste fonctionnel pour les formulaires qui l'utilisent. Réversible à tout moment.
-- **Supprimer** — irréversible. Possible uniquement si **aucune question** n'est rattachée au jeu. Si des questions y sont liées, la plateforme bloque la suppression et affiche un message d'erreur (`qset_cantdel`).
+- **Archiver** — recommandé pour les jeux obsolètes encore référencés dans des tests. Passez **Archivé** à *Oui* sur la fiche du jeu. Le jeu disparaît de la liste par défaut mais reste fonctionnel pour les tests qui l'utilisent. Réversible à tout moment.
+- **Supprimer** — irréversible. Possible uniquement si **aucune question** n'est attachée au jeu. Si des questions sont liées, la plateforme bloque la suppression et affiche le message « Vous ne pouvez pas supprimer ce jeu de questions car il est utilisé par des questions ».
 
 ### Procédure de suppression
 
 1. Sur la ligne du jeu, cliquez sur l'icône **Supprimer**.
-2. Confirmez via le bouton **Supprimer** sur la page de confirmation.
+2. Confirmez via le bouton **Supprimer** de la page qui s'ouvre.
 
-> ⚠️ **Préférer l'archivage** — Sauf si vous savez que le jeu est créé par erreur et non utilisé, **archivez plutôt que supprimer**. Vous gardez la possibilité de réactiver le jeu et de retracer son historique éditorial.
+> ⚠️ **Préférer l'archivage** — Sauf si vous savez que le jeu a été créé par erreur et n'est pas utilisé, **archivez plutôt que supprimer**. Vous conservez la possibilité de réactiver le jeu et de tracer son historique éditorial.

@@ -8,39 +8,39 @@ An **answer scale** is a reusable set of answer options that you can attach to a
 
 Scales let you **standardise** the answer options of a family of questions without retyping the labels each time. They are especially useful for behavioural questionnaires (Likert scales), self-assessments, and any survey where the same list of choices recurs.
 
-Open the page through the menu **Questions module → Questions → Answer scales**.
+Open the page through the menu **Items → Response scales**.
 
 ![Answer scales management page](img/01-liste-echelles.png)
 
-The table lists every defined scale, with its **identifier** and the list of its **values** (the options in order).
+The table lists every defined scale, with its **identifier** and the list of its **values** (the options in order, in your interface language).
 
 
 ## Create a scale {#create-a-scale}
 
-Creation is performed entirely **inside a modal** — there is no dedicated edit page.
+Creation is performed entirely **inside a dialog** — there is no dedicated edit page.
 
-1. From the **Answer scales management** page, click **Add a scale** in the action bar.
+1. From the **Answer scales management** page, click **Add a response scale** in the action bar.
 
-    ![Scale creation modal](img/02-modal-creation.png)
+    ![Scale creation dialog](img/02-modal-creation.png)
 
-2. The **"Edit an answer scale"** modal shows:
+2. The **"Edit a response scale"** dialog shows:
 
-    - A **Language** selector at the top (switch between the account's languages).
-    - A **Values** area: each value has a label per language, preceded by a **reorder handle** (≡) and a position number, and followed by a delete icon.
-    - An **Add a value** button to extend the list.
+    - A **Language** selector at the top (switch between the languages of your account).
+    - A **Responses** area: each response has a label per language, preceded by a **reorder handle** (≡) and a position number, and followed by a delete icon.
+    - An **Add response** button to extend the list.
 
-3. Enter the values in the desired order, in the displayed language. Then switch to the other languages to translate each label.
+3. Enter the values in the desired order, in the displayed language. Then switch to the other languages to translate each label: adding a value adds it to every language at once.
 
 4. Click **Save**. The scale appears immediately in the list.
 
-> 💡 **Minimum number of options** — A scale must have at least **two options** to be valid (a scale with a single value makes no sense). The platform blocks creation below this threshold.
+> 💡 **Minimum number of options** — A scale must have at least **two values filled in, in at least one language**, to be valid (a scale with a single value makes no sense). The platform blocks saving below this threshold.
 
 
 ## Reorder options {#reorder-options}
 
 The order of options determines the order of presentation to the candidate. To change it:
 
-- **Drag and drop** an option inside the modal area, or use the **up/down arrows** next to each option (depending on your interface version).
+- **Drag and drop** an option using the handle (≡) at the start of its row. The position numbers update immediately.
 - The order is persisted on save.
 
 > ⚠️ **Consistent ordering** — The order applies to **all languages** simultaneously: you cannot have one order in FR and another in EN. If a translation requires a culturally different order (which is rare), create two separate scales.
@@ -48,19 +48,19 @@ The order of options determines the order of presentation to the candidate. To c
 
 ## Multilingual entry {#multilingual-entry}
 
-The language selector at the top of the modal lets you enter labels in each language active on your account. Recommendations:
+The language selector at the top of the dialog lets you enter labels in each language of your account. Recommendations:
 
-- **Enter the source language first** (typically French), then translate to the other languages.
+- **Enter the source language first**, then translate to the other languages.
 - **Fill every active language** before first production rollout. A missing language will display an empty label to the candidate, which is confusing.
-- **Have the same number of options** in each language: the platform does not let you have 5 options in FR and 4 in EN.
+- **The number of options is the same** in every language: adding or removing a value applies to all languages at once.
 
 
 ## Edit a scale {#edit-a-scale}
 
 1. On the scale's row, click the **Edit** icon (pencil).
-2. The **same modal** as for creation opens, pre-filled with the current values.
+2. The **same dialog** as for creation opens, pre-filled with the current values.
 
-    ![Scale edit modal — options pre-filled](img/03-modal-edition.png)
+    ![Scale edit dialog — options pre-filled](img/03-modal-edition.png)
 3. Adjust labels, add or remove options, reorder them.
 4. Save.
 
@@ -79,11 +79,11 @@ Column sorting is available by clicking the headers.
 ## Delete a scale {#delete-a-scale}
 
 1. On the scale's row, click the **Delete** icon.
-2. Confirm on the confirmation dialog.
+2. Confirm in the dialog that appears.
 
-> ⚠️ **Scale in use** — A scale referenced by at least one question **cannot be deleted**. The platform refuses the operation with an error message. To delete a widely used scale:
+> ⚠️ **Scale in use** — A scale referenced by at least one question **cannot be deleted**. The platform refuses the operation with a message listing the identifiers of the questions concerned. To delete a widely used scale:
 >
-> 1. Identify the questions that reference it (search by scale identifier on the Questions page).
+> 1. Open the questions listed in the message from the Questions page.
 > 2. Edit those questions to point to another scale, or delete them.
 > 3. Retry the deletion.
 
