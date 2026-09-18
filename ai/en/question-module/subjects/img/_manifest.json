@@ -1,6 +1,6 @@
 {
   "chapter": "question-module/subjects",
-  "generated_at": "2026-09-18T14:00:31.169Z",
+  "generated_at": "2026-09-18T14:33:07.552Z",
   "base_url": "https://appdev.isograd.com",
   "captures": [
     {
@@ -13,19 +13,19 @@
       "name": "03-onglets-sujet.png",
       "caption": "Fiche d'édition d'un sujet — bandeau supérieur et 3 onglets (Description, Description des niveaux, Administrateurs autorisés).",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/subjects/SubjectUpdate?sbj_id=468"
+      "url": "https://test.isograd.com/subjects/SubjectUpdate?sbj_id=470"
     },
     {
       "name": "04-onglet-description.png",
       "caption": "Onglet \"Description\" — commutateur multilingue activé, bloc Nom + Nom long par langue, initiales et icône du sujet.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/subjects/SubjectUpdate?sbj_id=468"
+      "url": "https://test.isograd.com/subjects/SubjectUpdate?sbj_id=470"
     },
     {
       "name": "05-onglet-administrateurs.png",
       "caption": "Onglet \"Administrateurs autorisés\" — liste des administrateurs habilités sur ce sujet, champ de filtrage.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/subjects/SubjectUpdate?sbj_id=468"
+      "url": "https://test.isograd.com/subjects/SubjectUpdate?sbj_id=470"
     }
   ]
 }
