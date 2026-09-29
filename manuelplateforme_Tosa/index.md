@@ -51,10 +51,12 @@ Dans ce menu, vous trouverez tout les onglets disponible sur votre compte :
 
 **Aide et support** : Manuel, referentiel pedagogique et documentation sur les API
 
+Vous avez aussi accès à un **Chatbot** qui vous pose des questions sur comment naviguer et utiliser les fonctionnalités de la plateforme.
+
 
 
 ![](./media/image5.png)
-
+![](./media/image5.1png).
 
 
 # Gestion de votre compte
