@@ -33,6 +33,8 @@ Si vous ne connaissez plus votre mot de passe, cliquez sur **Mot de passe oubli�
 Le menu principal de la plateforme donne accès aux sept onglets qui vous permettent de gérer votre compte.
 Dans ce menu, vous trouverez tout les onglets disponible sur votre compte :
 
+**Chatbot** : Vous avez accès à un **Chatbot** qui vous pose des questions sur comment naviguer et utiliser les fonctionnalités de la plateforme.
+
 **Compte** : Cet onglet vous permet d'avoir et modifier les info de votre compte, gerer vos administrateur, acces à vos factures et gerer vos alertes crédits
 
 **Candidats** Cet onglet vous permet de gerer vos candidats et groupes
@@ -55,10 +57,10 @@ Vous avez aussi accès à un **Chatbot** qui vous pose des questions sur comment
 
 
 
+![](./media/image05.png)
+
+
 ![](./media/image5.png)
-
-
-![](./media/image5.1png).
 
 
 # Gestion de votre compte
