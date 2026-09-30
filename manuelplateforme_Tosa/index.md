@@ -53,7 +53,7 @@ Dans ce menu, vous trouverez tout les onglets disponible sur votre compte :
 
 **Aide et support** : Manuel, referentiel pedagogique et documentation sur les API
 
-Vous avez aussi accès à un **Chatbot** qui vous pose des questions sur comment naviguer et utiliser les fonctionnalités de la plateforme.
+
 
 
 
@@ -66,6 +66,12 @@ Vous avez aussi accès à un **Chatbot** qui vous pose des questions sur comment
 # Gestion de votre compte
 
 
+## Le Chatbot
+
+Le Chatbot est une assistance IA qui vous permet de poser toute question liée à la gestion de vos candidats sur la plateforme. Il vous offre un accompagnement direct sur l’utilisation de la plateforme.
+
+
+![](./media/image06.png)
 
 
 ## Détails
