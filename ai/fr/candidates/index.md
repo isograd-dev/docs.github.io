@@ -119,7 +119,7 @@ Sous la barre de boutons, le **tableau des tests planifiés** liste toutes les i
 3. Complétez, selon les options de votre compte :
 
     - **Session** — rattache l'inscription à une session de passage existante (**Pas de session associée** par défaut). L'entrée **Créer une session...** vous emmène directement sur la création d'une session ; sur certains comptes, la session est obligatoire.
-    - **Profil de surveillance** — **Pas de surveillance** ou l'un de vos [profils de surveillance](../proctoring/) (plein écran, surveillance à distance…). Pour une **certification**, le profil par défaut de votre compte est présélectionné ; si la surveillance à distance est obligatoire sur votre compte, elle est appliquée automatiquement et un message l'indique.
+    - **Profil de surveillance** — **Pas de surveillance** ou l'un de vos [profils de surveillance](../proctoring/) (plein écran, surveillance à distance…). Pour une **certification**, le profil par défaut de votre compte est présélectionné ; si la surveillance à distance est obligatoire sur votre compte, elle est appliquée automatiquement et un message l'indique. Si la session choisie est **surveillée en direct**, le profil de surveillance est **imposé par la session** : le sélecteur est verrouillé et le message *« Profil de surveillance imposé par la session surveillée en direct »* s'affiche.
 
 4. Cliquez sur **Inscrire** pour enchaîner une autre inscription dans la même fenêtre, ou sur **Inscrire et fermer**. Le test apparaît immédiatement dans le tableau des tests planifiés.
 
@@ -131,17 +131,19 @@ Sous la barre de boutons, le **tableau des tests planifiés** liste toutes les i
 
 ![Tableau des tests planifiés](img/12-tableau-tests-planifies.png)
 
-Chaque ligne correspond à une inscription : test, statut (en attente, démarré, terminé, en attente de notation), session et date de passage le cas échéant. Une icône **plein écran** ou **caméra** à côté du nom du test signale le profil de surveillance associé.
+Chaque ligne correspond à une inscription : test, statut (en attente, démarré, terminé, en attente de notation), session et date de passage le cas échéant. Une icône **plein écran** ou **caméra** à côté du nom du test signale le profil de surveillance associé. Un badge rouge **Arrêté par un administrateur** dans la colonne du statut signale un test démarré que vous avez interrompu (voir ci-dessous).
 
 Les boutons d'action apparaissent au survol de la ligne :
 
 - **Supprimer** — retire l'inscription d'un test non commencé ; le crédit est restitué. Selon votre compte, la plateforme propose de notifier le candidat de l'annulation par email.
-- **Paramètres** (test en attente) — modifie la **Session**, le **Profil de surveillance** et l'option **Désactiver la manipulation** sans supprimer l'inscription.
+- **Paramètres** (test en attente) — modifie la **Session**, le **Profil de surveillance** et l'option **Désactiver la manipulation** sans supprimer l'inscription. Là aussi, une session surveillée en direct impose son profil de surveillance.
 
     ![Fenêtre "Paramètres du test"](img/13-modal-parametres-test.png)
 
 - **Commentaire de l'administrateur** — note interne attachée à cette inscription, invisible du candidat.
 - **Modifier le test** (test démarré ou terminé) — selon vos privilèges : réajuster le temps, réinitialiser le test avec ou sans email au candidat, relancer ou désactiver la manipulation.
+- **Arrêter le test** (test démarré) — interrompt immédiatement le passage : le candidat est renvoyé à sa liste de tests avec le message *« Votre test a été interrompu par un administrateur ou un surveillant »* et ne peut pas continuer tant que le test n'est pas repris. Le badge **Arrêté par un administrateur** apparaît sur la ligne et le bouton devient **Reprendre le test**.
+- **Reprendre le test** (test arrêté) — lève l'interruption ; pour un test chronométré dont le temps ne s'arrête pas pendant une interruption, la durée de l'arrêt est **rendue au candidat**. Une réinitialisation du test lève également l'arrêt.
 - **Détails** (test terminé) — ouvre l'analyse détaillée du passage (voir [Gestion des résultats](../results/)) ; **Noter** apparaît à la place pour un test en attente de notation.
 - **Envoyer le certificat** (certification terminée) — envoie le certificat aux destinataires définis dans les paramètres pour la certification ; **Ajouter un test de confirmation** est proposé pour une évaluation terminée lorsque votre compte dispose de cette option.
 
@@ -242,7 +244,7 @@ Une fois vos candidats organisés en groupes, le filtre **Groupe** de la page **
 - **Supprimer les tests non commencés** — choisissez le test concerné parmi ceux encore en attente dans la sélection.
 - **Supprimer les candidats**.
 - **Ajouter un groupe aux candidats** — sans les retirer de leur groupe actuel.
-- **Assigner une session ou un profil de surveillance à un test** — pour un test en attente, choisissez la session et, si besoin, le profil de surveillance.
+- **Assigner une session ou un profil de surveillance à un test** — pour un test en attente, choisissez la session et, si besoin, le profil de surveillance. Une session surveillée en direct impose son propre profil à tous les tests qui lui sont rattachés.
 - **Définir les options d'évaluation** et **Définir les options de certification** — affichage des résultats au candidat, livraison des rapports, envoi des diplômes et destinataires, appliqués à toute la sélection. Chaque entrée n'apparaît que si votre compte dispose du type de pack correspondant.
 - **Générer des badges** — émission des badges numériques Credly pour les certifications éligibles de la sélection.
 

@@ -10,7 +10,7 @@ Open the page from the menu **Tags → Item sets**.
 
 ![Page "Question set management"](img/01-liste-jeux.png)
 
-The table lists every defined set, with its **ID** and its **name**. Archived sets are greyed out when displayed.
+The table lists every defined set, with its **ID** and its **name**. Archived sets are greyed out when displayed. The **Export to Excel** button in the action bar generates an `.xlsx` file of the list as currently filtered.
 
 
 ## Why use a question set? {#why-use-a-set}

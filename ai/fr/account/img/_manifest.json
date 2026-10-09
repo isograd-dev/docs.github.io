@@ -1,11 +1,11 @@
 {
   "chapter": "account",
-  "generated_at": "2026-06-09T08:30:32.735Z",
-  "base_url": "https://app.isograd.com",
+  "generated_at": "2026-10-09T17:02:19.970Z",
+  "base_url": "https://appdev.isograd.com",
   "captures": [
     {
       "name": "01-page-compte.png",
-      "caption": "Page \"Votre compte\" — bandeau d'identité du compte, onglets Adresse / Détails / Packs / Administrateur.",
+      "caption": "Page \"Votre compte\" — bandeau d'identité du compte, onglets Adresse / Détails / Packs / API (Administrateur en mode alias).",
       "kind": "viewport-1440x720",
       "url": "https://test.isograd.com/clientadmin/account/CompanyUpdate"
     },

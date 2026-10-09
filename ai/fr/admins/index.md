@@ -95,6 +95,8 @@ Chaque ressource expose en général trois niveaux :
 
 Certains privilèges sont **transverses** ; par exemple *Lecture/écriture des emails d'un autre administrateur* permet à un administrateur de gérer les modèles d'email créés par ses collègues, et pas seulement les siens.
 
+Deux privilèges concernent la [surveillance en direct](/ai/fr/proctoring/#surveillance-en-direct) : *Surveiller en direct les sessions de passage* rend l'administrateur sélectionnable comme surveillant d'une session et lui ouvre les pages de surveillance en direct ; *Voir toutes les sessions surveillées en direct* (qui exige le précédent) lui montre toutes les sessions du compte, et pas seulement celles dont il est surveillant.
+
 > ⚠️ **Privilèges et rôle** — Les privilèges fins **s'ajoutent** au rôle, ils ne le remplacent pas. Un Administrateur principal a déjà tous les privilèges par défaut ; la fenêtre Privilèges sert surtout à **ouvrir** des accès supplémentaires à un Administrateur de groupe.
 
 ### Filtrer par privilège

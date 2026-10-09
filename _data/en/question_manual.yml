@@ -73,6 +73,8 @@
       anchor: edit-a-test
     - title: Duplicate a test
       anchor: duplicate-a-test
+    - title: Authorise a test / Remove access
+      anchor: authorise-a-test
     - title: Delete a test
       anchor: delete-a-test
     - title: Filters

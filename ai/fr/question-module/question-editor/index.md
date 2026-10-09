@@ -19,11 +19,11 @@ La page d'édition (titre **Éditer une question**) est organisée en plusieurs 
 
 1. **Barre d'outils** (au-dessus de l'en-tête) :
     - **Précédente** / **Suivante** — passe à la question précédente ou suivante de la liste courante sans repasser par celle-ci.
-    - **Revenir à la liste** — retour à la page Questions.
+    - **Revenir à la liste** — retour à la page Questions, qui se réaffiche avec ses filtres, son tri et sa page conservés.
     - **Enregistrer** — sauvegarde toutes les modifications.
     - **Dupliquer** — crée une copie de la question.
     - **Vérifier** — lance le diagnostic éditorial sur cette question (titre vide, énoncé manquant, options non marquées correctes, etc.).
-    - **Comments** — ouvre la liste des commentaires laissés par les candidats sur cette question pendant les tests.
+    - **Comments** — ouvre la liste des commentaires laissés par les candidats sur cette question pendant les tests ; l'icône **Supprimer** (corbeille) en fin de ligne retire un commentaire.
     - **Aperçu** — ouvre la question telle qu'un candidat la verra.
     - **Déverrouiller** — affiché sur une question au statut *Production* aux administrateurs disposant du privilège adéquat ; repasse la question *En rédaction* en un clic (voir [Enregistrer, prévisualiser, supprimer](#actions-finales)).
 
@@ -43,7 +43,7 @@ La page d'édition (titre **Éditer une question**) est organisée en plusieurs 
 
 5. **Section « Tutoriel »** — l'explication affichée au candidat après sa réponse (voir [Tutoriel](#tutoriel)).
 
-6. **Bloc de revue** — le **Statut** de la question et la **Personne concernée**, plus un fichier et des commentaires pour les échanges de relecture entre auteurs.
+6. **Bloc de revue** — le **Statut** de la question et la **Personne concernée**, plus un fichier et des commentaires pour les échanges de relecture entre auteurs. Les commentaires sont répartis en deux onglets : **Commentaires** (en cours) et **Anciens commentaires**.
 
 7. **Volet « AI assist »** sur la droite — boutons de génération par IA (voir [Génération par IA](#generation-ia)).
 
@@ -59,7 +59,7 @@ La section **Question et réponses** est organisée en onglets propres au conten
 | Onglet | Contenu |
 |---|---|
 | **Énoncé de la question** | Le texte affiché au candidat (éditeur de texte enrichi). |
-| **Médias** | Documents de référence, fichiers média et génération audio attachés à l'énoncé. |
+| **Médias** | Documents de référence, fichiers média et génération audio attachés à l'énoncé. Pour générer un fichier audio, saisissez le texte à lire et choisissez une **voix** parmi celles disponibles pour la langue de la question. |
 | **Réponses proposées** (libellé variable selon le type) | Propositions de réponse ou paramètres propres au type — voir les sections par type. |
 | **Prompt de calcul du score** | Pour les questions à correction IA : instructions données à l'IA pour calculer la note. |
 | **Avancé** | Options avancées : **Réponse obligatoire dans les tests avec navigation**, et pour les questions à saisie libre **Verrouiller le copier/coller et la sélection**. |
@@ -133,7 +133,7 @@ Trois variantes existent :
 
 L'éditeur propose un volet latéral **AI assist** à droite de la page. Sur une question qui vient d'être créée, il comporte deux boutons :
 
-- **Générer une question** — propose un énoncé complet (texte, propositions de réponse, bonne réponse) à partir des métadonnées de la question (sujet, domaine, titre). Proposé pour les types de réponse qui supportent la génération.
+- **Générer une question** — propose un énoncé complet (texte, propositions de réponse, bonne réponse) à partir des métadonnées de la question (sujet, domaine, titre). Proposé pour les types de réponse qui supportent la génération. La génération renseigne aussi le champ **Difficulté** avec le niveau suggéré par l'IA (sauf si la question est calibrée) ; vous pouvez le modifier avant d'enregistrer.
 - **Traduire** — traduit le contenu de la question vers une autre langue, utile pour décliner rapidement un sujet en plusieurs versions linguistiques.
 
 Une fois la question enregistrée une première fois, d'autres boutons apparaissent :
@@ -338,13 +338,15 @@ Le bouton **Vérifier** lance le diagnostic éditorial de la question : titre ou
 
 Le bouton **Aperçu** ouvre la question telle qu'elle apparaîtra à un candidat (énoncé rendu, options affichées, illustrations chargées). C'est l'étape obligatoire avant toute mise en production : un énoncé qui semble clair en édition peut être ambigu une fois rendu côté candidat.
 
+Sur la page d'aperçu, le **bloc de revue** s'affiche dans un volet ancré à droite, ouvert par défaut. Le bouton **Revue** de la barre d'outils le masque ou le réaffiche, et son état est mémorisé d'une prévisualisation à l'autre.
+
 ### Naviguer entre questions
 
 Les boutons **Précédente** et **Suivante** en haut de la page permettent de passer aux questions voisines de la liste courante **sans repasser par la liste**. Pratique pour les revues éditoriales en masse.
 
 ### Supprimer
 
-L'icône **Supprimer** sur la ligne de la question dans la liste supprime la question après confirmation. La suppression est refusée si la question fait partie de la liste fixe de questions d'un **test**.
+L'icône **Supprimer** sur la ligne de la question dans la liste supprime la question après confirmation. Si la suppression est refusée (par exemple parce que la question fait partie de la liste fixe de questions d'un **test**), une notification d'erreur s'affiche et vous restez sur la page ; sinon vous êtes ramené à la liste, avec ses filtres conservés, et un message de succès s'affiche.
 
 > 💡 **Préférer le statut « À supprimer » à la suppression** — Pour retirer une question de la circulation sans perdre l'historique, **changez son statut** à *À supprimer* plutôt que de la supprimer. La question quitte la liste par défaut (un filtre permet de la réafficher), ses passages historiques restent analysables, et elle n'est plus posée aux nouveaux candidats.
 

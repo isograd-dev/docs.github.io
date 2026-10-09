@@ -52,7 +52,7 @@ Le bouton **Réinitialiser** en haut du panneau remet tous les filtres à leur v
 Le filtre **Statut de test** propose plusieurs valeurs qui correspondent aux étapes de la vie d'un test :
 
 - **À passer** — le candidat a été inscrit mais n'a pas encore démarré le test.
-- **En cours** — le candidat a démarré le test et ne l'a pas terminé. Le test reste démarrable tant qu'il n'est pas marqué terminé.
+- **En cours** — le candidat a démarré le test et ne l'a pas terminé. Le test reste démarrable tant qu'il n'est pas marqué terminé. Un test interrompu par un administrateur reste *En cours* ici ; le badge **Arrêté par un administrateur** n'apparaît que sur la fiche du candidat (voir [Le tableau des tests planifiés](/ai/fr/candidates/#le-tableau-des-tests-planifies)).
 - **Terminé** — le candidat a soumis ses réponses. Le score est calculé et le rapport disponible.
 - **En attente de correction** — pour les sujets comportant des questions à correction manuelle (rédaction, code), le test est soumis mais nécessite l'intervention d'un correcteur.
 - **Annulé** — l'inscription a été annulée avant que le candidat passe le test. Le crédit est restitué au compte.
@@ -148,4 +148,4 @@ Pratique pour :
 
 ## Surveillance à distance {#surveillance-a-distance}
 
-Une ligne dont l'icône **caméra** est présente correspond à un test passé **sous surveillance à distance** (proctoring). Pour consulter les enregistrements (captures, vidéo, pièce d'identité) et valider ou invalider chaque passage, reportez-vous au chapitre [Surveillance des tests](/ai/proctoring/).
+Une ligne dont l'icône **caméra** est présente correspond à un test passé **sous surveillance à distance** (proctoring). Pour consulter les enregistrements (captures, vidéo, pièce d'identité) et valider ou invalider chaque passage, reportez-vous au chapitre [Surveillance des tests](/ai/fr/proctoring/).

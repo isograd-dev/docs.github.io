@@ -10,7 +10,7 @@ Accédez à la page via le menu **Catégories → Jeux de questions**.
 
 ![Page "Gestion des jeux de questions"](img/01-liste-jeux.png)
 
-Le tableau liste tous les jeux définis, avec leur **identifiant** et leur **nom**. Les jeux archivés apparaissent grisés lorsqu'ils sont affichés.
+Le tableau liste tous les jeux définis, avec leur **identifiant** et leur **nom**. Les jeux archivés apparaissent grisés lorsqu'ils sont affichés. Le bouton **Exporter vers Excel** de la barre d'actions génère un fichier `.xlsx` de la liste telle qu'elle est filtrée.
 
 
 ## Pourquoi utiliser un jeu de questions ? {#pourquoi-utiliser}

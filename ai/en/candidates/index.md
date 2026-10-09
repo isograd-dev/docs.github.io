@@ -119,7 +119,7 @@ Below the button bar, the **planned tests table** lists all the candidate's regi
 3. Complete, depending on your account options:
 
     - **Session** — attaches the registration to an existing test session (**No associated session** by default). The **Create a new session...** entry takes you directly to the session creation page; on some accounts, the session is mandatory.
-    - **Proctoring profile** — **No proctoring** or one of your [proctoring profiles](../proctoring/) (full screen, remote proctoring…). For a **certification**, your account's default profile is preselected; if remote proctoring is mandatory on your account, it is applied automatically and a message says so.
+    - **Proctoring profile** — **No proctoring** or one of your [proctoring profiles](../proctoring/) (full screen, remote proctoring…). For a **certification**, your account's default profile is preselected; if remote proctoring is mandatory on your account, it is applied automatically and a message says so. If the chosen session is **proctored live**, the proctoring profile is **imposed by the session**: the selector is locked and the message *"Proctoring profile imposed by the live-proctored session"* is displayed.
 
 4. Click **Register** to chain another registration in the same window, or **Register and Close**. The test appears immediately in the planned tests table.
 
@@ -131,17 +131,19 @@ Below the button bar, the **planned tests table** lists all the candidate's regi
 
 ![Planned tests table](img/12-tableau-tests-planifies.png)
 
-Each row is a registration: test, status (pending, started, complete, waiting for marking), session and test date where applicable. A **full screen** or **camera** icon next to the test name indicates the associated proctoring profile.
+Each row is a registration: test, status (pending, started, complete, waiting for marking), session and test date where applicable. A **full screen** or **camera** icon next to the test name indicates the associated proctoring profile. A red **Stopped by an administrator** badge in the status column flags a started test that you have interrupted (see below).
 
 The action buttons appear when hovering over the row:
 
 - **Delete** — removes the registration of a test that has not started; the credit is refunded. Depending on your account, the platform offers to notify the candidate of the cancellation by email.
-- **Parameters** (pending test) — changes the **Session**, the **Proctoring profile** and the **Disable in-application** option without deleting the registration.
+- **Parameters** (pending test) — changes the **Session**, the **Proctoring profile** and the **Disable in-application** option without deleting the registration. Here too, a live-proctored session imposes its proctoring profile.
 
     !["Test parameters" window](img/13-modal-parametres-test.png)
 
 - **Administrator's comment** — an internal note attached to this registration, invisible to the candidate.
 - **Change test details** (started or completed test) — depending on your privileges: adjust the end time, reset the test with or without an email to the candidate, restart or disable the in-application part.
+- **Stop the test** (started test) — interrupts the attempt immediately: the candidate is sent back to their test list with the message *"Your test has been interrupted by an administrator or a proctor"* and cannot continue until the test is resumed. The **Stopped by an administrator** badge appears on the row and the button becomes **Resume the test**.
+- **Resume the test** (stopped test) — lifts the interruption; for a timed test whose clock does not stop during an interruption, the stopped time is **given back to the candidate**. Resetting the test also lifts the stop.
 - **Details** (completed test) — opens the detailed analysis of the test (see [Results management](../results/)); **Assign grade** appears instead for a test waiting for marking.
 - **Send diploma** (completed certification) — sends the certificate to the recipients defined in the certification settings; **Add a confirmation test** is offered for a completed assessment when your account has this option.
 
@@ -242,7 +244,7 @@ Once your candidates are organized into groups, the **Group** filter on the **Ca
 - **Delete pending tests** — choose the test concerned among those still pending in the selection.
 - **Delete candidates**.
 - **Add the candidates to a group** — without removing them from their current group.
-- **Assign a session or a proctoring profile to a test** — for a pending test, choose the session and, if needed, the proctoring profile.
+- **Assign a session or a proctoring profile to a test** — for a pending test, choose the session and, if needed, the proctoring profile. A live-proctored session imposes its own profile on every test attached to it.
 - **Set assessment options** and **Set certification options** — display of results to the candidate, report delivery, diploma sending and recipients, applied to the whole selection. Each entry only appears if your account has the corresponding pack type.
 - **Generate badges** — issuing of Credly digital badges for the eligible certifications of the selection.
 

@@ -109,7 +109,7 @@ Each row of the table presents several action buttons at the end of the row:
 - **Edit** (pencil) — opens the question's edit page. See [Question editor](/ai/en/question-module/question-editor/).
 - **Preview** (Play icon) — opens the question as it will appear to a candidate (statement, options, media). Lets you validate visually without starting a real test.
 - **Duplicate** — opens a dialog where you choose the **subject**, the **answer type** and the **language** of the copy, then creates it and opens its edit page. The copy starts in *Draft* status.
-- **Delete** — deletes the question. Shown to administrators allowed to modify the question. Refused if the question is used in the fixed question list of a **test**.
+- **Delete** — deletes the question. Shown to administrators allowed to modify the question. Refused if the question is used in the fixed question list of a **test**. After deletion, the list comes back with its filters, sort and page preserved.
 
 
 ## Action bar {#bulk-actions}
@@ -118,7 +118,7 @@ The action bar at the top of the page offers:
 
 - **Add an item** — opens a dialog asking for the **subject**, the **answer type** and the **language**, then creates the question and opens the editor.
 - **Import an item file** — see [Import questions](#import-questions) below.
-- **Export to YML** — downloads the questions currently filtered as a YAML file (up to 500 questions; beyond 100 questions the download is a zip archive split into parts). Useful for backups or for working on questions with an AI assistant.
+- **Export to YML** — downloads the questions currently filtered as a YAML file (up to 500 questions; beyond 100 questions the download is a zip archive split into parts). Useful for backups or for working on questions with an AI assistant. The YAML file also carries each question's **difficulty** (*Easy*, *Medium* or *Hard*).
 - **Print item list** — generates a printable version of the questions ticked in the table (100 at most).
 - **Export to Excel** — see [Export to Excel](#export-to-excel).
 
@@ -140,7 +140,7 @@ Import lets you create several questions in a single operation.
 
 3. Click **Import**. The server processes the file, then the list is filtered on the imported subject, language and sets and reports the number of questions created.
 
-> 💡 **YAML files** — Switch on **YML file** in the window to import a YAML document instead of an Excel file, for example one produced with an AI assistant following the platform's question format. The YAML importer handles every answer type. A question already in *Production* cannot be overwritten by an import.
+> 💡 **YAML files** — Switch on **YML file** in the window to import a YAML document instead of an Excel file, for example one produced with an AI assistant following the platform's question format. The YAML importer handles every answer type. When the document states a difficulty, it is applied to the question's **Difficulty** field — only if the question is not calibrated; the difficulty of a calibrated question is never changed by an import. A question already in *Production* cannot be overwritten by an import.
 
 All imported questions start in **Draft** status.
 

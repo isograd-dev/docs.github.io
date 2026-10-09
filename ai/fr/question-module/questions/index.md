@@ -109,7 +109,7 @@ Chaque ligne du tableau présente plusieurs boutons d'action en fin de ligne :
 - **Modifier** (crayon) — ouvre la page d'édition de la question. Voir [Éditeur de questions](/ai/fr/question-module/question-editor/).
 - **Aperçu** (icône Play) — ouvre la question telle qu'elle apparaîtra au candidat (énoncé, options, médias). Permet de valider visuellement sans lancer un vrai test.
 - **Dupliquer** — ouvre une fenêtre où vous choisissez le **sujet**, le **type de réponse** et la **langue** de la copie, puis la crée et ouvre sa page d'édition. La copie démarre au statut *En rédaction*.
-- **Supprimer** — supprime la question. Affiché aux administrateurs autorisés à modifier la question. Refusé si la question figure dans la liste fixe de questions d'un **test**.
+- **Supprimer** — supprime la question. Affiché aux administrateurs autorisés à modifier la question. Refusé si la question figure dans la liste fixe de questions d'un **test**. Après la suppression, la liste se réaffiche avec ses filtres, son tri et sa page conservés.
 
 
 ## Barre d'actions {#actions-de-masse}
@@ -118,7 +118,7 @@ La barre d'actions en haut de la page propose :
 
 - **Ajouter une question** — ouvre une fenêtre demandant le **sujet**, le **type de réponse** et la **langue**, puis crée la question et ouvre l'éditeur.
 - **Importer un fichier de questions** — voir [Importer des questions](#importer-des-questions) ci-dessous.
-- **Exporter en YML** — télécharge les questions actuellement filtrées sous forme de fichier YAML (500 questions au plus ; au-delà de 100 questions, le téléchargement est une archive zip découpée en parties). Utile pour les sauvegardes ou pour travailler les questions avec un assistant IA.
+- **Exporter en YML** — télécharge les questions actuellement filtrées sous forme de fichier YAML (500 questions au plus ; au-delà de 100 questions, le téléchargement est une archive zip découpée en parties). Utile pour les sauvegardes ou pour travailler les questions avec un assistant IA. Le fichier YAML indique aussi la **difficulté** de chaque question (*Facile*, *Moyenne* ou *Difficile*).
 - **Imprimer les questions sélectionnées** — génère une version imprimable des questions cochées dans le tableau (100 au maximum).
 - **Exporter vers Excel** — voir [Exporter vers Excel](#exporter-vers-excel).
 
@@ -140,7 +140,7 @@ L'import permet de créer plusieurs questions en une seule opération.
 
 3. Cliquez sur **Importer**. Le serveur traite le fichier, puis la liste est filtrée sur le sujet, la langue et les jeux importés et indique le nombre de questions créées.
 
-> 💡 **Fichiers YAML** — Activez **Fichier YML** dans la fenêtre pour importer un document YAML au lieu d'un fichier Excel, par exemple produit avec un assistant IA suivant le format de question de la plateforme. L'importateur YAML gère tous les types de réponse. Une question déjà en *Production* ne peut pas être écrasée par un import.
+> 💡 **Fichiers YAML** — Activez **Fichier YML** dans la fenêtre pour importer un document YAML au lieu d'un fichier Excel, par exemple produit avec un assistant IA suivant le format de question de la plateforme. L'importateur YAML gère tous les types de réponse. Si le document indique une difficulté, elle est appliquée au champ **Difficulté** de la question — uniquement si la question n'est pas calibrée ; la difficulté d'une question calibrée n'est jamais modifiée par un import. Une question déjà en *Production* ne peut pas être écrasée par un import.
 
 Toutes les questions importées démarrent au statut **En rédaction**.
 

@@ -19,11 +19,11 @@ The edit page (titled **Update an item**) is organised into several zones, with 
 
 1. **Toolbar** (above the header):
     - **Previous** / **Next** — move to the previous or next question of the current list without going back through it.
-    - **Back to list** — return to the Questions page.
+    - **Back to list** — return to the Questions page, which comes back with its filters, sort and page preserved.
     - **Save** — saves all modifications.
     - **Duplicate** — creates a copy of the question.
     - **Check** — runs the editorial diagnostic on this question (empty title, missing statement, options not marked correct, etc.).
-    - **Comments** — opens the list of comments left by candidates on this question during tests.
+    - **Comments** — opens the list of comments left by candidates on this question during tests; the **Delete** (trash) icon at the end of a row removes a comment.
     - **Preview** — opens the question as a candidate will see it.
     - **Unlock** — shown on a question in *Production* status to administrators holding the appropriate privilege; puts the question back to *Draft* in one click (see [Save, preview, delete](#final-actions)).
 
@@ -43,7 +43,7 @@ The edit page (titled **Update an item**) is organised into several zones, with 
 
 5. **"Tutorial" section** — the explanation shown to the candidate after answering (see [Tutorial](#tutorial)).
 
-6. **Review block** — the question's **Status** and **Responsible person**, plus a file and comments for proofreading exchanges between authors.
+6. **Review block** — the question's **Status** and **Responsible person**, plus a file and comments for proofreading exchanges between authors. Comments are split into two tabs: **Comments** (current) and **Archived comments**.
 
 7. **"AI assist" sidebar** on the right — AI generation buttons (see [AI generation](#ai-generation)).
 
@@ -59,7 +59,7 @@ The **Question and answers** section is organised into tabs specific to the ques
 | Tab | Content |
 |---|---|
 | **Question text** | The text shown to the candidate (rich text editor). |
-| **Medias** | Reference documents, media files and audio generation attached to the statement. |
+| **Medias** | Reference documents, media files and audio generation attached to the statement. To generate an audio file, type the text to read and pick a **voice** among those available for the question's language. |
 | **Proposed answers** (label varies by type) | Answer options or type-specific settings — see per-type sections. |
 | **Score-calculation prompt** | For AI-graded questions: instructions given to the AI to compute the score. |
 | **Advanced** | Advanced options: **Mandatory answer in tests with navigation**, and for free-text questions **Lock copy/paste and selection**. |
@@ -133,7 +133,7 @@ Three variants exist:
 
 The editor offers an **AI assist** sidebar on the right of the page. On a newly created question it holds two buttons:
 
-- **Generate question** — proposes a full statement (text, answer options, correct answer) from the question's metadata (subject, domain, title). Offered for the answer types that support generation.
+- **Generate question** — proposes a full statement (text, answer options, correct answer) from the question's metadata (subject, domain, title). Offered for the answer types that support generation. Generation also fills in the **Difficulty** field with the level suggested by the AI (unless the question is calibrated); you can change it before saving.
 - **Translate** — translates the question's content into another language, useful to quickly produce several linguistic versions of a subject.
 
 Once the question has been saved a first time, more buttons appear:
@@ -338,13 +338,15 @@ The **Check** button runs the editorial diagnostic on the question: empty title 
 
 The **Preview** button opens the question as it will appear to a candidate (rendered statement, displayed options, loaded illustrations). It is the mandatory step before any production rollout: a statement that looks clear in the editor can be ambiguous once rendered on the candidate side.
 
+On the preview page, the **review block** is shown in a panel docked on the right, open by default. The **Review** button in the toolbar hides or shows it again, and its state is remembered from one preview to the next.
+
 ### Navigate between questions
 
 The **Previous** and **Next** buttons at the top of the page let you move to the neighbouring questions of the current list **without going back through the list**. Handy for bulk editorial reviews.
 
 ### Delete
 
-The **Delete** icon on the question's row in the list deletes the question after confirmation. Deletion is refused if the question is part of the fixed question list of a **test**.
+The **Delete** icon on the question's row in the list deletes the question after confirmation. If deletion is refused (for example because the question is part of the fixed question list of a **test**), an error notification is shown and you stay on the page; otherwise you are taken back to the list, with its filters preserved, and a success message is shown.
 
 > 💡 **Prefer the "To delete" status to deletion** — To withdraw a question from circulation without losing its history, **change its status** to *To delete* instead of deleting it. The question leaves the default list (a filter lets you show these questions again), its historical takes remain analysable, and it is no longer served to new candidates.
 

@@ -71,6 +71,8 @@
       anchor: profils-de-surveillance
     - title: Gestion des tests surveillés
       anchor: gestion-des-tests-surveilles
+    - title: Surveillance en direct
+      anchor: surveillance-en-direct
     - title: Activer la surveillance sur un test
       anchor: activer-surveillance
 
@@ -107,6 +109,8 @@
       anchor: creer-une-session
     - title: Modifier une session
       anchor: modifier-une-session
+    - title: Mettre en pause et reprendre une session
+      anchor: mettre-en-pause-une-session
     - title: Supprimer une session
       anchor: supprimer-une-session
     - title: Importer plusieurs sessions

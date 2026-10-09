@@ -22,7 +22,7 @@ The panel at the top of the page determines what the dashboard aggregates:
 - **Select by session** (switch) — toggles between group-based and session-based selection (see [Select by session](#select-by-session)).
 - **Select a group** — the candidate group to analyse. If the group has sub-groups, a **sub-group** selector appears to narrow the selection.
 - **Test** — the test to analyse. The list refreshes automatically whenever you change the group, sub-group or session: it only offers tests actually taken by the selected population.
-- **Period from / to** — the completion-date interval taken into account (default: the last twelve months).
+- **Period from / to** — the date interval taken into account (default: the last twelve months). A **completed** test is included if its **completion date** falls within the period; a **non-completed** test (pending, started) is included if its **registration date** falls within the period.
 
 Click **Update the dashboard** to apply the filters and reload the metrics.
 
@@ -49,7 +49,7 @@ Once the filters are applied, the dashboard displays:
 
 ![Status and score charts](img/04-graphiques.png)
 
-- **Test status** — the breakdown of all tests in the selection between *pending*, *started*, *completed* and *waiting for marking*.
+- **Test status** — the breakdown of the tests in the selection **registered or completed within the period** between *pending*, *started*, *completed* and *waiting for marking*.
 - **Score distribution** — the distribution of completed tests by score level (for example Initial, Basic, Operational, Advanced, Expert for Tosa assessments).
 
 Depending on the test and your account options, additional blocks may appear: an **invitation tracking** chart (emails sent, reminders, candidates never invited) and a **success rate per question** table.
@@ -75,4 +75,4 @@ At the top of the dashboard, the **Active packs** block summarises the state of 
 
 ![Packs table](img/06-packs.png)
 
-For each pack: the **expiration date**, the **test type**, the **initial quantity** and the **remaining quantity**. Expired packs appear greyed out. The block can be collapsed with the arrow at the top right.
+For each pack: the **expiration date**, the **test type**, the **initial quantity** and the **remaining quantity**. Only **active, non-expired** packs are listed; the full history remains available in the **Packs** tab of your account. The block can be collapsed with the arrow at the top right.

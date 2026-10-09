@@ -1,41 +1,67 @@
 {
   "chapter": "sessions",
-  "generated_at": "2026-06-09T08:32:20.547Z",
-  "base_url": "https://app.isograd.com",
+  "generated_at": "2026-10-09T16:58:40.125Z",
+  "base_url": "https://appdev.isograd.com",
   "captures": [
     {
       "name": "01-liste-sessions.png",
       "caption": "Page principale \"Gestion des sessions de passage\" — tableau Nom / Date début / Date fin / Code, filtres, boutons d'action.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&95809=1&95807=1&95801=1&95799=1&95795=1&95794=1&94955=1&92673=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0"
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&100991=1&100990=1&100940=1&100909=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0"
     },
     {
       "name": "02-formulaire-creation.png",
-      "caption": "Formulaire de création — Nom de session, Code de session, Date de début, Date de fin.",
+      "caption": "Formulaire de création — Nom de session, Code de session, Date de début, Date de fin, commutateur Surveillance en direct avec profil de surveillance et surveillants.",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&95809=1&95807=1&95801=1&95799=1&95795=1&95794=1&94955=1&92673=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0"
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&100991=1&100990=1&100940=1&100909=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0"
     },
     {
       "name": "03-modal-notification.png",
       "caption": "Fenêtre \"Notifier les candidats\" — proposée automatiquement après modification des dates d'une session ayant des candidats inscrits.",
       "kind": "element",
       "selector": ".modal.show:has(#NotifyCandidatesNoBtn) .modal-content",
-      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&95829=1&95809=1&95807=1&95801=1&95799=1&95795=1&95794=1&94955=1&92673=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0#"
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&101017=1&100991=1&100990=1&100940=1&100909=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0#"
     },
     {
       "name": "04-confirmation-suppression.png",
       "caption": "Fenêtre de confirmation avant suppression d'une session.",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&95829=1&95809=1&95807=1&95801=1&95799=1&95795=1&95794=1&94955=1&92673=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0#"
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&101017=1&100991=1&100990=1&100940=1&100909=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0#"
+    },
+    {
+      "name": "06-session-en-cours.png",
+      "caption": "Session en cours (entre ses dates de début et de fin) — le bouton \"Mettre en pause\" (icône pause) apparaît en bout de ligne.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&101017=1&101018=1&100991=1&100990=1&100940=1&100909=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0"
+    },
+    {
+      "name": "07-modal-pause.png",
+      "caption": "Confirmation de mise en pause — les candidats en cours de passage sont bloqués tant que la session est en pause.",
+      "kind": "element",
+      "selector": ".modal.show:has(#ConfirmPauseSessionBtn) .modal-content",
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&101017=1&101018=1&100991=1&100990=1&100940=1&100909=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0#"
+    },
+    {
+      "name": "08-session-en-pause.png",
+      "caption": "Session en pause — pill \"En pause\" à côté du nom et bouton \"Reprendre la session\" (icône lecture) en bout de ligne.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&101017=1&101018=1&100991=1&100990=1&100940=1&100909=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0"
+    },
+    {
+      "name": "09-modal-reprise.png",
+      "caption": "Fenêtre de reprise — recrédit automatique des certifications TOSA commencées et minutes à ajouter aux autres tests commencés.",
+      "kind": "element",
+      "selector": ".modal.show:has(#ConfirmResumeSessionBtn) .modal-content",
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&101017=1&101018=1&100991=1&100990=1&100940=1&100909=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0#"
     },
     {
       "name": "05-modal-import.png",
       "caption": "Fenêtre d'import — lien de téléchargement du modèle Excel et bouton de sélection de fichier.",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&95829=1&95809=1&95807=1&95801=1&95799=1&95795=1&95794=1&94955=1&92673=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0"
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminSessionsWithTable?filter_search=&101017=1&101018=1&100991=1&100990=1&100940=1&100909=1&ses_ids=&changepage=1&orderby=dat_sta+DESC&export_to_excel=0"
     }
   ]
 }

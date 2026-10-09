@@ -20,7 +20,8 @@ The **Your account** page is organized into several **tabs**:
 - **Address** — postal and tax details of your organization (legal name, address, phone, VAT number).
 - **Details** — additional settings: **logo** displayed on reports, GDPR and feedback email addresses, and depending on your profile, brand, sales contact, currency and customer type.
 - **Packs** — list of credit packs in progress, their quantity and their expiration date.
-- **Tests used & other options** — selection of test types enabled on the account and other global options.
+- **API** — access to the platform API: authentication parameters, your tests' identifiers and technical documentation. This tab only appears on **your own account**.
+- **Delete your account** — for the main administrator, when the account has several administrators.
 
 > 💡 **Tabs visible according to your profile** — Some tabs or fields only appear depending on the account type (for example, a **CPF** tab appears for French training centers registered on Mon Compte Formation). Don't worry if you don't have exactly the same tabs as in the screenshot above.
 
@@ -49,9 +50,22 @@ The **Details** tab lets you customize several elements visible in your communic
 - **Feedback email address** — contact address used when a candidate fills in the feedback form on the platform.
 - **GDPR rectification email address** — address at which your candidates can request rectification or deletion of their personal data. It appears in the GDPR legal notice at the foot of your emails.
 
-> 💡 **Distributor fields** — If you see fields like **Brand**, **Sales contact**, **Currency**, **Contract type**, **Customer type** or **Approved center** on this tab, it means your account is of distributor or approved-center type. These fields **cannot be modified by you**; they are managed by your Isograd contact.
+> 💡 **Distributor fields** — If you see fields like **Brand**, **Sales contact**, **Currency**, **Contract type**, **Customer type** or **Approved center**, or an additional **Tests used & other options** tab on this tab, it means your account is of distributor or approved-center type. These fields **cannot be modified by you**; they are managed by your Isograd contact.
 
 > 💡 **The logo does not appear in emails** — The logo configured here is used **only in the PDF reports** sent to candidates. To customize the header of your emails, use the dedicated **banner** — see [Add a custom banner](/ai/en/mail-templates/#add-a-custom-banner).
+
+
+### API settings
+
+The **API** tab gathers what you need to connect your information system (LMS, HR software, recruiting tool) to the platform:
+
+- **Show the authentication parameters** — opens a window with your **Client ID** and **Client Secret**, to copy into your integration. The secret is masked by default; the eye icon reveals it and the copy icon puts it in the clipboard. The credentials are generated the first time the window is opened.
+- **Show the test identifiers for the API** — opens the list of your account's tests with the identifier to use in registration calls.
+- **See the API technical documentation** — opens the developer documentation in a new tab.
+
+> ⚠️ **Client Secret** — The secret gives access to your candidates' data: only share it with the technical team doing the integration and never paste it into a shared document.
+
+> 💡 **API not included** — If your subscription does not include API access, the tab only shows a message saying so; contact your Isograd representative to enable it.
 
 
 ## Packs and credits {#packs-and-credits}

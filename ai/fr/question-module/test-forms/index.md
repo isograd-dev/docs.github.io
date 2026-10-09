@@ -14,6 +14,8 @@ Accédez à la page via le menu **Tests**. Il est affiché aux administrateurs d
 
 Le tableau (titre **Gestion des tests**) liste tous les tests, avec leur **identifiant**, **nom**, **sujet**, **langue**, **type** et **algorithme**. Lorsqu'une période est renseignée dans les filtres, une colonne supplémentaire affiche le **nombre de passages** sur cette période.
 
+Les administrateurs du **compte principal** voient l'ensemble des tests. Les administrateurs d'un **sous-compte** (ou connectés en alias sur un compte) ne voient que les tests liés à leur propre compte — voir [Autoriser un test / Retirer l'accès](#autoriser-un-test).
+
 
 ## Concepts {#concepts}
 
@@ -115,6 +117,21 @@ La duplication est l'outil le plus rapide pour créer une variante d'un test exi
 > 💡 **La duplication conserve** — la liste des questions, l'ordre des questions, les paramètres, les descriptions, les messages de début et de fin. Les questions elles-mêmes sont partagées, pas copiées.
 
 
+## Autoriser un test / Retirer l'accès {#autoriser-un-test}
+
+Les administrateurs du **compte principal** décident quels tests sont liés à chaque compte : un administrateur de sous-compte ne voit et ne peut inscrire que les tests liés à son compte.
+
+Pour lier un test au compte courant :
+
+1. Depuis la page **Gestion des tests**, cliquez sur **Autoriser un test** dans la barre d'actions.
+2. Dans la fenêtre **Autoriser un test pour ce compte**, saisissez l'**Identifiant du test** (la colonne *ID* de la liste).
+3. Cliquez sur **Enregistrer**. Un message confirme que le test a été ajouté au compte et la liste se recharge.
+
+Pour retirer un test d'un compte, cliquez sur l'icône **Retirer l'accès** (clé) sur la ligne du test : il disparaît de la liste des administrateurs de ce compte.
+
+> 💡 **Tests déjà accessibles à tous** — Certains tests sont accessibles à l'ensemble des comptes de la plateforme : la fenêtre le signale si vous tentez d'en autoriser un, et l'icône **Retirer l'accès** n'apparaît pas sur leur ligne.
+
+
 ## Supprimer un test {#supprimer-un-formulaire}
 
 1. Sur la ligne du test, cliquez sur l'icône **Supprimer**.
@@ -133,7 +150,7 @@ Le panneau **Filtres** propose :
 - **Inclure les tests inactifs** — commutateur, désactivé par défaut.
 - **Afficher le nombre de passages du / au** — une période ; lorsqu'elle est renseignée, le tableau affiche le nombre de passages de chaque test sur cette période.
 
-Le tri par colonne est disponible en cliquant sur les en-têtes.
+Le tri par colonne est disponible en cliquant sur les en-têtes. Sur un sous-compte, les filtres s'appliquent aux seuls tests liés au compte.
 
 
 ## Exporter la liste {#exporter-la-liste}

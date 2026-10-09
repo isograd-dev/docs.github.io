@@ -52,7 +52,7 @@ The **Reset** button at the top of the panel returns all filters to their defaul
 The **Test status** filter offers several values that correspond to the stages of a test's life:
 
 - **To be taken** — the candidate has been registered but has not yet started the test.
-- **In progress** — the candidate has started the test and has not finished it. The test remains startable as long as it is not marked as completed.
+- **In progress** — the candidate has started the test and has not finished it. The test remains startable as long as it is not marked as completed. A test stopped by an administrator still shows as *In progress* here; the **Stopped by an administrator** badge only appears on the candidate's record (see [The planned tests table](/ai/en/candidates/#the-planned-tests-table)).
 - **Completed** — the candidate has submitted their answers. The score is calculated and the report is available.
 - **Pending grading** — for subjects containing manually graded questions (essay, code), the test is submitted but requires a grader's intervention.
 - **Cancelled** — the registration was cancelled before the candidate took the test. The credit is refunded to the account.

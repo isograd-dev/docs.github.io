@@ -22,7 +22,7 @@ Le panneau en haut de page détermine ce que le tableau de bord agrège :
 - **Sélectionner par session** (commutateur) — bascule entre la sélection par groupe et la sélection par session (voir [Sélection par session](#selection-par-session)).
 - **Sélectionnez un groupe** — le groupe de candidats à analyser. Si le groupe a des sous-groupes, un sélecteur de **sous-groupe** apparaît pour affiner la sélection.
 - **Test** — l'évaluation à analyser. La liste se met à jour automatiquement à chaque changement de groupe, de sous-groupe ou de session : elle ne propose que les tests réellement passés par la population sélectionnée.
-- **Période du / au** — l'intervalle de dates de passage pris en compte (par défaut : les douze derniers mois).
+- **Période du / au** — l'intervalle de dates pris en compte (par défaut : les douze derniers mois). Un test **terminé** est retenu si sa **date de fin de passage** est dans la période ; un test **non terminé** (à passer, commencé) est retenu si sa **date d'inscription** est dans la période.
 
 Cliquez sur **Mettre à jour le tableau de bord** pour appliquer les filtres et recharger les métriques.
 
@@ -49,7 +49,7 @@ Une fois les filtres appliqués, le tableau de bord affiche :
 
 ![Graphiques statuts et scores](img/04-graphiques.png)
 
-- **Statut des tests** — la répartition de tous les tests de la sélection entre *à passer*, *commencés*, *terminés* et *en attente de notation*.
+- **Statut des tests** — la répartition des tests de la sélection **inscrits ou terminés sur la période** entre *à passer*, *commencés*, *terminés* et *en attente de notation*.
 - **Répartition des scores** — la distribution des tests terminés par niveau de score (par exemple Initial, Basique, Opérationnel, Avancé, Expert pour les évaluations Tosa).
 
 Selon l'évaluation et les options de votre compte, des blocs supplémentaires peuvent apparaître : un graphique de **suivi des invitations** (emails envoyés, relances, candidats jamais invités) et un tableau du **taux de succès par question**.
@@ -75,4 +75,4 @@ En haut du tableau de bord, le bloc **Packs actifs** récapitule l'état de vos 
 
 ![Tableau des packs](img/06-packs.png)
 
-Pour chaque pack : la **date d'expiration**, le **type de test**, la **quantité initiale** et la **quantité restante**. Les packs expirés apparaissent grisés. Le bloc peut être replié via la flèche en haut à droite.
+Pour chaque pack : la **date d'expiration**, le **type de test**, la **quantité initiale** et la **quantité restante**. Seuls les packs **actifs et non expirés** sont listés ; l'historique complet reste consultable dans l'onglet **Packs** de votre compte. Le bloc peut être replié via la flèche en haut à droite.

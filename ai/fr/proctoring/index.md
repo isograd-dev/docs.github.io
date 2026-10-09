@@ -6,17 +6,18 @@ layout: admin-manual
 
 La **surveillance à distance** (« proctoring ») permet de garantir l'intégrité d'un test passé à distance, sans surveillant physique en présentiel. La plateforme propose plusieurs niveaux de surveillance — du plein écran obligatoire jusqu'à l'enregistrement vidéo et audio — et la revue *a posteriori* des incidents détectés.
 
-Ce chapitre couvre deux pages complémentaires :
+Ce chapitre couvre trois pages complémentaires :
 
 - **[Profils de surveillance](#profils-de-surveillance)** — configurez **comment** vos tests sont surveillés (quelles vérifications, quels enregistrements).
 - **[Gestion des tests surveillés](#gestion-des-tests-surveilles)** — examinez **les passages** déjà effectués et validez ou invalidez chaque test à partir des éléments collectés.
+- **[Surveillance en direct](#surveillance-en-direct)** — suivez **en temps réel** la caméra et l'écran des candidats d'une session de passage.
 
 > 💡 **Disponibilité** — La surveillance à distance est une option du compte. Si vous ne voyez pas les pages décrites ici dans le menu, contactez votre interlocuteur Isograd pour activer la fonctionnalité.
 
 
 ## Profils de surveillance {#profils-de-surveillance}
 
-Un **profil de surveillance** est un jeu de réglages qui détermine ce que la plateforme vérifie et enregistre pendant le test. Vous pouvez créer plusieurs profils (par exemple, *« Examen léger »* vs *« Certification stricte »*) et les **associer à des [sessions de passage](/ai/sessions/)** pour appliquer le bon niveau de contrôle au bon contexte.
+Un **profil de surveillance** est un jeu de réglages qui détermine ce que la plateforme vérifie et enregistre pendant le test. Vous pouvez créer plusieurs profils (par exemple, *« Examen léger »* vs *« Certification stricte »*) et les **associer à des [sessions de passage](/ai/fr/sessions/)** pour appliquer le bon niveau de contrôle au bon contexte.
 
 Accédez à cette page via le menu **Surveillance → Profils de surveillance**.
 
@@ -52,7 +53,7 @@ Dans la fenêtre d'édition du profil, cochez les **options de surveillance** so
 | **Effectuer un scan de la pièce** | Avant le test, le candidat fait un tour à 360° de sa pièce avec sa webcam pour montrer qu'il est seul et que son poste de travail est conforme. |
 | **Nécessite le navigateur sécurisé** | Le test ne peut être passé que dans **Safe Exam Browser**, un navigateur d'examen qui verrouille le poste du candidat. Voir [la section dédiée](#navigateur-securise) ci-dessous. |
 
-Cliquez sur **Enregistrer** pour persister la configuration. Le profil est immédiatement utilisable dans les [sessions de passage](/ai/sessions/).
+Cliquez sur **Enregistrer** pour persister la configuration. Le profil est immédiatement utilisable dans les [sessions de passage](/ai/fr/sessions/).
 
 ### Le navigateur sécurisé (Safe Exam Browser) {#navigateur-securise}
 
@@ -70,7 +71,10 @@ Selon le contenu du test, SEB autorise automatiquement ce qui est nécessaire �
 Règles d'interaction avec les autres options du profil :
 
 - Activer le navigateur sécurisé **coche et verrouille « Forcer le plein écran »** (le verrouillage est garanti par SEB lui-même) et **désactive la liste blanche de sites** (le filtrage des sites est intégré au navigateur sécurisé).
-- **Captures d'écran** — sur **macOS**, le mode examen du système bloque toute capture d'écran : si les deux options sont cochées, un avertissement s'affiche dans le profil et les candidats sur Mac passeront le test **sans captures**. Les captures fonctionnent normalement sous **Windows**. L'enregistrement **audio et vidéo** fonctionne sur les deux systèmes.
+- **Captures d'écran** — les captures régulières de l'écran ne sont **pas disponibles** avec le navigateur sécurisé, quel que soit le système : l'option **Prendre des captures régulières de l'écran** est décochée et grisée, et une note l'explique sous les options. L'enregistrement **audio et vidéo** fonctionne normalement.
+
+    ![Profil avec navigateur sécurisé](img/05-modal-profil-seb.png)
+
 - Décocher **Utiliser la surveillance à distance** remet à zéro toutes ses options, y compris le navigateur sécurisé.
 
 > ⚠️ **Contenus vidéo sous Windows** — Safe Exam Browser pour Windows ne lit pas les vidéos au format MP4/H.264. Si votre test contient des vidéos dans ce format, contactez votre interlocuteur Isograd avant d'activer le navigateur sécurisé.
@@ -95,7 +99,7 @@ Le profil **par défaut** est appliqué automatiquement à tous les tests survei
 1. Sur la ligne du profil, cliquez sur l'icône **Supprimer**.
 2. Confirmez.
 
-> ⚠️ **Profil utilisé** — Un profil utilisé dans **au moins une session de passage** ne peut pas être supprimé. Le message *« Ce profil de surveillance ne peut pas être supprimé car il est utilisé dans au moins un test. »* s'affiche dans ce cas. Détachez d'abord le profil des sessions concernées.
+> ⚠️ **Profil utilisé** — Si le profil est associé à des tests, une **seconde confirmation** vous indique leur nombre : après la suppression, ces tests sont considérés comme **non surveillés** (les tests en attente sont recrédités de leur crédit de surveillance). La suppression est **refusée** dans deux cas : si votre compte n'a aucun pack de crédits de surveillance permettant ce recrédit, ou si le profil est utilisé par une [session surveillée en direct](#surveillance-en-direct) qui n'est pas terminée.
 
 
 ## Gestion des tests surveillés {#gestion-des-tests-surveilles}
@@ -130,13 +134,13 @@ Le panneau de filtres permet de cibler :
 
 Les boutons d'action en bout de ligne dépendent du type de surveillance et du statut :
 
-- **Afficher les photos prises pendant le test** (icône caméra) — ouvre une galerie des captures d'écran et de webcam prises périodiquement. Le commutateur **Afficher uniquement les images suspectes** filtre les captures où une IA a détecté une anomalie (présence d'une autre personne, regard hors écran, etc.).
+- **Afficher les photos prises pendant le test** (icône caméra) — ouvre une galerie des captures d'écran et de webcam prises périodiquement. Le commutateur **Afficher uniquement les images suspectes** filtre les captures où une IA a détecté une anomalie ; le bloc **Motifs relevés par l'IA** liste alors les motifs détectés avec leur nombre d'occurrences (visage peu visible, second appareil ou écran, document à portée de main, conversation avec un tiers, écouteurs, autre personne présente, autre onglet ou application actif…) et un clic sur un motif fait défiler jusqu'à la première image concernée.
 
     <!-- Capture à régénérer (nécessite un test surveillé avec photos sur l'environnement) :
     ![Photos prises pendant le test](img/04-modal-photos.png) -->
 
 - **Afficher la pièce d'identité** (icône silhouette) — affiche la photo de la pièce d'identité fournie par le candidat au démarrage.
-- **Commentaire de revue du protocole** (icône loupe) — pour les tests avec **incident**, cette fenêtre détaille chaque incident, sa nature, et offre un champ pour saisir l'explication du surveillant ou pour demander des informations au candidat.
+- **Commentaire de revue du protocole** (icône loupe) — pour les tests avec **incident**, cette fenêtre détaille chaque incident, sa nature, et offre un champ pour saisir l'explication du surveillant ou pour demander des informations au candidat. Pour un test passé dans une session [surveillée en direct](#surveillance-en-direct), elle affiche aussi les signalements des surveillants (*Signalé par*), les messages échangés et les écoutes ou conversations audio.
 
 ### Valider ou invalider un test
 
@@ -168,12 +172,54 @@ Pour les certifications avec incident, vous pouvez demander au candidat de **jus
 > 💡 **Bonnes pratiques de validation** — Pour les certifications officielles, soyez exigeant sur les incidents (sortie de plein écran > 60 secondes, présence d'une seconde personne sur les captures). Pour les évaluations internes en entreprise, vous pouvez être plus souple — la surveillance reste un outil dissuasif autant que punitif.
 
 
+## Surveillance en direct {#surveillance-en-direct}
+
+La **surveillance en direct** complète la surveillance à distance enregistrée : pendant une **session de passage** surveillée en direct, des **surveillants** de votre compte voient en temps réel la **caméra** et l'**écran** de chaque candidat, peuvent lui écrire, lui parler, l'avertir, signaler un incident ou arrêter son test — comme dans une salle d'examen.
+
+### Prérequis
+
+- Votre compte utilise la **surveillance à distance Isograd** (sinon la fonctionnalité n'apparaît pas).
+- Un **profil de surveillance** à distance Isograd avec **Enregistrer la vidéo** coché : c'est le seul type de profil compatible.
+- Les surveillants disposent du privilège **Surveiller en direct les sessions de passage** (voir [Modifier les privilèges](/ai/fr/admins/#modifier-les-privileges)). Un surveillant ne voit que les sessions dont il est surveillant, sauf s'il a aussi le privilège **Voir toutes les sessions surveillées en direct**.
+- Une [session de passage](/ai/fr/sessions/#creer-une-session) créée avec le commutateur **Surveillance en direct** activé, son profil de surveillance et ses surveillants. Le profil de la session est **imposé à tous les tests** qui lui sont rattachés.
+
+### Les sessions en cours
+
+Accédez à cette page via le menu **Surveillance → Surveillance en direct**.
+
+![Page "Surveillance en direct"](img/06-page-sessions-direct.png)
+
+La page liste les sessions surveillées en direct **actuellement ouvertes** (entre leur date de début et leur date de fin) dont vous êtes surveillant, avec pour chacune le nombre de **tests inscrits**, de **candidats connectés**, de **réunions actives** et la liste des **surveillants**. Le champ **Rechercher** filtre la liste sur le nom ou l'identifiant de la session. Cliquez sur **Voir les réunions** (icône caméra) en bout de ligne pour ouvrir la session.
+
+### Les réunions d'une session
+
+![Page "Réunions de la session"](img/07-page-reunions.png)
+
+Les candidats d'une session sont répartis automatiquement en **réunions** d'au plus douze candidats : une nouvelle réunion s'ouvre d'elle-même quand des candidats supplémentaires démarrent leur test. Chaque carte indique le nombre de candidats connectés, le nombre de surveillants présents et l'heure d'ouverture ; la liste se rafraîchit toutes les dix secondes. Tant qu'aucun candidat n'a démarré de test, la page indique simplement qu'aucune réunion n'est en cours. Cliquez sur **Entrer dans la réunion** pour rejoindre une réunion.
+
+### Dans la réunion
+
+Dans la réunion, chaque candidat apparaît avec sa **caméra** et son **écran** ; cliquez sur une carte pour l'**agrandir**. Aucun son n'est transmis par défaut : le micro du candidat est requis mais n'est pas enregistré. Pour chaque candidat, vous disposez des actions suivantes :
+
+| Action | Effet |
+|---|---|
+| **Messages** | Ouvre une conversation écrite avec le candidat ; les messages sont conservés avec le test. |
+| **Écouter** / **Parler** | Ouvre une écoute ou une conversation audio avec le candidat. Une seule conversation audio à la fois par réunion ; elle s'arrête automatiquement après dix minutes. |
+| **Avertir** | Affiche un message de votre choix sur l'écran du candidat pendant vingt secondes. |
+| **Signaler** | Enregistre un **incident** avec votre description ; il apparaît ensuite dans la revue du test (voir ci-dessus). |
+| **Arrêter** / **Reprendre** | Interrompt le test du candidat, qui est renvoyé à sa liste de tests, puis le reprend en lui rendant le temps écoulé pendant l'arrêt — la même action que depuis la fiche du candidat. |
+
+Les boutons **Changer de réunion** et **Quitter la réunion** en haut de page permettent de passer à une autre réunion de la session ou de sortir.
+
+> 💡 **Trace dans la revue** — Tout ce qui se passe en direct est conservé avec le test : les messages échangés, les écoutes et conversations audio, les avertissements et les signalements apparaissent dans la fenêtre **Commentaire de revue du protocole** de la page **Gestion des tests surveillés**, avec le nom du surveillant.
+
+
 ## Activer la surveillance sur un test {#activer-surveillance}
 
 La surveillance ne s'active **pas** à la pièce sur cette page : elle est décidée **au moment de l'inscription** d'un candidat à un test. Pour activer la surveillance sur un test :
 
-1. Inscrivez le candidat au test (voir [Inscrire un candidat à un test](/ai/candidates/#inscrire-un-candidat-a-un-test)).
+1. Inscrivez le candidat au test (voir [Inscrire un candidat à un test](/ai/fr/candidates/#inscrire-un-candidat-a-un-test)).
 2. Dans la fenêtre d'inscription, activez l'option **Surveillance à distance**.
-3. Si vous voulez appliquer un profil de surveillance précis, associez le candidat à une [session de passage](/ai/sessions/) à laquelle ce profil est rattaché.
+3. Choisissez le **profil de surveillance** à appliquer dans la liste ; à défaut, le **profil par défaut** s'applique automatiquement.
 
-À défaut, le **profil par défaut** s'applique automatiquement.
+Si le candidat est inscrit sur une [session surveillée en direct](#surveillance-en-direct), le profil de la session est imposé : le sélecteur est verrouillé et un message l'indique.

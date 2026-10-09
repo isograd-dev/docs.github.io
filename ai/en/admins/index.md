@@ -95,6 +95,8 @@ Each resource generally exposes three levels:
 
 Some privileges are **cross-cutting**; for example *Read/write the emails of another administrator* allows an administrator to manage the email templates created by their colleagues, and not just their own.
 
+Two privileges relate to [live proctoring](/ai/en/proctoring/#live-proctoring): *Proctor test sessions live* makes the administrator selectable as a proctor of a session and opens the live proctoring pages to them; *See every live proctored session* (which requires the former) shows them every session of the account, not only those they proctor.
+
 > ⚠️ **Privileges and role** — Fine-grained privileges **add to** the role, they do not replace it. A Main administrator already has all privileges by default; the Privileges window is mainly used to **open up** additional access to a Group administrator.
 
 ### Filter by privilege

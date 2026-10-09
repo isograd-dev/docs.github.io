@@ -1,6 +1,6 @@
 {
   "chapter": "question-module/test-forms",
-  "generated_at": "2026-09-18T13:55:08.874Z",
+  "generated_at": "2026-10-09T17:34:45.910Z",
   "base_url": "https://appdev.isograd.com",
   "captures": [
     {
@@ -20,7 +20,7 @@
       "name": "03-onglets-avance.png",
       "caption": "Page d'édition d'un test — onglets Caractéristiques générales / Gestion du temps / Messages de début et de fin / Statistiques.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/testforms/TestFormUpdate?tst_frm_uid=70726383-a2af-4b44-b84e-cdd793330348"
+      "url": "https://test.isograd.com/testforms/TestFormUpdate?tst_frm_uid=93260578-8b15-4e2f-9745-15465f0c51a1"
     }
   ]
 }

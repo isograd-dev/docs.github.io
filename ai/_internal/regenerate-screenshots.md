@@ -58,7 +58,7 @@ détectent `body[data-is_cus_env="1"]` pour adapter la création des données de
 Pour le chapitre « Éditeur de questions », désigner le sujet de démo de
 l'environnement avec `MANUAL_SUBJECT_ID=<sbj_id>`.
 
-Dernière régénération complète (fr + en) : 2026-09-18, sur `test.isograd.com`
+Dernière régénération du manuel administrateur (fr + en) : 2026-10-09 sur `test.isograd.com` (10 chapitres, dont les nouvelles captures pause/reprise de session, navigateur sécurisé et surveillance en direct). Module Questions : dernière régénération complète (fr + en) 2026-09-18, sur `test.isograd.com`
 temporairement configuré en environnement custom (`isCustomEnvironment()` patché
 côté serveur). Limites de ces captures : l'admin utilisé est un compte root
 Isograd, donc l'éditeur de questions montre en plus l'onglet « Description YML »

@@ -1,6 +1,6 @@
 {
   "chapter": "proctoring",
-  "generated_at": "2026-08-15T12:03:29.216Z",
+  "generated_at": "2026-10-09T17:06:35.994Z",
   "base_url": "https://appdev.isograd.com",
   "captures": [
     {
@@ -21,6 +21,25 @@
       "caption": "Page \"Gestion des tests surveillés\" — tableau ID / Nom / Test / Date / Type / Statut / Incident, filtres dédiés.",
       "kind": "viewport-1440x720",
       "url": "https://test.isograd.com/clientadmin/clientresult/AdminProctoringReviewWithTable"
+    },
+    {
+      "name": "05-modal-profil-seb.png",
+      "caption": "Fenêtre d'édition d'un profil avec \"Nécessite le navigateur sécurisé\" coché — plein écran forcé, captures d'écran désactivées avec la note explicative.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/clientadmin/parameters/AdminProctoringParametersWithTable#"
+    },
+    {
+      "name": "06-page-sessions-direct.png",
+      "caption": "Page \"Surveillance en direct\" — sessions surveillées en direct en cours : tests inscrits, candidats connectés, réunions actives, surveillants, bouton \"Voir les réunions\".",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/proctoring/AdminLiveProctoringSessionsWithTable"
+    },
+    {
+      "name": "07-page-reunions.png",
+      "caption": "Page \"Réunions de la session\" — une carte par réunion en cours (candidats connectés, surveillants présents) avec le bouton \"Entrer dans la réunion\".",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/proctoring/LiveProctoringSession?ses_id=101022"
     }
   ]
 }

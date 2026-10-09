@@ -8,7 +8,7 @@ Une **session de passage** est une fenêtre temporelle (date et heure de début,
 
 ![Page principale "Gestion des sessions"](img/01-liste-sessions.png)
 
-La page **Gestion des sessions de passage** liste toutes les sessions définies sur votre compte. Chaque ligne indique le **nom**, la **date de début**, la **date de fin** et le **code de session** (s'il existe).
+La page **Gestion des sessions de passage** liste toutes les sessions définies sur votre compte. Chaque ligne indique l'**identifiant**, le **nom**, la **date de début**, la **date de fin** et le **code de session** (s'il existe). Si la surveillance en direct est disponible sur votre compte, une colonne **Surveillance en direct** signale par une icône caméra les sessions surveillées en direct. Une pastille **En pause** à côté du nom indique une session [mise en pause](#mettre-en-pause-une-session).
 
 > 💡 **Affichage par défaut** — La plateforme affiche par défaut les sessions **en cours** et celles **terminées il y a moins de 3 mois**. Les sessions plus anciennes restent dans la base mais sont masquées de la liste. Les options d'affichage en bas du panneau de filtres permettent d'inclure les sessions plus anciennes ou de masquer les sessions passées.
 
@@ -20,7 +20,7 @@ Quand vous inscrivez un candidat à un test, vous pouvez l'**associer à une ses
 - Le candidat ne peut **démarrer** le test que dans la fenêtre temporelle de la session. Avant la date de début, le test apparaît mais reste verrouillé ; après la date de fin, il n'est plus accessible.
 - Si la session a un **code**, le candidat doit le saisir pour démarrer son test — c'est l'examinateur qui le communique au moment voulu, ce qui ajoute une couche de sécurité contre les démarrages prématurés.
 
-Vous pouvez aussi **affecter un groupe entier** à une session en une seule action depuis la page **Gestion des candidats** (voir [Actions de groupe](/ai/candidates/#gerer-les-groupes)). C'est la façon habituelle d'organiser une journée d'examen pour une promotion ou une session de formation.
+Vous pouvez aussi **affecter un groupe entier** à une session en une seule action depuis la page **Gestion des candidats** (voir [Actions de groupe](/ai/fr/candidates/#gerer-les-groupes)). C'est la façon habituelle d'organiser une journée d'examen pour une promotion ou une session de formation.
 
 > 💡 **Sans session** — Une inscription **sans session** signifie que le candidat peut démarrer son test à tout moment dès qu'il a reçu son invitation. Les sessions ne sont donc utiles que si vous voulez **encadrer** le passage dans le temps.
 
@@ -38,11 +38,13 @@ Vous pouvez aussi **affecter un groupe entier** à une session en une seule acti
     - **Description** — libellé qui apparaîtra dans la liste (colonne *Nom de session*) et dans le formulaire d'inscription d'un candidat. Choisissez un nom parlant (« Promotion 2026 — session du 14/03 »).
     - **Code de session** (facultatif) — mot de passe que les candidats devront saisir pour démarrer leur test. À communiquer **uniquement le jour de la session**. Le bouton de régénération à droite du champ propose un code aléatoire.
     - **Date de début** et **Date de fin** — fenêtre pendant laquelle les tests rattachés à cette session pourront être démarrés. Saisissez le format `JJ/MM/AA HH:MM`.
-    - **Profil de surveillance** (facultatif) — sélectionnez un profil de surveillance pour appliquer ses réglages aux tests **surveillés** rattachés à cette session. Voir l'encadré ci-dessous.
+    - **Surveillance en direct** (commutateur, facultatif) — n'apparaît que si votre compte utilise la surveillance à distance Isograd. Activez-le pour que des surveillants puissent suivre **en temps réel** la caméra et l'écran des candidats de la session (voir [Surveillance en direct](/ai/fr/proctoring/#surveillance-en-direct)). Deux champs apparaissent alors :
+        - **Profil de surveillance** (obligatoire) — un profil de surveillance à distance Isograd **avec enregistrement vidéo**. Ce profil est **imposé à tous les tests** inscrits sur la session.
+        - **Surveillants** — les administrateurs du compte disposant du privilège *Surveiller en direct les sessions de passage* qui pourront entrer dans les réunions de la session.
 
 3. Cliquez sur **Enregistrer**. La session apparaît immédiatement dans le tableau.
 
-> 💡 **Profil de surveillance** — Ce réglage n'agit **que sur les tests configurés pour être surveillés**. Si le test associé à la session n'est pas configuré comme surveillé, le profil n'a aucun effet. À l'inverse, si vous laissez ce champ vide pour une session contenant des tests surveillés, ceux-ci utilisent le **profil de surveillance par défaut** de votre compte.
+> 💡 **Profil de surveillance d'une session** — Hors surveillance en direct, une session n'impose pas de profil de surveillance : le profil se choisit **lors de l'inscription** du candidat au test (ou via l'action de groupe *Assigner une session ou un profil de surveillance*). Si le commutateur **Surveillance en direct** est grisé, c'est qu'aucun profil compatible n'existe encore : créez d'abord un profil de surveillance à distance Isograd avec enregistrement vidéo.
 
 > ⚠️ **Dates cohérentes** — La plateforme vérifie que la date de fin est postérieure à la date de début et que le format est valide. Une saisie incorrecte affiche un message en haut du formulaire ; la session n'est pas créée tant que les champs ne sont pas valides.
 
@@ -51,7 +53,7 @@ Vous pouvez aussi **affecter un groupe entier** à une session en une seule acti
 
 1. Sur la ligne de la session, cliquez sur l'icône **Modifier** (crayon) en bout de ligne. La fenêtre de modification s'ouvre, pré-remplie avec les valeurs actuelles.
 
-2. Ajustez les champs souhaités (nom, code, dates).
+2. Ajustez les champs souhaités (nom, code, dates, surveillance en direct et ses surveillants).
 
 3. Cliquez sur **Enregistrer**.
 
@@ -65,6 +67,45 @@ Si la session a déjà des candidats inscrits et que vous modifiez les dates, la
 - **Non** — la session est modifiée silencieusement, sans email.
 
 > 💡 **Quand notifier ?** — Notifiez systématiquement si vous **avancez** la date ou si vous **raccourcissez** la fenêtre — les candidats doivent en être informés. Pour un simple **report** de quelques minutes ou un ajustement mineur, vous pouvez choisir de ne pas envoyer d'email pour éviter de saturer les boîtes.
+
+
+## Mettre en pause et reprendre une session {#mettre-en-pause-une-session}
+
+Un imprévu pendant un examen (coupure réseau, évacuation, incident dans la salle) peut vous obliger à **interrompre temporairement** tous les candidats d'une session. Plutôt que de modifier les dates ou de réinitialiser chaque test, vous pouvez **mettre la session en pause**, puis la **reprendre** en rendant aux candidats le temps perdu.
+
+![Session en cours avec le bouton "Mettre en pause"](img/06-session-en-cours.png)
+
+Le bouton **Mettre en pause** (icône pause) n'apparaît en bout de ligne que pour une session **en cours**, c'est-à-dire entre sa date de début et sa date de fin, et uniquement si vous disposez du privilège d'écriture sur les sessions.
+
+### Mettre en pause
+
+1. Sur la ligne de la session en cours, cliquez sur **Mettre en pause**.
+
+    ![Confirmation de mise en pause](img/07-modal-pause.png)
+
+2. Confirmez. Dès cet instant, les candidats en train de passer un test de cette session sont **bloqués** : leurs réponses ne sont plus prises en compte et ils voient un message *« Session en pause »*. Aucun candidat de la session ne peut démarrer ou reprendre de test tant que la pause dure.
+
+    ![Session en pause](img/08-session-en-pause.png)
+
+La pastille **En pause** s'affiche à côté du nom de la session et le bouton devient **Reprendre la session** (icône lecture).
+
+### Reprendre
+
+1. Sur la ligne de la session en pause, cliquez sur **Reprendre la session**.
+
+    ![Fenêtre de reprise de session](img/09-modal-reprise.png)
+
+2. La fenêtre de reprise récapitule ce qui va se passer pour les tests **commencés** :
+
+    - Les **certifications TOSA** commencées sont automatiquement **recréditées de la durée exacte de la pause** ; cette valeur n'est pas modifiable.
+    - Pour les **autres tests commencés**, le champ **Minutes à ajouter aux autres tests commencés** est pré-rempli avec la durée de la pause ; ajustez-le si nécessaire (par exemple pour accorder quelques minutes de remise en route).
+    - Les tests dont le chronomètre s'arrête de lui-même pendant une interruption ne sont pas concernés.
+
+3. Confirmez. La session reprend, les candidats peuvent continuer et un message indique le nombre de tests commencés auxquels du temps a été ajouté.
+
+> ⚠️ **Session expirée pendant la pause** — Si la date de fin de la session est dépassée pendant la pause, la reprise est refusée : **modifiez d'abord la date de fin** de la session, puis reprenez-la.
+
+> 💡 **Pause ou arrêt d'un seul test ?** — La pause agit sur **tous** les candidats de la session. Pour interrompre un seul candidat, utilisez le bouton **Arrêter le test** sur sa fiche d'inscription (voir [Le tableau des tests planifiés](/ai/fr/candidates/#le-tableau-des-tests-planifies)).
 
 
 ## Supprimer une session {#supprimer-une-session}
@@ -134,4 +175,4 @@ Le panneau **Filtres** à gauche de la liste propose plusieurs réglages pour ci
 - **Ne pas afficher les sessions passées** — masque toutes les sessions dont la date de fin est antérieure à maintenant. Utile en cours d'année pour ne voir que les sessions à venir.
 - **Afficher les sessions terminées depuis plus de 3 mois** — par défaut désactivé. Activez-le pour faire apparaître l'historique ancien (par exemple pour retrouver une session d'il y a 6 mois).
 
-Le tableau est **triable** : cliquez sur l'en-tête de colonne pour basculer entre tri ascendant et descendant. Le tri par défaut est par nom de session.
+Le tableau est **triable** : cliquez sur l'en-tête de colonne pour basculer entre tri ascendant et descendant. Par défaut, les sessions sont triées par **date de début**, la plus récente en premier.

@@ -73,6 +73,8 @@
       anchor: modifier-un-formulaire
     - title: Dupliquer un test
       anchor: dupliquer-un-formulaire
+    - title: Autoriser un test / Retirer l'accès
+      anchor: autoriser-un-test
     - title: Supprimer un test
       anchor: supprimer-un-formulaire
     - title: Filtres

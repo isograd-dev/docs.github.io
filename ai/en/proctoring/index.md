@@ -6,10 +6,11 @@ layout: admin-manual
 
 **Remote proctoring** guarantees the integrity of a test taken remotely, without an in-person invigilator. The platform offers several levels of proctoring — from mandatory full screen up to video and audio recording — together with *post-hoc* review of the detected incidents.
 
-This chapter covers two complementary pages:
+This chapter covers three complementary pages:
 
 - **[Proctoring profiles](#proctoring-profiles)** — configure **how** your tests are proctored (which checks, which recordings).
 - **[Proctored tests management](#proctored-tests-management)** — review **the sittings** already completed and validate or invalidate each test based on the collected evidence.
+- **[Live proctoring](#live-proctoring)** — watch the camera and screen of the candidates of a test session **in real time**.
 
 > 💡 **Availability** — Remote proctoring is an account option. If you do not see the pages described here in the menu, contact your Isograd representative to enable the feature.
 
@@ -70,7 +71,10 @@ Depending on the test's content, SEB automatically allows what is needed — and
 Interaction rules with the other profile options:
 
 - Enabling the secure browser **ticks and locks "Force full screen"** (the lockdown is guaranteed by SEB itself) and **disables the website whitelist** (site filtering is built into the secure browser).
-- **Screenshots** — on **macOS**, the system's assessment mode blocks all screen captures: if both options are ticked, a warning is shown in the profile and candidates on Mac will take the test **without captures**. Captures work normally on **Windows**. **Audio and video** recording works on both systems.
+- **Screenshots** — regular screen captures are **not available** with the secure browser, whatever the system: the **Take regular screen captures** option is unticked and greyed out, and a note below the options explains why. **Audio and video** recording works normally.
+
+    ![Profile with the secure browser](img/05-modal-profil-seb.png)
+
 - Unticking **Use remote proctoring** resets all of its options, including the secure browser.
 
 > ⚠️ **Video content on Windows** — Safe Exam Browser for Windows cannot play MP4/H.264 videos. If your test contains videos in that format, contact your Isograd representative before enabling the secure browser.
@@ -95,7 +99,7 @@ The **default** profile is applied automatically to every proctored test for whi
 1. On the profile's row, click on the **Delete** icon.
 2. Confirm.
 
-> ⚠️ **Profile in use** — A profile used in **at least one test session** cannot be deleted. The message *"This proctoring profile cannot be deleted because it is used in at least one test."* is displayed in that case. Detach the profile from the affected sessions first.
+> ⚠️ **Profile in use** — If the profile is attached to tests, a **second confirmation** tells you how many: after the deletion, those tests are considered **unproctored** (pending tests get their proctoring credit back). The deletion is **refused** in two cases: if your account has no proctoring credit pack allowing this refund, or if the profile is used by a [live-proctored session](#live-proctoring) that is not over.
 
 
 ## Proctored tests management {#proctored-tests-management}
@@ -130,13 +134,13 @@ The filters panel lets you target:
 
 The action buttons at the end of each row depend on the proctoring type and status:
 
-- **Show the photos taken during the test** (camera icon) — opens a gallery of the screen and webcam captures taken periodically. The **Show only suspicious images** toggle filters the captures where AI has detected an anomaly (presence of another person, off-screen gaze, etc.).
+- **Show the photos taken during the test** (camera icon) — opens a gallery of the screen and webcam captures taken periodically. The **Show only suspicious images** toggle filters the captures where AI has detected an anomaly; the **Reasons flagged by the AI** block then lists the detected reasons with their number of occurrences (face barely visible, second device or screen, document within reach, conversation with a third party, earphones, another person present, another tab or application active…) and clicking a reason scrolls to the first matching image.
 
     <!-- Capture to regenerate (requires a proctored test with photos on the environment):
     ![Photos taken during the test](img/04-modal-photos.png) -->
 
 - **Show the ID document** (silhouette icon) — displays the photo of the ID document provided by the candidate at start.
-- **Protocol review comment** (magnifier icon) — for tests with an **incident**, this window details each incident, its nature, and offers a field to record the proctor's explanation or to ask the candidate for further information.
+- **Protocol review comment** (magnifier icon) — for tests with an **incident**, this window details each incident, its nature, and offers a field to record the proctor's explanation or to ask the candidate for further information. For a test taken in a [live-proctored](#live-proctoring) session, it also shows the proctors' reports (*Reported by*), the exchanged messages and the audio listening or conversations.
 
 ### Validate or invalidate a test
 
@@ -168,12 +172,54 @@ For certifications with an incident, you can ask the candidate to **justify the 
 > 💡 **Validation best practices** — For official certifications, be strict about incidents (exit from full screen > 60 seconds, presence of a second person in the captures). For internal corporate evaluations, you can be more lenient — proctoring remains a deterrent as much as a punitive tool.
 
 
+## Live proctoring {#live-proctoring}
+
+**Live proctoring** complements recorded remote proctoring: during a live-proctored **test session**, **proctors** of your account watch each candidate's **camera** and **screen** in real time, can write to them, talk to them, warn them, report an incident or stop their test — as in an exam room.
+
+### Prerequisites
+
+- Your account uses **Isograd remote proctoring** (otherwise the feature does not appear).
+- An Isograd remote **proctoring profile** with **Record video** ticked: it is the only compatible profile type.
+- The proctors hold the **Proctor test sessions live** privilege (see [Edit privileges](/ai/en/admins/#edit-privileges)). A proctor only sees the sessions they proctor, unless they also hold the **See every live proctored session** privilege.
+- A [test session](/ai/en/sessions/#create-a-session) created with the **Live proctoring** switch on, its proctoring profile and its proctors. The session's profile is **imposed on every test** attached to it.
+
+### Sessions in progress
+
+Access this page via the **Proctoring → Live proctoring** menu.
+
+![The "Live proctoring" page](img/06-page-sessions-direct.png)
+
+The page lists the live-proctored sessions **currently open** (between their start and end dates) that you proctor, each with its number of **registered tests**, **connected candidates**, **active meetings** and its list of **proctors**. The **Search** field filters the list on the session name or ID. Click **See the meetings** (camera icon) at the end of the row to open the session.
+
+### The meetings of a session
+
+![The "Meetings of the session" page](img/07-page-reunions.png)
+
+The candidates of a session are automatically split into **meetings** of at most twelve candidates: a new meeting opens by itself when additional candidates start their test. Each card shows the number of connected candidates, the number of proctors present and the opening time; the list refreshes every ten seconds. As long as no candidate has started a test, the page simply says that no meeting is in progress. Click **Enter the meeting** to join a meeting.
+
+### In the meeting
+
+In the meeting, each candidate appears with their **camera** and **screen**; click a card to **enlarge** it. No sound is transmitted by default: the candidate's microphone is required but not recorded. For each candidate, the following actions are available:
+
+| Action | Effect |
+|---|---|
+| **Messages** | Opens a written conversation with the candidate; the messages are kept with the test. |
+| **Listen** / **Talk** | Opens an audio listening or conversation with the candidate. One audio conversation at a time per meeting; it stops automatically after ten minutes. |
+| **Warn** | Displays a message of your choice on the candidate's screen for twenty seconds. |
+| **Report** | Records an **incident** with your description; it then appears in the test review (see above). |
+| **Stop** / **Resume** | Interrupts the candidate's test, who is sent back to their test list, then resumes it giving back the time elapsed while stopped — the same action as from the candidate's record. |
+
+The **Switch meeting** and **Leave the meeting** buttons at the top of the page let you move to another meeting of the session or exit.
+
+> 💡 **Trace in the review** — Everything that happens live is kept with the test: the exchanged messages, the audio listening and conversations, the warnings and the reports appear in the **Protocol review comment** window of the **Proctored tests management** page, with the proctor's name.
+
+
 ## Enable proctoring on a test {#enable-proctoring}
 
 Proctoring is **not** enabled item-by-item on this page: it is decided **at the time of registration** of a candidate to a test. To enable proctoring on a test:
 
 1. Register the candidate to the test (see [Register a candidate to a test](/ai/en/candidates/#register-a-candidate-to-a-test)).
 2. In the registration window, enable the **Remote proctoring** option.
-3. If you want to apply a specific proctoring profile, attach the candidate to a [test session](/ai/en/sessions/) that has this profile attached.
+3. Choose the **proctoring profile** to apply from the list; otherwise, the **default profile** is applied automatically.
 
-Otherwise, the **default profile** is applied automatically.
+If the candidate is registered on a [live-proctored session](#live-proctoring), the session's profile is imposed: the selector is locked and a message says so.

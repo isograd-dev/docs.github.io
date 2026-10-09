@@ -14,6 +14,8 @@ Open the page through the menu **Tests**. It is shown to administrators holding 
 
 The table (titled **Test form management**) lists every test, with its **ID**, **name**, **subject**, **language**, **type** and **algorithm**. When a usage period is set in the filters, an extra column shows the **number of takes** over that period.
 
+Administrators of the **main account** see every test. Administrators of a **sub-account** (or logged in as an alias on an account) only see the tests linked to their own account — see [Authorise a test / Remove access](#authorise-a-test).
+
 
 ## Concepts {#concepts}
 
@@ -115,6 +117,21 @@ Duplication is the fastest tool for creating a variant of an existing test (anot
 > 💡 **Duplication preserves** — the question list, the question order, the parameters, the descriptions, the intro and feedback messages. The questions themselves are shared, not copied.
 
 
+## Authorise a test / Remove access {#authorise-a-test}
+
+Administrators of the **main account** decide which tests are linked to each account: a sub-account administrator only sees, and can only book, the tests linked to their account.
+
+To link a test to the current account:
+
+1. From the **Test form management** page, click **Authorise a test** in the action bar.
+2. In the **Authorise a test for this account** window, enter the **Test identifier** (the *ID* column of the list).
+3. Click **Save**. A message confirms that the test has been added to the account and the list reloads.
+
+To remove a test from an account, click the **Remove access** icon (key) on the test's row: it disappears from the list for that account's administrators.
+
+> 💡 **Tests already available to everyone** — Some tests are available to every account of the platform: the window says so if you try to authorise one, and the **Remove access** icon does not appear on their row.
+
+
 ## Delete a test {#delete-a-test}
 
 1. On the test's row, click the **Delete** icon.
@@ -133,7 +150,7 @@ The **Filters** panel offers:
 - **Include inactive tests** — switch; off by default.
 - **Display usage from / to** — a period; when set, the table shows the number of takes of each test over that period.
 
-Column sorting is available by clicking the headers.
+Column sorting is available by clicking the headers. On a sub-account, the filters apply to the tests linked to the account only.
 
 
 ## Export the list {#export-the-list}

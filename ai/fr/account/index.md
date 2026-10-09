@@ -6,7 +6,7 @@ layout: admin-manual
 
 Le menu **Compte** regroupe les pages relatives à votre **organisation** (raison sociale, adresse, logo), à la **gestion de vos crédits Tosa** (consultation des packs, alertes d'expiration et de seuil), et à votre **profil administrateur** (mot de passe, identifiants, langue).
 
-Ce chapitre couvre les pages **Détails du compte** et **Alertes crédit**. La gestion des administrateurs est traitée dans son propre chapitre — voir [Gestion des administrateurs](/ai/admins/).
+Ce chapitre couvre les pages **Détails du compte** et **Alertes crédit**. La gestion des administrateurs est traitée dans son propre chapitre — voir [Gestion des administrateurs](/ai/fr/admins/).
 
 
 ## Détails du compte {#details-du-compte}
@@ -20,7 +20,8 @@ La page **Votre compte** est organisée en plusieurs **onglets** :
 - **Adresse** — coordonnées postales et fiscales de votre organisation (raison sociale, adresse, téléphone, numéro de TVA).
 - **Détails** — paramètres complémentaires : **logo** affiché sur les rapports, adresses RGPD et feedback, et selon votre profil, marque, commercial, devise et type de client.
 - **Packs** — liste des packs de crédits en cours, leur quantité et leur date d'expiration.
-- **Tests utilisés & autres options** — sélection des types de test activés sur le compte et autres options globales.
+- **API** — accès à l'API de la plateforme : paramètres d'authentification, identifiants de vos tests et documentation technique. Cet onglet n'apparaît que sur **votre propre compte**.
+- **Supprimer votre compte** — pour l'administrateur principal, lorsque le compte compte plusieurs administrateurs.
 
 > 💡 **Onglets visibles selon votre profil** — Certains onglets ou champs n'apparaissent que selon le type de compte (par exemple, un onglet **CPF** apparaît pour les centres de formation français inscrits sur Mon Compte Formation). Ne vous inquiétez pas si vous n'avez pas exactement les mêmes onglets que dans la capture ci-dessus.
 
@@ -49,9 +50,22 @@ L'onglet **Détails** permet de personnaliser plusieurs éléments visibles dans
 - **Adresse mail pour les messages de feedback** — adresse de contact lorsque le candidat utilise le formulaire de feedback dans la plateforme.
 - **Adresse mail pour le droit de rectification RGPD** — adresse à laquelle vos candidats peuvent demander la rectification ou la suppression de leurs données personnelles. Apparaît dans la mention légale RGPD au pied de vos emails.
 
-> 💡 **Champs distributeurs** — Si vous voyez sur cet onglet des champs comme **Marque**, **Commercial**, **Devise**, **Type de contrat**, **Type de client** ou **Centre agréé**, cela signifie que votre compte est de type distributeur ou centre agréé. Ces champs ne sont **pas modifiables par vous** ; ils sont gérés par votre interlocuteur Isograd.
+> 💡 **Champs distributeurs** — Si vous voyez sur cet onglet des champs comme **Marque**, **Commercial**, **Devise**, **Type de contrat**, **Type de client** ou **Centre agréé**, ou un onglet supplémentaire **Tests utilisés & autres options**, cela signifie que votre compte est de type distributeur ou centre agréé. Ces champs ne sont **pas modifiables par vous** ; ils sont gérés par votre interlocuteur Isograd.
 
-> 💡 **Le logo n'apparaît pas dans les emails** — Le logo configuré ici est utilisé **uniquement dans les rapports PDF** envoyés aux candidats. Pour personnaliser l'en-tête de vos emails, utilisez la **bannière** dédiée — voir [Ajouter une bannière personnalisée](/ai/mail-templates/#ajouter-une-banniere-personnalisee).
+> 💡 **Le logo n'apparaît pas dans les emails** — Le logo configuré ici est utilisé **uniquement dans les rapports PDF** envoyés aux candidats. Pour personnaliser l'en-tête de vos emails, utilisez la **bannière** dédiée — voir [Ajouter une bannière personnalisée](/ai/fr/mail-templates/#ajouter-une-banniere-personnalisee).
+
+
+### Paramètres de l'API
+
+L'onglet **API** regroupe ce qu'il faut pour connecter votre système d'information (LMS, SIRH, outil de recrutement) à la plateforme :
+
+- **Afficher les paramètres d'authentification** — ouvre une fenêtre avec votre **Client ID** et votre **Client Secret**, à copier dans votre intégration. Le secret est masqué par défaut ; l'icône œil l'affiche et l'icône copier le place dans le presse-papiers. Les identifiants sont générés à la première ouverture.
+- **Afficher les identifiants de tests pour l'API** — ouvre la liste des tests de votre compte avec l'identifiant à utiliser dans les appels d'inscription.
+- **Voir la documentation technique de l'API** — ouvre la documentation développeur dans un nouvel onglet.
+
+> ⚠️ **Client Secret** — Le secret donne accès à vos données candidats : ne le communiquez qu'à l'équipe technique qui réalise l'intégration et ne l'insérez jamais dans un document partagé.
+
+> 💡 **API non incluse** — Si votre abonnement n'inclut pas l'accès à l'API, l'onglet affiche uniquement un message l'indiquant ; contactez votre interlocuteur Isograd pour l'activer.
 
 
 ## Packs et crédits {#packs-et-credits}

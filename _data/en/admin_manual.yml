@@ -71,6 +71,8 @@
       anchor: proctoring-profiles
     - title: Proctored tests management
       anchor: proctored-tests-management
+    - title: Live proctoring
+      anchor: live-proctoring
     - title: Enable proctoring on a test
       anchor: enable-proctoring
 
@@ -107,6 +109,8 @@
       anchor: create-a-session
     - title: Edit a session
       anchor: edit-a-session
+    - title: Pause and resume a session
+      anchor: pause-and-resume-a-session
     - title: Delete a session
       anchor: delete-a-session
     - title: Import multiple sessions
