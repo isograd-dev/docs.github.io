@@ -47,8 +47,7 @@ In the profile's edit window, tick the desired **proctoring options**:
 |---|---|
 | **Request an ID document** | The candidate must photograph their ID document before starting. The photo is available for review afterwards. |
 | **Force full screen** | The test can only be taken in full-screen mode. Exiting full screen triggers an incident. |
-| **Record video** | The candidate's webcam is recorded for the duration of the test. The video is available at review time. |
-| **Record audio** | The candidate's microphone is recorded (useful to detect a speaking presence). |
+| **Record video and audio** | The candidate's webcam and microphone are recorded for the duration of the test (both are therefore mandatory). The video, with its sound, is available at review time. |
 | **Take regular screenshots** | Periodic screen and webcam captures during the test. |
 | **Perform a room scan** | Before the test, the candidate makes a 360° sweep of their room with their webcam to show they are alone and that their workstation is compliant. |
 | **Requires secure browser** | The test can only be taken in **Safe Exam Browser**, an exam browser that locks down the candidate's computer. See [the dedicated section](#secure-browser) below. |
@@ -179,7 +178,7 @@ For certifications with an incident, you can ask the candidate to **justify the 
 ### Prerequisites
 
 - Your account uses **Isograd remote proctoring** (otherwise the feature does not appear).
-- An Isograd remote **proctoring profile** with **Record video** ticked: it is the only compatible profile type.
+- An Isograd remote **proctoring profile** with **Record video and audio** ticked: it is the only compatible profile type.
 - The proctors hold the **Proctor test sessions live** privilege (see [Edit privileges](/ai/en/admins/#edit-privileges)). A proctor only sees the sessions they proctor, unless they also hold the **See every live proctored session** privilege.
 - A [test session](/ai/en/sessions/#create-a-session) created with the **Live proctoring** switch on, its proctoring profile and its proctors. The session's profile is **imposed on every test** attached to it.
 

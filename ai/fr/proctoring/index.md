@@ -47,8 +47,7 @@ Dans la fenêtre d'édition du profil, cochez les **options de surveillance** so
 |---|---|
 | **Demander un document d'identité** | Le candidat doit photographier sa pièce d'identité avant de démarrer. La photo est consultable a posteriori dans la revue. |
 | **Forcer le plein écran** | Le test ne peut être passé qu'en mode plein écran. Une sortie du plein écran génère un incident. |
-| **Enregistrer la vidéo** | La webcam du candidat est enregistrée pendant tout le test. La vidéo est consultable à la revue. |
-| **Enregistrer l'audio** | Le micro du candidat est enregistré (utile pour détecter une présence parlante). |
+| **Enregistrer la vidéo et l'audio** | La webcam et le micro du candidat sont enregistrés pendant tout le test (la webcam et le micro sont donc obligatoires). La vidéo, avec le son, est consultable à la revue. |
 | **Prendre des captures régulières de l'écran** | Captures d'écran périodiques de l'écran et de la webcam pendant le test. |
 | **Effectuer un scan de la pièce** | Avant le test, le candidat fait un tour à 360° de sa pièce avec sa webcam pour montrer qu'il est seul et que son poste de travail est conforme. |
 | **Nécessite le navigateur sécurisé** | Le test ne peut être passé que dans **Safe Exam Browser**, un navigateur d'examen qui verrouille le poste du candidat. Voir [la section dédiée](#navigateur-securise) ci-dessous. |
@@ -179,7 +178,7 @@ La **surveillance en direct** complète la surveillance à distance enregistrée
 ### Prérequis
 
 - Votre compte utilise la **surveillance à distance Isograd** (sinon la fonctionnalité n'apparaît pas).
-- Un **profil de surveillance** à distance Isograd avec **Enregistrer la vidéo** coché : c'est le seul type de profil compatible.
+- Un **profil de surveillance** à distance Isograd avec **Enregistrer la vidéo et l'audio** coché : c'est le seul type de profil compatible.
 - Les surveillants disposent du privilège **Surveiller en direct les sessions de passage** (voir [Modifier les privilèges](/ai/fr/admins/#modifier-les-privileges)). Un surveillant ne voit que les sessions dont il est surveillant, sauf s'il a aussi le privilège **Voir toutes les sessions surveillées en direct**.
 - Une [session de passage](/ai/fr/sessions/#creer-une-session) créée avec le commutateur **Surveillance en direct** activé, son profil de surveillance et ses surveillants. Le profil de la session est **imposé à tous les tests** qui lui sont rattachés.
 
