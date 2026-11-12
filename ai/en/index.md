@@ -21,7 +21,8 @@ Screenshots are generated automatically from the latest versions of the code and
 ## Result Tracking
 
 - [Dashboard](dashboard/) — aggregated metrics for a group or session: completed tests, average time, score distribution, top 10.
-- [Results management](results/) — view test attempts, download reports and certificates, grade manually-marked tests.
+- [Results management](results/) — view test attempts, download reports and certificates.
+- [Grading copies](grading/) — assign and mark manually graded copies, annotate PDF copies, double grading, juries, scanned paper copies.
 - [Test proctoring](proctoring/) — configure proctoring profiles, validate or invalidate proctored attempts.
 
 ## Communication

@@ -10,7 +10,7 @@ Open the editor through the **Edit** icon (pencil) on a question's row in the **
 
 ![Question editor — overview (MCQ type)](img/01-editeur-mcq.png)
 
-> 💡 **Answer type and interface** — The editor **adapts its interface** to the question's **answer type**. An MCQ question shows an answer-option input area; a Drag-and-drop question gets an editor for draggable items; a Manual-marking question gets a grading grid. This chapter covers the common organisation **and** the per-type specifics.
+> 💡 **Answer type and interface** — The editor **adapts its interface** to the question's **answer type**. An MCQ question shows an answer-option input area; a Drag-and-drop question gets an editor for draggable items; a Manual submission question gets a grading grid. This chapter covers the common organisation **and** the per-type specifics.
 
 
 ## Overview {#overview}
@@ -41,11 +41,11 @@ The edit page (titled **Update an item**) is organised into several zones, with 
 
 4. **"Question and answers" section** — the heart of editing, organised into tabs (see [Editing tabs](#editing-tabs)).
 
-5. **"Tutorial" section** — the explanation shown to the candidate after answering (see [Tutorial](#tutorial)).
+5. **"Correct answer explanation" section** — the tutorial and the hint attached to the question (see [Tutorial and hint](#tutorial)).
 
-6. **Review block** — the question's **Status** and **Responsible person**, plus a file and comments for proofreading exchanges between authors. Comments are split into two tabs: **Comments** (current) and **Archived comments**.
+6. **"Review Data" block** — the question's **Status** and **Responsible person**, plus a file and comments for proofreading exchanges between authors. Comments are split into two tabs: **Comments** (current) and **Archived comments**.
 
-7. **"AI assist" sidebar** on the right — AI generation buttons (see [AI generation](#ai-generation)).
+7. **"AI assist" sidebar** on the right, if AI features are enabled on your account — AI generation buttons (see [AI generation](#ai-generation)).
 
 8. **"Classification" sidebar** on the right — question sets and domains the question is attached to.
 
@@ -59,10 +59,10 @@ The **Question and answers** section is organised into tabs specific to the ques
 | Tab | Content |
 |---|---|
 | **Question text** | The text shown to the candidate (rich text editor). |
-| **Medias** | Reference documents, media files and audio generation attached to the statement. To generate an audio file, type the text to read and pick a **voice** among those available for the question's language. |
-| **Proposed answers** (label varies by type) | Answer options or type-specific settings — see per-type sections. |
-| **Score-calculation prompt** | For AI-graded questions: instructions given to the AI to compute the score. |
-| **Advanced** | Advanced options: **Mandatory answer in tests with navigation**, and for free-text questions **Lock copy/paste and selection**. |
+| **Medias** | Illustration, reference documents, media files and audio generation attached to the statement. To generate an audio file, type the text to read and pick a **voice** among those available for the question's language. |
+| **Type-specific tabs** | Answer options or type-specific settings — for example *Submission details* and *Grading grid* for a manual submission, *Input areas* and *Answer area* for auto-graded text areas. See per-type sections. |
+| **Score-calculation prompt** | For MCQs, psychometric questions and texts with dropdown lists only: describe a specific scoring rule in natural language, and the AI generates the matching computation. |
+| **Advanced** | Advanced options: **Mandatory answer in tests with navigation** and, for questions where the candidate types text, **Lock copy/paste and selection**. |
 
 Two help buttons at the top right of this section:
 
@@ -100,19 +100,26 @@ The **Text** is the statement shown to the candidate. You enter it in a rich edi
 
 ### Illustration {#illustration}
 
-An **illustration** is an image attached **directly to the question** (as opposed to a visual aid, which can be shared across multiple questions). It is the main image accompanying the statement.
+An **illustration** is a media file attached **directly to the question** (as opposed to a visual aid, which can be shared between several questions). It is the image, sound or video that accompanies the statement.
 
 ![Question illustration block](img/02-bloc-illustration.png)
 
-- To **add** an illustration, click the upload button and pick your file (PNG/JPG/SVG).
-- To **change** the alternative text (alt text), type it in the dedicated field — important for accessibility and screen readers.
-- To **remove** the illustration, click the **Delete media** button.
+- To **add** an illustration, drop an image, a sound or a video into the drop zone, or click the upload button to pick your file.
+- To **edit** the alt text, type it into the dedicated field — important for accessibility and screen readers.
+- **Play media only once** — for a sound or a video, prevents the candidate from replaying it.
+- **Position of the illustration in paper exams** — *above*, *to the right of* or *below* the text. Offered for the question types usable in a [paper exam](/ai/en/question-module/test-forms/#paper-exams).
+- To **delete** the illustration, click the **Delete media** button.
 
-> 💡 **Illustration or visual aid?** — An **illustration** is specific to the question, ideal for an image that will never be reused. A **[visual aid](/ai/en/question-module/visual-aids/)** is shared across multiple questions, ideal for an Excel table or a source-code snippet shared across 10 questions of the same module.
+> 💡 **Illustration or visual aid?** — An **illustration** belongs to the question, ideal for an image that is never reused. A **[visual aid](/ai/en/question-module/visual-aids/)** is shared between several questions, ideal for an Excel table or a source code shared by 10 questions of the same module.
 
-### Tutorial {#tutorial}
+### Tutorial and hint {#tutorial}
 
-The **Tutorial** section holds the explanation shown to the candidate **after** they answer, in review mode: a **hint** and an **explanation of the correct answer**. This is the pedagogical moment: explain why the correct answer is correct, how to identify it, and which common mistake to avoid. Same format as the text.
+The **Correct answer explanation** section has two tabs:
+
+- **Tutorial** — the explanation shown to the candidate **after** answering, in review mode. This is the teaching moment: explain why the right answer is right, how to identify it, which common mistake to avoid.
+- **Hint** — a clue displayed in the question frame, to help the candidate while answering.
+
+The format is the same as the question text.
 
 ### Visual aids {#visual-aids-section}
 
@@ -131,9 +138,10 @@ Three variants exist:
 
 ## AI generation {#ai-generation}
 
-The editor offers an **AI assist** sidebar on the right of the page. On a newly created question it holds two buttons:
+The editor offers an **AI assist** sidebar on the right of the page, when AI features are enabled on your account. On a newly created question it holds:
 
-- **Generate question** — proposes a full statement (text, answer options, correct answer) from the question's metadata (subject, domain, title). Offered for the answer types that support generation. Generation also fills in the **Difficulty** field with the level suggested by the AI (unless the question is calibrated); you can change it before saving.
+- **Generate question** — proposes a full statement (text, answer options, correct answer) from the question's metadata (subject, domain, title). Offered for the answer types that support generation. Generation also fills in the **Difficulty** field with the level suggested by the AI; you can change it before saving.
+- **Create from a document** — for the question types usable in a paper exam. Paste or pick an image or a PDF (PNG, JPEG, WEBP, GIF or PDF, 5 MB at most) containing **a single question**, optionally add instructions: the AI derives the statement and the answers from it.
 - **Translate** — translates the question's content into another language, useful to quickly produce several linguistic versions of a subject.
 
 Once the question has been saved a first time, more buttons appear:
@@ -143,7 +151,7 @@ Once the question has been saved a first time, more buttons appear:
 - **Obsolescence** — assesses whether the question's content is likely to be outdated.
 - **Generate tutorial** — drafts the explanation shown to the candidate after answering.
 
-For AI-graded uploads, a **Generate code** button drafts the verification code from the statement.
+For [automatic document grading](#upload-auto-grading) questions checked by a script, the **Generate code** and **Improve check code** buttons draft or rework that script from the statement.
 
 > ⚠️ **AI proposes, you decide** — Generated content is a **starting point**, not a final deliverable. Always proofread and correct before saving: the AI output replaces the fields on screen but is not saved until you click **Save**. Quality depends on the AI model chosen in the **System → Select an AI** menu.
 
@@ -157,7 +165,7 @@ The platform offers a range of answer types, grouped into families. The exact li
 | **Multiple choice** | Text MCQ, Answer scale | Classic knowledge assessment. |
 | **Answer selection** | Fill in the blanks with dropdown lists | When free text would be ambiguous to grade. |
 | **Interactive questions** | Drag-and-drop, Sortable, Link, Click in area | Interactive and engaging tests. |
-| **Typed answers** | Fill in the blanks with automatic or AI grading, Dictation, Typed answers with manual marking | Knowledge checks and case studies. |
+| **Typed answers** | Auto-graded text areas (expected answer or AI), Dictation, Manual submission | Knowledge checks and case studies. |
 | **Document or audio grading** | Upload with automatic grading | File submission graded by AI. |
 | **Specific** | Transition page | Edge cases (a page between two parts of a test). |
 
@@ -174,17 +182,21 @@ The **Text MCQ** type is the most used type on the platform. The candidate sees 
 
 The MCQ editor exposes a list of options, each with:
 
-- A **proposal text** field.
-- A **Correct** checkbox indicating whether the option is a correct answer.
+- An **option text** field.
+- A **Correct** checkbox indicating whether the option is a right answer.
 - A **Delete this option** button.
 
-An **Add an option** button at the bottom of the list lets you grow the number of options. You can have between 2 and 8 options per question (5 is the recommended standard).
+An **Add an answer** button at the bottom of the list extends the number of options (5 is the recommended standard).
 
-> 💡 **One or several correct answers?** — Tick **only one** **Correct** checkbox for a single-choice MCQ (the candidate can only pick one answer). Tick **several** checkboxes for a multi-choice MCQ (the candidate can pick several, and must find them all to get the question right). Or use **one among n** (several options are correct, but the candidate only needs to pick one of them for the answer to count as correct).
+The **MCQ type** selector sets the answering rule: **single choice** (the candidate can select only one answer), **multiple choice** (several can be selected, and all must be found for the question to be right) or **one of n** (several answers are correct, but choosing one of them is enough).
 
-### Order of options
+### Display options
 
-By default, the options are shown to the candidate in **random order** on each take. If you want to force a fixed order (for example for a logic question where the order of choices carries meaning), tick the option **Do not shuffle the answers** in the question's advanced options.
+Three switches at the top of the answers tab:
+
+- **Do not mix responses** — by default, options are presented to the candidate in a **random order** on each take. Turn the option on to force a fixed order (for example for a logic question where the order of choices carries meaning).
+- **Display answers in matrix** — presents the options as a grid rather than a list.
+- **No notion of correct answer (form, personality test...)** — for questions with no right or wrong answer.
 
 
 ## Scale (Likert, T/F) {#scale-question}
@@ -199,23 +211,67 @@ The **Scale** type presents the candidate with a question paired with a reusable
 > 💡 For questions where there is no right or wrong answer, tick the option **No notion of correct answer (form, personality test…)**.
 
 
-## Fill in the blanks {#fill-in-the-blanks}
+## Auto-graded text areas {#fill-in-the-blanks}
 
-The **Fill in the blanks** type presents a text with one or more **input fields** that the candidate must fill in.
+This type presents the candidate with one or more **input areas** — inserted in a fill-in-the-blanks text or displayed on their own — whose answer is **graded automatically**, either by comparison with an expected answer or by the AI.
 
-![Fill-in-the-blanks (multi-input) question editor](img/09-editeur-multi-input.png)
+![Editor of an auto-graded text areas question](img/09-editeur-multi-input.png)
 
-### Editing
+Editing is done in two steps: you create the input areas in the **Input areas** tab, then place them in the text of the **Answer area** tab.
 
-In the question text, you insert **input areas** with the **Insert an input area** button. The editor then exposes, for each area, a configuration block:
+### "Input areas" tab
 
-- **Correct answer** — exact expected text.
-- **Accepted variants** — other spellings or formulations also counted as correct.
-- **Case sensitivity** — whether the comparison is sensitive to uppercase/lowercase.
+- **Enable the points per input option** — by default, the candidate gets the question's **maximum score** if every area is right, and 0 otherwise. With this option, each area yields its own points: the question score is the sum of the points obtained, and the **Maximum score** — no longer editable — becomes the sum of the areas' points.
+- **Use a rich text editor for input text areas** — the candidate gets a formatting toolbar in text areas.
+- **List of input areas** — **Add field** creates an area. Its **name** (letters, digits, `_` and `-` only, unique within the question) is used to place it in the text. The **Edit** icon opens the area's details, the bin icon deletes it.
+
+### Details of an input area
+
+The **Details of the answer area** window sets how the area is presented and graded.
+
+**Grading method**:
+
+| Method | Grading |
+|---|---|
+| **Expected answer(s)** | The candidate's answer is compared with the **Expected answer**. If several answers are accepted, separate them with `##`. |
+| **Graded by AI** | The AI grades the answer following the **Prompt for AI** you write: what is expected, what must be accepted or refused. |
+| **Foreign language graded by AI** | The AI assesses a text written in a foreign language against the expected **CEFR level** (A1 to C2). The area is then a text area. |
+
+**Input field type**: **Input field** (single line), **Text area** (several lines) or **Mathematical equation** — the candidate types a formula, rendered as they type, which is always graded by the AI. The **Border type** (full or bottom) sets the look of the field.
+
+For an **expected answer**, the **Grading options** refine the comparison, which by default ignores case, punctuation and spaces:
+
+- **Case sensitive** — upper and lower case must match.
+- **Punctuation sensitive** — punctuation must match; the **Space sensitive** option then appears.
+- **Tolerance** — for a *Number* value, the accepted gap around the expected answer. Both the comma and the dot are accepted as decimal separator.
+
+With the **points per input** option:
+
+- **Maximum number of points** — the points yielded by the area (1 by default).
+- **The score for this area can only be 0 or the maximum number of points** — turn this option off on an AI-graded area to allow an intermediate score. An expected-answer area is always graded all or nothing.
+
+The **Content constraints** frame what the candidate types: **Allowed value type** (text, number or email), **Tooltip**, **Example text**, **Maximum length**, **Pattern** and, for a text area, **Minimum** and **Maximum number of words** — recalled to the candidate below the area. An empty answer, or one clearly shorter than the minimum word count, scores 0 without being submitted to the AI.
+
+### "Answer area" tab
+
+- The text editor holds the text in which the areas appear. Place the cursor where you want and use the insert-input-area menu of the toolbar to place an area by its name.
+- **The input area is not included in a text** — when the question has a single area, displays it directly below the statement, with no surrounding text.
+- **Leave blank the content of the answer area in paper exams** — leaves an empty space when printing; its size is set in the [paper exam](/ai/en/question-module/test-forms/#paper-exams).
+
+The **Check** button reports a question with no input area, or whose answer area is empty.
+
+> 💡 **AI grading** — When an area is graded by the AI, the candidate sees a progress bar while the answer is being submitted. Write a precise prompt (expected elements, tolerances) and test the question through the **Preview** with right and wrong answers before moving it to Production.
+
+### Usage context: paper exam {#usage-context}
+
+The **Usage context** card, above the tabs, holds the switch **This question will only be used in paper exams**. When it is on, specify **how the candidate will answer**:
+
+- **On the printed paper**, which carries the answer areas.
+- **On a sheet separate** from the paper — the answer area is then generated automatically, with one line per input area.
 
 ### Fill in the blanks with dropdown lists
 
-A variant offers the candidate a **dropdown list** instead of a free-text field. For each blank, you define the list of options and the correct one.
+Another answer type offers the candidate a **dropdown list** instead of a free-text field. For each blank, you define the list of options and the correct one.
 
 ![Text-with-select question editor](img/10-editeur-text-with-select.png)
 
@@ -272,24 +328,53 @@ The **Click in area** type presents the candidate with an **image** on which the
 - The candidate clicks: the click is considered correct if it falls within a correct zone.
 
 
-## Manual marking {#manual-marking}
+## Manual submission {#manual-marking}
 
-The **Manual marking** type presents the candidate with a **free-form** question (essay, diagram, recording) that will be **manually graded** by a marker after submission.
+The **Manual submission** type presents the candidate with a **free-answer** question (essay, document, recording) that will be **graded by a grader** after the test, using a **grading grid**.
 
-![Manual-marking question editor](img/08-editeur-manual-marking.png)
+![Manual submission question editor](img/08-editeur-manual-marking.png)
 
-### Variants
+Besides the statement and the media, the editor has the **Submission details**, **Grading grid** and **Answer area** tabs.
 
-- **Without document submission** — the candidate enters their answer in a simple text field.
-- **With document submission** — the candidate uploads one or more documents (audio, video, file). The allowed document type is configurable.
+### "Submission details" tab
 
-### Editing
+The **Expected answer type** selector sets what the candidate hands in:
 
-- Define the **prompt** (the instructions) in the question text.
-- If document submission is enabled: specify the **accepted formats** and the **maximum number** of files.
-- Define the **grading grid** or the evaluation criteria — to guide human markers (the **grading grid** is shown to markers, who score each criterion you defined).
+| Expected answer type | What the candidate does | Settings |
+|---|---|---|
+| **Enter one or more texts** (default) | Answers in one or more input areas. | **Add field** creates an area (name, single-line field or text area, example text). **Use a rich text editor for input text areas** gives the candidate a formatting toolbar. |
+| **Submit one or multiple files** | Uploads one file per expected slot. | **Add a file to submit** creates a slot, with a **description** (shown to the candidate when several files are expected) and the **allowed extensions**, separated by commas. Both fields are required. |
+| **Record an audio** | Records themselves from the question page. | — |
+| **Record a video** | Films themselves from the question page. | — |
 
-See also the [Mark a test](/ai/en/results/#grade-a-test) section of the administrator manual for the marker-side correction workflow.
+> 💡 **Prefer PDF** — For a file submission, ask for a **PDF**: the grader will be able to annotate the copy and rely on AI assistance when grading.
+
+When several files are requested, the candidate's answer is only complete once every slot is filled.
+
+### "Grading grid" tab
+
+The grid lists the **criteria** on which the grader marks the answer. **Add a criterion** creates a row with:
+
+- **Criterion name** and **Criterion description** — what the grader must assess.
+- **Maximum score for criterion** — the points that can be awarded.
+
+Drag the criteria to reorder them. The question's **Maximum score** is no longer editable: it equals the sum of the criteria scores.
+
+> ⚠️ **At least one criterion** — The **Check** button reports a manual submission with no grading criterion: define the grid before moving the question to Production.
+
+### "Answer area" tab
+
+For a **text** answer, this tab holds the text displayed around the input areas. With a single area, it is filled in automatically. It is not shown for file submissions.
+
+The **Advanced** tab offers, for text answers, **Lock copy/paste and selection**.
+
+### Usage context: paper exam
+
+The **Usage context** card, above the tabs, holds the switch **This question will only be used in paper exams**. When it is on, the question expects **a single PDF file** — the candidate's scanned copy —, the *Submission details* tab disappears and the statement becomes optional. This is the setting of the marking grids created from a [paper exam](/ai/en/question-module/test-forms/#paper-exams).
+
+### Grading
+
+No score is computed during the test: the result stays pending grading. The grader then awards points and a comment for each criterion of the grid. See the [Grading copies](/ai/en/grading/) chapter of the administrator manual for the grading workflow.
 
 
 ## Typing test {#typing}
@@ -315,11 +400,15 @@ The **Upload with automatic grading** type lets the candidate **upload a file** 
 
 ### Editing
 
-- Specify the **expected file format**.
-- Write an **analysis prompt** that guides the AI in its grading: *"Check that the document contains a table with at least 5 rows, that the first column is named 'Name', and that the formatting is consistent"*.
-- Choose the **analysis mode**: strict (binary scoring) or nuanced (score out of 100 with a comment).
+- **Document type** — the expected file: Audio, Excel, Image, Illustrator, PDF, Photoshop, PowerBI or Word.
+- In the **Scoring method** tab, three switches, offered depending on the document type:
+    - **Use AI to analyze the document** — when on, you describe in natural language what the AI must check in the candidate's document: *"Check that the document contains a table with at least 5 rows, that the first column is named 'Name', and that the formatting is consistent"*. When off, the document is checked by a **script**: the **Generate code** and **Improve check code** buttons of the AI assist sidebar draft it from the statement. An image is always analysed by the AI; Photoshop, Illustrator and PowerBI documents are always checked by a script.
+    - **Use a grading grid** — replaces the free instruction with a grid of criteria, as for a [manual submission](#manual-marking); the **Maximum score** becomes the sum of the criteria scores.
+    - **Extract text from document** — for a PDF or an image, reads the text of the document (handwritten or scanned) before the analysis.
+- For an **audio**, a dedicated editor replaces these settings: the assessment instruction, all-or-nothing grading and, for a foreign-language test, the type of test and the expected CEFR level.
+- In the **Medias** tab, the **Document provided to the candidate** card lets you attach the starting file the candidate works on.
 
-> ⚠️ **Non-deterministic AI grading** — AI scores can vary slightly from one take to another. Reserve this type for **formative assessments**, not high-stakes certifications. For rigorous grading, use **[Manual marking](#manual-marking)** with a human marker.
+> ⚠️ **Non-deterministic AI grading** — AI scores can vary slightly from one take to another. Reserve this type for **formative assessments**, not high-stakes certifications. For rigorous grading, use a **[Manual submission](#manual-marking)** with a human grader.
 
 
 ## Save, preview, delete {#final-actions}

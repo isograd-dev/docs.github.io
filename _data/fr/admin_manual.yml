@@ -64,6 +64,26 @@
     - title: Surveillance à distance
       anchor: surveillance-a-distance
 
+- title: Correction des copies
+  url: /ai/fr/grading/
+  sections:
+    - title: Rôles
+      anchor: roles
+    - title: Copies à corriger
+      anchor: a-corriger
+    - title: Noter une copie
+      anchor: noter
+    - title: Annoter une copie PDF
+      anchor: annotation-pdf
+    - title: Double correction
+      anchor: double-correction
+    - title: Jurys
+      anchor: jurys
+    - title: Équité des correcteurs
+      anchor: equite
+    - title: Scanner des copies papier
+      anchor: scanner-des-copies
+
 - title: Surveillance des tests
   url: /ai/fr/proctoring/
   sections:
@@ -111,6 +131,10 @@
       anchor: modifier-une-session
     - title: Mettre en pause et reprendre une session
       anchor: mettre-en-pause-une-session
+    - title: Suivre les candidats d'une session
+      anchor: candidats-de-la-session
+    - title: Procès-verbal de session
+      anchor: proces-verbal
     - title: Supprimer une session
       anchor: supprimer-une-session
     - title: Importer plusieurs sessions

@@ -17,13 +17,13 @@ Ce chapitre couvre trois pages complémentaires :
 
 ## Profils de surveillance {#profils-de-surveillance}
 
-Un **profil de surveillance** est un jeu de réglages qui détermine ce que la plateforme vérifie et enregistre pendant le test. Vous pouvez créer plusieurs profils (par exemple, *« Examen léger »* vs *« Certification stricte »*) et les **associer à des [sessions de passage](/ai/fr/sessions/)** pour appliquer le bon niveau de contrôle au bon contexte.
+Un **profil de surveillance** est un jeu de réglages qui détermine ce que la plateforme vérifie et enregistre pendant le test. Vous pouvez créer plusieurs profils (par exemple, *« Examen léger »* vs *« Certification stricte »*) pour appliquer le bon niveau de contrôle au bon contexte : le profil se choisit **lors de l'inscription** d'un candidat à un test, ou est **imposé par une [session de passage](/ai/fr/sessions/) surveillée en direct**.
 
 Accédez à cette page via le menu **Surveillance → Profils de surveillance**.
 
 ![Page "Gestion des profils de surveillance"](img/01-page-profils.png)
 
-La page liste vos profils existants. Si votre compte est neuf et n'a encore aucun profil défini, vous verrez simplement *« Vous n'avez pas encore créé de profil de surveillance. »*. Chaque ligne indique le **nom** du profil et un repère **Par défaut** pour le profil utilisé quand aucun n'est explicitement choisi.
+La page liste vos profils existants. Si votre compte est neuf et n'a encore aucun profil défini, vous verrez simplement *« Vous n'avez pas encore créé de profil de surveillance. »*. Chaque ligne indique le **nom** du profil, un repère **Par défaut** pour le profil utilisé quand aucun n'est explicitement choisi, et son **Identifiant (API / LTI)**, à utiliser pour désigner le profil depuis une intégration. Un champ de recherche filtre la liste.
 
 ### Créer un profil de surveillance
 
@@ -35,24 +35,30 @@ La création se fait en **deux étapes** : nommer le profil, puis configurer ses
 
     ![Fenêtre d'ajout d'un profil de surveillance](img/02-modal-profil-ajout.png)
 
-2. Renseignez la **Description** du profil — c'est le libellé qui apparaîtra dans la liste et dans les sessions de passage. Choisissez un nom parlant comme « Certification stricte » ou « Examen interne léger ».
+2. Renseignez la **Description** du profil — c'est le libellé qui apparaîtra dans la liste et dans les fenêtres d'inscription aux tests. Choisissez un nom parlant comme « Certification stricte » ou « Examen interne léger ».
 
 3. Cliquez sur **Enregistrer**. La plateforme crée le profil et ouvre aussitôt la fenêtre d'édition de ses options.
 
 #### Étape 2 — Configurer les options de surveillance
 
-Dans la fenêtre d'édition du profil, cochez les **options de surveillance** souhaitées :
+Dans la fenêtre d'édition du profil, activez les **options de surveillance** souhaitées. Deux options principales :
+
+| Option | Effet |
+|---|---|
+| **Empêcher le candidat d'ouvrir d'autres fenêtres ou onglets** | Le test doit être passé en plein écran, sans autre fenêtre ni onglet. Une sortie génère un incident. |
+| **Utiliser la surveillance à distance et / ou un navigateur sécurisé** | Active la surveillance à distance et fait apparaître les options ci-dessous. |
+
+Les options de la surveillance à distance n'apparaissent que lorsque la seconde option est activée :
 
 | Option | Effet |
 |---|---|
 | **Demander un document d'identité** | Le candidat doit photographier sa pièce d'identité avant de démarrer. La photo est consultable a posteriori dans la revue. |
-| **Forcer le plein écran** | Le test ne peut être passé qu'en mode plein écran. Une sortie du plein écran génère un incident. |
-| **Enregistrer la vidéo et l'audio** | La webcam et le micro du candidat sont enregistrés pendant tout le test (la webcam et le micro sont donc obligatoires). La vidéo, avec le son, est consultable à la revue. |
-| **Prendre des captures régulières de l'écran** | Captures d'écran périodiques de l'écran et de la webcam pendant le test. |
 | **Effectuer un scan de la pièce** | Avant le test, le candidat fait un tour à 360° de sa pièce avec sa webcam pour montrer qu'il est seul et que son poste de travail est conforme. |
+| **Enregistrer la vidéo et l'audio** | La webcam et le micro du candidat sont enregistrés pendant tout le test (la webcam et le micro sont donc obligatoires). La vidéo, avec le son, est consultable à la revue. Cette option est requise pour la [surveillance en direct](#surveillance-en-direct). |
+| **Prendre des captures régulières de l'écran** | Captures d'écran périodiques de l'écran et de la webcam pendant le test. |
 | **Nécessite le navigateur sécurisé** | Le test ne peut être passé que dans **Safe Exam Browser**, un navigateur d'examen qui verrouille le poste du candidat. Voir [la section dédiée](#navigateur-securise) ci-dessous. |
 
-Cliquez sur **Enregistrer** pour persister la configuration. Le profil est immédiatement utilisable dans les [sessions de passage](/ai/fr/sessions/).
+Cliquez sur **Enregistrer** pour persister la configuration. Le profil peut alors être choisi lors de l'[inscription d'un candidat à un test](#activer-surveillance) ou imposé par une [session surveillée en direct](#surveillance-en-direct).
 
 ### Le navigateur sécurisé (Safe Exam Browser) {#navigateur-securise}
 
@@ -69,18 +75,18 @@ Selon le contenu du test, SEB autorise automatiquement ce qui est nécessaire �
 
 Règles d'interaction avec les autres options du profil :
 
-- Activer le navigateur sécurisé **coche et verrouille « Forcer le plein écran »** (le verrouillage est garanti par SEB lui-même) et **désactive la liste blanche de sites** (le filtrage des sites est intégré au navigateur sécurisé).
-- **Captures d'écran** — les captures régulières de l'écran ne sont **pas disponibles** avec le navigateur sécurisé, quel que soit le système : l'option **Prendre des captures régulières de l'écran** est décochée et grisée, et une note l'explique sous les options. L'enregistrement **audio et vidéo** fonctionne normalement.
+- Activer le navigateur sécurisé **coche et verrouille « Empêcher le candidat d'ouvrir d'autres fenêtres ou onglets »** (le verrouillage est garanti par SEB lui-même) et **désactive la liste blanche de sites** (le filtrage des sites est intégré au navigateur sécurisé).
+- **Captures d'écran** — les captures régulières de l'écran ne sont **pas disponibles** avec le navigateur sécurisé, quel que soit le système : l'option **Prendre des captures régulières de l'écran** est décochée et grisée, et une note l'explique sous les options. L'enregistrement **audio et vidéo** fonctionne normalement. Dans une session surveillée en direct, aucune capture n'est enregistrée mais l'écran du candidat reste visible par le surveillant.
 
     ![Profil avec navigateur sécurisé](img/05-modal-profil-seb.png)
 
-- Décocher **Utiliser la surveillance à distance** remet à zéro toutes ses options, y compris le navigateur sécurisé.
+- Désactiver **Utiliser la surveillance à distance et / ou un navigateur sécurisé** remet à zéro toutes ses options, y compris le navigateur sécurisé.
 
 > ⚠️ **Contenus vidéo sous Windows** — Safe Exam Browser pour Windows ne lit pas les vidéos au format MP4/H.264. Si votre test contient des vidéos dans ce format, contactez votre interlocuteur Isograd avant d'activer le navigateur sécurisé.
 
 ### Définir un profil par défaut
 
-Le profil **par défaut** est appliqué automatiquement à tous les tests surveillés pour lesquels aucun profil n'est explicitement choisi (notamment via les sessions de passage).
+Le profil **par défaut** est appliqué automatiquement à tous les tests surveillés pour lesquels aucun profil n'est explicitement choisi à l'inscription.
 
 1. Sur la ligne du profil, cliquez sur **Définir comme profil de surveillance par défaut**.
 2. Confirmez. L'étiquette **Par défaut** se déplace vers ce profil ; l'ancien profil par défaut reste actif mais n'est plus appliqué automatiquement.
@@ -105,7 +111,7 @@ Le profil **par défaut** est appliqué automatiquement à tous les tests survei
 
 Une fois vos tests passés sous surveillance, cette page vous permet de **revoir les incidents détectés** et de **valider ou invalider** chaque passage en fonction de la conformité observée.
 
-Accédez à cette page via le menu **Surveillance**.
+Accédez à cette page via le menu **Surveillance → Surveillance**.
 
 ![Page "Gestion des tests surveillés"](img/03-page-tests-surveilles.png)
 
@@ -125,21 +131,24 @@ Chaque ligne du tableau représente **un test passé sous surveillance** :
 
 Le panneau de filtres permet de cibler :
 
-- **Type de surveillance** — restreindre par profil utilisé.
+- **Rechercher** — texte libre sur le candidat.
+- **Période** — dates de début et de fin de passage ; par défaut, la page affiche les tests d'hier et d'aujourd'hui. Élargissez la période pour retrouver des passages plus anciens.
+- **Type de surveillance** — restreindre par type de surveillance, lorsque la colonne est affichée.
 - **Statut de validation** — par exemple ne voir que les tests **En attente** de revue.
-- **Incident** — par exemple ne voir que les tests ayant déclenché un incident **Sortie de plein écran**.
+- **Incident** — ne voir que les tests avec ou sans incident.
 
 ### Examiner un test surveillé
 
 Les boutons d'action en bout de ligne dépendent du type de surveillance et du statut :
 
-- **Afficher les photos prises pendant le test** (icône caméra) — ouvre une galerie des captures d'écran et de webcam prises périodiquement. Le commutateur **Afficher uniquement les images suspectes** filtre les captures où une IA a détecté une anomalie ; le bloc **Motifs relevés par l'IA** liste alors les motifs détectés avec leur nombre d'occurrences (visage peu visible, second appareil ou écran, document à portée de main, conversation avec un tiers, écouteurs, autre personne présente, autre onglet ou application actif…) et un clic sur un motif fait défiler jusqu'à la première image concernée.
+- **Afficher les photos prises pendant le test** (icône caméra) — ouvre la revue du test, organisée en onglets : **Photos**, **Vidéo du test**, **Captures d'écran**, **Interruptions du test** et **Pièce d'identité**, selon ce que le profil a enregistré. Dans les onglets d'images, le commutateur **Afficher uniquement les images suspectes** filtre les captures où une IA a détecté une anomalie ; le bloc **Motifs relevés par l'IA** liste alors les motifs détectés, du plus fréquent au moins fréquent, avec leur nombre d'occurrences (visage peu visible, second appareil ou écran, document à portée de main, conversation avec un tiers, écouteurs, autre personne présente, autre onglet visible, logiciel de partage d'écran ou de contrôle à distance…). Cliquez sur un motif pour n'afficher que les images signalées pour ce motif ; cliquez de nouveau pour toutes les réafficher.
 
     <!-- Capture à régénérer (nécessite un test surveillé avec photos sur l'environnement) :
     ![Photos prises pendant le test](img/04-modal-photos.png) -->
 
 - **Afficher la pièce d'identité** (icône silhouette) — affiche la photo de la pièce d'identité fournie par le candidat au démarrage.
-- **Commentaire de revue du protocole** (icône loupe) — pour les tests avec **incident**, cette fenêtre détaille chaque incident, sa nature, et offre un champ pour saisir l'explication du surveillant ou pour demander des informations au candidat. Pour un test passé dans une session [surveillée en direct](#surveillance-en-direct), elle affiche aussi les signalements des surveillants (*Signalé par*), les messages échangés et les écoutes ou conversations audio.
+- **Commentaire de revue du protocole** (icône loupe), selon le type de surveillance — pour les tests avec **incident**, cette fenêtre détaille chaque incident, sa nature, et offre un champ pour saisir l'explication du surveillant ou pour demander des informations au candidat.
+- **Historique du chat** (icône bulles) — sur les tests passés dans une session [surveillée en direct](#surveillance-en-direct) : affiche le fil des messages échangés entre le candidat et les surveillants, avec les écoutes et conversations audio. Les signalements des surveillants (*Signalé par*) et ces échanges figurent aussi dans l'onglet **Interruptions du test** de la revue.
 
 ### Valider ou invalider un test
 
@@ -198,19 +207,30 @@ Les candidats d'une session sont répartis automatiquement en **réunions** d'au
 
 ### Dans la réunion
 
-Dans la réunion, chaque candidat apparaît avec sa **caméra** et son **écran** ; cliquez sur une carte pour l'**agrandir**. Aucun son n'est transmis par défaut : le micro du candidat est requis mais n'est pas enregistré. Pour chaque candidat, vous disposez des actions suivantes :
+La page de la réunion porte le nom de la session et le numéro de la réunion. Chaque candidat connecté y apparaît dans une **carte** à son nom, avec son **écran** et sa **caméra**. Cliquez sur une carte, ou sur son bouton **Agrandir**, pour l'afficher en grand et en meilleure qualité ; **Réduire** la ramène à sa taille normale. Tant qu'aucun candidat n'est connecté, la page l'indique. La liste des candidats se rafraîchit toutes les dix secondes.
+
+Aucun son n'est transmis par défaut : le micro du candidat est requis, mais vous ne l'entendez que pendant une écoute ou une conversation que vous ouvrez.
+
+La barre en haut de la page affiche l'état de votre **connexion** à la réunion, le sélecteur **Changer de réunion** (avec le nombre de candidats connectés dans chaque réunion de la session), les **surveillants présents** et le bouton **Quitter la réunion**. Pendant une écoute ou une conversation, elle affiche aussi le nom du candidat concerné, la durée écoulée et le bouton **Arrêter l'audio**.
+
+Pour chaque candidat, vous disposez des actions suivantes :
 
 | Action | Effet |
 |---|---|
-| **Messages** | Ouvre une conversation écrite avec le candidat ; les messages sont conservés avec le test. |
-| **Écouter** / **Parler** | Ouvre une écoute ou une conversation audio avec le candidat. Une seule conversation audio à la fois par réunion ; elle s'arrête automatiquement après dix minutes. |
+| **Messages** | Ouvre un volet de conversation écrite avec le candidat. Vous y retrouvez l'historique des messages, y compris ceux des autres surveillants, identifiés par leur nom. Une pastille rouge sur le bouton compte les messages du candidat que vous n'avez pas encore lus. Les messages sont conservés avec le test. |
+| **Écouter** | Ouvre une écoute : vous entendez le candidat, lui ne vous entend pas. |
+| **Parler** | Ouvre une conversation audio dans les deux sens ; votre navigateur vous demande l'accès à votre micro. |
 | **Avertir** | Affiche un message de votre choix sur l'écran du candidat pendant vingt secondes. |
-| **Signaler** | Enregistre un **incident** avec votre description ; il apparaît ensuite dans la revue du test (voir ci-dessus). |
-| **Arrêter** / **Reprendre** | Interrompt le test du candidat, qui est renvoyé à sa liste de tests, puis le reprend en lui rendant le temps écoulé pendant l'arrêt — la même action que depuis la fiche du candidat. |
+| **Signaler** | Enregistre un **incident** avec votre description ; il apparaît ensuite, avec votre nom, dans la revue du test et dans le [procès-verbal de la session](/ai/fr/sessions/#proces-verbal). |
+| **Arrêter** / **Reprendre** | Après confirmation, interrompt le test du candidat, qui est renvoyé à sa liste de tests. Sa carte reste affichée avec la mention *Test arrêté par un surveillant* et le bouton devient **Reprendre** : la reprise lui rend le temps écoulé pendant l'arrêt. C'est la même action que depuis la fiche du candidat. |
 
-Les boutons **Changer de réunion** et **Quitter la réunion** en haut de page permettent de passer à une autre réunion de la session ou de sortir.
+> 💡 **Une seule conversation audio à la fois** — Une réunion n'admet qu'une écoute ou conversation audio à la fois, tous surveillants confondus : tant qu'un surveillant en a ouvert une, les boutons audio des autres cartes sont désactivés et la carte concernée indique son nom. L'audio s'arrête automatiquement après dix minutes ; cliquez de nouveau sur le bouton actif, ou sur **Arrêter l'audio**, pour l'arrêter plus tôt. Si le candidat ne répond pas à la demande ou si son micro n'est pas disponible, un message vous l'indique.
 
-> 💡 **Trace dans la revue** — Tout ce qui se passe en direct est conservé avec le test : les messages échangés, les écoutes et conversations audio, les avertissements et les signalements apparaissent dans la fenêtre **Commentaire de revue du protocole** de la page **Gestion des tests surveillés**, avec le nom du surveillant.
+Pour interrompre **tous** les candidats à la fois, utilisez la [mise en pause de la session](/ai/fr/sessions/#mettre-en-pause-une-session) depuis la page des sessions.
+
+> 💡 **Navigateur sécurisé** — Avec un profil qui impose le navigateur sécurisé, aucune capture d'écran n'est enregistrée, mais l'écran du candidat reste visible par le surveillant pendant la surveillance en direct.
+
+> 💡 **Trace dans la revue** — Ce qui se passe en direct est conservé avec le test : sur la page **Gestion des tests surveillés**, les signalements des surveillants, les messages échangés et les écoutes et conversations audio (avec leur durée) apparaissent dans la revue du test, onglet **Interruptions du test**, et le bouton **Historique du chat** affiche le fil des échanges. Les avertissements affichés à l'écran du candidat ne sont pas conservés : pour garder une trace, utilisez **Signaler** ou **Messages**.
 
 
 ## Activer la surveillance sur un test {#activer-surveillance}

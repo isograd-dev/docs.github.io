@@ -15,7 +15,7 @@
       anchor: mcq
     - title: Scale (Likert, T/F)
       anchor: scale-question
-    - title: Fill in the blanks
+    - title: Auto-graded text areas
       anchor: fill-in-the-blanks
     - title: Drag-and-drop
       anchor: drag-and-drop
@@ -25,7 +25,7 @@
       anchor: link
     - title: Click in area
       anchor: click-in-area
-    - title: Manual marking
+    - title: Manual submission
       anchor: manual-marking
     - title: Typing test
       anchor: typing
@@ -69,12 +69,16 @@
       anchor: create-a-test
     - title: Tabs of the edit page
       anchor: tabs-advanced-mode
+    - title: Paper exams
+      anchor: paper-exams
     - title: Edit a test
       anchor: edit-a-test
     - title: Duplicate a test
       anchor: duplicate-a-test
     - title: Authorise a test / Remove access
       anchor: authorise-a-test
+    - title: Tests not offered for enrolment
+      anchor: tests-not-offered
     - title: Delete a test
       anchor: delete-a-test
     - title: Filters

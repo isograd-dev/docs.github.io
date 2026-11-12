@@ -8,7 +8,7 @@ A **test session** is a time window (start date and time, end date and time) dur
 
 ![Main "Session management" page](img/01-liste-sessions.png)
 
-The **Test session management** page lists all the sessions defined on your account. Each row shows the **ID**, the **name**, the **start date**, the **end date** and the **session code** (if any). If live proctoring is available on your account, a **Live proctoring** column flags live-proctored sessions with a camera icon. A **Paused** pill next to the name indicates a [paused](#pause-and-resume-a-session) session.
+The **Test session management** page lists all the sessions defined on your account. Each row shows the **ID**, the **name**, the **start date**, the **end date** and the **session code** (if any). If live proctoring is available on your account, a **Live proctoring** column flags live-proctored sessions with a camera icon. A **Paused** pill next to the name indicates a [paused](#pause-and-resume-a-session) session. At the end of the row, buttons let you edit the session, [display its candidates](#session-candidates), pause it, draw up its [minutes](#session-minutes) and delete it, depending on the state of the session and your privileges.
 
 > 💡 **Default display** — The platform displays by default the **current** sessions and those **ended less than 3 months ago**. Older sessions remain in the database but are hidden from the list. The display options at the bottom of the filter panel let you include older sessions or hide past sessions.
 
@@ -38,35 +38,36 @@ You can also **assign an entire group** to a session in a single action from the
     - **Description** — label that will appear in the list (column *Session name*) and in the candidate registration form. Choose a meaningful name ("Promotion 2026 — session of 03/14").
     - **Session code** (optional) — password that the candidates will have to enter to start their test. To be communicated **only on the day of the session**. The regeneration button to the right of the field suggests a random code.
     - **Start date** and **End date** — window during which the tests attached to this session can be started. Enter using the `DD/MM/YY HH:MM` format.
-    - **Live proctoring** (switch, optional) — only shown if your account uses Isograd remote proctoring. Turn it on so that proctors can follow the candidates' camera and screen **in real time** during the session (see [Live proctoring](/ai/en/proctoring/#live-proctoring)). Two fields then appear:
-        - **Proctoring profile** (mandatory) — an Isograd remote proctoring profile **with video recording**. This profile is **imposed on every test** registered on the session.
-        - **Proctors** — the administrators of the account holding the *Proctor test sessions live* privilege, who will be able to enter the session's meetings.
+    - **Proctors** (optional) — the administrators of the account holding the *Proctor test sessions live* privilege who supervise the session. Once the session is over, they generate and sign its [minutes](#session-minutes); when the session is proctored live, they also watch the candidates in real time. This field is offered for every session, proctored live or not.
+    - **Live proctoring** (switch, optional) — only shown if your account uses Isograd remote proctoring. Turn it on so that the proctors can follow the candidates' camera and screen **in real time** during the session (see [Live proctoring](/ai/en/proctoring/#live-proctoring)). The **Proctoring profile** field (mandatory) then appears: choose an Isograd remote proctoring profile **with video recording**. This profile is **imposed on every test** registered on the session.
 
 3. Click **Save**. The session appears immediately in the table.
 
-> 💡 **Proctoring profile of a session** — Outside live proctoring, a session does not impose a proctoring profile: the profile is chosen **when registering** the candidate to the test (or through the *Assign a session or a proctoring profile* group action). If the **Live proctoring** switch is greyed out, no compatible profile exists yet: first create an Isograd remote proctoring profile with video recording.
+> 💡 **Proctoring profile of a session** — Outside live proctoring, a session does not impose a proctoring profile: the profile is chosen **when registering** the candidate to the test (or through the *Assign a session or a proctoring profile* group action). If the **Live proctoring** switch is greyed out, a message in the form says that no compatible profile exists yet: first create an Isograd remote proctoring profile with video recording (menu **Proctoring → Proctoring profiles**).
 
-> ⚠️ **Consistent dates** — The platform checks that the end date is after the start date and that the format is valid. An incorrect entry displays a message at the top of the form; the session is not created until the fields are valid.
+> ⚠️ **Required fields and consistent dates** — The description and both dates are required, and the start date must be before the end date: otherwise a message is displayed and the session is not created.
+
+> 💡 **Time zone** — If your account's time zone has not been set yet, the page asks you to choose it (**Configure your time zone** window) before creating your first session: session dates are expressed in that time zone.
 
 
 ## Edit a session {#edit-a-session}
 
 1. On the session's row, click the **Edit** icon (pencil) at the end of the row. The edit window opens, pre-filled with the current values.
 
-2. Adjust the desired fields (name, code, dates, live proctoring and its proctors).
+2. Adjust the desired fields (name, code, dates, proctors, live proctoring). Turning **Live proctoring** off removes the profile imposed by the session; the proctors are kept.
 
 3. Click **Save**.
 
 ### Notification of registered candidates
 
-If the session already has registered candidates and you change the dates, the platform **automatically** offers to send a notification email to the affected candidates:
+After each saved change, the platform offers to send a notification email to the candidates of the session:
 
 ![Candidate notification window](img/03-modal-notification.png)
 
-- **Yes** — sends an email to all candidates registered to the tests attached to this session, informing them of the new slot.
+- **Yes** — sends an email to the candidates who have a test attached to this session that has **not been started yet**, informing them of the slot.
 - **No** — the session is modified silently, with no email.
 
-> 💡 **When to notify?** — Always notify if you **bring forward** the date or if you **shorten** the window — the candidates must be informed. For a simple **postponement** of a few minutes or a minor adjustment, you can choose not to send an email to avoid flooding inboxes.
+> 💡 **When to notify?** — Answer **No** if you changed neither the dates nor the code. Always notify if you **bring forward** the date or if you **shorten** the window — the candidates must be informed. For a simple **postponement** of a few minutes or a minor adjustment, you can choose not to send an email to avoid flooding inboxes.
 
 
 ## Pause and resume a session {#pause-and-resume-a-session}
@@ -97,7 +98,7 @@ The **Paused** pill is displayed next to the session name and the button becomes
 
 2. The resume window sums up what will happen to the **started** tests:
 
-    - Started **TOSA certifications** are automatically **credited with the exact duration of the pause**; this value cannot be changed.
+    - On a Tosa account, started **TOSA certifications** are automatically **credited with the exact duration of the pause**; this value cannot be changed.
     - For the **other started tests**, the **Minutes to add to the other started tests** field is pre-filled with the duration of the pause; adjust it if needed (for example to grant a few minutes to settle back in).
     - Tests whose timer stops by itself during an interruption are not affected.
 
@@ -106,6 +107,62 @@ The **Paused** pill is displayed next to the session name and the button becomes
 > ⚠️ **Session expired during the pause** — If the session's end date passed during the pause, resuming is refused: **first change the end date** of the session, then resume it.
 
 > 💡 **Pause or stop a single test?** — The pause applies to **all** the candidates of the session. To interrupt a single candidate, use the **Stop the test** button on their registration record (see [The planned tests table](/ai/en/candidates/#the-planned-tests-table)).
+
+
+## Follow the candidates of a session {#session-candidates}
+
+The **Display candidates** button at the end of the row shows, at any time, where the candidates registered on the session stand — handy on exam day to spot at a glance who is not connected yet. It is offered to administrators allowed to view candidates.
+
+The **Candidates of the session** window shows:
+
+- **Groups of the candidates** — one pill per group, with the number of candidates concerned.
+- **Connected candidates** — last name, first name, email, test and start time. A candidate is considered connected when their browser was active less than 7 minutes ago.
+- **Candidates who finished their test** — with start and end times.
+- **Candidates not connected whose test is not finished** — with their status: *Test not started*, *Test started* or *Test started, last activity on…*.
+
+The **Refresh** button reloads the lists without closing the window.
+
+> 💡 **Your groups only** — If you do not have access to every group of the account, only the candidates of your groups are displayed.
+
+
+## Session minutes {#session-minutes}
+
+Once the session is **over** (end date passed), a proctor can draw up its **minutes**: a PDF document that summarises how the session went and that they **sign electronically** with a code received by email.
+
+The minutes button appears at the end of the row of a finished session for the **proctors of the session** (the *Proctors* field of the form) and for administrators entitled to draw up the minutes of every session. Its look reflects the state of the minutes:
+
+- **Generate the session minutes** — no minutes have been generated yet.
+- **View the session minutes (to be signed)** — the minutes are generated, awaiting signature.
+- **View the session minutes (signed)** — green icon: the minutes are signed and final.
+
+### Generate the minutes
+
+1. On the row of the finished session, click **Generate the session minutes**.
+2. Enter your **observations** if needed: conduct of the session, incidents observed.
+3. Click **Generate the minutes**. The minutes are drawn up from the session data at that moment, and a **6-digit signature code** is sent to you by email.
+
+### Content of the minutes
+
+- **Session identification** — account, session number and period, live proctoring or not, proctors, exams, number of registered, present and absent candidates.
+- **Attendance sheet** — for each candidate: presence, start and end times, accommodations (extra time, accessibility interface, suspended timer).
+- **Conduct of the session** — session pauses, test stops, time readjustments.
+- **Incidents observed** — including the incidents reported by proctors during live proctoring.
+- **Proctor's observations** and **signature**.
+
+### Sign the minutes
+
+1. Click **View the session minutes (to be signed)**. The window recalls the generation date and its author.
+2. Enter the **signature code** received by email and click **Sign the minutes**.
+
+As long as the minutes are not signed, the window also offers:
+
+- **Download the PDF** — the document is then marked as provisional and unsigned.
+- **Get a new code** — sends a new code to the logged-in administrator; another proctor of the session can thus sign instead of the one who generated the minutes.
+- **Edit and generate again** — reopens the generation window with your observations, to draw up the minutes again from the current data. The codes already sent are no longer valid.
+
+> ⚠️ **Signed minutes are final** — Once signed, the minutes can no longer be modified or generated again: only the PDF download remains. The signature records the signer's name and email, the date and a fingerprint of the document.
+
+The signature code is valid for **30 minutes**. After several wrong entries, it is blocked: request a new one. Signing is not possible while logged in as an alias on the account.
 
 
 ## Delete a session {#delete-a-session}
@@ -139,7 +196,7 @@ The import allows you to create several sessions in a single operation from an E
 
     ![Import window](img/05-modal-import.png)
 
-2. Click the **Download the template** link to retrieve the expected Excel file. The template contains an `Import` sheet with the columns:
+2. Click the **Download Excel file template** link to retrieve the expected Excel file. The template contains an `Import` sheet with the columns:
 
     | Column | Description |
     |---|---|
@@ -148,13 +205,15 @@ The import allows you to create several sessions in a single operation from an E
     | `dat_sta_day`, `dat_sta_month`, `dat_sta_year`, `dat_sta_hour`, `dat_sta_min` | Start date, split into columns |
     | `dat_end_day`, `dat_end_month`, `dat_end_year`, `dat_end_hour`, `dat_end_min` | End date, split into columns |
 
-3. Fill in the template, one session per row.
+3. Fill in the template, one session per row. The session name and the day, month and year of both dates are required; hour and minutes default to 0 when omitted. Do not rename the `Import` sheet or the columns, and do not add any: a file with an unknown column is rejected as a whole. A file can contain up to 1 000 sessions.
 
-4. Come back to the platform, click **Choose a file** in the import window, select your filled-in Excel, then confirm.
+4. Come back to the platform, select your filled-in Excel in the **File to import** field, then click **Add Multiple Sessions**.
 
-5. The platform displays a report listing the sessions created, updated or rejected with their reason.
+5. The platform displays the number of sessions imported and, where relevant, the list of rejected rows with their reason.
 
-> 💡 **Update vs creation** — If a session in the file has the **same name** as an existing session, its dates and code are **updated** rather than a duplicate being created. This is convenient for re-importing a corrected file.
+> ⚠️ **Import always creates new sessions** — Re-importing a file does not update existing sessions: each row creates a new session, even if a session with the same name already exists. After an error, fix the sessions concerned on screen or delete them before re-importing.
+
+> 💡 **Proctors and live proctoring** — They cannot be set through the import: edit the sessions concerned afterwards.
 
 
 ## Delete tests from past sessions {#delete-tests-past-sessions}
@@ -171,8 +230,8 @@ Over time, your account may accumulate **untaken tests** attached to sessions wh
 
 The **Filters** panel to the left of the list offers several settings to target which sessions to display:
 
-- **Search** — free text. Filters the list on the session name or code.
+- **Search** — free text. Filters the list on the session name or ID.
 - **Do not display past sessions** — hides all sessions whose end date is before now. Useful during the year to only see upcoming sessions.
 - **Display sessions ended more than 3 months ago** — disabled by default. Enable it to reveal the older history (for example to find a session from 6 months ago).
 
-The table is **sortable**: click the column header to switch between ascending and descending sort. By default, sessions are sorted by **start date**, most recent first.
+The table is **sortable** on the name and the start and end dates: click the column header to switch between ascending and descending sort. By default, sessions are sorted by **start date**.

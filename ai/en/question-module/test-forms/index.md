@@ -4,7 +4,7 @@ layout: question-manual
 
 # Tests
 
-A **test** is the final assembly that becomes passable by a candidate. It is the junction point where you take a **selection of questions** from your question bank, choose the **question order**, set **parameters** (duration, navigation, feedback, etc.), and obtain a deliverable that your account administrators can book for candidates.
+A **test** is the final assembly that becomes passable by a candidate. It is the junction point where you take a **selection of questions** from your question bank, choose the **question order**, set **parameters** (duration, navigation, etc.), and obtain a deliverable that your account administrators can book for candidates.
 
 Every test booked for a candidate on the platform is defined by one of these tests.
 
@@ -14,7 +14,7 @@ Open the page through the menu **Tests**. It is shown to administrators holding 
 
 The table (titled **Test form management**) lists every test, with its **ID**, **name**, **subject**, **language**, **type** and **algorithm**. When a usage period is set in the filters, an extra column shows the **number of takes** over that period.
 
-Administrators of the **main account** see every test. Administrators of a **sub-account** (or logged in as an alias on an account) only see the tests linked to their own account — see [Authorise a test / Remove access](#authorise-a-test).
+Administrators of the **main account** see every test. A row shown in red flags a test that will not be offered for enrolment — see [Tests not offered for enrolment](#tests-not-offered). Administrators of a **sub-account** (or logged in as an alias on an account) only see the tests linked to their own account — see [Authorise a test / Remove access](#authorise-a-test).
 
 
 ## Concepts {#concepts}
@@ -24,7 +24,7 @@ Administrators of the **main account** see every test. Administrators of a **sub
 A test either fixes the exact list of questions, or draws them at random at the start of each session. This is the **Question order** setting of the test:
 
 - **Ordered** — you pick the questions one by one; every candidate gets the same questions in the same order.
-- **Randomized** — you set the **number of questions** and the pool to draw from; each candidate gets a different order.
+- **Randomized** — you select a list of questions and set the **number of questions** to serve; each candidate gets that number of questions, drawn at random from the list.
 
 ### Only Production questions are served
 
@@ -41,12 +41,14 @@ Creation goes through a minimal dialog, followed by the edit page.
 
 2. Choose the **language** presented to the candidate.
 
-3. Click **Save**. The platform creates the test and takes you to its edit page.
+3. Leave the **Paper exam** switch off for a test taken on screen. Turn it on to create an exam meant to be printed, or scanned copies to grade — see [Paper exams](#paper-exams).
+
+4. Click **Save**. The platform creates the test and takes you to its edit page.
 
 
 ## Tabs of the edit page {#tabs-advanced-mode}
 
-The edit page offers four tabs. A help message at the top reminds you that the test is built from the questions of **your** bank.
+The edit page offers five tabs. A help message at the top reminds you that the test is built from the questions of **your** bank.
 
 ![Tabs of the test edit page](img/03-onglets-avance.png)
 
@@ -54,47 +56,114 @@ The edit page offers four tabs. A help message at the top reminds you that the t
 |---|---|
 | **Main Details** | Everything that defines the test: status, name and description, question order, question selection, candidate-side options. |
 | **Time Management** | The allotted time. |
-| **Initial and Final Screens & Analysis Prompt** | The intro and feedback texts shown to the candidate, and the instructions for the AI analysis of results. |
-| **Statistics** | Usage chart over the last months and, once enough results exist, a reliability indicator of the test. |
+| **Initial and Final Screens** | The intro and feedback texts shown to the candidate. |
+| **AI Analysis Prompt** | The instructions for the AI analysis of a candidate's result. |
+| **Statistics** | Usage and candidate-opinion charts, reliability computation. |
 
 ### "Main Details" tab
 
 - **Created by** — the administrator who created the test.
 - **Active** (Yes / No) — an inactive test can no longer be booked for new candidates but stays available for the results already recorded. This is how you retire a test.
-- **Name and description** — one block per language of your account. The description is shown to administrators when they book the test.
+- **Name and description** — required at least in the language of the test. The description is shown to administrators when they book the test.
+- **Question order** — *Ordered* or *Randomized* (see [Concepts](#concepts)).
 - **Needs proctoring** — whether the test must be taken under remote proctoring.
 - **Has improved accessibility** — variant of the interface designed for visually impaired candidates.
-- **Question order** — *Ordered* or *Randomized* (see [Concepts](#concepts)).
-- **Number of items** — for a randomized test, how many questions each candidate receives.
-- **Subject**, **Item sets**, **Domains** — for a randomized test, the pool to draw from: the questions of the selected item sets, and optionally a number of questions per domain (written as `domain id:number`, separated by spaces).
-- **Items selection** — the list of questions of the test. Click **Choose** to open the question picker: filter by **subject**, **domain**, **difficulty**, **item set** or free text, tick the questions and confirm. For an ordered test, drag the rows to set the order. Up to 1 000 questions can be selected.
-- **Result type** — how the score is computed and presented (for example number of correct answers or a percentage).
-- **Navigate between items** — lets the candidate move back and forth between questions instead of answering them in sequence.
-- **Show item list** — displays the list of questions to the candidate during the test.
-- **Display correct answer after each question** — immediate feedback mode.
-- **Display the "Give up" button** — lets the candidate skip a question.
-- **Display tutorial button on each question** — gives access to the tutorial written by the author.
-- **Display the button to listen to the question** — text-to-speech of the statement.
+- **Items selection** — the list of questions of the test, see [Select the questions](#question-selection).
+- **Number of items** — for a *randomized* test only: how many questions each candidate receives, drawn at random from the selected list (1 000 at most).
+- **Result type** — required; how the score is computed and presented (for example number of correct answers or a percentage).
+- **Navigate between items** — for an *ordered* test only: lets the candidate move back and forth between questions instead of answering them in sequence. This option is incompatible with in-application questions: it cannot be turned on if the test contains some, and the picker refuses to add any while it is on.
+- **Show item list** — for an *ordered* test only: displays the titles of the questions to the candidate after the introduction screen.
+- **Display the "Give up" button** — lets the candidate skip a question. On by default.
+- **Display the button to listen to the question** — text-to-speech of the statement. On by default.
 
-> 💡 **Suggested duration** — Once the questions are chosen, the **Time Management** tab shows a suggested duration computed from the allotted time of each selected question.
+### Select the questions {#question-selection}
+
+In the **Items selection** block, the button that opens the picker displays a two-column window:
+
+- **Available items** (left) — the Production questions of your bank. Filter them by **subject**, then by **domain** (the filter appears once a subject is chosen), **difficulty**, **item set** or free text.
+- **Selected items** (right) — the questions of the test.
+
+Drag a question from the left column to the right one to add it to the test. In the right column, drag the questions to set their order; on each question, the eye icon shows a preview and the bin icon removes it from the test. **Close** applies the selection to the form, **Cancel** discards it. Up to 1 000 questions can be selected.
+
+Back on the form, the question table summarises the selection; the eye icon of each row opens the question preview. The selection is only kept once the form is **saved**, and an ordered test must contain at least one question to be saved.
 
 ### "Time Management" tab
 
 - **Allotted time** — in minutes. Leave empty to impose no time limit.
 
-### "Initial and Final Screens & Analysis Prompt" tab
+### "Initial and Final Screens" tab
 
 - **Intro screen text** — message shown before the first question.
 - **Feedback text** — message shown when the test is over. A default text is proposed when the test is created.
-- **Version selection dialog text** — optional, for tests that let the candidate choose between several versions.
-- **Instructions for the AI analysis of the results** — optional guidance used when an administrator requests an AI analysis of a candidate's results.
+
+### "AI Analysis Prompt" tab
+
+- **Instructions for the AI analysis of the test result** — optional guidance used when an administrator requests an AI analysis of a candidate's result.
+
+### "Statistics" tab
+
+- **Number of tests taken per month**, with the total.
+- Two charts showing the **distribution of candidate opinions** over the last twelve months: relevance of the content and ergonomics of the test.
+- **Reliability** — the **Compute reliability** button computes a reliability coefficient from the tests completed over the last twelve months, with a rating (*Excellent*, *Good*, *Acceptable*, *Low*). The test must contain at least two questions; if no complete take exists over the period, a message says so.
 
 ### Header buttons
 
 - **Save** — saves the whole form.
-- **Save & Try test** — saves, then launches the test for yourself as a candidate would see it.
+- **Save & Try test** — saves, then displays an address to copy and open in a **private browsing window**: you then take the test as a candidate would see it, without losing your administrator session. Each new trial replaces the previous one.
 - **Export comments** — downloads the comments left by candidates on the questions of this test.
-- **AI test review** — asks the AI for a review of the test design (coverage, balance, wording).
+- **AI test review** — if AI features are enabled on your account. Describe the **test objective** (1 000 characters at most) then click **Analyze**: the AI gives an opinion on the relevance of the selected questions and of their number for that objective, taking into account the type and difficulty of the questions, the question order and the scoring mode.
+- **Display sample report** — depending on the result type, a link shows an example of the report given to the candidate.
+
+
+## Paper exams {#paper-exams}
+
+A **paper exam** is a test created with the **Paper exam** switch turned on (see [Create a test](#create-a-test)). It is used either to **print an exam** made of questions from your bank, or to **grade scanned copies** with a marking grid. Its result is always a sum of points and its questions are always ordered.
+
+Its edit page differs from that of an on-screen test.
+
+### "Main Details" tab
+
+- **Created by**, **Name and description** — as for an on-screen test.
+- **Maximum score** — required, a whole number greater than 0.
+- **Allow the grader to see the grading done by the other grader, if any** — off by default: in double grading, each grader marks without seeing the other's work.
+- **Exam type** — two tiles:
+    - **Build an exam from one or more questions of the question base** (automatically or manually marked) — the default choice.
+    - **Only use a marking grid on scanned copies**.
+
+### Exam made of questions from the bank
+
+Question selection uses the same picker as for an on-screen test, limited to printable question types: MCQ, manual marking, text answer, click in area, click in text, psychometric and matching.
+
+In the question table, the **Printed label** column lets you change the heading printed above each question ("Question 1", "Question 2"… by default, 100 characters at most).
+
+The **Layout** tab sets the answer space:
+
+- If the exam only contains MCQs, a switch lets you report the answers on a separate **answer sheet**: the check boxes are then replaced by letters in the statement.
+- Otherwise, answers are printed automatically, except for manual marking and text answer questions. For each of these, tick **Answer area** to leave a space below the question, and optionally set its **Height (cm)** (from 0 to 25; empty: natural size).
+
+The **Additional content to print** tab contains:
+
+- **Content displayed at the beginning of the document** — pre-filled with a candidate identity table (last name, first name, class or group, date).
+- **Content displayed at the end of the document**.
+- **Content above the answer grid** — for an MCQ-only exam: identity fields, instructions… LaTeX formulas are written between `$$`.
+
+The **AI Analysis Prompt** tab is the same as for an on-screen test.
+
+Two header buttons replace those of an on-screen test:
+
+- **Print the exam** — generates the document to print.
+- **Print the answer grid** — offered when every question is an MCQ.
+
+### Scanned copies graded with a grid
+
+With the **marking grid on scanned copies** tile, the exam is linked to **a single manual marking question** of your bank, whose grid is used to grade each copy. The *Layout* and *Additional content to print* tabs disappear, and the **Marking grid selection** block offers two tiles:
+
+- **Use the marking grid of an existing exam** — choose a subject, then click the manual marking question you want. Only manual marking questions are listed.
+- **Create a marking grid** — choose the subject, enter a **title** (required), optionally the **statement** printed at the top of the copy, then define the **marking criteria** (at least one). The maximum score shown is the sum of the criteria weights. **Create the grid** creates a manual marking question (PDF copy upload) in your bank and links it to the exam.
+
+Once the question is chosen, a summary shows its ID, title and maximum score, with an **Edit the question** link that opens it in the [question editor](/ai/en/question-module/question-editor/). The **Maximum score** of the exam then takes the question's value and can no longer be edited.
+
+> ⚠️ **Save the exam** — The link between the exam and its grid is only kept after clicking **Save**. Saving is refused unless the exam is linked to exactly one manual marking question with a single file upload.
 
 
 ## Edit a test {#edit-a-test}
@@ -119,17 +188,29 @@ Duplication is the fastest tool for creating a variant of an existing test (anot
 
 ## Authorise a test / Remove access {#authorise-a-test}
 
-Administrators of the **main account** decide which tests are linked to each account: a sub-account administrator only sees, and can only book, the tests linked to their account.
+Administrators of the **main account** decide which accounts can use each test: a sub-account administrator only sees, and can only book, the tests linked to their account. The two icons below only appear for administrators of the main account.
 
-To link a test to the current account:
+To authorise a test for one or more accounts:
 
-1. From the **Test form management** page, click **Authorise a test** in the action bar.
-2. In the **Authorise a test for this account** window, enter the **Test identifier** (the *ID* column of the list).
-3. Click **Save**. A message confirms that the test has been added to the account and the list reloads.
+1. On the test's row, click the **Authorize for an account** icon (key).
+2. In the **Authorize this test for an account** window, look up the account(s) in the **Account identifier** field: type at least three characters of the account name, of its identifier or of the email of one of its administrators, then select the account. You can select several.
+3. Click **Save**. A message confirms that the test has been added to the selected accounts.
 
-To remove a test from an account, click the **Remove access** icon (key) on the test's row: it disappears from the list for that account's administrators.
+To remove the test from the account you are logged in to, click the **Remove access** icon on the test's row. Removal is immediate, with no confirmation prompt.
 
-> 💡 **Tests already available to everyone** — Some tests are available to every account of the platform: the window says so if you try to authorise one, and the **Remove access** icon does not appear on their row.
+> 💡 **Who can use this test?** — Hover over the name of a non-public test: a tooltip lists the accounts authorised to use it.
+
+
+## Tests not offered for enrolment {#tests-not-offered}
+
+A row shown **in red**, with a warning icon, flags a test that **will not be offered** when enrolling candidates. Hover over the icon to see the reason(s), for example:
+
+- the test is inactive;
+- its test type is not enabled on the account;
+- it is not public and the account is not authorised to use it;
+- its subject is archived.
+
+Paper exams are not concerned by this flag.
 
 
 ## Delete a test {#delete-a-test}
@@ -145,6 +226,7 @@ To remove a test from an account, click the **Remove access** icon (key) on the 
 The **Filters** panel offers:
 
 - **Search** — free text on the name or the ID.
+- **Test type** — by test type, for example to isolate paper exams.
 - **Language** — by test language.
 - **Subject** — by associated subject.
 - **Include inactive tests** — switch; off by default.

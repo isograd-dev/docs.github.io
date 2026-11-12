@@ -23,47 +23,48 @@ npx playwright test --project=ui-manual-screenshots specs/ui/preprod/
 
 ## Prérequis
 
-- Un token admin frais dans `isograd_app/tests/.env` (login admin requis).
+- Deux tokens admin frais dans `isograd_app/tests/.env` :
+  - `ADMIN_LOGIN_URL` — manuel administrateur (tous les chapitres hors module
+    Questions et module de correction) ;
+  - `ADMIN_PEDAGOGY_LOGIN_URL` — module Questions et module de correction,
+    capturés sur l'**environnement pedagogy** (voir ci-dessous).
 - Projet exclu de la CI — à lancer explicitement.
 
-## Module Questions : cibler un environnement CUSTOM
+## Module Questions et module de correction : environnement pedagogy
+
+Toutes les captures du **module Questions** (`tests/specs/ui/preprod/*.manual.spec.mjs`)
+et du **module de correction** (`tests/specs/ui/clientadmin/grading/*.manual.spec.mjs`)
+sont réalisées sur l'**environnement pedagogy**, avec le login
+`ADMIN_PEDAGOGY_LOGIN_URL`. Les autres chapitres restent sur `ADMIN_LOGIN_URL`.
+La commande unique ci-dessus régénère toujours l'ensemble : chaque spec choisit
+son environnement.
+
+Mécanisme : ces specs importent `test` depuis `tests/fixtures/pedagogy-admin-test.mjs`
+(et non `fixtures/admin-test.mjs`). Ce module remplace `ADMIN_LOGIN_URL` par
+`ADMIN_PEDAGOGY_LOGIN_URL` dans le worker avant le chargement de
+`scripts/constants.mjs` : `APP_BASE_URL`, `goToPage()` et `ensureAdminLoggedIn()`
+visent alors pedagogy. Pour une nouvelle spec de captures de ces deux modules,
+cet import doit être le **premier import** du fichier (une vérification fait
+échouer la spec avec un message explicite sinon). Si `ADMIN_PEDAGOGY_LOGIN_URL`
+est absent, la spec échoue immédiatement.
 
 Le manuel du module Questions (`ai/<lang>/question-module/`) décrit l'interface
 des **environnements custom** (plateformes client, `SystemVariables::isCustomEnvironment()`),
 pas celle de la préproduction Isograd : pas de familles de sujets, fiche sujet à
 3 onglets, pas de transfert en production, pas de vérification/calibration,
-tests en mode client, etc.
+tests en mode client, etc. Les specs détectent `body[data-is_cus_env="1"]` pour
+adapter la création des données de démo. L'usage de pedagogy remplace l'ancienne
+procédure (bascule temporaire de `test.isograd.com` en mode custom par un patch
+de `isCustomEnvironment()` sur le serveur).
 
-Pour régénérer ces captures, `BASE_URL` et `ADMIN_LOGIN_URL` dans
-`isograd_app/tests/.env` doivent pointer sur un **environnement custom** (login
-d'un administrateur principal de ce client).
-
-**Procédure utilisée (pas d'environnement custom dédié)** : l'utilisateur
-bascule temporairement `test.isograd.com` en mode custom en modifiant **sur le
-serveur** (pas dans le repo) le fichier `src/system/systemvariables.class.php` :
-
-```php
-public static function isCustomEnvironment(): bool
-{
-    return self::getEnvironment() == Environment::Custom || self::getEnvironment() == Environment::Test;
-}
-```
-
-Garder `Environment::Test` comme STRID (ne pas changer `EnvVar`) : le login et
-les listes d'administrateurs filtrent la base utilisateur sur ce STRID et
-casseraient sinon. Une fois les captures faites, l'utilisateur rétablit la
-version d'origine. Claude ne peut pas faire cette modification : la demander
-avant de lancer les specs. Les specs `tests/specs/ui/preprod/*.manual.spec.mjs`
-détectent `body[data-is_cus_env="1"]` pour adapter la création des données de démo.
-Pour le chapitre « Éditeur de questions », désigner le sujet de démo de
-l'environnement avec `MANUAL_SUBJECT_ID=<sbj_id>`.
+Pour des captures fidèles à un client, le compte de `ADMIN_PEDAGOGY_LOGIN_URL`
+doit être un administrateur principal sans privilèges root ni
+AdvancedTestFormRead : un compte root ajoute l'onglet « Description YML » et le
+bouton « Editer questions liés » dans l'éditeur, et affiche la fiche de test en
+mode avancé. Pour le chapitre « Éditeur de questions », désigner le sujet de
+démo de l'environnement pedagogy avec `MANUAL_SUBJECT_ID=<sbj_id>`.
 
 Dernière régénération du manuel administrateur (fr + en) : 2026-10-09 sur `test.isograd.com` (10 chapitres, dont les nouvelles captures pause/reprise de session, navigateur sécurisé et surveillance en direct). Module Questions : dernière régénération complète (fr + en) 2026-10-09, sur `test.isograd.com`
-temporairement configuré en environnement custom (`isCustomEnvironment()` patché
-côté serveur). Limites de ces captures : l'admin utilisé est un compte root
-Isograd, donc l'éditeur de questions montre en plus l'onglet « Description YML »
-et le bouton « Editer questions liés », la fiche de test s'affiche en mode
-avancé (privilège AdvancedTestFormRead) au lieu du mode client, et les données
-(types de réponse, sujets, familles) sont celles de la base de test. Pour des
-captures fidèles à un client, relancer avec un administrateur principal sans
-privilèges root ni AdvancedTestFormRead.
+temporairement configuré en environnement custom, avec un compte root Isograd
+(d'où l'onglet YML, le mode avancé des tests et les données de la base de test
+visibles sur ces captures) — pas encore régénéré sur pedagogy.

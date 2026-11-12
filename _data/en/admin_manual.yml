@@ -64,6 +64,26 @@
     - title: Remote proctoring
       anchor: remote-proctoring
 
+- title: Grading copies
+  url: /ai/en/grading/
+  sections:
+    - title: Roles
+      anchor: roles
+    - title: Copies to grade
+      anchor: to-grade
+    - title: Mark a copy
+      anchor: mark
+    - title: Annotate a PDF copy
+      anchor: pdf-annotation
+    - title: Double grading
+      anchor: double-grading
+    - title: Juries
+      anchor: juries
+    - title: Grader fairness
+      anchor: fairness
+    - title: Scan paper copies
+      anchor: exam-scanning
+
 - title: Test proctoring
   url: /ai/en/proctoring/
   sections:
@@ -111,6 +131,10 @@
       anchor: edit-a-session
     - title: Pause and resume a session
       anchor: pause-and-resume-a-session
+    - title: Follow the candidates of a session
+      anchor: session-candidates
+    - title: Session minutes
+      anchor: session-minutes
     - title: Delete a session
       anchor: delete-a-session
     - title: Import multiple sessions

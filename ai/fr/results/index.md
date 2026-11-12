@@ -54,10 +54,10 @@ Le filtre **Statut de test** propose plusieurs valeurs qui correspondent aux ét
 - **À passer** — le candidat a été inscrit mais n'a pas encore démarré le test.
 - **En cours** — le candidat a démarré le test et ne l'a pas terminé. Le test reste démarrable tant qu'il n'est pas marqué terminé. Un test interrompu par un administrateur reste *En cours* ici ; le badge **Arrêté par un administrateur** n'apparaît que sur la fiche du candidat (voir [Le tableau des tests planifiés](/ai/fr/candidates/#le-tableau-des-tests-planifies)).
 - **Terminé** — le candidat a soumis ses réponses. Le score est calculé et le rapport disponible.
-- **En attente de correction** — pour les sujets comportant des questions à correction manuelle (rédaction, code), le test est soumis mais nécessite l'intervention d'un correcteur.
+- **En attente de notation** — pour les tests comportant des questions à correction manuelle (rédaction, document déposé, copie scannée), le test est soumis mais nécessite l'intervention d'un correcteur.
 - **Annulé** — l'inscription a été annulée avant que le candidat passe le test. Le crédit est restitué au compte.
 
-> 💡 **« En attente de correction »** — Quand vous filtrez sur ce statut, la colonne **Score** est remplacée par **Correcteur** : c'est l'administrateur en charge de la correction. Voir [Noter un test](#noter-un-test) ci-dessous.
+> 💡 **« En attente de notation »** — Quand vous filtrez sur ce statut, la colonne **Score** est remplacée par **Correcteur** : c'est l'administrateur ou le binôme en charge de la correction (ou **IA** tant qu'une notation par l'IA est en cours). Voir [Noter un test](#noter-un-test) ci-dessous.
 
 
 ## Actions sur une ligne {#actions-sur-une-ligne}
@@ -65,8 +65,8 @@ Le filtre **Statut de test** propose plusieurs valeurs qui correspondent aux ét
 Les boutons d'action visibles en bout de ligne dépendent du statut du test et des privilèges de votre compte :
 
 - **Analyse** (icône loupe ou détails) — ouvre la page d'analyse détaillée du résultat : score par compétence, durée par question, courbe de difficulté.
-- **Noter** (icône évaluation) — pour les tests en attente de correction, ouvre l'interface de notation question par question.
-- **Attribuer à un correcteur** (icône silhouette) — affecte un administrateur de votre compte comme correcteur du test.
+- **Noter** (icône évaluation) — pour les tests en attente de notation, ouvre l'écran de notation (voir [Correction des copies](/ai/fr/grading/#noter)).
+- **Attribuer à un correcteur** (icône silhouette) — affecte le test à un correcteur ou à un binôme de correcteurs de votre compte.
 - **Télécharger le certificat** (icône diplôme) — disponible pour les certifications validées : génère le diplôme PDF.
 
 ![Voir le détail d'un résultat](img/03-detail-resultat.png)
@@ -114,23 +114,14 @@ Pour les tests adaptatifs (où la difficulté s'ajuste aux réponses), l'analyse
 
 ## Noter un test {#noter-un-test}
 
-Les tests qui contiennent des **questions à correction manuelle** (rédaction libre, code à analyser, etc.) arrivent dans le statut **En attente de correction** une fois soumis. C'est à un administrateur d'attribuer une note avant que le résultat final soit calculé.
+Les tests qui contiennent des **questions à correction manuelle** (rédaction, document déposé, copie scannée, etc.) arrivent dans le statut **En attente de notation** une fois soumis : un correcteur doit noter chaque réponse avant que le résultat final soit calculé.
 
-### Attribuer un correcteur
+Depuis la page des résultats, vous pouvez :
 
-1. Filtrez la liste sur le statut **En attente de correction**.
-2. Cochez un ou plusieurs tests à attribuer.
-3. Cliquez sur **Attribuer les tests à un ou plusieurs correcteurs**.
+- **Noter** un test en attente — l'icône **Noter** en bout de ligne ouvre l'écran de notation. Elle est proposée au correcteur attribué au test et aux administrateurs habilités à corriger les copies des autres correcteurs.
+- **Attribuer un test à un correcteur** — l'icône correspondante affecte le test à un correcteur ou à un binôme de correcteurs.
 
-    > 💡 Si vous sélectionnez plusieurs correcteurs, les tests seront répartis de manière équilibrée entre eux.
-
-4. Confirmez. Les tests sont assignés et la colonne **Correcteur** se met à jour avec le nom de l'administrateur affecté.
-
-### Noter
-
-1. Cliquez sur l'icône **Noter** en bout de ligne d'un test qui vous est affecté.
-2. La plateforme ouvre l'interface de notation. Pour chaque question à correction manuelle, vous voyez la **réponse du candidat** et un **champ de note** à remplir, accompagné d'un champ commentaire facultatif.
-3. Validez chaque question, puis enregistrez l'ensemble. Le score global est recalculé et le test passe au statut **Terminé**.
+L'attribution en masse, la notation avec la grille, l'annotation des copies PDF, la double correction et son harmonisation se font depuis le menu **Corrections** : voir le chapitre [Correction des copies](/ai/fr/grading/).
 
 
 ## Exporter vers Excel {#exporter-vers-excel}

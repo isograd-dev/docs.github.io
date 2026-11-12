@@ -17,13 +17,13 @@ This chapter covers three complementary pages:
 
 ## Proctoring profiles {#proctoring-profiles}
 
-A **proctoring profile** is a set of settings that determines what the platform checks and records during the test. You can create several profiles (for example, *"Light exam"* vs *"Strict certification"*) and **attach them to [test sessions](/ai/en/sessions/)** to apply the right level of control in the right context.
+A **proctoring profile** is a set of settings that determines what the platform checks and records during the test. You can create several profiles (for example, *"Light exam"* vs *"Strict certification"*) to apply the right level of control to the right context: the profile is chosen **when registering** a candidate to a test, or is **imposed by a live-proctored [test session](/ai/en/sessions/)**.
 
 Open this page through the **Proctoring → Proctoring profiles** menu.
 
 ![Page "Proctoring profiles management"](img/01-page-profils.png)
 
-The page lists your existing profiles. If your account is new and has no profile defined yet, you will simply see *"You have not yet created a proctoring profile."*. Each row shows the **name** of the profile and a **Default** marker for the profile used when none is explicitly chosen.
+The page lists your existing profiles. If your account is new and has no profile defined yet, you will simply see *"You have not yet created a proctoring profile."*. Each row shows the **name** of the profile and a **Default** marker for the profile used when none is explicitly chosen. Each row also shows the profile's **Identifier (API / LTI)**, used to designate the profile from an integration, and a search field filters the list.
 
 ### Create a proctoring profile
 
@@ -35,24 +35,30 @@ Creation happens in **two steps**: name the profile, then configure its options 
 
     ![Window for adding a proctoring profile](img/02-modal-profil-ajout.png)
 
-2. Fill in the profile's **Description** — this is the label that will appear in the list and in the test sessions. Choose a meaningful name such as "Strict certification" or "Light internal exam".
+2. Fill in the profile's **Description** — this is the label that will appear in the list and in the test registration windows. Choose a meaningful name such as "Strict certification" or "Light internal exam".
 
 3. Click on **Save**. The platform creates the profile and immediately opens the edit window with its options.
 
 #### Step 2 — Configure the proctoring options
 
-In the profile's edit window, tick the desired **proctoring options**:
+In the profile's edit window, turn on the **proctoring options** you want. Two main options:
 
 | Option | Effect |
 |---|---|
-| **Request an ID document** | The candidate must photograph their ID document before starting. The photo is available for review afterwards. |
-| **Force full screen** | The test can only be taken in full-screen mode. Exiting full screen triggers an incident. |
-| **Record video and audio** | The candidate's webcam and microphone are recorded for the duration of the test (both are therefore mandatory). The video, with its sound, is available at review time. |
-| **Take regular screenshots** | Periodic screen and webcam captures during the test. |
-| **Perform a room scan** | Before the test, the candidate makes a 360° sweep of their room with their webcam to show they are alone and that their workstation is compliant. |
-| **Requires secure browser** | The test can only be taken in **Safe Exam Browser**, an exam browser that locks down the candidate's computer. See [the dedicated section](#secure-browser) below. |
+| **Prevent the candidate from opening other windows or tabs** | The test must be taken in full screen, with no other window or tab. Leaving it triggers an incident. |
+| **Use remote proctoring and/or a secure browser** | Enables remote proctoring and reveals the options below. |
 
-Click on **Save** to persist the configuration. The profile is immediately usable in [test sessions](/ai/en/sessions/).
+The remote proctoring options only appear when the second option is on:
+
+| Option | Effect |
+|---|---|
+| **Ask for an identity document** | The candidate must photograph their ID before starting. The photo can be reviewed afterwards. |
+| **Perform a room scan** | Before the test, the candidate does a 360° sweep of their room with their webcam to show they are alone and their workstation is compliant. |
+| **Record video and audio** | The candidate's webcam and microphone are recorded throughout the test (webcam and microphone are therefore mandatory). The video, with sound, can be reviewed afterwards. This option is required for [live proctoring](#live-proctoring). |
+| **Take regular screenshots** | Periodic captures of the screen and webcam during the test. |
+| **Requires secure browser** | The test can only be taken in **Safe Exam Browser**, an exam browser that locks down the candidate's workstation. See [the dedicated section](#secure-browser) below. |
+
+Click on **Save** to persist the configuration. The profile can then be chosen when [registering a candidate to a test](#enable-proctoring) or imposed by a [live-proctored session](#live-proctoring).
 
 ### The secure browser (Safe Exam Browser) {#secure-browser}
 
@@ -69,18 +75,18 @@ Depending on the test's content, SEB automatically allows what is needed — and
 
 Interaction rules with the other profile options:
 
-- Enabling the secure browser **ticks and locks "Force full screen"** (the lockdown is guaranteed by SEB itself) and **disables the website whitelist** (site filtering is built into the secure browser).
-- **Screenshots** — regular screen captures are **not available** with the secure browser, whatever the system: the **Take regular screen captures** option is unticked and greyed out, and a note below the options explains why. **Audio and video** recording works normally.
+- Enabling the secure browser **ticks and locks "Prevent the candidate from opening other windows or tabs"** (the lockdown is guaranteed by SEB itself) and **disables the website whitelist** (site filtering is built into the secure browser).
+- **Screenshots** — regular screen captures are **not available** with the secure browser, whatever the system: the **Take regular screenshots** option is unticked and greyed out, and a note under the options explains it. **Audio and video** recording works normally. In a live-proctored session, no capture is recorded but the candidate's screen remains visible to the proctor.
 
     ![Profile with the secure browser](img/05-modal-profil-seb.png)
 
-- Unticking **Use remote proctoring** resets all of its options, including the secure browser.
+- Turning off **Use remote proctoring and/or a secure browser** resets all of its options, including the secure browser.
 
 > ⚠️ **Video content on Windows** — Safe Exam Browser for Windows cannot play MP4/H.264 videos. If your test contains videos in that format, contact your Isograd representative before enabling the secure browser.
 
 ### Set a default profile
 
-The **default** profile is applied automatically to every proctored test for which no profile is explicitly chosen (notably through test sessions).
+The **default** profile is applied automatically to every proctored test for which no profile is explicitly chosen at registration.
 
 1. On the profile's row, click on **Set as default proctoring profile**.
 2. Confirm. The **Default** label moves to this profile; the previous default profile remains active but is no longer applied automatically.
@@ -105,7 +111,7 @@ The **default** profile is applied automatically to every proctored test for whi
 
 Once your tests have been taken under proctoring, this page lets you **review the detected incidents** and **validate or invalidate** each sitting based on the observed compliance.
 
-Open this page through the **Proctoring** menu.
+Open this page through the menu **Proctoring → Proctoring**.
 
 ![Page "Proctored tests management"](img/03-page-tests-surveilles.png)
 
@@ -123,23 +129,26 @@ Each row in the table represents **one test taken under proctoring**:
 
 ### Filters
 
-The filters panel lets you target:
+The filter panel lets you target:
 
-- **Proctoring type** — restrict by profile used.
+- **Search** — free text on the candidate.
+- **Period** — start and end dates of the take; by default, the page shows the tests of yesterday and today. Widen the period to find older takes.
+- **Proctoring type** — restrict by proctoring type, when the column is displayed.
 - **Validation status** — for example show only tests **Pending** review.
-- **Incident** — for example show only tests that triggered an **Exit full screen** incident.
+- **Incident** — show only tests with or without an incident.
 
 ### Review a proctored test
 
 The action buttons at the end of each row depend on the proctoring type and status:
 
-- **Show the photos taken during the test** (camera icon) — opens a gallery of the screen and webcam captures taken periodically. The **Show only suspicious images** toggle filters the captures where AI has detected an anomaly; the **Reasons flagged by the AI** block then lists the detected reasons with their number of occurrences (face barely visible, second device or screen, document within reach, conversation with a third party, earphones, another person present, another tab or application active…) and clicking a reason scrolls to the first matching image.
+- **Show the photos taken during the test** (camera icon) — opens the test's review, organised in tabs: **Photos**, **Test video**, **Screenshots**, **Test interruptions** and **Identity document**, depending on what the profile recorded. In the image tabs, the **Show only suspicious images** toggle filters the captures where AI has detected an anomaly; the **Reasons flagged by the AI** block then lists the detected reasons, most frequent first, with their number of occurrences (face barely visible, second device or screen, document within reach, conversation with a third party, earphones, another person present, another tab visible, screen-sharing or remote-control software…). Click a reason to show only the images flagged for that reason; click again to show them all.
 
     <!-- Capture to regenerate (requires a proctored test with photos on the environment):
     ![Photos taken during the test](img/04-modal-photos.png) -->
 
 - **Show the ID document** (silhouette icon) — displays the photo of the ID document provided by the candidate at start.
-- **Protocol review comment** (magnifier icon) — for tests with an **incident**, this window details each incident, its nature, and offers a field to record the proctor's explanation or to ask the candidate for further information. For a test taken in a [live-proctored](#live-proctoring) session, it also shows the proctors' reports (*Reported by*), the exchanged messages and the audio listening or conversations.
+- **Protocol review comment** (magnifier icon), depending on the proctoring type — for tests with an **incident**, this window details each incident, its nature, and offers a field to record the proctor's explanation or to ask the candidate for further information.
+- **Chat log** (speech-bubbles icon) — on tests taken in a [live-proctored](#live-proctoring) session: displays the thread of messages exchanged between the candidate and the proctors, with audio listenings and conversations. The proctors' reports (*Reported by*) and these exchanges also appear in the **Test interruptions** tab of the review.
 
 ### Validate or invalidate a test
 
@@ -196,21 +205,32 @@ The page lists the live-proctored sessions **currently open** (between their sta
 
 The candidates of a session are automatically split into **meetings** of at most twelve candidates: a new meeting opens by itself when additional candidates start their test. Each card shows the number of connected candidates, the number of proctors present and the opening time; the list refreshes every ten seconds. As long as no candidate has started a test, the page simply says that no meeting is in progress. Click **Enter the meeting** to join a meeting.
 
-### In the meeting
+### Inside the meeting
 
-In the meeting, each candidate appears with their **camera** and **screen**; click a card to **enlarge** it. No sound is transmitted by default: the candidate's microphone is required but not recorded. For each candidate, the following actions are available:
+The meeting page carries the session name and the meeting number. Each connected candidate appears in a **card** bearing their name, with their **screen** and **camera**. Click a card, or its **Enlarge** button, to display it larger and in better quality; **Shrink** brings it back to its normal size. As long as no candidate is connected, the page says so. The candidate list refreshes every ten seconds.
+
+No sound is transmitted by default: the candidate's microphone is required, but you only hear it while you listen to or talk with them.
+
+The bar at the top of the page shows the state of your **connection** to the meeting, the **Switch meeting** selector (with the number of candidates connected in each meeting of the session), the **proctors present** and the **Leave the meeting** button. During a listening or a conversation, it also shows the name of the candidate concerned, the elapsed time and the **Stop audio** button.
+
+For each candidate, the following actions are available:
 
 | Action | Effect |
 |---|---|
-| **Messages** | Opens a written conversation with the candidate; the messages are kept with the test. |
-| **Listen** / **Talk** | Opens an audio listening or conversation with the candidate. One audio conversation at a time per meeting; it stops automatically after ten minutes. |
+| **Messages** | Opens a written conversation panel with the candidate. It shows the message history, including messages from other proctors, identified by name. A red badge on the button counts the candidate's messages you have not read yet. Messages are kept with the test. |
+| **Listen** | Opens a listening: you hear the candidate, they do not hear you. |
+| **Talk** | Opens a two-way audio conversation; your browser asks for access to your microphone. |
 | **Warn** | Displays a message of your choice on the candidate's screen for twenty seconds. |
-| **Report** | Records an **incident** with your description; it then appears in the test review (see above). |
-| **Stop** / **Resume** | Interrupts the candidate's test, who is sent back to their test list, then resumes it giving back the time elapsed while stopped — the same action as from the candidate's record. |
+| **Report** | Records an **incident** with your description; it then appears, with your name, in the test's review and in the [session minutes](/ai/en/sessions/#session-minutes). |
+| **Stop** / **Resume** | After confirmation, interrupts the candidate's test; the candidate is sent back to their test list. Their card stays displayed with the mention *Test stopped by a proctor* and the button becomes **Resume**: resuming gives back the time elapsed while stopped. This is the same action as from the candidate's record. |
 
-The **Switch meeting** and **Leave the meeting** buttons at the top of the page let you move to another meeting of the session or exit.
+> 💡 **One audio conversation at a time** — A meeting allows only one listening or audio conversation at a time, across all proctors: while a proctor has one open, the audio buttons of the other cards are disabled and the card concerned shows their name. Audio stops automatically after ten minutes; click the active button again, or **Stop audio**, to stop it earlier. If the candidate does not answer the request or their microphone is not available, a message tells you.
 
-> 💡 **Trace in the review** — Everything that happens live is kept with the test: the exchanged messages, the audio listening and conversations, the warnings and the reports appear in the **Protocol review comment** window of the **Proctored tests management** page, with the proctor's name.
+To interrupt **all** candidates at once, use [session pause](/ai/en/sessions/#pause-and-resume-a-session) from the sessions page.
+
+> 💡 **Secure browser** — With a profile that requires the secure browser, no screen capture is recorded, but the candidate's screen remains visible to the proctor during live proctoring.
+
+> 💡 **Trace in the review** — What happens live is kept with the test: on the **Proctored tests management** page, the proctors' reports, the exchanged messages and the audio listenings and conversations (with their duration) appear in the test's review, **Test interruptions** tab, and the **Chat log** button displays the thread of exchanges. The warnings displayed on the candidate's screen are not kept: to keep a trace, use **Report** or **Messages**.
 
 
 ## Enable proctoring on a test {#enable-proctoring}

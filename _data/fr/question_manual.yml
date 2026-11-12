@@ -15,7 +15,7 @@
       anchor: qcm
     - title: Question d'échelle (Likert, V/F)
       anchor: question-echelle
-    - title: Texte à trous
+    - title: Zones de texte à correction automatique
       anchor: texte-a-trous
     - title: Glisser-déposer
       anchor: drag-and-drop
@@ -25,7 +25,7 @@
       anchor: link
     - title: Cliquer sur zone
       anchor: click-in-area
-    - title: Notation manuelle
+    - title: Soumission manuelle
       anchor: manual-marking
     - title: Test de saisie
       anchor: typing
@@ -69,12 +69,16 @@
       anchor: creer-un-formulaire
     - title: Onglets de la page d'édition
       anchor: onglets-mode-avance
+    - title: Examens papier
+      anchor: examens-papier
     - title: Modifier un test
       anchor: modifier-un-formulaire
     - title: Dupliquer un test
       anchor: dupliquer-un-formulaire
     - title: Autoriser un test / Retirer l'accès
       anchor: autoriser-un-test
+    - title: Tests non proposés à l'inscription
+      anchor: tests-non-proposes
     - title: Supprimer un test
       anchor: supprimer-un-formulaire
     - title: Filtres

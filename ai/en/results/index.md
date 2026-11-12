@@ -54,10 +54,10 @@ The **Test status** filter offers several values that correspond to the stages o
 - **To be taken** — the candidate has been registered but has not yet started the test.
 - **In progress** — the candidate has started the test and has not finished it. The test remains startable as long as it is not marked as completed. A test stopped by an administrator still shows as *In progress* here; the **Stopped by an administrator** badge only appears on the candidate's record (see [The planned tests table](/ai/en/candidates/#the-planned-tests-table)).
 - **Completed** — the candidate has submitted their answers. The score is calculated and the report is available.
-- **Pending grading** — for subjects containing manually graded questions (essay, code), the test is submitted but requires a grader's intervention.
+- **Pending grading** — for tests containing manually graded questions (essay, uploaded document, scanned copy), the test is submitted but requires a grader's intervention.
 - **Cancelled** — the registration was cancelled before the candidate took the test. The credit is refunded to the account.
 
-> 💡 **"Pending grading"** — When you filter on this status, the **Score** column is replaced by **Grader**: this is the administrator in charge of the grading. See [Grade a test](#grade-a-test) below.
+> 💡 **"Pending grading"** — When you filter on this status, the **Score** column is replaced by **Grader**: this is the administrator or the pair in charge of the grading (or **AI** while an AI marking is in progress). See [Grade a test](#grade-a-test) below.
 
 
 ## Row actions {#row-actions}
@@ -65,8 +65,8 @@ The **Test status** filter offers several values that correspond to the stages o
 The action buttons visible at the end of each row depend on the test status and on your account privileges:
 
 - **Analysis** (magnifier or details icon) — opens the detailed result analysis page: score per skill, duration per question, difficulty curve.
-- **Grade** (grading icon) — for tests pending grading, opens the question-by-question grading interface.
-- **Assign to a grader** (silhouette icon) — assigns an administrator of your account as the test's grader.
+- **Grade** (grading icon) — for tests pending grading, opens the marking screen (see [Grading copies](/ai/en/grading/#mark)).
+- **Assign to a grader** (silhouette icon) — assigns the test to a grader or a grader pair of your account.
 - **Download the certificate** (diploma icon) — available for validated certifications: generates the PDF diploma.
 
 ![View result detail](img/03-detail-resultat.png)
@@ -114,23 +114,14 @@ For adaptive tests (where difficulty adjusts to answers), the analysis also incl
 
 ## Grade a test {#grade-a-test}
 
-Tests that contain **manually graded questions** (free-form writing, code to analyse, etc.) land in the **Pending grading** status once submitted. An administrator must assign a grade before the final result is calculated.
+Tests that contain **manually graded questions** (essay, uploaded document, scanned copy, etc.) land in the **Pending grading** status once submitted: a grader must mark every answer before the final result is calculated.
 
-### Assign a grader
+From the results page, you can:
 
-1. Filter the list on the **Pending grading** status.
-2. Tick one or more tests to assign.
-3. Click on **Assign the tests to one or more graders**.
+- **Grade** a pending test — the **Assign grade** icon at the end of the row opens the marking screen. It is offered to the grader assigned to the test and to administrators entitled to grade other graders' copies.
+- **Assign a test to a grader** — the matching icon assigns the test to a grader or to a grader pair.
 
-    > 💡 If you select several graders, the tests will be distributed evenly between them.
-
-4. Confirm. The tests are assigned and the **Grader** column updates with the name of the assigned administrator.
-
-### Grade
-
-1. Click on the **Grade** icon at the end of the row of a test assigned to you.
-2. The platform opens the grading interface. For each manually graded question, you see the **candidate's answer** and a **grade field** to fill in, along with an optional comment field.
-3. Confirm each question, then save the whole set. The overall score is recalculated and the test moves to **Completed** status.
+Bulk assignment, marking with the grid, PDF copy annotation, double grading and its harmonisation are done from the **Grading** menu: see the [Grading copies](/ai/en/grading/) chapter.
 
 
 ## Export to Excel {#export-to-excel}

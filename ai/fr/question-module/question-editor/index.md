@@ -10,7 +10,7 @@ Accédez à l'éditeur via l'icône **Modifier** (crayon) sur la ligne d'une que
 
 ![Éditeur de questions — vue d'ensemble (type QCM)](img/01-editeur-mcq.png)
 
-> 💡 **Type de réponse et interface** — L'éditeur **adapte son interface** au **type de réponse** de la question. Une question QCM affichera une zone de saisie de propositions ; une question glisser-déposer aura un éditeur d'items à glisser ; une question à notation manuelle aura une grille d'évaluation. Ce chapitre couvre l'organisation commune **et** les spécificités par type.
+> 💡 **Type de réponse et interface** — L'éditeur **adapte son interface** au **type de réponse** de la question. Une question QCM affichera une zone de saisie de propositions ; une question glisser-déposer aura un éditeur d'items à glisser ; une question à soumission manuelle aura une grille d'évaluation. Ce chapitre couvre l'organisation commune **et** les spécificités par type.
 
 
 ## Vue d'ensemble {#vue-d-ensemble}
@@ -41,11 +41,11 @@ La page d'édition (titre **Éditer une question**) est organisée en plusieurs 
 
 4. **Section « Question et réponses »** — c'est le cœur de l'édition, organisé en onglets (voir [Onglets de l'édition](#onglets-edition)).
 
-5. **Section « Tutoriel »** — l'explication affichée au candidat après sa réponse (voir [Tutoriel](#tutoriel)).
+5. **Section « Explications concernant la solution »** — le tutoriel et l'indication associés à la question (voir [Tutoriel et indication](#tutoriel)).
 
-6. **Bloc de revue** — le **Statut** de la question et la **Personne concernée**, plus un fichier et des commentaires pour les échanges de relecture entre auteurs. Les commentaires sont répartis en deux onglets : **Commentaires** (en cours) et **Anciens commentaires**.
+6. **Bloc « Informations de revue »** — le **Statut** de la question et la **Personne concernée**, plus un fichier et des commentaires pour les échanges de relecture entre auteurs. Les commentaires sont répartis en deux onglets : **Commentaires** (en cours) et **Anciens commentaires**.
 
-7. **Volet « AI assist »** sur la droite — boutons de génération par IA (voir [Génération par IA](#generation-ia)).
+7. **Volet « AI assist »** sur la droite, si les fonctionnalités d'IA sont activées sur votre compte — boutons de génération par IA (voir [Génération par IA](#generation-ia)).
 
 8. **Volet « Classification »** sur la droite — jeux de questions et domaines de rattachement de la question.
 
@@ -59,10 +59,10 @@ La section **Question et réponses** est organisée en onglets propres au conten
 | Onglet | Contenu |
 |---|---|
 | **Énoncé de la question** | Le texte affiché au candidat (éditeur de texte enrichi). |
-| **Médias** | Documents de référence, fichiers média et génération audio attachés à l'énoncé. Pour générer un fichier audio, saisissez le texte à lire et choisissez une **voix** parmi celles disponibles pour la langue de la question. |
-| **Réponses proposées** (libellé variable selon le type) | Propositions de réponse ou paramètres propres au type — voir les sections par type. |
-| **Prompt de calcul du score** | Pour les questions à correction IA : instructions données à l'IA pour calculer la note. |
-| **Avancé** | Options avancées : **Réponse obligatoire dans les tests avec navigation**, et pour les questions à saisie libre **Verrouiller le copier/coller et la sélection**. |
+| **Medias** | Illustration, documents de référence, fichiers média et génération audio attachés à l'énoncé. Pour générer un fichier audio, saisissez le texte à lire et choisissez une **voix** parmi celles disponibles pour la langue de la question. |
+| **Onglets propres au type** | Propositions de réponse ou paramètres propres au type — par exemple *Détails des soumissions* et *Grille d'évaluation* pour une soumission manuelle, *Zones de saisie* et *Zone de réponse* pour des zones de texte à correction automatique. Voir les sections par type. |
+| **Prompt de calcul du score** | Pour les QCM, les questions psychométriques et les textes avec listes déroulantes uniquement : décrivez en langage naturel une règle de calcul du score particulière, et l'IA génère le calcul correspondant. |
+| **Avancé** | Options avancées : **Réponse obligatoire dans les tests avec navigation** et, pour les questions où le candidat saisit du texte, **Verrouiller le copier/coller et la sélection**. |
 
 Deux boutons d'aide en haut à droite de cette section :
 
@@ -100,19 +100,26 @@ Le **Texte** est l'énoncé affiché au candidat. Vous le saisissez dans un édi
 
 ### Illustration {#illustration}
 
-Une **illustration** est une image attachée **directement à la question** (par opposition à une aide visuelle, qui peut être partagée entre plusieurs questions). C'est l'image principale qui accompagne l'énoncé.
+Une **illustration** est un média attaché **directement à la question** (par opposition à une aide visuelle, qui peut être partagée entre plusieurs questions). C'est l'image, le son ou la vidéo qui accompagne l'énoncé.
 
 ![Bloc d'illustration de la question](img/02-bloc-illustration.png)
 
-- Pour **ajouter** une illustration, cliquez sur le bouton d'upload et choisissez votre fichier (PNG/JPG/SVG).
+- Pour **ajouter** une illustration, déposez dans la zone prévue une image, un son ou une vidéo, ou cliquez sur le bouton d'upload pour choisir votre fichier.
 - Pour **modifier** le texte alternatif (alt text), saisissez-le dans le champ dédié — important pour l'accessibilité et pour les lecteurs d'écran.
+- **Ne jouer le media qu'une seule fois** — pour un son ou une vidéo, empêche le candidat de le rejouer.
+- **Position de l'illustration dans les tests papiers** — *au-dessus*, *à droite* ou *en dessous* du texte. Proposé pour les types de question utilisables dans un [examen papier](/ai/fr/question-module/test-forms/#examens-papier).
 - Pour **supprimer** l'illustration, cliquez sur le bouton **Supprimer le média**.
 
 > 💡 **Quand illustration, quand aide visuelle ?** — Une **illustration** est propre à la question, idéale pour une image jamais réutilisée. Une **[aide visuelle](/ai/fr/question-module/visual-aids/)** est mutualisée entre plusieurs questions, idéale pour un tableau Excel ou un code source partagé sur 10 questions du même module.
 
-### Tutoriel {#tutoriel}
+### Tutoriel et indication {#tutoriel}
 
-La section **Tutoriel** contient l'explication affichée au candidat **après** sa réponse, en mode de révision : une **indication** et des **explications concernant la solution**. C'est le moment pédagogique : expliquer pourquoi la bonne réponse est la bonne, comment l'identifier, quelle erreur courante éviter. Format identique au texte.
+La section **Explications concernant la solution** comporte deux onglets :
+
+- **Tutoriel** — l'explication affichée au candidat **après** sa réponse, en mode de révision. C'est le moment pédagogique : expliquer pourquoi la bonne réponse est la bonne, comment l'identifier, quelle erreur courante éviter.
+- **Indication** — un indice affiché dans le cadre de la question, pour aider le candidat pendant qu'il répond.
+
+Le format est identique à celui du texte de la question.
 
 ### Aides visuelles {#aides-visuelles}
 
@@ -131,9 +138,10 @@ Trois variantes existent :
 
 ## Génération par IA {#generation-ia}
 
-L'éditeur propose un volet latéral **AI assist** à droite de la page. Sur une question qui vient d'être créée, il comporte deux boutons :
+L'éditeur propose un volet latéral **AI assist** à droite de la page, lorsque les fonctionnalités d'IA sont activées sur votre compte. Sur une question qui vient d'être créée, il comporte :
 
-- **Générer une question** — propose un énoncé complet (texte, propositions de réponse, bonne réponse) à partir des métadonnées de la question (sujet, domaine, titre). Proposé pour les types de réponse qui supportent la génération. La génération renseigne aussi le champ **Difficulté** avec le niveau suggéré par l'IA (sauf si la question est calibrée) ; vous pouvez le modifier avant d'enregistrer.
+- **Générer une question** — propose un énoncé complet (texte, propositions de réponse, bonne réponse) à partir des métadonnées de la question (sujet, domaine, titre). Proposé pour les types de réponse qui supportent la génération. La génération renseigne aussi le champ **Difficulté** avec le niveau suggéré par l'IA ; vous pouvez le modifier avant d'enregistrer.
+- **Créer depuis un document** — pour les types de question utilisables dans un examen papier. Collez ou choisissez une image ou un PDF (PNG, JPEG, WEBP, GIF ou PDF, 5 Mo au maximum) contenant **une seule question**, ajoutez éventuellement des consignes : l'IA en tire l'énoncé et les réponses.
 - **Traduire** — traduit le contenu de la question vers une autre langue, utile pour décliner rapidement un sujet en plusieurs versions linguistiques.
 
 Une fois la question enregistrée une première fois, d'autres boutons apparaissent :
@@ -143,7 +151,7 @@ Une fois la question enregistrée une première fois, d'autres boutons apparaiss
 - **Obsolescence** — évalue si le contenu de la question risque d'être dépassé.
 - **Générer un tutoriel** — rédige l'explication affichée au candidat après sa réponse.
 
-Pour les soumissions notées par IA, un bouton **Générer le code de vérification** rédige le code de vérification à partir de l'énoncé.
+Pour les questions de [correction automatique de document](#upload-auto-grading) notées par un script, les boutons **Générer le code de vérification** et **Améliorer le code de vérification** rédigent ou retravaillent ce script à partir de l'énoncé.
 
 > ⚠️ **L'IA propose, vous décidez** — Le contenu généré est un **point de départ**, pas un livrable final. Relisez systématiquement et corrigez avant d'enregistrer : la sortie de l'IA remplace les champs à l'écran mais n'est enregistrée qu'au clic sur **Enregistrer**. La qualité dépend du modèle d'IA choisi dans le menu **Système → Sélectionner une IA**.
 
@@ -157,7 +165,7 @@ La plateforme propose une gamme de types de réponse, regroupables en familles. 
 | **Choix multiple** | QCM texte, échelle de réponse | Évaluation classique des connaissances. |
 | **Choix de réponse** | Texte à compléter avec listes déroulantes | Quand la saisie libre serait ambiguë à corriger. |
 | **Questions interactives** | Glisser-déposer, Trier, Relier, Cliquer sur zone | Tests interactifs et engageants. |
-| **Questions de saisie** | Texte à trous à correction automatique ou par l'IA, Dictée, Questions de saisie à correction manuelle | Évaluation de connaissances ou mises en situation. |
+| **Questions de saisie** | Zones de texte à correction automatique (réponse attendue ou IA), Dictée, Soumission manuelle | Évaluation de connaissances ou mises en situation. |
 | **Correction automatique de document ou d'audio** | Soumission avec notation automatique | Soumission de fichiers évalués par IA. |
 | **Spécifiques** | Page de transition | Cas particuliers (page entre deux parties d'un test). |
 
@@ -178,13 +186,17 @@ L'éditeur QCM expose une liste de propositions, chacune avec :
 - Une case à cocher **Correcte** indiquant si la proposition est une bonne réponse.
 - Un bouton **Supprimer cette proposition**.
 
-Un bouton **Ajouter une proposition** en bas de la liste permet d'étendre le nombre d'options. Vous pouvez avoir entre 2 et 8 propositions par question (5 est le standard recommandé).
+Un bouton **Ajouter une réponse** en bas de la liste permet d'étendre le nombre d'options (5 est le standard recommandé).
 
-> 💡 **Une ou plusieurs bonnes réponses ?** — Cochez **une seule** case **Correcte** pour un QCM à choix unique (le candidat ne peut sélectionner qu'une réponse). Cochez **plusieurs** cases pour un QCM à choix multiples (le candidat peut en sélectionner plusieurs, et doit toutes les trouver pour avoir la question juste). Ou utilisez **une parmi n** (plusieurs réponses sont correctes, mais il suffit que le candidat en choisisse une pour que la réponse soit considérée correcte).
+Le sélecteur **Type de QCM** fixe la règle de réponse : **choix unique** (le candidat ne peut sélectionner qu'une réponse), **choix multiples** (il peut en sélectionner plusieurs, et doit toutes les trouver pour avoir la question juste) ou **une parmi n** (plusieurs réponses sont correctes, mais il suffit que le candidat en choisisse une).
 
-### Ordre des propositions
+### Options d'affichage
 
-Par défaut, les propositions sont présentées au candidat dans un **ordre aléatoire** à chaque passage. Si vous voulez forcer un ordre fixe (par exemple pour une question logique où l'ordre des choix porte du sens), cochez l'option **Ne pas mélanger les réponses** dans les options avancées de la question.
+Trois commutateurs en haut de l'onglet des réponses :
+
+- **Ne pas mélanger les réponses** — par défaut, les propositions sont présentées au candidat dans un **ordre aléatoire** à chaque passage. Activez l'option pour forcer un ordre fixe (par exemple pour une question logique où l'ordre des choix porte du sens).
+- **Afficher les réponses en matrice** — présente les propositions en grille plutôt qu'en liste.
+- **Pas de notion de bonne réponse (formulaire, test de personnalité...)** — pour les questions sans bonne ni mauvaise réponse.
 
 
 ## Question d'échelle (Vrai/Faux, Likert) {#question-echelle}
@@ -199,23 +211,67 @@ Le type **Échelle** présente au candidat une question accompagnée d'une **éc
 > 💡 Pour les questions où la notion de bonne ou de mauvaise réponse n'existe pas, cochez l'option **Pas de notion de bonne réponse (formulaire, test de personnalité...)**.
 
 
-## Texte à trous {#texte-a-trous}
+## Zones de texte à correction automatique {#texte-a-trous}
 
-Le type **Texte à trous** présente un texte avec un ou plusieurs **champs de saisie** que le candidat doit remplir.
+Ce type présente au candidat une ou plusieurs **zones de saisie** — insérées dans un texte à trous ou affichées seules — dont la réponse est **notée automatiquement**, soit par comparaison à une réponse attendue, soit par l'IA.
 
-![Éditeur d'une question Texte à trous (multi-input)](img/09-editeur-multi-input.png)
+![Éditeur d'une question à zones de texte à correction automatique](img/09-editeur-multi-input.png)
 
-### Édition
+L'édition se fait en deux temps : vous créez les zones de saisie dans l'onglet **Zones de saisie**, puis vous les placez dans le texte de l'onglet **Zone de réponse**.
 
-Dans le texte de la question, vous insérez des **zones de saisie** avec le bouton **Insérer une zone de saisie**. L'éditeur expose ensuite, pour chaque zone, un bloc de configuration :
+### Onglet « Zones de saisie »
 
-- **Réponse correcte** — texte exact attendu.
-- **Variantes acceptées** — autres orthographes ou formulations également comptées correctes.
-- **Sensibilité à la casse** — si la comparaison doit être sensible aux majuscules/minuscules.
+- **Activer l'option points par zone de saisie** — par défaut, le candidat obtient le **score maximal** de la question si toutes les zones sont justes, et 0 sinon. Avec cette option, chaque zone rapporte ses propres points : le score de la question est la somme des points obtenus, et le **Score maximal** — qui n'est plus modifiable — devient la somme des points des zones.
+- **Utiliser un éditeur de texte enrichi pour les zones de texte** — le candidat dispose d'une barre de mise en forme dans les zones de texte.
+- **Liste des zones de saisie** — **Ajouter une zone de saisie** crée une zone. Son **nom** (lettres, chiffres, `_` et `-` uniquement, unique dans la question) sert à la placer dans le texte. L'icône **Modifier** ouvre le détail de la zone, l'icône corbeille la supprime.
+
+### Détail d'une zone de saisie
+
+La fenêtre **Détails de la zone de réponse** règle la manière dont la zone est présentée et notée.
+
+**Méthode de notation** :
+
+| Méthode | Notation |
+|---|---|
+| **Réponse(s) attendue(s)** | La réponse du candidat est comparée à la **Réponse attendue**. Si plusieurs réponses sont acceptées, séparez-les par `##`. |
+| **Évaluée par l'IA** | L'IA note la réponse en suivant le **Prompt pour l'IA** que vous rédigez : ce qui est attendu, ce qui doit être accepté ou refusé. |
+| **Langue étrangère évaluée par l'IA** | L'IA évalue un texte rédigé en langue étrangère par rapport au **niveau CEFR** attendu (A1 à C2). La zone est alors une zone de texte. |
+
+**Type de champ** : **Champ de saisie** (une ligne), **Zone de texte** (plusieurs lignes) ou **Équation mathématique** — le candidat saisit une formule, affichée au fur et à mesure, qui est toujours notée par l'IA. Le **Type de bordure** (complète ou inférieure) règle l'aspect du champ.
+
+Pour une **réponse attendue**, les **Options de notation** précisent la comparaison, qui par défaut ignore la casse, la ponctuation et les espaces :
+
+- **Sensible à la casse** — les majuscules et minuscules doivent correspondre.
+- **Sensible à la ponctuation** — la ponctuation doit correspondre ; l'option **Sensible aux espaces** apparaît alors.
+- **Tolérance** — pour une valeur de type *Nombre*, l'écart accepté autour de la réponse attendue. La virgule et le point sont tous deux acceptés comme séparateur décimal.
+
+Avec l'option **points par zone de saisie** :
+
+- **Nombre de points maximum** — les points rapportés par la zone (1 par défaut).
+- **Le nombre de points pour cette zone ne peut être que 0 ou le nombre de points maximum** — désactivez cette option sur une zone évaluée par l'IA pour autoriser une note intermédiaire. Une zone à réponse attendue est toujours notée tout ou rien.
+
+Les **Contraintes de contenu** encadrent la saisie du candidat : **Type de valeur autorisée** (texte, nombre ou email), **Bulle d'aide**, **Texte d'exemple**, **Longueur maximale**, **Pattern** et, pour une zone de texte, **Nombre minimal** et **maximal de mots** — rappelés au candidat sous la zone. Une réponse vide, ou nettement plus courte que le minimum de mots, obtient 0 sans être soumise à l'IA.
+
+### Onglet « Zone de réponse »
+
+- L'éditeur de texte contient le texte dans lequel les zones apparaissent. Placez le curseur à l'endroit voulu et utilisez le menu d'insertion de zone de saisie de la barre d'outils pour y placer une zone par son nom.
+- **La zone de saisie n'est pas incluse dans un texte** — lorsque la question ne comporte qu'une seule zone, affiche celle-ci directement sous l'énoncé, sans texte autour.
+- **Ne pas afficher le contenu de la zone de réponse dans les examens papiers** — laisse un espace vierge à l'impression ; sa taille se règle dans l'[examen papier](/ai/fr/question-module/test-forms/#examens-papier).
+
+Le bouton **Vérifier** signale une question sans zone de saisie, ou dont la zone de réponse est vide.
+
+> 💡 **Notation par l'IA** — Lorsqu'une zone est évaluée par l'IA, le candidat voit une barre de progression pendant l'envoi de sa réponse. Rédigez un prompt précis (éléments attendus, tolérances) et testez la question via l'**Aperçu** avec des réponses justes et fausses avant de la passer en Production.
+
+### Cadre d'utilisation : examen papier {#cadre-utilisation}
+
+La carte **Cadre d'utilisation**, au-dessus des onglets, contient le commutateur **Cette question sera utilisée uniquement dans des examens papier**. Lorsqu'il est activé, précisez **comment le candidat répondra** :
+
+- **Sur le sujet imprimé**, qui comporte les zones de réponse.
+- **Sur une feuille séparée** du sujet — la zone de réponse est alors générée automatiquement, avec une ligne par zone de saisie.
 
 ### Texte à compléter avec listes déroulantes
 
-Une variante propose au candidat une **liste déroulante** plutôt qu'un champ de saisie libre. Pour chaque trou, vous définissez la liste des options et l'option correcte.
+Un autre type de réponse propose au candidat une **liste déroulante** plutôt qu'un champ de saisie libre. Pour chaque trou, vous définissez la liste des options et l'option correcte.
 
 ![Éditeur d'une question Texte avec sélection](img/10-editeur-text-with-select.png)
 
@@ -272,24 +328,53 @@ Le type **Cliquer sur zone** présente au candidat une **image** sur laquelle il
 - Le candidat clique : le clic est considéré juste s'il tombe dans une zone correcte.
 
 
-## Notation manuelle (Manual marking) {#manual-marking}
+## Soumission manuelle {#manual-marking}
 
-Le type **Notation manuelle** présente au candidat une question à réponse **libre** (rédaction, schéma, enregistrement) qui sera **notée à la main** par un correcteur après la soumission.
+Le type **Soumission manuelle** présente au candidat une question à réponse **libre** (rédaction, document, enregistrement) qui sera **notée par un correcteur** après le test, à l'aide d'une **grille d'évaluation**.
 
-![Éditeur d'une question Notation manuelle](img/08-editeur-manual-marking.png)
+![Éditeur d'une question à soumission manuelle](img/08-editeur-manual-marking.png)
 
-### Variantes
+L'éditeur comporte, outre l'énoncé et les médias, les onglets **Détails des soumissions**, **Grille d'évaluation** et **Zone de réponse**.
 
-- **Sans soumission de document** — le candidat saisit sa réponse dans un champ de texte simple.
-- **Avec soumission de document** — le candidat upload un ou plusieurs documents (audio, vidéo, fichier). Le type de document autorisé est configurable.
+### Onglet « Détails des soumissions »
 
-### Édition
+Le sélecteur **Type de réponse attendue** fixe ce que le candidat remet :
 
-- Définissez le **prompt** (la consigne) dans le texte de la question.
-- Si soumission de document : précisez les **formats acceptés** et le **nombre maximum** de fichiers.
-- Définissez la **grille d'évaluation** ou les critères d'évaluation — pour guider les correcteurs humains (la **grille d'évaluation** est visible des correcteurs, qui notent chaque critère préalablement établi).
+| Type de réponse attendue | Ce que fait le candidat | Réglages |
+|---|---|---|
+| **Saisir un ou plusieurs textes** (par défaut) | Il répond dans une ou plusieurs zones de saisie. | **Ajouter une zone de saisie** crée une zone (nom, champ d'une ligne ou zone de texte, texte d'exemple). **Utiliser un éditeur de texte enrichi pour les zones de texte** donne au candidat une barre de mise en forme. |
+| **Soumettre un ou plusieurs fichiers** | Il dépose un fichier par emplacement prévu. | **Ajouter un fichier à soumettre** crée un emplacement, avec une **description** (affichée au candidat s'il doit déposer plusieurs fichiers) et les **extensions autorisées**, séparées par des virgules. Les deux champs sont obligatoires. |
+| **Enregistrer un audio** | Il s'enregistre depuis la page de la question. | — |
+| **Enregistrer une vidéo** | Il se filme depuis la page de la question. | — |
 
-Voir aussi la section [Noter un test](/ai/fr/results/#noter-un-test) du manuel administrateur pour le workflow de correction côté évaluateur.
+> 💡 **Privilégiez le PDF** — Pour une soumission de fichier, demandez un **PDF** : le correcteur pourra annoter la copie et s'appuyer sur l'assistance de l'IA lors de la correction.
+
+Lorsque plusieurs fichiers sont demandés, la réponse du candidat n'est complète qu'une fois tous les emplacements remplis.
+
+### Onglet « Grille d'évaluation »
+
+La grille liste les **critères** sur lesquels le correcteur note la réponse. **Ajouter un critère** crée une ligne avec :
+
+- **Nom du critère** et **Description du critère** — ce que le correcteur doit évaluer.
+- **Score maximal du critère** — les points attribuables.
+
+Faites glisser les critères pour les réordonner. Le **Score maximal** de la question n'est plus modifiable : il est égal à la somme des scores des critères.
+
+> ⚠️ **Au moins un critère** — Le bouton **Vérifier** signale une soumission manuelle sans critère d'évaluation : définissez la grille avant de passer la question en Production.
+
+### Onglet « Zone de réponse »
+
+Pour une réponse sous forme de **texte**, cet onglet contient le texte affiché autour des zones de saisie. Avec une seule zone, il est rempli automatiquement. Il n'est pas affiché pour les soumissions de fichier.
+
+L'onglet **Avancé** propose, pour les réponses sous forme de texte, **Verrouiller le copier/coller et la sélection**.
+
+### Cadre d'utilisation : examen papier
+
+La carte **Cadre d'utilisation**, au-dessus des onglets, contient le commutateur **Cette question sera utilisée uniquement dans des examens papier**. Lorsqu'il est activé, la question attend le dépôt d'**un seul fichier PDF** — la copie scannée du candidat —, l'onglet *Détails des soumissions* disparaît et l'énoncé devient facultatif. C'est le réglage des grilles de notation créées depuis un [examen papier](/ai/fr/question-module/test-forms/#examens-papier).
+
+### Notation
+
+Aucun score n'est calculé pendant le test : le résultat reste en attente de correction. Le correcteur attribue ensuite des points et un commentaire à chaque critère de la grille. Voir le chapitre [Correction des copies](/ai/fr/grading/) du manuel administrateur pour le déroulement de la correction.
 
 
 ## Test de saisie {#typing}
@@ -315,11 +400,15 @@ Le type **Correction automatique de document ou d'audio** permet au candidat de 
 
 ### Édition
 
-- Précisez le **format de fichier attendu**.
-- Rédigez un **prompt d'analyse** qui guide l'IA dans sa notation : *« Vérifier que le document contient un tableau avec au moins 5 lignes, que la première colonne s'appelle 'Nom', et que la mise en forme est cohérente »*.
-- Choisissez le **mode d'analyse** : strict (notation binaire) ou nuancé (note sur 100 avec commentaire).
+- **Type de document** — le fichier attendu : Audio, Excel, Image, Illustrator, PDF, Photoshop, PowerBI ou Word.
+- Dans l'onglet **Méthode de notation**, trois commutateurs, proposés selon le type de document :
+    - **Utiliser l'IA pour analyser le document** — activé, vous rédigez en langage naturel ce que l'IA doit vérifier dans le document du candidat : *« Vérifier que le document contient un tableau avec au moins 5 lignes, que la première colonne s'appelle 'Nom', et que la mise en forme est cohérente »*. Désactivé, le document est vérifié par un **script** : les boutons **Générer le code de vérification** et **Améliorer le code de vérification** du volet AI assist le rédigent à partir de l'énoncé. Une image est toujours analysée par l'IA ; les documents Photoshop, Illustrator et PowerBI sont toujours vérifiés par un script.
+    - **Utiliser une grille de notation** — remplace la consigne libre par une grille de critères, comme pour une [soumission manuelle](#manual-marking) ; le **Score maximal** devient la somme des scores des critères.
+    - **Extraire le texte du document** — pour un PDF ou une image, lit le texte du document (manuscrit ou scanné) avant l'analyse.
+- Pour un **audio**, un éditeur dédié remplace ces réglages : la consigne d'évaluation, la notation tout ou rien et, pour une épreuve de langue étrangère, le type d'épreuve et le niveau CEFR attendu.
+- Dans l'onglet **Medias**, la carte **Document fourni au candidat** permet de joindre le fichier de départ sur lequel le candidat travaille.
 
-> ⚠️ **Notation IA non-déterministe** — Les notes IA peuvent légèrement varier d'un passage à l'autre. Réservez ce type aux **évaluations formatives**, pas aux certifications à fort enjeu. Pour une notation rigoureuse, utilisez **[Notation manuelle](#manual-marking)** avec un correcteur humain.
+> ⚠️ **Notation IA non-déterministe** — Les notes IA peuvent légèrement varier d'un passage à l'autre. Réservez ce type aux **évaluations formatives**, pas aux certifications à fort enjeu. Pour une notation rigoureuse, utilisez une **[Soumission manuelle](#manual-marking)** avec un correcteur humain.
 
 
 ## Sauvegarder, prévisualiser, supprimer {#actions-finales}
