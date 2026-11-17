@@ -50,18 +50,25 @@ Le panneau **Filtres** est très complet — c'est l'outil principal pour explor
 
 - **Favoris** — sélecteur des combinaisons de filtres enregistrées, voir [Favoris de recherche](#favoris-de-recherche).
 - **Rechercher** — texte libre (sur l'identifiant, le titre ou des fragments de contenu).
-- **Sujet** — sélection multiple. Restreint à un ou plusieurs sujets.
+- **Sujet** — sélection multiple. Restreint à un ou plusieurs sujets. Sélectionner un sujet fait apparaître deux filtres supplémentaires, **Test** et **Domaines** — voir [Filtres liés au sujet](#filtres-lies-au-sujet).
 - **Langue** — langue de la question.
 - **Jeu de questions** — sélection multiple. Le badge à côté du champ bascule entre **(OU)** (questions dans l'un des jeux sélectionnés) et **(ET)** (questions dans tous).
-- **Type de réponse** — QCM, Texte à trous, Glisser-déposer, Notation manuelle, etc.
+- **Types de réponse** — sélection multiple : QCM, Texte à trous, Glisser-déposer, Notation manuelle, etc.
 - **Statut** — *En rédaction*, *Production*, etc. Permet de filtrer le pipeline éditorial.
 - **Personne concernée** — restreint aux questions sous la responsabilité d'un administrateur donné.
 - **Inclure les questions « À supprimer »** — commutateur, désactivé par défaut.
 - **Avec indicateur** — commutateur ; n'affiche que les questions que vous avez étoilées.
 
-### Filtre Domaine
+### Filtres liés au sujet {#filtres-lies-au-sujet}
 
-Le filtre **Domaine** n'apparaît qu'**après la sélection d'un seul sujet** : il a besoin du sujet pour lister ses domaines.
+Deux filtres n'apparaissent qu'**une fois au moins un sujet sélectionné** dans le filtre **Sujet**, car leur contenu dépend du sujet :
+
+- **Test** — placé juste sous le filtre **Sujet**, il liste les tests du ou des sujets sélectionnés (valeur par défaut : *Toutes les formes de test*). Choisir un test restreint le tableau aux questions dans lesquelles ce test puise :
+    - si le test repose sur une **liste fixe de questions**, seules ces questions sont affichées ;
+    - si le test tire ses questions dans des **jeux de questions**, le tableau affiche les questions de ces jeux. Le filtre **Jeu de questions** est alors **masqué** — ce sont les jeux du test qui s'appliquent — et il réapparaît dès que vous revenez à *Toutes les formes de test*.
+
+    Les autres filtres (langue, statut, personne concernée, etc.) restent cumulables avec le filtre **Test**. Si vous changez de sujet, un test qui n'appartient pas au nouveau sujet cesse de filtrer la liste.
+- **Domaines** — liste les domaines du ou des sujets sélectionnés. Outre *Tous les domaines*, la valeur *Sans domaine attribué* isole les questions qui n'ont encore aucun domaine.
 
 ### Réinitialiser
 
@@ -119,7 +126,7 @@ La barre d'actions en haut de la page propose :
 - **Ajouter une question** — ouvre une fenêtre demandant le **sujet**, le **type de réponse** et la **langue**, puis crée la question et ouvre l'éditeur.
 - **Importer un fichier de questions** — voir [Importer des questions](#importer-des-questions) ci-dessous.
 - **Exporter en YML** — télécharge les questions actuellement filtrées sous forme de fichier YAML (500 questions au plus ; au-delà de 100 questions, le téléchargement est une archive zip découpée en parties). Utile pour les sauvegardes ou pour travailler les questions avec un assistant IA. Le fichier YAML indique aussi la **difficulté** de chaque question (*Facile*, *Moyenne* ou *Difficile*).
-- **Imprimer les questions sélectionnées** — génère une version imprimable des questions cochées dans le tableau (100 au maximum).
+- **Imprimer les questions sélectionnées** — génère un PDF des questions affichées dans le tableau, c'est-à-dire la page courante de la liste filtrée (100 questions au maximum).
 - **Exporter vers Excel** — voir [Exporter vers Excel](#exporter-vers-excel).
 
 

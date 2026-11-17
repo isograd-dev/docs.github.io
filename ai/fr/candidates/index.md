@@ -25,12 +25,15 @@ Cette procédure permet de créer un candidat individuellement. Pour ajouter plu
 
     ![Formulaire de création d'un candidat](img/03-formulaire-ajout-vide.png)
 
-3. Remplissez les champs obligatoires :
+3. Remplissez les champs :
 
-    - **Prénom** — prénom du candidat tel qu'il apparaîtra sur les attestations.
-    - **Nom** — nom du candidat.
-    - **Email** — adresse à laquelle le candidat recevra ses invitations et accédera à son espace.
-    - **Pays** — utilisé pour adapter la langue par défaut des emails.
+    - **Groupe(s)** — le candidat doit appartenir à au moins un groupe ; le bouton **Modifier** ouvre la sélection des groupes.
+    - **Civilité**.
+    - **Nom** et **Prénom** — tels qu'ils apparaîtront sur les attestations.
+    - **Adresse mail** — adresse à laquelle le candidat recevra ses invitations et accédera à son espace.
+    - **Langue** — langue du candidat, présélectionnée ensuite lors de ses inscriptions aux tests.
+
+    Selon les options de votre compte, le formulaire propose aussi d'autres champs, par exemple **Temps supplémentaire** ou **Identifiant externe**.
 
 4. Cliquez sur **Enregistrer**. Le candidat est créé et vous êtes automatiquement redirigé vers sa fiche d'inscription aux tests.
 
@@ -38,12 +41,12 @@ Cette procédure permet de créer un candidat individuellement. Pour ajouter plu
 
 À partir de cette fiche, vous pouvez immédiatement [inscrire le candidat à un test](#inscrire-un-candidat-a-un-test) ou [lui envoyer une invitation](#envoyer-les-invitations).
 
-> 💡 **Modification ultérieure** — Pour modifier les coordonnées d'un candidat existant, retournez sur la liste des candidats, cliquez sur l'icône **Modifier** au bout de la ligne, puis sur l'onglet **Détails du candidat**.
+> 💡 **Modification ultérieure** — Pour modifier les coordonnées d'un candidat existant, retournez sur la liste des candidats, cliquez sur l'icône **Editer** au bout de la ligne, puis sur le bouton **Modifier les détails du candidat** de sa fiche.
 
 
 ## Importer des candidats {#importer-des-candidats}
 
-L'import de candidats vous permet de créer plusieurs candidats — voire de les pré-inscrire à des tests — en une seule opération, à partir d'un fichier Excel.
+L'import de candidats vous permet de créer plusieurs candidats — voire de les pré-inscrire à des tests — en une seule opération, à partir d'un fichier Excel. Il se déroule en **deux temps** : la plateforme affiche d'abord un **aperçu** du fichier, sans rien enregistrer, puis importe les lignes valides une fois que vous avez confirmé.
 
 ### Procédure
 
@@ -51,26 +54,45 @@ L'import de candidats vous permet de créer plusieurs candidats — voire de les
 
     ![Boutons d'import](img/07-page-import.png)
 
-2. Avant de préparer votre fichier, téléchargez le **modèle de fichier** depuis le lien proposé. Le modèle contient les en-têtes attendus et un exemple de ligne.
-
-3. Remplissez le modèle avec vos candidats. Les colonnes principales :
-
-    | Colonne | Obligatoire | Description |
-    |---|---|---|
-    | Prénom | Oui | Prénom du candidat. |
-    | Nom | Oui | Nom du candidat. |
-    | Email | Oui | Une adresse email unique par candidat. |
-    | Pays | Non | Code pays (FR, BE, …) pour la langue par défaut. |
-    | Groupe | Non | Nom d'un groupe auquel rattacher le candidat. Créé automatiquement s'il n'existe pas. |
-    | Test | Non | Nom du sujet auquel inscrire le candidat directement à l'import. |
-
-4. Cliquez sur **Importer un fichier de candidats**, sélectionnez votre fichier, et validez.
+2. Cliquez sur **Importer un fichier de candidats**. Une fenêtre s'ouvre.
 
     ![Bouton "Importer un fichier de candidats"](img/08-bouton-import.png)
 
-5. La plateforme affiche un rapport d'import : nombre de candidats créés, mis à jour, ou rejetés (avec le motif de rejet ligne par ligne).
+    ![Fenêtre d'import de candidats](img/15-modal-import.png)
 
-> ⚠️ **Doublons d'email** — Si un candidat existe déjà avec la même adresse email, ses informations sont **mises à jour** plutôt que recréées. Un nouvel enregistrement n'est jamais créé pour une adresse existante.
+3. Dans cette fenêtre, cliquez sur **Télécharger le modèle de fichier** si vous n'avez pas encore de fichier, puis remplissez le modèle avec vos candidats. Les colonnes du modèle :
+
+    | Colonne | Obligatoire | Description |
+    |---|---|---|
+    | Identifiant (optionnel) | Non | Identifiant externe du candidat. |
+    | Nom | Oui | Nom du candidat. |
+    | Prénom | Oui | Prénom du candidat. |
+    | Civilité | Oui | À choisir dans la liste déroulante. |
+    | Langue | Oui | À choisir dans la liste déroulante. |
+    | Adresse email | Oui | Une adresse email valide, présente une seule fois dans le fichier. |
+    | Mot de passe (optionnel) | Non | S'il est laissé vide, un mot de passe est généré automatiquement. |
+    | Personne en situation de handicap (optionnel) | Non | Oui ou Non. |
+    | Temps suppl. en % (optionnel) | Non | Temps supplémentaire accordé au candidat. |
+
+    Sur les comptes qui gèrent les dossiers CPF, le modèle comporte trois colonnes de plus : **Identifiant du test** (pour inscrire le candidat à un test dès l'import), **Avec e-surveillance** et **Numéro de dossier CPF** (chiffres uniquement, 13 au maximum ; il exige un identifiant de test).
+
+4. Toujours dans la fenêtre, sélectionnez le ou les **groupes** auxquels rattacher les candidats (au moins un groupe est obligatoire), choisissez votre fichier dans **Fichier à importer**, puis cliquez sur **Importer**.
+
+5. La page **Aperçu de l'import de candidats** s'affiche. Rien n'est encore enregistré à ce stade. Elle indique le nombre de lignes lues, rappelle les groupes auxquels les candidats seront ajoutés, puis liste chaque ligne du fichier (ligne, adresse mail, nom, prénom) avec son statut :
+
+    ![Page d'aperçu de l'import](img/16-apercu-import.png)
+
+    - **Prêt à importer** — le candidat sera créé.
+    - **Existant** — un candidat possède déjà cette adresse mail : il ne sera pas recréé, mais ajouté aux groupes sélectionnés.
+    - **Erreur** — la ligne sera ignorée ; la colonne **Erreur** en donne le motif (adresse mail manquante, invalide ou en double dans le fichier, champ obligatoire vide, test inconnu, erreur de formule Excel…).
+
+6. Cliquez sur **Importer les N lignes valides** pour confirmer, ou sur **Annuler** pour revenir à la liste des candidats sans rien importer. Si aucune ligne n'est importable, le bouton de confirmation est désactivé : corrigez votre fichier puis recommencez.
+
+7. Après confirmation, la page de résultat indique le nombre de candidats importés et, le cas échéant, le nombre de candidats existants ajoutés aux groupes. Si certaines lignes n'ont pas pu être enregistrées, elles sont listées avec leur motif. Le bouton **Revenir à la liste des candidats** vous ramène au tableau.
+
+> ⚠️ **Doublons d'email** — Si un candidat existe déjà avec la même adresse email, il n'est **pas recréé** et ses informations ne sont pas modifiées : il est seulement ajouté aux groupes sélectionnés (et inscrit au test indiqué sur sa ligne, le cas échéant).
+
+> 💡 **Fichier incomplet ou trop long** — Seules les lignes **Prêt à importer** et **Existant** sont importées ; pour un import complet, corrigez votre fichier Excel et recommencez. Un fichier est limité à 1000 candidats : au-delà, seules les 1000 premières lignes sont lues. Si la plateforme indique à la confirmation que l'aperçu a expiré, recommencez l'import depuis la liste des candidats.
 
 > 💡 **Import et invitations** — L'import ne déclenche **pas** automatiquement l'envoi d'invitations. Pour envoyer les emails de connexion après import, reportez-vous à la section [Envoyer les invitations](#envoyer-les-invitations).
 
@@ -81,7 +103,7 @@ Une fois le candidat créé, vous devez l'inscrire à un ou plusieurs tests pour
 
 ### La fiche du candidat
 
-Depuis la liste des candidats, cliquez sur l'icône **Modifier** de la ligne correspondante. Vous y êtes aussi redirigé automatiquement après l'enregistrement d'un nouveau candidat.
+Depuis la liste des candidats, cliquez sur l'icône **Editer** de la ligne correspondante. Vous y êtes aussi redirigé automatiquement après l'enregistrement d'un nouveau candidat.
 
 ![Page d'inscription aux tests](img/05-page-inscription-tests.png)
 
@@ -89,7 +111,7 @@ La barre de boutons en haut de la fiche regroupe les actions disponibles pour ce
 
 - **Inscrire à un test** — ouvre la fenêtre d'inscription décrite ci-dessous.
 - **Modifier les détails du candidat** — renvoie au formulaire de coordonnées (identité, email, langue, groupes).
-- **Paramètres des tests** — options propres à ce candidat : **Paramètres pour l'évaluation**, **Paramètres pour la certification** (affichage des résultats, envoi des rapports et des certificats, destinataires) et, le cas échéant, **Paramètres pour le test configuration**. Ces valeurs remplacent, pour ce candidat seulement, les [options par défaut](../default-options/) du compte.
+- **Paramètres des tests** — options propres à ce candidat : **Paramètres pour l'évaluation**, **Paramètres pour la certification** (affichage des résultats, envoi des rapports et des certificats, destinataires, fréquence des relances et administrateur recevant une copie du mail de relance) et, le cas échéant, **Paramètres pour le test configuration**. Ces valeurs remplacent, pour ce candidat seulement, les [options par défaut](../default-options/) du compte.
 - **Envoyer les tests au candidat** — envoie l'email d'invitation (voir [Envoyer les invitations](#envoyer-les-invitations)).
 - **Attribuer un mot de passe temporaire** — le candidat devra le changer à sa prochaine connexion.
 - **Anonymiser** — remplace définitivement les données personnelles du candidat.
@@ -114,7 +136,7 @@ Sous la barre de boutons, le **tableau des tests planifiés** liste toutes les i
     - **Recherche par filtre** (colonne de gauche) — si votre compte dispose de tests personnalisés, le **Type de test** permet de basculer entre **Catalogue** et **Personnalisé** ; choisissez ensuite le **Sujet**, puis le **Test**.
     - **Recherche par saisie** (colonne de droite) — saisissez au moins trois caractères du nom du test et cliquez sur le résultat voulu ; les sélecteurs de gauche se positionnent automatiquement.
 
-    Une fois le test choisi, sa **Description** s'affiche, accompagnée le cas échéant du nombre de crédits consommés, et le bouton **Voir un exemple de rapport** propose un rapport type au format PDF lorsqu'il en existe un pour ce test.
+    Une fois le test choisi, sa **Description** s'affiche avec le nombre de questions et, si le test est limité dans le temps, sa durée maximale en minutes, accompagnée le cas échéant du nombre de crédits consommés, et le bouton **Voir un exemple de rapport** propose un rapport type au format PDF lorsqu'il en existe un pour ce test.
 
 3. Complétez, selon les options de votre compte :
 
@@ -125,7 +147,7 @@ Sous la barre de boutons, le **tableau des tests planifiés** liste toutes les i
 
 > 💡 **Type de crédit** — Si votre compte possède plusieurs packs valables pour ce test (par exemple un pack « un test par crédit » et un pack « plusieurs tests par crédit »), une fenêtre **Type de crédit** vous demande lequel utiliser avant l'inscription.
 
-> 💡 **Test déjà passé** — Selon la configuration de votre compte, si le candidat a déjà passé ce type de test, une confirmation vous est demandée avant de le réinscrire.
+> 💡 **Certification déjà passée** — Selon la configuration de votre compte, si le test choisi est une **certification** à laquelle le candidat a déjà été inscrit, une confirmation vous est demandée avant de le réinscrire. Les évaluations ne déclenchent pas cette confirmation.
 
 ### Le tableau des tests planifiés {#le-tableau-des-tests-planifies}
 
@@ -151,9 +173,9 @@ Les boutons d'action apparaissent au survol de la ligne :
 
 Pour inscrire plusieurs candidats au même test, utilisez une action de groupe depuis la page **Gestion des candidats** :
 
-1. Filtrez le tableau sur un **groupe** (et, le cas échéant, un sous-groupe) et laissez le champ de recherche vide. Le bouton **Actions de groupe** devient alors un menu ; sans groupe sélectionné, il rappelle simplement qu'un groupe doit d'abord être choisi.
+1. Filtrez le tableau sur un **groupe** (et, le cas échéant, un sous-groupe) et laissez le champ de recherche vide. Le bouton **Actions sur le groupe** devient alors un menu ; sans groupe sélectionné, il rappelle simplement qu'un groupe doit d'abord être choisi.
 2. Si tous les candidats du groupe tiennent sur une seule page, une case à cocher apparaît en début de ligne, cochée par défaut : décochez les candidats à exclure (la case d'en-tête coche ou décoche tout). Si le groupe s'étend sur plusieurs pages, l'action s'applique à l'ensemble du groupe.
-3. Dans le menu **Actions de groupe**, choisissez **Inscrire tous les candidats du groupe à un test**.
+3. Dans le menu **Actions sur le groupe**, choisissez **Inscrire tous les candidats du groupe à un test**.
 4. Renseignez les paramètres du test (sujet, langue, session, profil de surveillance) ; ils s'appliquent à l'ensemble de la sélection. Cliquez sur **Inscrire** pour enchaîner une autre inscription, ou sur **Inscrire et fermer**.
 
 > 💡 **Candidats déjà inscrits** — Si certains candidats de la sélection sont déjà inscrits à ce test, la plateforme vous le signale et vous propose soit de les réinscrire tous, soit de n'inscrire que ceux qui ne le sont pas encore.
@@ -167,7 +189,7 @@ L'envoi d'invitation par email transmet au candidat son lien de connexion person
 
 ### Envoyer une invitation à un seul candidat
 
-1. Ouvrez la fiche du candidat (depuis la liste, cliquez sur l'icône **Modifier**).
+1. Ouvrez la fiche du candidat (depuis la liste, cliquez sur l'icône **Editer**).
 
     ![Fiche candidat — bouton d'invitation](img/10-bouton-invitation.png)
 
@@ -194,7 +216,7 @@ L'envoi d'invitation par email transmet au candidat son lien de connexion person
 Depuis la page **Gestion des candidats** :
 
 1. Filtrez le tableau sur le groupe voulu et, si les cases à cocher sont affichées, ne laissez cochés que les candidats à inviter (voir [Inscrire plusieurs candidats à la fois](#inscrire-un-candidat-a-un-test)).
-2. Dans le menu **Actions de groupe**, choisissez **Envoyer les emails d'inscription à tous les candidats du groupe**.
+2. Dans le menu **Actions sur le groupe**, choisissez **Envoyer les emails d'inscription à tous les candidats du groupe**.
 3. Choisissez le modèle d'email, vérifiez l'objet et l'aperçu du message, puis cliquez sur **Envoyer**. Une confirmation rappelle le nombre d'emails qui vont partir et le groupe concerné.
 
 Chaque candidat reçoit l'invitation avec son lien personnel. Lorsque l'action porte sur le groupe entier, seuls les candidats ayant encore un test à passer sont destinataires.
@@ -219,24 +241,28 @@ La page **Gestion des groupes** affiche l'ensemble de vos groupes sous forme hi�
 ### Créer un groupe
 
 1. Cliquez sur **Ajouter un groupe** dans la barre d'actions.
+
+    ![Fenêtre de création d'un groupe](img/17-modal-groupe.png)
 2. Renseignez :
 
     - **Nom** du groupe.
-    - **Groupe parent** (facultatif) — pour créer une hiérarchie.
-    - **Couleur** ou tag (selon votre version) — pour repérer visuellement le groupe.
+    - **Niveau du groupe** — pour un groupe de niveau 2 ou 3, choisissez aussi le groupe auquel il est rattaché, ce qui crée la hiérarchie.
+    - **Statut** — un groupe public est accessible à tous les administrateurs ; un groupe privé ne l'est qu'à son propriétaire et aux administrateurs associés.
+    - **Propriétaire** et **Administrateurs** du groupe.
+    - **Autoriser le repassage des certifications échouées (retake)** — cet interrupteur n'apparaît que sur les comptes où le repassage est activé. Les candidats qui rejoignent ensuite le groupe en héritent, sauf s'ils ont déjà un réglage qui leur est propre.
 
-3. Validez.
+3. Cliquez sur **Ajouter**.
 
 ### Ajouter un candidat à un groupe
 
 Deux méthodes :
 
-- **Depuis la fiche du candidat** : ouvrez la fiche, onglet **Groupes**, ajoutez le candidat aux groupes voulus.
+- **Depuis la fiche du candidat** : cliquez sur **Modifier les détails du candidat**, puis sur le bouton **Modifier** du champ **Groupe(s)**, et ajoutez le candidat aux groupes voulus.
 - **Action de groupe** sur la liste des candidats : filtrez sur le groupe d'origine, sélectionnez les candidats, puis **Ajouter un groupe aux candidats du groupe**. Les candidats rejoignent le ou les groupes choisis sans quitter leur groupe actuel.
 
 ### Actions de groupe
 
-Une fois vos candidats organisés en groupes, le filtre **Groupe** de la page **Gestion des candidats** vous permet d'isoler une population et de lui appliquer une action en masse via le menu **Actions de groupe** (le fonctionnement de la sélection est décrit dans [Inscrire plusieurs candidats à la fois](#inscrire-un-candidat-a-un-test)) :
+Une fois vos candidats organisés en groupes, le filtre **Groupe** de la page **Gestion des candidats** vous permet d'isoler une population et de lui appliquer une action en masse via le menu **Actions sur le groupe** (le fonctionnement de la sélection est décrit dans [Inscrire plusieurs candidats à la fois](#inscrire-un-candidat-a-un-test)) :
 
 - **Attribuer un mot de passe temporaire** — le même mot de passe pour toute la sélection ; chaque candidat devra le changer à sa prochaine connexion.
 - **Inscrire à un test**.
@@ -246,6 +272,7 @@ Une fois vos candidats organisés en groupes, le filtre **Groupe** de la page **
 - **Ajouter un groupe aux candidats** — sans les retirer de leur groupe actuel.
 - **Assigner une session ou un profil de surveillance à un test** — pour un test en attente, choisissez la session et, si besoin, le profil de surveillance. Une session surveillée en direct impose son propre profil à tous les tests qui lui sont rattachés.
 - **Définir les options d'évaluation** et **Définir les options de certification** — affichage des résultats au candidat, livraison des rapports, envoi des diplômes et destinataires, appliqués à toute la sélection. Chaque entrée n'apparaît que si votre compte dispose du type de pack correspondant.
+- **Refuser le repassage (no retake)** — proposé uniquement sur les comptes où le repassage des certifications échouées est activé. Les candidats cochés (ou tous les candidats du groupe si aucun n'est coché) ne pourront plus repasser leurs certifications échouées ; les autres candidats ne sont pas modifiés. Une confirmation vous est demandée avant que l'action ne soit appliquée.
 - **Générer des badges** — émission des badges numériques Credly pour les certifications éligibles de la sélection.
 
 > 💡 **Archivage vs suppression** — L'**archivage** d'un groupe se fait depuis la page **Gestion des groupes** et est non destructif : il masque le groupe et ses candidats des listes par défaut, mais préserve l'historique des tests passés. La **suppression** des candidats est définitive — utilisez-la uniquement pour les candidats créés par erreur.

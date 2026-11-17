@@ -1,7 +1,7 @@
 {
   "chapter": "admins",
-  "generated_at": "2026-10-09T16:50:44.032Z",
-  "base_url": "https://appdev.isograd.com",
+  "generated_at": "2026-11-17T14:56:06.821Z",
+  "base_url": "https://test.isograd.com",
   "captures": [
     {
       "name": "01-liste-administrateurs.png",
@@ -25,31 +25,31 @@
     },
     {
       "name": "06-row-actions.png",
-      "caption": "Boutons d'action en bout de ligne : Modifier, Privilèges, Désactiver, Réinitialiser 2FA, Envoyer identifiants, Supprimer.",
+      "caption": "Boutons d'action en bout de ligne : Editer, Privilèges, Désactiver, Réinitialiser 2FA, Envoyer les identifiants, Supprimer.",
       "kind": "element",
-      "selector": "table tbody tr:has(td:has-text(\"test_adm_17bozn@mailinator.com\"))",
-      "url": "https://test.isograd.com/clientadmin/account/AdminAdminsWithTable?filter_search=test_adm_17bozn%40mailinator.com&page_sel=1&filter_rows_per_page=50&changepage=1"
+      "selector": "table tbody tr:has(td:has-text(\"test_adm_kte9g1@mailinator.com\"))",
+      "url": "https://test.isograd.com/clientadmin/account/AdminAdminsWithTable?filter_search=test_adm_kte9g1%40mailinator.com&page_sel=1&filter_rows_per_page=50&changepage=1"
     },
     {
       "name": "04-modal-modification.png",
       "caption": "Fenêtre de modification — édition des coordonnées, civilité, langue d'interface.",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/clientadmin/account/AdminAdminsWithTable?filter_search=test_adm_17bozn%40mailinator.com&page_sel=1&filter_rows_per_page=50&changepage=1#"
+      "url": "https://test.isograd.com/clientadmin/account/AdminAdminsWithTable?filter_search=test_adm_kte9g1%40mailinator.com&page_sel=1&filter_rows_per_page=50&changepage=1#"
     },
     {
       "name": "05-modal-privileges.png",
-      "caption": "Fenêtre de privilèges — cases à cocher regroupées par catégorie (Candidats, Sessions, Emails, etc.).",
+      "caption": "Fenêtre de privilèges — sélecteur « Types de privilèges » et cases à cocher de la catégorie affichée.",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/clientadmin/account/AdminAdminsWithTable?filter_search=test_adm_17bozn%40mailinator.com&page_sel=1&filter_rows_per_page=50&changepage=1#"
+      "url": "https://test.isograd.com/clientadmin/account/AdminAdminsWithTable?filter_search=test_adm_kte9g1%40mailinator.com&page_sel=1&filter_rows_per_page=50&changepage=1#"
     },
     {
       "name": "07-confirmation-suppression.png",
       "caption": "Fenêtre de confirmation avant suppression d'un administrateur.",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/clientadmin/account/AdminAdminsWithTable?filter_search=test_adm_17bozn%40mailinator.com&page_sel=1&filter_rows_per_page=50&changepage=1#"
+      "url": "https://test.isograd.com/clientadmin/account/AdminAdminsWithTable?filter_search=test_adm_kte9g1%40mailinator.com&page_sel=1&filter_rows_per_page=50&changepage=1#"
     }
   ]
 }

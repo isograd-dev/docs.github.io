@@ -1,7 +1,7 @@
 {
   "chapter": "proctoring",
-  "generated_at": "2026-10-09T17:07:43.470Z",
-  "base_url": "https://appdev.isograd.com",
+  "generated_at": "2026-11-17T14:52:06.303Z",
+  "base_url": "https://test.isograd.com",
   "captures": [
     {
       "name": "01-page-profils.png",
@@ -11,7 +11,7 @@
     },
     {
       "name": "02-modal-profil-ajout.png",
-      "caption": "Fenêtre \"Ajouter un profil de surveillance\" — nom et options (document d'identité, plein écran, vidéo, audio, captures, scan de pièce).",
+      "caption": "Fenêtre \"Ajouter un profil de surveillance\" — saisie de la description du nouveau profil.",
       "kind": "element",
       "selector": ".modal.show .modal-content",
       "url": "https://test.isograd.com/clientadmin/parameters/AdminProctoringParametersWithTable"
@@ -39,7 +39,7 @@
       "name": "07-page-reunions.png",
       "caption": "Page \"Réunions de la session\" — une carte par réunion en cours (candidats connectés, surveillants présents) avec le bouton \"Entrer dans la réunion\".",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/clientadmin/proctoring/LiveProctoringSession?ses_id=101023"
+      "url": "https://test.isograd.com/clientadmin/proctoring/LiveProctoringSession?ses_id=101350"
     }
   ]
 }

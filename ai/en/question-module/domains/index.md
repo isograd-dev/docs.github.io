@@ -12,6 +12,8 @@ Open the page from the menu **Tags → Domains**.
 
 The table lists every defined domain, with its **ID**, its **name**, the **subject(s)** it is attached to, its **parent** (where applicable) and its **hierarchy level** (1, 2 or 3).
 
+> 💡 **Who sees which domains?** — A main administrator sees every domain. Other administrators see only the domains whose main domain is associated with at least one subject they are authorized on: a domain that is not yet associated with any subject therefore does not appear in their list.
+
 
 ## Domain hierarchy {#domain-hierarchy}
 
@@ -38,7 +40,7 @@ Creation is a two-step process: a dialog to pick the placement, then the edit fo
 
 2. The dialog opens with the switch **This domain is not a sub-domain** ticked by default: the domain will be created as an L1 (root).
 
-3. To create an **L1**, change nothing: confirm. The domain is created and you are redirected to its edit form.
+3. To create an **L1**, change nothing: click **Save**. The domain is created and you are redirected to its edit form.
 
 4. To create an **L2 or L3**, **untick** the switch. A first picker appears, asking for the **parent domain (hierarchy level 1)**:
 
@@ -48,13 +50,13 @@ Creation is a two-step process: a dialog to pick the placement, then the edit fo
     - A **new L2** (leave the second picker empty).
     - An **L3** attached to an existing L2 (pick the L2 in the second picker).
 
-6. Confirm. The domain is created at the right level, with the right parent, and you land on its edit form.
+6. Click **Save**. The domain is created at the right level, with the right parent, and you land on its edit form.
 
 > 💡 **Pickers and the list filter** — The parent pickers only offer the domains matching the **Subject family** filter currently selected on the list. Leave that filter on its default value to see every domain.
 
 ### Step 2 — Edit form
 
-On the edit page that opens, fill in the tabs — see [Tabs of the edit form](#tabs-of-the-edit-form).
+On the **Edit skill** page that opens, fill in the tabs — see [Tabs of the edit form](#tabs-of-the-edit-form).
 
 
 ## Tabs of the edit form {#tabs-of-the-edit-form}
@@ -67,7 +69,7 @@ The domain edit form offers up to **four tabs**:
 |---|---|
 | **General details** | Domain name and text description (per language), number of skill levels, **"Assignable to a question"** flag. |
 | **Skill levels** | Shown only if the number of levels is greater than 0. For each level and each language, a description of what a candidate at that level can do **specifically on this domain**. Refined relative to the subject's global descriptions. |
-| **Recommendations to improve** | For each level and each language, advice given to the candidate on how to progress **to the next level**. These texts appear in the report. Empty when the number of levels is 0. |
+| **Recommendations to improve** | For each level from level 2 upwards and each language, advice given to the candidate on how to **move to that level**. These texts appear in the report. Empty when the number of levels is 0. |
 | **Subject association** | Shown for **main domains (L1) only**. Attach this domain to one or more subjects — see [Link a domain to a subject](#link-a-domain-to-a-subject). Sub-domains inherit the subjects of their main domain. |
 
 ### Fields in the "General details" tab
@@ -80,7 +82,7 @@ The **"Description in"** language picker at the top switches between the report 
 - **Number of skill levels** — how many mastery tiers are defined on this domain (0 to 8). **0** means "no levels specific to this domain" (the subject's overall score is enough). **3 to 5** is typical for domains that warrant fine-grained analysis.
 - **Assignable to a question** (Yes / No) — if **Yes**, the domain can be selected as the attachment of a question, and it appears in the candidate report's skill map. If **No**, the domain only serves as an **editorial grouping** for its children (an L1 "umbrella" that does not directly carry questions, for example).
 
-> 💡 **Reactivity** — Changing the value of the **number of skill levels** instantly updates the *Skill levels* and *Recommendations* tabs: the matching fields appear or disappear without reloading the page.
+> 💡 **Reactivity** — On a domain that already has levels, changing the **number of skill levels** instantly updates the *Skill levels* and *Recommendations to improve* tabs: the matching fields appear or disappear without reloading the page, and the texts already entered are kept. On a domain opened with **0** levels, choose the number of levels, click **Save**, then reopen the form: the *Skill levels* tab and the recommendation fields are only built when the page is opened.
 
 > 💡 **Languages** — The language picker of the domain form lists the platform's report languages. You only need to fill in the languages actually used by your candidates.
 
@@ -98,14 +100,14 @@ The tab shows two side-by-side lists:
 
 **To link**: drag and drop a subject from **All subjects** to **Associated subjects**. The reverse to unlink. Click **Save** at the top right to persist.
 
-> 💡 **Filter the list** — If you have many subjects, use the filter field above the lists to quickly find the subject you want.
+> 💡 **Filter the list** — If you have many subjects, use the **Filter** field above the lists to quickly find the subject you want in the **All subjects** list.
 
 > ⚠️ **Unlinking a domain that has questions** — If you unlink a subject from a domain **while questions exist on that pair**, those questions lose their domain in the report. Unlink only if you intend to reassign those questions immediately afterwards.
 
 
 ## Associated questions {#associated-questions}
 
-On a domain's form, the **Display items associated with this domain** link opens the **Questions** page in a new tab, **pre-filtered** on that domain. Useful to:
+On a domain's form, the **Display items associated with this domain** button, at the bottom of the **General details** tab, opens the **Questions** page in a new tab, **pre-filtered** on that domain and on the subjects associated with it. Useful to:
 
 - Check how many questions have been authored per domain.
 - Identify domains that are thin on questions and would benefit from more authoring.
@@ -116,10 +118,10 @@ On a domain's form, the **Display items associated with this domain** link opens
 
 The **Filters** panel offers:
 
-- **Search** — free text on the domain's ID or name.
+- **Search** — free text on the domain's ID or name, or on the name of an associated subject.
 - **Subject family** — a technical grouping of subjects. On your platform every subject belongs to the same family, so this filter can stay on its default value.
 
-Sorting is available on each column by clicking the header.
+Sorting is available by clicking the column headers, except **Associated subjects**.
 
 
 ## Delete a domain {#delete-a-domain}
@@ -127,11 +129,11 @@ Sorting is available on each column by clicking the header.
 1. On the domain's row, click the **Delete** icon.
 2. Confirm via the **Delete** button on the page that opens.
 
-> ⚠️ **Domain with questions** — A domain that contains **at least one question** cannot be deleted. The platform refuses the operation with the message "You cannot delete a domain associated with Items". Before deletion, **transfer or delete the questions** attached to it (use the *Display items associated with this domain* link to find them).
+> ⚠️ **Domain with questions** — A domain that contains **at least one question** cannot be deleted. The platform refuses the operation with the message "You cannot delete a domain associated with Items". Before deletion, **transfer or delete the questions** attached to it (use the *Display items associated with this domain* button to find them).
 
 > 💡 **L2/L3 child domains** — Delete sub-domains before their parent (bottom-up), otherwise the children lose their attachment.
 
 
 ## Export the list {#export-the-list}
 
-The **Export to Excel** button in the action bar generates an `.xlsx` file listing every domain currently filtered. Useful for audits of the pedagogical reference framework or for sharing the list with external contributors.
+The **Export to Excel** button in the action bar generates an `.xlsx` file listing the domains currently filtered (2,000 rows at most); once the file is ready, click the **Download** button that replaces it. Useful for audits of the pedagogical reference framework or for sharing the list with external contributors.

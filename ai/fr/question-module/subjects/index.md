@@ -64,11 +64,11 @@ Les langues proposées sont celles activées sur votre compte (voir le chapitre 
 
 ### Initiales
 
-Le champ **Initiales** (deux caractères au maximum) définit les lettres affichées sur la pastille colorée du sujet dans les listes et les rapports lorsqu'aucune icône n'a été téléversée. Laissé vide, la plateforme utilise les deux premières lettres du nom.
+Le champ **Initiales** définit les lettres affichées sur la pastille colorée du sujet lorsqu'aucune icône n'a été téléversée. Laissé vide, la plateforme utilise les deux premiers caractères du nom.
 
 ### Icône du sujet
 
-Le bloc **Icône du sujet** permet de téléverser une image (PNG, JPG, GIF ou SVG) qui remplace la pastille d'initiales partout où le sujet est affiché. Cliquez sur **Téléverser** et choisissez le fichier ; un aperçu apparaît une fois le téléversement terminé. Le bouton de suppression à côté de l'aperçu retire l'icône et rétablit les initiales.
+Le bloc **Icône du sujet** permet de téléverser une image (PNG, JPG, GIF ou BMP) qui remplace la pastille d'initiales partout où le sujet est affiché. Cliquez sur **Téléverser**, choisissez le fichier dans la fenêtre qui s'ouvre, puis cliquez de nouveau sur **Téléverser** ; un aperçu apparaît à côté du bouton une fois le téléversement terminé. Lorsque le sujet possède déjà une icône à l'ouverture de sa fiche, un bouton **Supprimer** figure à côté du bouton **Téléverser** : il retire l'icône et rétablit les initiales.
 
 
 ## Description des niveaux {#description-des-niveaux}
@@ -91,7 +91,6 @@ L'onglet **Administrateurs autorisés** liste les administrateurs de votre compt
 - Cochez la case devant un nom pour **autoriser** cet administrateur sur le sujet.
 - Décochez pour **révoquer** son accès.
 - Utilisez le champ **Filtrer** en haut de la liste pour retrouver rapidement un administrateur dans une longue liste.
-- Les administrateurs dont la connexion a été désactivée apparaissent grisés.
 
 > 💡 **Cloisonnement éditorial** — Cette fonctionnalité est utile quand vous avez plusieurs équipes de rédaction : chacune ne voit que ses sujets. Les administrateurs principaux et ceux qui disposent du privilège « tous les sujets » ne figurent pas dans cette liste, car ils voient toujours l'ensemble des sujets.
 

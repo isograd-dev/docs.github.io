@@ -8,7 +8,7 @@ An **administrator** is a user with access to the administration console of your
 
 ![Main "Administrator management" page](img/01-liste-administrateurs.png)
 
-The **Administrator management** page lists all administrators created on your account. Each row indicates the **last name**, **first name**, **email address** and **date of last login attempt**. The filters at the top of the page let you narrow the list by free text or by privilege. The action buttons — **Create an administrator** and **Export to Excel** — are located in the action bar at the top of the table.
+The **Administrator management** page lists all administrators created on your account. Each row indicates the **last name**, **first name**, **email address** and **date of last login attempt**. The filters at the top of the page let you narrow the list by free text or by privilege. The action buttons — **Add Administrator** and **Export to Excel** — are located in the action bar at the top of the table.
 
 
 ## Administrator types {#administrator-types}
@@ -27,7 +27,7 @@ Creating an administrator is done in **two steps**: choice of role, then entry o
 
 ### Step 1 — Choice of role
 
-1. From the **Administrator management** page, click **Create an administrator**.
+1. From the **Administrator management** page, click **Add Administrator**.
 
     ![Role selection window](img/02-modal-creation-role.png)
 
@@ -44,8 +44,9 @@ Fill in the fields:
 - **Title** — Mr. / Mrs.
 - **Last name** — family name.
 - **First name** — given name.
-- **Email address** — used both as login identifier and notification address. Must be unique on the platform.
+- **Email Address** — used both as login identifier and notification address. Must be unique on the platform.
 - **Language** — interface language for this administrator. System emails (password reset, etc.) are also sent in this language.
+- **Comment** — free note, optional.
 
 Click **Save** to confirm the creation. The new administrator appears immediately in the table.
 
@@ -58,15 +59,30 @@ Click **Save** to confirm the creation. The new administrator appears immediatel
 
     ![End-of-row action buttons](img/06-row-actions.png)
 
-2. Click the **Edit** icon (pencil) at the end of the row. The edit window opens.
+2. Click the **Edit** icon (pencil) at the end of the row. The **Update administrator** window opens.
 
     ![Edit window](img/04-modal-modification.png)
 
-3. Edit the desired fields (title, last name, first name, email address, interface language).
+3. Edit the desired fields (title, last name, first name, email address, interface language, comment).
 
 4. Click **Save**. The changes are applied immediately.
 
-> 💡 **Change your own interface language** — This same window lets you change your **own** language: locate your row in the table and click the **Edit** icon. After saving, **log back in** for the change to take effect (the language is cached in the session at the time of login).
+> 💡 **Change your own interface language** — This same window lets you change your **own** language: locate your row in the table and click the **Edit** icon — it is available on your own row even if you are not allowed to edit the other administrators. After saving, **log back in** for the change to take effect (the language is cached in the session at the time of login).
+
+
+## Generate an API access token {#api-token}
+
+An administrator holding the *Generate a personal API access token* privilege can create a **personal token** themselves to call the platform API with their own rights (privileges and groups). Each administrator only manages their own tokens: the section never appears when you edit another administrator.
+
+1. On the **Administrator management** page, locate **your own row** and click the **Edit** icon.
+2. Below the form, the **API access token** section shows the number of **Active tokens** and, if there are any, the **Next expiry** date.
+3. Click **Generate a token**. The token is displayed in a read-only field, with its expiry date; the **Copy** button puts it on the clipboard. There is no need to save the form: the token is active as soon as it is generated.
+
+> ⚠️ **Displayed only once** — Copy the token immediately: it is not stored anywhere and can never be displayed again. If it is lost, generate a new one.
+
+A token is valid for **one year**. It is checked on every call and refused if you lose the privilege, if your account is disabled or if you revoke your tokens. You can generate several tokens; they all stay active until they expire or are revoked.
+
+To invalidate your tokens, click **Revoke all my tokens** then confirm: all your tokens are refused immediately. The button is greyed out as long as you have no active token.
 
 
 ## Edit privileges {#edit-privileges}
@@ -79,7 +95,7 @@ Click **Save** to confirm the creation. The new administrator appears immediatel
 
     ![Privilege edit window](img/05-modal-privileges.png)
 
-2. The window displays the privileges **grouped by category** (Candidates, Sessions, Emails, Results, etc.). For each privilege, a check box indicates whether the administrator has it.
+2. The **Privilege management** window displays the privileges **by category**: choose the category in the **Privilege types** list to display its privileges. For each privilege, a check box indicates whether the administrator has it. A privilege required by another checked privilege is checked automatically and cannot be unchecked.
 
 3. Check or uncheck the desired privileges.
 
@@ -110,9 +126,8 @@ Disabling **prevents an administrator from logging in**, without deleting their 
 
 ### Disable
 
-1. On the administrator's row, click the **Disable** icon (closed padlock).
-2. Confirm the action.
-3. The **Disable** icon is replaced by an **Unlock** icon (open padlock), indicating that the account is now blocked.
+1. On the administrator's row, click the **Disable** icon (closed padlock). Disabling is immediate, with no confirmation request, and the page reloads.
+2. The **Disable** icon is replaced by an **Unlock** icon (open padlock), indicating that the account is now blocked.
 
 ### Unlock
 
@@ -128,23 +143,22 @@ Disabling **prevents an administrator from logging in**, without deleting their 
 
 If two-factor authentication (2FA) is enabled on the account and an administrator has lost access to their authentication application, you can **reset their 2FA** so they reconfigure it on their next login.
 
-1. On the administrator's row, click the **Reset 2FA** icon (key icon).
-2. Confirm the action.
-3. On their next login, the administrator will be prompted to re-scan a QR code and reconfigure their authentication application.
+1. On the administrator's row, click the **Reset 2FA** icon (key icon). The reset is immediate, with no confirmation request; a message confirms it.
+2. On their next login, the administrator will be prompted to re-scan a QR code and reconfigure their authentication application.
 
 > 💡 **Availability** — The **Reset 2FA** icon only appears if two-factor authentication is enabled for your account. If you do not see it, it means the account does not use it — there is then nothing to reset.
 
 
 ## Send credentials {#send-credentials}
 
-The **Send credentials** button sends the administrator an email containing a **password reset link**. This is the action to use in two cases:
+The **Send login details** button sends the administrator an email containing a **password reset link**. This is the action to use in two cases:
 
 - The administrator has just been created and has not yet received (or has lost) their first-access link.
 - The administrator no longer remembers their password — rather than asking them to click "Forgot password" on the login page, you can push the link to them from the admin console.
 
 ### Procedure
 
-1. On the administrator's row, click the **Send credentials** icon (envelope icon).
+1. On the administrator's row, click the **Send login details** icon (envelope icon).
 2. The platform sends the email immediately — no further confirmation is requested.
 3. A success notification appears at the top right of the screen.
 

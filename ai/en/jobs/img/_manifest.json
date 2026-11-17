@@ -1,11 +1,11 @@
 {
   "chapter": "jobs",
-  "generated_at": "2026-10-09T16:54:32.694Z",
-  "base_url": "https://appdev.isograd.com",
+  "generated_at": "2026-11-17T14:51:42.452Z",
+  "base_url": "https://test.isograd.com",
   "captures": [
     {
       "name": "01-liste-profils.png",
-      "caption": "Page principale \"Gestion des profils\" — tableau ID / Description, bouton \"Ajouter un profil\".",
+      "caption": "Page principale \"Gestion des profils\" — tableau ID / Profils sélectionnés, bouton \"Ajouter un profil\".",
       "kind": "viewport-1440x720",
       "url": "https://test.isograd.com/clientadmin/parameters/AdminJobsWithTable?filter_search=&changepage=1&orderby=des+DESC&export_to_excel=0"
     },
@@ -20,14 +20,14 @@
       "name": "03-page-niveaux.png",
       "caption": "Page \"Niveau de compétence attendu par profil\" — sélecteurs Sujet / Langue, tableau Compétences.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/clientadmin/parameters/SkillsPerJobUpdate?job_id=3375"
+      "url": "https://test.isograd.com/clientadmin/parameters/SkillsPerJobUpdate?job_id=3395"
     },
     {
       "name": "04-tableau-competences.png",
       "caption": "Tableau des compétences — Niveau requis (chiffre + boutons −/+) et Description par domaine.",
       "kind": "element",
       "selector": "#domainlevelsperjob",
-      "url": "https://test.isograd.com/clientadmin/parameters/SkillsPerJobUpdate?job_id=3375"
+      "url": "https://test.isograd.com/clientadmin/parameters/SkillsPerJobUpdate?job_id=3395"
     },
     {
       "name": "05-confirmation-suppression.png",

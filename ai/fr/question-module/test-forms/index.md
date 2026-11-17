@@ -14,7 +14,7 @@ Accédez à la page via le menu **Tests**. Il est affiché aux administrateurs d
 
 Le tableau (titre **Gestion des tests**) liste tous les tests, avec leur **identifiant**, **nom**, **sujet**, **langue**, **type** et **algorithme**. Lorsqu'une période est renseignée dans les filtres, une colonne supplémentaire affiche le **nombre de passages** sur cette période.
 
-Les administrateurs du **compte principal** voient l'ensemble des tests. Une ligne affichée en rouge signale un test qui ne sera pas proposé à l'inscription — voir [Tests non proposés à l'inscription](#tests-non-proposes). Les administrateurs d'un **sous-compte** (ou connectés en alias sur un compte) ne voient que les tests liés à leur propre compte — voir [Autoriser un test / Retirer l'accès](#autoriser-un-test).
+Seuls les tests dont le type est activé sur le compte sont listés ; les tests inactifs n'apparaissent que si le filtre **Inclure les tests inactifs** est activé (voir [Filtres](#filtres)). Les administrateurs du **compte principal** voient l'ensemble de ces tests. Les administrateurs d'un **sous-compte** (ou connectés en alias sur un compte) ne voient que les tests liés à leur propre compte — voir [Autoriser un test / Retirer l'accès](#autoriser-un-test).
 
 
 ## Concepts {#concepts}
@@ -109,7 +109,7 @@ De retour sur la fiche, le tableau des questions récapitule la sélection ; l'i
 ### Boutons d'en-tête
 
 - **Enregistrer** — sauvegarde l'ensemble de la fiche.
-- **Enregistrer & essayer votre test** — enregistre, puis affiche une adresse à copier et à ouvrir dans une **fenêtre de navigation privée** : vous passez alors le test tel qu'un candidat le verrait, sans perdre votre session d'administrateur. Chaque nouvel essai remplace le précédent.
+- **Enregistrer & essayer votre test** — enregistre, puis affiche une adresse, accompagnée d'un bouton pour la copier, à ouvrir dans une **fenêtre de navigation privée** : vous passez alors le test tel qu'un candidat le verrait, sans perdre votre session d'administrateur. Chaque nouvel essai remplace le précédent.
 - **Exporter les commentaires** — télécharge les commentaires laissés par les candidats sur les questions de ce test.
 - **Analyse IA du test** — si les fonctionnalités d'IA sont activées sur votre compte. Décrivez l'**objectif du test** (1 000 caractères au maximum) puis cliquez sur **Analyser** : l'IA donne un avis sur la pertinence du choix des questions et de leur nombre par rapport à cet objectif, en tenant compte du type et de la difficulté des questions, de l'ordre des questions et du mode de notation.
 - **Exemple de rapport** — selon le type de résultat, un lien affiche un exemple du rapport remis au candidat.
@@ -199,18 +199,6 @@ Pour autoriser un test pour un ou plusieurs comptes :
 Pour retirer le test du compte sur lequel vous êtes connecté, cliquez sur l'icône **Retirer l'accès** sur la ligne du test. Le retrait est immédiat, sans demande de confirmation.
 
 > 💡 **Qui peut utiliser ce test ?** — Survolez le nom d'un test non public : une infobulle liste les comptes autorisés à l'utiliser.
-
-
-## Tests non proposés à l'inscription {#tests-non-proposes}
-
-Une ligne affichée **en rouge**, avec une icône d'avertissement, signale un test qui **ne sera pas proposé** lors de l'inscription des candidats. Survolez l'icône pour en connaître la ou les raisons, par exemple :
-
-- le test est inactif ;
-- son type de test n'est pas activé sur le compte ;
-- il n'est pas public et le compte n'est pas autorisé à l'utiliser ;
-- son sujet est archivé.
-
-Les examens papier ne sont pas concernés par ce signalement.
 
 
 ## Supprimer un test {#supprimer-un-formulaire}

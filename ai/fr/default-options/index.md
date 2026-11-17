@@ -15,11 +15,10 @@ La page est organisée en plusieurs **onglets** :
 - **Paramètres généraux** — réglages communs aux évaluations **et** aux certifications.
 - **Paramètres pour l'évaluation** — spécifique aux tests d'évaluation.
 - **Paramètres pour la certification** — spécifique aux passages certifiants (uniquement si votre compte propose des certifications).
-- **Politique de repassage** — configuration des tentatives multiples (selon votre type de compte).
 
-> 💡 **Enregistrer** — Toutes les modifications sont appliquées en cliquant sur **Enregistrer** en haut à droite. La sauvegarde s'applique à **tous les onglets** simultanément.
+> ⚠️ **Enregistrer** — Le bouton **Enregistrer**, en haut à droite, enregistre **uniquement l'onglet affiché**. Si vous modifiez plusieurs onglets, cliquez sur **Enregistrer** dans chacun d'eux avant de passer au suivant.
 
-> 💡 **Comme paramètres par défaut pour l'API** — Le bouton **Enregistrer comme paramètres par défaut pour l'API** (lorsqu'il est visible) applique en plus les valeurs courantes aux inscriptions créées par l'API REST. Sans ce bouton, les paramètres ne s'appliquent qu'aux inscriptions faites via l'interface.
+> 💡 **Paramètres par défaut pour l'API** — Le bouton **Enregistrer comme paramètres par défaut pour l'API** enregistre les valeurs de l'onglet affiché comme valeurs par défaut des inscriptions créées par l'API, et non comme vos propres valeurs par défaut. Pour appliquer les mêmes réglages aux deux, cliquez sur les deux boutons.
 
 
 ## Paramètres généraux {#parametres-generaux}
@@ -39,18 +38,28 @@ Le format choisi s'applique à toutes les dates affichées dans les rapports et 
 
 ### Options IA générative
 
-Selon les options activées sur votre compte, vous pouvez voir des réglages relatifs à l'usage d'IA générative pour enrichir les rapports :
+Ces réglages concernent l'usage d'une IA générative pour enrichir les rapports :
 
-- **Modèle d'IA utilisé pour les synthèses et les notations de question** — choix du moteur (Open AI, etc.) selon votre offre.
+- **Modèle d'IA utilisé pour les synthèses et les notations de question** — liste déroulante de la famille de modèles utilisée (Claude, Mistral, Open AI ou Gemini).
 - **Utiliser une IA générative pour la synthèse du résultat** — la plateforme génère un résumé du résultat en quelques phrases.
 - **Utiliser une IA générative pour les descriptions de niveau par domaine** — explicite, par domaine de compétence, ce que le score signifie.
 - **Utiliser une IA générative pour les rapports de progression** — pour les rapports comparatifs entre plusieurs sessions d'un même candidat.
 
-> ⚠️ **Activation des IA génératives** — Ces options ne sont **modifiables** que si votre compte dispose des privilèges correspondants. Si vous voyez les commutateurs mais qu'ils sont grisés, contactez votre interlocuteur Isograd pour activer la fonctionnalité.
-
 ### Corrigé pour les évaluations
 
-- **Afficher le corrigé dans l'espace candidat (hors certifications)** — donne au candidat accès au corrigé de ses réponses dans son espace après une **évaluation**. Cette option ne s'applique pas aux certifications (le corrigé d'une certification est traité séparément, voir [Paramètres pour la certification](#parametres-certification)).
+- **Afficher le corrigé dans l'espace candidat (hors certifications)** — donne au candidat accès au corrigé de ses réponses dans son espace après une **évaluation**. Sur les comptes sans certification, l'option s'intitule simplement **Afficher le corrigé dans l'espace candidat**.
+
+### Test de configuration
+
+**Test de configuration obligatoire avant le premier test** impose au candidat de vérifier son poste avant de pouvoir lancer un test. Trois choix :
+
+- **Oui** — le candidat doit réaliser le test de configuration une fois, avant son premier test. Ce réglage peut ensuite être ajusté candidat par candidat.
+- **Non** — aucun test de configuration n'est imposé par défaut.
+- **Toujours** — le test de configuration est imposé à tous les candidats qui ne l'ont pas encore réalisé, y compris ceux dont la fiche ne le demande pas.
+
+### Temps additionnel
+
+**Temps additionnel pour les candidats avec un handicap (en %)** — pourcentage de temps supplémentaire ajouté à la durée des tests pour les candidats bénéficiant d'un temps additionnel.
 
 
 ## Paramètres pour l'évaluation {#parametres-evaluation}
@@ -72,11 +81,23 @@ Pour chaque option ci-dessous, choisissez **Oui** ou **Non** :
 
 ### Méthode de fourniture du rapport au candidat
 
-Trois choix mutuellement exclusifs :
+Quatre choix mutuellement exclusifs :
 
 - **Par mail** — le rapport est envoyé par email dès la fin du test.
 - **Dans son espace candidat** — le rapport est uniquement accessible depuis l'espace candidat connecté.
 - **Par mail et dans son espace candidat** — combinaison des deux : email + accès permanent dans l'espace.
+- **Ne pas fournir de rapport au candidat** — le candidat ne reçoit aucun rapport.
+
+### Relances et notifications
+
+Quatre listes déroulantes complètent l'onglet :
+
+- **Envoyer un mail de relance au candidat** — fréquence des relances automatiques envoyées aux candidats inscrits à une évaluation.
+- **Envoyer une copie du mail de relance à** — administrateur qui reçoit une copie de chaque mail de relance (**Personne** pour ne pas envoyer de copie).
+- **Envoyer le rapport de passage à** — administrateur qui reçoit le rapport à la fin du test.
+- **Envoyer un mail lorsqu'un test est en attente de correction à** — administrateur prévenu lorsqu'un test attend une correction manuelle.
+
+Les listes d'administrateurs proposent **Personne** ainsi que les administrateurs de votre compte autorisés à consulter les résultats.
 
 
 ## Paramètres pour la certification {#parametres-certification}
@@ -90,24 +111,16 @@ Cet onglet n'est visible que si votre compte propose des **certifications** (typ
 ### Envoi du certificat
 
 - **Envoyer le certificat au candidat** (Oui/Non) — active l'envoi automatique du diplôme PDF au candidat dès la validation de la certification.
-- **Envoyer une copie du certificat à** — adresse email d'un administrateur qui recevra une copie de chaque diplôme émis (par défaut « Personne », c'est-à-dire pas de copie).
+- **Envoyer une copie du certificat à** — administrateur qui recevra une copie de chaque diplôme émis (**Personne** pour ne pas envoyer de copie).
+
+> ⚠️ **Au moins un destinataire** — Le certificat doit avoir au moins un destinataire : si vous choisissez **Non** pour l'envoi au candidat et **Personne** pour la copie, l'enregistrement est refusé avec le message *« Le certificat doit obligatoirement avoir un destinataire au minimum »*.
 
 ### Envoi du rapport de certification
 
 - **Envoyer le rapport de certification au candidat** (Oui/Non) — distinct du certificat : le rapport de certification est plus détaillé (compétences, comparaison aux niveaux attendus).
-- **Envoyer une copie du rapport de certification à** — adresse administrateur pour la copie du rapport.
+- **Envoyer une copie du rapport de certification à** — administrateur qui reçoit une copie du rapport.
 
 ### Relances automatiques
 
-- **Envoyer un mail de relance au candidat** — active l'envoi automatique d'emails de relance pour les candidats qui n'ont pas démarré leur certification. La fréquence des relances est configurée séparément sur la fiche du candidat.
-
-
-## Politique de repassage {#politique-de-repassage}
-
-L'onglet **Politique de repassage** (visible selon le type de compte) configure les règles de **tentatives multiples** pour les certifications :
-
-- **Score minimum par matière** — score en-dessous duquel un candidat doit repasser. Au-dessus, la matière est validée.
-- **Nombre maximum de tentatives** — combien de fois un candidat peut repasser une matière.
-- **Délai de repassage (jours)** — temps minimum entre deux tentatives sur la même matière.
-
-> 💡 **Bonne pratique** — Définir un délai non nul (par exemple 7 jours) entre deux tentatives évite que le candidat « brûle » ses tentatives en répondant au hasard juste après avoir échoué. Le délai laisse le temps de réviser.
+- **Envoyer un mail de relance au candidat** — liste déroulante de la fréquence des relances automatiques envoyées aux candidats inscrits à une certification.
+- **Envoyer une copie du mail de relance à** — administrateur qui reçoit une copie de chaque mail de relance (**Personne** pour ne pas envoyer de copie). Ce destinataire est commun aux évaluations et aux certifications : la valeur choisie ici remplace celle de l'onglet **Paramètres pour l'évaluation**, et inversement.

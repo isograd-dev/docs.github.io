@@ -12,6 +12,8 @@ Accédez à la page via le menu **Catégories → Domaines**.
 
 Le tableau liste tous les domaines définis, avec leur **identifiant**, leur **nom**, le ou les **sujets** auxquels ils sont rattachés, leur **parent** (le cas échéant) et leur **niveau hiérarchique** (1, 2 ou 3).
 
+> 💡 **Qui voit quels domaines ?** — Un administrateur principal voit tous les domaines. Les autres administrateurs ne voient que les domaines dont le domaine principal est associé à au moins un sujet sur lequel ils sont habilités : un domaine qui n'est encore associé à aucun sujet n'apparaît donc pas dans leur liste.
+
 
 ## Hiérarchie des domaines {#hierarchie-des-domaines}
 
@@ -38,7 +40,7 @@ La création se fait en deux étapes : une fenêtre pour choisir le rattachement
 
 2. La fenêtre s'ouvre avec le commutateur **Ce domaine n'est pas un sous-domaine** coché par défaut : le domaine sera créé en L1 (racine).
 
-3. Pour créer un **L1**, ne changez rien : validez. Le domaine est créé et vous êtes redirigé vers sa fiche d'édition.
+3. Pour créer un **L1**, ne changez rien : cliquez sur **Enregistrer**. Le domaine est créé et vous êtes redirigé vers sa fiche d'édition.
 
 4. Pour créer un **L2 ou L3**, **décochez** le commutateur. Un premier sélecteur apparaît, demandant le **domaine parent (niveau hiérarchique 1)** :
 
@@ -48,7 +50,7 @@ La création se fait en deux étapes : une fenêtre pour choisir le rattachement
     - Un **nouveau L2** (laissez le second sélecteur vide).
     - Un **L3** rattaché à un L2 existant (choisissez le L2 dans le second sélecteur).
 
-6. Validez. Le domaine est créé au bon niveau, avec le bon parent, et vous arrivez sur sa fiche d'édition.
+6. Cliquez sur **Enregistrer**. Le domaine est créé au bon niveau, avec le bon parent, et vous arrivez sur sa fiche d'édition.
 
 > 💡 **Sélecteurs et filtre de la liste** — Les sélecteurs de parent ne proposent que les domaines correspondant au filtre **Famille de sujets** sélectionné dans la liste. Laissez ce filtre sur sa valeur par défaut pour voir tous les domaines.
 
@@ -67,7 +69,7 @@ La fiche d'édition d'un domaine propose jusqu'à **quatre onglets** :
 |---|---|
 | **Caractéristiques générales** | Nom et description textuelle du domaine (par langue), nombre de niveaux de compétence, indicateur **« Assignable à une question »**. |
 | **Niveaux de compétence** | Affiché uniquement si le nombre de niveaux est supérieur à 0. Pour chaque niveau et chaque langue, description de ce que sait faire un candidat de ce niveau **spécifiquement sur ce domaine**. Affine les descriptions globales du sujet. |
-| **Recommandations pour progresser** | Pour chaque niveau et chaque langue, conseils donnés au candidat pour passer **au niveau suivant**. Ces textes apparaissent dans le rapport. Vide si le nombre de niveaux est 0. |
+| **Recommandations pour progresser** | Pour chaque niveau à partir du niveau 2 et chaque langue, conseils donnés au candidat pour **passer à ce niveau**. Ces textes apparaissent dans le rapport. Vide si le nombre de niveaux est 0. |
 | **Associer les sujets** | Affiché pour les **domaines principaux (L1) uniquement**. Rattachement de ce domaine à un ou plusieurs sujets — voir [Associer un domaine à un sujet](#associer-un-domaine-a-un-sujet). Les sous-domaines héritent des sujets de leur domaine principal. |
 
 ### Champs de l'onglet « Caractéristiques générales »
@@ -80,7 +82,7 @@ Le sélecteur de langue **« Description en »** en haut bascule entre les langu
 - **Nombre de niveaux de compétence** — combien de paliers de maîtrise sont définis sur ce domaine (0 à 8). **0** signifie « pas de niveaux spécifiques à ce domaine » (le score global du sujet suffit). **3 à 5** est typique pour les domaines qui méritent une analyse fine.
 - **Assignable à une question** (Oui / Non) — si **Oui**, le domaine peut être choisi comme rattachement d'une question et apparaît dans la cartographie de compétences du rapport candidat. Si **Non**, le domaine ne sert que de **regroupement éditorial** pour ses enfants (un L1 « chapeau » qui ne porte pas directement de questions, par exemple).
 
-> 💡 **Réactivité** — Modifier la valeur du **nombre de niveaux de compétence** met instantanément à jour les onglets *Niveaux de compétence* et *Recommandations* : les champs correspondants apparaissent ou disparaissent sans recharger la page.
+> 💡 **Réactivité** — Sur un domaine qui possède déjà des niveaux, modifier le **nombre de niveaux de compétence** met instantanément à jour les onglets *Niveaux de compétence* et *Recommandations pour progresser* : les champs correspondants apparaissent ou disparaissent sans recharger la page, et les textes déjà saisis sont conservés. Sur un domaine ouvert avec **0** niveau, choisissez le nombre de niveaux, cliquez sur **Enregistrer**, puis rouvrez la fiche : l'onglet *Niveaux de compétence* et les champs de recommandations ne sont construits qu'à l'ouverture de la page.
 
 > 💡 **Langues** — Le sélecteur de langue de la fiche domaine liste les langues de rapport de la plateforme. Vous n'avez besoin de renseigner que les langues réellement utilisées par vos candidats.
 
@@ -98,14 +100,14 @@ L'onglet présente deux listes côte à côte :
 
 **Pour associer** : glissez-déposez un sujet de **Tous les sujets** vers **Sujets associés**. L'inverse pour dissocier. Cliquez sur **Enregistrer** en haut à droite pour persister.
 
-> 💡 **Filtrer la liste** — Si vous avez beaucoup de sujets, utilisez le champ de filtre au-dessus des listes pour trouver rapidement le sujet voulu.
+> 💡 **Filtrer la liste** — Si vous avez beaucoup de sujets, utilisez le champ **Filtrer** au-dessus des listes pour trouver rapidement le sujet voulu dans la liste **Tous les sujets**.
 
 > ⚠️ **Dissocier un domaine ayant des questions** — Si vous dissociez un sujet d'un domaine **alors que des questions existent sur ce couple**, ces questions perdent leur domaine dans le rapport. Ne dissociez que si vous comptez réattribuer ces questions immédiatement après.
 
 
 ## Questions associées {#questions-associees}
 
-Sur la fiche d'un domaine, le lien **Afficher les questions associées à ce domaine** ouvre la page **Questions** dans un nouvel onglet, **pré-filtrée** sur ce domaine. Utile pour :
+Sur la fiche d'un domaine, le bouton **Afficher les questions associées à ce domaine**, en bas de l'onglet **Caractéristiques générales**, ouvre la page **Questions** dans un nouvel onglet, **pré-filtrée** sur ce domaine et sur les sujets qui lui sont associés. Utile pour :
 
 - Vérifier combien de questions ont été rédigées par domaine.
 - Repérer les domaines pauvres en questions qui mériteraient un renfort de rédaction.
@@ -116,10 +118,10 @@ Sur la fiche d'un domaine, le lien **Afficher les questions associées à ce dom
 
 Le panneau **Filtres** propose :
 
-- **Rechercher** — texte libre sur l'identifiant ou le nom du domaine.
+- **Rechercher** — texte libre sur l'identifiant ou le nom du domaine, ou sur le nom d'un sujet associé.
 - **Famille de sujets** — regroupement technique des sujets. Sur votre plateforme, tous les sujets appartiennent à la même famille : ce filtre peut rester sur sa valeur par défaut.
 
-Le tri est disponible sur chaque colonne en cliquant sur l'en-tête.
+Le tri est disponible en cliquant sur l'en-tête des colonnes, à l'exception de **Sujets associés**.
 
 
 ## Supprimer un domaine {#supprimer-un-domaine}
@@ -127,11 +129,11 @@ Le tri est disponible sur chaque colonne en cliquant sur l'en-tête.
 1. Sur la ligne du domaine, cliquez sur l'icône **Supprimer**.
 2. Confirmez via le bouton **Supprimer** de la page qui s'ouvre.
 
-> ⚠️ **Domaine avec questions** — Un domaine qui contient **au moins une question** ne peut pas être supprimé. La plateforme refuse l'opération avec le message « Vous ne pouvez pas supprimer un domaine associé à des questions ». Avant suppression, **transférez ou supprimez les questions** qui lui sont rattachées (utilisez le lien *Afficher les questions associées à ce domaine* pour les retrouver).
+> ⚠️ **Domaine avec questions** — Un domaine qui contient **au moins une question** ne peut pas être supprimé. La plateforme refuse l'opération avec le message « Vous ne pouvez pas supprimer un domaine associé à des questions ». Avant suppression, **transférez ou supprimez les questions** qui lui sont rattachées (utilisez le bouton *Afficher les questions associées à ce domaine* pour les retrouver).
 
 > 💡 **Sous-domaines L2/L3** — Supprimez les sous-domaines avant leur parent (du bas vers le haut), faute de quoi les enfants perdent leur rattachement.
 
 
 ## Exporter la liste {#exporter-la-liste}
 
-Le bouton **Exporter vers Excel** dans la barre d'actions génère un fichier `.xlsx` listant tous les domaines actuellement filtrés. Utile pour les audits du référentiel pédagogique ou pour communiquer la liste à des contributeurs externes.
+Le bouton **Exporter vers Excel** dans la barre d'actions génère un fichier `.xlsx` listant les domaines actuellement filtrés (2 000 lignes au maximum) ; une fois le fichier prêt, cliquez sur le bouton **Télécharger** qui le remplace. Utile pour les audits du référentiel pédagogique ou pour communiquer la liste à des contributeurs externes.

@@ -18,7 +18,7 @@ Accédez à cette page via **Compte → Détails** depuis le menu de navigation.
 La page **Votre compte** est organisée en plusieurs **onglets** :
 
 - **Adresse** — coordonnées postales et fiscales de votre organisation (raison sociale, adresse, téléphone, numéro de TVA).
-- **Détails** — paramètres complémentaires : **logo** affiché sur les rapports, adresses RGPD et feedback, et selon votre profil, marque, commercial, devise et type de client.
+- **Détails** — paramètres complémentaires : **logo** affiché sur les rapports, adresses RGPD et feedback, langues, options de sécurité, et selon votre profil, marque, commercial, devise et type de client. Cet onglet est réservé aux administrateurs autorisés à modifier le compte.
 - **Packs** — liste des packs de crédits en cours, leur quantité et leur date d'expiration.
 - **API** — accès à l'API de la plateforme : paramètres d'authentification, identifiants de vos tests et documentation technique. Cet onglet n'apparaît que sur **votre propre compte**.
 - **Supprimer votre compte** — pour l'administrateur principal, lorsque le compte compte plusieurs administrateurs.
@@ -35,8 +35,8 @@ La page **Votre compte** est organisée en plusieurs **onglets** :
 
     - **Raison sociale** — nom légal de votre organisation.
     - **Adresse**, **Code postal**, **Ville**, **Pays** — adresse postale principale.
-    - **Téléphone** — numéro de téléphone de contact.
-    - **Numéro de TVA intracommunautaire** — utilisé pour la facturation des comptes européens.
+    - **Téléphone** — numéro de téléphone de contact. Le champ est précédé d'un sélecteur de pays (drapeau et indicatif), présélectionné d'après le pays du compte ; le numéro est contrôlé selon le pays choisi et enregistré au format international.
+    - **Numéro de TVA intracommunautaire** — utilisé pour la facturation des comptes européens. Il n'est affiché que s'il est renseigné sur votre compte, et n'est pas modifiable : contactez votre interlocuteur Isograd pour le corriger.
 
 3. Cliquez sur **Enregistrer** en haut à droite. Les modifications sont enregistrées immédiatement.
 
@@ -46,9 +46,19 @@ L'onglet **Détails** permet de personnaliser plusieurs éléments visibles dans
 
 ![Onglet "Détails"](img/03-onglet-details.png)
 
-- **Logo** — image (JPG ou PNG) qui apparaîtra sur les **rapports de test** envoyés aux candidats. Faites défiler la page jusqu'au bouton **Téléchargement logo**, cliquez pour ouvrir la fenêtre d'envoi, sélectionnez votre fichier et validez.
+- **Logo** — image (JPG ou PNG) qui apparaîtra sur les **rapports de test** envoyés aux candidats. Faites défiler la page jusqu'au bouton **Téléchargement logo (jpg ou png)**, cliquez pour ouvrir la fenêtre d'envoi, sélectionnez votre fichier et validez.
 - **Adresse mail pour les messages de feedback** — adresse de contact lorsque le candidat utilise le formulaire de feedback dans la plateforme.
 - **Adresse mail pour le droit de rectification RGPD** — adresse à laquelle vos candidats peuvent demander la rectification ou la suppression de leurs données personnelles. Apparaît dans la mention légale RGPD au pied de vos emails.
+
+Le même onglet regroupe plusieurs réglages du compte :
+
+- **Langages du compte** — les langues utilisées sur votre compte (sélection multiple).
+- **Utiliser un identifiant externe** — active l'identifiant externe des candidats, qui apparaît alors dans l'en-tête des résultats et dans l'export Excel des résultats.
+- **Activer l'authentification à deux facteurs** — active la double authentification pour les administrateurs du compte.
+- **Forcer la mise à jour du mot de passe des administrateurs tous les 6 mois**.
+- **Proposer de notifier le candidat par email en cas d'annulation du test**.
+- **Durée de rétention des données (en années)** — la durée de conservation des données de votre compte, à choisir dans la liste.
+- **Token Compilatio (facultatif)** — à renseigner si vous disposez d'un abonnement Compilatio pour la détection de plagiat.
 
 > 💡 **Champs distributeurs** — Si vous voyez sur cet onglet des champs comme **Marque**, **Commercial**, **Devise**, **Type de contrat**, **Type de client** ou **Centre agréé**, ou un onglet supplémentaire **Tests utilisés & autres options**, cela signifie que votre compte est de type distributeur ou centre agréé. Ces champs ne sont **pas modifiables par vous** ; ils sont gérés par votre interlocuteur Isograd.
 
@@ -59,13 +69,17 @@ L'onglet **Détails** permet de personnaliser plusieurs éléments visibles dans
 
 L'onglet **API** regroupe ce qu'il faut pour connecter votre système d'information (LMS, SIRH, outil de recrutement) à la plateforme :
 
-- **Afficher les paramètres d'authentification** — ouvre une fenêtre avec votre **Client ID** et votre **Client Secret**, à copier dans votre intégration. Le secret est masqué par défaut ; l'icône œil l'affiche et l'icône copier le place dans le presse-papiers. Les identifiants sont générés à la première ouverture.
+![Onglet "API"](img/06-onglet-api.png)
+
+- **Afficher les paramètres d'authentification** — ouvre la fenêtre **Paramètres de l'API** avec votre **Client ID** et votre **Client Secret**, à copier dans votre intégration. Le secret est masqué par défaut ; l'icône œil l'affiche et l'icône copier le place dans le presse-papiers. Les identifiants sont générés à la première ouverture. Ce bouton est réservé aux administrateurs autorisés à modifier le compte.
 - **Afficher les identifiants de tests pour l'API** — ouvre la liste des tests de votre compte avec l'identifiant à utiliser dans les appels d'inscription.
 - **Voir la documentation technique de l'API** — ouvre la documentation développeur dans un nouvel onglet.
 
 > ⚠️ **Client Secret** — Le secret donne accès à vos données candidats : ne le communiquez qu'à l'équipe technique qui réalise l'intégration et ne l'insérez jamais dans un document partagé.
 
 > 💡 **API non incluse** — Si votre abonnement n'inclut pas l'accès à l'API, l'onglet affiche uniquement un message l'indiquant ; contactez votre interlocuteur Isograd pour l'activer.
+
+> 💡 **Token d'accès personnel** — Un administrateur disposant du privilège **Accès API** peut aussi appeler l'API avec ses propres droits (privilèges et groupes), sans utiliser les identifiants du compte. Dans **Compte → Administrateurs**, ouvrez votre propre ligne en édition : la section **Token d'accès à l'API**, sous le formulaire, indique le nombre de **tokens actifs** et propose **Générer un token** et **Révoquer tous mes tokens**. Le token généré est valable un an et n'est affiché qu'une seule fois : copiez-le aussitôt.
 
 
 ## Packs et crédits {#packs-et-credits}
@@ -87,9 +101,9 @@ Le commutateur **Masquer les packs vides et expirés** en haut du tableau permet
 
 ### Acheter des crédits supplémentaires
 
-Pour commander de nouveaux crédits, utilisez le bouton **Acheter des crédits de test** (visible selon votre type de contrat) ou contactez directement votre interlocuteur Isograd. Les packs achetés apparaissent automatiquement dans le tableau dès qu'ils sont mis en place sur votre compte.
+Pour commander de nouveaux crédits, utilisez le bouton **Acheter des crédits de test** sous le tableau (visible selon votre type de contrat ; il s'intitule **S'abonner** pour les comptes sur abonnement) ou contactez directement votre interlocuteur Isograd. Les packs achetés apparaissent automatiquement dans le tableau dès qu'ils sont mis en place sur votre compte.
 
-> 💡 **Compte sans pack** — Si vous n'avez encore aucun pack, la plateforme affiche simplement *« Vous n'avez aucun pack de crédit en cours. »*
+> 💡 **Compte sans pack** — Si vous n'avez encore aucun pack, la plateforme affiche simplement *« Pas de pack valide. »*
 
 ### Consulter le détail de la consommation
 
@@ -119,7 +133,7 @@ Chaque alerte est activable indépendamment via son **commutateur** dédié. Pou
     - Le **destinataire** (adresse email) qui recevra l'alerte.
     - Pour l'**Alerte de nombre de crédits** uniquement : le **seuil** en nombre de crédits. Vous recevrez l'alerte dès que votre stock passe sous cette valeur.
 
-3. Cliquez sur **Enregistrer** en haut à droite. La configuration est mise en place ; aucune action complémentaire n'est requise — la plateforme déclenchera l'envoi automatiquement quand les conditions seront remplies.
+3. Cliquez sur **Enregistrer**. La configuration est mise en place ; aucune action complémentaire n'est requise — la plateforme déclenchera l'envoi automatiquement quand les conditions seront remplies.
 
 > 💡 **Recommandé** — Activez **au moins l'alerte d'expiration** et **l'alerte de seuil** pour éviter les mauvaises surprises (crédits expirés non utilisés, ou impossibilité d'inscrire un nouveau candidat parce que le compteur est tombé à zéro). L'alerte mensuelle est utile pour les comptes à fort volume.
 

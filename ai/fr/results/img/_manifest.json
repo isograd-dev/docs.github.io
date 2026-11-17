@@ -1,7 +1,7 @@
 {
   "chapter": "results",
-  "generated_at": "2026-10-09T16:52:52.590Z",
-  "base_url": "https://appdev.isograd.com",
+  "generated_at": "2026-11-17T14:58:42.728Z",
+  "base_url": "https://test.isograd.com",
   "captures": [
     {
       "name": "01-liste-resultats.png",
@@ -11,15 +11,16 @@
     },
     {
       "name": "02-filtres.png",
-      "caption": "Panneau de filtres (capture pleine page).",
-      "kind": "viewport-1440x720",
+      "caption": "Panneau de filtres — Rechercher, Statut de test, Type de test, Groupe, Session, Inclure groupes archivés.",
+      "kind": "element",
+      "selector": ".vertical-filters .card-body",
       "url": "https://test.isograd.com/clientadmin/AdminResultsWithTable?filter_rows_per_page=50&filter_search=&filter_dep_id=-1&filter_sta_id=-1&filter_typ_id=-1&filter_ses_id=-1&filter_from=&filter_to=&changepage=1&orderby=c.com_dat+DESC&export_to_excel=0"
     },
     {
       "name": "03-detail-resultat.png",
       "caption": "Page Analyse d'un résultat — score global, distribution par compétence, détail par question.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/clientadmin/clientresult/AdaptiveClientResult?pla_tst_id=8708050&returnpage=null"
+      "url": "https://test.isograd.com/clientadmin/clientresult/AdaptiveClientResult?pla_tst_id=6372825&returnpage=null"
     },
     {
       "name": "04-modal-rapport-groupe.png",

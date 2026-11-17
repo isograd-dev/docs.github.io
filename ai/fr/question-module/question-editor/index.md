@@ -66,7 +66,7 @@ La section **Question et réponses** est organisée en onglets propres au conten
 
 Deux boutons d'aide en haut à droite de cette section :
 
-- **Historique** (icône horloge) — historique des modifications de la question.
+- **Version(s) précédente(s)** (icône horloge) — liste les versions précédentes du contenu de la question ; choisissez-en une puis cliquez sur **Charger cette version** pour la recharger dans l'éditeur.
 - **Aide sur les balises** — référence des balises de mise en forme disponibles dans l'éditeur.
 
 > 💡 **Onglet Description YML** — Une vue YAML brute de la question existe pour quelques types de réponse (par exemple Trier). Pour les autres types elle n'est pas affichée : utilisez **Exporter en YML** sur la page Questions pour obtenir le YAML de vos questions.
@@ -182,9 +182,10 @@ Le type **QCM texte** est le type le plus utilisé sur la plateforme. Le candida
 
 L'éditeur QCM expose une liste de propositions, chacune avec :
 
-- Un champ **texte de la proposition**.
-- Une case à cocher **Correcte** indiquant si la proposition est une bonne réponse.
-- Un bouton **Supprimer cette proposition**.
+- Son **numéro** et, juste à côté, une **case à cocher** : cochez-la si la proposition est une bonne réponse.
+- Un sélecteur **Texte** / **Image** : une proposition est soit un texte, soit une image. En mode *Image*, un bouton d'import apparaît pour choisir le fichier (image de moins de 1200 px de large), dont l'aperçu s'affiche sur la ligne.
+- Le champ de **texte de la proposition**.
+- Une icône **corbeille** qui supprime la proposition.
 
 Un bouton **Ajouter une réponse** en bas de la liste permet d'étendre le nombre d'options (5 est le standard recommandé).
 
@@ -205,10 +206,10 @@ Le type **Échelle** présente au candidat une question accompagnée d'une **éc
 
 ### Édition
 
-- **Sélectionnez l'échelle** dans la liste déroulante (voir [Échelles de réponse](/ai/fr/question-module/answer-scales/) pour gérer les échelles disponibles).
-- L'éditeur affiche les options de l'échelle sélectionnée et vous laisse cocher la **bonne réponse** (une seule case cochée). Pour ajouter une nouvelle échelle, allez dans le menu **Questions → Echelles de réponses**, puis **Ajouter une échelle de réponses**.
+- **Sélectionnez l'échelle** dans la liste déroulante **Echelle de réponse**, affichée lorsque le **Type de QCM** est le type échelle (voir [Échelles de réponse](/ai/fr/question-module/answer-scales/) pour gérer les échelles disponibles).
+- Chaque ligne de réponse est une affirmation soumise au candidat, qui y répond avec les valeurs de l'échelle. À la place de la case à cocher des QCM, chaque ligne porte une liste déroulante des valeurs de l'échelle : choisissez-y la **valeur attendue** pour cette ligne. Pour ajouter une nouvelle échelle, allez dans le menu **Questions → Echelles de réponses**, puis **Ajouter une échelle de réponses**.
 
-> 💡 Pour les questions où la notion de bonne ou de mauvaise réponse n'existe pas, cochez l'option **Pas de notion de bonne réponse (formulaire, test de personnalité...)**.
+> 💡 Pour les questions où la notion de bonne ou de mauvaise réponse n'existe pas, cochez l'option **Pas de notion de bonne réponse (formulaire, test de personnalité...)** : les listes de valeur attendue sont alors masquées.
 
 
 ## Zones de texte à correction automatique {#texte-a-trous}
@@ -342,10 +343,10 @@ Le sélecteur **Type de réponse attendue** fixe ce que le candidat remet :
 
 | Type de réponse attendue | Ce que fait le candidat | Réglages |
 |---|---|---|
-| **Saisir un ou plusieurs textes** (par défaut) | Il répond dans une ou plusieurs zones de saisie. | **Ajouter une zone de saisie** crée une zone (nom, champ d'une ligne ou zone de texte, texte d'exemple). **Utiliser un éditeur de texte enrichi pour les zones de texte** donne au candidat une barre de mise en forme. |
+| **Texte** (par défaut) | Il répond dans une ou plusieurs zones de saisie. | **Ajouter une zone de saisie** crée une zone : son nom, son type (**Champ sur une ligne** ou **Zone de texte multiligne**), un texte d'exemple et, au besoin, un style CSS complémentaire. **Utiliser un éditeur de texte enrichi pour les zones de texte** donne au candidat une barre de mise en forme. |
 | **Soumettre un ou plusieurs fichiers** | Il dépose un fichier par emplacement prévu. | **Ajouter un fichier à soumettre** crée un emplacement, avec une **description** (affichée au candidat s'il doit déposer plusieurs fichiers) et les **extensions autorisées**, séparées par des virgules. Les deux champs sont obligatoires. |
-| **Enregistrer un audio** | Il s'enregistre depuis la page de la question. | — |
-| **Enregistrer une vidéo** | Il se filme depuis la page de la question. | — |
+| **Enregistrer un audio** | Il s'enregistre depuis la page de la question. | **Autoriser plusieurs enregistrements de l'audio** et **Durée maximale (en secondes)** de l'enregistrement (facultative). |
+| **Enregistrer une vidéo** | Il se filme depuis la page de la question. | **Durée maximale (en secondes)** de l'enregistrement (facultative). |
 
 > 💡 **Privilégiez le PDF** — Pour une soumission de fichier, demandez un **PDF** : le correcteur pourra annoter la copie et s'appuyer sur l'assistance de l'IA lors de la correction.
 
@@ -385,9 +386,9 @@ Les types **Test de saisie** et **Test de saisie avec correction** évaluent la 
 
 ### Édition
 
-- Saisissez le **texte de référence** que le candidat devra recopier.
-- Configurez la **durée du test** (en secondes).
-- Le score est calculé à partir du nombre de caractères corrects par minute, avec une pénalité pour les erreurs.
+- L'onglet **Enoncé de la question** contient la **consigne** affichée au candidat au-dessus du texte à recopier.
+- La **durée du test** est le **Temps alloué** de la question (en secondes), dans la section **Caractéristiques générales**.
+- Le score combine la **précision** (part des caractères correctement saisis) et la **vitesse** (caractères saisis par minute) : une frappe à 275 caractères par minute avec 97 % de précision obtient le score maximal.
 
 La variante **avec correction** permet au candidat de **revenir en arrière et corriger** ses erreurs ; sans correction, chaque frappe est définitive.
 

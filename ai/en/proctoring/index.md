@@ -23,7 +23,7 @@ Open this page through the **Proctoring → Proctoring profiles** menu.
 
 ![Page "Proctoring profiles management"](img/01-page-profils.png)
 
-The page lists your existing profiles. If your account is new and has no profile defined yet, you will simply see *"You have not yet created a proctoring profile."*. Each row shows the **name** of the profile and a **Default** marker for the profile used when none is explicitly chosen. Each row also shows the profile's **Identifier (API / LTI)**, used to designate the profile from an integration, and a search field filters the list.
+The page lists your existing profiles. If your account is new and has no profile defined yet, you will simply see *"You have not created any proctoring profiles yet."*. Each row shows the **name** of the profile and a **Default** marker for the profile used when none is explicitly chosen. Each row also shows the profile's **Identifier (API / LTI)**, used to designate the profile from an integration, and a search field filters the list.
 
 ### Create a proctoring profile
 
@@ -141,14 +141,16 @@ The filter panel lets you target:
 
 The action buttons at the end of each row depend on the proctoring type and status:
 
-- **Show the photos taken during the test** (camera icon) — opens the test's review, organised in tabs: **Photos**, **Test video**, **Screenshots**, **Test interruptions** and **Identity document**, depending on what the profile recorded. In the image tabs, the **Show only suspicious images** toggle filters the captures where AI has detected an anomaly; the **Reasons flagged by the AI** block then lists the detected reasons, most frequent first, with their number of occurrences (face barely visible, second device or screen, document within reach, conversation with a third party, earphones, another person present, another tab visible, screen-sharing or remote-control software…). Click a reason to show only the images flagged for that reason; click again to show them all.
+- **Display proctoring pictures** (camera icon) — opens the test's review, whose title recalls the candidate's name, organised in tabs: **Pictures taken during the test**, **Video of the test**, **Screen captures**, **Test interruptions** and **ID document**. If the proctoring profile of the test did not ask for screen captures or for an ID document, the corresponding tab is greyed out: it remains clickable and then says that no screen recording, or no ID document, was required by the profile. In the image tabs, the **Display only suspicious images** toggle filters the captures where AI has detected an anomaly; the **Reasons flagged by the AI** block then lists the detected reasons, most frequent first, with their number of occurrences (face barely visible, second device or screen, document within reach, conversation with a third party, earphones, another person present, another tab visible, screen-sharing or remote-control software…). Click a reason to show only the images flagged for that reason; click again to show them all.
 
     <!-- Capture to regenerate (requires a proctored test with photos on the environment):
     ![Photos taken during the test](img/04-modal-photos.png) -->
 
-- **Show the ID document** (silhouette icon) — displays the photo of the ID document provided by the candidate at start.
-- **Protocol review comment** (magnifier icon), depending on the proctoring type — for tests with an **incident**, this window details each incident, its nature, and offers a field to record the proctor's explanation or to ask the candidate for further information.
+- **Display ID document** (silhouette icon) — displays the photo of the ID document provided by the candidate at start.
+- **Exam protocol review comment** (magnifier icon), depending on the proctoring type — for tests with an **incident**, this window details each incident, its nature, and offers a field to record the proctor's explanation or to ask the candidate for further information.
 - **Chat log** (speech-bubbles icon) — on tests taken in a [live-proctored](#live-proctoring) session: displays the thread of messages exchanged between the candidate and the proctors, with audio listenings and conversations. The proctors' reports (*Reported by*) and these exchanges also appear in the **Test interruptions** tab of the review.
+
+> ⚠️ **AI analysis not available** — In the **Validation status** column, a warning icon next to the status signals that the AI analysis of the recordings has not been performed yet, is in progress or failed; a struck-out camera signals that no video recording was found for the test. The same message is shown at the top of the test's review; after a failure, the **Relaunch the analysis** button is offered there to administrators allowed to validate tests. In all these cases, no image has been flagged automatically: the absence of suspicious images proves nothing, review the recordings yourself.
 
 ### Validate or invalidate a test
 
@@ -157,7 +159,7 @@ Once the review is done, you make the call:
 - **Validate** (green ✓ icon) — the test is compliant. The candidate's result is finalised and the diplomas/reports are issued.
 - **Invalidate** (red ✗ icon) — the test is not compliant (cheating detected, condition not met). The result is marked invalid; no diploma is issued.
 
-For a **bulk action**, select several tests using the checkboxes at the start of the row, then use the **Validate the selected exams** or **Invalidate the selected exams** buttons in the action bar.
+For a **bulk action**, select several tests using the checkboxes at the start of the row, then use the **Validate selected exams** or **Invalidate selected exams** buttons in the action bar.
 
 ### Validation statuses
 
@@ -173,9 +175,9 @@ For a **bulk action**, select several tests using the checkboxes at the start of
 
 For certifications with an incident, you can ask the candidate to **justify the incident**:
 
-1. On the row, click on the **Send an ID document request** icon (or the equivalent for an incident).
+1. On the row, click on the **Send an ID request** icon (or the equivalent for an incident).
 2. The candidate receives an email inviting them to provide the explanation in their candidate area.
-3. Once their response is submitted, the status moves to **Detail under review** and you can consult it in the **Protocol review comment** window.
+3. Once their response is submitted, the status moves to **Detail under review** and you can consult it in the **Exam protocol review comment** window.
 
 > 💡 **Validation best practices** — For official certifications, be strict about incidents (exit from full screen > 60 seconds, presence of a second person in the captures). For internal corporate evaluations, you can be more lenient — proctoring remains a deterrent as much as a punitive tool.
 

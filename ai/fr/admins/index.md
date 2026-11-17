@@ -44,8 +44,9 @@ Remplissez les champs :
 - **Civilité** — Monsieur / Madame.
 - **Nom** — nom de famille.
 - **Prénom** — prénom.
-- **Adresse email** — sert à la fois d'identifiant de connexion et d'adresse de notification. Doit être unique sur la plateforme.
+- **Adresse mail** — sert à la fois d'identifiant de connexion et d'adresse de notification. Doit être unique sur la plateforme.
 - **Langue** — langue de l'interface pour cet administrateur. Les emails système (réinitialisation de mot de passe, etc.) sont aussi envoyés dans cette langue.
+- **Commentaire** — note libre, facultative.
 
 Cliquez sur **Enregistrer** pour valider la création. Le nouvel administrateur apparaît immédiatement dans le tableau.
 
@@ -58,15 +59,30 @@ Cliquez sur **Enregistrer** pour valider la création. Le nouvel administrateur 
 
     ![Boutons d'action en bout de ligne](img/06-row-actions.png)
 
-2. Cliquez sur l'icône **Modifier** (crayon) en bout de ligne. La fenêtre de modification s'ouvre.
+2. Cliquez sur l'icône **Editer** (crayon) en bout de ligne. La fenêtre **Modifier un administrateur** s'ouvre.
 
     ![Fenêtre de modification](img/04-modal-modification.png)
 
-3. Modifiez les champs souhaités (civilité, nom, prénom, adresse email, langue d'interface).
+3. Modifiez les champs souhaités (civilité, nom, prénom, adresse mail, langue d'interface, commentaire).
 
 4. Cliquez sur **Enregistrer**. Les changements sont appliqués immédiatement.
 
-> 💡 **Changer sa propre langue d'interface** — Cette même fenêtre vous permet de modifier votre **propre** langue : repérez votre ligne dans le tableau et cliquez sur l'icône **Modifier**. Après enregistrement, **reconnectez-vous** pour que le changement prenne effet (la langue est mise en cache dans la session au moment de la connexion).
+> 💡 **Changer sa propre langue d'interface** — Cette même fenêtre vous permet de modifier votre **propre** langue : repérez votre ligne dans le tableau et cliquez sur l'icône **Editer** — elle est disponible sur votre propre ligne même si vous n'avez pas le droit de modifier les autres administrateurs. Après enregistrement, **reconnectez-vous** pour que le changement prenne effet (la langue est mise en cache dans la session au moment de la connexion).
+
+
+## Générer un token d'accès à l'API {#token-api}
+
+Un administrateur disposant du privilège *Générer un token personnel d'accès à l'API* peut créer lui-même un **token personnel** pour appeler l'API de la plateforme avec ses propres droits (privilèges et groupes). Chaque administrateur gère uniquement ses propres tokens : la section n'apparaît jamais lorsque vous modifiez un autre administrateur.
+
+1. Sur la page **Gestion des administrateurs**, repérez **votre propre ligne** et cliquez sur l'icône **Editer**.
+2. Sous le formulaire, la section **Token d'accès à l'API** indique le nombre de **Tokens actifs** et, s'il y en a, la date de **Prochaine expiration**.
+3. Cliquez sur **Générer un token**. Le token s'affiche dans un champ en lecture seule, avec sa date d'expiration ; le bouton **Copier** le place dans le presse-papiers. Il n'est pas nécessaire d'enregistrer le formulaire : le token est actif dès sa génération.
+
+> ⚠️ **Affiché une seule fois** — Copiez le token immédiatement : il n'est stocké nulle part et ne pourra plus être réaffiché. S'il est perdu, générez-en un nouveau.
+
+Un token est valable **un an**. Il est vérifié à chaque appel et refusé si vous perdez le privilège, si votre compte est désactivé ou si vous révoquez vos tokens. Vous pouvez générer plusieurs tokens ; ils restent tous actifs jusqu'à leur expiration ou leur révocation.
+
+Pour invalider vos tokens, cliquez sur **Révoquer tous mes tokens** puis confirmez : tous vos tokens sont immédiatement refusés. Le bouton est grisé tant que vous n'avez aucun token actif.
 
 
 ## Modifier les privilèges {#modifier-les-privileges}
@@ -79,7 +95,7 @@ Les **privilèges** sont des droits fins (lecture, écriture, suppression) sur l
 
     ![Fenêtre de modification des privilèges](img/05-modal-privileges.png)
 
-2. La fenêtre affiche les privilèges **regroupés par catégorie** (Candidats, Sessions, Emails, Résultats, etc.). Pour chaque privilège, une case à cocher indique si l'administrateur le possède.
+2. La fenêtre **Gestion des privilèges** affiche les privilèges **par catégorie** : choisissez la catégorie dans la liste **Types de privilèges** pour afficher ses privilèges. Pour chaque privilège, une case à cocher indique si l'administrateur le possède. Un privilège requis par un autre privilège coché est coché automatiquement et ne peut pas être décoché.
 
 3. Cochez ou décochez les privilèges souhaités.
 
@@ -110,9 +126,8 @@ La désactivation **empêche un administrateur de se connecter**, sans supprimer
 
 ### Désactiver
 
-1. Sur la ligne de l'administrateur, cliquez sur l'icône **Désactiver** (cadenas fermé).
-2. Confirmez l'action.
-3. L'icône **Désactiver** est remplacée par une icône **Débloquer** (cadenas ouvert), signalant que le compte est désormais bloqué.
+1. Sur la ligne de l'administrateur, cliquez sur l'icône **Désactiver** (cadenas fermé). La désactivation est immédiate, sans demande de confirmation, et la page se recharge.
+2. L'icône **Désactiver** est remplacée par une icône **Débloquer** (cadenas ouvert), signalant que le compte est désormais bloqué.
 
 ### Débloquer
 
@@ -128,9 +143,8 @@ La désactivation **empêche un administrateur de se connecter**, sans supprimer
 
 Si l'authentification à deux facteurs (2FA) est activée sur le compte et qu'un administrateur a perdu l'accès à son application d'authentification, vous pouvez **réinitialiser son 2FA** pour qu'il le reconfigure à sa prochaine connexion.
 
-1. Sur la ligne de l'administrateur, cliquez sur l'icône **Réinitialiser le 2FA** (icône clé).
-2. Confirmez l'action.
-3. À sa prochaine connexion, l'administrateur sera invité à re-scanner un QR code et à reconfigurer son application d'authentification.
+1. Sur la ligne de l'administrateur, cliquez sur l'icône **Réinitialiser le 2FA** (icône clé). La réinitialisation est immédiate, sans demande de confirmation ; un message la confirme.
+2. À sa prochaine connexion, l'administrateur sera invité à re-scanner un QR code et à reconfigurer son application d'authentification.
 
 > 💡 **Disponibilité** — L'icône **Réinitialiser le 2FA** n'apparaît que si l'authentification à deux facteurs est activée pour votre compte. Si vous ne la voyez pas, c'est que le compte ne l'utilise pas — il n'y a alors rien à réinitialiser.
 

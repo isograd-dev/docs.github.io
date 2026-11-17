@@ -10,7 +10,7 @@ Scales let you **standardise** the answer options of a family of questions witho
 
 Open the page through the menu **Items → Response scales**.
 
-![Answer scales management page](img/01-liste-echelles.png)
+![Answer scale management page](img/01-liste-echelles.png)
 
 The table lists every defined scale, with its **identifier** and the list of its **values** (the options in order, in your interface language).
 
@@ -19,7 +19,7 @@ The table lists every defined scale, with its **identifier** and the list of its
 
 Creation is performed entirely **inside a dialog** — there is no dedicated edit page.
 
-1. From the **Answer scales management** page, click **Add a response scale** in the action bar.
+1. From the **Answer scale management** page, click **Add a response scale** in the action bar.
 
     ![Scale creation dialog](img/02-modal-creation.png)
 
@@ -33,7 +33,7 @@ Creation is performed entirely **inside a dialog** — there is no dedicated edi
 
 4. Click **Save**. The scale appears immediately in the list.
 
-> 💡 **Minimum number of options** — A scale must have at least **two values filled in, in at least one language**, to be valid (a scale with a single value makes no sense). The platform blocks saving below this threshold.
+> 💡 **Minimum number of options** — A scale must have at least **two values filled in, in at least one language**, to be valid (a scale with a single value makes no sense). Below this threshold, the platform blocks saving and shows the message "Please fill in at least two values in at least one language.".
 
 
 ## Reorder options {#reorder-options}
@@ -81,7 +81,7 @@ Column sorting is available by clicking the headers.
 1. On the scale's row, click the **Delete** icon.
 2. Confirm in the dialog that appears.
 
-> ⚠️ **Scale in use** — A scale referenced by at least one question **cannot be deleted**. The platform refuses the operation with a message listing the identifiers of the questions concerned. To delete a widely used scale:
+> ⚠️ **Scale in use** — A scale referenced by at least one question **cannot be deleted**. The platform refuses the operation with a message listing the identifiers of the questions concerned (the first ten at most). To delete a widely used scale:
 >
 > 1. Open the questions listed in the message from the Questions page.
 > 2. Edit those questions to point to another scale, or delete them.

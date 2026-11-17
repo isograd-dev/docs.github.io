@@ -1,26 +1,26 @@
 {
   "chapter": "question-module/visual-aids",
-  "generated_at": "2026-10-09T17:46:48.479Z",
-  "base_url": "https://appdev.isograd.com",
+  "generated_at": "2026-11-17T14:55:13.681Z",
+  "base_url": "https://pedagogy.isograd.com",
   "captures": [
     {
       "name": "01-liste-aides.png",
       "caption": "Page \"Gestion des aides visuelles\" — tableau Sujet / Langue / Type / Nom / Contenu, bouton \"Ajouter une aide visuelle\".",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/visualaid/AdminVisualAidsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_sbj_ids%5B%5D=-1&filter_lan_id=-1&filter_typ_id=-1&changepage=1&orderby=a.uid+ASC&export_to_excel=0"
+      "url": "https://pedagogy.isograd.com/visualaid/AdminVisualAidsWithTable?filter_search=&filter_sbj_ids%5B%5D=-1&filter_lan_id=-1&filter_typ_id=-1&changepage=1&orderby=a.uid+ASC&export_to_excel=0"
     },
     {
       "name": "02-modal-creation.png",
       "caption": "Modal de création — sélection de la langue et du sujet.",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/visualaid/AdminVisualAidsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_sbj_ids%5B%5D=-1&filter_lan_id=-1&filter_typ_id=-1&changepage=1&orderby=a.uid+ASC&export_to_excel=0"
+      "url": "https://pedagogy.isograd.com/visualaid/AdminVisualAidsWithTable?filter_search=&filter_sbj_ids%5B%5D=-1&filter_lan_id=-1&filter_typ_id=-1&changepage=1&orderby=a.uid+ASC&export_to_excel=0"
     },
     {
       "name": "03-fiche-aide.png",
       "caption": "Fiche d'édition — champs Nom et Type éditables, Sujet/Langue verrouillés, zone de dépôt de fichier.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/visualaid/VisualAidUpdate?vis_aid_uid=4ecb83c9-9a3c-4617-a336-54862e6076c6"
+      "url": "https://pedagogy.isograd.com/visualaid/VisualAidUpdate?vis_aid_uid=c0d66689-ef7a-4332-832a-55153ae90f24"
     }
   ]
 }

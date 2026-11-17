@@ -16,7 +16,7 @@ Accédez à la page via le menu **Aides visuelles**.
 
 ![Page "Gestion des aides visuelles"](img/01-liste-aides.png)
 
-Le tableau liste toutes les aides visuelles, avec leur **sujet**, leur **langue**, leur **type**, leur **nom** et un aperçu de leur **contenu** lorsqu'il s'agit d'une image.
+Le tableau liste toutes les aides visuelles, avec leur **sujet**, leur **langue**, leur **type**, leur **nom** et un aperçu de leur **contenu** lorsqu'il s'agit d'une image. Un administrateur qui ne dispose pas du privilège de voir tous les sujets n'y trouve que les aides des sujets sur lesquels il est habilité, ainsi que les aides sans sujet (claviers).
 
 
 ## Formats de fichier acceptés {#formats-acceptes}
@@ -72,20 +72,20 @@ Sur la fiche d'édition, l'écran est divisé en deux colonnes :
 
 **Colonne de droite — Contenu** :
 
-Une zone de dépôt indique *« Déposez ici l'image ou le document PDF »* / *« Cliquez ici pour sélectionner un fichier sur votre ordinateur »*.
+Une zone de dépôt indique *« Déposez ici l'image ou le document PDF »* / *« Cliquez pour sélectionner un fichier sur votre ordinateur »*.
 
 - **Glissez-déposez** le fichier dans la zone, ou
 - **Cliquez** sur la zone pour ouvrir le sélecteur de fichier de votre système.
 
-Le **nom** et le **type** doivent être renseignés avant le téléversement. Une fois le fichier choisi, l'envoi démarre automatiquement. Si l'extension est valide, l'aperçu apparaît dans la zone :
+Le **nom** et le **type** doivent être renseignés avant le téléversement, faute de quoi la plateforme affiche le message « Avant de charger le fichier vous devez d'abord remplir le nom et le type de l'aide visuelle. » ; s'ils n'avaient pas encore été enregistrés, ils le sont au moment de l'envoi. Une fois le fichier choisi, l'envoi démarre automatiquement. Si l'extension est valide, l'aperçu remplace la zone de dépôt :
 
 - Pour une **image**, vous voyez la vignette.
 - Pour un **PDF**, un aperçu intégré.
-- Pour les autres formats (Office, archive…), seul un lien de téléchargement est affiché.
+- Pour les autres formats (Office, archive…), seul un lien **Visualiser le fichier** est affiché ; il ouvre le fichier dans un nouvel onglet.
 
 Un bouton **Supprimer le contenu** sous l'aperçu retire le fichier tout en conservant l'enregistrement.
 
-> 💡 **Remplacer un fichier** — Déposez simplement un nouveau fichier dans la zone : il remplace l'ancien. La nouvelle version est immédiatement disponible pour toutes les questions qui référencent cette aide.
+> 💡 **Remplacer un fichier** — Tant qu'un fichier est présent, l'aperçu occupe la place de la zone de dépôt. Cliquez sur **Supprimer le contenu** pour faire réapparaître la zone, puis déposez le nouveau fichier : avec le même nom, le même type et la même extension, il est stocké sous le même nom de fichier que l'ancien. Attention : **Supprimer le contenu** retire le fichier immédiatement, sans confirmation, même si des questions utilisent l'aide — déposez le fichier de remplacement sans attendre.
 
 
 ## Utiliser une aide visuelle dans une question {#utiliser-dans-une-question}
@@ -110,7 +110,7 @@ Le panneau **Filtres** propose :
 - **Langue** — langue de l'aide.
 - **Type** — Image, Image avec loupe, Document de référence, Clavier.
 
-Le tri est disponible sur chaque colonne.
+Le tri est disponible sur chaque colonne, à l'exception de **Contenu**.
 
 
 ## Supprimer une aide visuelle {#supprimer-une-aide}
@@ -118,7 +118,7 @@ Le tri est disponible sur chaque colonne.
 1. Sur la ligne de l'aide, cliquez sur l'icône **Supprimer**.
 2. Confirmez sur la page qui s'ouvre.
 
-> ⚠️ **Aide référencée par des questions** — Si l'aide visuelle est référencée dans le texte, les réponses ou les paramètres spécifiques d'**au moins une question**, la suppression est **refusée** avec le message « Impossible de supprimer une aide visuelle utilisée dans des questions ». Avant suppression :
+> ⚠️ **Aide référencée par des questions** — Si l'aide visuelle est référencée dans le texte, les réponses ou les paramètres spécifiques d'**au moins une question**, la suppression est **refusée** avec le message « Impossible de supprimer une aide visuelle utilisée dans des questions. ». Avant suppression :
 >
 > 1. Identifiez les questions qui utilisent l'aide (listées sur sa fiche).
 > 2. Modifiez ces questions pour pointer vers une autre aide ou retirer la référence.

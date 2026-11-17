@@ -56,7 +56,7 @@ Plus bas :
 - **Sujets associés (laissez vide pour tous les sujets)** — sélection multiple. **Laissez vide** pour que le jeu soit utilisable sur **tous** les sujets ; choisissez des sujets pour le restreindre. Une question ne peut être ajoutée qu'à un jeu dont les sujets incluent celui de la question.
 - **Archivé** (Oui / Non) — un jeu archivé reste utilisable dans les tests existants mais n'apparaît plus dans la liste par défaut.
 - **Commentaire** — texte libre à usage interne, par exemple l'origine du jeu ou sa date de livraison.
-- **Attribuer ce jeu à des questions** — bouton affiché aux administrateurs principaux, voir [Ajouter des questions au jeu](#ajouter-des-questions).
+- **Attribuer ce jeu à des questions** — bouton affiché aux administrateurs disposant du privilège d'accès à **tous** les jeux de questions, voir [Ajouter des questions au jeu](#ajouter-des-questions).
 - **Afficher les questions utilisant ce jeu de questions** — lien ouvrant la page **Questions** pré-filtrée sur ce jeu, dans un nouvel onglet.
 
 ### Onglet « Administrateurs »
@@ -77,7 +77,7 @@ Vous n'apparaissez pas dans cette liste : le jeu reste visible pour vous tant qu
 Il existe deux façons de rattacher des questions à un jeu :
 
 - **Depuis l'éditeur de questions** — dans le volet **Classification** d'une question, choisissez le ou les jeux auxquels elle appartient dans le champ **Jeux de questions**. C'est la méthode courante.
-- **Depuis la fiche du jeu** (administrateurs principaux) — cliquez sur **Attribuer ce jeu à des questions**, collez les **identifiants des questions séparés par des espaces** dans la fenêtre, puis enregistrez. Chaque question doit appartenir à l'un des sujets du jeu, sinon la plateforme la refuse.
+- **Depuis la fiche du jeu** (administrateurs disposant du privilège d'accès à tous les jeux de questions) — cliquez sur **Attribuer ce jeu à des questions**, collez les **identifiants des questions séparés par des espaces** dans la fenêtre, puis enregistrez. Chaque question doit appartenir à l'un des sujets du jeu, sinon la plateforme la refuse.
 
 > 💡 **Vérifier le contenu d'un jeu** — Depuis la fiche du jeu, le lien **Afficher les questions utilisant ce jeu de questions** ouvre la page **Questions** pré-filtrée sur le jeu courant. C'est le moyen le plus rapide de voir d'un coup d'œil les questions qui le composent.
 
@@ -86,8 +86,8 @@ Il existe deux façons de rattacher des questions à un jeu :
 
 Le panneau **Filtres** propose :
 
-- **Rechercher** — texte libre sur le nom du jeu.
-- **Sujet** — restreint la liste aux jeux associés au(x) sujet(s) sélectionné(s).
+- **Rechercher** — texte libre sur le nom ou l'identifiant du jeu.
+- **Sujet** — restreint la liste aux jeux associés au(x) sujet(s) sélectionné(s) ; les jeux sans sujet associé (valables pour tous les sujets) restent affichés.
 - **Afficher les jeux de questions archivés** — commutateur, désactivé par défaut ; activez-le pour afficher les jeux marqués comme archivés.
 
 Le tri est disponible sur chaque colonne en cliquant sur l'en-tête.

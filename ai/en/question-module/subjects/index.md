@@ -64,11 +64,11 @@ The languages offered are those enabled for your account (see the *Account manag
 
 ### Initials
 
-The **Initials** field (two characters at most) defines the letters shown on the subject's coloured badge in lists and reports when no icon has been uploaded. Left empty, the platform uses the first two letters of the name.
+The **Initials** field defines the letters shown on the subject's coloured badge when no icon has been uploaded. Left empty, the platform uses the first two characters of the name.
 
 ### Subject icon
 
-The **Subject icon** block lets you upload an image (PNG, JPG, GIF or SVG) that replaces the initials badge everywhere the subject is displayed. Click **Upload** and pick the file; a preview appears once the upload is complete. Use the delete button next to the preview to remove the icon and go back to initials.
+The **Subject icon** block lets you upload an image (PNG, JPG, GIF or BMP) that replaces the initials badge everywhere the subject is displayed. Click **Upload**, pick the file in the window that opens, then click **Upload** again; a preview appears next to the button once the upload is complete. When the subject already has an icon when its form is opened, a **Delete** button is shown next to the **Upload** button: it removes the icon and goes back to initials.
 
 
 ## Level descriptions {#level-descriptions}
@@ -91,7 +91,6 @@ The **Authorized administrators** tab lists the administrators of your account w
 - Tick the box next to a name to **authorize** that administrator on the subject.
 - Untick to **revoke** their access.
 - Use the **Filter** field above the list to quickly find an administrator in a long list.
-- Administrators whose login has been disabled are shown greyed out.
 
 > 💡 **Editorial segmentation** — This feature is useful when you have several authoring teams: each team sees only its own subjects. Main administrators and administrators holding the "all subjects" privilege are not listed here because they always see every subject.
 

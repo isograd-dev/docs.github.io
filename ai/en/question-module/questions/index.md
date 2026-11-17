@@ -50,18 +50,25 @@ The **Filters** panel is very comprehensive — it is the main tool for explorin
 
 - **Bookmarks** — selector of saved filter combinations, see [Bookmarks](#search-favorites).
 - **Search** — free text (on the question ID, the title, or content fragments).
-- **Subject** — multi-select. Restrict to one or more subjects.
+- **Subject** — multi-select. Restrict to one or more subjects. Selecting a subject reveals two extra filters, **Test** and **Domains** — see [Subject-dependent filters](#subject-dependent-filters).
 - **Language** — the question's language.
-- **Question set** — multi-select. The badge next to the field toggles between **(OR)** (questions in any selected set) and **(AND)** (questions in all of them).
-- **Answer type** — MCQ, Fill in the blanks, Drag-and-drop, Manual marking, etc.
+- **Item set** — multi-select. The badge next to the field toggles between **(OR)** (questions in any selected set) and **(AND)** (questions in all of them).
+- **Answer types** — multi-select: MCQ, Fill in the blanks, Drag-and-drop, Manual marking, etc.
 - **Status** — *Draft*, *Production*, etc. Lets you filter the editorial pipeline.
 - **Responsible person** — restrict to questions under a given administrator's responsibility.
 - **Include items "To be deleted"** — switch; off by default.
 - **Flagged** — switch; shows only the questions you have starred.
 
-### Domain filter
+### Subject-dependent filters {#subject-dependent-filters}
 
-The **Domain** filter only appears **after a single subject has been selected**: it needs the subject to list its domains.
+Two filters only appear **once at least one subject is selected** in the **Subject** filter, because their content depends on the subject:
+
+- **Test** — placed right below the **Subject** filter, it lists the tests of the selected subject(s) (default value: *All test forms*). Picking a test restricts the table to the questions that test draws from:
+    - if the test relies on a **fixed question list**, only those questions are shown;
+    - if the test draws its questions from **item sets**, the table shows the questions of those sets. The **Item set** filter is then **hidden** — the test's own sets apply — and it comes back as soon as you return to *All test forms*.
+
+    The other filters (language, status, responsible person, etc.) still combine with the **Test** filter. If you change the subject, a test that does not belong to the new subject stops filtering the list.
+- **Domains** — lists the domains of the selected subject(s). Besides *All domains*, the value *Questions without domain* isolates the questions that have no domain yet.
 
 ### Reset
 
@@ -119,7 +126,7 @@ The action bar at the top of the page offers:
 - **Add an item** — opens a dialog asking for the **subject**, the **answer type** and the **language**, then creates the question and opens the editor.
 - **Import an item file** — see [Import questions](#import-questions) below.
 - **Export to YML** — downloads the questions currently filtered as a YAML file (up to 500 questions; beyond 100 questions the download is a zip archive split into parts). Useful for backups or for working on questions with an AI assistant. The YAML file also carries each question's **difficulty** (*Easy*, *Medium* or *Hard*).
-- **Print item list** — generates a printable version of the questions ticked in the table (100 at most).
+- **Print item list** — generates a PDF of the questions displayed in the table, i.e. the current page of the filtered list (100 questions at most).
 - **Export to Excel** — see [Export to Excel](#export-to-excel).
 
 

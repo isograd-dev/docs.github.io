@@ -6,7 +6,7 @@ layout: question-manual
 
 The **question editor** is the most heavily used tool in the Question Module — this is where you write statements, define answer options, add illustrations and visual aids, and tag each question on the skills map. Any administrator producing content for the platform spends the majority of their time on this page.
 
-Open the editor through the **Edit** icon (pencil) on a question's row in the **[Questions](/ai/en/question-module/questions/)** page, or by clicking **Add a question** on that page.
+Open the editor through the **Edit** icon (pencil) on a question's row in the **[Questions](/ai/en/question-module/questions/)** page, or by clicking **Add an item** on that page.
 
 ![Question editor — overview (MCQ type)](img/01-editeur-mcq.png)
 
@@ -29,7 +29,7 @@ The edit page (titled **Update an item**) is organised into several zones, with 
 
 2. **Identity banner**:
     - Subject icon + **ID** (for example `S12Q0042`) with a **Copy** button.
-    - **Subject**, **Language**, **Creator** (the administrator who created the question).
+    - **Subject**, **Language**, **Created by** (the administrator who created the question).
     - **Number of comments**, **Asked** (number of takes), **Success** (success rate).
 
 3. **"Item details" section**:
@@ -61,13 +61,13 @@ The **Question and answers** section is organised into tabs specific to the ques
 | **Question text** | The text shown to the candidate (rich text editor). |
 | **Medias** | Illustration, reference documents, media files and audio generation attached to the statement. To generate an audio file, type the text to read and pick a **voice** among those available for the question's language. |
 | **Type-specific tabs** | Answer options or type-specific settings — for example *Submission details* and *Grading grid* for a manual submission, *Input areas* and *Answer area* for auto-graded text areas. See per-type sections. |
-| **Score-calculation prompt** | For MCQs, psychometric questions and texts with dropdown lists only: describe a specific scoring rule in natural language, and the AI generates the matching computation. |
-| **Advanced** | Advanced options: **Mandatory answer in tests with navigation** and, for questions where the candidate types text, **Lock copy/paste and selection**. |
+| **Score calculation prompt** | For MCQs, psychometric questions and texts with dropdown lists only: describe a specific scoring rule in natural language, and the AI generates the matching computation. |
+| **Advanced** | Advanced options: **Mandatory answer in tests with navigation** and, for questions where the candidate types text, **Lock copy/paste and text selection**. |
 
 Two help buttons at the top right of this section:
 
-- **History** (clock icon) — change history of the question.
-- **Tag help** — reference for the formatting tags available in the editor.
+- **Previous version(s)** (clock icon) — lists the previous versions of the question's content; pick one, then click **Load this version** to reload it into the editor.
+- **Help on tags** — reference for the formatting tags available in the editor.
 
 > 💡 **YML description tab** — A raw YAML view of the question exists for a few answer types (for example Sortable). For the other types it is not shown: use **Export to YML** on the Questions page to obtain the YAML of your questions.
 
@@ -182,9 +182,10 @@ The **Text MCQ** type is the most used type on the platform. The candidate sees 
 
 The MCQ editor exposes a list of options, each with:
 
-- An **option text** field.
-- A **Correct** checkbox indicating whether the option is a right answer.
-- A **Delete this option** button.
+- Its **number** and, right next to it, a **checkbox**: tick it if the option is a right answer.
+- A **Text** / **Image** selector: an option is either a text or an image. In *Image* mode an upload button appears to choose the file (an image less than 1200 px wide), whose preview is shown on the row.
+- The **option text** field.
+- A **bin** icon that deletes the option.
 
 An **Add an answer** button at the bottom of the list extends the number of options (5 is the recommended standard).
 
@@ -205,10 +206,10 @@ The **Scale** type presents the candidate with a question paired with a reusable
 
 ### Editing
 
-- **Select the scale** in the dropdown (see [Answer scales](/ai/en/question-module/answer-scales/) to manage available scales).
-- The editor shows the selected scale's options and lets you tick the **correct answer** (a single checkbox ticked). To add a new scale, go to the menu **Items → Response scales**, then **Add a response scale**.
+- **Select the scale** in the **Response scale** dropdown, shown when the **MCQ type** is the scale type (see [Answer scales](/ai/en/question-module/answer-scales/) to manage available scales).
+- Each answer row is a statement put to the candidate, who answers it with the values of the scale. Instead of the MCQ checkbox, each row carries a dropdown of the scale's values: pick the **expected value** for that row there. To add a new scale, go to the menu **Items → Response scales**, then **Add a response scale**.
 
-> 💡 For questions where there is no right or wrong answer, tick the option **No notion of correct answer (form, personality test…)**.
+> 💡 For questions where there is no right or wrong answer, tick the option **No notion of correct answer (form, personality test...)**: the expected-value dropdowns are then hidden.
 
 
 ## Auto-graded text areas {#fill-in-the-blanks}
@@ -342,10 +343,10 @@ The **Expected answer type** selector sets what the candidate hands in:
 
 | Expected answer type | What the candidate does | Settings |
 |---|---|---|
-| **Enter one or more texts** (default) | Answers in one or more input areas. | **Add field** creates an area (name, single-line field or text area, example text). **Use a rich text editor for input text areas** gives the candidate a formatting toolbar. |
+| **Text** (default) | Answers in one or more input areas. | **Add field** creates an area: its name, its type (**Single-line field** or **Multi-line text area**), an example text and, if needed, an additional CSS style. **Use a rich text editor for input text areas** gives the candidate a formatting toolbar. |
 | **Submit one or multiple files** | Uploads one file per expected slot. | **Add a file to submit** creates a slot, with a **description** (shown to the candidate when several files are expected) and the **allowed extensions**, separated by commas. Both fields are required. |
-| **Record an audio** | Records themselves from the question page. | — |
-| **Record a video** | Films themselves from the question page. | — |
+| **Record an audio** | Records themselves from the question page. | **Allow multiple recordings of the audio** and the optional **Maximum duration (in seconds)** of the recording. |
+| **Record a video** | Films themselves from the question page. | The optional **Maximum duration (in seconds)** of the recording. |
 
 > 💡 **Prefer PDF** — For a file submission, ask for a **PDF**: the grader will be able to annotate the copy and rely on AI assistance when grading.
 
@@ -366,7 +367,7 @@ Drag the criteria to reorder them. The question's **Maximum score** is no longer
 
 For a **text** answer, this tab holds the text displayed around the input areas. With a single area, it is filled in automatically. It is not shown for file submissions.
 
-The **Advanced** tab offers, for text answers, **Lock copy/paste and selection**.
+The **Advanced** tab offers, for text answers, **Lock copy/paste and text selection**.
 
 ### Usage context: paper exam
 
@@ -385,9 +386,9 @@ The **Typing test** and **Typing test with correction** types evaluate the candi
 
 ### Editing
 
-- Enter the **reference text** the candidate must retype.
-- Configure the **test duration** (in seconds).
-- The score is computed from the number of correct characters per minute, with a penalty for errors.
+- The **Question text** tab holds the **instructions** shown to the candidate above the text to retype.
+- The **test duration** is the question's **Allocated time** (in seconds), in the **Item details** section.
+- The score combines **accuracy** (share of characters typed correctly) and **speed** (characters typed per minute): typing 275 characters per minute with 97% accuracy earns the maximum score.
 
 The **with correction** variant lets the candidate **go back and correct** their errors; without correction, every keystroke is final.
 

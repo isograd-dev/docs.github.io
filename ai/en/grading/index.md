@@ -31,6 +31,8 @@ Two privilege levels are involved throughout the chapter (see [Administrator man
 
 Open this page through the menu **Grading → To grade**. Its title recalls the number of tests waiting for marking.
 
+!["To grade" page — filters (search, selection mode) and table of the tests waiting for marking.](img/01-copies-a-corriger.png)
+
 The table lists the tests with at least one answer left to mark, with the candidate's **group**, **last name** and **first name**, the **test**, the **grader** and the date. The **Grader** column shows the name of the assigned grader or pair; it shows **AI** while an AI marking is still in progress on the test.
 
 > 💡 **Double grading** — A test whose answers have all received both markings leaves this list: it then waits on the [Double grading harmonisation](#harmonisation) page.
@@ -53,6 +55,8 @@ Assignment is reserved for supervisors.
 **To assign in bulk**, filter the list first, then:
 
 1. Click **Assign tests to one or more graders** in the action bar.
+
+    ![Bulk assignment window — graders or grader pairs.](img/02-attribution-correcteurs.png)
 2. Select one or more **graders**, or one or more **grader pairs** — the two lists are mutually exclusive.
 3. Click **Assign**.
 
@@ -73,7 +77,11 @@ The **Export to Excel** button exports the filtered list.
 
 The marking screen shows the question and the **candidate's answer** in the centre, a **toolbar** at the top and the **scoring grid** in a panel on the right.
 
+![Marking screen — toolbar, candidate's answer and scoring grid.](img/03-ecran-de-notation.png)
+
 ### Toolbar
+
+![Toolbar of the marking screen.](img/04-barre-outils-notation.png)
 
 - **Back to list** — returns to the page you came from.
 - **Previous / next question** — moves from one question to another within the copy.
@@ -92,6 +100,8 @@ The **Scoring grid** panel shows the criteria defined by the question's author (
 - add a **comment** if needed.
 
 The total updates as you type. A coloured pill on each criterion gives a visual cue of the level reached.
+
+!["Scoring grid" panel — score and comment per criterion.](img/05-grille-de-notation.png)
 
 ### Save the score
 
@@ -158,8 +168,12 @@ A copy is graded **twice** when it is assigned to a **grader pair** rather than 
 
 Open the page through the menu **Grading → Graders** (reserved for supervisors). A pair associates two administrators holding the right to enter scores.
 
+!["Graders" page — table of the grader pairs.](img/06-binomes-correcteurs.png)
+
 1. Click **Add a pair**.
 2. Enter the **pair name** and choose the **first** and the **second grader**.
+
+    ![Window for adding a pair — name, first and second grader.](img/07-modal-binome.png)
 3. Save.
 
 The two graders must be different, and the same two graders can only form one pair, whatever their order. If your account has fewer than two graders, a message invites you to create some first. A pair used by a jury cannot be deleted. The search covers the pair name and the graders' names, and the list can be exported to Excel.
@@ -178,6 +192,8 @@ When several graders have marked, the **Grader** selector of the scoring panel d
 
 Open the page through the menu **Grading → Double grading harmonisation** (reserved for supervisors).
 
+!["Double grading harmonisation" page — selection, tolerated gaps and tables of the copies.](img/08-harmonisation.png)
+
 1. Choose the **selection mode** — by scan or by test — then the scan or test you want.
 2. Set the **tolerated gaps between the two graders** and click **Apply**:
     - **Maximum gap per mark** — accepted difference between the two total scores (2 points by default);
@@ -190,8 +206,8 @@ The page then sorts the copies into four tables:
 |---|---|---|
 | **Tests to harmonise** | The two markings exceed one of the tolerated gaps. | **Open the question** to settle the score. |
 | **Double-marked tests within the thresholds** | The two markings are close enough. | **Compute the average mark**. |
-| **Harmonised tests** | The score is settled (single grading or harmonisation done). | **View the copy**. |
-| **Tests not or partially marked** | At least one grading is pending. | **View the copy**. |
+| **Harmonised tests** | The score is settled (single grading or harmonisation done). | **View the script**. |
+| **Tests not or partially marked** | At least one grading is pending. | **View the script**. |
 
 The first two tables detail, for each copy, the pair, the two scores of each question and the gaps observed.
 
@@ -206,6 +222,8 @@ In both cases, the test moves to the **Completed** status as soon as no answer i
 
 Open the page through the menu **Grading → Juries**. A jury gathers the graders of an exam: a **president**, **arbiters** and graders working alone or in pairs. Depending on your privilege, you can view juries or also create, edit and delete them.
 
+!["Juries" page — president, arbiters and graders of each jury.](img/09-jurys.png)
+
 To create a jury, click **Add a jury** and fill in:
 
 - **Jury name** — required.
@@ -215,6 +233,8 @@ To create a jury, click **Add a jury** and fill in:
 - **Grader pairs** — the pairs attached to the jury.
 - **Tolerated gap on the score** and **Tolerated gap per criterion** — the gaps, in points, the jury retains to decide that a double grading must be harmonised (2 and 1 by default).
 
+![Window for adding a jury — president, arbiters, graders, pairs and tolerated gaps.](img/10-modal-jury.png)
+
 The table recalls, for each jury, its president, arbiters and graders. It can be exported to Excel.
 
 The jury is used as a filter on the [Grader fairness](#fairness) page, where it shows each person's role. On the harmonisation page, the gaps applied are those you enter there.
@@ -223,6 +243,8 @@ The jury is used as a filter on the [Grader fairness](#fairness) page, where it 
 ## Grader fairness {#fairness}
 
 Open the page through the menu **Grading → Grader fairness**. It compares how graders mark the same set of copies, to spot a grader who is clearly more severe or more generous than the others. The page is read-only.
+
+!["Grader fairness" page — key figures and statistics per grader.](img/11-equite-correcteurs.png)
 
 Choose the **selection mode** (by scan or by test), the scan or the test, optionally a **jury** and, if the tests contain several manually graded questions, the **question**: statistics are computed question by question.
 
@@ -240,7 +262,11 @@ The **Exam scanning** menu, when offered on your platform, lets you import the c
 ### Create a scan
 
 1. On the **Scanning management** page, click **Create a scan**.
+
+    !["Scanning management" page — list of the scans and Create a scan button.](img/12-gestion-des-scans.png)
 2. Choose the **test used** among your paper exams. The scan's edit page opens.
+
+    ![Scan creation window — choice of the test used among the paper exams.](img/13-modal-creer-un-scan.png)
 
 ### Set how copies are matched to students
 
@@ -255,9 +281,13 @@ In the **Details** tab:
 
 Save: importing is only possible once the destination group is saved.
 
+![Edit page of a scan, Details tab — test used, script attribution mode, destination group.](img/14-scan-details.png)
+
 ### Import the copies
 
 In the **Import** tab, drag and drop the copies into the drop zone. Accepted formats are **PDF**, **PNG**, **JPG** and **ZIP** (for a batch of copies). A file with the same name as a copy already imported is refused.
+
+![Edit page of a scan, Import tab — drop zone for the copies and copies already imported.](img/15-scan-import.png)
 
 Copies are processed in the background: the **View scripts being imported** button tracks progress, and the **Scripts already imported** table lists the copies attached to a student, with a link to display them.
 

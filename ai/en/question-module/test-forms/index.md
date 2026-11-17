@@ -12,9 +12,9 @@ Open the page through the menu **Tests**. It is shown to administrators holding 
 
 ![Test form management page](img/01-liste-formulaires.png)
 
-The table (titled **Test form management**) lists every test, with its **ID**, **name**, **subject**, **language**, **type** and **algorithm**. When a usage period is set in the filters, an extra column shows the **number of takes** over that period.
+The table (titled **Test Form Management**) lists every test, with its **ID**, **name**, **subject**, **language**, **type** and **algorithm**. When a usage period is set in the filters, an extra column shows the **number of takes** over that period.
 
-Administrators of the **main account** see every test. A row shown in red flags a test that will not be offered for enrolment — see [Tests not offered for enrolment](#tests-not-offered). Administrators of a **sub-account** (or logged in as an alias on an account) only see the tests linked to their own account — see [Authorise a test / Remove access](#authorise-a-test).
+Only the tests whose type is enabled on the account are listed; inactive tests only appear when the **Include inactive tests** filter is turned on (see [Filters](#filters)). Administrators of the **main account** see all of these tests. Administrators of a **sub-account** (or logged in as an alias on an account) only see the tests linked to their own account — see [Authorise a test / Remove access](#authorise-a-test).
 
 
 ## Concepts {#concepts}
@@ -35,7 +35,7 @@ Whatever the order, a test can only serve questions whose status is **Production
 
 Creation goes through a minimal dialog, followed by the edit page.
 
-1. From the **Test form management** page, click **Create a Test Form** in the action bar.
+1. From the **Test Form Management** page, click **Create a Test Form** in the action bar.
 
     ![Creation dialog](img/02-modal-creation.png)
 
@@ -109,7 +109,7 @@ Back on the form, the question table summarises the selection; the eye icon of e
 ### Header buttons
 
 - **Save** — saves the whole form.
-- **Save & Try test** — saves, then displays an address to copy and open in a **private browsing window**: you then take the test as a candidate would see it, without losing your administrator session. Each new trial replaces the previous one.
+- **Save & Try test** — saves, then displays an address, with a button to copy it, to open in a **private browsing window**: you then take the test as a candidate would see it, without losing your administrator session. Each new trial replaces the previous one.
 - **Export comments** — downloads the comments left by candidates on the questions of this test.
 - **AI test review** — if AI features are enabled on your account. Describe the **test objective** (1 000 characters at most) then click **Analyze**: the AI gives an opinion on the relevance of the selected questions and of their number for that objective, taking into account the type and difficulty of the questions, the question order and the scoring mode.
 - **Display sample report** — depending on the result type, a link shows an example of the report given to the candidate.
@@ -199,18 +199,6 @@ To authorise a test for one or more accounts:
 To remove the test from the account you are logged in to, click the **Remove access** icon on the test's row. Removal is immediate, with no confirmation prompt.
 
 > 💡 **Who can use this test?** — Hover over the name of a non-public test: a tooltip lists the accounts authorised to use it.
-
-
-## Tests not offered for enrolment {#tests-not-offered}
-
-A row shown **in red**, with a warning icon, flags a test that **will not be offered** when enrolling candidates. Hover over the icon to see the reason(s), for example:
-
-- the test is inactive;
-- its test type is not enabled on the account;
-- it is not public and the account is not authorised to use it;
-- its subject is archived.
-
-Paper exams are not concerned by this flag.
 
 
 ## Delete a test {#delete-a-test}

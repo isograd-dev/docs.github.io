@@ -64,7 +64,7 @@ bouton « Editer questions liés » dans l'éditeur, et affiche la fiche de test
 mode avancé. Pour le chapitre « Éditeur de questions », désigner le sujet de
 démo de l'environnement pedagogy avec `MANUAL_SUBJECT_ID=<sbj_id>`.
 
-Dernière régénération du manuel administrateur (fr + en) : 2026-10-09 sur `test.isograd.com` (10 chapitres, dont les nouvelles captures pause/reprise de session, navigateur sécurisé et surveillance en direct). Module Questions : dernière régénération complète (fr + en) 2026-10-09, sur `test.isograd.com`
+Dernière régénération du manuel administrateur (fr + en) : 2026-11-17 sur `test.isograd.com` (10 chapitres ; nouvelles captures : fenêtre et aperçu de l'import de candidats, fenêtre de création d'un groupe, candidats d'une session en cours, onglet API du compte). Module Questions et module de correction : régénérés (fr + en) le 2026-11-17 sur `pedagogy.isograd.com`, avec `MANUAL_SUBJECT_ID=529` (sujet DEMO) pour l'éditeur de questions. Reste à refaire : `question-editor` 11 (test de saisie, type de réponse absent de pedagogy), encore issue de la génération d'octobre. Module Questions : dernière régénération complète (fr + en) 2026-10-09, sur `test.isograd.com`
 temporairement configuré en environnement custom, avec un compte root Isograd
 (d'où l'onglet YML, le mode avancé des tests et les données de la base de test
 visibles sur ces captures) — pas encore régénéré sur pedagogy.

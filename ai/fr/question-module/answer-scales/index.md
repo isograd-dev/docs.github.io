@@ -10,7 +10,7 @@ Les échelles permettent de **normaliser** les options de réponse d'une famille
 
 Accédez à la page via le menu **Questions → Echelles de réponses**.
 
-![Page "Gestion des échelles de réponse"](img/01-liste-echelles.png)
+![Page "Gestion des échelles de réponses"](img/01-liste-echelles.png)
 
 Le tableau liste toutes les échelles définies, avec leur **identifiant** et la liste de leurs **valeurs** (les options dans l'ordre, dans la langue de votre interface).
 
@@ -19,7 +19,7 @@ Le tableau liste toutes les échelles définies, avec leur **identifiant** et la
 
 La création se fait entièrement **dans une fenêtre** — il n'y a pas de page d'édition dédiée.
 
-1. Depuis la page **Gestion des échelles de réponse**, cliquez sur **Ajouter une échelle de réponses** dans la barre d'actions.
+1. Depuis la page **Gestion des échelles de réponses**, cliquez sur **Ajouter une échelle de réponses** dans la barre d'actions.
 
     ![Fenêtre de création d'une échelle](img/02-modal-creation.png)
 
@@ -33,7 +33,7 @@ La création se fait entièrement **dans une fenêtre** — il n'y a pas de page
 
 4. Cliquez sur **Enregistrer**. L'échelle apparaît immédiatement dans la liste.
 
-> 💡 **Minimum d'options** — Une échelle doit avoir au moins **deux valeurs renseignées, dans au moins une langue**, pour être valide (une échelle à une seule valeur n'a pas de sens). La plateforme bloque l'enregistrement en dessous de ce seuil.
+> 💡 **Minimum d'options** — Une échelle doit avoir au moins **deux valeurs renseignées, dans au moins une langue**, pour être valide (une échelle à une seule valeur n'a pas de sens). En dessous de ce seuil, la plateforme bloque l'enregistrement et affiche le message « Veuillez renseigner au moins deux valeurs dans au moins une langue. ».
 
 
 ## Réordonner les options {#reordonner-les-options}
@@ -81,7 +81,7 @@ Le tri par colonne est disponible en cliquant sur les en-têtes.
 1. Sur la ligne de l'échelle, cliquez sur l'icône **Supprimer**.
 2. Confirmez sur la fenêtre de confirmation.
 
-> ⚠️ **Échelle utilisée** — Une échelle référencée par au moins une question **ne peut pas être supprimée**. La plateforme refuse l'opération avec un message listant les identifiants des questions concernées. Pour supprimer une échelle largement utilisée :
+> ⚠️ **Échelle utilisée** — Une échelle référencée par au moins une question **ne peut pas être supprimée**. La plateforme refuse l'opération avec un message listant les identifiants des questions concernées (les dix premiers au plus). Pour supprimer une échelle largement utilisée :
 >
 > 1. Ouvrez depuis la page Questions les questions listées dans le message.
 > 2. Modifiez ces questions pour pointer vers une autre échelle, ou supprimez-les.

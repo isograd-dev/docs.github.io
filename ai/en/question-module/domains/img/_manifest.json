@@ -1,39 +1,39 @@
 {
   "chapter": "question-module/domains",
-  "generated_at": "2026-10-09T17:45:20.795Z",
-  "base_url": "https://appdev.isograd.com",
+  "generated_at": "2026-11-17T14:53:46.758Z",
+  "base_url": "https://pedagogy.isograd.com",
   "captures": [
     {
       "name": "01-liste-domaines.png",
       "caption": "Page \"Gestion des domaines de compétence\" — tableau ID / Nom / Sujets associés / Parent / Niveau, filtres et boutons Ajouter un domaine / Exporter.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/domains/AdminDomainsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_sbj_fam_id=-1&changepage=1&orderby=e.id+ASC&export_to_excel=0"
+      "url": "https://pedagogy.isograd.com/domains/AdminDomainsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_sbj_fam_id=-1&changepage=1&orderby=e.id+ASC&export_to_excel=0"
     },
     {
       "name": "02-modal-creation-l1.png",
-      "caption": "Modal de création — commutateur \"Domaine principal\" coché par défaut (création d'un L1).",
+      "caption": "Modal de création — commutateur « Ce domaine n'est pas un sous-domaine » coché par défaut (création d'un domaine de niveau 1).",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/domains/AdminDomainsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_sbj_fam_id=-1&changepage=1&orderby=e.id+ASC&export_to_excel=0"
+      "url": "https://pedagogy.isograd.com/domains/AdminDomainsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_sbj_fam_id=-1&changepage=1&orderby=e.id+ASC&export_to_excel=0"
     },
     {
       "name": "03-modal-creation-l2.png",
-      "caption": "Modal de création — commutateur décoché, sélecteur \"Domaine L1 parent\" apparu pour créer un L2.",
+      "caption": "Modal de création — commutateur décoché, sélecteur « Domaine parent (niveau hiérarchique 1) » apparu pour créer un sous-domaine.",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/domains/AdminDomainsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_sbj_fam_id=-1&changepage=1&orderby=e.id+ASC&export_to_excel=0"
+      "url": "https://pedagogy.isograd.com/domains/AdminDomainsWithTable?page_sel=1&filter_rows_per_page=50&filter_search=&filter_sbj_fam_id=-1&changepage=1&orderby=e.id+ASC&export_to_excel=0"
     },
     {
       "name": "04-onglets-domaine.png",
-      "caption": "Fiche d'édition d'un domaine — bandeau et onglets Caractéristiques générales / Niveaux de compétence / Recommandations pour progresser / Associer les sujets.",
+      "caption": "Fiche d'édition d'un domaine — bandeau et onglets de la fiche (caractéristiques générales, sujets associés ; les niveaux de compétence apparaissent lorsque le domaine en définit).",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/domains/DomainUpdate?dom_id=939"
+      "url": "https://pedagogy.isograd.com/domains/DomainUpdate?dom_id=957"
     },
     {
       "name": "05-onglet-associer-sujets.png",
       "caption": "Onglet \"Associer les sujets\" — deux listes côte à côte (Tous les sujets vs Sujets associés) avec glisser-déposer.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/domains/DomainUpdate?dom_id=939"
+      "url": "https://pedagogy.isograd.com/domains/DomainUpdate?dom_id=957"
     }
   ]
 }

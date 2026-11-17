@@ -17,20 +17,23 @@ This procedure allows you to create a candidate individually. To add several can
 
 ### Procedure
 
-1. From the **Candidate management** page, locate the **Add a candidate** button in the action bar at the top of the table.
+1. From the **Candidate management** page, locate the **Add Candidate** button in the action bar at the top of the table.
 
-    ![The "Add a candidate" button](img/02-bouton-ajouter.png)
+    ![The "Add Candidate" button](img/02-bouton-ajouter.png)
 
-2. Click **Add a candidate**. The entry form opens.
+2. Click **Add Candidate**. The entry form opens.
 
     ![Candidate creation form](img/03-formulaire-ajout-vide.png)
 
-3. Fill in the required fields:
+3. Fill in the fields:
 
-    - **First name** — first name of the candidate as it will appear on the certificates.
-    - **Last name** — last name of the candidate.
-    - **Email** — address at which the candidate will receive their invitations and access their workspace.
-    - **Country** — used to adapt the default language of the emails.
+    - **Group(s)** — the candidate must belong to at least one group; the **Update** button opens the group selection.
+    - **Title**.
+    - **Last Name** and **First Name** — as they will appear on the certificates.
+    - **Email Address** — address at which the candidate will receive their invitations and access their workspace.
+    - **Language** — the candidate's language, later preselected when registering them to tests.
+
+    Depending on your account options, the form also offers other fields, for example **Additional Time** or **External ID**.
 
 4. Click **Save**. The candidate is created and you are automatically redirected to their test registration page.
 
@@ -38,12 +41,12 @@ This procedure allows you to create a candidate individually. To add several can
 
 From this page, you can immediately [register the candidate to a test](#register-a-candidate-to-a-test) or [send them an invitation](#send-invitations).
 
-> 💡 **Subsequent modification** — To modify the contact details of an existing candidate, go back to the candidate list, click the **Edit** icon at the end of the row, then the **Candidate details** tab.
+> 💡 **Subsequent modification** — To modify the contact details of an existing candidate, go back to the candidate list, click the **Edit** icon at the end of the row, then the **Edit candidate details** button of their record.
 
 
 ## Import candidates {#import-candidates}
 
-The candidate import allows you to create several candidates — or even pre-register them to tests — in a single operation, from an Excel file.
+The candidate import allows you to create several candidates — or even pre-register them to tests — in a single operation, from an Excel file. It takes place in **two stages**: the platform first displays a **preview** of the file, without saving anything, then imports the valid rows once you have confirmed.
 
 ### Procedure
 
@@ -51,26 +54,45 @@ The candidate import allows you to create several candidates — or even pre-reg
 
     ![Import buttons](img/07-page-import.png)
 
-2. Before preparing your file, download the **file template** from the link provided. The template contains the expected headers and an example row.
-
-3. Fill in the template with your candidates. The main columns:
-
-    | Column | Required | Description |
-    |---|---|---|
-    | First name | Yes | Candidate's first name. |
-    | Last name | Yes | Candidate's last name. |
-    | Email | Yes | A unique email address per candidate. |
-    | Country | No | Country code (FR, BE, …) for the default language. |
-    | Group | No | Name of a group to attach the candidate to. Created automatically if it does not exist. |
-    | Test | No | Name of the subject to register the candidate to directly at import time. |
-
-4. Click **Import/Download Candidate File**, select your file, and confirm.
+2. Click **Import/Download Candidate File**. A window opens.
 
     ![Import candidate file button](img/08-bouton-import.png)
 
-5. The platform displays an import report: number of candidates created, updated, or rejected (with the rejection reason row by row).
+    ![Candidate import window](img/15-modal-import.png)
 
-> ⚠️ **Duplicate emails** — If a candidate already exists with the same email address, their information is **updated** rather than recreated. A new record is never created for an existing address.
+3. In this window, click **Download Candidate File Template** if you do not have a file yet, then fill in the template with your candidates. The columns of the template:
+
+    | Column | Required | Description |
+    |---|---|---|
+    | Identifier (optional) | No | External identifier of the candidate. |
+    | Last name | Yes | Candidate's last name. |
+    | First name | Yes | Candidate's first name. |
+    | Title | Yes | To be chosen from the drop-down list. |
+    | Language | Yes | To be chosen from the drop-down list. |
+    | Email address | Yes | A valid email address, present only once in the file. |
+    | Password (optional) | No | If left empty, a password is generated automatically. |
+    | Person with disabilities (optional) | No | Yes or No. |
+    | Extra time in % (optional) | No | Extra time granted to the candidate. |
+
+    On accounts that handle CPF files, the template has three more columns: **Test identifier** (to register the candidate to a test at import time), **With e-proctoring** and **CPF file number** (digits only, 13 at most; it requires a test identifier).
+
+4. Still in the window, select the **group(s)** to attach the candidates to (at least one group is required), choose your file in **Import File**, then click **Upload**.
+
+5. The **Candidate import preview** page is displayed. Nothing is saved at this stage. It indicates the number of rows read, recalls the groups the candidates will be added to, then lists each row of the file (row, email address, last name, first name) with its status:
+
+    ![Import preview page](img/16-apercu-import.png)
+
+    - **Ready to be imported** — the candidate will be created.
+    - **Existing** — a candidate already has this email address: they will not be recreated, but added to the selected groups.
+    - **Error** — the row will be skipped; the **Error** column gives the reason (email address missing, invalid or duplicated in the file, empty required field, unknown test, Excel formula error…).
+
+6. Click **Import the N valid rows** to confirm, or **Cancel** to go back to the candidate list without importing anything. If no row can be imported, the confirmation button is disabled: fix your file and start again.
+
+7. After confirmation, the result page indicates the number of candidates imported and, where applicable, the number of existing candidates added to the groups. If some rows could not be saved, they are listed with the reason. The **Back to candidates list** button takes you back to the table.
+
+> ⚠️ **Duplicate emails** — If a candidate already exists with the same email address, they are **not recreated** and their information is not modified: they are only added to the selected groups (and registered to the test indicated on their row, where applicable).
+
+> 💡 **Incomplete or oversized file** — Only the **Ready to be imported** and **Existing** rows are imported; for a complete import, fix your Excel file and start again. A file is limited to 1000 candidates: beyond that, only the first 1000 rows are read. If the platform tells you at confirmation that the preview has expired, start the import again from the candidate list.
 
 > 💡 **Import and invitations** — The import does **not** automatically trigger the sending of invitations. To send the login emails after import, refer to the [Send invitations](#send-invitations) section.
 
@@ -89,7 +111,7 @@ The button bar at the top of the record gathers the actions available for this c
 
 - **Register to a test** — opens the registration window described below.
 - **Edit candidate details** — goes back to the contact details form (identity, email, language, groups).
-- **Test parameters** — options specific to this candidate: **Assessment Settings**, **Certification Settings** (display of results, sending of reports and certificates, recipients) and, where applicable, **Configuration test parameters**. These values override, for this candidate only, the account's [default options](../default-options/).
+- **Test parameters** — options specific to this candidate: **Assessment Settings**, **Certification Settings** (display of results, sending of reports and certificates, recipients, reminder frequency and the administrator receiving a copy of the reminder email) and, where applicable, **Configuration test parameters**. These values override, for this candidate only, the account's [default options](../default-options/).
 - **Send a test invitation e-mail to candidate** — sends the invitation email (see [Send invitations](#send-invitations)).
 - **Assign a temporary password** — the candidate will have to change it at their next login.
 - **Anonymize** — permanently replaces the candidate's personal data.
@@ -114,7 +136,7 @@ Below the button bar, the **planned tests table** lists all the candidate's regi
     - **Search by filter** (left column) — if your account has custom tests, the **Test type** lets you switch between **Catalog** and **Custom**; then choose the **Subject**, then the **Test**.
     - **Search by input** (right column) — type at least three characters of the test name and click the desired result; the selectors on the left are set automatically.
 
-    Once the test is chosen, its **Description** is displayed, together with the number of credits consumed where relevant, and the **Display sample report** button offers a sample report in PDF format when one exists for this test.
+    Once the test is chosen, its **Description** is displayed with the number of questions and, if the test is time-limited, its maximum duration in minutes, together with the number of credits consumed where relevant, and the **Display sample report** button offers a sample report in PDF format when one exists for this test.
 
 3. Complete, depending on your account options:
 
@@ -125,7 +147,7 @@ Below the button bar, the **planned tests table** lists all the candidate's regi
 
 > 💡 **Credit type** — If your account holds several packs valid for this test (for example a "one test per credit" pack and a "several tests per credit" pack), a **Select a credit type** window asks which one to use before registering.
 
-> 💡 **Test already taken** — Depending on your account configuration, if the candidate has already taken this type of test, you are asked to confirm before registering them again.
+> 💡 **Certification already taken** — Depending on your account configuration, if the chosen test is a **certification** the candidate has already been registered to, you are asked to confirm before registering them again. Assessments do not trigger this confirmation.
 
 ### The planned tests table {#the-planned-tests-table}
 
@@ -154,7 +176,7 @@ To register several candidates to the same test, use a group action from the **C
 1. Filter the table on a **group** (and, if relevant, a sub-group) and leave the search field empty. The **Group actions** button then becomes a menu; without a selected group, it simply reminds you that a group must be chosen first.
 2. If all the candidates of the group fit on a single page, a check box appears at the start of each row, ticked by default: untick the candidates to exclude (the header check box ticks or unticks everything). If the group spans several pages, the action applies to the whole group.
 3. In the **Group actions** menu, choose **Register test(s) to all candidates in group**.
-4. Fill in the test parameters (subject, language, session, proctoring profile); they apply to the entire selection. Click **Register** to chain another registration, or **Register and close**.
+4. Fill in the test parameters (subject, language, session, proctoring profile); they apply to the entire selection. Click **Register** to chain another registration, or **Register and Close**.
 
 > 💡 **Candidates already registered** — If some candidates of the selection are already registered to this test, the platform tells you so and offers either to register all of them again, or to register only those who are not registered yet.
 
@@ -218,20 +240,24 @@ The **Group management** page displays all your groups in a hierarchical form. A
 
 ### Create a group
 
-1. Click **Add a group** in the action bar.
+1. Click **Add Group** in the action bar.
+
+    ![Group creation window](img/17-modal-groupe.png)
 2. Fill in:
 
     - **Name** of the group.
-    - **Parent group** (optional) — to create a hierarchy.
-    - **Color** or tag (depending on your version) — to visually identify the group.
+    - **Group Level** — for a level 2 or level 3 group, also choose the group it is attached to, which creates the hierarchy.
+    - **Status** — a public group is accessible to all administrators; a private group only to its owner and the associated administrators.
+    - **Owner** and **Administrators** of the group.
+    - **Allow retake of failed certifications** — this switch only appears on accounts where retake is enabled. Candidates who later join the group inherit it, unless they already have a setting of their own.
 
-3. Confirm.
+3. Click **Add**.
 
 ### Add a candidate to a group
 
 Two methods:
 
-- **From the candidate's record**: open the record, **Groups** tab, add the candidate to the desired groups.
+- **From the candidate's record**: click **Edit candidate details**, then the **Update** button of the **Group(s)** field, and add the candidate to the desired groups.
 - **Group action** on the candidate list: filter on the original group, select the candidates, then **Add selected candidates to a group**. The candidates join the chosen group(s) without leaving their current group.
 
 ### Group actions
@@ -246,6 +272,7 @@ Once your candidates are organized into groups, the **Group** filter on the **Ca
 - **Add the candidates to a group** — without removing them from their current group.
 - **Assign a session or a proctoring profile to a test** — for a pending test, choose the session and, if needed, the proctoring profile. A live-proctored session imposes its own profile on every test attached to it.
 - **Set assessment options** and **Set certification options** — display of results to the candidate, report delivery, diploma sending and recipients, applied to the whole selection. Each entry only appears if your account has the corresponding pack type.
+- **No retake** — offered only on accounts where the retake of failed certifications is enabled. The checked candidates (or every candidate of the group when none is checked) will no longer be allowed to retake their failed certifications; the other candidates are left unchanged. You are asked to confirm before the action is applied.
 - **Generate badges** — issuing of Credly digital badges for the eligible certifications of the selection.
 
 > 💡 **Archiving vs deletion** — **Archiving** a group is done from the **Group management** page and is non-destructive: it hides the group and its candidates from the lists by default, but preserves the history of past tests. **Deleting** candidates is final — use it only for candidates created in error.

@@ -1,0 +1,103 @@
+{
+  "chapter": "grading",
+  "generated_at": "2026-11-17T14:54:16.670Z",
+  "base_url": "https://pedagogy.isograd.com",
+  "captures": [
+    {
+      "name": "01-copies-a-corriger.png",
+      "caption": "Page \"À corriger\" — filtres (recherche, mode de sélection) et tableau des tests en attente de notation.",
+      "kind": "viewport-1440x720",
+      "url": "https://pedagogy.isograd.com/clientadmin/grading/AdminGradingWithTable?filter_search=&filter_sta_id=&filter_dep_id=&changepage=1&orderby=c.cre_dat+DESC&export_to_excel=0"
+    },
+    {
+      "name": "02-attribution-correcteurs.png",
+      "caption": "Fenêtre d'attribution en masse — correcteurs ou binômes de correcteurs.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://pedagogy.isograd.com/clientadmin/grading/AdminGradingWithTable?filter_search=&filter_sta_id=&filter_dep_id=&changepage=1&orderby=c.cre_dat+DESC&export_to_excel=0"
+    },
+    {
+      "name": "03-ecran-de-notation.png",
+      "caption": "Écran de notation — barre d'outils, réponse du candidat et grille de notation.",
+      "kind": "viewport-1440x720",
+      "url": "https://pedagogy.isograd.com/runtest/QuestionDisplayer"
+    },
+    {
+      "name": "04-barre-outils-notation.png",
+      "caption": "Barre d'outils de l'écran de notation.",
+      "kind": "element",
+      "selector": ".marking-toolbar",
+      "url": "https://pedagogy.isograd.com/runtest/QuestionDisplayer"
+    },
+    {
+      "name": "05-grille-de-notation.png",
+      "caption": "Volet \"Grille de notation\" — note et commentaire par critère.",
+      "kind": "element",
+      "selector": ".marking-grid-panel",
+      "url": "https://pedagogy.isograd.com/runtest/QuestionDisplayer"
+    },
+    {
+      "name": "06-binomes-correcteurs.png",
+      "caption": "Page \"Correcteurs\" — tableau des binômes de correcteurs.",
+      "kind": "viewport-1440x720",
+      "url": "https://pedagogy.isograd.com/clientadmin/grading/AdminGradersWithTable?filter_search=&changepage=1&orderby=des+DESC&export_to_excel=0"
+    },
+    {
+      "name": "07-modal-binome.png",
+      "caption": "Fenêtre d'ajout d'un binôme — nom, premier et second correcteur.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://pedagogy.isograd.com/clientadmin/grading/AdminGradersWithTable?filter_search=&changepage=1&orderby=des+DESC&export_to_excel=0"
+    },
+    {
+      "name": "08-harmonisation.png",
+      "caption": "Page \"Harmonisation des doubles corrections\" — sélection, écarts tolérés et tableaux des copies.",
+      "kind": "viewport-1440x720",
+      "url": "https://pedagogy.isograd.com/clientadmin/grading/AdminDoubleGrading"
+    },
+    {
+      "name": "09-jurys.png",
+      "caption": "Page \"Jurys\" — président, arbitres et correcteurs de chaque jury.",
+      "kind": "viewport-1440x720",
+      "url": "https://pedagogy.isograd.com/clientadmin/grading/AdminJuriesWithTable?filter_search=&changepage=1&orderby=des+DESC&export_to_excel=0"
+    },
+    {
+      "name": "10-modal-jury.png",
+      "caption": "Fenêtre d'ajout d'un jury — président, arbitres, correcteurs, binômes et écarts tolérés.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://pedagogy.isograd.com/clientadmin/grading/AdminJuriesWithTable?filter_search=&changepage=1&orderby=des+DESC&export_to_excel=0"
+    },
+    {
+      "name": "11-equite-correcteurs.png",
+      "caption": "Page \"Équité des correcteurs\" — chiffres clés et statistiques par correcteur.",
+      "kind": "viewport-1440x720",
+      "url": "https://pedagogy.isograd.com/clientadmin/grading/AdminGraderFairness"
+    },
+    {
+      "name": "12-gestion-des-scans.png",
+      "caption": "Page \"Gestion des scans\" — liste des scans et bouton Créer un scan.",
+      "kind": "viewport-1440x720",
+      "url": "https://pedagogy.isograd.com/clientadmin/grading/AdminScanningsWithTable?filter_search=&changepage=1&orderby=cre_dat+DESC&export_to_excel=0"
+    },
+    {
+      "name": "13-modal-creer-un-scan.png",
+      "caption": "Fenêtre de création d'un scan — choix du test utilisé parmi les examens papier.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://pedagogy.isograd.com/clientadmin/grading/AdminScanningsWithTable?filter_search=&changepage=1&orderby=cre_dat+DESC&export_to_excel=0"
+    },
+    {
+      "name": "14-scan-details.png",
+      "caption": "Page d'édition d'un scan, onglet Détails — test utilisé, mode d'attribution des copies, groupe de destination.",
+      "kind": "viewport-1440x720",
+      "url": "https://pedagogy.isograd.com/clientadmin/grading/UpdateScanning?sca_uid=6bd3f939-4448-4e17-801a-e676bfa50ff4"
+    },
+    {
+      "name": "15-scan-import.png",
+      "caption": "Page d'édition d'un scan, onglet Import — zone de dépôt des copies et copies déjà importées.",
+      "kind": "viewport-1440x720",
+      "url": "https://pedagogy.isograd.com/clientadmin/grading/UpdateScanning?sca_uid=6bd3f939-4448-4e17-801a-e676bfa50ff4#exam-import"
+    }
+  ]
+}

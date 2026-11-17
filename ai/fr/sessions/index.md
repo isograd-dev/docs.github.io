@@ -38,8 +38,8 @@ Vous pouvez aussi **affecter un groupe entier** à une session en une seule acti
     - **Description** — libellé qui apparaîtra dans la liste (colonne *Nom de session*) et dans le formulaire d'inscription d'un candidat. Choisissez un nom parlant (« Promotion 2026 — session du 14/03 »).
     - **Code de session** (facultatif) — mot de passe que les candidats devront saisir pour démarrer leur test. À communiquer **uniquement le jour de la session**. Le bouton de régénération à droite du champ propose un code aléatoire.
     - **Date de début** et **Date de fin** — fenêtre pendant laquelle les tests rattachés à cette session pourront être démarrés. Saisissez le format `JJ/MM/AA HH:MM`.
-    - **Surveillants** (facultatif) — les administrateurs du compte disposant du privilège *Surveiller en direct les sessions de passage* qui encadrent la session. Une fois la session terminée, ils en génèrent et signent le [procès-verbal](#proces-verbal) ; si la session est surveillée en direct, ils suivent aussi les candidats en temps réel. Ce champ est proposé pour toute session, surveillée en direct ou non.
     - **Surveillance en direct** (commutateur, facultatif) — n'apparaît que si votre compte utilise la surveillance à distance Isograd. Activez-le pour que les surveillants puissent suivre **en temps réel** la caméra et l'écran des candidats de la session (voir [Surveillance en direct](/ai/fr/proctoring/#surveillance-en-direct)). Le champ **Profil de surveillance** (obligatoire) apparaît alors : choisissez un profil de surveillance à distance Isograd **avec enregistrement vidéo**. Ce profil est **imposé à tous les tests** inscrits sur la session.
+    - **Surveillants** (facultatif) — les administrateurs du compte disposant du privilège *Surveiller en direct les sessions de passage* qui encadrent la session. Une fois la session terminée, ils en génèrent et signent le [procès-verbal](#proces-verbal) ; si la session est surveillée en direct, ils suivent aussi les candidats en temps réel. Ce champ est proposé pour toute session, surveillée en direct ou non.
 
 3. Cliquez sur **Enregistrer**. La session apparaît immédiatement dans le tableau.
 
@@ -113,10 +113,12 @@ La pastille **En pause** s'affiche à côté du nom de la session et le bouton d
 
 Le bouton **Voir les candidats** en bout de ligne affiche, à tout moment, où en sont les candidats inscrits sur la session — pratique le jour de l'examen pour repérer d'un coup d'œil qui n'est pas encore connecté. Il est proposé aux administrateurs autorisés à consulter les candidats.
 
+![Fenêtre des candidats d'une session en cours](img/10-modal-candidats-session.png)
+
 La fenêtre **Candidats de la session** présente :
 
 - **Groupes des candidats** — une pastille par groupe, avec le nombre de candidats concernés.
-- **Candidats connectés** — nom, prénom, email, test et heure de début. Un candidat est considéré comme connecté si son navigateur a montré une activité il y a moins de 7 minutes.
+- **Candidats connectés** — les candidats dont le test est commencé et qui sont connectés : nom, prénom, email, test et heure de début. Un candidat est considéré comme connecté si son navigateur a montré une activité il y a moins de 7 minutes.
 - **Candidats ayant terminé leur test** — avec les heures de début et de fin.
 - **Candidats non connectés dont le test n'est pas terminé** — avec leur statut : *Test non commencé*, *Test commencé* ou *Test commencé, dernière activité le…*.
 
@@ -139,7 +141,7 @@ Le bouton de PV apparaît en bout de ligne d'une session terminée pour les **su
 
 1. Sur la ligne de la session terminée, cliquez sur **Générer le PV de session**.
 2. Saisissez si besoin vos **observations** : déroulement de la session, incidents constatés.
-3. Cliquez sur **Générer le PV**. Le PV est établi à partir des données de la session à cet instant, et un **code de signature à 6 chiffres** vous est envoyé par email.
+3. Cliquez sur **Générer le PV**. Le PV est établi à partir des données de la session à cet instant, et un **code de signature à 6 chiffres** vous est envoyé par email ; un message rappelle l'adresse à laquelle il a été envoyé.
 
 ### Contenu du PV
 
@@ -162,7 +164,7 @@ Tant que le PV n'est pas signé, la fenêtre propose aussi :
 
 > ⚠️ **Un PV signé est définitif** — Une fois signé, le procès-verbal ne peut plus être modifié ni régénéré : seul le téléchargement du PDF reste proposé. La signature enregistre le nom et l'email du signataire, la date et une empreinte du document.
 
-Le code de signature est valable **30 minutes**. Après plusieurs saisies erronées, il est bloqué : demandez-en un nouveau. La signature n'est pas possible lorsque vous êtes connecté en alias sur le compte.
+Le code de signature est valable **30 minutes**. Après cinq saisies erronées, il est bloqué : demandez-en un nouveau avec **Recevoir un nouveau code**. La signature n'est pas possible lorsque vous êtes connecté en alias sur le compte.
 
 
 ## Supprimer une session {#supprimer-une-session}

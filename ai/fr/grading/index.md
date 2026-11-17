@@ -31,6 +31,8 @@ Deux niveaux de privilège interviennent tout au long du chapitre (voir [Gestion
 
 Accédez à cette page via le menu **Corrections → À corriger**. Son titre rappelle le nombre de tests en attente de notation.
 
+![Page "À corriger" — filtres (recherche, mode de sélection) et tableau des tests en attente de notation.](img/01-copies-a-corriger.png)
+
 Le tableau liste les tests dont au moins une réponse reste à noter, avec le **groupe**, le **nom** et le **prénom** du candidat, le **test**, le **correcteur** et la date. La colonne **Correcteur** affiche le nom du correcteur ou du binôme attribué ; elle indique **IA** lorsqu'une notation par l'IA est encore en cours sur le test.
 
 > 💡 **Double correction** — Un test dont toutes les réponses ont reçu leurs deux notations quitte cette liste : il attend alors sur la page [Harmonisation des doubles corrections](#harmonisation).
@@ -53,6 +55,8 @@ L'attribution est réservée aux superviseurs.
 **Pour attribuer en masse**, filtrez d'abord la liste, puis :
 
 1. Cliquez sur **Attribuer les tests à un ou plusieurs correcteurs** dans la barre d'actions.
+
+    ![Fenêtre d'attribution en masse — correcteurs ou binômes de correcteurs.](img/02-attribution-correcteurs.png)
 2. Sélectionnez un ou plusieurs **correcteurs**, ou bien un ou plusieurs **binômes de correcteurs** — les deux listes sont exclusives l'une de l'autre.
 3. Cliquez sur **Attribuer**.
 
@@ -73,7 +77,11 @@ Le bouton **Exporter vers Excel** exporte la liste filtrée.
 
 L'écran de notation affiche la question et la **réponse du candidat** au centre, une **barre d'outils** en haut et la **grille de notation** dans un volet à droite.
 
+![Écran de notation — barre d'outils, réponse du candidat et grille de notation.](img/03-ecran-de-notation.png)
+
 ### Barre d'outils
+
+![Barre d'outils de l'écran de notation.](img/04-barre-outils-notation.png)
 
 - **Revenir à la liste** — retour à la page d'où vous venez.
 - **Question précédente / suivante** — passe d'une question à l'autre dans la copie.
@@ -92,6 +100,8 @@ Le volet **Grille de notation** reprend les critères définis par l'auteur de l
 - ajoutez si besoin un **commentaire**.
 
 Le total se met à jour au fil de la saisie. Une pastille colorée sur chaque critère donne un repère visuel du niveau atteint.
+
+![Volet "Grille de notation" — note et commentaire par critère.](img/05-grille-de-notation.png)
 
 ### Enregistrer la note
 
@@ -158,8 +168,12 @@ Une copie est corrigée **deux fois** lorsqu'elle est attribuée à un **binôme
 
 Accédez à la page via le menu **Corrections → Correcteurs** (réservée aux superviseurs). Un binôme associe deux administrateurs disposant du droit de saisir des notes.
 
+![Page "Correcteurs" — tableau des binômes de correcteurs.](img/06-binomes-correcteurs.png)
+
 1. Cliquez sur **Ajouter un binôme**.
 2. Saisissez le **nom du binôme** et choisissez le **premier** et le **second correcteur**.
+
+    ![Fenêtre d'ajout d'un binôme — nom, premier et second correcteur.](img/07-modal-binome.png)
 3. Enregistrez.
 
 Les deux correcteurs doivent être différents, et deux mêmes correcteurs ne peuvent former qu'un seul binôme, quel que soit leur ordre. Si votre compte compte moins de deux correcteurs, un message vous invite à en créer d'abord. Un binôme utilisé par un jury ne peut pas être supprimé. La recherche porte sur le nom du binôme et sur celui des correcteurs, et la liste est exportable vers Excel.
@@ -177,6 +191,8 @@ Lorsque plusieurs correcteurs ont noté, le sélecteur **Correcteur** du volet d
 ### Harmoniser les doubles corrections {#harmonisation}
 
 Accédez à la page via le menu **Corrections → Harmonisation des doubles corrections** (réservée aux superviseurs).
+
+![Page "Harmonisation des doubles corrections" — sélection, écarts tolérés et tableaux des copies.](img/08-harmonisation.png)
 
 1. Choisissez le **mode de sélection** — par scan ou par test — puis le scan ou le test voulu.
 2. Réglez les **écarts tolérés entre les deux correcteurs** et cliquez sur **Appliquer** :
@@ -206,6 +222,8 @@ Dans les deux cas, le test passe au statut **Terminé** dès que plus aucune ré
 
 Accédez à la page via le menu **Corrections → Jurys**. Un jury réunit les correcteurs d'une épreuve : un **président**, des **arbitres** et des correcteurs travaillant seuls ou en binôme. Selon votre privilège, vous pouvez consulter les jurys ou également les créer, les modifier et les supprimer.
 
+![Page "Jurys" — président, arbitres et correcteurs de chaque jury.](img/09-jurys.png)
+
 Pour créer un jury, cliquez sur **Ajouter un jury** et renseignez :
 
 - **Nom du jury** — obligatoire.
@@ -215,6 +233,8 @@ Pour créer un jury, cliquez sur **Ajouter un jury** et renseignez :
 - **Binômes de correcteurs** — les binômes rattachés au jury.
 - **Écart toléré sur la note** et **Écart toléré par critère** — les écarts, en points, que le jury retient pour décider qu'une double correction doit être harmonisée (2 et 1 par défaut).
 
+![Fenêtre d'ajout d'un jury — président, arbitres, correcteurs, binômes et écarts tolérés.](img/10-modal-jury.png)
+
 Le tableau rappelle, pour chaque jury, son président, ses arbitres et ses correcteurs. Il est exportable vers Excel.
 
 Le jury sert de filtre sur la page [Équité des correcteurs](#equite), où il fait apparaître le rôle de chacun. Sur la page d'harmonisation, les écarts appliqués sont ceux que vous y saisissez.
@@ -223,6 +243,8 @@ Le jury sert de filtre sur la page [Équité des correcteurs](#equite), où il f
 ## Équité des correcteurs {#equite}
 
 Accédez à la page via le menu **Corrections → Équité des correcteurs**. Elle compare la manière de noter des correcteurs sur un même ensemble de copies, pour repérer un correcteur nettement plus sévère ou plus généreux que les autres. La page est en lecture seule.
+
+![Page "Équité des correcteurs" — chiffres clés et statistiques par correcteur.](img/11-equite-correcteurs.png)
 
 Choisissez le **mode de sélection** (par scan ou par test), le scan ou le test, éventuellement un **jury** et, si les tests comportent plusieurs questions à correction manuelle, la **question** : les statistiques sont calculées question par question.
 
@@ -240,7 +262,11 @@ Le menu **Scanner des copies**, lorsqu'il est proposé sur votre plateforme, per
 ### Créer un scan
 
 1. Sur la page **Gestion des scans**, cliquez sur **Créer un scan**.
+
+    ![Page "Gestion des scans" — liste des scans et bouton Créer un scan.](img/12-gestion-des-scans.png)
 2. Choisissez le **test utilisé** parmi vos examens papier. La page d'édition du scan s'ouvre.
+
+    ![Fenêtre de création d'un scan — choix du test utilisé parmi les examens papier.](img/13-modal-creer-un-scan.png)
 
 ### Régler l'association des copies aux élèves
 
@@ -255,9 +281,13 @@ Dans l'onglet **Détails** :
 
 Enregistrez : l'import n'est possible qu'une fois le groupe de destination enregistré.
 
+![Page d'édition d'un scan, onglet Détails — test utilisé, mode d'attribution des copies, groupe de destination.](img/14-scan-details.png)
+
 ### Importer les copies
 
 Dans l'onglet **Import**, glissez-déposez les copies dans la zone prévue. Les formats acceptés sont **PDF**, **PNG**, **JPG** et **ZIP** (pour un lot de copies). Un fichier portant le même nom qu'une copie déjà importée est refusé.
+
+![Page d'édition d'un scan, onglet Import — zone de dépôt des copies et copies déjà importées.](img/15-scan-import.png)
 
 Les copies sont traitées en arrière-plan : le bouton **Voir les copies en cours d'importation** en suit l'avancement, et le tableau **Copies déjà importées** liste les copies rattachées à un élève, avec un lien pour les afficher.
 

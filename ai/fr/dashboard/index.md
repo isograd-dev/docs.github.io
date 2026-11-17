@@ -52,7 +52,7 @@ Une fois les filtres appliqués, le tableau de bord affiche :
 - **Statut des tests** — la répartition des tests de la sélection **inscrits ou terminés sur la période** entre *à passer*, *commencés*, *terminés* et *en attente de notation*.
 - **Répartition des scores** — la distribution des tests terminés par niveau de score (par exemple Initial, Basique, Opérationnel, Avancé, Expert pour les évaluations Tosa).
 
-Selon l'évaluation et les options de votre compte, des blocs supplémentaires peuvent apparaître : un graphique de **suivi des invitations** (emails envoyés, relances, candidats jamais invités) et un tableau du **taux de succès par question**.
+Selon l'évaluation et les options de votre compte, des blocs supplémentaires peuvent apparaître : un graphique **Invitations et relances** (candidats invités sans relance, candidats relancés, candidats non invités, d'après les emails envoyés durant la période) et un tableau **Taux de réussite par question**.
 
 
 ## Top 10 des candidats {#top-10-des-candidats}
@@ -75,4 +75,4 @@ En haut du tableau de bord, le bloc **Packs actifs** récapitule l'état de vos 
 
 ![Tableau des packs](img/06-packs.png)
 
-Pour chaque pack : la **date d'expiration**, le **type de test**, la **quantité initiale** et la **quantité restante**. Seuls les packs **actifs et non expirés** sont listés ; l'historique complet reste consultable dans l'onglet **Packs** de votre compte. Le bloc peut être replié via la flèche en haut à droite.
+Pour chaque pack : la **date d'expiration**, le **type de test**, la **quantité initiale** et la **quantité restante**. Seuls les packs **actifs et non expirés** sont listés. Le bloc peut être replié via la flèche en haut à droite.

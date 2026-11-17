@@ -1,26 +1,26 @@
 {
   "chapter": "question-module/test-forms",
-  "generated_at": "2026-10-09T17:34:45.910Z",
-  "base_url": "https://appdev.isograd.com",
+  "generated_at": "2026-11-17T15:00:42.500Z",
+  "base_url": "https://pedagogy.isograd.com",
   "captures": [
     {
       "name": "01-liste-formulaires.png",
       "caption": "Page \"Gestion des tests\" — tableau ID / Nom / Sujet / Langue / Type / Algorithme, boutons Créer un test / Exporter.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/testforms/AdminTestFormsWithTable?filter_rows_per_page=50&filter_search=&filter_brd_id=-1&filter_lan_id=-1&filter_sbj_id=-1&filter_typ_id=-1&filter_from=&filter_to=&changepage=1&orderby=srt_tst_des+DESC&export_to_excel=0"
+      "url": "https://pedagogy.isograd.com/testforms/AdminTestFormsWithTable?filter_search=&filter_lan_id=-1&filter_sbj_id=-1&filter_typ_id=-1&filter_from=&filter_to=&changepage=1&orderby=srt_tst_des+DESC&export_to_excel=0"
     },
     {
       "name": "02-modal-creation.png",
-      "caption": "Fenêtre de création — sélection de la langue du test.",
+      "caption": "Fenêtre de création — langue du test et, selon le compte, commutateur « Examen papier ».",
       "kind": "element",
       "selector": ".modal.show .modal-content",
-      "url": "https://test.isograd.com/testforms/AdminTestFormsWithTable?filter_rows_per_page=50&filter_search=&filter_brd_id=-1&filter_lan_id=-1&filter_sbj_id=-1&filter_typ_id=-1&filter_from=&filter_to=&changepage=1&orderby=srt_tst_des+DESC&export_to_excel=0"
+      "url": "https://pedagogy.isograd.com/testforms/AdminTestFormsWithTable?filter_search=&filter_lan_id=-1&filter_sbj_id=-1&filter_typ_id=-1&filter_from=&filter_to=&changepage=1&orderby=srt_tst_des+DESC&export_to_excel=0"
     },
     {
       "name": "03-onglets-avance.png",
-      "caption": "Page d'édition d'un test — onglets Caractéristiques générales / Gestion du temps / Messages de début et de fin / Statistiques.",
+      "caption": "Page d'édition d'un test — onglets Caractéristiques générales / Gestion du temps / Écrans de début et de fin / Prompt d'analyse IA / Statistiques.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/testforms/TestFormUpdate?tst_frm_uid=93260578-8b15-4e2f-9745-15465f0c51a1"
+      "url": "https://pedagogy.isograd.com/testforms/TestFormUpdate?tst_frm_uid=3511f950-b766-4b0a-b492-a453fcd7a673"
     }
   ]
 }

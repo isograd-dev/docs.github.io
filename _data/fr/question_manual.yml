@@ -77,8 +77,6 @@
       anchor: dupliquer-un-formulaire
     - title: Autoriser un test / Retirer l'accès
       anchor: autoriser-un-test
-    - title: Tests non proposés à l'inscription
-      anchor: tests-non-proposes
     - title: Supprimer un test
       anchor: supprimer-un-formulaire
     - title: Filtres

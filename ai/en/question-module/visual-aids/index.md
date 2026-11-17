@@ -16,7 +16,7 @@ Open the page through the menu **Visual aids**.
 
 ![Visual aid management page](img/01-liste-aides.png)
 
-The table lists every visual aid, with its **subject**, **language**, **type**, **name** and a preview of its **content** when it is an image.
+The table lists every visual aid, with its **subject**, **language**, **type**, **name** and a preview of its **content** when it is an image. An administrator who does not hold the privilege to see all subjects only finds the visual aids of the subjects they are authorized on, plus the visual aids without a subject (keyboards).
 
 
 ## Accepted file formats {#accepted-formats}
@@ -66,26 +66,26 @@ On the edit page, the screen is split into two columns:
 - **Language** — read-only (set at creation).
 - **Type** — the way the aid is shown to the candidate: **Image** (inline in the text), **Image with magnifying glass** (opens on click), **Reference document** (a document embedded or offered as a link), **Keyboard** (a keyboard image, not attached to a subject).
 - **Name** — internal label. **Warning**: the name is **simplified** on save (spaces become dashes, accents are removed, etc.); it also becomes the **stored file name**, which makes it visible to candidates if they ever inspect the page. Keep it sober.
-- An information line indicates **where the visual aid is used**: *"This visual aid is not used in any question."* if empty, or the list of question identifiers that reference it.
+- An information line indicates **where the visual aid is used**: *"This visual aid is not used in any item."* if empty, or the list of question identifiers that reference it.
 
 > ⚠️ **Subject and language are locked** — If you picked the wrong subject or language at creation, delete the visual aid and recreate it — you can no longer change them here.
 
 **Right column — Content**:
 
-A drop zone displays *"Drop the image or PDF document here"* / *"Click here to select a file from your computer"*.
+A drop zone displays *"Drop the image or PDF document here"* / *"Click to select a file on your computer"*.
 
 - **Drag and drop** the file into the zone, or
 - **Click** the zone to open your system's file picker.
 
-The **name** and **type** must be filled in before the upload. Once the file is chosen, the upload starts automatically. If the extension is valid, the preview appears in the zone:
+The **name** and **type** must be filled in before the upload, otherwise the platform shows the message "Before uploading the file you must first fill in the name and type of the visual aid."; if they had not been saved yet, they are saved when the file is sent. Once the file is chosen, the upload starts automatically. If the extension is valid, the preview replaces the drop zone:
 
 - For an **image**, you see the thumbnail.
 - For a **PDF**, an embedded preview.
-- For other formats (Office, archive, etc.), only a download link is shown.
+- For other formats (Office, archive, etc.), only a link to the file is shown (**View the file**); it opens the file in a new tab.
 
 A **Delete content** button under the preview removes the file while keeping the record.
 
-> 💡 **Replacing a file** — Simply drop a new file in the zone: it replaces the previous one. The new version is immediately available to every question that references this visual aid.
+> 💡 **Replacing a file** — As long as a file is present, the preview takes the place of the drop zone. Click **Delete content** to bring the zone back, then drop the new file: with the same name, type and extension, it is stored under the same file name as the previous one. Be careful: **Delete content** removes the file immediately, without confirmation, even when questions use the visual aid — drop the replacement file straight away.
 
 
 ## Use a visual aid in a question {#use-in-a-question}
@@ -110,7 +110,7 @@ The **Filters** panel offers:
 - **Language** — the aid's language.
 - **Type** — Image, Image with magnifying glass, Reference document, Keyboard.
 
-Sorting is available on each column.
+Sorting is available on each column, except **Content**.
 
 
 ## Delete a visual aid {#delete-a-visual-aid}
@@ -118,7 +118,7 @@ Sorting is available on each column.
 1. On the visual aid's row, click the **Delete** icon.
 2. Confirm on the page that opens.
 
-> ⚠️ **Visual aid referenced by questions** — If the visual aid is referenced in the text, answers or specific parameters of **at least one question**, deletion is **refused** with the message "You cannot delete a visual aid used in questions". Before deleting:
+> ⚠️ **Visual aid referenced by questions** — If the visual aid is referenced in the text, answers or specific parameters of **at least one question**, deletion is **refused** with the message "You cannot delete a visual aid that is used in some questions.". Before deleting:
 >
 > 1. Identify the questions that use the aid (listed on its edit page).
 > 2. Edit those questions to point to another aid or remove the reference.
