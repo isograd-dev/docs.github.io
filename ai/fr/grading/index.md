@@ -275,7 +275,7 @@ Dans l'onglet **Détails** :
 - **Mode d'attribution des copies** — comment chaque copie est rattachée à un élève :
     - d'après le **nom écrit sur la copie**, lu automatiquement ;
     - d'après le **nom du fichier**, de la forme `prenom_nom.pdf` ;
-    - en créant des **élèves anonymes**.
+    - en créant des **élèves anonymes**, identifiés par le seul identifiant porté par la copie. Les identifiants attendus peuvent être déclarés à l'avance, puis associés aux noms des élèves après la correction — voir [Candidats anonymes](/ai/fr/candidates/#candidats-anonymes).
 - **Créer les élèves qui ne figurent pas déjà dans la base** — crée automatiquement l'élève lorsqu'aucun ne correspond.
 - **Classe ou groupe de destination** — le groupe dans lequel les élèves sont recherchés et les tests créés.
 

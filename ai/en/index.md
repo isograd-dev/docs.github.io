@@ -10,12 +10,12 @@ Screenshots are generated automatically from the latest versions of the code and
 
 ## Account and Administration
 
-- [Account management](account/) — account details, packs and credits, credit alerts.
+- [Account management](account/) — your organization, your administrator account (language, password, API access token), packs and credits, credit alerts.
 - [Administrator management](admins/) — add, edit, grant privileges, disable administrators on your account.
 
 ## Candidates and Test Sessions
 
-- [Candidate management](candidates/) — add, import, register to tests, invite by email, organize into groups.
+- [Candidate management](candidates/) — add, import, manage anonymous candidates, register to tests, invite by email, organize into groups.
 - [Test session management](sessions/) — create and schedule sessions, bulk import, manage the exam calendar.
 
 ## Result Tracking

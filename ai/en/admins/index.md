@@ -10,6 +10,8 @@ An **administrator** is a user with access to the administration console of your
 
 The **Administrator management** page lists all administrators created on your account. Each row indicates the **last name**, **first name**, **email address** and **date of last login attempt**. The filters at the top of the page let you narrow the list by free text or by privilege. The action buttons — **Add Administrator** and **Export to Excel** — are located in the action bar at the top of the table.
 
+Access this page via the menu **Account → Administrators**. The entry only appears in the menu if you are allowed to manage the other administrators of the account.
+
 
 ## Administrator types {#administrator-types}
 
@@ -67,22 +69,7 @@ Click **Save** to confirm the creation. The new administrator appears immediatel
 
 4. Click **Save**. The changes are applied immediately.
 
-> 💡 **Change your own interface language** — This same window lets you change your **own** language: locate your row in the table and click the **Edit** icon — it is available on your own row even if you are not allowed to edit the other administrators. After saving, **log back in** for the change to take effect (the language is cached in the session at the time of login).
-
-
-## Generate an API access token {#api-token}
-
-An administrator holding the *Generate a personal API access token* privilege can create a **personal token** themselves to call the platform API with their own rights (privileges and groups). Each administrator only manages their own tokens: the section never appears when you edit another administrator.
-
-1. On the **Administrator management** page, locate **your own row** and click the **Edit** icon.
-2. Below the form, the **API access token** section shows the number of **Active tokens** and, if there are any, the **Next expiry** date.
-3. Click **Generate a token**. The token is displayed in a read-only field, with its expiry date; the **Copy** button puts it on the clipboard. There is no need to save the form: the token is active as soon as it is generated.
-
-> ⚠️ **Displayed only once** — Copy the token immediately: it is not stored anywhere and can never be displayed again. If it is lost, generate a new one.
-
-A token is valid for **one year**. It is checked on every call and refused if you lose the privilege, if your account is disabled or if you revoke your tokens. You can generate several tokens; they all stay active until they expire or are revoked.
-
-To invalidate your tokens, click **Revoke all my tokens** then confirm: all your tokens are refused immediately. The button is greyed out as long as you have no active token.
+> 💡 **Your own account** — Your personal details, your interface language, your password and your API access tokens are managed on the **My account** page (menu **Account → My account**) — see [My account](/ai/en/account/#my-account).
 
 
 ## Edit privileges {#edit-privileges}

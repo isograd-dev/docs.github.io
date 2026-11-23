@@ -275,7 +275,7 @@ In the **Details** tab:
 - **Script attribution mode** — how each copy is attached to a student:
     - from the **name written on the copy**, read automatically;
     - from the **file name**, of the form `firstname_lastname.pdf`;
-    - by creating **anonymous students**.
+    - by creating **anonymous students**, identified only by the identifier carried by the copy. The expected identifiers can be declared in advance, then associated with the students' names after marking — see [Anonymous candidates](/ai/en/candidates/#anonymous-candidates).
 - **Create students not yet in the database** — automatically creates the student when none matches.
 - **Destination class or group** — the group in which students are looked up and tests are created.
 

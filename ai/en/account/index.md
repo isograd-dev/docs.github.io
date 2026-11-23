@@ -6,12 +6,12 @@ layout: admin-manual
 
 The **Account** menu gathers the pages related to your **organization** (legal name, address, logo), to the **management of your Tosa credits** (pack overview, expiration and threshold alerts), and to your **administrator profile** (password, credentials, language).
 
-This chapter covers the **Account details** and **Credit alerts** pages. Administrator management is covered in its own chapter — see [Administrator management](/ai/en/admins/).
+This chapter covers the **My organization**, **My account** and **Credit alerts** pages. Administrator management is covered in its own chapter — see [Administrator management](/ai/en/admins/).
 
 
-## Account details {#account-details}
+## My organization {#account-details}
 
-Access this page via **Account → Details** from the navigation menu.
+Access this page via **Account → My organization** from the navigation menu.
 
 ![The "Your account" page](img/01-page-compte.png)
 
@@ -22,6 +22,8 @@ The **Your account** page is organized into several **tabs**:
 - **Packs** — list of credit packs in progress, their quantity and their expiration date.
 - **API** — access to the platform API: authentication parameters, your tests' identifiers and technical documentation. This tab only appears on **your own account**.
 - **Delete your account** — for the main administrator, when the account has several administrators.
+
+Your personal administrator details (name, email address, language, password) are not on this page: they are managed in [My account](#my-account).
 
 > 💡 **Tabs visible according to your profile** — Some tabs or fields only appear depending on the account type (for example, a **CPF** tab appears for French training centers registered on Mon Compte Formation). Don't worry if you don't have exactly the same tabs as in the screenshot above.
 
@@ -79,7 +81,48 @@ The **API** tab gathers what you need to connect your information system (LMS, H
 
 > 💡 **API not included** — If your subscription does not include API access, the tab only shows a message saying so; contact your Isograd representative to enable it.
 
-> 💡 **Personal access token** — An administrator holding the **API access** privilege can also call the API with their own rights (privileges and groups), without using the account credentials. In **Account → Administrators**, open your own row for editing: the **API access token** section, below the form, shows the number of **active tokens** and offers **Generate a token** and **Revoke all my tokens**. The generated token is valid for one year and is displayed only once: copy it right away.
+> 💡 **Personal access token** — An administrator holding the *Generate a personal API access token* privilege can also call the API with their own rights (privileges and groups), without using the account credentials — see [Generate an API access token](#api-token).
+
+
+## My account {#my-account}
+
+The **My account** page (menu **Account → My account**) gathers what concerns you personally as an administrator: your details, your interface language, your password and, if you are allowed to, your API access tokens. It is available to every administrator and only deals with **your own** account; other administrators are managed from [Administrator management](/ai/en/admins/).
+
+### Edit your details
+
+1. Edit the desired fields:
+
+    - **Title**, **Last Name**, **First Name**.
+    - **Email Address** — serves both as login identifier and as notification address. It must be unique on the platform.
+    - **Language** — interface language. System emails (password reset, etc.) are also sent to you in this language.
+    - **Comment** — free note, optional.
+
+2. Click **Save** at the top right. The page reloads with your changes.
+
+> 💡 **Immediate language change** — If you chose another language, the interface switches to it as soon as you save: there is no need to log in again.
+
+> 💡 **Read-only form** — If you are not allowed to edit your administrator record, the fields are greyed out and the **Save** button does not appear. Changing your password remains available.
+
+### Change your password {#change-password}
+
+1. Click **Change password** at the top right of the page. A window opens.
+2. Enter the new password in **Password**, then again in **Confirm Password**. The **Click to generate a random password** link suggests a random password, and the eye icon shows what you typed.
+3. Click **Save**. The password is changed immediately and you stay logged in.
+
+The password must contain at least 6 characters. If your account enforces strong passwords, it must contain at least 8 characters including a number, an uppercase letter, a lowercase letter and a special character, and cannot be identical to the previous one. The window reports any non-compliant entry, as well as a confirmation that differs from the password.
+
+### Generate an API access token {#api-token}
+
+An administrator holding the *Generate a personal API access token* privilege can create a **personal token** themselves to call the platform API with their own rights (privileges and groups). Each administrator only manages their own tokens. Without this privilege, the section does not appear on the page.
+
+1. Below the form of the **My account** page, the **API access token** section shows the number of **Active tokens** and, if there are any, the **Next expiry** date.
+2. Click **Generate a token**. The token is displayed in a read-only field, with its expiry date; the **Copy** button puts it on the clipboard. There is no need to save the form: the token is active as soon as it is generated.
+
+> ⚠️ **Displayed only once** — Copy the token immediately: it is not stored anywhere and can never be displayed again. If it is lost, generate a new one.
+
+A token is valid for **one year**. It is checked on every call and refused if you lose the privilege, if your account is disabled or if you revoke your tokens. You can generate several tokens; they all stay active until they expire or are revoked.
+
+To invalidate your tokens, click **Revoke all my tokens** then confirm: all your tokens are refused immediately. The button is greyed out as long as you have no active token.
 
 
 ## Packs and credits {#packs-and-credits}

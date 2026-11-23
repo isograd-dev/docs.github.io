@@ -97,6 +97,62 @@ L'import de candidats vous permet de créer plusieurs candidats — voire de les
 > 💡 **Import et invitations** — L'import ne déclenche **pas** automatiquement l'envoi d'invitations. Pour envoyer les emails de connexion après import, reportez-vous à la section [Envoyer les invitations](#envoyer-les-invitations).
 
 
+## Candidats anonymes {#candidats-anonymes}
+
+Lorsque des copies d'examen sont corrigées de façon **anonyme**, chaque copie ne porte qu'un **identifiant** (numéro d'anonymat, numéro de candidat…) et non le nom de son auteur. Le menu **Candidats anonymes** de la page **Gestion des candidats** permet de préparer puis de lever cet anonymat à l'aide de deux fichiers Excel :
+
+- **Importer un fichier d'identifiants** — avant l'import des copies, crée un candidat anonyme pour chaque identifiant attendu ;
+- **Associer les candidats avec leurs identifiants** — une fois les copies corrigées, attribue à chaque candidat anonyme son nom, son prénom et, si vous le souhaitez, son adresse mail.
+
+Comme pour l'import de candidats, chaque import se déroule en **deux temps** : un **aperçu** qui n'enregistre rien, puis la confirmation.
+
+> 💡 **Disponibilité** — Le menu **Candidats anonymes** n'apparaît que sur les plateformes qui disposent du module de correction de copies scannées. Les copies elles-mêmes s'importent depuis ce module — voir [Scanner des copies papier](/ai/fr/grading/#scanner-des-copies).
+
+### Importer un fichier d'identifiants {#importer-des-identifiants}
+
+Cet import déclare à l'avance les identifiants attendus dans un ou plusieurs groupes. Lors de l'import des copies, la plateforme peut ainsi repérer les **copies manquantes** et les copies dont l'identifiant ne correspond à **aucun identifiant attendu**.
+
+1. Dans le menu **Candidats anonymes**, cliquez sur **Importer un fichier d'identifiants**. Une fenêtre s'ouvre.
+
+2. Cliquez sur **Télécharger le modèle de fichier** et renseignez un identifiant par ligne dans la colonne `ext_id`. La colonne est au format texte pour conserver les zéros en tête des identifiants. Un identifiant ne peut pas dépasser 40 caractères.
+
+3. Sélectionnez le ou les **groupes** auxquels rattacher les candidats anonymes (au moins un groupe est obligatoire), choisissez votre fichier dans **Fichier à importer** (Excel ou CSV), puis cliquez sur **Importer**.
+
+4. La page d'aperçu s'affiche. Rien n'est encore enregistré à ce stade. Elle indique le nombre de lignes lues, rappelle les groupes sélectionnés, puis liste chaque ligne avec son statut :
+
+    - **Prêt à importer** — aucun candidat de votre compte ne porte cet identifiant : un candidat anonyme sera créé.
+    - **Existant** — un candidat porte déjà cet identifiant : il ne sera pas recréé, mais ajouté aux groupes sélectionnés.
+    - **Erreur** — la ligne sera ignorée ; la colonne **Commentaire** en donne le motif (identifiant manquant, trop long, en double dans le fichier, ou porté par plusieurs candidats de votre compte).
+
+5. Cliquez sur **Importer les N lignes valides** pour confirmer, ou sur **Annuler** pour revenir à la liste des candidats sans rien importer.
+
+6. La page de résultat indique le nombre de candidats anonymes créés et, le cas échéant, le nombre de candidats existants ajoutés aux groupes. Le bouton **Revenir à la liste des candidats** vous ramène au tableau.
+
+Dans le tableau des candidats, un candidat anonyme se reconnaît à son nom et à son prénom, tous deux « anonymous », et à son identifiant.
+
+### Associer les candidats avec leurs identifiants {#associer-les-identifiants}
+
+Une fois les copies corrigées, cet import remplace l'identité anonyme des candidats par leur identité réelle. Les résultats et les copies déjà rattachés à chaque candidat sont conservés.
+
+1. Dans le menu **Candidats anonymes**, cliquez sur **Associer les candidats avec leurs identifiants**. Une fenêtre s'ouvre.
+
+2. Cliquez sur **Télécharger le modèle de fichier** et renseignez, pour chaque identifiant (`ext_id`), le prénom (`fst_nam`) et le nom (`lst_nam`), tous deux obligatoires. La colonne `ema` (adresse mail) est facultative.
+
+3. Choisissez votre fichier dans **Fichier à importer**, puis cliquez sur **Importer**. Aucun groupe n'est demandé : les candidats restent dans leurs groupes.
+
+4. La page d'aperçu liste chaque ligne (identifiant, nom, prénom, et adresse mail si le fichier la contient) avec son statut :
+
+    - **À renseigner** — l'identifiant est celui d'un candidat anonyme : il recevra le nom, le prénom et, si elle est fournie, l'adresse mail du fichier.
+    - **Déjà nommé** — le candidat portant cet identifiant a déjà un nom et un prénom : il ne sera pas modifié.
+    - **Erreur** — la ligne sera ignorée ; la colonne **Commentaire** en donne le motif (aucun candidat ne porte cet identifiant, nom ou prénom vide, adresse mail invalide, en double dans le fichier ou déjà utilisée par un autre candidat de votre compte…).
+
+5. Cliquez sur **Importer les N lignes valides** pour confirmer, ou sur **Annuler**. La page de résultat indique le nombre de candidats renseignés.
+
+> 💡 **Fichiers et limites** — Les deux imports lisent la feuille nommée **Import** du fichier (celle du modèle) ou, à défaut, sa première feuille, jusqu'à la première ligne vide. Un fichier est limité à 1000 lignes : au-delà, seules les 1000 premières sont lues. Si aucune ligne n'est importable, le bouton de confirmation est désactivé : corrigez votre fichier puis recommencez.
+
+> ⚠️ **Identifiants en double** — Un même identifiant ne doit être porté que par un seul candidat de votre compte : dans le cas contraire, la ligne est en erreur dans les deux imports.
+
+
 ## Inscrire un candidat à un test {#inscrire-un-candidat-a-un-test}
 
 Une fois le candidat créé, vous devez l'inscrire à un ou plusieurs tests pour qu'il puisse les passer. Tout se fait depuis la **fiche du candidat**, qui rassemble ses inscriptions et les actions qui le concernent.

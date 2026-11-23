@@ -6,12 +6,12 @@ layout: admin-manual
 
 Le menu **Compte** regroupe les pages relatives à votre **organisation** (raison sociale, adresse, logo), à la **gestion de vos crédits Tosa** (consultation des packs, alertes d'expiration et de seuil), et à votre **profil administrateur** (mot de passe, identifiants, langue).
 
-Ce chapitre couvre les pages **Détails du compte** et **Alertes crédit**. La gestion des administrateurs est traitée dans son propre chapitre — voir [Gestion des administrateurs](/ai/fr/admins/).
+Ce chapitre couvre les pages **Mon organisation**, **Mon compte** et **Alertes crédit**. La gestion des administrateurs est traitée dans son propre chapitre — voir [Gestion des administrateurs](/ai/fr/admins/).
 
 
-## Détails du compte {#details-du-compte}
+## Mon organisation {#details-du-compte}
 
-Accédez à cette page via **Compte → Détails** depuis le menu de navigation.
+Accédez à cette page via **Compte → Mon organisation** depuis le menu de navigation.
 
 ![Page "Votre compte"](img/01-page-compte.png)
 
@@ -22,6 +22,8 @@ La page **Votre compte** est organisée en plusieurs **onglets** :
 - **Packs** — liste des packs de crédits en cours, leur quantité et leur date d'expiration.
 - **API** — accès à l'API de la plateforme : paramètres d'authentification, identifiants de vos tests et documentation technique. Cet onglet n'apparaît que sur **votre propre compte**.
 - **Supprimer votre compte** — pour l'administrateur principal, lorsque le compte compte plusieurs administrateurs.
+
+Vos informations personnelles d'administrateur (nom, adresse mail, langue, mot de passe) ne se trouvent pas sur cette page : elles se gèrent dans [Mon compte](#mon-compte).
 
 > 💡 **Onglets visibles selon votre profil** — Certains onglets ou champs n'apparaissent que selon le type de compte (par exemple, un onglet **CPF** apparaît pour les centres de formation français inscrits sur Mon Compte Formation). Ne vous inquiétez pas si vous n'avez pas exactement les mêmes onglets que dans la capture ci-dessus.
 
@@ -79,7 +81,48 @@ L'onglet **API** regroupe ce qu'il faut pour connecter votre système d'informat
 
 > 💡 **API non incluse** — Si votre abonnement n'inclut pas l'accès à l'API, l'onglet affiche uniquement un message l'indiquant ; contactez votre interlocuteur Isograd pour l'activer.
 
-> 💡 **Token d'accès personnel** — Un administrateur disposant du privilège **Accès API** peut aussi appeler l'API avec ses propres droits (privilèges et groupes), sans utiliser les identifiants du compte. Dans **Compte → Administrateurs**, ouvrez votre propre ligne en édition : la section **Token d'accès à l'API**, sous le formulaire, indique le nombre de **tokens actifs** et propose **Générer un token** et **Révoquer tous mes tokens**. Le token généré est valable un an et n'est affiché qu'une seule fois : copiez-le aussitôt.
+> 💡 **Token d'accès personnel** — Un administrateur disposant du privilège *Générer un token personnel d'accès à l'API* peut aussi appeler l'API avec ses propres droits (privilèges et groupes), sans utiliser les identifiants du compte — voir [Générer un token d'accès à l'API](#token-api).
+
+
+## Mon compte {#mon-compte}
+
+La page **Mon compte** (menu **Compte → Mon compte**) regroupe ce qui vous concerne personnellement en tant qu'administrateur : vos coordonnées, votre langue d'interface, votre mot de passe et, si vous y êtes autorisé, vos tokens d'accès à l'API. Elle est accessible à tous les administrateurs et ne porte que sur **votre propre** compte ; les autres administrateurs se gèrent depuis [Gestion des administrateurs](/ai/fr/admins/).
+
+### Modifier vos informations
+
+1. Modifiez les champs souhaités :
+
+    - **Civilité**, **Nom**, **Prénom**.
+    - **Adresse mail** — sert à la fois d'identifiant de connexion et d'adresse de notification. Elle doit être unique sur la plateforme.
+    - **Langue** — langue de l'interface. Les emails système (réinitialisation de mot de passe, etc.) vous sont aussi envoyés dans cette langue.
+    - **Commentaire** — note libre, facultative.
+
+2. Cliquez sur **Enregistrer** en haut à droite. La page se recharge avec vos modifications.
+
+> 💡 **Changement de langue immédiat** — Si vous avez choisi une autre langue, l'interface bascule dans cette langue dès l'enregistrement : il n'est pas nécessaire de vous reconnecter.
+
+> 💡 **Formulaire en lecture seule** — Si vous n'êtes pas autorisé à modifier votre fiche d'administrateur, les champs sont grisés et le bouton **Enregistrer** n'apparaît pas. Le changement de mot de passe reste disponible.
+
+### Changer votre mot de passe {#changer-mot-de-passe}
+
+1. Cliquez sur **Changer le mot de passe** en haut à droite de la page. Une fenêtre s'ouvre.
+2. Saisissez le nouveau mot de passe dans **Mot de passe**, puis à nouveau dans **Confirmer le mot de passe**. Le lien **Générer un mot de passe** propose un mot de passe aléatoire, et l'icône œil affiche la saisie en clair.
+3. Cliquez sur **Enregistrer**. Le mot de passe est modifié immédiatement et vous restez connecté.
+
+Le mot de passe doit comporter au moins 6 caractères. Si votre compte impose des mots de passe renforcés, il doit comporter au moins 8 caractères avec un chiffre, une majuscule, une minuscule et un caractère spécial, et ne peut pas être identique au précédent. La fenêtre signale toute saisie non conforme, ainsi qu'une confirmation différente du mot de passe.
+
+### Générer un token d'accès à l'API {#token-api}
+
+Un administrateur disposant du privilège *Générer un token personnel d'accès à l'API* peut créer lui-même un **token personnel** pour appeler l'API de la plateforme avec ses propres droits (privilèges et groupes). Chaque administrateur gère uniquement ses propres tokens. Sans ce privilège, la section n'apparaît pas sur la page.
+
+1. Sous le formulaire de la page **Mon compte**, la section **Token d'accès à l'API** indique le nombre de **Tokens actifs** et, s'il y en a, la date de **Prochaine expiration**.
+2. Cliquez sur **Générer un token**. Le token s'affiche dans un champ en lecture seule, avec sa date d'expiration ; le bouton **Copier** le place dans le presse-papiers. Il n'est pas nécessaire d'enregistrer le formulaire : le token est actif dès sa génération.
+
+> ⚠️ **Affiché une seule fois** — Copiez le token immédiatement : il n'est stocké nulle part et ne pourra plus être réaffiché. S'il est perdu, générez-en un nouveau.
+
+Un token est valable **un an**. Il est vérifié à chaque appel et refusé si vous perdez le privilège, si votre compte est désactivé ou si vous révoquez vos tokens. Vous pouvez générer plusieurs tokens ; ils restent tous actifs jusqu'à leur expiration ou leur révocation.
+
+Pour invalider vos tokens, cliquez sur **Révoquer tous mes tokens** puis confirmez : tous vos tokens sont immédiatement refusés. Le bouton est grisé tant que vous n'avez aucun token actif.
 
 
 ## Packs et crédits {#packs-et-credits}

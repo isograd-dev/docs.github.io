@@ -97,6 +97,62 @@ The candidate import allows you to create several candidates — or even pre-reg
 > 💡 **Import and invitations** — The import does **not** automatically trigger the sending of invitations. To send the login emails after import, refer to the [Send invitations](#send-invitations) section.
 
 
+## Anonymous candidates {#anonymous-candidates}
+
+When exam scripts are marked **anonymously**, each script only carries an **identifier** (anonymity number, candidate number…) and not the name of its author. The **Anonymous candidates** menu of the **Candidate management** page lets you prepare and then lift this anonymity with two Excel files:
+
+- **Import an identifier file** — before the scripts are imported, creates an anonymous candidate for each expected identifier;
+- **Associate candidates with their identifiers** — once the scripts are marked, gives each anonymous candidate their last name, first name and, if you wish, their email address.
+
+As with the candidate import, each import takes place in **two stages**: a **preview** that saves nothing, then the confirmation.
+
+> 💡 **Availability** — The **Anonymous candidates** menu only appears on platforms that have the scanned-script marking module. The scripts themselves are imported from that module — see [Scan paper copies](/ai/en/grading/#exam-scanning).
+
+### Import an identifier file {#import-identifiers}
+
+This import declares in advance the identifiers expected in one or more groups. When the scripts are imported, the platform can then detect the **missing scripts** and the scripts whose identifier matches **no expected identifier**.
+
+1. In the **Anonymous candidates** menu, click **Import an identifier file**. A window opens.
+
+2. Click **Download Candidate File Template** and enter one identifier per row in the `ext_id` column. The column is formatted as text to keep the leading zeros of the identifiers. An identifier cannot exceed 40 characters.
+
+3. Select the **group(s)** the anonymous candidates will join (at least one group is required), choose your file in **Import File** (Excel or CSV), then click **Upload**.
+
+4. The preview page is displayed. Nothing is saved at this stage. It shows the number of rows read, recalls the selected groups, then lists each row with its status:
+
+    - **Ready to be imported** — no candidate of your account carries this identifier: an anonymous candidate will be created.
+    - **Existing** — a candidate already carries this identifier: it will not be created again, but added to the selected groups.
+    - **Error** — the row will be skipped; the **Comment** column gives the reason (identifier missing, too long, duplicated in the file, or carried by several candidates of your account).
+
+5. Click **Import the N valid rows** to confirm, or **Cancel** to go back to the candidates list without importing anything.
+
+6. The result page shows the number of anonymous candidates created and, where applicable, the number of existing candidates added to the groups. The **Back to candidates list** button takes you back to the table.
+
+In the candidates table, an anonymous candidate can be recognised by their last name and first name, both "anonymous", and by their identifier.
+
+### Associate candidates with their identifiers {#associate-identifiers}
+
+Once the scripts are marked, this import replaces the anonymous identity of the candidates with their real identity. The results and scripts already attached to each candidate are kept.
+
+1. In the **Anonymous candidates** menu, click **Associate candidates with their identifiers**. A window opens.
+
+2. Click **Download Candidate File Template** and enter, for each identifier (`ext_id`), the first name (`fst_nam`) and the last name (`lst_nam`), both required. The `ema` column (email address) is optional.
+
+3. Choose your file in **Import File**, then click **Upload**. No group is requested: the candidates stay in their groups.
+
+4. The preview page lists each row (identifier, last name, first name, and email address if the file has it) with its status:
+
+    - **To be named** — the identifier is that of an anonymous candidate: it will receive the last name, the first name and, when provided, the email address of the file.
+    - **Already named** — the candidate carrying this identifier already has a first and last name: it will not be modified.
+    - **Error** — the row will be skipped; the **Comment** column gives the reason (no candidate carries this identifier, empty first or last name, email address invalid, duplicated in the file or already used by another candidate of your account…).
+
+5. Click **Import the N valid rows** to confirm, or **Cancel**. The result page shows the number of candidates named.
+
+> 💡 **Files and limits** — Both imports read the sheet named **Import** of the file (the one of the template) or, failing that, its first sheet, down to the first empty row. A file is limited to 1000 rows: beyond that, only the first 1000 are read. If no row can be imported, the confirmation button is disabled: fix your file and start again.
+
+> ⚠️ **Duplicate identifiers** — A given identifier must be carried by only one candidate of your account: otherwise the row is in error in both imports.
+
+
 ## Register a candidate to a test {#register-a-candidate-to-a-test}
 
 Once the candidate is created, you must register them to one or more tests so they can take them. Everything happens from the **candidate's record**, which gathers their registrations and the actions that concern them.

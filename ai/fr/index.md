@@ -10,12 +10,12 @@ Les captures d'écran sont générées automatiquement à partir des dernières 
 
 ## Compte et administration
 
-- [Gestion de votre compte](account/) — détails du compte, packs et crédits, alertes crédit.
+- [Gestion de votre compte](account/) — votre organisation, votre compte d'administrateur (langue, mot de passe, token d'accès à l'API), packs et crédits, alertes crédit.
 - [Gestion des administrateurs](admins/) — ajouter, modifier, donner des privilèges, désactiver les administrateurs de votre compte.
 
 ## Candidats et passages
 
-- [Gestion des candidats](candidates/) — ajouter, importer, inscrire à des tests, inviter par email, organiser en groupes.
+- [Gestion des candidats](candidates/) — ajouter, importer, gérer les candidats anonymes, inscrire à des tests, inviter par email, organiser en groupes.
 - [Gestion des sessions de passage](sessions/) — créer et planifier des sessions, importer en masse, gérer le calendrier d'examens.
 
 ## Suivi des résultats
