@@ -1,11 +1,11 @@
 {
   "chapter": "account",
-  "generated_at": "2026-11-17T14:50:12.876Z",
+  "generated_at": "2026-11-23T15:05:29.473Z",
   "base_url": "https://test.isograd.com",
   "captures": [
     {
       "name": "01-page-compte.png",
-      "caption": "Page \"Votre compte\" — bandeau d'identité du compte, onglets Adresse / Détails / Packs / API (Administrateur en mode alias).",
+      "caption": "Page \"Votre compte\" — bandeau d'identité du compte, onglets Adresse / Détails / Packs / API.",
       "kind": "viewport-1440x720",
       "url": "https://test.isograd.com/clientadmin/account/CompanyUpdate"
     },
@@ -32,6 +32,19 @@
       "caption": "Onglet \"API\" — bouton d'affichage des paramètres d'authentification, lien vers les identifiants de tests pour l'API et vers la documentation technique.",
       "kind": "viewport-1440x720",
       "url": "https://test.isograd.com/clientadmin/account/CompanyUpdate"
+    },
+    {
+      "name": "07-page-mon-compte.png",
+      "caption": "Page \"Mon compte\" — coordonnées et langue de l'administrateur connecté, boutons Changer le mot de passe et Enregistrer.",
+      "kind": "viewport-1440x720",
+      "url": "https://test.isograd.com/clientadmin/account/AdminAccountUpdate"
+    },
+    {
+      "name": "08-modal-mot-de-passe.png",
+      "caption": "Fenêtre \"Changer le mot de passe\" — mot de passe, confirmation et lien de génération.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://test.isograd.com/clientadmin/account/AdminAccountUpdate"
     },
     {
       "name": "05-page-alertes.png",

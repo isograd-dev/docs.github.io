@@ -39,6 +39,12 @@ sont réalisées sur l'**environnement pedagogy**, avec le login
 La commande unique ci-dessus régénère toujours l'ensemble : chaque spec choisit
 son environnement.
 
+Règle générale : **toute capture liée aux scans ou à la correction se fait sur
+pedagogy**, même si elle illustre un autre chapitre. Exemple : les fenêtres
+« Candidats anonymes » du chapitre `candidates` (captures 18 et 19) sont produites
+par `tests/specs/ui/clientadmin/grading/anonymous-candidates.manual.spec.mjs`,
+avec leur propre manifeste `_manifest-anonymous.json`.
+
 Mécanisme : ces specs importent `test` depuis `tests/fixtures/pedagogy-admin-test.mjs`
 (et non `fixtures/admin-test.mjs`). Ce module remplace `ADMIN_LOGIN_URL` par
 `ADMIN_PEDAGOGY_LOGIN_URL` dans le worker avant le chargement de
@@ -64,7 +70,4 @@ bouton « Editer questions liés » dans l'éditeur, et affiche la fiche de test
 mode avancé. Pour le chapitre « Éditeur de questions », désigner le sujet de
 démo de l'environnement pedagogy avec `MANUAL_SUBJECT_ID=<sbj_id>`.
 
-Dernière régénération du manuel administrateur (fr + en) : 2026-11-17 sur `test.isograd.com` (10 chapitres ; nouvelles captures : fenêtre et aperçu de l'import de candidats, fenêtre de création d'un groupe, candidats d'une session en cours, onglet API du compte). Module Questions et module de correction : régénérés (fr + en) le 2026-11-17 sur `pedagogy.isograd.com`, avec `MANUAL_SUBJECT_ID=529` (sujet DEMO) pour l'éditeur de questions. Reste à refaire : `question-editor` 11 (test de saisie, type de réponse absent de pedagogy), encore issue de la génération d'octobre. Module Questions : dernière régénération complète (fr + en) 2026-10-09, sur `test.isograd.com`
-temporairement configuré en environnement custom, avec un compte root Isograd
-(d'où l'onglet YML, le mode avancé des tests et les données de la base de test
-visibles sur ces captures) — pas encore régénéré sur pedagogy.
+Dernière régénération complète (fr + en) : 2026-11-23 — manuel administrateur (10 chapitres) sur `test.isograd.com`, module Questions et module de correction sur `pedagogy.isograd.com`, avec `MANUAL_SUBJECT_ID=529` (sujet DEMO) pour l'éditeur de questions. Nouvelles captures : fenêtres « Candidats anonymes » (`candidates` 18 et 19, sur pedagogy) ; chapitre Compte, pas encore référencées dans le texte : `07-page-mon-compte`, `08-modal-mot-de-passe`. Captures non produites : `question-editor` 11 (test de saisie, type de réponse absent de pedagogy — encore issue de la génération d'octobre sur `test.isograd.com`), section des tokens API de « Mon compte » (privilège d'accès API absent du compte de `ADMIN_LOGIN_URL` sur `test.isograd.com`), photos des tests surveillés (aucun test surveillé Isograd).

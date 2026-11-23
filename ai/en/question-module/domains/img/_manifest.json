@@ -1,6 +1,6 @@
 {
   "chapter": "question-module/domains",
-  "generated_at": "2026-11-17T14:53:46.758Z",
+  "generated_at": "2026-11-23T14:45:22.156Z",
   "base_url": "https://pedagogy.isograd.com",
   "captures": [
     {
@@ -27,13 +27,13 @@
       "name": "04-onglets-domaine.png",
       "caption": "Fiche d'édition d'un domaine — bandeau et onglets de la fiche (caractéristiques générales, sujets associés ; les niveaux de compétence apparaissent lorsque le domaine en définit).",
       "kind": "viewport-1440x720",
-      "url": "https://pedagogy.isograd.com/domains/DomainUpdate?dom_id=957"
+      "url": "https://pedagogy.isograd.com/domains/DomainUpdate?dom_id=965"
     },
     {
       "name": "05-onglet-associer-sujets.png",
       "caption": "Onglet \"Associer les sujets\" — deux listes côte à côte (Tous les sujets vs Sujets associés) avec glisser-déposer.",
       "kind": "viewport-1440x720",
-      "url": "https://pedagogy.isograd.com/domains/DomainUpdate?dom_id=957"
+      "url": "https://pedagogy.isograd.com/domains/DomainUpdate?dom_id=965"
     }
   ]
 }

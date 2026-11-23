@@ -114,6 +114,8 @@ Cet import déclare à l'avance les identifiants attendus dans un ou plusieurs g
 
 1. Dans le menu **Candidats anonymes**, cliquez sur **Importer un fichier d'identifiants**. Une fenêtre s'ouvre.
 
+    ![Fenêtre d'import d'un fichier d'identifiants](img/18-modal-import-identifiants.png)
+
 2. Cliquez sur **Télécharger le modèle de fichier** et renseignez un identifiant par ligne dans la colonne `ext_id`. La colonne est au format texte pour conserver les zéros en tête des identifiants. Un identifiant ne peut pas dépasser 40 caractères.
 
 3. Sélectionnez le ou les **groupes** auxquels rattacher les candidats anonymes (au moins un groupe est obligatoire), choisissez votre fichier dans **Fichier à importer** (Excel ou CSV), puis cliquez sur **Importer**.
@@ -135,6 +137,8 @@ Dans le tableau des candidats, un candidat anonyme se reconnaît à son nom et �
 Une fois les copies corrigées, cet import remplace l'identité anonyme des candidats par leur identité réelle. Les résultats et les copies déjà rattachés à chaque candidat sont conservés.
 
 1. Dans le menu **Candidats anonymes**, cliquez sur **Associer les candidats avec leurs identifiants**. Une fenêtre s'ouvre.
+
+    ![Fenêtre d'association des candidats avec leurs identifiants](img/19-modal-associer-identifiants.png)
 
 2. Cliquez sur **Télécharger le modèle de fichier** et renseignez, pour chaque identifiant (`ext_id`), le prénom (`fst_nam`) et le nom (`lst_nam`), tous deux obligatoires. La colonne `ema` (adresse mail) est facultative.
 

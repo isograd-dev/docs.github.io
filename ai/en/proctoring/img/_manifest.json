@@ -1,6 +1,6 @@
 {
   "chapter": "proctoring",
-  "generated_at": "2026-11-17T14:52:06.303Z",
+  "generated_at": "2026-11-23T14:43:42.038Z",
   "base_url": "https://test.isograd.com",
   "captures": [
     {
@@ -39,7 +39,7 @@
       "name": "07-page-reunions.png",
       "caption": "Page \"Réunions de la session\" — une carte par réunion en cours (candidats connectés, surveillants présents) avec le bouton \"Entrer dans la réunion\".",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/clientadmin/proctoring/LiveProctoringSession?ses_id=101350"
+      "url": "https://test.isograd.com/clientadmin/proctoring/LiveProctoringSession?ses_id=101391"
     }
   ]
 }

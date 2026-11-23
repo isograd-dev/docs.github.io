@@ -1,6 +1,6 @@
 {
   "chapter": "jobs",
-  "generated_at": "2026-11-17T14:51:42.452Z",
+  "generated_at": "2026-11-23T14:43:15.023Z",
   "base_url": "https://test.isograd.com",
   "captures": [
     {
@@ -20,14 +20,14 @@
       "name": "03-page-niveaux.png",
       "caption": "Page \"Niveau de compétence attendu par profil\" — sélecteurs Sujet / Langue, tableau Compétences.",
       "kind": "viewport-1440x720",
-      "url": "https://test.isograd.com/clientadmin/parameters/SkillsPerJobUpdate?job_id=3395"
+      "url": "https://test.isograd.com/clientadmin/parameters/SkillsPerJobUpdate?job_id=3400"
     },
     {
       "name": "04-tableau-competences.png",
       "caption": "Tableau des compétences — Niveau requis (chiffre + boutons −/+) et Description par domaine.",
       "kind": "element",
       "selector": "#domainlevelsperjob",
-      "url": "https://test.isograd.com/clientadmin/parameters/SkillsPerJobUpdate?job_id=3395"
+      "url": "https://test.isograd.com/clientadmin/parameters/SkillsPerJobUpdate?job_id=3400"
     },
     {
       "name": "05-confirmation-suppression.png",

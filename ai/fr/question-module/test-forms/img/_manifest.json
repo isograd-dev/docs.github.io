@@ -1,6 +1,6 @@
 {
   "chapter": "question-module/test-forms",
-  "generated_at": "2026-11-17T15:00:42.500Z",
+  "generated_at": "2026-11-23T14:38:57.724Z",
   "base_url": "https://pedagogy.isograd.com",
   "captures": [
     {
@@ -20,7 +20,7 @@
       "name": "03-onglets-avance.png",
       "caption": "Page d'édition d'un test — onglets Caractéristiques générales / Gestion du temps / Écrans de début et de fin / Prompt d'analyse IA / Statistiques.",
       "kind": "viewport-1440x720",
-      "url": "https://pedagogy.isograd.com/testforms/TestFormUpdate?tst_frm_uid=3511f950-b766-4b0a-b492-a453fcd7a673"
+      "url": "https://pedagogy.isograd.com/testforms/TestFormUpdate?tst_frm_uid=10b12333-4374-4742-81b6-47f12a89aa5c"
     }
   ]
 }

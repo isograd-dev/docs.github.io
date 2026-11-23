@@ -1,0 +1,21 @@
+{
+  "chapter": "candidates",
+  "generated_at": "2026-11-23T15:04:44.247Z",
+  "base_url": "https://pedagogy.isograd.com",
+  "captures": [
+    {
+      "name": "18-modal-import-identifiants.png",
+      "caption": "Fenêtre \"Importer un fichier d'identifiants\" — explication, groupes de destination, fichier à importer et modèle de fichier.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://pedagogy.isograd.com/clientadmin/candidates/AdminCandidatesWithTable?filter_rows_per_page=50&filter_search=&filter_dep_id=-1&filter_sta_id=-1&lan_id=1&can_uids=%5B%5D&selected_dep_id=0&dep_id_by_lvl=%5B%5D&changepage=1&orderby=a.id+DESC&export_to_excel=0#"
+    },
+    {
+      "name": "19-modal-associer-identifiants.png",
+      "caption": "Fenêtre \"Associer les candidats avec leurs identifiants\" — explication, fichier à importer et modèle de fichier.",
+      "kind": "element",
+      "selector": ".modal.show .modal-content",
+      "url": "https://pedagogy.isograd.com/clientadmin/candidates/AdminCandidatesWithTable?filter_rows_per_page=50&filter_search=&filter_dep_id=-1&filter_sta_id=-1&lan_id=1&can_uids=%5B%5D&selected_dep_id=0&dep_id_by_lvl=%5B%5D&changepage=1&orderby=a.id+DESC&export_to_excel=0#"
+    }
+  ]
+}

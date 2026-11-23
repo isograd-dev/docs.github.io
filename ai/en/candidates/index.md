@@ -114,6 +114,8 @@ This import declares in advance the identifiers expected in one or more groups. 
 
 1. In the **Anonymous candidates** menu, click **Import an identifier file**. A window opens.
 
+    ![Identifier file import window](img/18-modal-import-identifiants.png)
+
 2. Click **Download Candidate File Template** and enter one identifier per row in the `ext_id` column. The column is formatted as text to keep the leading zeros of the identifiers. An identifier cannot exceed 40 characters.
 
 3. Select the **group(s)** the anonymous candidates will join (at least one group is required), choose your file in **Import File** (Excel or CSV), then click **Upload**.
@@ -135,6 +137,8 @@ In the candidates table, an anonymous candidate can be recognised by their last 
 Once the scripts are marked, this import replaces the anonymous identity of the candidates with their real identity. The results and scripts already attached to each candidate are kept.
 
 1. In the **Anonymous candidates** menu, click **Associate candidates with their identifiers**. A window opens.
+
+    ![Window to associate candidates with their identifiers](img/19-modal-associer-identifiants.png)
 
 2. Click **Download Candidate File Template** and enter, for each identifier (`ext_id`), the first name (`fst_nam`) and the last name (`lst_nam`), both required. The `ema` column (email address) is optional.
 

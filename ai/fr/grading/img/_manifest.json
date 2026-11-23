@@ -1,6 +1,6 @@
 {
   "chapter": "grading",
-  "generated_at": "2026-11-17T14:59:52.364Z",
+  "generated_at": "2026-11-23T14:50:36.925Z",
   "base_url": "https://pedagogy.isograd.com",
   "captures": [
     {
@@ -91,13 +91,13 @@
       "name": "14-scan-details.png",
       "caption": "Page d'édition d'un scan, onglet Détails — test utilisé, mode d'attribution des copies, groupe de destination.",
       "kind": "viewport-1440x720",
-      "url": "https://pedagogy.isograd.com/clientadmin/grading/UpdateScanning?sca_uid=6bd3f939-4448-4e17-801a-e676bfa50ff4"
+      "url": "https://pedagogy.isograd.com/clientadmin/grading/UpdateScanning?sca_uid=a939ec0c-f861-4fa2-b7e2-93a2b2134350"
     },
     {
       "name": "15-scan-import.png",
       "caption": "Page d'édition d'un scan, onglet Import — zone de dépôt des copies et copies déjà importées.",
       "kind": "viewport-1440x720",
-      "url": "https://pedagogy.isograd.com/clientadmin/grading/UpdateScanning?sca_uid=6bd3f939-4448-4e17-801a-e676bfa50ff4#exam-import"
+      "url": "https://pedagogy.isograd.com/clientadmin/grading/UpdateScanning?sca_uid=a939ec0c-f861-4fa2-b7e2-93a2b2134350#exam-import"
     }
   ]
 }
