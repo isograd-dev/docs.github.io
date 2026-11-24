@@ -5,7 +5,7 @@
   "captures": [
     {
       "name": "01-copies-a-corriger.png",
-      "caption": "Page \"À corriger\" — filtres (recherche, mode de sélection) et tableau des tests en attente de notation.",
+      "caption": "Page \"À corriger\" — filtres (recherche, statut de notation, correcteur, mode de sélection) et tableau des tests en attente de notation.",
       "kind": "viewport-1440x720",
       "url": "https://pedagogy.isograd.com/clientadmin/grading/AdminGradingWithTable?filter_search=&filter_sta_id=&filter_dep_id=&changepage=1&orderby=c.cre_dat+DESC&export_to_excel=0"
     },

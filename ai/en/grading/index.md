@@ -10,7 +10,7 @@ These pages are grouped in the **Grading** menu. The entries shown depend on you
 
 | Menu entry | Purpose | For whom |
 |---|---|---|
-| **To grade** | The tests waiting for marking: assignment to graders and access to marking. | Graders and supervisors |
+| **To grade** | The tests to grade and the tests already graded: assignment to graders and access to marking. | Graders and supervisors |
 | **Double grading harmonisation** | Compare the two markings of the same copy and settle the score. | Supervisors |
 | **Graders** | Build the grader pairs. | Supervisors |
 | **Juries** | Compose the juries of an exam. | Administrators holding a jury privilege |
@@ -29,30 +29,50 @@ Two privilege levels are involved throughout the chapter (see [Administrator man
 
 ## Copies to grade {#to-grade}
 
-Open this page through the menu **Grading → To grade**. Its title recalls the number of tests waiting for marking.
+Open this page through the menu **Grading → To grade**. It opens on the tests **to grade**; the **Grading status** filter also shows the tests already graded. Its title recalls the number of tests of the displayed status.
 
-!["To grade" page — filters (search, selection mode) and table of the tests waiting for marking.](img/01-copies-a-corriger.png)
+!["To grade" page — filters (search, grading status, grader, selection mode) and table of the tests waiting for marking.](img/01-copies-a-corriger.png)
 
-The table lists the tests with at least one answer left to mark, with the candidate's **group**, **last name** and **first name**, the **test**, the **grader** and the date. The **Grader** column shows the name of the assigned grader or pair; it shows **AI** while an AI marking is still in progress on the test.
+A grader only sees the tests assigned to them, directly or through their pair; a supervisor sees every test of the account.
 
-> 💡 **Double grading** — A test whose answers have all received both markings leaves this list: it then waits on the [Double grading harmonisation](#harmonisation) page.
+By default the table lists the tests with at least one answer left to mark, with the candidate's **group**, **last name** and **first name**, the **test**, the **grader** and the date. The **Grader** column shows the name of the assigned grader or pair; it shows **AI** while an AI marking is still in progress on the test.
+
+> 💡 **Double grading** — A test whose answers have all received both markings leaves the list of tests to grade: it then waits on the [Double grading harmonisation](#harmonisation) page, and is listed among the graded tests.
+
+### Grading status {#grading-status}
+
+The **Grading status** filter chooses which tests are listed:
+
+- **To grade** (default) — the tests with at least one answer still waiting for a marking.
+- **Graded** — the tests that have a grader and nothing left to mark: the result is established, or the test waits for the harmonisation of its double grading.
+- **All grading statuses** — both lists together.
+
+For a grader, a test in double grading moves to the **graded** tests as soon as they have saved all their markings, even if the other member of the pair has not finished.
+
+A test marked by a supervisor without having been assigned keeps that supervisor as its grader: it is therefore listed among the graded tests.
+
+On a graded test whose result is established, the icon at the end of the row becomes **Analysis** and opens the detail of the answers.
 
 ### Select the copies
 
-The filter panel offers a **search** and a **Selection mode** that narrows the list:
+Besides the grading status, the filter panel offers a **search**, a **Grader** filter and a **Selection mode**.
 
-- **None** — every waiting test.
+The **Grader** filter, reserved for supervisors, narrows the list to the tests of one grader, whether assigned to them directly or through a pair. Combined with the **Graded** status, it shows what a grader has already marked; combined with **To grade**, what they still have to do.
+
+The **Selection mode** narrows the list:
+
+- **None** — every test of the chosen status.
 - **By scan** — the copies of one paper-copy import; pick it in the **Scan** selector.
 - **By test** — the takes of one test; pick it in the **Test** selector.
 - **By group** — the candidates of a group or sub-group.
 
-The **Scan** and **Test** selectors only list those with at least one waiting copy. Each change reloads the list, and your filters are kept when you come back to the page.
+The **Scan** and **Test** selectors only list those with at least one copy of the chosen grading status. Each change reloads the list, and your filters are kept when you come back to the page.
 
 ### Assign copies to graders {#assign}
 
 Assignment is reserved for supervisors.
 
-**To assign in bulk**, filter the list first, then:
+**To assign in bulk**, set the **Grading status** to **To grade** — the assignment button is only offered on that status —, filter the list, then:
 
 1. Click **Assign tests to one or more graders** in the action bar.
 
@@ -64,7 +84,7 @@ Assignment is reserved for supervisors.
 
 If you select several graders or pairs, the tests are distributed evenly between them. Only tests with at least one manually marked question are assigned, and a single operation cannot cover more than 1 000 tests.
 
-**To assign a single copy**, click the **Assign test to grader** icon at the end of the row and pick a grader or a pair. The **None** option removes the assignment.
+**To assign a single copy**, click the **Assign test to grader** icon at the end of the row and pick a grader or a pair. The **None** option removes the assignment. The icon stays available as long as the result of the test is not established.
 
 ### Open a copy
 

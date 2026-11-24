@@ -10,7 +10,7 @@ Ces pages sont regroupées dans le menu **Corrections**. Les entrées affichées
 
 | Entrée du menu | Rôle | Pour qui |
 |---|---|---|
-| **À corriger** | Les tests en attente de notation : attribution aux correcteurs et accès à la notation. | Correcteurs et superviseurs |
+| **À corriger** | Les tests à noter et les tests déjà notés : attribution aux correcteurs et accès à la notation. | Correcteurs et superviseurs |
 | **Harmonisation des doubles corrections** | Comparer les deux notations d'une même copie et arrêter la note. | Superviseurs |
 | **Correcteurs** | Constituer les binômes de correcteurs. | Superviseurs |
 | **Jurys** | Composer les jurys d'une épreuve. | Administrateurs disposant d'un privilège sur les jurys |
@@ -29,30 +29,50 @@ Deux niveaux de privilège interviennent tout au long du chapitre (voir [Gestion
 
 ## Copies à corriger {#a-corriger}
 
-Accédez à cette page via le menu **Corrections → À corriger**. Son titre rappelle le nombre de tests en attente de notation.
+Accédez à cette page via le menu **Corrections → À corriger**. Elle s'ouvre sur les tests **à noter** ; le filtre **Statut de notation** permet d'afficher aussi les tests déjà notés. Son titre rappelle le nombre de tests du statut affiché.
 
-![Page "À corriger" — filtres (recherche, mode de sélection) et tableau des tests en attente de notation.](img/01-copies-a-corriger.png)
+![Page "À corriger" — filtres (recherche, statut de notation, correcteur, mode de sélection) et tableau des tests en attente de notation.](img/01-copies-a-corriger.png)
 
-Le tableau liste les tests dont au moins une réponse reste à noter, avec le **groupe**, le **nom** et le **prénom** du candidat, le **test**, le **correcteur** et la date. La colonne **Correcteur** affiche le nom du correcteur ou du binôme attribué ; elle indique **IA** lorsqu'une notation par l'IA est encore en cours sur le test.
+Un correcteur n'y voit que les tests qui lui sont attribués, directement ou à travers son binôme ; un superviseur voit tous les tests du compte.
 
-> 💡 **Double correction** — Un test dont toutes les réponses ont reçu leurs deux notations quitte cette liste : il attend alors sur la page [Harmonisation des doubles corrections](#harmonisation).
+Le tableau liste par défaut les tests dont au moins une réponse reste à noter, avec le **groupe**, le **nom** et le **prénom** du candidat, le **test**, le **correcteur** et la date. La colonne **Correcteur** affiche le nom du correcteur ou du binôme attribué ; elle indique **IA** lorsqu'une notation par l'IA est encore en cours sur le test.
+
+> 💡 **Double correction** — Un test dont toutes les réponses ont reçu leurs deux notations quitte la liste des tests à noter : il attend alors sur la page [Harmonisation des doubles corrections](#harmonisation), et figure parmi les tests notés.
+
+### Statut de notation {#statut-de-notation}
+
+Le filtre **Statut de notation** choisit les tests affichés :
+
+- **À noter** (par défaut) — les tests dont au moins une réponse attend encore une notation.
+- **Notée** — les tests qui ont un correcteur et sur lesquels il ne reste plus rien à noter : le résultat est établi, ou le test attend l'harmonisation de sa double correction.
+- **Tous les statuts de notation** — les deux listes réunies.
+
+Pour un correcteur, un test en double correction passe dans les tests **notés** dès qu'il a enregistré toutes ses notations, même si l'autre membre du binôme n'a pas terminé.
+
+Un test noté par un superviseur sans avoir été attribué garde ce superviseur comme correcteur : il se retrouve ainsi parmi les tests notés.
+
+Sur un test noté dont le résultat est établi, l'icône en bout de ligne devient **Analyse** et ouvre le détail des réponses.
 
 ### Sélectionner les copies
 
-Le panneau de filtres propose une **recherche** et un **Mode de sélection** qui restreint la liste :
+En plus du statut de notation, le panneau de filtres propose une **recherche**, un filtre **Correcteur** et un **Mode de sélection**.
 
-- **Aucun** — tous les tests en attente.
+Le filtre **Correcteur**, réservé aux superviseurs, limite la liste aux tests d'un correcteur, qu'ils lui soient attribués directement ou à travers un binôme. Associé au statut **Notée**, il montre ce qu'un correcteur a déjà noté ; associé à **À noter**, ce qu'il lui reste à faire.
+
+Le **Mode de sélection** restreint la liste :
+
+- **Aucun** — tous les tests du statut choisi.
 - **Par scan** — les copies d'un import de copies papier ; choisissez-le dans le sélecteur **Scan**.
 - **Par test** — les passages d'un test ; choisissez-le dans le sélecteur **Test**.
 - **Par groupe** — les candidats d'un groupe ou d'un sous-groupe.
 
-Les sélecteurs **Scan** et **Test** ne proposent que ceux qui ont au moins une copie en attente. Chaque changement recharge la liste, et vos filtres sont conservés lorsque vous revenez sur la page.
+Les sélecteurs **Scan** et **Test** ne proposent que ceux qui ont au moins une copie du statut de notation choisi. Chaque changement recharge la liste, et vos filtres sont conservés lorsque vous revenez sur la page.
 
 ### Attribuer les copies aux correcteurs {#attribuer}
 
 L'attribution est réservée aux superviseurs.
 
-**Pour attribuer en masse**, filtrez d'abord la liste, puis :
+**Pour attribuer en masse**, placez le **Statut de notation** sur **À noter** — le bouton d'attribution n'est proposé que sur ce statut —, filtrez la liste, puis :
 
 1. Cliquez sur **Attribuer les tests à un ou plusieurs correcteurs** dans la barre d'actions.
 
@@ -64,7 +84,7 @@ L'attribution est réservée aux superviseurs.
 
 Si vous sélectionnez plusieurs correcteurs ou binômes, les tests sont répartis de manière équilibrée entre eux. Seuls les tests comportant au moins une question à notation manuelle sont attribués, et une même opération ne peut pas porter sur plus de 1 000 tests.
 
-**Pour attribuer une seule copie**, cliquez sur l'icône **Attribuer le test à un correcteur** en bout de ligne et choisissez un correcteur ou un binôme. L'option **Aucun** retire l'attribution.
+**Pour attribuer une seule copie**, cliquez sur l'icône **Attribuer le test à un correcteur** en bout de ligne et choisissez un correcteur ou un binôme. L'option **Aucun** retire l'attribution. L'icône reste proposée tant que le résultat du test n'est pas établi.
 
 ### Ouvrir une copie
 
