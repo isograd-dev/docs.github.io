@@ -77,6 +77,8 @@
       anchor: pdf-annotation
     - title: Double grading
       anchor: double-grading
+    - title: Grading campaigns
+      anchor: campaigns
     - title: Juries
       anchor: juries
     - title: Grader fairness

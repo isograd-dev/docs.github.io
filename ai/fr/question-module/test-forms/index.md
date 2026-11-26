@@ -125,7 +125,7 @@ Sa page d'édition diffère de celle d'un test à l'écran.
 
 - **Créé par**, **Nom et description du test** — comme pour un test à l'écran.
 - **Score maximal** — obligatoire, nombre entier supérieur à 0.
-- **Autoriser le correcteur à voir la correction réalisée par l'autre correcteur s'il y en a un** — désactivé par défaut : en double correction, chaque correcteur note sans voir le travail de l'autre.
+- **Ce que le correcteur voit de l'autre correcteur** — **Sa note uniquement** (par défaut), **Sa note et sa correction complète (grille, commentaires, annotations)** ou **Rien**. En double correction, rien n'est visible avant que toutes les copies du binôme soient notées ; et si la copie appartient à une campagne de correction qui ne laisse voir que la note finale, cette règle de la campagne s'applique une fois la note arrêtée. Voir [Noter en binôme](/ai/fr/grading/#noter-en-binome).
 - **Type d'examen** — deux tuiles :
     - **Créer un examen à partir d'une ou plusieurs questions de la base** (notées automatiquement ou manuellement) — choix par défaut.
     - **Utiliser uniquement une grille de notation sur des copies scannées**.

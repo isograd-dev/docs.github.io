@@ -77,6 +77,8 @@
       anchor: annotation-pdf
     - title: Double correction
       anchor: double-correction
+    - title: Campagnes de correction
+      anchor: campagnes
     - title: Jurys
       anchor: jurys
     - title: Équité des correcteurs

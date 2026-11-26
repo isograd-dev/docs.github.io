@@ -359,6 +359,11 @@ La grille liste les **critères** sur lesquels le correcteur note la réponse. *
 - **Nom du critère** et **Description du critère** — ce que le correcteur doit évaluer.
 - **Score maximal du critère** — les points attribuables.
 
+Au-dessus de la liste, deux réglages s'appliquent à toute la grille :
+
+- **Rendre la notation de tous les critères obligatoire** — le correcteur ne peut pas enregistrer sa notation tant qu'un critère n'est pas noté (l'enregistrement en brouillon reste possible).
+- **Nombre de décimales des notes par critère** — de 0 à 2.
+
 Faites glisser les critères pour les réordonner. Le **Score maximal** de la question n'est plus modifiable : il est égal à la somme des scores des critères.
 
 > ⚠️ **Au moins un critère** — Le bouton **Vérifier** signale une soumission manuelle sans critère d'évaluation : définissez la grille avant de passer la question en Production.

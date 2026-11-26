@@ -359,6 +359,11 @@ The grid lists the **criteria** on which the grader marks the answer. **Add a cr
 - **Criterion name** and **Criterion description** — what the grader must assess.
 - **Maximum score for criterion** — the points that can be awarded.
 
+Above the list, two settings apply to the whole grid:
+
+- **Make the marking of every criterion mandatory** — the grader cannot save their marking while a criterion is not marked (saving as a draft remains possible).
+- **Number of decimals of the marks per criterion** — from 0 to 2.
+
 Drag the criteria to reorder them. The question's **Maximum score** is no longer editable: it equals the sum of the criteria scores.
 
 > ⚠️ **At least one criterion** — The **Check** button reports a manual submission with no grading criterion: define the grid before moving the question to Production.

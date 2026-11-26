@@ -125,7 +125,7 @@ Its edit page differs from that of an on-screen test.
 
 - **Created by**, **Name and description** — as for an on-screen test.
 - **Maximum score** — required, a whole number greater than 0.
-- **Allow the grader to see the grading done by the other grader, if any** — off by default: in double grading, each grader marks without seeing the other's work.
+- **What the grader sees of the other grader** — **Their mark only** (default), **Their mark and their whole grading (grid, comments, annotations)** or **Nothing**. In double grading nothing is visible before every copy of the pair is marked; and if the copy belongs to a grading campaign that only shows the final mark, that rule of the campaign applies once the mark is set. See [Marking as a pair](/ai/en/grading/#pair-marking).
 - **Exam type** — two tiles:
     - **Build an exam from one or more questions of the question base** (automatically or manually marked) — the default choice.
     - **Only use a marking grid on scanned copies**.
