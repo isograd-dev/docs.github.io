@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tutoriel du correcteur – Correction dématérialisée des copies – EN3S</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<style>
+/* Couleurs, rayons et typographie repris du thème de la plateforme (css/theme.css, css/runtest.css) */
+:root{
+  --brand-orange:#f14910;--brand-green:#00CC99;--brand-blue:#3773d6;--brand-wrong:#CE4D56;
+  --navy:#2a3354;--page:#f4f7fa;--card:#fff;
+  --text:#2a3354;--strong:#2d3748;--quiet:#5b6b7f;
+  --line:#eceef4;--border:#dde2ea;
+  --info-fg:#2b6cb0;--info-wash:#eef3fb;--info-tint:#dce8f7;
+  --blue-soft:#e7eefa;--green-soft:#e6faf5;--green-dark:#04765a;--wrong-soft:#f9e9ea;
+  --r2:6px;--r3:8px;--r4:10px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--page);font-size:16px;line-height:1.55}
+a{color:var(--info-fg)}
+svg.i{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.125em}
+svg.i.f{fill:currentColor;stroke:none}
+
+/* ───── Page du tutoriel ───── */
+.wrap{max-width:1280px;margin:0 auto;padding:0 20px}
+.narrow{max-width:900px}
+header.top{background:var(--card);border-bottom:1px solid var(--border)}
+header.top .wrap{display:flex;align-items:center;gap:20px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+header.top img{height:46px;width:auto}
+header.top h1{margin:0;font-size:22px;color:var(--strong);line-height:1.25}
+header.top p{margin:2px 0 0;color:var(--quiet);font-size:14.5px}
+nav.toc{background:var(--navy);position:sticky;top:0;z-index:50}
+nav.toc .wrap{display:flex;flex-wrap:wrap;gap:2px 22px;padding-top:9px;padding-bottom:9px}
+nav.toc a{color:#dfe4f1;text-decoration:none;font-size:14px;font-weight:500;padding:3px 0;border-bottom:2px solid transparent}
+nav.toc a:hover,nav.toc a:focus{color:#fff;border-bottom-color:var(--brand-green)}
+main{padding:24px 0 60px}
+section.blk{background:var(--card);border:1px solid var(--border);border-radius:var(--r4);padding:22px 26px;margin:0 auto 20px}
+h2.ttl{display:flex;align-items:center;gap:12px;margin:0 0 14px;font-size:18px;font-weight:800;letter-spacing:.02em;text-transform:uppercase;color:var(--brand-green)}
+h2.ttl .tile{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:var(--r3);background:#fde9e1;color:var(--brand-orange);font-size:16px;flex:none}
+h3{margin:22px 0 6px;font-size:16.5px;color:var(--strong)}
+.lead{font-size:17px}
+.btnname{font-weight:600;color:var(--strong);white-space:nowrap}
+.note{display:flex;gap:12px;align-items:flex-start;border:1px solid #f6e3b5;border-left:3px solid var(--brand-orange);background:#fffaf0;padding:11px 14px;border-radius:var(--r4);margin:14px 0;font-size:15px}
+.note .i{color:var(--brand-orange);font-size:18px;margin-top:2px}
+.note.ok{border-color:#bfeee0;border-left-color:var(--brand-green);background:#f1fcf9}
+.note.ok .i{color:var(--green-dark)}
+.steps{counter-reset:s;list-style:none;margin:0;padding:0}
+.step{counter-increment:s;border-top:1px solid var(--line);padding:20px 0 10px}
+.step:first-child{border-top:0;padding-top:4px}
+.step>h3{margin:0 0 6px;display:flex;gap:12px;align-items:center;font-size:17.5px}
+.step>h3::before{content:counter(s);flex:none;width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700}
+.step p{max-width:900px}
+table.doc{border-collapse:collapse;width:100%;max-width:900px;margin:10px 0;font-size:15px}
+table.doc th,table.doc td{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-align:top}
+table.doc th{background:#f6f8fb;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--quiet)}
+figure.shot{margin:14px 0 8px}
+figure.shot .frame{border:1px solid var(--border);border-radius:var(--r4);overflow:hidden;background:var(--page);box-shadow:0 2px 8px rgba(17,24,39,.06)}
+figure.shot .frame>*{pointer-events:none}
+figure.shot figcaption{color:var(--quiet);font-size:13.5px;margin-top:7px}
+figure.shot.fit{display:inline-block;max-width:100%}
+.shot-list .frame{zoom:.82}
+.shot-bar .frame{padding:10px;background:linear-gradient(180deg,#d9ecf1,#e3e6f6)}
+.shot-viewer .frame{zoom:.86;background:#fff}
+.shot-grid .frame{width:320px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:26px;align-items:start}
+.todo{list-style:none;margin:0 0 12px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.todo li{display:inline-flex;align-items:center;gap:7px;padding:5px 12px 5px 8px;border:1px solid var(--border);border-radius:999px;font-size:13.5px;font-weight:500;background:#fff;color:var(--quiet)}
+.todo li::before{content:"";width:16px;height:16px;border:2px solid #c3cad6;border-radius:50%}
+.todo li.done{color:var(--green-dark);border-color:#bfeee0;background:var(--green-soft)}
+.todo li.done::before{border-color:var(--brand-green);background:var(--brand-green);box-shadow:inset 0 0 0 3px #fff}
+.coach{display:flex;gap:10px;align-items:center;margin:0 0 12px;padding:10px 14px;border-radius:var(--r4);background:var(--info-wash);color:var(--info-fg);font-size:15px;font-weight:500}
+.simbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:10px;font-size:13.5px;color:var(--quiet)}
+.simbar button{font:inherit;font-weight:600;border:1px solid var(--border);background:#fff;color:var(--text);border-radius:var(--r2);padding:6px 12px;cursor:pointer}
+.simbar button:hover{background:var(--info-wash);color:var(--info-fg)}
+.simscroll{overflow-x:auto;border-radius:var(--r4)}
+.quiz fieldset{border:1px solid var(--border);border-radius:var(--r4);margin:0 0 12px;padding:10px 14px}
+.quiz legend{font-weight:600;padding:0 6px;color:var(--strong)}
+.quiz label{display:block;padding:3px 0;cursor:pointer}
+.quiz .fb{font-size:14.5px;margin-top:6px;font-weight:500}
+.quiz .fb.good{color:var(--green-dark)}.quiz .fb.bad{color:#b3323c}
+footer{color:var(--quiet);font-size:13.5px;text-align:center;padding:0 20px 40px}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible,.s:focus-visible{outline:2px solid var(--info-fg);outline-offset:1px}
+
+/* ───── Reproduction de la plateforme : cadre ───── */
+.app{position:relative;display:flex;height:740px;min-width:1120px;border:1px solid var(--border);border-radius:var(--r4);overflow:hidden;background:var(--page);font-size:14px;line-height:1.45;color:var(--text)}
+.app button{font-family:inherit;cursor:pointer}
+.app button:disabled{cursor:default}
+.app [hidden]{display:none!important}
+
+/* Module client : menu latéral, titre, actions, filtres, tableau */
+.side{flex:none;width:214px;background:var(--navy);color:#dfe4f1;padding:18px 0;display:flex;flex-direction:column;gap:2px}
+.side .brand{display:flex;align-items:center;gap:6px;padding:0 20px 16px;font-size:23px;font-weight:800;letter-spacing:-.02em;color:#fff}
+.side .brand .i{color:var(--brand-green);font-size:20px;stroke-width:3}
+.side .mi{display:flex;align-items:center;gap:11px;padding:8px 20px;font-size:14px;font-weight:500;border-left:3px solid transparent}
+.side .mi .i{font-size:14px;opacity:.75}
+.side .mi .x{margin-left:auto;opacity:.7;font-weight:400}
+.side .mi.on{color:#fff;font-weight:600;border-left-color:var(--brand-green)}
+.side .mi.on .i{color:var(--brand-green);opacity:1}
+.side .sub{padding:6px 20px 6px 30px;font-size:12.5px;color:#c9d0e2}
+.side .sub.on{color:#fff;font-weight:600}
+.adm{flex:1;min-width:0;overflow:auto;padding:20px 24px}
+.adm-title{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--border);border-radius:var(--r4);padding:13px 20px;font-size:16px;font-weight:800;letter-spacing:.02em;text-transform:uppercase;color:var(--brand-green)}
+.adm-title .tile{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:var(--r3);background:#fde9e1;color:var(--brand-orange);font-size:15px}
+.adm-alert{display:flex;gap:12px;align-items:flex-start;margin:18px 0;padding:13px 16px;border:1px solid #f6e3b5;border-left:3px solid var(--brand-orange);border-radius:var(--r4);background:#fffaf0;font-size:13.5px}
+.adm-alert .tile{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border:1px solid #f6d9c9;border-radius:var(--r3);background:#fff;color:var(--brand-orange);flex:none}
+.adm-cols{display:grid;grid-template-columns:190px minmax(0,1fr);gap:22px;align-items:start}
+.panel{background:#fff;border:1px solid var(--border);border-radius:var(--r4);margin-bottom:18px}
+.panel-h{display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line);font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--strong)}
+.panel-h .tile{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:var(--r2);background:var(--blue-soft);color:var(--brand-blue);font-size:12px}
+.panel-b{padding:14px 16px;display:flex;flex-direction:column;gap:12px}
+.act{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text);background:none;border:0;padding:4px 0;text-align:left}
+.act .tile{display:inline-flex;align-items:center;justify-content:center;width:24px;height:28px;border-radius:var(--r2);background:var(--green-soft);color:#1d8a5f;font-size:13px}
+.fld label{display:block;margin-bottom:5px;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--strong)}
+.fld input,.fld select{width:100%;height:36px;padding:0 10px;border:1px solid var(--border);border-radius:var(--r2);background:#fff;font:inherit;font-size:13px;color:var(--text)}
+.tbl{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--border);border-radius:var(--r4);overflow:hidden;border-style:hidden;box-shadow:0 0 0 1px var(--border)}
+.tbl th{padding:14px 14px;text-align:left;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--strong);background:#f6f8fb;border-bottom:1px solid var(--line)}
+.tbl td{padding:16px 14px;font-size:13.5px;border-bottom:1px solid var(--line);vertical-align:middle}
+.tbl tr:last-child td{border-bottom:0}
+.tbl .empty{color:var(--quiet);text-align:center;padding:28px}
+.tbadge{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;margin-right:10px;border-radius:var(--r2);background:#5b8fde;color:#fff;font-size:10.5px;font-weight:700}
+.rowbtn{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border:0;border-radius:var(--r3);background:var(--info-wash);color:var(--brand-blue);font-size:15px}
+.rowbtn:hover{background:var(--info-tint)}
+.rowbtn.pulse{animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(55,115,214,.45)}50%{box-shadow:0 0 0 7px rgba(55,115,214,0)}}
+@media (prefers-reduced-motion:reduce){.rowbtn.pulse{animation:none;outline:2px solid var(--brand-blue)}}
+
+/* Écran de notation : fond, barre d'outils, question */
+.rt{flex:1;min-width:0;overflow-y:auto;padding:58px 14px 16px;background:linear-gradient(180deg,#d6eaf0 0%,#dfe9f4 55%,#dfe0f6 100%)}
+.marking-toolbar{position:absolute;z-index:20;top:8px;right:334px;display:flex;align-items:center;gap:4px;border:1px solid var(--border);border-radius:var(--r4);background:#fff;box-shadow:0 2px 8px rgba(17,24,39,.08),0 1px 3px rgba(17,24,39,.05);font-size:13px;line-height:1;white-space:nowrap}
+.app.grid-collapsed .marking-toolbar{right:66px}
+.mt-separator{flex:none;width:1px;height:22px;margin:0 4px;background:var(--line)}
+.mt-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;height:34px;padding:0 11px;border:0;border-radius:var(--r2);background:transparent;color:var(--text);font-size:inherit;font-weight:500;line-height:1}
+.mt-btn:hover:not(:disabled){background:var(--info-wash);color:var(--info-fg)}
+.mt-btn:disabled{opacity:.38}
+.mt-btn .i{font-size:14.5px}
+.mt-stepper{display:inline-flex;flex:none;align-items:center;height:34px;background:#f6f8fb;border-radius:var(--r3)}
+.mt-stepper+.mt-stepper{margin-left:2px}
+.mt-stepper .mt-btn{width:32px;padding:0}
+.mt-stepper-label{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:0 6px;color:var(--quiet);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;line-height:1.15}
+.mt-candidate{min-width:116px}
+.mt-candidate strong{color:var(--strong);font-size:12px;letter-spacing:0}
+.mt-candidate-name{max-width:150px;overflow:hidden;text-overflow:ellipsis;font-weight:500;letter-spacing:0;text-transform:none}
+.mt-draft{color:var(--quiet);font-weight:600}
+.mt-primary,.mt-primary:disabled{padding:0 16px;background:var(--info-fg);color:#fff;font-weight:600}
+.mt-primary:hover:not(:disabled){background:#23598f;color:#fff}
+.qcard{position:relative;background:#fff;border-radius:14px;margin-bottom:16px}
+.qhead{display:flex;align-items:flex-end;gap:26px;padding:16px 34px 14px;border-bottom:1px solid var(--line)}
+.qnum{display:inline-flex;align-items:baseline;gap:8px;padding-bottom:5px;border-bottom:4px solid var(--brand-orange);font-size:12px;font-weight:800;letter-spacing:.16em;color:var(--brand-orange)}
+.qnum b{font-size:22px;letter-spacing:0;color:#111827}
+.qnum span{font-size:14px;letter-spacing:0;color:var(--quiet);font-weight:600}
+.qcode{display:inline-flex;align-items:center;gap:8px;padding-bottom:8px;font-size:14.5px;font-weight:700;color:#1f4fb5}
+.qbody{padding:16px 34px 30px;font-size:14.5px;color:#111827}
+.qhide{position:absolute;right:0;bottom:0;display:inline-flex;align-items:center;gap:8px;padding:4px 10px;border:0;border-radius:var(--r2) 0 0 0;background:var(--brand-orange);color:#fff;font-size:10.5px;font-weight:600}
+.acard{background:#fff;border-radius:14px;padding:18px}
+.pdf-annotation{border:1px solid var(--border);border-radius:var(--r4);padding:18px}
+.aa-label{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--strong)}
+.pdf-annotation-sub{margin:6px 0 10px;font-size:13px;color:var(--quiet)}
+.app.viewer-wide .qcard{display:none}
+
+/* Visionneuse PDF */
+.pv{border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;background:#fff}
+.pv-bar{display:flex;align-items:center;gap:4px;padding:6px 12px;border-bottom:1px solid var(--border)}
+.pv-bar .grow{flex:1}
+.pv-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:34px;height:34px;padding:0 8px;border:1px solid transparent;border-radius:var(--r2);background:transparent;color:#111827;font-size:16px}
+.pv-btn:hover:not(:disabled){background:#f1f3f5}
+.pv-btn.on{border-color:var(--brand-blue);background:var(--info-wash);color:var(--brand-blue)}
+.pv-btn:disabled{opacity:.35}
+.pv-sep{width:1px;height:22px;margin:0 6px;background:var(--border)}
+.pv-zoom{display:inline-flex;align-items:center;gap:8px;height:34px;padding:0 10px;border-radius:var(--r2);background:#f1f3f5;font-size:13px}
+.pv-tabs{display:flex;gap:6px}
+.pv-tab{height:34px;padding:0 9px;border:0;border-bottom:2px solid transparent;background:none;color:#111827;font-size:13px}
+.pv-tab.on{color:var(--brand-blue);border-bottom-color:var(--brand-blue)}
+.pv-tools{display:flex;align-items:center;justify-content:center;gap:6px;padding:6px 12px;border-bottom:1px solid var(--border);background:#f1f3f5}
+.pv-tools .hint{font-size:12.5px;color:var(--quiet)}
+.gl{display:inline-block;min-width:16px;font-size:14px;font-weight:700;line-height:1.15;text-align:center}
+.gl.hl{background:#ffd84d;border-radius:2px}
+.gl.ul{border-bottom:2px solid #e11d48}
+.gl.st{text-decoration:line-through;text-decoration-color:#e11d48;text-decoration-thickness:2px}
+.pv-body{display:flex;height:430px;background:#f1f3f5}
+.app.viewer-wide .pv-body{height:520px}
+.pv-thumbs{flex:none;width:128px;padding:12px;overflow-y:auto;background:#fff;border-right:1px solid var(--border);display:flex;flex-direction:column;align-items:center;gap:6px}
+.pv-thumb{width:84px;height:112px;padding:9px 8px;border:1px solid var(--border);border-radius:4px;background:#fff;display:flex;flex-direction:column;gap:5px}
+.pv-thumb.on{border:2px solid var(--brand-blue)}
+.pv-thumb i{display:block;height:2px;background:#cfd6e1;border-radius:1px}
+.pv-thumb i:first-child{width:45%;height:4px;background:#9aa6b8;margin-bottom:3px}
+.pv-thumb-n{font-size:11px;color:var(--quiet);margin-bottom:6px}
+.pv-pages{flex:1;min-width:0;overflow:auto;padding:16px 12px;display:flex;flex-direction:column;align-items:center;gap:16px;--z:.75}
+.pv-page{flex:none;width:36em;min-height:50em;padding:2.4em 3em 3em;background:#fff;box-shadow:0 1px 4px rgba(17,24,39,.18);font-size:calc(16px*var(--z))}
+.cp-head{display:flex;justify-content:space-between;gap:1em;margin-bottom:1.6em;padding:.6em .9em;border:1px solid #9aa6b8;font-family:Inter,Arial,sans-serif;font-size:.72em;color:#374151}
+.cp-head b{color:#111827}
+.cp-text{font-family:Caveat,"Bradley Hand","Segoe Print","Segoe Script",cursive;font-size:1.42em;line-height:1.72;color:#1b2b6b;background-image:linear-gradient(to bottom,transparent calc(1.72em - 1px),#d9e3ee calc(1.72em - 1px));background-size:100% 1.72em}
+.s{border-radius:2px;cursor:text}
+.app[data-tool] .s{cursor:pointer}
+.app[data-tool] .s:hover{outline:1px dashed var(--brand-blue)}
+.s.hl{background:#ffe066}
+.s.ul{text-decoration:underline;text-decoration-color:#e11d48;text-decoration-thickness:.09em;text-underline-offset:.16em}
+.s.st{text-decoration:line-through;text-decoration-color:#e11d48;text-decoration-thickness:.09em}
+.s.ul.st{text-decoration:underline line-through;text-decoration-color:#e11d48}
+.pin{display:inline-flex;align-items:center;justify-content:center;width:1.25em;height:1.1em;margin-left:.25em;border:1px solid #8a6d00;border-radius:2px;background:#ffd84d;color:#3f3200;font-family:Inter,Arial,sans-serif;font-size:.62em;vertical-align:.25em}
+.pv-comments{flex:none;width:236px;padding:14px 12px;overflow-y:auto;background:#fff;border-left:1px solid var(--border)}
+.pv-comments h5{margin:0;font-size:14px;color:#111827}
+.pv-comments .cnt{margin:0 0 10px;font-size:12px;color:var(--quiet)}
+.pv-comments .none{font-size:12.5px;color:var(--quiet)}
+.cmt{margin-bottom:10px;padding:10px;border:1px solid var(--border);border-radius:var(--r3);font-size:12.5px}
+.cmt-h{display:flex;align-items:center;gap:8px;margin-bottom:5px;font-weight:600;color:#111827}
+.cmt-q{color:var(--quiet);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.cmt-t{margin-top:7px;padding:6px 8px;border-radius:var(--r2);background:var(--info-wash);color:#111827}
+.cmt-f{display:flex;gap:6px;margin-top:8px}
+.cmt-f input{flex:1;min-width:0;height:32px;padding:0 9px;border:1px solid var(--border);border-radius:var(--r2);font:inherit;font-size:12.5px}
+.cmt-f button{flex:none;width:32px;height:32px;border:0;border-radius:var(--r2);background:var(--brand-blue);color:#fff;font-size:13px}
+
+/* Volet « Grille de notation » */
+.marking-grid-panel{flex:none;width:320px;display:flex;flex-direction:column;min-height:0;background:#FAFBFD;border-left:1px solid var(--border);font-size:13.6px}
+.app.grid-collapsed .marking-grid-panel{width:52px}
+.app.grid-collapsed .mv-drawer-icon,.app.grid-collapsed .mv-side-title,.app.grid-collapsed .mv-grader-select,.app.grid-collapsed .mv-side-progress,.app.grid-collapsed .mv-side-list{display:none}
+.app.grid-collapsed .mv-side-head{padding:12px 8px;border-bottom:0;background:transparent}
+.app.grid-collapsed .mv-collapse .i{transform:rotate(180deg)}
+.mv-side-head{padding:14px 16px;border-bottom:1px solid #EEF2F6;background:#fff}
+.mv-side-head-row{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.mv-drawer-icon{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:6px;background:var(--blue-soft);color:var(--brand-blue);font-size:12px;flex:none}
+.mv-side-title{font-size:12px;font-weight:700;letter-spacing:.04em;color:#0F172A;text-transform:uppercase}
+.mv-grader-select{max-width:50%;margin:0 0 0 auto;height:34px;padding:0 8px;border:1px solid var(--border);border-radius:var(--r2);background:#fff;font:inherit;font-size:12.5px;color:#0F172A}
+.mv-collapse{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border:1px solid var(--border);border-radius:var(--r2);background:#fff;color:var(--brand-blue);flex:none}
+.mv-side-progress{display:flex;align-items:center;gap:10px}
+.mv-side-score{font-size:18px;font-weight:700;color:var(--brand-blue);font-variant-numeric:tabular-nums}
+.mv-side-max{font-size:12px;color:#64748B;font-weight:600}
+.mv-side-bar{flex:1;height:6px;background:#F1F5F9;border-radius:999px;overflow:hidden}
+.mv-side-bar-fill{height:100%;background:linear-gradient(90deg,var(--brand-blue),#10B981);border-radius:999px;transition:width .2s ease}
+.mv-side-list{flex:1 1 auto;overflow-y:auto;padding:8px;display:flex;flex-direction:column;gap:6px;min-height:0}
+.mv-readonly-note{margin:0 0 4px;padding:6px 10px;border-radius:8px;background:var(--blue-soft);color:var(--brand-blue);font-size:12px;font-weight:600}
+.mv-side-item{flex:0 0 auto;background:#fff;border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.mv-side-item.filled{border-color:#B7E5D2}
+.mv-side-item[open]{border-color:var(--brand-blue);box-shadow:0 0 0 3px var(--blue-soft)}
+.mv-side-item-head{display:flex;gap:8px;align-items:center;padding:9px 12px;cursor:pointer;list-style:none;flex-wrap:wrap}
+.mv-side-item-head::-webkit-details-marker{display:none}
+.mv-side-item-num{font-size:11px;font-weight:700;color:var(--brand-blue)}
+.mv-side-chev{color:#64748B;font-size:11px;transition:transform .2s ease;display:inline-flex}
+.mv-side-item[open] .mv-side-chev{transform:rotate(180deg)}
+.mv-side-item-title{flex-basis:100%;font-size:12.5px;color:#334155;line-height:1.35;min-width:0;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.mv-side-item[open] .mv-side-item-title{color:#0F172A;font-weight:500;-webkit-line-clamp:unset}
+.mv-side-item-form{padding:10px 12px 12px;border-top:1px solid #EEF2F6;background:#FAFBFD;display:flex;flex-direction:column;gap:9px}
+.cs{display:inline-flex;align-items:baseline;gap:1px;font-weight:700;font-size:11.5px;padding:2px 8px;border-radius:999px;font-variant-numeric:tabular-nums}
+.cs-good{background:var(--green-soft);color:var(--green-dark)}
+.cs-mid{background:#FEF3C7;color:#92400E}
+.cs-low{background:var(--wrong-soft);color:#a53e45}
+.cs-empty{background:#F1F5F9;color:#64748B;padding:2px 9px}
+.cs-max{font-size:9.5px;opacity:.7;font-weight:600}
+.mv-field{display:flex;flex-direction:column;gap:4px}
+.mv-field-label{font-size:10.5px;color:#64748B;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.mv-input{border:1px solid var(--border);border-radius:6px;padding:7px 10px;font-size:12.5px;color:#0F172A;background:#fff;outline:none;font-family:inherit}
+.mv-input:focus{border-color:var(--brand-blue);box-shadow:0 0 0 3px var(--blue-soft)}
+.mv-input[readonly]{background:#f3f5f8;color:#475569}
+.mv-input-num{width:80px;text-align:center;font-weight:600}
+.mv-textarea{resize:vertical;min-height:96px;line-height:1.4}
+
+/* Messages de la plateforme */
+.toasts{position:absolute;z-index:30;top:54px;right:334px;display:flex;flex-direction:column;gap:8px;width:330px;pointer-events:none}
+.app.grid-collapsed .toasts,.app.on-list .toasts{right:16px}
+.toast-custom{display:flex;gap:10px;align-items:flex-start;padding:11px 13px;border-radius:var(--r4);border:1px solid var(--border);border-left:4px solid var(--info-fg);background:#fff;box-shadow:0 6px 20px rgba(17,24,39,.14);font-size:13px;color:#111827}
+.toast-custom[data-type=success]{border-left-color:var(--brand-green)}
+.toast-custom[data-type=success] .i{color:var(--green-dark)}
+.toast-custom[data-type=error]{border-left-color:var(--brand-wrong)}
+.toast-custom[data-type=error] .i{color:var(--brand-wrong)}
+.toast-custom[data-type=info] .i{color:var(--info-fg)}
+.toast-custom .i{font-size:16px;margin-top:1px}
+
+@media(max-width:900px){.two{grid-template-columns:1fr}section.blk{padding:18px}}
+@media print{nav.toc,#exercice,#quiz{display:none}section.blk{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <img src="data:image/png;base64,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" alt="ITS – Isograd Testing Services">
+  <div><h1>Tutoriel du correcteur</h1><p>Correction dématérialisée des copies – École nationale supérieure de Sécurité sociale (EN3S)</p></div>
+</div></header>
+<nav class="toc" aria-label="Sommaire"><div class="wrap">
+  <a href="#essentiel">L'essentiel</a><a href="#etapes">Corriger une copie en six étapes</a><a href="#binome">Corriger en binôme</a><a href="#exercice">Mise en situation</a><a href="#quiz">Vérifiez vos acquis</a><a href="#questions">Questions fréquentes</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="blk" id="essentiel">
+  <h2 class="ttl"><span class="tile" data-i="flag"></span>L'essentiel</h2>
+  <p class="lead narrow">Vous corrigez vos copies à l'écran, depuis votre ordinateur, comme vous le feriez sur papier : vous lisez la copie, vous l'annotez, vous remplissez la grille de notation, puis vous enregistrez.</p>
+  <p class="narrow">Ce tutoriel se lit en une fois ou se consulte à tout moment pendant la correction. Il comporte trois parties : la présentation de l'outil en six étapes, les particularités de la correction en binôme, puis une mise en situation sur une copie d'entraînement, dans une reproduction de l'écran de correction.</p>
+  <div class="note ok narrow"><span data-i="check"></span><div><strong>À retenir.</strong> Rien n'est noté à votre place. L'outil affiche la copie, garde vos annotations et additionne les points de votre grille. La note est la vôtre.</div></div>
+</section>
+
+<section class="blk" id="etapes">
+  <h2 class="ttl"><span class="tile" data-i="pencil"></span>Corriger une copie en six étapes</h2>
+  <p class="narrow">Les illustrations de cette partie reproduisent les écrans de la plateforme. Les candidats, les copies et les notes qui y figurent sont fictifs.</p>
+  <ol class="steps">
+    <li class="step">
+      <h3>Retrouver vos copies</h3>
+      <p>Dans le menu de gauche, ouvrez <span class="btnname">Corrections</span>, puis <span class="btnname">Corrections</span>. La page liste les copies qui vous sont attribuées et qui attendent une note : le filtre <span class="btnname">Statut de notation</span> est réglé sur <span class="btnname">À noter</span>. La colonne <span class="btnname">Correcteur</span> indique votre nom, ou celui de votre binôme si vous corrigez à deux.</p>
+      <p>Pour ouvrir une copie, cliquez sur l'icône <span class="btnname">Noter</span>, en bout de ligne. L'écran de notation s'ouvre sur la première question à corriger.</p>
+      <figure class="shot shot-list"><div class="frame" id="fig-list" inert></div><figcaption>La page Corrections. L'icône en forme de crayon, à droite de chaque ligne, ouvre la copie.</figcaption></figure>
+    </li>
+    <li class="step">
+      <h3>Parcourir la copie</h3>
+      <p>La copie numérisée s'affiche au centre de l'écran, dans une visionneuse. Le premier bouton de sa barre affiche le volet des miniatures : un clic sur une miniature vous amène à la page voulue. Vous pouvez zoomer, vous déplacer dans la page et rechercher un mot. Le bouton d'agrandissement, à droite, étend la visionneuse tout en gardant la grille visible.</p>
+      <p>La barre située en haut de l'écran sert à vous déplacer : <span class="btnname">Revenir à la liste</span>, question précédente ou suivante, candidat précédent ou suivant.</p>
+      <figure class="shot shot-bar fit"><div class="frame" id="fig-bar" inert></div><figcaption>La barre d'outils de l'écran de notation. Les flèches changent de question ou de copie.</figcaption></figure>
+    </li>
+    <li class="step">
+      <h3>Annoter</h3>
+      <p>Dans la barre de la visionneuse, l'onglet <span class="btnname">Annoter</span> donne accès aux outils : surligner, souligner, barrer, dessiner à main levée, écrire du texte et déposer des commentaires. L'onglet <span class="btnname">Formes</span> permet de tracer des cadres, des lignes et des flèches. L'outil choisi reste actif d'une annotation à l'autre. Les flèches <span class="btnname">Annuler</span> et <span class="btnname">Rétablir</span> corrigent une erreur de manipulation.</p>
+      <p>Chaque annotation est reprise dans le volet des commentaires, page par page : vous pouvez y ajouter une remarque et tout relire d'un coup d'œil. Le document remis par le candidat n'est jamais modifié : vos annotations sont enregistrées à part, avec votre notation.</p>
+      <figure class="shot shot-viewer"><div class="frame" id="fig-viewer" inert></div><figcaption>La visionneuse : miniatures à gauche, copie au centre avec un passage surligné et un commentaire, volet des commentaires à droite.</figcaption></figure>
+    </li>
+    <li class="step">
+      <h3>Noter avec la grille</h3>
+      <div class="two">
+        <div>
+          <p>Le volet <span class="btnname">Grille de notation</span>, à droite de la copie, liste les critères de l'épreuve. Cliquez sur un critère pour le déplier : son descriptif vous rappelle ce qui est attendu. Saisissez une note comprise entre 0 et le maximum indiqué, puis un commentaire si vous le jugez utile. Un seul critère est déplié à la fois.</p>
+          <p>La pastille de chaque critère reprend la note saisie, et le total, en haut du volet, se met à jour au fil de votre saisie : vous n'avez aucun calcul à faire.</p>
+          <div class="note ok"><span data-i="check"></span><div>Vous gardez la copie sous les yeux pendant que vous notez : la grille et la copie sont sur le même écran.</div></div>
+        </div>
+        <figure class="shot shot-grid"><div class="frame" id="fig-grid" inert></div><figcaption>Le volet Grille de notation.</figcaption></figure>
+      </div>
+    </li>
+    <li class="step">
+      <h3>Enregistrer</h3>
+      <p>Deux boutons, à droite de la barre d'outils, servent à enregistrer votre travail.</p>
+      <figure class="shot shot-bar fit"><div class="frame" id="fig-save" inert></div><figcaption>Les deux boutons d'enregistrement.</figcaption></figure>
+      <table class="doc">
+        <tr><th scope="col">Bouton</th><th scope="col">Ce qu'il fait</th><th scope="col">Quand l'utiliser</th></tr>
+        <tr><td><span class="btnname">Enregistrer en brouillon</span></td><td>Conserve votre grille et vos annotations, sans valider la note. La question reste à corriger.</td><td>Vous êtes interrompu, ou vous voulez relire la copie plus tard.</td></tr>
+        <tr><td><span class="btnname">Enregistrer</span></td><td>Valide la note de la question, égale à la somme des points de la grille. Les annotations sont enregistrées avec elle.</td><td>Votre correction de la question est terminée.</td></tr>
+      </table>
+      <p>Lorsque l'épreuve impose de noter tous les critères, <span class="btnname">Enregistrer</span> est refusé tant qu'un critère est vide : un message cite les critères manquants. Le brouillon reste possible.</p>
+      <div class="note"><span data-i="info"></span><div><strong>Chaque question s'enregistre séparément.</strong> Enregistrez avant de changer de copie. Si vous quittez la page avec des annotations non enregistrées, votre navigateur vous demande une confirmation.</div></div>
+    </li>
+    <li class="step">
+      <h3>Passer à la copie suivante</h3>
+      <p>Utilisez la flèche <span class="btnname">Candidat suivant</span> pour corriger la même question sur la copie suivante, sans repasser par la liste. Le compteur de la barre d'outils vous indique où vous en êtes. Une copie dont vous avez noté toutes les questions quitte la liste des copies à noter : vous la retrouvez avec le statut de notation <span class="btnname">Notée</span>.</p>
+    </li>
+  </ol>
+</section>
+
+<section class="blk" id="binome">
+  <h2 class="ttl"><span class="tile" data-i="users"></span>Corriger en binôme</h2>
+  <p class="narrow">En double correction, la même copie est notée par deux correcteurs. Vous procédez exactement comme ci-dessus, avec votre propre grille et votre propre copie annotée.</p>
+  <ul class="narrow">
+    <li><strong>Vous corrigez sans voir le travail de l'autre.</strong> Ni la grille ni les annotations de votre co-correcteur ne vous sont montrées tant que votre lot n'est pas terminé, c'est-à-dire tant que toutes les copies attribuées à votre binôme n'ont pas été notées par vous deux. Ensuite, selon le réglage retenu pour l'épreuve, vous voyez sa note, sa correction complète, ou rien.</li>
+    <li><strong>Votre notation est verrouillée une fois enregistrée.</strong> Relisez donc votre grille avant de cliquer sur <span class="btnname">Enregistrer</span>, et utilisez le brouillon tant que vous hésitez.</li>
+    <li><strong>La note est arrêtée après comparaison.</strong> Quand les deux corrections sont enregistrées, les deux notes sont comparées. Si leur écart reste dans les limites fixées pour l'épreuve, la note peut être la moyenne des deux. Au-delà, la copie passe au statut <span class="btnname">À harmoniser</span> : vous vous mettez d'accord avec votre co-correcteur, l'un de vous propose la note harmonisée et l'autre la valide. Le service des concours peut aussi arrêter la note.</li>
+    <li><strong>Une fois toutes vos notations enregistrées,</strong> l'icône <span class="btnname">Noter</span> devient <span class="btnname">Voir la notation</span> : vous pouvez relire, sans modifier.</li>
+  </ul>
+</section>
+
+<section class="blk" id="exercice">
+  <h2 class="ttl"><span class="tile" data-i="play"></span>Mise en situation : corrigez une copie d'entraînement</h2>
+  <p class="narrow">Cet exercice reproduit la page Corrections et l'écran de notation de la plateforme : mêmes barres d'outils, même grille, mêmes boutons. Vous y enchaînez les gestes d'une vraie correction sur des copies fictives. Rien de ce que vous saisissez ici n'est enregistré ni transmis.</p>
+  <ul class="todo" id="todo" aria-label="Objectifs de l'exercice">
+    <li data-k="open">Ouvrir une copie</li>
+    <li data-k="page">Afficher la page 2</li>
+    <li data-k="hl">Surligner un passage</li>
+    <li data-k="cm">Écrire un commentaire</li>
+    <li data-k="grid">Noter les trois critères</li>
+    <li data-k="draft">Enregistrer en brouillon</li>
+    <li data-k="save">Enregistrer la note</li>
+    <li data-k="next">Passer au candidat suivant</li>
+  </ul>
+  <div class="coach" id="coach" role="status" aria-live="polite"></div>
+  <div class="simscroll"><div class="app" id="sim"></div></div>
+  <div class="simbar"><span>Reproduction simplifiée : le dessin à main levée, les formes, la recherche et l'anti-plagiat ne sont pas simulés.</span><button type="button" id="b-reset">Recommencer l'exercice</button></div>
+</section>
+
+<section class="blk quiz" id="quiz">
+  <h2 class="ttl"><span class="tile" data-i="check"></span>Vérifiez vos acquis</h2>
+  <p>Quatre questions pour vous assurer que l'essentiel est retenu. La réponse s'affiche dès que vous choisissez.</p>
+  <fieldset data-a="b"><legend>1. Vous devez vous interrompre au milieu d'une copie. Que faites-vous ?</legend>
+    <label><input type="radio" name="q1" value="a"> Je ferme l'onglet, tout est conservé automatiquement.</label>
+    <label><input type="radio" name="q1" value="b"> Je clique sur « Enregistrer en brouillon ».</label>
+    <label><input type="radio" name="q1" value="c"> Je clique sur « Enregistrer » pour ne rien perdre.</label>
+    <div class="fb" data-ok="Oui. Le brouillon garde la grille et les annotations, et la question reste à corriger." data-ko="Non. Le brouillon s'enregistre à votre demande, et « Enregistrer » valide la note."></div></fieldset>
+  <fieldset data-a="c"><legend>2. En binôme, pouvez-vous modifier votre note après l'avoir enregistrée ?</legend>
+    <label><input type="radio" name="q2" value="a"> Oui, à tout moment.</label>
+    <label><input type="radio" name="q2" value="b"> Oui, tant que mon co-correcteur n'a pas terminé.</label>
+    <label><input type="radio" name="q2" value="c"> Non, la notation est verrouillée.</label>
+    <div class="fb" data-ok="Oui. D'où l'intérêt de relire sa grille avant d'enregistrer." data-ko="Non. En double correction, la notation enregistrée est verrouillée."></div></fieldset>
+  <fieldset data-a="a"><legend>3. Comment la note d'une question est-elle calculée ?</legend>
+    <label><input type="radio" name="q3" value="a"> C'est la somme des points que j'ai saisis dans la grille.</label>
+    <label><input type="radio" name="q3" value="b"> L'outil propose une note que je valide.</label>
+    <label><input type="radio" name="q3" value="c"> Je la saisis à part, sans lien avec la grille.</label>
+    <div class="fb" data-ok="Oui. L'outil additionne vos points, il ne note pas à votre place." data-ko="Non. La note est la somme des points de votre grille, et rien n'est noté à votre place."></div></fieldset>
+  <fieldset data-a="b"><legend>4. Vos annotations modifient-elles le document du candidat ?</legend>
+    <label><input type="radio" name="q4" value="a"> Oui, elles sont inscrites dans le fichier d'origine.</label>
+    <label><input type="radio" name="q4" value="b"> Non, elles sont enregistrées à part, avec la notation.</label>
+    <div class="fb" data-ok="Oui. Le document d'origine n'est jamais modifié." data-ko="Non. Le document d'origine reste intact, les annotations sont enregistrées à part."></div></fieldset>
+</section>
+
+<section class="blk" id="questions">
+  <h2 class="ttl"><span class="tile" data-i="help"></span>Questions fréquentes</h2>
+  <div class="narrow">
+  <h3>De quel matériel ai-je besoin ?</h3>
+  <p>Un ordinateur relié à Internet et un navigateur à jour suffisent. Aucun logiciel n'est à installer.</p>
+  <h3>Je me suis trompé dans une note déjà enregistrée. Que faire ?</h3>
+  <p>En correction simple, le bouton <span class="btnname">Modifier la notation</span> vous permet de la corriger : la nouvelle note remplace l'ancienne. En binôme, la notation est verrouillée : signalez l'erreur au service des concours.</p>
+  <h3>J'ai fermé la page sans enregistrer. Mon travail est-il perdu ?</h3>
+  <p>Ce qui n'a été enregistré ni en brouillon ni définitivement n'est pas conservé. Le navigateur vous prévient avant de quitter une page qui contient des annotations non enregistrées.</p>
+  <h3>Qui contacter en cas de difficulté ?</h3>
+  <p>L'assistance d'Isograd répond du lundi au vendredi, de 9 h à 12 h et de 13 h à 18 h. Ses coordonnées et l'adresse de connexion vous sont communiquées avec vos identifiants. Pour toute question sur l'épreuve elle-même, adressez-vous au service des concours de l'EN3S.</p>
+  </div>
+</section>
+
+</main>
+<footer>Isograd – Tutoriel du correcteur – version 2, novembre 2026. Copies d'entraînement et données fictives.</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ───── Icônes (tracés simples, dans l'esprit de celles de la plateforme) ───── */
+  var ICONS = {
+    list: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M9 5v14"/>',
+    chevL: '<path d="M15 6l-6 6 6 6"/>', chevR: '<path d="M9 6l6 6-6 6"/>', chevD: '<path d="M6 9l6 6 6-6"/>',
+    chevs: '<path d="M6 6l6 6-6 6M13 6l6 6-6 6"/>',
+    search: '<circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/>',
+    shield: '<path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/>',
+    check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+    pencil: '<path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/>',
+    eye: '<path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+    eyeOff: '<path d="M4 4l16 16M9.5 6.3A10.6 10.6 0 0112 6c6.5 0 10 6 10 6a17 17 0 01-3.2 3.8M6 7.8C3.4 9.5 2 12 2 12s3.5 6 10 6c1.3 0 2.5-.2 3.6-.6"/>',
+    user: '<circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/>',
+    users: '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-5.5 6.5-5.5s6.5 2 6.5 5.5M16 4.8a3.5 3.5 0 010 6.4M18 14.8c2 .6 3.5 2.2 3.5 5.2"/>',
+    menu: '<path d="M4 9h16M4 15h16"/>',
+    sidebar: '<rect x="4" y="4" width="16" height="16" rx="2"/><path d="M10 4v16"/>',
+    doc: '<path d="M7 3h7l4 4v14H7zM14 3v4h4"/>',
+    minus: '<circle cx="12" cy="12" r="8"/><path d="M8.5 12h7"/>',
+    plus: '<circle cx="12" cy="12" r="8"/><path d="M8.5 12h7M12 8.5v7"/>',
+    hand: '<path d="M8 13V6.5a1.5 1.5 0 013 0V11V5a1.5 1.5 0 013 0v6V6.5a1.5 1.5 0 013 0V15c0 3.5-2.5 6-6 6-3 0-4.5-1.5-5.8-3.8L3.5 14a1.4 1.4 0 012.3-1.5L8 15"/>',
+    pointer: '<path d="M6 4l12 7-5.5 1.5L11 18z"/>',
+    comment: '<path d="M5 5h14v10H10l-4 4v-4H5z"/><path d="M9 10h.01M12 10h.01M15 10h.01"/>',
+    expand: '<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
+    undo: '<path d="M8 8l-4 4 4 4M4 12h11a5 5 0 015 5"/>',
+    redo: '<path d="M16 8l4 4-4 4M20 12H9a5 5 0 00-5 5"/>',
+    note: '<path d="M5 4h14v11l-5 5H5zM14 20v-5h5"/>',
+    pen: '<path d="M4 20c3-1 4-4 6-4s2 3 4 3 3-6 6-7M14 4l3 3-6 6-3.5.5.5-3.5z"/>',
+    send: '<path d="M12 5l7 14H5z"/>',
+    info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/>',
+    flag: '<path d="M5 21V4M5 5h12l-2 4 2 4H5"/>',
+    play: '<path d="M8 5l11 7-11 7z"/>',
+    help: '<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 114 2c-.9.7-1.5 1.2-1.5 2.5M12 17.5v.01"/>',
+    filter: '<path d="M4 5h16l-6 7v6l-4 2v-8z"/>',
+    excel: '<path d="M7 3h7l4 4v14H7zM14 3v4h4M10 12l4 5M14 12l-4 5"/>',
+    grid: '<rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 10h8M8 14h8"/>',
+    copy: '<rect x="8" y="8" width="11" height="12" rx="2"/><path d="M5 16V5a1 1 0 011-1h9"/>',
+    cap: '<path d="M2 9l10-5 10 5-10 5zM6 11.5V16c2 2 10 2 12 0v-4.5"/>',
+    out: '<path d="M10 5H5v14h5M14 8l4 4-4 4M9 12h9"/>',
+    arrow: '<path d="M6 18L18 6M9 6h9v9"/>',
+    square: '<rect x="5" y="6" width="14" height="12" rx="1"/>', circle: '<circle cx="12" cy="12" r="7"/>', line: '<path d="M5 19L19 5"/>'
+  };
+  function ic(name, filled) {
+    var t = document.createElement('template');
+    t.innerHTML = '<svg class="i' + (filled ? ' f' : '') + '" viewBox="0 0 24 24" aria-hidden="true">' + ICONS[name] + '</svg>';
+    return t.content.firstChild;
+  }
+  document.querySelectorAll('[data-i]').forEach(function (e) { e.append(ic(e.dataset.i)); });
+
+  /** Crée un élément : propriétés DOM, plus attrs (attributs), data (dataset) et on (écouteurs) */
+  function h(tag, props) {
+    var e = document.createElement(tag), p = props || {};
+    Object.keys(p).forEach(function (k) {
+      if (k === 'attrs') Object.keys(p.attrs).forEach(function (a) { e.setAttribute(a, p.attrs[a]); });
+      else if (k === 'data') Object.assign(e.dataset, p.data);
+      else if (k === 'on') Object.keys(p.on).forEach(function (ev) { e.addEventListener(ev, p.on[ev]); });
+      else e[k] = p[k];
+    });
+    for (var i = 2; i < arguments.length; i++) {
+      [].concat(arguments[i]).forEach(function (c) { if (c != null && c !== false) e.append(c); });
+    }
+    return e;
+  }
+  function fr(n) { return String(n).replace('.', ','); }
+
+  /* ───── Données fictives ───── */
+  var GRADER = 'Dominique Martin';
+  var PAIR = 'Binôme 07';
+  var TEST = 'Culture générale – entraînement';
+  var QUESTION = 'Composition : « La solidarité est-elle encore le fondement de notre protection sociale ? »';
+  var CRITERIA = [
+    { name: 'Compréhension du sujet', weight: 8, description: '0 à 2 : sujet mal cerné. 3 à 5 : sujet compris, problématique peu explicite. 6 à 8 : sujet cerné, problématique clairement posée.' },
+    { name: 'Argumentation et plan', weight: 8, description: '0 à 2 : idées juxtaposées. 3 à 5 : plan annoncé mais suivi de façon inégale. 6 à 8 : idées enchaînées, plan annoncé et tenu.' },
+    { name: 'Expression écrite', weight: 4, description: '0 à 1 : erreurs nombreuses qui gênent la lecture. 2 à 3 : quelques erreurs. 4 : orthographe et syntaxe maîtrisées.' }
+  ];
+  var MAX = CRITERIA.reduce(function (s, c) { return s + c.weight; }, 0);
+  var COPIES = [
+    { id: 7705021, lastName: 'Lefèvre', firstName: 'Camille', file: 'COPIE-0412.PDF', anon: '0412', pages: [
+      ['La solidarité est souvent présentée comme le fondement de notre protection sociale.',
+       'Elle repose sur une idée simple : chacun contribue selon ses moyens et reçoit selon ses besoins.',
+       'Pourtant, cette idée est aujourd\'hui discutée, car les besoins augmentent plus vite que les ressources.',
+       'Nous verrons d\'abord en quoi la solidarité reste un principe structurant, puis les tensions qui la traversent.',
+       'Dans un premier temps, il faut rappeler que la solidarité organise le partage des risques entre les générations.'],
+      ['Dans un second temps, on constate que le vieillissement de la population modifie cet équilibre.',
+       'Certains proposent alors de responsabiliser davantage les individus.',
+       'Cette piste est intéressante mais elle comporte des risque pour les plus fragiles.',
+       'En conclusion, la solidarité doit évoluer sans perdre ce qui fait sa force : la confiance entre les citoyens.']] },
+    { id: 7705022, lastName: 'Moreau', firstName: 'Hugo', file: 'COPIE-0413.PDF', anon: '0413', pages: [
+      ['La protection sociale française est née d\'une ambition collective, celle de 1945.',
+       'La solidarité en est le cœur, mais elle prend aujourd\'hui des formes nouvelles.',
+       'Nous montrerons que ce principe demeure, puis qu\'il doit être repensé.',
+       'D\'abord, la solidarité se lit dans le financement : les cotisations sont proportionnelles aux revenus.'],
+      ['Ensuite, la montée des dépenses de santé oblige à faire des choix.',
+       'On peut donc dire que la solidarité reste le fondement, à condition d\'être expliquée aux citoyens.']] },
+    { id: 7705023, lastName: 'Garnier', firstName: 'Inès', file: 'COPIE-0414.PDF', anon: '0414', pages: [
+      ['Parler de solidarité, c\'est parler de ce qui nous lie les uns aux autres.',
+       'Notre protection sociale traduit ce lien dans des règles et dans des droits.',
+       'Mais ce lien est-il encore accepté par tous ?',
+       'Nous répondrons en deux temps : un principe toujours vivant, puis un principe contesté.'],
+      ['La contestation vient d\'abord du sentiment de payer pour les autres.',
+       'Elle vient aussi de la complexité du système, que peu de gens comprennent.',
+       'La solidarité reste donc le fondement, mais elle doit redevenir lisible.']] }
+  ];
+  var ZOOMS = [.5, .62, .75, 1, 1.25];
+  var TOOL_LABELS = { hl: 'Surligner', ul: 'Souligner', st: 'Barrer', note: 'Commentaire' };
+
+  function freshCopyState() { return { annots: [], redo: [], grid: {}, saved: false, dirty: false }; }
+
+  /* ───── Reproduction de la plateforme ─────
+     Une instance par écran affiché : l'exercice (interactif) et les illustrations des étapes (figées). */
+  function Sim(opts) {
+    this.root = opts.root || h('div', { className: 'app' });
+    this.onTask = opts.onTask || function () {};
+    this.states = COPIES.map(freshCopyState);
+    this.current = 0;
+    this.status = 'todo';
+    this.tool = null;
+    this.zoom = 2;
+    this.thumbs = false;
+    this.comments = false;
+    this.tab = 'view';
+    this.seq = 0;
+  }
+
+  Sim.prototype.toast = function (type, message) {
+    var box = this.root.querySelector('.toasts');
+    if (!box) return;
+    var toast = h('div', { className: 'toast-custom', data: { type: type }, attrs: { role: type === 'error' ? 'alert' : 'status' } },
+      ic(type === 'success' ? 'check' : 'info'), h('span', { textContent: message }));
+    box.append(toast);
+    setTimeout(function () { toast.remove(); }, type === 'error' ? 6500 : 4200);
+  };
+
+  Sim.prototype.total = function (state) {
+    return CRITERIA.reduce(function (sum, c) {
+      var v = state.grid[c.name] && state.grid[c.name].points;
+      return sum + (v == null || v === '' ? 0 : parseFloat(v));
+    }, 0);
+  };
+
+  /* --- Page « Corrections » du module client --- */
+  Sim.prototype.buildList = function () {
+    var self = this;
+    var rows = COPIES.map(function (copy, index) { return { copy: copy, index: index, state: self.states[index] }; })
+      .filter(function (row) { return self.status === 'all' || (self.status === 'done') === row.state.saved; });
+    var withScore = this.status !== 'todo';
+    var firstTodo = true;
+
+    var side = h('nav', { className: 'side', attrs: { 'aria-label': 'Menu de la plateforme' } },
+      h('div', { className: 'brand' }, ic('arrow'), 'isograd'),
+      h('div', { className: 'mi' }, ic('info'), 'Compte', h('span', { className: 'x', textContent: '+' })),
+      h('div', { className: 'mi on' }, ic('cap'), 'Corrections', h('span', { className: 'x', textContent: '−' })),
+      h('div', { className: 'sub on', textContent: '> Corrections' }),
+      h('div', { className: 'mi' }, ic('help'), 'Aide & Support', h('span', { className: 'x', textContent: '+' })),
+      h('div', { className: 'mi' }, ic('out'), 'Déconnexion'));
+
+    var statusSelect = h('select', { attrs: { 'aria-label': 'Statut de notation' }, on: { change: function () { self.status = statusSelect.value; self.showList(); } } },
+      h('option', { value: 'todo', textContent: 'À noter' }),
+      h('option', { value: 'done', textContent: 'Notée' }),
+      h('option', { value: 'all', textContent: 'Tous les statuts de notation' }));
+    statusSelect.value = this.status;
+
+    var table = h('table', { className: 'tbl' },
+      h('thead', null, h('tr', null,
+        ['ID', 'Groupe', 'Nom', 'Prénom', 'Test', 'Correcteur'].concat(withScore ? ['Ma note'] : [], ['Date de création', '']).map(function (label) {
+          return h('th', { textContent: label, attrs: { scope: 'col' } });
+        }))),
+      h('tbody', null, rows.length ? rows.map(function (row) {
+        var label = row.state.saved ? 'Voir la notation' : 'Noter';
+        var button = h('button', { type: 'button', className: 'rowbtn', title: label, attrs: { 'aria-label': label + ' la copie de ' + row.copy.firstName + ' ' + row.copy.lastName },
+          on: { click: function () { self.onTask('open'); self.showMarking(row.index); } } }, ic(row.state.saved ? 'eye' : 'pencil'));
+        if (!row.state.saved && firstTodo && self.pulse) { button.classList.add('pulse'); firstTodo = false; }
+        var score = row.state.saved ? fr(self.total(row.state)) + ' / ' + MAX : (Object.keys(row.state.grid).length && !row.state.dirty ? fr(self.total(row.state)) + ' / ' + MAX + ' (brouillon)' : '');
+        return h('tr', null,
+          h('td', { textContent: row.copy.id }), h('td', { textContent: 'Concours 2027' }),
+          h('td', { textContent: row.copy.lastName }), h('td', { textContent: row.copy.firstName }),
+          h('td', null, h('span', { className: 'tbadge', textContent: 'CG' }), TEST),
+          h('td', { textContent: PAIR }),
+          withScore ? h('td', { textContent: score }) : null,
+          h('td', { textContent: '23/11/26' }),
+          h('td', null, button));
+      }) : h('tr', null, h('td', { className: 'empty', colSpan: withScore ? 9 : 8, textContent: 'Aucune copie ne correspond à ce statut de notation.' }))));
+
+    var todoCount = this.states.filter(function (s) { return !s.saved; }).length;
+    var doneCount = this.states.length - todoCount;
+    var title = this.status === 'todo' ? 'Corrections (' + todoCount + ' test' + (todoCount > 1 ? 's' : '') + ' en attente de notation)'
+      : this.status === 'done' ? 'Corrections (' + doneCount + ' test' + (doneCount > 1 ? 's' : '') + ' noté' + (doneCount > 1 ? 's' : '') + ')'
+      : 'Corrections (' + this.states.length + ' tests)';
+
+    var main = h('div', { className: 'adm' },
+      h('div', { className: 'adm-title' }, h('span', { className: 'tile' }, ic('pencil')), title),
+      h('div', { className: 'adm-alert' }, h('span', { className: 'tile' }, ic('info')),
+        h('span', { textContent: 'Cette page liste les tests en attente de notation qui vous sont attribués. Le statut de notation permet d\'afficher les copies à noter ou celles que vous avez déjà notées.' })),
+      h('div', { className: 'adm-cols' },
+        h('div', null,
+          h('div', { className: 'panel' },
+            h('div', { className: 'panel-h' }, h('span', { className: 'tile' }, ic('play', true)), 'Actions'),
+            h('div', { className: 'panel-b' }, h('button', { type: 'button', className: 'act',
+              on: { click: function () { self.toast('info', 'Dans la plateforme, ce bouton télécharge la liste affichée au format Excel.'); } } },
+              h('span', { className: 'tile' }, ic('excel')), 'Exporter vers Excel'))),
+          h('div', { className: 'panel' },
+            h('div', { className: 'panel-h' }, h('span', { className: 'tile' }, ic('filter')), 'Filtres'),
+            h('div', { className: 'panel-b' },
+              h('div', { className: 'fld' }, h('input', { type: 'text', placeholder: 'Rechercher...', attrs: { 'aria-label': 'Rechercher' } })),
+              h('div', { className: 'fld' }, h('label', { textContent: 'Statut de notation' }), statusSelect)))),
+        table));
+    return [side, main, h('div', { className: 'toasts' })];
+  };
+
+  Sim.prototype.showList = function () {
+    this.root.className = 'app on-list';
+    delete this.root.dataset.tool;
+    this.tool = null;
+    this.root.replaceChildren.apply(this.root, this.buildList());
+  };
+
+  /* --- Écran de notation --- */
+  Sim.prototype.leaveCopy = function () {
+    var state = this.states[this.current];
+    if (state.dirty && !window.confirm('Des annotations ou des notes de cette copie ne sont pas enregistrées. Quitter la copie sans enregistrer ?')) {
+      return false;
+    }
+    return true;
+  };
+
+  Sim.prototype.buildToolbar = function () {
+    var self = this, copy = COPIES[this.current], state = this.states[this.current];
+    function iconButton(icon, label, handler, disabled) {
+      return h('button', { type: 'button', className: 'mt-btn', title: label, disabled: !!disabled, attrs: { 'aria-label': label }, on: { click: handler || function () {} } }, ic(icon));
+    }
+    function go(delta) {
+      return function () {
+        if (!self.leaveCopy()) return;
+        self.onTask('next');
+        self.showMarking(self.current + delta);
+      };
+    }
+    return h('div', { className: 'marking-toolbar', attrs: { role: 'toolbar', 'aria-label': 'Barre d\'outils de l\'écran de notation' } },
+      iconButton('list', 'Revenir à la liste', function () { if (self.leaveCopy()) self.showList(); }),
+      h('span', { className: 'mt-separator' }),
+      h('div', { className: 'mt-stepper' },
+        iconButton('chevL', 'Afficher la question précédente', null, true),
+        h('span', { className: 'mt-stepper-label', textContent: 'Question' }),
+        iconButton('chevR', 'Afficher la question suivante', null, true)),
+      h('div', { className: 'mt-stepper' },
+        iconButton('chevL', 'Afficher le candidat précédent', go(-1), this.current === 0),
+        h('span', { className: 'mt-stepper-label mt-candidate' },
+          h('span', null, 'Candidat ', h('strong', { textContent: (this.current + 1) + ' / ' + COPIES.length })),
+          h('span', { className: 'mt-candidate-name', textContent: copy.firstName + ' ' + copy.lastName })),
+        iconButton('chevR', 'Afficher le candidat suivant', go(1), this.current === COPIES.length - 1)),
+      h('span', { className: 'mt-separator' }),
+      iconButton('search', 'Voir la copie du candidat', function () { self.toast('info', 'Dans la plateforme, ce bouton ouvre la copie scannée d\'origine dans un nouvel onglet.'); }),
+      iconButton('shield', 'Anti-plagiat', function () { self.toast('info', 'L\'anti-plagiat n\'est pas simulé dans cet exercice.'); }),
+      h('span', { className: 'mt-separator' }),
+      h('button', { type: 'button', className: 'mt-btn mt-draft', textContent: 'Enregistrer en brouillon', disabled: state.saved, on: { click: function () { self.saveDraft(); } } }),
+      h('button', { type: 'button', className: 'mt-btn mt-primary', disabled: state.saved, on: { click: function () { self.save(); } } }, ic('check'), 'Enregistrer'));
+  };
+
+  Sim.prototype.buildQuestion = function () {
+    var body = h('div', { className: 'qbody', textContent: QUESTION });
+    var label = h('span', { textContent: 'Masquer la question' });
+    var toggle = h('button', { type: 'button', className: 'qhide', on: { click: function () {
+      body.hidden = !body.hidden;
+      label.textContent = body.hidden ? 'Afficher la question' : 'Masquer la question';
+    } } }, ic('eyeOff'), label);
+    return h('div', { className: 'qcard' },
+      h('div', { className: 'qhead' },
+        h('span', { className: 'qnum' }, 'QUESTION', h('b', { textContent: '1' }), h('span', { textContent: '/1' })),
+        h('span', { className: 'qcode' }, 'CG27QFR00001', ic('copy'))),
+      body, toggle);
+  };
+
+  Sim.prototype.buildViewer = function () {
+    var self = this, copy = COPIES[this.current];
+    function button(icon, label, handler, extra) {
+      return h('button', Object.assign({ type: 'button', className: 'pv-btn', title: label, attrs: { 'aria-label': label }, on: { click: handler } }, extra || {}), typeof icon === 'string' ? ic(icon) : icon);
+    }
+    this.el = {};
+    this.el.thumbsButton = button('sidebar', 'Afficher les miniatures', function () { self.thumbs = !self.thumbs; self.renderViewerState(); });
+    this.el.commentsButton = button('comment', 'Afficher les commentaires', function () { self.comments = !self.comments; self.renderViewerState(); });
+    this.el.zoomLabel = h('span');
+    this.el.tabs = [['view', 'Affichage'], ['annotate', 'Annoter'], ['shapes', 'Formes']].map(function (tab) {
+      return h('button', { type: 'button', className: 'pv-tab', textContent: tab[1], data: { tab: tab[0] }, on: { click: function () {
+        self.tab = tab[0];
+        if (self.tab !== 'annotate') self.setTool(null);
+        self.renderViewerState();
+      } } });
+    });
+    this.el.pointer = button('pointer', 'Sélectionner', function () { self.setTool(null); });
+    var bar = h('div', { className: 'pv-bar' },
+      button('menu', 'Menu', function () {}), h('span', { className: 'pv-sep' }),
+      this.el.thumbsButton, button('doc', 'Document', function () {}), h('span', { className: 'pv-sep' }),
+      h('span', { className: 'pv-zoom' }, this.el.zoomLabel, ic('chevD')),
+      button('minus', 'Zoom arrière', function () { self.zoom = Math.max(0, self.zoom - 1); self.renderViewerState(); }),
+      button('plus', 'Zoom avant', function () { self.zoom = Math.min(ZOOMS.length - 1, self.zoom + 1); self.renderViewerState(); }),
+      h('span', { className: 'pv-sep' }),
+      button('hand', 'Déplacer la page', function () { self.setTool(null); }), this.el.pointer,
+      h('span', { className: 'grow' }), h('div', { className: 'pv-tabs', attrs: { role: 'tablist' } }, this.el.tabs), h('span', { className: 'grow' }),
+      button('search', 'Rechercher dans le document', function () { self.toast('info', 'La recherche n\'est pas simulée dans cet exercice.'); }),
+      this.el.commentsButton,
+      button('expand', 'Agrandir la visionneuse', function () { self.root.classList.toggle('viewer-wide'); }));
+
+    this.el.toolButtons = {};
+    function glyph(kind) { return h('span', { className: 'gl ' + kind, textContent: 'A' }); }
+    ['hl', 'ul', 'st'].forEach(function (kind) {
+      self.el.toolButtons[kind] = button(glyph(kind), TOOL_LABELS[kind], function () { self.setTool(self.tool === kind ? null : kind); });
+    });
+    this.el.toolButtons.note = button('note', TOOL_LABELS.note, function () { self.setTool(self.tool === 'note' ? null : 'note'); });
+    this.el.undo = button('undo', 'Annuler', function () { self.undo(); });
+    this.el.redo = button('redo', 'Rétablir', function () { self.redo(); });
+    this.el.annotateRow = h('div', { className: 'pv-tools', attrs: { role: 'toolbar', 'aria-label': 'Outils d\'annotation' } },
+      this.el.toolButtons.hl, this.el.toolButtons.ul, this.el.toolButtons.st,
+      button('pen', 'Dessiner à main levée (non simulé)', function () {}, { disabled: true }),
+      this.el.toolButtons.note, h('span', { className: 'pv-sep' }), this.el.undo, this.el.redo);
+    this.el.shapesRow = h('div', { className: 'pv-tools' },
+      button('square', 'Rectangle (non simulé)', function () {}, { disabled: true }),
+      button('circle', 'Ellipse (non simulé)', function () {}, { disabled: true }),
+      button('line', 'Ligne (non simulé)', function () {}, { disabled: true }),
+      button('arrow', 'Flèche (non simulé)', function () {}, { disabled: true }),
+      h('span', { className: 'hint', textContent: 'Les formes ne sont pas simulées dans cet exercice.' }));
+
+    this.el.thumbs = h('div', { className: 'pv-thumbs' });
+    this.el.pages = h('div', { className: 'pv-pages', attrs: { tabindex: '0', 'aria-label': 'Copie du candidat' }, on: { scroll: function () { self.onScroll(); } } });
+    this.el.commentsPanel = h('div', { className: 'pv-comments' });
+
+    return h('div', { className: 'acard' }, h('div', { className: 'pdf-annotation' },
+      h('div', { className: 'aa-label', textContent: 'Copie annotée par le correcteur — ' + copy.file }),
+      h('div', { className: 'pdf-annotation-sub', textContent: 'Surlignez, soulignez, dessinez ou ajoutez des commentaires sur la copie du candidat : les annotations sont enregistrées avec la notation.' }),
+      h('div', { className: 'pv' }, bar, this.el.annotateRow, this.el.shapesRow,
+        h('div', { className: 'pv-body' }, this.el.thumbs, this.el.pages, this.el.commentsPanel))));
+  };
+
+  /** Onglets, zoom, volets et outil actif de la visionneuse */
+  Sim.prototype.renderViewerState = function () {
+    var self = this, state = this.states[this.current];
+    this.el.tabs.forEach(function (tab) {
+      var on = tab.dataset.tab === self.tab;
+      tab.classList.toggle('on', on);
+      tab.setAttribute('aria-selected', on);
+    });
+    this.el.annotateRow.hidden = this.tab !== 'annotate';
+    this.el.shapesRow.hidden = this.tab !== 'shapes';
+    this.el.thumbs.hidden = !this.thumbs;
+    this.el.commentsPanel.hidden = !this.comments;
+    this.el.thumbsButton.classList.toggle('on', this.thumbs);
+    this.el.commentsButton.classList.toggle('on', this.comments);
+    this.el.zoomLabel.textContent = Math.round(ZOOMS[this.zoom] * 100) + '%';
+    this.el.pages.style.setProperty('--z', ZOOMS[this.zoom]);
+    Object.keys(this.el.toolButtons).forEach(function (kind) {
+      var button = self.el.toolButtons[kind];
+      button.classList.toggle('on', self.tool === kind);
+      button.setAttribute('aria-pressed', self.tool === kind);
+      button.disabled = state.saved;
+    });
+    this.el.pointer.classList.toggle('on', this.tool === null);
+    this.el.undo.disabled = state.saved || !state.annots.length;
+    this.el.redo.disabled = state.saved || !state.redo.length;
+    if (this.tool) this.root.dataset.tool = this.tool; else delete this.root.dataset.tool;
+  };
+
+  Sim.prototype.setTool = function (tool) {
+    this.tool = tool;
+    this.renderViewerState();
+  };
+
+  /** Pages de la copie, miniatures et volet des commentaires, d'après les annotations de la copie */
+  Sim.prototype.renderCopy = function () {
+    var self = this, copy = COPIES[this.current], state = this.states[this.current];
+    var scroll = this.el.pages.scrollTop;
+    this.el.pages.replaceChildren.apply(this.el.pages, copy.pages.map(function (sentences, pageIndex) {
+      var text = h('div', { className: 'cp-text' });
+      sentences.forEach(function (sentence, sentenceIndex) {
+        var sid = pageIndex + '-' + sentenceIndex;
+        var mine = state.annots.filter(function (a) { return a.sid === sid; });
+        var span = h('span', { className: 's ' + mine.filter(function (a) { return a.type !== 'note'; }).map(function (a) { return a.type; }).join(' '),
+          textContent: sentence, attrs: { tabindex: '0' },
+          on: { click: function () { self.annotate(sid); }, keydown: function (event) {
+            if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); self.annotate(sid); }
+          } } });
+        text.append(span);
+        if (mine.some(function (a) { return a.type === 'note'; })) {
+          text.append(h('span', { className: 'pin', title: 'Commentaire', textContent: '≡' }));
+        }
+        text.append(' ');
+      });
+      return h('div', { className: 'pv-page', data: { page: pageIndex } },
+        h('div', { className: 'cp-head' },
+          h('span', null, 'N° d\'anonymat ', h('b', { textContent: copy.anon })),
+          h('span', { textContent: 'Épreuve : culture générale' }),
+          h('span', { textContent: 'Page ' + (pageIndex + 1) + ' / ' + copy.pages.length })),
+        text);
+    }));
+    this.el.pages.scrollTop = scroll;
+
+    this.el.thumbs.replaceChildren.apply(this.el.thumbs, [].concat.apply([], copy.pages.map(function (sentences, pageIndex) {
+      var lines = [];
+      for (var i = 0; i < 6 + sentences.length; i++) lines.push(h('i'));
+      return [
+        h('button', { type: 'button', className: 'pv-thumb', data: { page: pageIndex }, attrs: { 'aria-label': 'Aller à la page ' + (pageIndex + 1) },
+          on: { click: function () {
+            var page = self.el.pages.querySelector('.pv-page[data-page="' + pageIndex + '"]');
+            self.el.pages.scrollTo({ top: page.offsetTop - self.el.pages.offsetTop - 8, behavior: 'smooth' });
+            if (pageIndex > 0) self.onTask('page');
+          } } }, lines),
+        h('span', { className: 'pv-thumb-n', textContent: pageIndex + 1 })];
+    })));
+    this.onScroll();
+
+    var panel = this.el.commentsPanel;
+    panel.replaceChildren();
+    if (!state.annots.length) {
+      panel.append(h('h5', { textContent: 'Commentaires' }), h('p', { className: 'none', textContent: 'Aucune annotation pour le moment. Vos annotations apparaîtront ici, page par page.' }));
+    }
+    copy.pages.forEach(function (sentences, pageIndex) {
+      var mine = state.annots.filter(function (a) { return a.sid.split('-')[0] == pageIndex; });
+      if (!mine.length) return;
+      var written = mine.filter(function (a) { return a.text; }).length;
+      panel.append(h('h5', { textContent: 'Page ' + (pageIndex + 1) }),
+        h('p', { className: 'cnt', textContent: written + ' commentaire' + (written > 1 ? 's' : '') }));
+      mine.forEach(function (annot) {
+        var card = h('div', { className: 'cmt', data: { id: annot.id } },
+          h('div', { className: 'cmt-h' }, annot.type === 'note' ? ic('note') : h('span', { className: 'gl ' + annot.type, textContent: 'A' }), GRADER),
+          h('div', { className: 'cmt-q', textContent: sentences[annot.sid.split('-')[1]] }));
+        if (annot.text) {
+          card.append(h('div', { className: 'cmt-t', textContent: annot.text }));
+        } else if (!state.saved) {
+          var input = h('input', { type: 'text', placeholder: 'Ajouter un commentaire', attrs: { 'aria-label': 'Ajouter un commentaire' } });
+          var send = function () {
+            var value = input.value.trim();
+            if (!value) { input.focus(); return; }
+            annot.text = value;
+            state.dirty = true;
+            self.onTask('cm');
+            self.renderCopy();
+          };
+          input.addEventListener('keydown', function (event) { if (event.key === 'Enter') send(); });
+          card.append(h('div', { className: 'cmt-f' }, input,
+            h('button', { type: 'button', title: 'Valider le commentaire', attrs: { 'aria-label': 'Valider le commentaire' }, on: { click: send } }, ic('send', true))));
+        }
+        panel.append(card);
+      });
+    });
+    this.renderViewerState();
+  };
+
+  Sim.prototype.onScroll = function () {
+    var pages = this.el.pages, current = 0;
+    pages.querySelectorAll('.pv-page').forEach(function (page, index) {
+      if (page.offsetTop - pages.offsetTop <= pages.scrollTop + pages.clientHeight / 2) current = index;
+    });
+    this.el.thumbs.querySelectorAll('.pv-thumb').forEach(function (thumb, index) { thumb.classList.toggle('on', index === current); });
+    if (current > 0 && pages.scrollTop > 0) this.onTask('page');
+  };
+
+  Sim.prototype.annotate = function (sid) {
+    var state = this.states[this.current];
+    if (state.saved) {
+      this.toast('info', 'Notation enregistrée : la copie annotée est en lecture seule.');
+      return;
+    }
+    if (!this.tool) {
+      this.toast('info', 'Ouvrez l\'onglet « Annoter » de la visionneuse et choisissez un outil, puis cliquez sur un passage de la copie.');
+      return;
+    }
+    if (this.tool !== 'note' && state.annots.some(function (a) { return a.sid === sid && a.type === this.tool; }, this)) {
+      return;
+    }
+    var annot = { id: ++this.seq, sid: sid, type: this.tool, text: '' };
+    state.annots.push(annot);
+    state.redo = [];
+    state.dirty = true;
+    if (this.tool === 'hl') this.onTask('hl');
+    if (this.tool === 'note') this.comments = true;
+    this.renderCopy();
+    if (this.tool === 'note') {
+      var input = this.el.commentsPanel.querySelector('.cmt[data-id="' + annot.id + '"] input');
+      if (input) input.focus();
+    }
+  };
+
+  Sim.prototype.undo = function () {
+    var state = this.states[this.current];
+    if (state.annots.length) { state.redo.push(state.annots.pop()); state.dirty = true; this.renderCopy(); }
+  };
+  Sim.prototype.redo = function () {
+    var state = this.states[this.current];
+    if (state.redo.length) { state.annots.push(state.redo.pop()); state.dirty = true; this.renderCopy(); }
+  };
+
+  /* --- Volet « Grille de notation » --- */
+  Sim.prototype.buildGrid = function () {
+    var self = this, state = this.states[this.current];
+    var list = h('div', { className: 'mv-side-list' });
+    if (state.saved) list.append(h('div', { className: 'mv-readonly-note', textContent: 'Notation enregistrée, en lecture seule' }));
+    CRITERIA.forEach(function (criterion, index) {
+      var existing = state.grid[criterion.name] || {};
+      var points = h('input', { type: 'number', className: 'mv-input mv-input-num', min: 0, max: criterion.weight, step: .5, value: existing.points == null ? '' : existing.points, readOnly: state.saved,
+        data: { key: criterion.name }, attrs: { inputmode: 'decimal', 'aria-label': 'Note du critère ' + criterion.name + ' (sur ' + criterion.weight + ')' } });
+      var comment = h('textarea', { className: 'mv-input mv-textarea', value: existing.comment || '', readOnly: state.saved, attrs: { 'aria-label': 'Commentaires du critère ' + criterion.name } });
+      function store() {
+        // comme dans la plateforme, une note hors bornes est ramenée entre 0 et le maximum du critère
+        if (points.value !== '') {
+          var value = parseFloat(points.value);
+          if (value > criterion.weight) points.value = criterion.weight;
+          if (value < 0) points.value = 0;
+        }
+        state.grid[criterion.name] = { points: points.value === '' ? null : parseFloat(points.value), comment: comment.value.trim() };
+        state.dirty = true;
+        self.updateProgress();
+      }
+      points.addEventListener('input', store);
+      comment.addEventListener('input', store);
+      var details = h('details', { className: 'mv-side-item', open: index === 0, data: { key: criterion.name } },
+        h('summary', { className: 'mv-side-item-head' },
+          h('span', { className: 'mv-side-item-num', textContent: 'Critère ' + criterion.name + ' : ' }),
+          h('span', { className: 'cs cs-empty', textContent: '—' }),
+          h('span', { className: 'mv-side-chev' }, ic('chevD')),
+          h('span', { className: 'mv-side-item-title', textContent: criterion.description })),
+        h('div', { className: 'mv-side-item-form' },
+          h('label', { className: 'mv-field' }, h('span', { className: 'mv-field-label', textContent: 'Note (sur ' + criterion.weight + ')' }), points),
+          h('label', { className: 'mv-field' }, h('span', { className: 'mv-field-label', textContent: 'Commentaires' }), comment)));
+      details.addEventListener('toggle', function () {
+        if (details.open) list.querySelectorAll('details[open]').forEach(function (other) { if (other !== details) other.open = false; });
+      });
+      list.append(details);
+    });
+    this.gridPanel = h('aside', { className: 'marking-grid-panel', attrs: { 'aria-label': 'Grille de notation' } },
+      h('div', { className: 'mv-side-head' },
+        h('div', { className: 'mv-side-head-row' },
+          h('span', { className: 'mv-drawer-icon' }, ic('grid')),
+          h('span', { className: 'mv-side-title', textContent: 'Grille de notation' }),
+          h('select', { className: 'mv-grader-select', attrs: { 'aria-label': 'Correcteur' } }, h('option', { textContent: GRADER })),
+          h('button', { type: 'button', className: 'mv-collapse', title: 'Réduire ou afficher la grille', attrs: { 'aria-label': 'Réduire ou afficher la grille' },
+            on: { click: function () { self.root.classList.toggle('grid-collapsed'); } } }, ic('chevs'))),
+        h('div', { className: 'mv-side-progress' },
+          h('span', { className: 'mv-side-score' }, h('span', { className: 'mv-side-score-value', textContent: '0' }), h('span', { className: 'mv-side-max', textContent: '/' + MAX })),
+          h('div', { className: 'mv-side-bar' }, h('div', { className: 'mv-side-bar-fill' })))),
+      list);
+    this.updateProgress();
+    return this.gridPanel;
+  };
+
+  Sim.prototype.updateProgress = function () {
+    var state = this.states[this.current], panel = this.gridPanel, filled = 0;
+    CRITERIA.forEach(function (criterion) {
+      var item = panel.querySelector('details[data-key="' + criterion.name + '"]');
+      var pill = item.querySelector('.cs');
+      var points = state.grid[criterion.name] ? state.grid[criterion.name].points : null;
+      if (points == null) {
+        pill.className = 'cs cs-empty';
+        pill.textContent = '—';
+      } else {
+        var ratio = points / criterion.weight;
+        pill.className = 'cs ' + (ratio >= .8 ? 'cs-good' : ratio >= .4 ? 'cs-mid' : 'cs-low');
+        pill.replaceChildren(fr(points), h('span', { className: 'cs-max', textContent: '/' + criterion.weight }));
+        filled++;
+      }
+      item.classList.toggle('filled', points != null);
+    });
+    var total = this.total(state);
+    panel.querySelector('.mv-side-score-value').textContent = fr(Math.round(total * 10) / 10);
+    panel.querySelector('.mv-side-bar-fill').style.width = (total / MAX * 100) + '%';
+    if (filled === CRITERIA.length) this.onTask('grid');
+  };
+
+  Sim.prototype.saveDraft = function () {
+    var state = this.states[this.current];
+    state.dirty = false;
+    this.onTask('draft');
+    this.toast('success', 'Brouillon enregistré : votre grille et vos annotations sont conservées, la question reste à corriger.');
+  };
+
+  Sim.prototype.save = function () {
+    var state = this.states[this.current], panel = this.gridPanel;
+    var missing = CRITERIA.filter(function (c) { return !state.grid[c.name] || state.grid[c.name].points == null; });
+    if (missing.length) {
+      this.root.classList.remove('grid-collapsed');
+      var details = panel.querySelector('details[data-key="' + missing[0].name + '"]');
+      details.open = true;
+      details.querySelector('input').focus();
+      this.toast('error', 'Tous les critères doivent être notés avant d\'enregistrer la notation. Critère(s) non noté(s) : ' + missing.map(function (c) { return c.name; }).join(', '));
+      return;
+    }
+    state.saved = true;
+    state.dirty = false;
+    state.redo = [];
+    this.onTask('save');
+    this.showMarking(this.current);
+    this.toast('success', 'Notation enregistrée : ' + fr(this.total(state)) + ' / ' + MAX + '. En double correction, elle est désormais verrouillée.');
+  };
+
+  Sim.prototype.showMarking = function (index) {
+    this.current = index;
+    this.tool = null;
+    this.root.className = 'app' + (this.root.classList.contains('grid-collapsed') ? ' grid-collapsed' : '');
+    var main = h('div', { className: 'rt' }, this.buildQuestion(), this.buildViewer());
+    this.root.replaceChildren(this.buildToolbar(), main, this.buildGrid(), h('div', { className: 'toasts' }));
+    this.renderCopy();
+  };
+
+  /* ───── Exercice ───── */
+  var HINTS = {
+    open: 'Dans le tableau, cliquez sur l\'icône en forme de crayon (« Noter ») de la première copie.',
+    page: 'Faites défiler la copie jusqu\'à la page 2, ou affichez les miniatures (deuxième bouton de la visionneuse) et cliquez sur la page 2.',
+    hl: 'Ouvrez l\'onglet « Annoter » de la visionneuse, choisissez l\'outil « Surligner » (le A sur fond jaune), puis cliquez sur une phrase de la copie.',
+    cm: 'Ouvrez le volet des commentaires (bulle, à droite de la visionneuse) et écrivez une remarque sous une annotation, ou utilisez l\'outil « Commentaire » de l\'onglet « Annoter ».',
+    grid: 'Dans la grille de notation, à droite, dépliez chaque critère et saisissez une note.',
+    draft: 'Cliquez sur « Enregistrer en brouillon » dans la barre d\'outils, en haut.',
+    save: 'Cliquez sur « Enregistrer » pour valider la note de la question.',
+    next: 'Passez à la copie suivante avec la flèche située à droite du nom du candidat.'
+  };
+  var ORDER = ['open', 'page', 'hl', 'cm', 'grid', 'draft', 'save', 'next'];
+  var done = {};
+  var coach = document.getElementById('coach');
+  function refreshCoach() {
+    var next = ORDER.filter(function (k) { return !done[k]; })[0];
+    coach.replaceChildren(ic(next ? 'info' : 'check'), h('span', { textContent: next ? 'Prochain geste : ' + HINTS[next] : 'Vous avez réalisé tous les gestes : vous êtes prêt à corriger. Vous pouvez continuer à manipuler l\'écran librement.' }));
+  }
+  function mark(key) {
+    if (done[key]) return;
+    done[key] = true;
+    var item = document.querySelector('#todo li[data-k="' + key + '"]');
+    item.classList.add('done');
+    item.setAttribute('aria-label', item.textContent + ' : fait');
+    refreshCoach();
+  }
+  var sim;
+  function start() {
+    done = {};
+    document.querySelectorAll('#todo li').forEach(function (item) { item.classList.remove('done'); item.removeAttribute('aria-label'); });
+    sim = new Sim({ root: document.getElementById('sim'), onTask: mark });
+    sim.pulse = true;
+    sim.showList();
+    refreshCoach();
+  }
+  start();
+  document.getElementById('b-reset').addEventListener('click', start);
+
+  /* ───── Illustrations des étapes : les mêmes écrans, figés sur un état d'exemple ───── */
+  var demo = new Sim({});
+  demo.states[1].grid = { 'Compréhension du sujet': { points: 6 }, 'Argumentation et plan': { points: 5.5 }, 'Expression écrite': { points: 3 } };
+  var listRoot = h('div', { className: 'app on-list', style: 'height:auto;min-width:0;border:0;border-radius:0' });
+  listRoot.replaceChildren.apply(listRoot, demo.buildList());
+  document.getElementById('fig-list').append(listRoot);
+
+  demo.states[0].annots = [
+    { id: 1, sid: '0-1', type: 'hl', text: 'Bonne définition du principe.' },
+    { id: 2, sid: '0-3', type: 'ul', text: '' },
+    { id: 3, sid: '0-4', type: 'note', text: 'Annonce de plan claire.' }];
+  demo.states[0].grid = { 'Compréhension du sujet': { points: 6, comment: 'Problématique bien posée.' }, 'Argumentation et plan': { points: 5 } };
+  demo.thumbs = true; demo.comments = true; demo.tab = 'annotate'; demo.tool = 'hl';
+  var viewer = demo.buildViewer();
+  var staticStyle = 'position:static;display:inline-flex';
+  var bar = demo.buildToolbar(); bar.style.cssText = staticStyle;
+  document.getElementById('fig-bar').append(bar);
+  document.getElementById('fig-viewer').append(viewer);
+  demo.renderCopy();
+  var grid = demo.buildGrid(); grid.style.cssText = 'width:100%;border:0';
+  document.getElementById('fig-grid').append(grid);
+  var saveBar = demo.buildToolbar(); saveBar.style.cssText = staticStyle;
+  [].slice.call(saveBar.children).forEach(function (child) { if (!child.matches('.mt-draft,.mt-primary')) child.remove(); });
+  document.getElementById('fig-save').append(saveBar);
+
+  /* ───── Quiz ───── */
+  document.querySelectorAll('.quiz fieldset').forEach(function (fieldset) {
+    fieldset.addEventListener('change', function (event) {
+      var feedback = fieldset.querySelector('.fb');
+      var ok = event.target.value === fieldset.getAttribute('data-a');
+      feedback.className = 'fb ' + (ok ? 'good' : 'bad');
+      feedback.textContent = feedback.getAttribute(ok ? 'data-ok' : 'data-ko');
+    });
+  });
+})();
+</script>
+</body>
+</html>
