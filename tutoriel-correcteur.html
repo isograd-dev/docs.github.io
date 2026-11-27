@@ -297,6 +297,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
     <li class="step">
       <h3>Retrouver vos copies</h3>
       <p>Dans le menu de gauche, ouvrez <span class="btnname">Corrections</span>, puis <span class="btnname">Corrections</span>. La page liste les copies qui vous sont attribuées et qui attendent une note : le filtre <span class="btnname">Statut de notation</span> est réglé sur <span class="btnname">À noter</span>. La colonne <span class="btnname">Correcteur</span> indique votre nom, ou celui de votre binôme si vous corrigez à deux.</p>
+      <p>Les copies sont anonymes : vous ne voyez que le numéro d'anonymat porté sur la copie, jamais l'identité du candidat. Dans la liste comme dans la barre d'outils, son nom et son prénom sont remplacés par la mention « anonymous ».</p>
       <p>Pour ouvrir une copie, cliquez sur l'icône <span class="btnname">Noter</span>, en bout de ligne. L'écran de notation s'ouvre sur la première question à corriger.</p>
       <figure class="shot shot-list"><div class="frame" id="fig-list" inert></div><figcaption>La page Corrections. L'icône en forme de crayon, à droite de chaque ligne, ouvre la copie.</figcaption></figure>
     </li>
@@ -368,7 +369,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
   </ul>
   <div class="coach" id="coach" role="status" aria-live="polite"></div>
   <div class="simscroll"><div class="app" id="sim"></div></div>
-  <div class="simbar"><span>Reproduction simplifiée : le dessin à main levée, les formes, la recherche et l'anti-plagiat ne sont pas simulés.</span><button type="button" id="b-reset">Recommencer l'exercice</button></div>
+  <div class="simbar"><span>Reproduction simplifiée : le dessin à main levée, les formes et la recherche ne sont pas simulés.</span><button type="button" id="b-reset">Recommencer l'exercice</button></div>
 </section>
 
 <section class="blk quiz" id="quiz">
@@ -491,7 +492,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
   ];
   var MAX = CRITERIA.reduce(function (s, c) { return s + c.weight; }, 0);
   var COPIES = [
-    { id: 7705021, lastName: 'Lefèvre', firstName: 'Camille', file: 'COPIE-0412.PDF', anon: '0412', pages: [
+    { id: 7705021, lastName: 'anonymous', firstName: 'anonymous', file: 'COPIE-0412.PDF', anon: '0412', pages: [
       ['La solidarité est souvent présentée comme le fondement de notre protection sociale.',
        'Elle repose sur une idée simple : chacun contribue selon ses moyens et reçoit selon ses besoins.',
        'Pourtant, cette idée est aujourd\'hui discutée, car les besoins augmentent plus vite que les ressources.',
@@ -501,14 +502,14 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
        'Certains proposent alors de responsabiliser davantage les individus.',
        'Cette piste est intéressante mais elle comporte des risque pour les plus fragiles.',
        'En conclusion, la solidarité doit évoluer sans perdre ce qui fait sa force : la confiance entre les citoyens.']] },
-    { id: 7705022, lastName: 'Moreau', firstName: 'Hugo', file: 'COPIE-0413.PDF', anon: '0413', pages: [
+    { id: 7705022, lastName: 'anonymous', firstName: 'anonymous', file: 'COPIE-0413.PDF', anon: '0413', pages: [
       ['La protection sociale française est née d\'une ambition collective, celle de 1945.',
        'La solidarité en est le cœur, mais elle prend aujourd\'hui des formes nouvelles.',
        'Nous montrerons que ce principe demeure, puis qu\'il doit être repensé.',
        'D\'abord, la solidarité se lit dans le financement : les cotisations sont proportionnelles aux revenus.'],
       ['Ensuite, la montée des dépenses de santé oblige à faire des choix.',
        'On peut donc dire que la solidarité reste le fondement, à condition d\'être expliquée aux citoyens.']] },
-    { id: 7705023, lastName: 'Garnier', firstName: 'Inès', file: 'COPIE-0414.PDF', anon: '0414', pages: [
+    { id: 7705023, lastName: 'anonymous', firstName: 'anonymous', file: 'COPIE-0414.PDF', anon: '0414', pages: [
       ['Parler de solidarité, c\'est parler de ce qui nous lie les uns aux autres.',
        'Notre protection sociale traduit ce lien dans des règles et dans des droits.',
        'Mais ce lien est-il encore accepté par tous ?',
@@ -583,7 +584,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
         }))),
       h('tbody', null, rows.length ? rows.map(function (row) {
         var label = row.state.saved ? 'Voir la notation' : 'Noter';
-        var button = h('button', { type: 'button', className: 'rowbtn', title: label, attrs: { 'aria-label': label + ' la copie de ' + row.copy.firstName + ' ' + row.copy.lastName },
+        var button = h('button', { type: 'button', className: 'rowbtn', title: label, attrs: { 'aria-label': label + ' la copie n° ' + row.copy.anon },
           on: { click: function () { self.onTask('open'); self.showMarking(row.index); } } }, ic(row.state.saved ? 'eye' : 'pencil'));
         if (!row.state.saved && firstTodo && self.pulse) { button.classList.add('pulse'); firstTodo = false; }
         var score = row.state.saved ? fr(self.total(row.state)) + ' / ' + MAX : (Object.keys(row.state.grid).length && !row.state.dirty ? fr(self.total(row.state)) + ' / ' + MAX + ' (brouillon)' : '');
@@ -666,7 +667,6 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
         iconButton('chevR', 'Afficher le candidat suivant', go(1), this.current === COPIES.length - 1)),
       h('span', { className: 'mt-separator' }),
       iconButton('search', 'Voir la copie du candidat', function () { self.toast('info', 'Dans la plateforme, ce bouton ouvre la copie scannée d\'origine dans un nouvel onglet.'); }),
-      iconButton('shield', 'Anti-plagiat', function () { self.toast('info', 'L\'anti-plagiat n\'est pas simulé dans cet exercice.'); }),
       h('span', { className: 'mt-separator' }),
       h('button', { type: 'button', className: 'mt-btn mt-draft', textContent: 'Enregistrer en brouillon', disabled: state.saved, on: { click: function () { self.saveDraft(); } } }),
       h('button', { type: 'button', className: 'mt-btn mt-primary', disabled: state.saved, on: { click: function () { self.save(); } } }, ic('check'), 'Enregistrer'));
